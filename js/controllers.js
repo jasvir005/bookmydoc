@@ -15,6 +15,7 @@ angular.module('starter.controllers', ["ngStorage"])
   $scope.loginData = {};
   $scope.signUpData = {};
    $scope.signUpdData = {};
+   
   $scope.resetData = {};
   $scope.Doc={};
   $scope.AppointmentDetails={};
@@ -57,6 +58,17 @@ console.log($scope.baseurl);
     $scope.doc_modal = doc_modal;
   });
 
+ 
+  $ionicModal.fromTemplateUrl('templates/login-Copy.html', {
+    scope: $scope,
+    caching: false
+  }).then(function(login_twoe) {
+    $scope.login_twoe = login_twoe;
+  }); 
+
+
+
+
   
 
   // Triggered in the login modal to close it
@@ -72,19 +84,41 @@ console.log($scope.baseurl);
   $scope.closeDoc_modal = function() {
     $scope.doc_modal.hide();
   };
- 
 
+    $scope.closelogin_two = function() {
+
+//alert('DD');
+
+  //$scope.modalax.hide();
+  $scope.login_twoe.hide();
+  };
+ 
   // Open the login modal
   $scope.login = function() {
+   // alert('hi')
     $scope.modal.show();
   };
 
+  $scope.login_two = function() {
+    //alert('hi')
+  $scope.login_twoe.show();
+  };
+
   $scope.signup = function() {
+    
     $scope.signup_modal.show();
+  };
+
+
+   $scope.login_two = function() {
+
+    //alert('hi');
+     $scope.login_twoe.show();
   };
 
    $scope.fblogin = function() {
  //alert('hi');
+
    facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
         function (error) { alert("bookmydoc" + JSON.stringify(error)) }

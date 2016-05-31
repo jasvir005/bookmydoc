@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script type="text/javascript" src="js/ngstorage.js"></script>
+    <!-- your app's js -->
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+ 
+    <script src="js/services.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/network.js"></script>
+   <script src="js/function.js"></script>
+
+    <script src="js/facebookConnectPlugin.js"></script>
+  </head>
+
+  <body ng-app="starterd">
+    <ion-nav-view cache-view="false">
+
+</ion-nav-view>
+    
+  <div class="login-view">
+  <button class="common-button button button-positive button-clear button_text ion-chevron-left txt-color-black" ng-click="closeLogin()"></button>
+
+  <div class="head-img-txt">
+      <img src="img/login_page.png">
+      <p class="word-out">WORKOUT</p>
+
+  </div>
+
+
+  <div class="login-intro"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard   </p></div>
+
+
+<div class="login-btn">
+<button   class="bmd-main-btn2">LOGIN</button>
+</div>
+
+<div class="login-btn-facebook">
+<button  onclick='fblogin();'  class="bmd-main-btn2">LOGIN WITH <b class="facebk-txt" >facebook</b></button>
+</div>
+
+<div class="dont-have-account"><b style="padding-top:5px;">Don't have an account? SIGN UP</b></div>
+
+
+<ion-item menu-close="" ng-click="login()" ng-show="noSessionStatus" class="bmd-spcl-listing item">
+           <h1> Let's Start </h1>
+
+        </ion-item>
+
+
+  </div>
+    <!--loader-->
+     <!--  <div class="appointment_loader_div" ng-show="appointment_loading">
+        <img id="mySpinner" src="img/loading.gif" />
+      </div> -->
+      <!--loader-->
+  </body>
+</html>
+
+
+<style>
+    .login-view
+    {
+        background-color: #003F6F;
+           overflow: auto;
+    }
+
+.word-out {
+    
+    color: #fff;
+    font-family: Arial;
+        font-size: 32px;
+    font-weight: 700;
+}
+
+.head-img-txt {
+    text-align: center;
+}
+.login-intro {
+    padding-left: 20px;
+    padding-right: 20px;
+     color: #fff;
+}
+
+.login-intro > p {
+     margin-bottom: 41px;
+    margin-top: 41px;
+    text-align: center;
+}
+
+
+.login-btn {
+    margin: 0 auto;
+    text-align: center;
+       width: 80%;
+}
+
+.login-btn-facebook {
+    margin: 0 auto;
+    text-align: center;
+       width: 80%;
+}
+
+ 
+.login-view .common-button.button.button-positive.button-clear.button_text.ion-chevron-left.txt-color-black {
+    color: #fff !important;
+}
+.login-btn button {
+    background: #fe9901 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.login-btn-facebook button {
+    background: #567CC6 none repeat scroll 0 0;
+    color: #fff;
+}
+
+
+.login-btn-facebook .bmd-main-btn{ font-size: 15px;}
+.facebk-txt {
+    font-size: 18px;
+}
+
+.dont-have-account {
+    color: #fff;
+    margin-bottom: 95px;
+    margin-top: 17px;
+    text-align: center;
+}
+.head-img-txt img {
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+
+
+.bmd-main-btn2 {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: #515151;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 12px;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.word-out {
+    color: #fff;
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: 700;
+}
+</style>
