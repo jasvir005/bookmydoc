@@ -168,7 +168,7 @@
 
  .slider-wrapper2 {
    
-       margin: 0 auto 27px;
+       margin: 0 0 32px 43px;
     width: 228px;
 }
 
@@ -196,7 +196,8 @@
     width: 228px;
 }
 .price-range > p {
-    text-align: center;
+       margin-bottom: 24px;
+    margin-top: 24px;
 }
 .price-range2 > p {
     text-align: center;
