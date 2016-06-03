@@ -425,6 +425,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
           $scope.AppointmentDetails.details = true;
           $scope.noSessionStatus = false;
           $timeout(function() {
+            alert('hi');
             $ionicLoading.hide();
             $scope.closeLogin();
           }, 1000);
