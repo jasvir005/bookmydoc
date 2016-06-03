@@ -41,6 +41,7 @@
 .bmd-spcl-listing{/*border-bottom:1px solid #aaaaaa;*/color:#f3f3f3;font-size: 18px;padding: 10px;background: transparent;}
 .bmd-spcl-listing:hover{background:#ca1f53 !important;color:#fff !important;}
 .bmd-title-logo{text-align:center;padding-top: 0px;padding-bottom: 25px;}
+.bmd-title-logo2{text-align:center;padding-top: 0px;padding-bottom: 25px;padding-top: 25px;}
 /*.bmd-title-logo img{    width: 200px;height: 65px;}*/
 .bmd-usr-wrapper{/*padding: 35px;padding-top: 10px;*/   padding-top: 11px;color: #fff; background:#002B4D}
 .bmd-usr{width:95%;margin-left: 11px; margin-bottom: 10px;text-align:center;display:inline-flex;border: 0px solid #fff;border-radius: 6px;margin-bottom: 10px;}
@@ -794,4 +795,35 @@ width: 100%;
 }
 .head-img-txtflogd > p {
     margin-bottom: 13px;
+}
+
+
+
+.price-range2
+{
+   margin-bottom: 33px;
+    margin-top: 43px;
+    text-align: center;
+    width: 90%;
+}
+
+.price-range2 > p {
+   color: #fff;
+    font-family: arial;
+    font-weight: normal;
+    width: 85%;
+}
+
+
+.price-range > p {
+   color: #fff;
+    font-family: arial;
+    font-weight: normal;
+    width: 71%;
+}
+
+.price-range {
+     margin-top: 11px;
+    text-align: center;
+    width: 90%;
 }

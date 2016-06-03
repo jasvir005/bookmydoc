@@ -19,7 +19,7 @@
 }
 
 .range-quantity {
-  background-color: #017afd;
+  background-color: #FFC000;
   border-radius: 15px;
   display: block;
   height: 100%;
@@ -27,22 +27,20 @@
 }
 
 .range-handle {
-  background-color: #fff;
-  border-radius: 100%;
-  cursor: move;
-  height: 30px;
-  left: 0;
-  top: -13px;
-  position: absolute;
-  width: 30px;
-
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+     background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    cursor: move;
+    height: 15px;
+    left: 0;
+    position: absolute;
+    top: -7px;
+    width: 19px;
 }
 
 .range-min,
 .range-max {
-  color: #181819;
+  color: #fff;
   font-size: 12px;
   height: 20px;
   padding-top: 4px;
@@ -120,36 +118,39 @@
 
 
 .slider-wrapper {
-  margin: 50px 0 30px 30px;
-  position: relative;
-  width: 250px;
+     margin: 23px 0 40px 56px;
+    position: relative;
+    width: 60%;
 }
 
 .containerration {
-  margin: 0 auto;
-  width: 960px;
+ 
+  width: 100%;
 }
 
     .js-decimal {
-    background-color: #f7fcff;
+      background-color: #003f6f;
+ 
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: none !important;
+    color: #fff !important;
     display: inline !important;
     float: left !important;
     font-size: 0.8em;
     position: relative !important;
-    right: 45px !important;
-    top: -8px !important;
-    width: 27px !important;
+    right: 38px !important;
+    top: -12px !important;
+    width: 26px !important;
     z-index: 999 !important;
   }
 
 .dollersign {
-   background: #95b7d4 none repeat scroll 0 0;
+   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #fff;
     float: left;
     position: relative;
-    right: 17%;
-    top: -8px;
-    width: 7%;
+    right: 14%;
+    top: -6px;
+    width: 4%;
     z-index: 9999 !important;
 }
