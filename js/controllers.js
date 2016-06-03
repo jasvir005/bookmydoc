@@ -230,6 +230,9 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
           $scope.AppointmentDetails.details = true;
           $scope.noSessionStatus = false;
           $timeout(function() {
+
+            alert('hello');
+            
             $ionicLoading.hide();
             $scope.closeLogin();
           }, 1000);
