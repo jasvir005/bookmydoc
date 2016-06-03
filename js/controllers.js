@@ -95,9 +95,16 @@ console.log($scope.baseurl);
  
   // Open the login modal
   $scope.login = function() {
-   // alert('hi')
+    //alert('hi');
     $scope.modal.show();
   };
+
+
+ $scope.loginw = function() {
+    //alert('hi');
+    $scope.modal.show();
+  };
+  
 
   $scope.login_two = function() {
     //alert('hi')
@@ -116,6 +123,13 @@ console.log($scope.baseurl);
      $scope.login_twoe.show();
   };
 
+
+
+ $scope.commingsoon = function() {
+
+  alert('comming soon');
+
+ };
    $scope.fblogin = function() {
  //alert('hi');
 

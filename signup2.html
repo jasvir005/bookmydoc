@@ -1,0 +1,169 @@
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+ <link href="css/powerange.css" rel="stylesheet">
+
+
+ 
+
+
+
+     <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script type="text/javascript" src="js/ngstorage.js"></script>
+    <!-- your app's js -->
+    <script src="js/config.js"></script>
+
+
+    <script src="js/powerange.min.js"></script>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/network.js"></script>
+
+    <script src="js/facebookConnectPlugin.js"></script>
+
+<div class="bmd-title-logo">
+		<div class="head-img-txt">
+      <img src="img/login_page.png">
+      <p class="word-out">WORKOUT</p>
+
+  </div>
+		</div>
+
+
+			<form  name="signupform" ng-submit="signupform.$valid && doSignup()">
+		<div class="bmd-usr-wrapper">
+		<!-- 	<div class="error_block" ng-show="signupError==false">
+	          {{signupMessage}}
+	        </div> -->
+	     <!--    <div class="success_block" ng-show="signupError">
+	          {{signupMessage}}
+	        </div> -->
+		<div class="bmd-usr">
+			<div class="bmd-usr1"><img src="img/bmd-usr.png"></div>
+			<div class="bmd-usr2">
+			<input class="bmd-usr-input" name="firstname" type="text" placeholder="First Name" ng-model="signUpData.firstname" required>
+			</div>
+		</div>
+		<div class="line-brk"></div>
+<!-- 		<div class="bmd-field error" ng-show="submitted  && signupform.firstname.$error.required">First Name is required.</div> -->
+		<div class="bmd-usr">
+			<div class="bmd-usr1"><img src="img/bmd-usr.png"></div>
+			<div class="bmd-usr2">
+			<input class="bmd-usr-input" name="lastname" type="text" placeholder="Last Name" ng-model="signUpData.lastname" required>
+			</div>
+		</div>
+		<div class="line-brk"></div>
+	<!-- 	<div class="bmd-field error" ng-show="submitted  && signupform.lastname.$error.required">Last Name is required.</div> -->
+		<div class="bmd-usr">
+			<div class="bmd-usr1"><img src="img/bmd-mail.png"></div>
+			<div class="bmd-usr2">
+			<input class="bmd-usr-input" name="email" type="email" placeholder="Email" ng-model="signUpData.email" required>
+			</div>
+		</div>
+		<div class="line-brk"></div>
+<!-- 		<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">Email-Id is required.</div> -->
+	<!-- 	<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$invalid">Invalid Email-ID.</div> -->
+
+		<div class="bmd-usr">
+			<div class="bmd-usr1"><img src="img/bmd-mail.png"></div>
+			<div class="bmd-usr2">
+			<input class="bmd-usr-input" name="Address" type="text" placeholder="Address" required>
+			</div>
+		</div>
+		<div class="line-brk"></div>
+		<div class="bmd-usr">
+			<div class="bmd-usr1"><img src="img/bmd-pass.png"></div>
+			<div class="bmd-usr2">
+			<input class="bmd-usr-input" name="password" type="password" ng-minlength="6" placeholder="Password" ng-model="signUpData.password" required>
+			</div>
+			<div class="btn-signup-right">
+<button class="bmd-main-btn-signup"  ng-click="submitted=true"><img src="img/right_arrow_sugnup.png"></button>
+
+</div>
+		</div>
+		<div class="line-brk"></div>
+	<!-- 	<div class="bmd-field error" ng-show="submitted  && signupform.password.$error.required">Password is required.</div> -->
+		<div class="bmd-field error" ng-show="signupform.password.$touched && signupform.password.$minlength">Password should have minimum 6 characters.</div>
+		<!-- <div class="bmd-usr">
+			<div class="bmd-usr1"><img src="img/bmd-phne.png"></div>
+			<div class="bmd-usr2">
+			<input class="bmd-usr-input" type="text" name="phone" placeholder="Mobile" ng-model="signUpData.phone" ng-minlength="10"  ng-maxlength="10" required>
+			</div>
+		</div>
+		<div class="bmd-field error" ng-show="submitted  && signupform.phone.$error.required">Mobile Number is required.</div>
+		<div class="bmd-field error" ng-show="signupform.phone.$touched && signupform.phone.$error.minlength">Mobile Number should be 10 digits.</div>
+		<div class="bmd-field error" ng-show="signupform.phone.$touched && signupform.phone.$error.maxlength">Mobile Number should be 10 digits.</div> -->
+		
+		<div class="chkoutbtn_ap" style="display:inline-flex;width:100%;">
+			<input id="checkbox-terms" name="terms" class="checkbox-custom" name="checkbox-1" type="checkbox" checked="checked"  ng-model="terms" required>
+			<label for="checkbox-terms" class="checkbox-custom-label"></label><b style="padding-top:5px;">By using this app, you agree to path Team of Use and Privacy Policy.</b>
+		</div>
+		<div class="bmd-field error" ng-show="submitted  && signupform.terms.$error.required">Must agree the Terms and Conditions.</div>
+		<!-- <div class="bmd-field error" ng-show="signupform.terms.$dirty && signupform.terms.$error.required">Must agree the Terms and Conditions.</div> -->
+<!-- 		<button class="bmd-main-btn"  ng-click="submitted=true">Join now</button> -->
+
+ <!-- 	<button class="bmd-main-btn"  ng-click="Signud()">facebook login</button>
+
+
+ -->
+
+		</div>
+
+		
+<div class="containerration">
+
+<div class="price-range"><p>Price Range: $<span id="js-display-decimald"></span> to $250</p></div>
+<div class="slider-wrapper">
+ 
+    <b class="dollersign">$</b>
+    <input type="text" class="js-decimal"  value="$" style="display:inline !important;"/>
+
+
+</div>
+
+<div class="example">
+
+    <div class="price-range"><p>Distance Range: <span id="js-display-changes">0</span>  miles to 15 miles</p></div>
+    <div class="slider-wrapper">
+    <input type="text" class="js-check-change" />
+    </div>
+
+ </div>
+
+
+</div>
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="powerange.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function (){
+  //alert('hi');
+ $( ".range-max" ).prepend( "$" );
+}); 
+
+ var dec = document.querySelector('.js-decimal');
+    var initDec = new Powerange(dec, { decimal: false, callback: displayDecimalValue, max: 250, start: 0 });
+
+ function displayDecimalValue() {
+    document.getElementById('js-display-decimald').innerHTML = dec.value;
+    }
+
+    var changeInput = document.querySelector('.js-check-change')
+    , initChangeInput = new Powerange(changeInput, { start: 0 });
+
+    changeInput.onchange = function() {
+    document.getElementById('js-display-changes').innerHTML = changeInput.value;
+    };
+     </script>

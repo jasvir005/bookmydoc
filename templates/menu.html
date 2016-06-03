@@ -30,12 +30,31 @@
 
     <ion-content class="bmd-spcl-theme">
       <ion-list class="list">
+<ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+         SEARCH TRAINERS
+        </ion-item>
+
+        <ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          MY PROFILE
+        </ion-item>
+        <ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          MY FAVORITES
+        </ion-item>
+        <ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          MY BOOKING
+        </ion-item>
+
+          <ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          SETTING
+        </ion-item>
+
+
         <ion-item menu-close href="#/app/bmd-home" class="bmd-spcl-listing">
           Home
         </ion-item>
-        <ion-item menu-close ng-click="login()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+        <!-- <ion-item menu-close ng-click="loginw()" ng-show="noSessionStatus" class="bmd-spcl-listing">
           Login
-        </ion-item>
+        </ion-item> -->
 
 
  <ion-item menu-close ng-click="fblogin()" ng-show="noSessionStatus" class="bmd-spcl-listing">
@@ -46,6 +65,10 @@
         <ion-item menu-close ng-click="signup()" ng-show="noSessionStatus" class="bmd-spcl-listing">
           Sign Up
         </ion-item>
+
+<a href="signup2.html">
+          Sign Up
+      </a>
         <!-- <ion-item menu-close ng-click="reset()" ng-show="noSessionStatus" class="bmd-spcl-listing">
           Reset Password
         </ion-item> -->
