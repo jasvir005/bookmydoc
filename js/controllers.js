@@ -324,7 +324,7 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
 
 
    $timeout(function() {
-    
+
   $scope.closelogin_two()
           }, 1100);
          
@@ -428,6 +428,10 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
             $ionicLoading.hide();
             $scope.closeLogin();
           }, 1000);
+           $timeout(function() {
+    
+  $scope.closelogin_two()
+          }, 1100);
           
         }else{
           $scope.loginError = $scope.loginDetails.error.status;
