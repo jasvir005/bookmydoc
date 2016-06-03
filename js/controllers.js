@@ -224,7 +224,6 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
         // $sessionStorage.userSession = response.data;
         // console.log($sessionStorage.SessionMessage);
         if($scope.loginDetails.error.status===false){
-          $sessionStorage.userSession = response.data;
           $scope.userSession = response.data;
           $scope.userSessionStatus = true;
           $scope.AppointmentDetails.details = true;
@@ -320,8 +319,16 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
           $timeout(function() {
             $ionicLoading.hide();
             $scope.closeLogin();
+                    
           }, 1000);
-          
+
+
+   $timeout(function() {
+    
+  $scope.closelogin_two()
+          }, 1100);
+         
+          //alert('dfdfde');
         }else{
           $scope.loginError = $scope.loginDetails.error.status;
           $scope.loginErrorMsg = $scope.loginDetails.error.msg;

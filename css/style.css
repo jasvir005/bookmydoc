@@ -829,3 +829,12 @@ width: 100%;
     text-align: center;
     width: 90%;
 }
+ 
+.footerlog ion-item {
+    border: 1px solid #E48C08 !important;
+}
+
+.dont-have-accountflog a {
+    color: #fff;
+    text-decoration: none;
+}

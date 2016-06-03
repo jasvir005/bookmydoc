@@ -24,7 +24,6 @@
     <script src="js/powerange.min.js"></script>
 
 
-
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
@@ -32,7 +31,9 @@
     <script src="js/network.js"></script>
 
     <script src="js/facebookConnectPlugin.js"></script>
-
+    <div class="signup_back_btn">
+<a href="index.html#/app/bmd-home"> <img src="img/left_arrow.png"></p></a>
+</div>
 <div class="bmd-title-logo2">
 		<div class="head-img-txt">
       <img src="img/login_page.png">
@@ -88,10 +89,7 @@
 			<div class="bmd-usr2">
 			<input class="bmd-usr-input" name="password" type="password" ng-minlength="6" placeholder="Password" ng-model="signUpData.password" required>
 			</div>
-			<div class="btn-signup-right">
-<button class="bmd-main-btn-signup"  ng-click="submitted=true"><img src="img/right_arrow_sugnup.png"></button>
 
-</div>
 		</div>
 		<div class="line-brk"></div>
 	<!-- 	<div class="bmd-field error" ng-show="submitted  && signupform.password.$error.required">Password is required.</div> -->
@@ -144,6 +142,7 @@
 
 
 </div>
+<button ng-click="submitted=true" class="bmd-main-btn">Join now</button>
 	</form>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -156,7 +155,7 @@
     $( ".slider-wrapper2 .range-min" ).html( "" );
   $( ".slider-wrapper2 .range-max" ).prepend( "m50" );
    $( ".slider-wrapper2 .range-min" ).prepend( "0m" );
-    
+
    
 }); 
 
