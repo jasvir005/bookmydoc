@@ -132,7 +132,8 @@ console.log($scope.baseurl);
 
  };
    $scope.fblogin = function() {
- //alert('hi');
+   
+   alert('hi');
 
    facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
@@ -232,6 +233,11 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
             $ionicLoading.hide();
             $scope.closeLogin();
           }, 1000);
+
+
+             $timeout(function() {
+            $scope.closelogin_two();
+          }, 1100);
           
         }else{
           $scope.loginError = $scope.loginDetails.error.status;
@@ -319,16 +325,13 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
           $timeout(function() {
             $ionicLoading.hide();
             $scope.closeLogin();
-                    
           }, 1000);
+          
 
+           $timeout(function() {
+             $scope.closelogin_two();
+          }, 1000); 
 
-   $timeout(function() {
-
-  $scope.closelogin_two()
-          }, 1100);
-         
-          //alert('dfdfde');
         }else{
           $scope.loginError = $scope.loginDetails.error.status;
           $scope.loginErrorMsg = $scope.loginDetails.error.msg;
@@ -425,14 +428,9 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
           $scope.AppointmentDetails.details = true;
           $scope.noSessionStatus = false;
           $timeout(function() {
-            alert('hi');
             $ionicLoading.hide();
             $scope.closeLogin();
           }, 1000);
-           $timeout(function() {
-    
-  $scope.closelogin_two()
-          }, 1100);
           
         }else{
           $scope.loginError = $scope.loginDetails.error.status;
