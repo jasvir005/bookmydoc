@@ -387,7 +387,7 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
 
  $scope.Signud = function() {
   
-  alert('hi');
+  //alert('hi');
     $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
       });
