@@ -133,7 +133,10 @@ console.log($scope.baseurl);
  };
    $scope.fblogin = function() {
    
-   alert('hi');
+   
+   //alert('hi');
+
+
 
    facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
@@ -388,6 +391,7 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
  $scope.Signud = function() {
   
   //alert('hi');
+
     $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
       });
