@@ -231,8 +231,8 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
           $scope.noSessionStatus = false;
           $timeout(function() {
 
-            alert('hello');
-            
+            //alert('hello');
+
             $ionicLoading.hide();
             $scope.closeLogin();
           }, 1000);
@@ -240,7 +240,7 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 
              $timeout(function() {
             $scope.closelogin_two();
-          }, 1100);
+          }, 1001);
           
         }else{
           $scope.loginError = $scope.loginDetails.error.status;
