@@ -127,7 +127,7 @@
 .containerration {
  
   width: 100%;
-    border: 1px solid red;
+    
 }
 
     .js-decimal {
@@ -166,10 +166,22 @@
     width: 228px;
 }
 
+ .slider-wrapper2 {
+   
+       margin: 0 auto 27px;
+    width: 228px;
+}
+
 .price-range > p{
       text-align: center;
 }
 
+
+.price-range2 > p
+{
+  text-align: center;
+   width: 100%;
+}
 
 }
 
@@ -179,8 +191,53 @@
     margin: 0 auto;
     width: 228px;
 }
+.slider-wrapper2 {
+    margin: 0 auto 27px;
+    width: 228px;
+}
 .price-range > p {
     text-align: center;
+}
+.price-range2 > p {
+    text-align: center;
+     width: 100%;
+}
+
+}
+
+
+@media only screen and (min-width: 640px) {
+
+.slider-wrapper {
+    margin: 0 auto;
+    width: 400px;
+}
+ 
+.price-range {
+    margin-top: 11px;
+    text-align: center;
+    width: 64%;
+}
+
+.price-range2 {
+    margin-bottom: 25px;
+    margin-top: 31px;
+    text-align: center;
+    width: 76%;
+}
+
+
+
+.slider-wrapper2 {
+    margin: 0 auto 27px;
+    width: 400px;
+}
+.price-range > p {
+    text-align: center;
+}
+.price-range2 > p {
+    text-align: center;
+     width: 100%;
 }
 
 }
