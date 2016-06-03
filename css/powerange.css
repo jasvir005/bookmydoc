@@ -118,14 +118,15 @@
 
 
 .slider-wrapper {
-     margin: 23px 0 40px 56px;
-    position: relative;
+  
     width: 60%;
+    border: 1px solid red;
 }
 
 .containerration {
  
   width: 100%;
+    border: 1px solid red;
 }
 
     .js-decimal {
