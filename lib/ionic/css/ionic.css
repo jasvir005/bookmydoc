@@ -3888,8 +3888,8 @@ a.subdued {
   border-width: 0;
   border-style: solid;
   border-top: 1px solid transparent;
-  border-bottom: 1px solid #003F6F;
-  background-color: #003F6F;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
   /* border-width: 1px will actually create 2 device pixels on retina */
   /* this nifty trick sets an actual 1px border on hi-res displays */
   background-size: 0; }
@@ -5644,16 +5644,16 @@ ion-tabs.tabs-color-active-dark .tab-item {
  * --------------------------------------------------
  */
 .item {
-/*  border-color: #ddd;
+  border-color: #ddd;
   background-color: #fff;
-  color: #444;*/
+  color: #444;
   position: relative;
   z-index: 2;
   display: block;
   margin: -1px;
   padding: 16px;
-  /*border-width: 1px;*/
-  /*border-style: solid;*/
+  border-width: 1px;
+  border-style: solid;
   font-size: 16px; }
   .item h2 {
     margin: 0 0 2px 0;
@@ -7759,7 +7759,7 @@ input[type="file"] {
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #ffffff; }
+  color: #aaaaaa; }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
@@ -9358,8 +9358,8 @@ a.button {
  * Content Padding
  * --------------------------------------------------
  */
-/*.padding {
-  padding: 10px; }*/
+.padding {
+  padding: 10px; }
 
 .padding-top,
 .padding-vertical {
