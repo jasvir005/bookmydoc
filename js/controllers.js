@@ -106,6 +106,7 @@ console.log($scope.baseurl);
   };
   
 
+
   $scope.login_two = function() {
     //alert('hi')
   $scope.login_twoe.show();
