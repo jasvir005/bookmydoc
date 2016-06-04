@@ -358,6 +358,7 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
         method: "GET",
         params: {'signUpData': $scope.signUpData},
       }).then(function mySucces(response) {
+        
           $scope.signupDetails = response.data; 
           $scope.signupError = $scope.signupDetails.status;
           $scope.signupMessage = $scope.signupDetails.msg;

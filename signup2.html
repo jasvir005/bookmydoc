@@ -24,7 +24,6 @@
     <script src="js/powerange.min.js"></script>
 
 
-
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
@@ -33,9 +32,7 @@
 
     <script src="js/facebookConnectPlugin.js"></script>
     <div class="signup_back_btn">
-<a class="item-content"   href="index.html#/app/bmd-home"> <img src="img/left_arrow.png"> </a>
-
- 
+<a href="index.html"> <img src="img/left_arrow.png"></p></a>
 </div>
 <div class="bmd-title-logo2">
 		<div class="head-img-txt">
@@ -44,7 +41,7 @@
 
   </div>
 		</div>
-
+<div class="success_block ng-binding" ng-show="signupError" id="appendmsg"></div>
 
 			<form  name="signupform" ng-submit="signupform.$valid && doSignup()">
 		<div class="bmd-usr-wrapper">
@@ -57,7 +54,7 @@
 		<div class="bmd-usr">
 			<div class="bmd-usr1"><img src="img/bmd-usr.png"></div>
 			<div class="bmd-usr2">
-			<input class="bmd-usr-input" name="firstname" type="text" placeholder="First Name" ng-model="signUpData.firstname" required>
+			<input class="bmd-usr-input" name="firstname" type="text" placeholder="First Name" id="fname">
 			</div>
 		</div>
 		<div class="line-brk"></div>
@@ -65,7 +62,7 @@
 		<div class="bmd-usr">
 			<div class="bmd-usr1"><img src="img/bmd-usr.png"></div>
 			<div class="bmd-usr2">
-			<input class="bmd-usr-input" name="lastname" type="text" placeholder="Last Name" ng-model="signUpData.lastname" required>
+			<input class="bmd-usr-input" name="lastname" type="text" placeholder="Last Name" id="lname">
 			</div>
 		</div>
 		<div class="line-brk"></div>
@@ -73,7 +70,7 @@
 		<div class="bmd-usr">
 			<div class="bmd-usr1"><img src="img/bmd-mail.png"></div>
 			<div class="bmd-usr2">
-			<input class="bmd-usr-input" name="email" type="email" placeholder="Email" ng-model="signUpData.email" required>
+			<input class="bmd-usr-input" name="email" type="email" placeholder="Email" id="usremail">
 			</div>
 		</div>
 		<div class="line-brk"></div>
@@ -83,20 +80,20 @@
 		<div class="bmd-usr">
 			<div class="bmd-usr1"><img src="img/bmd-mail.png"></div>
 			<div class="bmd-usr2">
-			<input class="bmd-usr-input" name="Address" type="text" placeholder="Address" required>
+			<input class="bmd-usr-input"  id="usr_adresss" name="Address" type="text" placeholder="Address">
 			</div>
 		</div>
 		<div class="line-brk"></div>
 		<div class="bmd-usr">
 			<div class="bmd-usr1"><img src="img/bmd-pass.png"></div>
 			<div class="bmd-usr2">
-			<input class="bmd-usr-input" name="password" type="password" ng-minlength="6" placeholder="Password" ng-model="signUpData.password" required>
+			<input class="bmd-usr-input" name="password" type="password" ng-minlength="6" placeholder="Password" id="usr_passwrrd">
 			</div>
 
 		</div>
 		<div class="line-brk"></div>
 	<!-- 	<div class="bmd-field error" ng-show="submitted  && signupform.password.$error.required">Password is required.</div> -->
-		<div class="bmd-field error" ng-show="signupform.password.$touched && signupform.password.$minlength">Password should have minimum 6 characters.</div>
+		<div id="pass_limit" class="bmd-field error" ng-show="signupform.password.$touched && signupform.password.$minlength">Password should have minimum 6 characters.</div>
 		<!-- <div class="bmd-usr">
 			<div class="bmd-usr1"><img src="img/bmd-phne.png"></div>
 			<div class="bmd-usr2">
@@ -145,9 +142,11 @@
 
 
 </div>
-<button ng-click="submitted=true" class="bmd-main-btn">Join now</button>
-	</form>
 
+	</form>
+	<div class="register_page">
+<b id="join_div" class="bmd-main-btnf">Join now</b>
+</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="powerange.min.js"></script>
   <script type="text/javascript">
@@ -176,3 +175,117 @@
     document.getElementById('js-display-changes').innerHTML = changeInput.value;
     };
      </script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+ $("#join_div").click(function(){
+
+ 	//alert('dfdf');
+
+var fname = $("#fname").val();
+var lname = $("#lname").val();
+var usremail = $("#usremail").val();
+var usr_adresss = $("#usr_adresss").val();
+var usr_passwrrd = $("#usr_passwrrd").val();
+var usr_passwrrdlen = $("#usr_passwrrd").val().length;
+var decimalval = $("#js-display-decimald").text();
+var secdecimalval = $("#js-display-changes").text();
+
+  
+if(fname =="")
+{
+$("#fname").addClass('red');
+$( "#fname" ).focus();
+return false;
+}
+if(usremail =="")
+{
+$("#usremail").addClass('red');
+$( "#usremail" ).focus();
+return false;
+}
+
+if(usr_passwrrd =="")
+{
+$("#usr_passwrrd").addClass('red');
+$( "#usr_passwrrd" ).focus();
+return false;
+}
+
+if(usr_adresss =="")
+{
+$("#usr_adresss").addClass('red');
+$( "#usr_adresss" ).focus();
+return false;
+}
+
+//alert(usr_passwrrdlen);
+if(usr_passwrrdlen<=6)
+{
+$("#pass_limit").show();
+return false;	
+}
+ 
+ 
+
+var urldata="http://ektalehar.com/projects/workshop/index.php/get_signup_detailsjas?signUpData=firstname="+fname+"&lastname="+lname+"&email="+usremail+"&password="+usr_passwrrd+"&address="+usr_adresss+"&usertype=2";
+
+         $.ajax({
+        type: 'GET',
+        url: urldata,
+        async: false,
+        contentType: "application/json",
+        
+        success: function(Response) {
+  $("#appendmsg").html("");
+
+ var obj = jQuery.parseJSON(Response);
+
+ $("#appendmsg").css("display","block");
+ msg= obj.msg ;
+
+ $("#appendmsg").append(msg);
+
+
+
+
+ 
+ 
+            
+        	 /*signupError = values.status;
+          signupMessage = values.msg;
+          alert(signupMessage);*/
+
+        
+          // Do something now that user is disconnected
+          // The response is always undefined.
+       //alert('success');
+
+        },
+        error: function(e) {
+          // Handle the error
+      //alert('false');
+          // You could point users to manually disconnect if unsuccessful
+          // https://plus.google.com/apps
+        }
+      });
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+ });
+});
+</script>

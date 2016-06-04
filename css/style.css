@@ -849,3 +849,21 @@ width: 100%;
 .signup_back_btn {
     padding: 2%;
 }
+
+.bmd-usr-input.red {
+    border: 1px solid red;
+}
+#pass_limit
+{
+  display: none;
+}
+.register_page {
+    background: #ffc000 none repeat scroll 0 0;
+ 
+    border-radius: 31px;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px;
+    text-align: center;
+}
+#appendmsg{display:none;}
