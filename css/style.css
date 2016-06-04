@@ -828,6 +828,7 @@ width: 100%;
      margin-top: 11px;
     text-align: center;
     width: 90%;
+    
 }
  
 .footerlog ion-item {
@@ -837,4 +838,14 @@ width: 100%;
 .dont-have-accountflog a {
     color: #fff;
     text-decoration: none;
+}
+
+.dont-have-accountflog a {
+   
+    padding: 7px;
+    
+}
+
+.signup_back_btn {
+    padding: 2%;
 }
