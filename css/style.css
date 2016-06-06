@@ -867,3 +867,25 @@ width: 100%;
     text-align: center;
 }
 #appendmsg{display:none;}
+#user_login {
+    background: #FE9901 none repeat scroll 0 0;
+    border: 1px solid #FE9901;
+    color: #fff;
+    width: 54%;
+}
+.user_login-div {
+    margin: 0 auto;
+     padding-top: 84px;
+    background: #003F6F none repeat scroll 0 0;
+     text-align: center;
+}
+#user_icon-img
+{
+       margin: 0;
+    padding: 0;
+    width: 12%;
+}
+#user_icon-img >img
+{
+   width: 100%;
+}
