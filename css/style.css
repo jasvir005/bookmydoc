@@ -38,7 +38,7 @@
 .bmd-forward{width:20%;text-align:right;padding-top: 10px;}
 .bmd-spclity-head{text-align-left;width:100%;font-size: 15px;padding-left: 13px;padding-top: 5px;}
 .bmd-spcl-list{}
-.bmd-spcl-listing{/*border-bottom:1px solid #aaaaaa;*/ text-align: center;color:#f3f3f3;font-size: 18px;padding: 10px;background: transparent;}
+.bmd-spcl-listing{border:1px solid #002C5B; text-align: center;color:#f3f3f3;font-size: 18px;padding: 10px;background: transparent;font-family: helvetica;}
 .bmd-spcl-listing:hover{background:#e48c08 !important;color:#fff !important;}
 .bmd-title-logo{text-align:center;padding-top: 0px;padding-bottom: 25px;}
 .bmd-title-logo2{text-align:center;padding-top: 0px;padding-bottom: 25px;padding-top: 25px;}
@@ -472,7 +472,7 @@ width: 100%;}
     font-weight: 700;
 */
 color: #fff;
-font-family: Arial !important;
+font-family: helvetica !important;
 font-size: 37px;
 font-weight: 700;
 margin-bottom: 50px;
@@ -604,7 +604,7 @@ width: 100%;
 .content-pehralog p {
    color: #c7d5df;
     float: left;
-    font-family: "Segoe UI";
+      font-family: helvetica;
     font-size: 17px;
     width: 100%;
 }
@@ -669,7 +669,9 @@ width: 100%;
 }
 
 .login-introflog > p {
- color: #c7d5df;
+   color: #c7d5df;
+    font-family: helvetica;
+    font-size: 17px;
     margin-bottom: 31px;
     margin-top: 32px;
     text-align: center;
@@ -697,11 +699,13 @@ width: 100%;
     color: #fff;
     font-size: 16px;
     font-weight: 900;
+      font-family: helvetica;
 }
 
 .login-btn-facebookflog button {
     background: #567CC6 none repeat scroll 0 0;
     color: #fff;
+     font-family: helvetica;
 }
 
 
@@ -813,7 +817,7 @@ width: 100%;
  
 }
 .menu {
-    background-color: #636a6a !important;
+    background-color:#002c5b !important;
     }
     .button.button-icon.button-clear.ion-navicon
     {
@@ -938,4 +942,7 @@ width: 100%;
 }
 .login-user-div {
     margin-top: 40px;
+}
+.social_icons > img {
+    width: 18%;
 }
