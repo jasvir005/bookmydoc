@@ -81,4 +81,8 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <icon src="www/res/img/icon.png" platform="android" density="ldpi" />
+<icon src="www/res/img/icon.png" platform="android" density="mdpi" />
+<icon src="www/res/img/icon.png" platform="android" density="hdpi" />
+<icon src="www/res/img/icon.png" platform="android" density="xhdpi" />
 </widget>
