@@ -892,7 +892,3 @@ width: 100%;
 .button.button-icon.button-clear.ion-navicon {
     display: none;
 }
- 
-.has-header {
-    top: 8px !important;
-}
