@@ -534,7 +534,7 @@ background: #003F6F;
 {
 
 margin: 0 auto;
-width: 69%;
+width: 30%;
 margin-bottom: 0px;
 
 }
@@ -931,8 +931,8 @@ width: 100%;
     width: 100%;
 }
 .head_img_pro {
-    margin: 0 auto;
-    width: 50%;
+      margin: 27px auto 24px;
+    width: 33%;
      
 }
 .login-user-div {
@@ -948,7 +948,8 @@ width: 100%;
 }
 
 .social_icons a img {
-    width: 12%;
+      padding: 10px;
+    width: 20%;
 }
 .bmd-usr2 input
 {
