@@ -708,10 +708,10 @@ width: 100%;
 
 
 .word-outflog {
-    color: #fff;
-    font-family: Arial;
-    font-size: 32px;
-    font-weight: 700;
+      color: #fff;
+    font-family: "Segoe UI";
+    font-size: 47px;
+    font-weight: 600;
 }
 
 .common-button.button.button-positive.button-clear.button_text.ion-chevron-left.txt-color-black {
@@ -880,7 +880,7 @@ width: 100%;
 }
 .user_login-div {
     margin: 0 auto;
-     padding-top: 74px;
+     padding-top: 64px;
     background: #003F6F none repeat scroll 0 0;
      text-align: center;
 }
