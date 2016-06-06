@@ -810,12 +810,7 @@ width: 100%;
     width: 84%;
 }
 
-
-.list {
  
-    padding-top: 164px !important;
- 
-}
 .menu {
     background-color:#002c5b !important;
     }
@@ -945,4 +940,13 @@ width: 100%;
 }
 .social_icons > img {
     width: 18%;
+}
+
+.social_icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social_icons a img {
+    width: 12%;
 }
