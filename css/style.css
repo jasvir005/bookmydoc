@@ -39,7 +39,7 @@
 .bmd-spclity-head{text-align-left;width:100%;font-size: 15px;padding-left: 13px;padding-top: 5px;}
 .bmd-spcl-list{}
 .bmd-spcl-listing{/*border-bottom:1px solid #aaaaaa;*/ text-align: center;color:#f3f3f3;font-size: 18px;padding: 10px;background: transparent;}
-.bmd-spcl-listing:hover{background:#ca1f53 !important;color:#fff !important;}
+.bmd-spcl-listing:hover{background:#e48c08 !important;color:#fff !important;}
 .bmd-title-logo{text-align:center;padding-top: 0px;padding-bottom: 25px;}
 .bmd-title-logo2{text-align:center;padding-top: 0px;padding-bottom: 25px;padding-top: 25px;}
 /*.bmd-title-logo img{    width: 200px;height: 65px;}*/
@@ -868,10 +868,15 @@ width: 100%;
 }
 #appendmsg{display:none;}
 #user_login {
-    background: #FE9901 none repeat scroll 0 0;
-    border: 1px solid #FE9901;
+ background: #fe9901 none repeat scroll 0 0;
+    border: 1px solid #fe9901;
     color: #fff;
-    width: 54%;
+    font-family: helvetica;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    padding: 11px;
+    width: 92%;
 }
 .user_login-div {
     margin: 0 auto;
