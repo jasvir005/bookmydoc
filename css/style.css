@@ -575,7 +575,7 @@ width: 100%;
 .content-pehralog p {
     color: #c7d5df;
     float: left;
-    font-family: arial;
+    font-family: Helvetica;
     font-size: 14px;
     width: 100%;
 }
@@ -875,7 +875,7 @@ width: 100%;
 }
 .user_login-div {
     margin: 0 auto;
-     padding-top: 111px;
+     padding-top: 74px;
     background: #003F6F none repeat scroll 0 0;
      text-align: center;
 }
