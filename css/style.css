@@ -519,8 +519,28 @@ background: #003F6F;
   margin: 0;
 }
 .main-containerlog{
+/*  border:1px solid #000;*/
+  overflow: hidden;
  
 }
+.main-containerlog .head_img_pro
+{
+
+margin: 0 auto;
+width: 69%;
+margin-bottom: 0px;
+
+}
+
+.main-containerlog .word-out {
+color: #fff;
+font-family: Arial;
+font-size: 48px;
+font-weight: 700;
+margin-bottom: 50px;
+}
+
+
 .containerlog{
 width: 80%;
 margin: auto;
@@ -540,6 +560,7 @@ width: 100%;
 color: #fff;
 font-size: 26px;
 font-weight: 100 !important;
+
 }
 .image-contentlog {
  
@@ -568,9 +589,10 @@ margin: 0px;
 .content-pehralog 
 {
 float: left;
-margin: 0px;
+  margin: 0 0 52px;
 text-align: center;
 width: 100%;
+
 }
 .content-pehralog p {
     color: #c7d5df;
@@ -689,7 +711,7 @@ width: 100%;
 }
 .head-img-txtflog img {
     margin-bottom: 18px;
-    margin-top: 18px;
+    
 }
 
 
@@ -712,6 +734,7 @@ width: 100%;
     font-family: "Segoe UI";
     font-size: 47px;
     font-weight: 600;
+      margin-bottom: 43px;
 }
 
 .common-button.button.button-positive.button-clear.button_text.ion-chevron-left.txt-color-black {
@@ -896,4 +919,13 @@ width: 100%;
 }
 .button.button-icon.button-clear.ion-navicon {
     display: none;
+}
+
+.head_img_pro > img {
+    width: 100%;
+}
+.head_img_pro {
+    margin: 0 auto;
+    width: 50%;
+     
 }
