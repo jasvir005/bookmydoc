@@ -893,3 +893,6 @@ width: 100%;
     display: none;
 }
  
+.has-header {
+    top: 8px !important;
+}
