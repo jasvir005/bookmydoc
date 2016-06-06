@@ -466,10 +466,17 @@ width: 100%;}
 }
 
 .word-out {
-    color: #fff;
-    font-family: "Segoe UI";
-    font-size: 32px;
+/* color: #fff;
+    font-family: Arial;
+    font-size: 37px;
     font-weight: 700;
+*/
+color: #fff;
+font-family: Arial !important;
+font-size: 37px;
+font-weight: 700;
+margin-bottom: 50px;
+
 }
 
 
@@ -534,7 +541,7 @@ margin-bottom: 0px;
 
 .main-containerlog .word-out {
 color: #fff;
-font-family: Arial;
+/*font-family: Arial;*/
 font-size: 37px;
 font-weight: 700;
 margin-bottom: 50px;
