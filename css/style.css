@@ -38,7 +38,14 @@
 .bmd-forward{width:20%;text-align:right;padding-top: 10px;}
 .bmd-spclity-head{text-align-left;width:100%;font-size: 15px;padding-left: 13px;padding-top: 5px;}
 .bmd-spcl-list{}
-.bmd-spcl-listing{border:1px solid #002C5B; text-align: center;color:#f3f3f3;font-size: 18px;padding: 15px;background: transparent;font-family: helvetica;}
+.bmd-spcl-listing{
+     font-family: 'helvetica';
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+     font-weight: normal;
+    font-style: normal;
+  border:1px solid #002C5B; text-align: center;color:#f3f3f3;font-size: 18px;padding: 15px;background: transparent;font-family: helvetica;}
 .bmd-spcl-listing:hover{background:#e48c08 !important;color:#fff !important;}
 .bmd-title-logo{text-align:center;padding-top: 0px;padding-bottom: 25px;}
 .bmd-title-logo2{text-align:center;padding-top: 0px;padding-bottom: 0px;padding-top: 0px;}
@@ -476,6 +483,14 @@ font-family: helvetica !important;
 font-size: 37px;
 font-weight: 700;
 margin-bottom: 50px;
+ font-family: 'fontawesome';
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+      src:url('fonts/fontawesome-webfont.otf');
+       
+    font-weight: normal;
+    font-style: normal;
 
 }
 
@@ -546,7 +561,17 @@ margin-bottom: 0px;
     font-weight: 700;
     margin-bottom: 34px;
     margin-top: 13px;
+
+     font-family: 'fontawesome';
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+      src:url('fonts/fontawesome-webfont.otf');
+       
+    font-weight: normal;
+    font-style: normal;
 }
+ 
 
 
 .containerlog{
@@ -608,6 +633,14 @@ width: 100%;
       font-family: helvetica;
     font-size: 17px;
     width: 100%;
+
+        font-family: 'helvetica';
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+     font-weight: normal;
+    font-style: normal;
+      
 }
 .radiolog {
     float: left;
@@ -642,6 +675,7 @@ width: 100%;
     font-family: Trebuchet MS;
     font-size: 20px;
     font-weight: 700;
+
 }
 
 
@@ -746,6 +780,17 @@ width: 100%;
     
     font-size: 37px;
     font-weight: 600;
+
+    font-family: 'helvetica';
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+      
+       
+    font-weight: normal;
+    font-style: normal;
+
+      
       
 }
 
@@ -910,11 +955,17 @@ width: 100%;
     border: 1px solid #fe9901;
     color: #fff;
     font-family: helvetica;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 800;
     letter-spacing: 3px;
-    padding: 11px;
-    width: 92%;
+    padding: 7px;
+    width: 90%;
+       font-family: 'helvetica';
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+     font-weight: normal;
+    font-style: normal;
 }
 .user_login-div {
     margin: 0 auto;
@@ -922,12 +973,12 @@ width: 100%;
     background: #003F6F none repeat scroll 0 0;
      text-align: center;
 }
-#user_icon-img
+/*#user_icon-img
 {
        margin: 0;
     padding: 0;
     width: 12%;
-}
+}*/
 #user_icon-img >img
 {
    width: 100%;
