@@ -541,13 +541,11 @@ margin-bottom: 0px;
 }
 
 .main-containerlog .word-out {
-color: #fff;
-/*font-family: Arial;*/
-
- margin-top: 13px;
-font-size: 37px;
-font-weight: 700;
-margin-bottom: 34px;
+   color: #fff;
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 34px;
+    margin-top: 13px;
 }
 
 
@@ -599,7 +597,7 @@ margin: 0px;
 .content-pehralog 
 {
 float: left;
-  margin: 0 0 52px;
+  margin: 0 0 24px;
 text-align: center;
 width: 100%;
 
@@ -970,7 +968,7 @@ width: 100%;
 }
 .bmd-usr2 input
 {
- margin-top: 3%;
+ margin-top: 0px;
 }
 
 .bmd-title-logo2 .head_img_pro
@@ -987,4 +985,13 @@ width: 100%;
 #signup-2 .bmd-usr1{padding: 12px;}
 #signup-2 .bmd-usr2 input {
     margin-top: 0;
+}
+.signup-pge-dsgn .head_img_pro
+{
+     margin: 26px auto 32px;
+    width: 24%;
+}
+.signup-pge-dsgn .bmd-title-logo
+{
+   padding-bottom: 0px;
 }
