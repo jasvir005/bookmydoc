@@ -745,7 +745,7 @@ width: 100%;
 
 .word-outflog {
       color: #fff;
-    font-family: "Segoe UI";
+    
     font-size: 37px;
     font-weight: 600;
       
@@ -807,7 +807,7 @@ width: 100%;
 }
 
 .head-img-txtflogd {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #998799;
     margin: 21px auto 40px;
     text-align: center;
     width: 84%;
