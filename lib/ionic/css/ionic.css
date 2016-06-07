@@ -3508,7 +3508,7 @@ ion-infinite-scroll {
 
 /* If you change these, change platform.scss as well */
 .has-header {
-  top: 6px !important; }
+  top: 0px !important; }
 
 .no-header {
   top: 0; }
@@ -3870,7 +3870,7 @@ a.subdued {
   display: -moz-box;
   display: -moz-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: none !important;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-user-select: none;
