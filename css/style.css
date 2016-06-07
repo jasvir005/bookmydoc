@@ -879,7 +879,14 @@ width: 100%;
 }
 
 .signup_back_btn {
-    padding: 2%;
+     height: 28px;
+
+}
+
+.signup_back_btn a {
+    float: left;
+    margin-left: 5px;
+    margin-top: 6px;
 }
 
 .bmd-usr-input.red {
@@ -891,12 +898,13 @@ width: 100%;
 }
 .register_page {
     background: #ffc000 none repeat scroll 0 0;
- 
-    border-radius: 31px;
+    border-radius: 8px;
     color: #fff;
     font-size: 18px;
+    margin: 0 auto;
     padding: 12px;
     text-align: center;
+    width: 50%;
 }
 #appendmsg{display:none;}
 #user_login {
@@ -926,9 +934,7 @@ width: 100%;
 {
    width: 100%;
 }
-.button.button-icon.button-clear.ion-navicon {
-    display: none;
-}
+ 
 
 .head_img_pro > img {
     width: 100%;
@@ -976,5 +982,9 @@ width: 100%;
 .bck-btn {
  
     height: 34px;
-    overflow: scroll;
+ 
+}
+#signup-2 .bmd-usr1{padding: 12px;}
+#signup-2 .bmd-usr2 input {
+    margin-top: 0;
 }

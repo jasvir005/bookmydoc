@@ -27,7 +27,7 @@
 
 <platform name="android">
     <!-- you can use any density that exists in the Android project -->
-    <icon src="res/icon/android/icon-72-hdpi.png"/>
+    <icon src="res/icon/android/72icon.png"/>
 
     <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-hdpi"/>
     <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-ldpi"/>
@@ -42,11 +42,11 @@
 
 <platform name="ios">
 
-    <icon src="res/icon/ios/icon.png" width="57" height="57"/>
-<icon src="res/icon/ios/icon-72.png" width="72" height="72"/>
-<icon src="res/icon/ios/icon-76.png" width="76" height="76"/>
-<icon src="res/icon/ios/icon-60-2x.png"  width="120" height="120"/>
-<icon src="res/icon/ios/icon-76-2x.png" width="152" height="152"/>
+    <icon src="res/icon/ios/57icon.png" width="57" height="57"/>
+<icon src="res/icon/ios/72icon.png" width="72" height="72"/>
+<icon src="res/icon/ios/76icon.png" width="76" height="76"/>
+<icon src="res/icon/ios/120icon.png"  width="120" height="120"/>
+<icon src="res/icon/ios/152icon.png" width="152" height="152"/>
 <!--icon src="res/icon/ios/iphone_180x180.png" width="180" height="180" /-->
     <!-- images are determined by width and height. The following are supported -->
     <splash src="res/screen/ios/screen-iphone-portrait.png" width="320" height="480"/>
