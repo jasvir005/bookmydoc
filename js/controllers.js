@@ -344,6 +344,12 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 
   };
 
+
+    $scope.loginmenuhidehide = function() {
+    $scope.loginmenuhideshow.hide();
+
+  };
+
   $scope.join = function() {
     $scope.modal.hide();
     $scope.signup_modal.show();
@@ -376,18 +382,25 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
           $timeout(function() {
             $ionicLoading.hide();
             $scope.closeLogin();
+            $scope.closelogin_two();
+            //alert('dfdf');
           }, 1000);
           
+         
+         /*  $timeout(function() {
 
-           $timeout(function() {
-             $scope.closelogin_two();
-          }, 1000); 
+             //$scope.closelogin_two();
+
+
+          }, 1000); */
 
                  $timeout(function() {
 
              $scope.loginmenuhide();
+             $scope.loginmenuhidehide();
+             
 
-          }, 1001); 
+          }, 1000);  
 
 
 

@@ -1067,3 +1067,7 @@ width: 100%;
 .button.button-icon.button-clear.ion-navicon {
     display: none;
 }
+#endhover:hover {
+    background: #002C5B none repeat scroll 0 0 !important;
+    color: #fff !important;
+}
