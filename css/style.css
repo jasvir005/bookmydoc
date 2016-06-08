@@ -131,9 +131,26 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {display: inline-block;margin: 4px;cursor: pointer;}
 .checkbox-custom-label, .radio-custom-label {position: relative;}
 .checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:5px;text-align: left;border: 1px solid #dcdcdc;display: inline-block;vertical-align: middle;width: 20px;height: 20px;margin-right: 10px;text-align: center;}
-.checkbox-custom:checked + .checkbox-custom-label:before {content: '⚫';font-family: 'helvetica';background: #fff;color: #F5A623;border:1px solid #F5A623;}
+.checkbox-custom:checked + .checkbox-custom-label:before {
+ font-family: 'helvetica';
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+      src:url('fonts/fontawesome-webfont.otf');
+        color: #f5a623 !important;
+    font-weight: normal;
+    font-style: normal;
+  content: '⚫';font-family: 'helvetica';background: #fff;color: #F5A623;border:1px solid #F5A623;}
 .radio-custom + .radio-custom-label:before {border-radius: 50%;}
-.radio-custom:checked + .radio-custom-label:before {content: '⚫';font-family: 'helvetica';color: #ca1f53;}
+.radio-custom:checked + .radio-custom-label:before {
+  src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+      src:url('fonts/fontawesome-webfont.otf');
+        color: #f5a623 !important;
+    font-weight: normal;
+    font-style: normal;
+  content: '⚫';font-family: 'helvetica';color: #ca1f53;}
 .bmd-appnmnt1{color:#fff;text-align: left;}
 .bmd-appnmnt1 p{color:#fff;}
 .bmd-appmnt-content-details h4{text-align:left;color:#fff;margin:0px;}
