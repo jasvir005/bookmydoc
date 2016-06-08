@@ -68,6 +68,28 @@ console.log($scope.baseurl);
 
 
 
+  $ionicModal.fromTemplateUrl('templates/hidemenu.html', {
+    scope: $scope,
+    caching: false
+  }).then(function(loginmenuhideshow) {
+    $scope.loginmenuhideshow = loginmenuhideshow;
+  }); 
+
+    $ionicModal.fromTemplateUrl('templates/hidemmainmenu.html', {
+    scope: $scope,
+    caching: false
+  }).then(function(hidemmainmenu) {
+    $scope.hidemmainmenu = hidemmainmenu;
+  }); 
+
+
+
+
+
+  
+
+
+
 
   
 
@@ -75,6 +97,15 @@ console.log($scope.baseurl);
   $scope.closeLogin = function() {
     $scope.modal.hide();
   };
+
+   $scope.closemenulogo = function() {
+  $scope.loginmenuhideshow.hide();
+    $scope.menuhide();
+ // alert('dfdf');
+  };
+
+
+
   $scope.closeSignup = function() {
     $scope.signup_modal.hide();
   };
@@ -99,6 +130,13 @@ console.log($scope.baseurl);
     $scope.modal.show();
   };
 
+
+
+
+ $scope.menuhide = function() {
+   //alert('hi');
+  $scope.hidemmainmenu.show();
+  };
 
  $scope.loginw = function() {
     //alert('hi');
@@ -299,6 +337,13 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
   $scope.doc_modal = function() {
     $scope.doc_modal.show();
   };
+
+
+   $scope.loginmenuhide = function() {
+    $scope.loginmenuhideshow.show();
+
+  };
+
   $scope.join = function() {
     $scope.modal.hide();
     $scope.signup_modal.show();
@@ -337,6 +382,16 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
            $timeout(function() {
              $scope.closelogin_two();
           }, 1000); 
+
+                 $timeout(function() {
+
+             $scope.loginmenuhide();
+
+          }, 1001); 
+
+
+
+           
 
         }else{
           $scope.loginError = $scope.loginDetails.error.status;
@@ -379,10 +434,13 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
     }
 
     $scope.Logout = function() {
+
       $sessionStorage.userSession = '';
       $scope.userSessionStatus = false;
       $scope.noSessionStatus = true;
       $window.location.href = '#/app/bmd-home';
+          $scope.closemenulogo();
+
     }
 
 
