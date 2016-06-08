@@ -438,7 +438,7 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
       $sessionStorage.userSession = '';
       $scope.userSessionStatus = false;
       $scope.noSessionStatus = true;
-      $window.location.href = '#/app/bmd-home';
+      $window.location.href = 'index.html';
           $scope.closemenulogo();
 
     }
