@@ -552,6 +552,11 @@ margin-bottom: 50px;
 .line-brk {
     border-bottom: 1px solid #224765;
 }
+
+.left-arow > img {
+    padding: 5px;
+}
+
 .bar
 {
 
@@ -1334,4 +1339,8 @@ width: 100%;
 }
 .filter-page-contant .language-icon > img {
     width: 100%;
+}
+
+.common-button.button.button-positive.button-clear.button_text.icon.ion-navicon.txt-color-black {
+    color: #fff !important;
 }

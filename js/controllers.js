@@ -111,6 +111,11 @@ console.log($scope.baseurl);
   $scope.closeSignup = function() {
     $scope.signup_modal.hide();
   };
+
+ $scope.closefilterpage = function() {
+   $scope.filterpage.hide();
+  };
+
   $scope.closeForgot = function() {
     $scope.reset_modal.hide();
   };
@@ -305,24 +310,12 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
         }
     });
 
-     
-     
-
-         
-
+ 
  $ionicLoading.hide({
         template: '<img  src="img/loading.gif" />'
       });
        
-
-        
-
-
-
-
-
-
-        //alert(response);
+//alert(response);
       
       }); 
  
@@ -399,16 +392,10 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
 
 
 $document.ready(function(){
-  $(document).ready(function (){
-  //alert('hi');
- $( ".slider-wrapper .range-max" ).prepend( "$" );
-   $( ".slider-wrapper2 .range-max" ).html( "" );
-    $( ".slider-wrapper2 .range-min" ).html( "" );
-  $( ".slider-wrapper2 .range-max" ).prepend( "m50" );
-   $( ".slider-wrapper2 .range-min" ).prepend( "0m" );
 
-   
-}); 
+  
+  //alert('hi');
+
 
  var dec = document.querySelector('.js-decimal');
     var initDec = new Powerange(dec, { decimal: false, callback: displayDecimalValue, max: 250, start: 0 });
@@ -513,7 +500,17 @@ $(".first-star4 img").attr('src',"img/fourth_img.png");
 });
 
   
-  
+
+    $( ".slider-wrapper .range-max" ).html( "" );
+    $( ".slider-wrapper .range-max" ).prepend( "$250" );
+    $( ".slider-wrapper2 .range-min" ).html( "" );
+    $( ".slider-wrapper2 .range-min" ).append( "0m" );
+    $( ".slider-wrapper2 .range-max" ).html( "" );
+    $( ".slider-wrapper2 .range-max" ).append( "50m" );
+ 
+
+
+
 
 });
            $scope.filterpa();
