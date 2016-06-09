@@ -27,16 +27,16 @@
 }
 
 .range-handle {
-  background-color: #fff;
+   background-color: #fff;
     border: 1px solid #fff;
     border-radius: 45%;
-    box-shadow: 0 0 0 3px #db8404;
+    box-shadow: 0 0 0 4px #db8404;
     cursor: move;
-    height: 6px;
+    height: 10px;
     left: 0;
     position: absolute;
     top: 0;
-    width: 6px;
+    width: 10px;
 
 
 

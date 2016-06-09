@@ -1224,10 +1224,10 @@ width: 100%;
     z-index: 9999 !important;
 }
 .filter-page-contant .range-bar {
-    background-color: #a8aeb5;
+      background-color: #a8aeb5;
     border-radius: 15px;
     display: block;
-    height: 6px;
+    height: 8px;
     position: relative;
     width: 100%;
 }
