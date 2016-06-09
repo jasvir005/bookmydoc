@@ -75,6 +75,18 @@ console.log($scope.baseurl);
     $scope.loginmenuhideshow = loginmenuhideshow;
   }); 
 
+    $ionicModal.fromTemplateUrl('templates/filter.html', {
+    scope: $scope,
+    caching: false
+  }).then(function(filterpage) {
+    $scope.filterpage = filterpage;
+  }); 
+
+
+
+
+  
+
     $ionicModal.fromTemplateUrl('templates/hidemmainmenu.html', {
     scope: $scope,
     caching: false
@@ -169,6 +181,17 @@ console.log($scope.baseurl);
   alert('comming soon');
 
  };
+
+  $scope.filterpa = function() {
+
+ $scope.filterpage.show();
+
+ };
+
+
+
+
+
    $scope.fblogin = function() {
    
    
@@ -383,6 +406,9 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
             $ionicLoading.hide();
             $scope.closeLogin();
             $scope.closelogin_two();
+
+           $scope.filterpa();
+
             //alert('dfdf');
           }, 1000);
           
