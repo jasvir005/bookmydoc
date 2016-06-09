@@ -27,7 +27,7 @@
 .theme-bg { background-color: #003f6f;}
 /*.theme-bg{background:#c81e51 url(../img/main.png) !important;background-repeat: no-repeat !important;background-position: center !important;}*/
 /*.bmd-spcl-theme{background:#f3f3f3 url(../img/spclitylisting.png) !important;background-repeat: no-repeat;background-position: cover !important;background-repeat: no-repeat;}*/
-.bg-color-white{background-color:#ffffff !important;}
+ 
 .bmd-splash-bg{background:#ffffff url(../img/bmd-Splash-bg.png)!important;background-repeat: no-repeat !important;background-position:center !important;}
 .booked-bg{background:#ea6a91 !important;cursor: not-allowed !important;}
 .slct-bg{background:#ca1f53 !important;}
@@ -555,7 +555,7 @@ margin-bottom: 50px;
 .bar
 {
 
-  background: transparent none repeat scroll 0 0;
+  background: #003F6F;
     border-bottom: 0 solid #003f6f !important;
     border-top: 1px solid #003f6f !important;
 

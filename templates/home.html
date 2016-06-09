@@ -1,9 +1,10 @@
+
 <ion-view class="bar-stableb bg-color-white">
  
-	<ion-header-bar class="bar-stableb bg-color-white"  ng-hide="noSessionStatus">
+	<ion-header-bar class="bar-stableb bg-color-white" ng-hide="noSessionStatus">
 		<button menu-toggle="left" class="common-button button button-positive button-clear button_text icon ion-navicon txt-color-black"></button>
 	<!-- 	<div class="bmd-head"><img src="img/bmd-logo.png"></div> -->
-		<button class="common-button button button-positive button-clear button_text icon ion-android-more-vertical txt-color-black"></button>
+ 
 	</ion-header-bar>
  
 	<ion-content class="padding theme-bg" >
@@ -46,7 +47,6 @@
     </div>
 
     <div class="filter-page" ng-hide="noSessionStatus">
-Filter page in prosessing
 
 
 
@@ -65,6 +65,13 @@ Filter page in prosessing
  <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
     <false/>
 </gap:config-file>
+
+<style type="text/css">
+  
+  .bg-color-white {
+    background-color: #003f6f;
+}
+</style>
 
  
 
