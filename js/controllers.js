@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ["ngStorage"])
 
-.controller('AppCtrl', function($ionicHistory,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
+.controller('AppCtrl', function($ionicHistory,$document,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -94,17 +94,7 @@ console.log($scope.baseurl);
     $scope.hidemmainmenu = hidemmainmenu;
   }); 
 
-
-
-
-
-  
-
-
-
-
-  
-
+ 
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
     $scope.modal.hide();
@@ -407,6 +397,125 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
             $scope.closeLogin();
             $scope.closelogin_two();
 
+
+$document.ready(function(){
+  $(document).ready(function (){
+  //alert('hi');
+ $( ".slider-wrapper .range-max" ).prepend( "$" );
+   $( ".slider-wrapper2 .range-max" ).html( "" );
+    $( ".slider-wrapper2 .range-min" ).html( "" );
+  $( ".slider-wrapper2 .range-max" ).prepend( "m50" );
+   $( ".slider-wrapper2 .range-min" ).prepend( "0m" );
+
+   
+}); 
+
+ var dec = document.querySelector('.js-decimal');
+    var initDec = new Powerange(dec, { decimal: false, callback: displayDecimalValue, max: 250, start: 0 });
+
+ function displayDecimalValue() {
+    document.getElementById('js-display-decimald').innerHTML = dec.value;
+    }
+
+    var changeInput = document.querySelector('.js-check-change')
+    , initChangeInput = new Powerange(changeInput, { start: 0 });
+
+    changeInput.onchange = function() {
+    document.getElementById('js-display-changes').innerHTML = changeInput.value;
+    };
+
+
+        $(document).ready(function(){
+$(".first-star1").click(function(){
+    $(".norating").html("");
+
+$(".norating").append('<p class="countrating">1</p><img src="img/no-rating.png">');
+
+ 
+
+//$(".first-star1 img").attr('src',"second_img.png");
+ 
+$(".first-star2 img").attr('src',"img/second_img.png");
+$(".first-star3 img").attr('src',"img/third_img1.png");
+$(".first-star4 img").attr('src',"img/fourth_img.png");
+$(".first-star5 img").attr('src',"img/fifth_img.png");
+
+});
+
+$(".first-star2").click(function(){
+    $(".norating").html("");
+
+
+$(".norating").append('<p class="countrating">2</p><img src="img/no-rating.png">');
+
+//$(".first-star2 img").attr('src',"second_img.png");
+
+
+
+$(".first-star1 img").attr('src',"img/first_img.png");
+$(".first-star3 img").attr('src',"img/third_img1.png");
+$(".first-star4 img").attr('src',"img/fourth_img.png");
+$(".first-star5 img").attr('src',"img/fifth_img.png");
+
+
+});
+
+$(".first-star3").click(function(){
+        $(".norating").html("");
+
+
+$(".norating").append('<p class="countrating">3</p><img src="img/no-rating.png">');
+
+ 
+
+//$(".first-star3 img").attr('src',"second_img.png");
+
+$(".first-star1 img").attr('src',"img/first_img.png");
+$(".first-star2 img").attr('src',"img/second_img.png");
+$(".first-star4 img").attr('src',"img/fourth_img.png");
+$(".first-star5 img").attr('src',"img/fifth_img.png");
+
+
+});
+
+$(".first-star4").click(function(){
+        $(".norating").html("");
+
+
+$(".norating").append('<p class="countrating">4</p><img src="img/no-rating.png">');
+
+
+//$(".first-star4 img").attr('src',"second_img.png");
+
+$(".first-star1 img").attr('src',"img/first_img.png");
+$(".first-star2 img").attr('src',"img/second_img.png");
+$(".first-star3 img").attr('src',"img/third_img1.png");
+$(".first-star5 img").attr('src',"img/fifth_img.png");
+
+});
+
+
+$(".first-star5").click(function(){
+ 
+    $(".norating").html("");
+$(".norating").append('<p class="countrating">5</p><img src="img/no-rating.png">');
+
+ //$(".first-star5 img").attr('src',"second_img.png");
+
+$(".first-star1 img").attr('src',"img/first_img.png");
+$(".first-star2 img").attr('src',"img/second_img.png");
+$(".first-star3 img").attr('src',"img/third_img1.png");
+$(".first-star4 img").attr('src',"img/fourth_img.png");
+ 
+});
+ 
+ 
+});
+
+  
+  
+
+});
            $scope.filterpa();
 
             //alert('dfdf');
