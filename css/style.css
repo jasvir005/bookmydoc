@@ -2,6 +2,17 @@
 /*=== GENERAL-SETTINGS ===*/
 
 
+
+  @font-face {
+/*
+     font-family: 'helvetica';
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+     font-weight: normal;
+    font-style: normal;*/
+  }
+
 .mR25{margin-right:25px;}
 .border-none{border:none !important;}
 
@@ -39,6 +50,8 @@
 .bmd-spclity-head{text-align-left;width:100%;font-size: 15px;padding-left: 13px;padding-top: 5px;}
 .bmd-spcl-list{}
 .bmd-spcl-listing{
+
+
      font-family: 'helvetica';
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
@@ -542,10 +555,9 @@ margin-bottom: 50px;
 .bar
 {
 
-background-color: #003f6f !important;
-border-bottom: 1px solid #003F6F !important;
-border-top: 1px solid #003F6F !important;
-background: red none repeat scroll 0 0;
+  background: transparent none repeat scroll 0 0;
+    border-bottom: 0 solid #003f6f !important;
+    border-top: 1px solid #003f6f !important;
 
 }
 .head-img-txt > img {margin-bottom: 20px;}
@@ -715,8 +727,7 @@ width: 100%;
     text-align: center;
 }
 .login-introflog {
-    padding-left: 20px;
-    padding-right: 20px;
+
      color: #fff;
 }
 
@@ -893,14 +904,17 @@ width: 100%;
 
 
 
-.price-range2
+ .filter-page-contant .price-range2
 {
-     margin-bottom: 28px;
-    margin-top: 33px;
+   margin-bottom: 28px;
+    margin-top: 12px;
     text-align: center;
     width: 100%;
 }
 
+ .filter-page-contant .example {
+    border: 1px solid #e3e3ea;;
+}
 .price-range2 > p {
    color: #fff;
     font-family: arial;
@@ -1001,6 +1015,15 @@ width: 100%;
    width: 65%;
 }
  
+ .filter-page-contant .price-range2 > p {
+    color: #878787;
+    font-family: "helvetica";
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 24px;
+    text-align: left !important;
+    width: 100%;
+}
 
 .head_img_pro > img {
     width: 100%;
@@ -1070,4 +1093,248 @@ width: 100%;
 #endhover:hover {
     background: #002C5B none repeat scroll 0 0 !important;
     color: #fff !important;
+}
+
+.bar-stableb.bg-color-white.bar.bar-header {
+    display: none;
+}
+.bar-stable.bar.bar-header {
+    display: none;
+}
+.has-header {
+    top: 0px;
+}
+
+
+.filter-page-contant .wordout-yoga {
+    color: #666666;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+.filter-page-contant .yoga-wordout {
+   margin: 17px auto 7px;
+    overflow: hidden;
+    text-align: left;
+    width: 92%;
+}
+.filter-page-contant .language-div > b {
+    color: #9a9a9a;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.filter-page-contant .right-side-categories {
+    clear: inherit;
+    float: right;
+    margin: 2%;
+    width: 4%;
+}
+.filter-page-contant .right-side-categories img {
+    width: 100%;
+}
+.filter-page-contant .yoga-wordout > p {
+    color: #aeaeae;
+    font-family: "helvetica";
+    font-size: 15px;
+    font-weight: lighter;
+     
+    text-align: left !important;
+   width: 50%;
+      float: left;
+}
+.filter-page-contant .likefilter {
+    border-bottom: 1px solid #e3e3ea;
+}
+ 
+.filter-page-contant .signup_back_btn {
+    background: #003f6f none repeat scroll 0 0;
+    height: 45px;
+}
+
+.filter-page-contant .left-arow {
+ 
+    float: left;
+    width: 12%;
+}
+.filter-page-contant .filter-div {
+    color: #fff;
+    float: left;
+    font-family: "helvetica";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10px;
+    text-align: center;
+    width: 73%;
+}
+.filter-page-contant .Reset-arrow {
+  color: #db8404;
+    float: right;
+    font-family: "helvetica";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10px;
+    width: 14%;
+}
+.filter-page-contant .price-range {
+    margin-bottom: 23px;
+    margin-top: 14px;
+    text-align: left;
+}
+.filter-page-contant .price-range > p {
+   color: #878787;
+    font-family: "helvetica";
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 24px;
+    text-align: left !important;
+    width: 100%;
+}
+
+.filter-page-contant .dollercls {
+    color: #747474;
+    font-family: helvetica;
+    font-size: 15px;
+    font-weight: lighter;
+
+
+  /*   font-family: 'helvetica';
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+     font-weight: normal;
+    font-style: normal;*/
+}
+.filter-page-contant .dollersign {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-family: helvetica;
+    font-size: 13px;
+    font-weight: normal;
+    position: relative;
+    right: 35px;
+    top: -4px;
+    width: 4%;
+    z-index: 9999 !important;
+}
+.filter-page-contant .range-bar {
+    background-color: #a8aeb5;
+    border-radius: 15px;
+    display: block;
+    height: 6px;
+    position: relative;
+    width: 100%;
+}
+ .filter-page-contant .js-decimal {
+    background: #fff none repeat scroll 0 0;
+    color: #747474 !important;
+}
+
+.filter-page-contant .dollersign {
+ 
+    color: #a6a6a6 !important;
+     
+} 
+
+
+
+.filter-page-contant .first-star1 {
+   float: left;
+  width: 16.5%;
+}
+.filter-page-contant .first-star2 {
+     float: left; 
+  width: 16.5%;
+}
+.filter-page-contant .first-star3 {
+     float: left;
+     width: 16.5%;
+}
+.filter-page-contant .first-star4 {
+    float: left;
+  width: 16.5%;
+}
+.filter-page-contant .first-star5 {
+     float: left;
+   width: 16.5%;
+}
+.filter-page-contant .first-star1 img {
+width: 100%;
+    }
+ .filter-page-contant   .first-star2 img {
+width: 100%;
+    }
+  .filter-page-contant  .first-star3 img {
+width: 100%;
+    }
+  .filter-page-contant  .first-star4 img {
+width: 100%;
+    }
+  .filter-page-contant  .first-star5 img {
+width: 100%;
+    }
+
+.filter-page-contant .rating-txt {
+    margin: 10px auto 11px;
+    width: 93%;
+}
+
+.rating-div {
+    border-bottom: 1px solid #e3e3ea;
+    padding-bottom: 12px;
+}
+.filter-page-contant .main-images-star {
+   
+    margin: 0 auto;
+    overflow: auto;
+    width: 97%;
+}
+
+
+.filter-page-contant .rating-div b {
+    color: #6e6c6b;
+    font-family: helvetica;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.filter-page-contant .norating {
+    float: left;
+    width: 12%;
+
+
+ 
+}
+
+.filter-page-contant .norating img {
+ 
+    width: 100%;
+    
+}
+.filter-page-contant .countrating{
+   margin: 0 auto;
+    padding: 2%;
+    position: absolute;
+    text-align: center;
+    width: 6%;
+}
+
+.language-div {
+  margin: 15px auto 14px;
+    width: 95%;
+}
+
+.filter-page-contant .language-icon {
+ 
+    float: right;
+    overflow: inherit;
+    width: 5%;
+        margin-right: 10px;
+}
+.filter-page-contant .language-icon > img {
+    width: 100%;
 }

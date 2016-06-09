@@ -12,11 +12,11 @@
      
       <!-- <button class="button button-positive button-clear button_text icon ion-ios-mic txt-color-gray"></button> -->
     </div>
-		  <div class="main-containerlog">
+
+		  <div class="main-containerlog" ng-show="noSessionStatus">
       <div class="containerlog">
           <div class="content-toplog">
-             
-    <div class="head-img-txtflog">
+ <div class="head-img-txtflog">
    
     <div class="head_img_pro" id="home_img"> 
       <img src="img/circle.png">
@@ -25,25 +25,32 @@
 
  
     </div>
-              <div class="content-pehralog">
-                  <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text.  </p>
-              </div>
-<!--               <div  class="radiolog">
-<input type="radio" name="r" class="radio-buttonlog" id="r1" checked><label for="r1" ></label>
-<input type="radio" name="r" class="radio-buttonlog" id="r2"><label for="r2"></label>
-<input type="radio" name="r" class="radio-buttonlog" id="r3"><label for="r3"></label>
- 
-              </div> -->
+      <div class="login-introflog"><p>stay in shape and find the best trainer in your area.From Personal Trainers to Yoga Instructors,Sports Coaches and more. </p></div>
           </div>
-      </div>
-            
-      <div class="footerlog">
-                   <ion-item class="bmd-spcl-listing item" ng-show="noSessionStatus" ng-click="login_two()" menu-close="">
-           <h1> Let's Start </h1>
 
-        </ion-item>
+
       </div>
+      <div class="login-btnflog">
+<button   class="bmd-main-btn2flog" ng-click="login()" >  LOGIN </button>
+</div>
+
+<div class="login-btn-facebookflog">
+<button  ng-click="fblogin();"  class="bmd-main-btn2flog"><b class="log-with-txt">LOGIN WITH </b><b class="facebk-txtflog" >facebook</b></button>
+</div>
+
+<div class="dont-have-accountflog"><b style="padding-top:5px;">Don't have an account? <b ng-click="signup()" ng-show="noSessionStatus">
+          Sign Up
+        </b></b></div>
+            
+      
     
+    </div>
+
+    <div class="filter-page" ng-hide="noSessionStatus">
+Filter page in prosessing
+
+
+
     </div>
 
 
@@ -59,6 +66,7 @@
  <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
     <false/>
 </gap:config-file>
-    
+
+ 
 
 
