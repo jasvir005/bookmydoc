@@ -3,6 +3,7 @@
 
 
 
+
   @font-face {
 /*
      font-family: 'helvetica';
@@ -584,7 +585,7 @@ background: #003F6F;
 {
 
 margin: 0 auto;
-   width: 95%;
+   width: 80%;
 margin-bottom: 0px;
 
 }
@@ -593,8 +594,8 @@ margin-bottom: 0px;
    color: #fff;
     font-size: 34px;
     font-weight: 700;
-      margin-bottom: 26px;
-    margin-top: 13px;
+    margin-bottom: 3px;
+    margin-top: 6px;
 
      font-family: 'fontawesome';
     src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -740,8 +741,8 @@ width: 100%;
    color: #c7d5df;
     font-family: helvetica;
     font-size: 17px;
-    margin-bottom: 31px;
-    margin-top: 32px;
+  margin-bottom: 3px;
+    margin-top: 21px;
     text-align: center;
 }
 
@@ -784,7 +785,7 @@ width: 100%;
 
 .dont-have-accountflog {
     color: #fff;
-    margin-bottom: 44px;
+    margin-bottom: 0px;
     margin-top: 17px;
     text-align: center;
 }
@@ -911,10 +912,8 @@ width: 100%;
 
  .filter-page-contant .price-range2
 {
-   margin-bottom: 28px;
-    margin-top: 12px;
-    text-align: center;
-    width: 100%;
+ margin-bottom: 28px;
+    margin-top: 15px;
 }
 
  .filter-page-contant .example {
@@ -1021,6 +1020,7 @@ width: 100%;
 }
  
  .filter-page-contant .price-range2 > p {
+     clear: both;
     color: #878787;
     font-family: "helvetica";
     font-size: 15px;
@@ -1110,8 +1110,9 @@ width: 100%;
 
 
 .filter-page-contant .wordout-yoga {
-    color: #666666;
-    font-size: 15px;
+   color: #515151;
+    font-family: Tahoma;
+    font-size: 16px;
     font-weight: bolder;
 }
 
@@ -1123,9 +1124,13 @@ width: 100%;
     width: 92%;
 }
 .filter-page-contant .language-div > b {
-    color: #9a9a9a;
+    color:#a8a8a8;
     font-size: 13px;
     font-weight: 600;
+       font-family: 'helvetica';
+      src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
 }
 
 .filter-page-contant .right-side-categories {
@@ -1194,6 +1199,10 @@ width: 100%;
     margin-left: 24px;
     text-align: left !important;
     width: 100%;
+
+    src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
 }
 
 .filter-page-contant .dollercls {
@@ -1219,22 +1228,30 @@ width: 100%;
     font-weight: normal;
     position: relative;
     right: 35px;
-    top: -4px;
+    top: -7px;
     width: 4%;
     z-index: 9999 !important;
 }
+
 .filter-page-contant .range-bar {
       background-color: #a8aeb5;
     border-radius: 15px;
     display: block;
     height: 8px;
     position: relative;
-    width: 100%;
+    width: 95%;
 }
- .filter-page-contant .js-decimal {
-    background: #fff none repeat scroll 0 0;
+
+.slider-wrapper .js-decimal {
     color: #747474 !important;
 }
+
+
+ .filter-page-contant .js-decimal {
+color: #747474 !important;
+    z-index: 999 !important;
+}
+
 
 .filter-page-contant .dollersign {
  
@@ -1302,6 +1319,9 @@ width: 100%;
     font-family: helvetica;
     font-size: 15px;
     font-weight: lighter;
+      src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
 }
 
 .filter-page-contant .norating {
