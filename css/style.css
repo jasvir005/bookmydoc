@@ -1241,8 +1241,8 @@ width: 100%;
     width: 95%;
 }
  .filter-page-contant .js-decimal {
-    background: #fff none repeat scroll 0 0;
-    color: #747474 !important;
+color: #747474 !important;
+    z-index: 999 !important;
 }
 
 
