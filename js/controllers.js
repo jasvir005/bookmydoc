@@ -448,7 +448,7 @@ $(".first-star2").click(function(){
     $(".norating").html("");
 
 
-$(".norating").append('<p class="countrating">2</p><img src="img/no-rating.png">');
+$(".norating").append('<p class="countrating">2</p>');
 
 $(".first-star2 img").attr('src',"img/2star copy.png");
 
@@ -466,7 +466,7 @@ $(".first-star3").click(function(){
         $(".norating").html("");
 
 
-$(".norating").append('<p class="countrating">3</p><img src="img/no-rating.png">');
+$(".norating").append('<p class="countrating">3</p>');
 
  
 
@@ -484,7 +484,7 @@ $(".first-star4").click(function(){
         $(".norating").html("");
 
 
-$(".norating").append('<p class="countrating">4</p><img src="img/no-rating.png">');
+$(".norating").append('<p class="countrating">4</p>');
 
 
 $(".first-star4 img").attr('src',"img/4star copy.png");
@@ -500,7 +500,7 @@ $(".first-star5 img").attr('src',"img/fifth_img.png");
 $(".first-star5").click(function(){
  
     $(".norating").html("");
-$(".norating").append('<p class="countrating">5</p><img src="img/no-rating.png">');
+$(".norating").append('<p class="countrating">5</p>');
 
  $(".first-star5 img").attr('src',"img/5star.png");
 
@@ -524,6 +524,9 @@ $(".first-star4 img").attr('src',"img/fourth_img.png");
     $( ".slider-wrapper2 .range-max" ).append( "50m" );
  
 
+$('.Reset-arrow').click(function(){alert('On processing')});
+$('.right-side-categories').click(function(){alert('On processing')});
+$('.language-icon').click(function(){alert('On processing')});
 
 
 

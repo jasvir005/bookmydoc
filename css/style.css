@@ -1020,10 +1020,9 @@ width: 100%;
 }
  
  .filter-page-contant .price-range2 > p {
-     clear: both;
-    color: #878787;
-    font-family: "helvetica";
-    font-size: 15px;
+  color: #777777;
+    font-family: Helvetica;
+    font-size: 16.5px;
     font-weight: lighter;
     margin-left: 24px;
     text-align: left !important;
@@ -1191,14 +1190,13 @@ width: 100%;
     text-align: left;
 }
 .filter-page-contant .price-range > p {
-   color: #878787;
-    font-family: "helvetica";
-    font-size: 15px;
+  color: #777777;
+    font-family: Helvetica;
+    font-size: 16.5px;
     font-weight: lighter;
     margin-left: 24px;
     text-align: left !important;
     width: 100%;
-
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
@@ -1206,8 +1204,8 @@ width: 100%;
 
 .filter-page-contant .dollercls {
     color: #747474;
-    font-family: helvetica;
-    font-size: 15px;
+  font-family: Helvetica;
+    font-size: 16.5px;
     font-weight: lighter;
 
 
@@ -1316,9 +1314,9 @@ width: 100%;
 
 
 .filter-page-contant .rating-div b {
-    color: #6e6c6b;
+  color: #7d7b7a;
     font-family: helvetica;
-    font-size: 15px;
+    font-size: 16.5px;
     font-weight: lighter;
       src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
@@ -1358,7 +1356,7 @@ width: 100%;
  
     float: right;
     overflow: inherit;
-    width: 5%;
+    width: 4%;
         margin-right: 10px;
 }
 .filter-page-contant .language-icon > img {
