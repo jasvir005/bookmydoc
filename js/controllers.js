@@ -597,7 +597,7 @@ $(".first-star4 img").attr('src',"img/fourth_img.png");
       $scope.userSessionStatus = false;
       $scope.noSessionStatus = true;
       $window.location.href = 'index.html';
-          $scope.closemenulogo();
+          //$scope.closemenulogo();
 
     }
 
