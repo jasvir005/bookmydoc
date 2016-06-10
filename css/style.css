@@ -1227,7 +1227,7 @@ width: 100%;
     font-size: 13px;
     font-weight: normal;
     position: relative;
-    right: 35px;
+ right: 38px;
     top: -7px;
     width: 4%;
     z-index: 9999 !important;
@@ -1243,6 +1243,7 @@ width: 100%;
 }
 
 .slider-wrapper .js-decimal {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     color: #747474 !important;
 }
 
