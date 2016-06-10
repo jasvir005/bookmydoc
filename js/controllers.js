@@ -393,6 +393,8 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
 
 $document.ready(function(){
 
+
+
 /*  $(window).resize(function(){
       var widthvar = $( window ).width();
      
@@ -426,6 +428,8 @@ $(".filter-page-contant .range-bar").css('margin-bottom','35px');
 
 
         $(document).ready(function(){
+
+          $(".slider-wrapper .range-bar .range-min").html("");
 $(".first-star1").click(function(){
     $(".norating").html("");
 
