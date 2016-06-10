@@ -430,7 +430,7 @@ $(".slider-wrapper2").css('width','263px');
       totalmimles = Math.round(totalmimles);
 
 
-document.getElementById('js-display-changes').innerHTML = totalmimles;
+       document.getElementById('js-display-changes').innerHTML = totalmimles;
 
     };
 
@@ -533,7 +533,7 @@ $(".first-star4 img").attr('src',"img/fourth_img.png");
     $( ".slider-wrapper2 .range-max" ).html( "" );
     $( ".slider-wrapper2 .range-max" ).append( "50m" );
  
-
+$('.js-display-changes').html("0");
 $('.Reset-arrow').click(function(){alert('On processing')});
 $('.right-side-categories').click(function(){alert('On processing')});
 $('.language-icon').click(function(){alert('On processing')});
