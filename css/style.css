@@ -1250,7 +1250,8 @@ width: 100%;
 
  .filter-page-contant .js-decimal {
 color: #747474 !important;
-    z-index: 999 !important;
+font-size: 11px;
+z-index: 999 !important;
 }
 
 
