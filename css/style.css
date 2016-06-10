@@ -1110,13 +1110,10 @@ width: 100%;
 
 
 .filter-page-contant .wordout-yoga {
-    color: #515151;
-    font-size: 15px;
+   color: #515151;
+    font-family: Tahoma;
+    font-size: 16px;
     font-weight: bolder;
-         font-family: 'helvetica';
-    src:url('fonts/avenir-lt-45-book.ttf') ;
-    src:url('fonts/Nexa Bold.eot') ;
-     src:url('fonts/Nexa Light.otf');
 }
 
 

@@ -154,7 +154,7 @@ console.log($scope.baseurl);
 
   $scope.login_two = function() {
     //alert('hi')
-  $scope.login_twoe.show();
+  //$scope.login_twoe.show();
   };
 
   $scope.signup = function() {
