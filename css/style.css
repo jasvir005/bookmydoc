@@ -1240,6 +1240,12 @@ width: 100%;
     position: relative;
     width: 95%;
 }
+
+.slider-wrapper .js-decimal {
+    color: #747474 !important;
+}
+
+
  .filter-page-contant .js-decimal {
 color: #747474 !important;
     z-index: 999 !important;
