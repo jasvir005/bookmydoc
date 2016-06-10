@@ -1146,13 +1146,13 @@ width: 100%;
     width: 100%;
 }
 .filter-page-contant .yoga-wordout > p {
-     color: #909090;
-    float: left;
-    font-family: "helvetica";
-    font-size: 15px;
-    font-weight: lighter;
-    text-align: left !important;
-    width: 50%;
+color: #7f7f7f;
+float: left;
+font-family: "helvetica";
+font-size: 16.5px;
+font-weight: lighter;
+text-align: left !important;
+width: 50%;
 }
 .filter-page-contant .likefilter {
     border-bottom: 1px solid #e3e3ea;
@@ -1207,9 +1207,9 @@ width: 100%;
 }
 
 .filter-page-contant .dollercls {
-    color: #747474;
+    color: #525252;
   font-family: Helvetica;
-    font-size: 16.5px;
+    font-size: 16.9px;
     font-weight: lighter;
 
 

@@ -420,8 +420,18 @@ $(".slider-wrapper2").css('width','263px');
     var changeInput = document.querySelector('.js-check-change')
     , initChangeInput = new Powerange(changeInput, { start: 0 });
 
+
     changeInput.onchange = function() {
-    document.getElementById('js-display-changes').innerHTML = changeInput.value;
+
+      var crntval=changeInput.value;
+      
+      var totalmimles = crntval/2;
+      
+      totalmimles = Math.round(totalmimles);
+
+
+document.getElementById('js-display-changes').innerHTML = totalmimles;
+
     };
 
 
