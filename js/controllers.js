@@ -433,7 +433,7 @@ $(".filter-page-contant .range-bar").css('margin-bottom','35px');
 $(".first-star1").click(function(){
     $(".norating").html("");
 
-$(".norating").append('<p class="countrating">1</p><img src="img/no-rating.png">');
+$(".norating").append('<p class="countrating">1</p>');
 
  
 

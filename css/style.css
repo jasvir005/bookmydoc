@@ -1143,14 +1143,13 @@ width: 100%;
     width: 100%;
 }
 .filter-page-contant .yoga-wordout > p {
-    color: #aeaeae;
+     color: #909090;
+    float: left;
     font-family: "helvetica";
     font-size: 15px;
     font-weight: lighter;
-     
     text-align: left !important;
-   width: 50%;
-      float: left;
+    width: 50%;
 }
 .filter-page-contant .likefilter {
     border-bottom: 1px solid #e3e3ea;
@@ -1340,12 +1339,14 @@ width: 100%;
     
 }
 .filter-page-contant .countrating{
-   margin: 0 auto;
-    padding: 2%;
-     padding: 3%;
-    position: absolute;
+   background: #F4F4F4 none repeat scroll 0 0;
+    border-radius: 11px;
+    float: left;
+    margin: 0 auto;
+    padding: 18%;
     text-align: center;
-    width: 6%;
+    width: 100%;
+    color:#CAC8C8;
 }
 
 .language-div {
