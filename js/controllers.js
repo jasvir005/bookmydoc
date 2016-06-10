@@ -400,7 +400,8 @@ $document.ready(function(){
      
  if(widthvar==360)
  {
-$(".slider-wrapper").css('width','257px');
+$(".slider-wrapper").css('width','263px');
+$(".slider-wrapper2").css('width','263px');
 //$(".filter-page-contant .range-bar").css('margin-bottom','35px');
  
  }
