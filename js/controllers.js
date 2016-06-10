@@ -393,22 +393,7 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
 
 $document.ready(function(){
 
-
-
-/*  $(window).resize(function(){
-      var widthvar = $( window ).width();
-     
- if(widthvar==640)
- {
-$(".slider-wrapper").css('width','80%');
-$(".filter-page-contant .range-bar").css('margin-bottom','35px');
-
-
- // alert('true');
-
- }
-
-});*/
+  
   //alert('hi');
 
 
@@ -428,8 +413,6 @@ $(".filter-page-contant .range-bar").css('margin-bottom','35px');
 
 
         $(document).ready(function(){
-
-          $(".slider-wrapper .range-bar .range-min").html("");
 $(".first-star1").click(function(){
     $(".norating").html("");
 
@@ -437,12 +420,12 @@ $(".norating").append('<p class="countrating">1</p><img src="img/no-rating.png">
 
  
 
-$(".first-star1 img").attr('src',"img/1star copy.png");
+//$(".first-star1 img").attr('src',"second_img.png");
  
 $(".first-star2 img").attr('src',"img/second_img.png");
 $(".first-star3 img").attr('src',"img/third_img1.png");
 $(".first-star4 img").attr('src',"img/fourth_img.png");
-$(".Click img").attr('src',"img/fifth_img.png");
+$(".first-star5 img").attr('src',"img/fifth_img.png");
 
 });
 
@@ -452,7 +435,7 @@ $(".first-star2").click(function(){
 
 $(".norating").append('<p class="countrating">2</p><img src="img/no-rating.png">');
 
-$(".first-star2 img").attr('src',"img/2star copy.png");
+//$(".first-star2 img").attr('src',"second_img.png");
 
 
 
@@ -472,7 +455,7 @@ $(".norating").append('<p class="countrating">3</p><img src="img/no-rating.png">
 
  
 
-$(".first-star3 img").attr('src',"img/3star copy.png");
+//$(".first-star3 img").attr('src',"second_img.png");
 
 $(".first-star1 img").attr('src',"img/first_img.png");
 $(".first-star2 img").attr('src',"img/second_img.png");
@@ -489,7 +472,7 @@ $(".first-star4").click(function(){
 $(".norating").append('<p class="countrating">4</p><img src="img/no-rating.png">');
 
 
-$(".first-star4 img").attr('src',"img/4star copy.png");
+//$(".first-star4 img").attr('src',"second_img.png");
 
 $(".first-star1 img").attr('src',"img/first_img.png");
 $(".first-star2 img").attr('src',"img/second_img.png");
@@ -504,7 +487,7 @@ $(".first-star5").click(function(){
     $(".norating").html("");
 $(".norating").append('<p class="countrating">5</p><img src="img/no-rating.png">');
 
- $(".first-star5 img").attr('src',"img/5star.png");
+ //$(".first-star5 img").attr('src',"second_img.png");
 
 $(".first-star1 img").attr('src',"img/first_img.png");
 $(".first-star2 img").attr('src',"img/second_img.png");
@@ -601,7 +584,7 @@ $(".first-star4 img").attr('src',"img/fourth_img.png");
       $scope.userSessionStatus = false;
       $scope.noSessionStatus = true;
       $window.location.href = 'index.html';
-          //$scope.closemenulogo();
+          $scope.closemenulogo();
 
     }
 

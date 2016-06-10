@@ -69,8 +69,7 @@
 
 
 .range-max {
-  right: -43px;
-    width: 43px;
+  right: -30px;
 }
 
 /**
@@ -179,10 +178,9 @@
 @media only screen and (min-width: 320px) {
 
  .slider-wrapper {
-  clear: both;
-    margin: 0 auto 24px;
-    width: 226px;
-    
+   
+     margin: 15px 0 24px 43px;
+    width: 228px;
 }
 
  .slider-wrapper2 {
