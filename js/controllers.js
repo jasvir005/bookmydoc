@@ -395,20 +395,17 @@ $document.ready(function(){
 
 
 
-/*  $(window).resize(function(){
-      var widthvar = $( window ).width();
+  $(window).resize(function(){
+   var widthvar = $( window ).width();
      
- if(widthvar==640)
+ if(widthvar==360)
  {
-$(".slider-wrapper").css('width','80%');
-$(".filter-page-contant .range-bar").css('margin-bottom','35px');
-
-
- // alert('true');
-
+$(".slider-wrapper").css('width','257px');
+//$(".filter-page-contant .range-bar").css('margin-bottom','35px');
+ 
  }
 
-});*/
+});
   //alert('hi');
 
 
