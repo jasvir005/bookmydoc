@@ -1231,18 +1231,20 @@ width: 100%;
     width: 4%;
     z-index: 9999 !important;
 }
+
 .filter-page-contant .range-bar {
       background-color: #a8aeb5;
     border-radius: 15px;
     display: block;
     height: 8px;
     position: relative;
-    width: 100%;
+    width: 95%;
 }
  .filter-page-contant .js-decimal {
     background: #fff none repeat scroll 0 0;
     color: #747474 !important;
 }
+
 
 .filter-page-contant .dollersign {
  
