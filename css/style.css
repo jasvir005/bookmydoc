@@ -1370,3 +1370,7 @@ width: 100%;
 .common-button.button.button-positive.button-clear.button_text.icon.ion-navicon.txt-color-black {
     color: #fff !important;
 }
+
+.bmd-field.error {
+    float: left;
+}
