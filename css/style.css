@@ -1613,5 +1613,10 @@ input[type='radio']:checked:before {
 
 .filter-page {
     background: #fff none repeat scroll 0 0;
+     border-right: 1px solid red;
 }
-.categories-div-left{display: none;}
+.gender-div{display: none;}
+
+.categories-div-left {
+    border: 1px solid red;
+}
