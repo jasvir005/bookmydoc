@@ -395,6 +395,8 @@ $document.ready(function(){
 //alert('dfd');
  
  
+ 
+
         $(".signup_back_btn").css({"display": "inline"});
   
 
@@ -445,6 +447,10 @@ $(".slider-wrapper2").css('width','263px');
 
 
         $(document).ready(function(){
+
+
+
+
 
           $(".slider-wrapper .range-bar .range-min").html("");
 $(".first-star1").click(function(){
@@ -556,9 +562,12 @@ $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none"});
 
 } else {
+  $(".categories-div-left").css("cssText", "display: inline !important;");
+
+
  
 $(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"padding":"16px","width":"68%","display":"inline","top":"-450px","float": "right","position": "relative","text-align": "right"});
+$(".categories-div-left").css({"padding":"16px","width":"68%","top":"-450px","float": "right","position": "relative","text-align": "right"});
  $(".padding").css({"padding": "0px"});
 
  

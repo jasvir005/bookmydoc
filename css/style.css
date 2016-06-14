@@ -1614,3 +1614,4 @@ input[type='radio']:checked:before {
 .filter-page {
     background: #fff none repeat scroll 0 0;
 }
+.categories-div-left{display: none;}
