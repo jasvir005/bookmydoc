@@ -2,7 +2,7 @@
   <ion-header-bar>
 
   
-    <button  style='background-image: url("img/left_arrow.png");' ng-click="closeSignup()" class="common-button button button-positive button-clear button_text ion-chevron-leftd txt-color-black"></button>
+    <button  style='background-image: url("img/backarrow.png"); background-repeat: no-repeat;background-size: 26px auto;' ng-click="closeSignup()" class="common-button button button-positive button-clear button_text ion-chevron-leftd txt-color-black"></button>
 <!--     <div class="bmd-spclity-head">SignUp</div> -->
   </ion-header-bar>
 	<ion-content class="theme-bg" ng-init="submitted=false">
@@ -52,7 +52,7 @@
 			</div>
 		</div>
 		<div class="line-brk"></div>
-		<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">Email-Id is required.</div>
+		<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">Email is required.</div>
 		<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$invalid">Invalid Email-ID.</div>
 
 		<div class="bmd-usr">

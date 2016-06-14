@@ -363,7 +363,7 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
   
 
 
-$scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStatus = false;$scope.noSessionStatus = true;
+$scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = false;$scope.noSessionStatus = true;
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     $ionicLoading.show({
@@ -392,9 +392,18 @@ $scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStat
 
 
 $document.ready(function(){
+//alert('dfd');
+ 
+ 
+        $(".signup_back_btn").css({"display": "inline"});
+  
+
+ 
+ 
+$(".theme-bg").css('background-color','#fff');
 
 
-
+ 
   $(window).resize(function(){
    var widthvar = $( window ).width();
      
@@ -450,6 +459,8 @@ $(".first-star1 img").attr('src',"img/1star copy.png");
 $(".first-star2 img").attr('src',"img/second_img.png");
 $(".first-star3 img").attr('src',"img/third_img1.png");
 $(".first-star4 img").attr('src',"img/fourth_img.png");
+$(".first-star5 img").attr('src',"img/fifth_img.png");
+
 $(".Click img").attr('src',"img/fifth_img.png");
 
 });
@@ -535,13 +546,151 @@ $(".first-star4 img").attr('src',"img/fourth_img.png");
  
 $('.js-display-changes').html("0");
 $('.Reset-arrow').click(function(){alert('On processing')});
-$('.right-side-categories').click(function(){alert('On processing')});
+$('.right-side-categories').click(function(){
+
+
+  var clicks = $(".right-side-categories").data('clicks');
+  if (clicks) {
+ 
+$(".filter-page").css({"right": "0px"});
+$(".categories-div-left").css({"display":"none"});
+
+} else {
+ 
+$(".filter-page").css({"position": "relative","right": "206px"});
+$(".categories-div-left").css({"padding":"16px","width":"68%","display":"inline","top":"-450px","float": "right","position": "relative","text-align": "right"});
+ $(".padding").css({"padding": "0px"});
+
+ 
+     // even clicks
+  }
+ 
+  $(".right-side-categories").data("clicks", !clicks);
+ 
+//alert('dd');
+ 
+}); 
 $('.language-icon').click(function(){alert('On processing')});
 
+/* check box change color script*/
+$(".checkboxd-div7").click(function(){
+var has = $(".input07").is( ":checked" );
+if(has==true)
+{
+  //alert('tes true');
+$(".checkboxd-div7 > label").css({"color": "#FFC000"});
+}else
+{
+ $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
+}
+ 
+});
 
+
+$(".checkboxd-div1").click(function(){
+var has = $(".input01").is( ":checked" );
+if(has==true)
+{
+  //alert('tes true');
+$(".checkboxd-div1 > label").css({"color": "#FFC000"});
+}else
+{
+ $(".checkboxd-div1 > label").css({"color": "#FFFFFF"}); 
+}
+ 
+});
+
+
+$(".checkboxd-div2").click(function(){
+var has = $(".input02").is( ":checked" );
+if(has==true)
+{
+  //alert('tes true');
+$(".checkboxd-div2 > label").css({"color": "#FFC000"});
+}else
+{
+ $(".checkboxd-div2 > label").css({"color": "#FFFFFF"}); 
+}
+ 
+});
+
+
+
+
+$(".checkboxd-div3").click(function(){
+var has = $(".input03").is( ":checked" );
+if(has==true)
+{
+  //alert('tes true');
+$(".checkboxd-div3 > label").css({"color": "#FFC000"});
+}else
+{
+ $(".checkboxd-div3 > label").css({"color": "#FFFFFF"}); 
+}
+ 
+});
+
+$(".checkboxd-div4").click(function(){
+var has = $(".input04").is( ":checked" );
+if(has==true)
+{
+  //alert('tes true');
+$(".checkboxd-div4 > label").css({"color": "#FFC000"});
+}else
+{
+ $(".checkboxd-div4 > label").css({"color": "#FFFFFF"}); 
+}
+ 
+});
+
+
+
+$(".checkboxd-div5").click(function(){
+var has = $(".input05").is( ":checked" );
+if(has==true)
+{
+  //alert('tes true');
+$(".checkboxd-div5 > label").css({"color": "#FFC000"});
+}else
+{
+ $(".checkboxd-div5 > label").css({"color": "#FFFFFF"}); 
+}
+ 
+});
+
+
+
+$(".checkboxd-div6").click(function(){
+var has = $(".input06").is( ":checked" );
+if(has==true)
+{
+  //alert('tes true');
+$(".checkboxd-div6 > label").css({"color": "#FFC000"});
+}else
+{
+ $(".checkboxd-div6 > label").css({"color": "#FFFFFF"}); 
+}
+ 
+});
+
+
+$(".checkboxd-div7").click(function(){
+var has = $(".input07").is( ":checked" );
+if(has==true)
+{
+  //alert('tes true');
+$(".checkboxd-div7 > label").css({"color": "#FFC000"});
+}else
+{
+ $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
+}
+ 
+});
 
 });
-           $scope.filterpa();
+   
+
+          // $scope.filterpa();
 
             //alert('dfdf');
           }, 1000);

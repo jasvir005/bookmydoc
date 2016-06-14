@@ -2,9 +2,13 @@
 <ion-view class="bar-stableb bg-color-white">
  
 	<ion-header-bar class="bar-stableb bg-color-white" ng-hide="noSessionStatus">
+
 		<button menu-toggle="left" class="common-button button button-positive button-clear button_text icon ion-navicon txt-color-black"></button>
 	<!-- 	<div class="bmd-head"><img src="img/bmd-logo.png"></div> -->
- 
+     <div class="signup_back_btn">
+
+<div class="filter-div">Search</div> <div class="Reset-arrow">Reset</div>
+</div>
 	</ion-header-bar>
  
 	<ion-content class="padding theme-bg" >
@@ -21,11 +25,11 @@
     <div class="head_img_pro" id="home_img"> 
       <img src="img/circle(1).png">
       </div>
-      <p class="word-out">WORKOUT</p>
+      <p class="word-out">iTrainers</p>
 
  
     </div>
-      <div class="login-introflog"><p>stay in shape and find the best trainer in your area.From Personal Trainers to Yoga Instructors,Sports Coaches and more. </p></div>
+      <div class="login-introflog"><p>Find the best local trainers</p></div>
           </div>
 
 
@@ -45,9 +49,193 @@
       
     
     </div>
-
+<div class="div-coloor">
     <div class="filter-page" ng-hide="noSessionStatus">
 
+ 
+    <div class="bmd-results-wrapper" ng-init="get_appointments()">
+      <div class="filter-page-contant">
+
+<!--     <div class="signup_back_btn">
+    <div class="left-arow" >
+  <img src="img/left_arrow.png" ng-click="closefilterpage()">  
+</div>
+<div class="filter-div">Filters</div> <div class="Reset-arrow">Reset</div>
+</div> -->
+
+<div class="bmd-title-logo2">
+ 
+    </div>
+<div class="success_block ng-binding" ng-show="signupError" id="appendmsg"></div>
+
+      <form  name="signupform" ng-submit="signupform.$valid && doSignup()">
+
+
+<div class="containerration">
+
+<div class="yoga-wordout"><p><span class="wordout-yoga">Workout</span>:Yoga </p>
+
+<div class="right-side-categories"><img src="img/disclose-arrow.png"></div></div>
+<div class="likefilter"></div>
+
+
+
+<div class="price-range"><p>Price Range: <span class="dollercls">$</span><span class="dollercls" id="js-display-decimald"></span> to <span class="dollercls">$250</span></p></div>
+
+<div class="slider-wrapper">
+ 
+    <b class="dollersign">$</b>
+    <input type="text" class="js-decimal"  value="$" style="display:inline !important;"/>
+
+
+</div>
+
+<div class="example">
+
+    <div class="price-range2"><p>Distance Range:  <span class="dollercls">0 miles</span> to <span class="dollercls" id="js-display-changes"></span> <span class="dollercls">miles</span></p></div>
+    <div class="slider-wrapper2">
+    <input type="text" class="js-check-change" />
+    </div>
+
+ </div>
+
+<div class="rating-div"> 
+
+ <div class="rating-txt"><b>Ratings</b></div>
+<div class="main-images-star">
+<div class="norating">
+
+ 
+<img src="img/no_rating_txt.png">
+</div>
+
+<div class="first-star1"><img src="img/first_img.png">
+</div>
+
+<div class="first-star2"><img src="img/second_img.png">
+</div>
+
+<div class="first-star3"><img src="img/third_img1.png">
+</div>
+
+
+<div class="first-star4"><img src="img/fourth_img.png">
+</div>
+
+<div class="first-star5"><img src="img/fifth_img.png">
+</div>
+</div>
+
+   </div>
+</div>
+
+
+<div class="gender-div">
+<div class="gendr-div-main">
+<b class="gender-txt">Gender</b>
+</div>
+<div class="male">
+  <input type="radio"  name="gender" value="male"><label>Male</label>
+  </div>
+  <div class="female">
+    <input type="radio"  name="gender" value="female"><label>Female</label>
+    </div>
+</div>
+<div class="language-div"><b id="languages-id">Languages</b>
+<div class="language-icon"><img src="img/disclose-arrow.png"></div> </div>
+  <div class="likefilter"></div>
+  </form>
+ 
+ 
+  
+</div>
+  <script src="powerange.min.js"></script>
+ 
+ 
+
+
+<style type="text/css">
+  
+  body {
+    background: #ffffff none repeat scroll 0 0;
+    margin: 0;
+}
+
+ 
+
+.bmd-results-wrapper {
+ 
+    padding: 0px;
+  
+}
+</style>   
+      
+           
+    </div>
+   
+
+ 
+
+
+
+    </div>
+     </div>
+
+
+
+    <div class="categories-div-left">
+
+    <div class="checkboxd-div1">
+    <label>Yoga</label>
+    <span>
+    <input class="input01" type="checkbox" name="first categiesw">
+    </span>
+    </div>
+
+      <div class="checkboxd-div2">
+      <label>Pilates</label>
+      <span>
+      <input class="input02" type="checkbox" name="second categiesw">
+      </span>
+      </div>
+
+  <div class="checkboxd-div3">
+      <label>Kickboxing</label>
+      <span>
+      <input class="input03" type="checkbox" name="second categiesw">
+      </span>
+      </div>
+
+
+        <div class="checkboxd-div4">
+      <label>Weightlifting</label>
+      <span>
+      <input  class="input04" type="checkbox" name="second categiesw">
+      </span>
+      </div>
+
+
+        <div class="checkboxd-div5">
+      <label>Personal Traning</label>
+      <span>
+      <input class="input05" type="checkbox" name="second categiesw">
+      </span>
+      </div>
+
+
+        <div class="checkboxd-div6">
+      <label>Rehabilitation</label>
+      <span>
+      <input class="input06" type="checkbox" name="second categiesw">
+      </span>
+      </div>
+
+        <div class="checkboxd-div7">
+      <label>Weight Loss</label>
+      <span>
+      <input class="input07" type="checkbox" name="second categiesw">
+      </span>
+      </div>
 
 
     </div>
