@@ -554,16 +554,30 @@ $('.js-display-changes').html("0");
 $('.Reset-arrow').click(function(){alert('On processing')});
 $('.right-side-categories').click(function(){
 
+  var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+if(isAndroid) {
+  // Do something!
+  // Redirect to Android-site?
+ // window.location = 'http://android.davidwalsh.name';
+}
+else
+{
+$(".categories-div-left").hide();
+  alert('iphine');
+}
+
 
   var clicks = $(".right-side-categories").data('clicks');
   if (clicks) {
- alert('true ');
+ //alert('true ');
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
 $(".categories-div-left").hide();
 
 } else {
- alert('false ');
+
+ //alert('false ');
   $(".categories-div-left").css("cssText", "display: inline !important;");
 
 
@@ -572,9 +586,8 @@ $(".filter-page").css({"position": "relative","right": "206px"});
 $(".categories-div-left").css({"border":"1px solid red","padding":"16px","width":"62%","top":"-635px","float": "right","position": "relative","text-align": "right"});
  $(".padding").css({"padding": "0px"});
 
- 
-     // even clicks
-  }
+ }
+
  
   $(".right-side-categories").data("clicks", !clicks);
  
@@ -1324,3 +1337,6 @@ $scope.slide= function(myTransition) {
 
 })
 ;
+
+
+
