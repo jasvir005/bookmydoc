@@ -559,7 +559,7 @@ $('.right-side-categories').click(function(){
   if (clicks) {
  alert('true ');
 $(".filter-page").css({"right": "0px"});
-$(".categories-div-left").css({"display":"none"});
+$(".categories-div-left").css({"display":"none !important;"});
 
 } else {
  alert('false ');
