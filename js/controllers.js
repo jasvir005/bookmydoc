@@ -571,9 +571,9 @@ $(".categories-div-left").hide();
   var clicks = $(".right-side-categories").data('clicks');
   if (clicks) {
  //alert('true ');
-$(".filter-page").css({"right": "0px"});
+/*$(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
-$(".categories-div-left").hide();
+$(".categories-div-left").hide();*/
 
 } else {
 
