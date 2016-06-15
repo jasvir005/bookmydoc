@@ -564,6 +564,7 @@ if(isAndroid) {
 else
 {
 $(".categories-div-left").hide();
+$(".categories-div-left").css("display","none");
   alert('iphine');
 }
 
