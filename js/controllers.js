@@ -568,12 +568,14 @@ if(isAndroid) {
 }
 else
 {
-$(".filter-page").animate({"right": '0'},"show").css({"right": "0px"});
+$(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
- 
+$(".categories-div-left").hide();  
 $(".categories-div-left").css("z-index","-9999"); 
 
-  
+
+
+ document.getElementById('cate-slide').style.display='none';
 }
 /* $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
@@ -583,7 +585,8 @@ $(".categories-div-left").hide();
 ///alert('false ');
 $(".categories-div-left").css("cssText", "display: inline !important;");
 $(".div-coloor").off('scroll');
-$(".filter-page").animate({"right": '206px'},"show").css({"position": "relative","right": "206px"});
+//.animate({"right": '206px'},"show")
+$(".filter-page").css({"position": "relative","right": "206px"});
 $(".categories-div-left").css({"border":"0px solid red","padding":"16px","width":"62%","top":"-635px","float": "right","position": "relative","text-align": "right"});
 $(".padding").css({"padding": "0px"});
 
