@@ -568,9 +568,11 @@ if(isAndroid) {
 }
 else
 {
- $(".filter-page").css({"right": "0px"});
+/* $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
-$(".categories-div-left").hide(); 
+$(".categories-div-left").hide(); */
+
+document.getElementById('cate-slide').style.display='none';
 }
 /* $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
