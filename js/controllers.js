@@ -559,7 +559,7 @@ $('.right-side-categories').click(function(){
 
   var clicks = $(".right-side-categories").data('clicks');
   if (clicks) {
-  alert('true ');
+  alert('true');
 
     var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
