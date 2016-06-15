@@ -460,7 +460,7 @@ $(".norating").append('<p class="countrating">1</p>');
 
  
 
-$(".first-star1 img").attr('src',"img/1star copy.png");
+$(".first-star1 img").attr('src',"img/1star copy.png").css("width","90%");
  
 $(".first-star2 img").attr('src',"img/second_img.png");
 $(".first-star3 img").attr('src',"img/third_img1.png");
@@ -477,14 +477,14 @@ $(".first-star2").click(function(){
 
 $(".norating").append('<p class="countrating">2</p>');
 
-$(".first-star2 img").attr('src',"img/2star copy.png");
+$(".first-star2 img").attr('src',"img/2star copy.png").css("width","90%");
 
 
 
-$(".first-star1 img").attr('src',"img/first_img.png");
-$(".first-star3 img").attr('src',"img/third_img1.png");
-$(".first-star4 img").attr('src',"img/fourth_img.png");
-$(".first-star5 img").attr('src',"img/fifth_img.png");
+$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
+$(".first-star3 img").attr('src',"img/third_img1.png").css("width","100%");
+$(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
+$(".first-star5 img").attr('src',"img/fifth_img.png").css("width","100%").css("width","100%");
 
 
 });
@@ -497,12 +497,12 @@ $(".norating").append('<p class="countrating">3</p>');
 
  
 
-$(".first-star3 img").attr('src',"img/3star copy.png");
+$(".first-star3 img").attr('src',"img/3star copy.png").css("width","90%");
 
-$(".first-star1 img").attr('src',"img/first_img.png");
-$(".first-star2 img").attr('src',"img/second_img.png");
-$(".first-star4 img").attr('src',"img/fourth_img.png");
-$(".first-star5 img").attr('src',"img/fifth_img.png");
+$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
+$(".first-star2 img").attr('src',"img/second_img.png").css("width","100%");
+$(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
+$(".first-star5 img").attr('src',"img/fifth_img.png").css("width","100%");
 
 
 });
@@ -514,12 +514,12 @@ $(".first-star4").click(function(){
 $(".norating").append('<p class="countrating">4</p>');
 
 
-$(".first-star4 img").attr('src',"img/4star copy.png");
+$(".first-star4 img").attr('src',"img/4star copy.png").css("width","90%");
 
-$(".first-star1 img").attr('src',"img/first_img.png");
-$(".first-star2 img").attr('src',"img/second_img.png");
-$(".first-star3 img").attr('src',"img/third_img1.png");
-$(".first-star5 img").attr('src',"img/fifth_img.png");
+$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
+$(".first-star2 img").attr('src',"img/second_img.png").css("width","100%");
+$(".first-star3 img").attr('src',"img/third_img1.png").css("width","100%");
+$(".first-star5 img").attr('src',"img/fifth_img.png").css("width","100%");
 
 });
 
@@ -529,12 +529,12 @@ $(".first-star5").click(function(){
     $(".norating").html("");
 $(".norating").append('<p class="countrating">5</p>');
 
- $(".first-star5 img").attr('src',"img/5star.png");
+ $(".first-star5 img").attr('src',"img/5star.png").css("width","90%");
 
-$(".first-star1 img").attr('src',"img/first_img.png");
-$(".first-star2 img").attr('src',"img/second_img.png");
-$(".first-star3 img").attr('src',"img/third_img1.png");
-$(".first-star4 img").attr('src',"img/fourth_img.png");
+$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
+$(".first-star2 img").attr('src',"img/second_img.png").css("width","100%");
+$(".first-star3 img").attr('src',"img/third_img1.png").css("width","100%");
+$(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
  
 });
  
@@ -557,19 +557,20 @@ $('.right-side-categories').click(function(){
 
   var clicks = $(".right-side-categories").data('clicks');
   if (clicks) {
- 
-$(".filter-page").css({"right": "0px"});
+ alert('true ');
+/*$(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none"});
-
+*/
 } else {
-  $(".categories-div-left").css("cssText", "display: inline !important;");
+ alert('false ');
+/*  $(".categories-div-left").css("cssText", "display: inline !important;");
 
 
  $(".div-coloor").off('scroll');
 $(".filter-page").css({"position": "relative","right": "206px"});
 $(".categories-div-left").css({"padding":"16px","width":"62%","top":"-635px","float": "right","position": "relative","text-align": "right"});
  $(".padding").css({"padding": "0px"});
-
+*/
  
      // even clicks
   }

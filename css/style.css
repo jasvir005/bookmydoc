@@ -1153,13 +1153,15 @@ src:url('fonts/Nexa Light.otf');
 }
 
 .filter-page-contant .right-side-categories {
+    border: 1px solid;
     clear: inherit;
     float: right;
     margin: 2%;
-    width: 4%;
+    width: 10%;
 }
 .filter-page-contant .right-side-categories img {
-    width: 100%;
+    float: right;
+    width: 59%;
 }
 .filter-page-contant .yoga-wordout > p {
 color: #7f7f7f;
