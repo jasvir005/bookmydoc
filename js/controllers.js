@@ -565,7 +565,7 @@ $(".categories-div-left").css({"display":"none"});
   $(".categories-div-left").css("cssText", "display: inline !important;");
 
 
- $(window).off('scroll');
+ $(".div-coloor").off('scroll');
 $(".filter-page").css({"position": "relative","right": "206px"});
 $(".categories-div-left").css({"padding":"16px","width":"62%","top":"-635px","float": "right","position": "relative","text-align": "right"});
  $(".padding").css({"padding": "0px"});
