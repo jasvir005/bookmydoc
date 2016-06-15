@@ -1530,6 +1530,12 @@ input[type='radio']:checked:before {
 }
 
 
+.image-workout-div{
+  margin-bottom: 14px;
+    margin-top: 14px;
+      width: 90%;
+}
+
 .checkboxd-div1{
   margin-bottom: 14px;
     margin-top: 14px;
@@ -1572,6 +1578,14 @@ input[type='radio']:checked:before {
       width: 90%;
 }
 .checkboxd-div1 > label {
+
+    color: #fff;
+    float: left;
+    margin-left: 10px;
+}
+
+
+.image-workout-div > label {
 
     color: #fff;
     float: left;
