@@ -1425,7 +1425,7 @@ margin-top: 3px;
 
 
 .filter-page {
-    margin-top: 40px;
+ margin-top: 30px;
     
 }
 
@@ -1613,10 +1613,11 @@ input[type='radio']:checked:before {
 
 .filter-page {
     background: #fff none repeat scroll 0 0;
-     border-right: 1px solid red;
+    
 }
 .gender-div{display: none;}
 
-.categories-div-left {
-    border: 1px solid red;
+.filter-page-contant {
+    height: 100vh;
+       border: 1px solid red;
 }

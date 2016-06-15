@@ -393,7 +393,7 @@ $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = f
 
 $document.ready(function(){
 //alert('dfd');
- 
+ $(".categories-div-left").css({"display":"none"});
  
  
 
@@ -567,7 +567,7 @@ $(".categories-div-left").css({"display":"none"});
 
  
 $(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"padding":"16px","width":"auto","top":"-450px","float": "right","position": "relative","text-align": "right"});
+$(".categories-div-left").css({"padding":"16px","width":"62%","top":"-580px","float": "right","position": "relative","text-align": "right"});
  $(".padding").css({"padding": "0px"});
 
  
