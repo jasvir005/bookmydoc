@@ -560,6 +560,7 @@ $('.right-side-categories').click(function(){
  alert('true ');
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
+$(".categories-div-left").hide();
 
 } else {
  alert('false ');
