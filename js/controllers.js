@@ -558,19 +558,19 @@ $('.right-side-categories').click(function(){
   var clicks = $(".right-side-categories").data('clicks');
   if (clicks) {
  alert('true ');
-/*$(".filter-page").css({"right": "0px"});
+$(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none"});
-*/
+
 } else {
  alert('false ');
-/*  $(".categories-div-left").css("cssText", "display: inline !important;");
+  $(".categories-div-left").css("cssText", "display: inline !important;");
 
 
  $(".div-coloor").off('scroll');
 $(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"padding":"16px","width":"62%","top":"-635px","float": "right","position": "relative","text-align": "right"});
+$(".categories-div-left").css({"border":"1px solid red","padding":"16px","width":"62%","top":"-635px","float": "right","position": "relative","text-align": "right"});
  $(".padding").css({"padding": "0px"});
-*/
+
  
      // even clicks
   }
