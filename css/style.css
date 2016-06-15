@@ -918,8 +918,11 @@ width: 100%;
 
  .filter-page-contant .price-range2
 {
- margin-bottom: 28px;
+ 
+    margin-bottom: 28px;
     margin-top: 15px;
+    overflow: hidden;
+    width: 100%;
 }
 
  .filter-page-contant .example {
@@ -1027,11 +1030,14 @@ width: 100%;
 }
  
  .filter-page-contant .price-range2 > p {
-  color: #777777;
+clear: left;
+    color: #777777;
+    float: left;
     font-family: Helvetica;
     font-size: 16.5px;
     font-weight: lighter;
-    margin-left: 24px;
+    margin-left: 20px;
+    overflow: hidden;
     text-align: left !important;
     width: 100%;
 }
