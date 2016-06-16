@@ -626,10 +626,19 @@ var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
 
+ 
+$(".filter-page").css({"right": "0px"});
+ 
+$(".categories-div-left").css({"display":"none !important;"});
+$(".categories-div-left").hide();  
+$(".categories-div-left").css("z-index","-9999"); 
+document.getElementById('cate-slide').style.display='none';
 }
 else
 {
+  alert('hello');
 $(".filter-page").css({"right": "0px"});
+$(".cate-slide").css({"display": "none"});
 $(".categories-div-left").css({"display":"none !important;"});
 $(".categories-div-left").hide();  
 $(".categories-div-left").css("z-index","-9999"); 
@@ -650,11 +659,10 @@ else
        //alert(widthvar);
        if(widthvar==360)
        {
-
+$(".div-coloor").off('scroll');
    //alert('dfd');
 $(".filter-page-contant").css('height','100vh');
-       $(".categories-div-left").css("cssText", "display: inline !important;");
-$(".div-coloor").off('scroll');
+ $(".categories-div-left").css("cssText", "display: inline !important;");
 //.animate({"right": '206px',"posit","absolute"},"show")
 $(".filter-page").css({"position": "relative","right": "206px"});
 $(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-655px","float": "right","position": "relative","text-align": "right"});
@@ -663,6 +671,7 @@ $(".padding").css({"padding": "0px"});
 
        if(widthvar==640)
        {
+        $(".div-coloor").off('scroll');
 //alert('yes');
 
 $(".filter-page-contant").css('height','auto');
@@ -679,6 +688,7 @@ $(".padding").css({"padding": "0px"});
 
        if(widthvar==360)
        {
+        $(".div-coloor").off('scroll');
 $(".filter-page-contant").css('height','100vh');
        $(".categories-div-left").css("cssText", "display: inline !important;");
 $(".div-coloor").off('scroll');
@@ -690,6 +700,7 @@ $(".padding").css({"padding": "0px"});
 
        if(widthvar==640)
        {
+        $(".div-coloor").off('scroll');
 //alert('yes');
 $(".filter-page-contant").css('height','auto');
 $(".categories-div-left").css("cssText", "display: inline !important;");
