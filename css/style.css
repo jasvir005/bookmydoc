@@ -966,10 +966,7 @@ width: 100%;
     
 }
 
-.signup_back_btn {
-     height: 28px;
 
-}
 
 .signup_back_btn a {
     float: left;
@@ -1153,7 +1150,7 @@ src:url('fonts/Nexa Light.otf');
 }
 
 .filter-page-contant .right-side-categories {
-    border: 1px solid;
+    
     clear: inherit;
     float: right;
     margin: 2%;
@@ -1161,7 +1158,7 @@ src:url('fonts/Nexa Light.otf');
 }
 .filter-page-contant .right-side-categories img {
     float: right;
-    width: 59%;
+    width: 43%;
 }
 .filter-page-contant .yoga-wordout > p {
 color: #7f7f7f;
@@ -1401,13 +1398,21 @@ width: 100%;
 {
  
 float: right;
-margin-left: 25%;
+ 
 overflow: auto;
  margin-top: 5px;
-width: 65%;
+width: 100%;
+ 
+     height: 28px;
+
+ 
 }
 
 .filter-div {
+
+ 
+    width: 84%;
+ 
 color: #fff;
 float: left;
 font-family: "helvetica";
@@ -1642,6 +1647,7 @@ input[type='radio']:checked:before {
 .filter-page-contant {
  
        border: 1px solid red;
+       
 }
 
 #image-workout img {
