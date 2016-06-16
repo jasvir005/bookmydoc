@@ -625,7 +625,8 @@ if (clicks) {
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
-   $(".div-coloor").css({"height": "100vh"});
+  alert('true');
+   $(".div-coloor").css({"height": "100vh","float":"left"});
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
 $(".categories-div-left").hide();  
@@ -637,7 +638,7 @@ else
   alert('false');
 
  
-  $(".div-coloor").css({"height": "100vh"});
+   $(".div-coloor").css({"height": "100vh","float":"left"});
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
 $(".categories-div-left").hide();  
