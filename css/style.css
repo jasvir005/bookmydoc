@@ -909,7 +909,7 @@ width: 100%;
     margin-top: 20px;
 }
 .head-img-txtflogd > p {
-    margin-bottom: 29px;
+    margin-bottom: 17px;
     margin-top: 9px;
 }
 
@@ -919,7 +919,7 @@ width: 100%;
  .filter-page-contant .price-range2
 {
  
-    margin-bottom: 28px;
+    margin-bottom: 17px;
     margin-top: 15px;
     overflow: hidden;
     width: 100%;
@@ -927,7 +927,7 @@ width: 100%;
 
  .filter-page-contant .example {
     border-bottom: 1px solid #e3e3ea;
-      border-bottom: 1px solid #e3e3ea;
+      border-top: 1px solid #e3e3ea;
 }
 .price-range2 > p {
    color: #fff;
