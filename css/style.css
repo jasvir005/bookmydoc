@@ -1246,9 +1246,9 @@ width: 50%;
     font-size: 13px;
     font-weight: normal;
     position: relative;
-  right: 41px;
+  right: 25px;
     top: -7px;
-    width: 4%;
+    width: 29px;
     z-index: 9999 !important;
 }
 
@@ -1640,7 +1640,7 @@ input[type='radio']:checked:before {
 .gender-div{display: none;}
 
 .filter-page-contant {
-    height: 100vh;
+ 
        border: 1px solid red;
 }
 
