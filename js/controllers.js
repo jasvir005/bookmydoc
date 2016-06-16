@@ -392,6 +392,66 @@ $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = f
 
 
 $document.ready(function(){
+
+
+
+
+$(".right-side-categories").click(function(){
+
+var a=$('.checkboxd-div1 input:checked').val();
+var b=$('.checkboxd-div2 input:checked').val();
+var c=$('.checkboxd-div3 input:checked').val();
+var d=$('.checkboxd-div4 input:checked').val();
+var e=$('.checkboxd-div5 input:checked').val();
+var f=$('.checkboxd-div6 input:checked').val();
+var g=$('.checkboxd-div7 input:checked').val();
+if(a==undefined)
+{
+ a='';
+}
+if(b==undefined)
+{
+ b='';
+} 
+if(c==undefined)
+{
+ c='';
+} 
+if(d==undefined)
+{
+ d='';
+} 
+if(e==undefined)
+{
+ e='';
+} 
+if(f==undefined)
+{
+ f='';
+} 
+if(g==undefined)
+{
+ g='';
+} 
+ 
+$("#appendinto").html("");
+var com=a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g;
+
+$("#appendinto").append(':'+com);
+
+ 
+
+  //alert('dd');
+   
+
+
+
+
+});
+
+
+
+
 //alert('dfd');
  $(".categories-div-left").css({"display":"none"});
   $(".padding").css({"padding":"0px"});
