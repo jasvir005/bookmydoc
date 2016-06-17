@@ -827,13 +827,13 @@ $(".padding").css({"padding": "0px"});
 
        if(widthvar==360)
        {
-        $(".categories-div-left").hide(); 
+$(".categories-div-left").hide(); 
 $(".filter-page-contant").css('height','100vh');
-       $(".categories-div-left").css("cssText", "display: inline !important;");
+$(".categories-div-left").css("cssText", "display: inline !important;");
 $(".div-coloor").off('scroll');
 //.animate({"right": '206px',"posit","absolute"},"show")
 $(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-655px","float": "right","position": "relative","text-align": "right"});
+$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-611px","float": "right","position": "relative","text-align": "right"});
 $(".padding").css({"padding": "0px"});
 }
 
