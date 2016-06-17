@@ -720,7 +720,11 @@ $(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
 $('.js-display-changes').html("0");
 $('.Reset-arrow').click(function(){alert('On processing')});
 $('.right-side-categories').click(function(){
-
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+if(isAndroid) {
+  $(".div-coloor").css({"top": "25px"});
+}
 
 
 
@@ -732,7 +736,7 @@ var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
  
-   $(".div-coloor").css({"top": "25px"});
+   
 
   //alert('true');
    $(".div-coloor").css({"height": "100vh"});
