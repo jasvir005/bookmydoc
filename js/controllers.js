@@ -732,7 +732,7 @@ var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
  
-   $(".filter-page").css({"margin-top": "30px"});
+   $(".div-coloor").css({"top": "25px"});
 
   //alert('true');
    $(".div-coloor").css({"height": "100vh"});
