@@ -722,11 +722,11 @@ $('.Reset-arrow').click(function(){alert('On processing')});
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
-  
+
   }
 else
 {
-$(".filter-page").css({"margin-top": "0px"});
+$(".filter-page").css({"margin-top": "-3px"});
 }
 
 $('.right-side-categories').click(function(){
