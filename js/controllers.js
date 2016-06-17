@@ -719,6 +719,17 @@ $(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
  
 $('.js-display-changes').html("0");
 $('.Reset-arrow').click(function(){alert('On processing')});
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+if(isAndroid) {
+    alert('android');
+}
+else
+{
+  alert('iphone');
+}
+
+
 $('.right-side-categories').click(function(){
 
 
@@ -741,8 +752,8 @@ document.getElementById('cate-slide').style.display='none';
 }
 else
 {
-  alert('iphomne');
-$(".filter-page").css({"margin-top": "0px"});
+  //alert('iphomne');
+
 $(".div-coloor").css({"height": "100vh","float":"left"});
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
