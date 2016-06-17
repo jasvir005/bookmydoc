@@ -723,7 +723,7 @@ $('.right-side-categories').click(function(){
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
-  $(".div-coloor").css({"top": "25px"});
+  $(".div-coloor").css({"position","relative","top": "25px"});
 }
 
 
