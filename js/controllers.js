@@ -731,7 +731,7 @@ if (clicks) {
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
-  //alert('true');
+alert('android');
    $(".div-coloor").css({"height": "100vh"});
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
@@ -741,6 +741,7 @@ document.getElementById('cate-slide').style.display='none';
 }
 else
 {
+  alert('iphomne');
 $(".filter-page").css({"margin-top": "0px"});
 $(".div-coloor").css({"height": "100vh","float":"left"});
 $(".filter-page").css({"right": "0px"});
