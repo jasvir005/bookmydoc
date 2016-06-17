@@ -42,6 +42,7 @@
 <icon src="res/icon/ios/icon-76-2x.png" width="152" height="152"/>
 <!--icon src="res/icon/ios/iphone_180x180.png" width="180" height="180" /-->
     <!-- images are determined by width and height. The following are supported -->
+    <!-- 8427855885 -->
 <!--     <splash src="res/screen/ios/screen-iphone-portrait.png" width="320" height="480"/>
 
     <splash src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" height="960"/>

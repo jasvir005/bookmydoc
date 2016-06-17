@@ -731,9 +731,6 @@ if (clicks) {
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
- 
-  // $(".div-coloor").css({"margin-top": "30px"});
-
   //alert('true');
    $(".div-coloor").css({"height": "100vh"});
 $(".filter-page").css({"right": "0px"});
