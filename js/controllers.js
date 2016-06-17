@@ -238,9 +238,9 @@ fbData = function () {
      
             var cache=localStorage.getItem('token');
 
-/*   $ionicLoading.show({
+   $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
-      });*/
+      });
  var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","phone":"9898989897","usertype":"2"}';
 
 //var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","usertype":"2"}';
@@ -269,9 +269,9 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 
  
      
- /*  $ionicLoading.show({
+   $ionicLoading.show({
       template: '<img  src="img/loading.gif" />'
-    });*/
+    });
     $scope.loginData.usertype='2';
     var url='/get_login_detailss';
     $http({
@@ -366,9 +366,9 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = false;$scope.noSessionStatus = true;
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
- /*   $ionicLoading.show({
+    $ionicLoading.show({
       template: '<img  src="img/loading.gif" />'
-    });*/
+    });
     $scope.loginData.usertype='2';
     var url='/get_login_details';
     $http({
@@ -1025,9 +1025,9 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
     });
   }
     $scope.doSignup = function() {
-  /*    $ionicLoading.show({
+      $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
-      });*/
+      });
       $scope.signUpData.usertype='2';
       var url='/get_signup_details';
       $http({
@@ -1073,10 +1073,10 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
   
   //alert('hi');
 
-/*    $ionicLoading.show({
+    $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
       });
-*/
+
  
  var text = '{ "firstname":"John" , "lastName":"Doe" ,"email":"jasvir.softweaver@gmail.com","password":"","phone":"9898989897","usertype":"2"}';
 
@@ -1086,7 +1086,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
         method: "GET",
         params: {'signUpData': text},
       }).then(function mySucces(responsed) {
-//alert('login');
+alert('login');
 
 var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password":""}';
 
@@ -1095,9 +1095,9 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
          alert(statusvar);
          console.log(statusvar);
      
-/*   $ionicLoading.show({
+   $ionicLoading.show({
       template: '<img  src="img/loading.gif" />'
-    });*/
+    });
     $scope.loginData.usertype='2';
     var url='/get_login_detailss';
     $http({
@@ -1363,9 +1363,9 @@ $scope.slide= function(myTransition) {
     }
 
     $scope.bookAppointment = function(){
-     /* $ionicLoading.show({
+      $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
-      });*/
+      });
       $scope.Appointment ={};
       $scope.Appointment.doctor_id = $scope.Doc.id;
       // $scope.Appointment.apnttime = $filter('date')($scope.AppointmentDetails.selectedDate, "EEEE,MMMM dd,yyyy")+" at "+$filter('date')($scope.AppointmentDetails.selectedDate, "hh:mm a");
