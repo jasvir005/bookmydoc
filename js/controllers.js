@@ -754,7 +754,7 @@ else
   //alert('iphomne');
 
 
-$(".categories-div-left").css({"top": "-614px","position":"relative"});
+
 $(".div-coloor").css({"height": "100vh","float":"left"});
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
@@ -767,7 +767,7 @@ document.getElementById('cate-slide').style.display='none';
 else 
 {
   alert('false');
-
+$(".categories-div-left").css({"top": "-618px","position":"relative"});
 
    var widthvar = $( window ).width();
  
