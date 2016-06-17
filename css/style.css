@@ -1597,6 +1597,11 @@ input[type='radio']:checked:before {
     margin-top: 14px;
       width: 90%;
 }
+.checkboxd-div8{
+  margin-bottom: 14px;
+    margin-top: 14px;
+      width: 90%;
+}
 .checkboxd-div1 > label {
 
     color: #fff;
@@ -1641,6 +1646,12 @@ input[type='radio']:checked:before {
 }
 
 .checkboxd-div7 > label {
+    color: #fff;
+    float: left;
+    margin-left: 10px;
+}
+
+.checkboxd-div8 > label {
     color: #fff;
     float: left;
     margin-left: 10px;
