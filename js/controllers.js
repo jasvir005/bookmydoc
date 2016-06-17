@@ -722,13 +722,12 @@ $('.Reset-arrow').click(function(){alert('On processing')});
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
-    alert('android');
-}
+  
+  }
 else
 {
-  alert('iphone');
+$(".filter-page").css({"margin-top": "0px"});
 }
-
 
 $('.right-side-categories').click(function(){
 
@@ -742,7 +741,7 @@ if (clicks) {
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
-alert('android');
+  //alert('true');
    $(".div-coloor").css({"height": "100vh"});
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
