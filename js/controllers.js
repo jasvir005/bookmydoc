@@ -767,7 +767,7 @@ document.getElementById('cate-slide').style.display='none';
 else 
 {
   alert('false');
-$(".categories-div-left").css({"top": "-618px","position":"relative"});
+$(".categories-div-left").css({"top": "-518px","position":"relative"});
 
    var widthvar = $( window ).width();
  
