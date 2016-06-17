@@ -239,7 +239,7 @@ fbData = function () {
             var cache=localStorage.getItem('token');
 
    $ionicLoading.show({
-        template: '<img  src="img/loading.gif" />'
+/*        template: '<img  src="img/await.gif" />'*/
       });
  var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","phone":"9898989897","usertype":"2"}';
 
@@ -253,7 +253,7 @@ fbData = function () {
       }).then(function mySucces(response) {
 
  $ionicLoading.hide({
-        template: '<img  src="img/loading.gif" />'
+        template: '<img  src="img/await.gif" />'
       });
 
 
@@ -270,7 +270,7 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
  
      
    $ionicLoading.show({
-      template: '<img  src="img/loading.gif" />'
+/*      template: '<img  src="img/await.gif" />'*/
     });
     $scope.loginData.usertype='2';
     var url='/get_login_detailss';
@@ -312,7 +312,7 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 
  
  $ionicLoading.hide({
-        template: '<img  src="img/loading.gif" />'
+        template: '<img  src="img/await.gif" />'
       });
        
 //alert(response);
@@ -367,7 +367,7 @@ $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = f
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     $ionicLoading.show({
-      template: '<img  src="img/loading.gif" />'
+/*      template: '<img  src="img/await.gif" />'*/
     });
     $scope.loginData.usertype='2';
     var url='/get_login_details';
@@ -1026,7 +1026,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
   }
     $scope.doSignup = function() {
       $ionicLoading.show({
-        template: '<img  src="img/loading.gif" />'
+      /*  template: '<img  src="img/await.gif" />'*/
       });
       $scope.signUpData.usertype='2';
       var url='/get_signup_details';
@@ -1074,7 +1074,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
   //alert('hi');
 
     $ionicLoading.show({
-        template: '<img  src="img/loading.gif" />'
+/*        template: '<img  src="img/await.gif" />'*/
       });
 
  
@@ -1096,7 +1096,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
          console.log(statusvar);
      
    $ionicLoading.show({
-      template: '<img  src="img/loading.gif" />'
+/*      template: '<img  src="img/await.gif" />'*/
     });
     $scope.loginData.usertype='2';
     var url='/get_login_detailss';
@@ -1135,7 +1135,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
          
 
  $ionicLoading.hide({
-        template: '<img  src="img/loading.gif" />'
+        template: '<img  src="img/await.gif" />'
       });
        
       }); 
@@ -1364,7 +1364,7 @@ $scope.slide= function(myTransition) {
 
     $scope.bookAppointment = function(){
       $ionicLoading.show({
-        template: '<img  src="img/loading.gif" />'
+      /*  template: '<img  src="img/await.gif" />'*/
       });
       $scope.Appointment ={};
       $scope.Appointment.doctor_id = $scope.Doc.id;
