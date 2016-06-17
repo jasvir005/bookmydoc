@@ -1046,7 +1046,7 @@ clear: left;
     font-family: Helvetica;
     font-size: 16.5px;
     font-weight: lighter;
-    margin-left: 20px;
+    margin-left: 15px;
     overflow: hidden;
     text-align: left !important;
     width: 100%;
@@ -1228,7 +1228,7 @@ width: 55%;
     font-family: Helvetica;
     font-size: 16.5px;
     font-weight: lighter;
-    margin-left: 24px;
+    margin-left: 15px;
     text-align: left !important;
     width: 100%;
     src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1288,7 +1288,7 @@ z-index: 999 !important;
 
 .filter-page-contant .dollersign {
  
-    color: #a6a6a6 !important;
+    color: #747474 !important;
      
 } 
 
