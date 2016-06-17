@@ -397,7 +397,7 @@ $document.ready(function(){
 
 
 $(".right-side-categories").click(function(){
-
+$("#appendinto").html("");
 var a=$('.checkboxd-div1 input:checked').val();
 var b=$('.checkboxd-div2 input:checked').val();
 var c=$('.checkboxd-div3 input:checked').val();
@@ -405,38 +405,58 @@ var d=$('.checkboxd-div4 input:checked').val();
 var e=$('.checkboxd-div5 input:checked').val();
 var f=$('.checkboxd-div6 input:checked').val();
 var g=$('.checkboxd-div7 input:checked').val();
+
 if(a==undefined)
 {
  a='';
+}
+else{
+var a = a+','; 
 }
 if(b==undefined)
 {
  b='';
 } 
+else{
+ var b = b+','; 
+}
 if(c==undefined)
 {
  c='';
+}
+else{
+ var c = c+','; 
 } 
 if(d==undefined)
 {
  d='';
 } 
+else{
+var d =  d+','; 
+}
 if(e==undefined)
 {
  e='';
+}
+else{
+var e =  e+','; 
 } 
 if(f==undefined)
 {
  f='';
 } 
+else{
+ var f = f+','; 
+}
 if(g==undefined)
 {
  g='';
 } 
- 
-$("#appendinto").html("");
-var com=a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g;
-
+else{
+var g =  g+','; 
+}
+ var com = a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g;
+ com = com.replace(/,\s*$/, "");
 $("#appendinto").append(':'+com);
 
  

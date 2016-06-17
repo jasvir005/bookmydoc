@@ -597,17 +597,30 @@ margin-bottom: 0px;
     margin-bottom: 3px;
     margin-top: 6px;
 
-     font-family: 'fontawesome';
+     font-family: 'helvetica';
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
       src:url('fonts/fontawesome-webfont.otf');
        
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 }
  
 
+.dont-have-accountflog > b {
+    font-weight: 400;
+}
+
+#signdiv {
+    font-family: helvetica;
+    font-weight: normal;
+        src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+      src:url('fonts/fontawesome-webfont.otf');
+ 
+}
 
 .containerlog{
 width: 80%;
@@ -1139,7 +1152,7 @@ clear: left;
     width: 92%;
 }
 .filter-page-contant .language-div > b {
-color: #7d7b7a;
+color: #515151;
 font-family: helvetica;
 font-size: 16.5px;
 font-weight: lighter;
@@ -1317,7 +1330,7 @@ width: 100%;
 
 .filter-page-contant .rating-txt {
     margin: 10px auto 11px;
-    width: 93%;
+    width: 92%;
 }
 
 .rating-div {
@@ -1333,7 +1346,7 @@ width: 100%;
 
 
 .filter-page-contant .rating-div b {
-  color: #7d7b7a;
+  color: #515151;
     font-family: helvetica;
     font-size: 16.5px;
     font-weight: lighter;
@@ -1368,7 +1381,7 @@ width: 100%;
 
 .language-div {
   margin: 15px auto 14px;
-    width: 95%;
+    width: 92%;
 }
 
 .filter-page-contant .language-icon {
