@@ -736,7 +736,7 @@ $('.right-side-categories').click(function(){
 
 var clicks = $(".right-side-categories").data('clicks');
 if (clicks) {
-//alert('true');
+alert('true');
 
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
@@ -753,6 +753,8 @@ else
 {
   //alert('iphomne');
 
+
+$(".categories-div-left").css({"top": "-614px","position":"relative"});
 $(".div-coloor").css({"height": "100vh","float":"left"});
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
@@ -764,6 +766,7 @@ document.getElementById('cate-slide').style.display='none';
 } 
 else 
 {
+  alert('false');
 
 
    var widthvar = $( window ).width();
