@@ -726,7 +726,7 @@ if(isAndroid) {
   }
 else
 {
-$(".filter-page").css({"margin-top": "-4px"});
+$(".filter-page").css({"margin-top": "-2px"});
 }
 
 $('.right-side-categories').click(function(){
