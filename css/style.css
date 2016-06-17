@@ -1170,10 +1170,10 @@ src:url('fonts/Nexa Light.otf');
     width: 10%;
 }
 .filter-page-contant .right-side-categories img {
-    float: right;
-    width: 43%;
-        padding-top: 6px;
-            padding-bottom: 10px;
+float: right;
+width: 43%;
+padding-top: 6px;
+padding-bottom: 10px;
 }
 .filter-page-contant .yoga-wordout > p {
 color: #7f7f7f;

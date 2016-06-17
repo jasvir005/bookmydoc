@@ -741,10 +741,8 @@ document.getElementById('cate-slide').style.display='none';
 }
 else
 {
-
-
- 
-   $(".div-coloor").css({"height": "100vh","float":"left"});
+$(".filter-page").css({"margin-top": "0px"});
+$(".div-coloor").css({"height": "100vh","float":"left"});
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
 $(".categories-div-left").hide();  
