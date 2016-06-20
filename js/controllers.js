@@ -4,7 +4,6 @@ angular.module('starter.controllers', ["ngStorage"])
 
     $timeout(function() {
 
-            //alert('hello');
 $(".main-containerlog").css({"position":"relative","top":"500px"});
           }, -01);
 
