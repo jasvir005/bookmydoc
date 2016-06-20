@@ -5,8 +5,14 @@ angular.module('starter.controllers', ["ngStorage"])
     $timeout(function() {
 
             //alert('hello');
-$(".filter-page").css("display","none");
+$(".main-containerlog").css("display","none");
           }, -01);
+
+      $timeout(function() {
+
+            //alert('hello');
+$(".main-containerlog").css("display","block");
+          }, 1000);
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
