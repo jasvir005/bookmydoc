@@ -9,7 +9,9 @@ angular.module('starter.controllers', ["ngStorage"])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 alert('hello');
-  $(".div-coloor").css("display","none important");
+$("#pageload").css("display","none");
+$("#pageload").hide();
+$(".div-coloor").css("display","none important");
 //$(".div-coloor").hide();
 
 
