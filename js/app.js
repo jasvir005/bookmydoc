@@ -21,10 +21,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',"n
       StatusBar.styleDefault();
     }
     document.addEventListener('deviceready', function() {
-       setTimeout(function() {
-            navigator.splashscreen.hide();
-        }, -1);
-  //navigator.splashscreen.hide();
+  navigator.splashscreen.hide();
 });
   });
 })
