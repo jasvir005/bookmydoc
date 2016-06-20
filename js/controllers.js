@@ -20,7 +20,7 @@ angular.module('starter.controllers', ["ngStorage"])
 
           }, 3000);
 
-   
+
 //$(".div-coloor").hide();
 
 
