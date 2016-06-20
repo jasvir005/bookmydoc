@@ -10,7 +10,15 @@ angular.module('starter.controllers', ["ngStorage"])
   //});
 //alert('hello');
 
-   $timeout(function() {
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+if(isAndroid) {
+
+  }
+  else
+  {
+   /// alert('dfdf');
+       $timeout(function() {
           //alert('hello');
  $(".main-containerlog").css({"position":"relative","top":"1000px"})
           }, -1);
@@ -19,6 +27,11 @@ angular.module('starter.controllers', ["ngStorage"])
  $(".main-containerlog").css({"position":"relative","top":"0px"})
 
           }, 3000);
+  }
+
+
+
+
 //$(".div-coloor").hide();
 
 
