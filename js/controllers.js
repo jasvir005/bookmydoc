@@ -8,7 +8,7 @@ angular.module('starter.controllers', ["ngStorage"])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
-
+$(".div-coloor").hide();
 
 
   // Form data for the login modal
