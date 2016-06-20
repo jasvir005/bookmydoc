@@ -16,9 +16,9 @@ angular.module('starter.controllers', ["ngStorage"])
           }, -1);
 
    $timeout(function() {
-     // $(".main-containerlog").css({"position":"relative","top":"0px"})
+ $(".main-containerlog").css({"position":"relative","top":"0px"})
 
-          }, 2000);
+          }, 3000);
 //$(".div-coloor").hide();
 
 
