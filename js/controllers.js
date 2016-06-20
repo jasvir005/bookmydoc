@@ -12,7 +12,7 @@ angular.module('starter.controllers', ["ngStorage"])
 
    $timeout(function() {
           //alert('hello');
- $(".main-containerlog").css({"position":"relative","top":"500px"})
+ $(".main-containerlog").css({"position":"relative","top":"1000px"})
           }, -1);
 
    $timeout(function() {
