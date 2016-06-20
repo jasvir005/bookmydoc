@@ -10,16 +10,7 @@ angular.module('starter.controllers', ["ngStorage"])
   //});
 //alert('hello');
 
-var ua = navigator.userAgent.toLowerCase();
-var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-if(isAndroid) {
-
-  }
-  else
-  {
-    
-   /// alert('dfdf');
-       $timeout(function() {
+   $timeout(function() {
           //alert('hello');
  $(".main-containerlog").css({"position":"relative","top":"1000px"})
           }, -1);
@@ -28,11 +19,8 @@ if(isAndroid) {
  $(".main-containerlog").css({"position":"relative","top":"0px"})
 
           }, 3000);
-  }
 
-
-
-
+   
 //$(".div-coloor").hide();
 
 
