@@ -5,14 +5,12 @@ angular.module('starter.controllers', ["ngStorage"])
     $timeout(function() {
 
             //alert('hello');
-$(".main-containerlog").css("display","none");
+$(".main-containerlog").css({"position":"relative","top":"500px"});
           }, -01);
 
       $timeout(function() {
 
-            //alert('hello');
-$(".main-containerlog").css("display","block");
-$(".div-coloor").css("display","none");
+$(".main-containerlog").css({"position":"relative","top":"0px"});
 
           }, 1000);
 
