@@ -34,6 +34,7 @@
 </platform>
 
 <platform name="ios">
+<preference name="SplashScreenDelay" value="0"/>
 
     <icon src="res/icon/ios/icon.png" width="57" height="57"/>
 <icon src="res/icon/ios/icon-72.png" width="72" height="72"/>
