@@ -84,8 +84,7 @@
     </platform>
     <preference name="SplashScreenDelay" value="0"/>
 
-<preference name="SplashScreenDelay" value="0">
-      </platform>
+<preference name="SplashScreenDelay" value="0"/>
 <preference name="SplashScreen" value="0" />
 
      <gap:config-file platform="ios" parent="UIStatusBarHidden">
