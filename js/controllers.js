@@ -2,23 +2,24 @@ angular.module('starter.controllers', ["ngStorage"])
 
 .controller('AppCtrl', function($ionicHistory,$document,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
 
-    $timeout(function() {
-
-$(".main-containerlog").css({"position":"relative","top":"500px"});
-          }, -01);
-
-      $timeout(function() {
-
-$(".main-containerlog").css({"position":"relative","top":"0px"});
-
-          }, 1000);
-
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+//alert('hello');
+
+   $timeout(function() {
+          //alert('hello');
+ $(".main-containerlog").css({"position":"relative","top":"500px"})
+          }, -1);
+
+   $timeout(function() {
+      $(".main-containerlog").css({"position":"relative","top":"0px"})
+
+          }, 2000);
+//$(".div-coloor").hide();
 
 
   // Form data for the login modal
@@ -144,7 +145,6 @@ console.log($scope.baseurl);
   // Open the login modal
   $scope.login = function() {
     //alert('hi');
- $(".filter-page").css("display","block");
     $scope.modal.show();
   };
 
@@ -747,7 +747,7 @@ $('.right-side-categories').click(function(){
 
 var clicks = $(".right-side-categories").data('clicks');
 if (clicks) {
-alert('truedd');
+//alert('truedd');
  $(".filter-page-contant .right-side-categories img").removeClass("rtansformimga");
 
 
@@ -868,7 +868,7 @@ $(".padding").css({"padding": "0px"});
 
 }
  
-alert('false hi ');
+//alert('false hi ');
  
 
   $(".filter-page-contant .right-side-categories img").addClass("rtansformimga");
@@ -1187,7 +1187,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
  
   $scope.doSignud = function() {
 
-    alert('hello');
+    //alert('hello');
   /*    $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
       });
