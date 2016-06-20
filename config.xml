@@ -83,10 +83,10 @@
  <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
     <false/>
 </gap:config-file>
-<preference name="SplashScreen" value="none"/>
+ 
+<preference name="FadeSplashScreenDuration" value="0"/>
+ 
 
-<preference name="FadeSplashScreen" value="false"/>
-
-        <preference name="ShowSplashScreenSpinner" value="false"/>
+         
 </widget>
 
