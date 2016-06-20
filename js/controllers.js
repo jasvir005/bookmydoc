@@ -12,6 +12,8 @@ $(".main-containerlog").css("display","none");
 
             //alert('hello');
 $(".main-containerlog").css("display","block");
+$(".div-coloor").css("display","none");
+
           }, 1000);
 
   // With the new view caching in Ionic, Controllers are only called
