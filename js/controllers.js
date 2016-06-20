@@ -9,7 +9,7 @@ angular.module('starter.controllers', ["ngStorage"])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 alert('hello');
-  $(".div-coloor").css("display","inline important");
+  $(".div-coloor").css("display","none important");
 //$(".div-coloor").hide();
 
 
@@ -738,7 +738,7 @@ $('.right-side-categories').click(function(){
 
 var clicks = $(".right-side-categories").data('clicks');
 if (clicks) {
-//alert('truedd');
+alert('truedd');
  $(".filter-page-contant .right-side-categories img").removeClass("rtansformimga");
 
 

@@ -155,6 +155,7 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
     font-weight: normal;
     font-style: normal;
   content: '⚫';font-family: 'helvetica';background: #fff;color: #F5A623;border:1px solid #F5A623;}
+
 .radio-custom + .radio-custom-label:before {border-radius: 50%;}
 .radio-custom:checked + .radio-custom-label:before {
   src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1536,7 +1537,7 @@ input[type='radio']:before {
   border-radius:50%;    
 }
 input[type='radio']:checked:before {
-  background:green;
+  background:#FFCC80;
 }
 
 
