@@ -17,6 +17,7 @@ if(isAndroid) {
   }
   else
   {
+    
    /// alert('dfdf');
        $timeout(function() {
           //alert('hello');
