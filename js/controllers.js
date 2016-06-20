@@ -3,11 +3,10 @@ angular.module('starter.controllers', ["ngStorage"])
 .controller('AppCtrl', function($ionicHistory,$document,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
 
     $timeout(function() {
-$(".div-coloor").hide();
 
-
-         
-          }, 1);
+            //alert('hello');
+$(".filter-page").css("display","none");
+          }, -01);
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -140,6 +139,7 @@ console.log($scope.baseurl);
   // Open the login modal
   $scope.login = function() {
     //alert('hi');
+ $(".filter-page").css("display","block");
     $scope.modal.show();
   };
 
