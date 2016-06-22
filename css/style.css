@@ -803,10 +803,11 @@ width: 100%;
 
 
 .login-btn-facebookflog .bmd-main-btnflog{ font-size: 15px;}
+
 .facebk-txtflog {
     font-size: 19px;
+    font-family: helvetica;
 }
-
 .dont-have-accountflog {
     color: #fff;
     margin-bottom: 0px;
@@ -854,12 +855,18 @@ width: 100%;
     width: 9%;
 }
 
-.log-with-txt {
+/*.log-with-txt {
  font-size: 13px;
     font-weight: bolder;
     margin-right: 4px;
+}*/
+.log-with-txt {
+    font-family: "Trebuchet MS";
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 1.3px;
+    margin-right: 10px;
 }
-
 
 
 /* COMMON RADIO AND CHECKBOX STYLES  */
@@ -1692,6 +1699,7 @@ input[type='radio']:checked:before {
     padding: 8px;
     text-align: center;
     width: 100%;
+    letter-spacing: 1px;
 }
 /********************************/
 li.bmd-listing:nth-child(2) .head-img-txtflog > p {
