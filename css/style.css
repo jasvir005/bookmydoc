@@ -1743,7 +1743,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px)and (orientation : landscape){ 
   body{
-    border:2px solid yellow !important;
+    border:2px solid red !important;
   }
   .bmd-bg-sec2 img {
     width:100% !important;
