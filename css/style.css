@@ -516,7 +516,8 @@ width: 100%;}
     font-size: 28px;
     font-style: normal;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 1px;
+    margin-top: 14px;
  font-family: 'fontawesome';
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
@@ -805,7 +806,7 @@ width: 100%;
 .login-btn-facebookflog .bmd-main-btnflog{ font-size: 15px;}
 
 .facebk-txtflog {
-    font-size: 19px;
+    font-size: 20px;
     font-family: helvetica;
 }
 .dont-have-accountflog {
@@ -862,7 +863,7 @@ width: 100%;
 }*/
 .log-with-txt {
     font-family: "Trebuchet MS";
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bolder;
     letter-spacing: 1.3px;
     margin-right: 10px;
@@ -1711,8 +1712,8 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     letter-spacing: 1px;
 }
 .signup-btn {
-  margin: 0 auto;
-  width: 85%;
+ background: #003f6f none repeat scroll 0 0;
+    text-align: center;
 }
 .signup-btn button {
     background-color: #fe9901;
@@ -1721,4 +1722,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     font-style: normal;
     font-weight: 600;
     letter-spacing: 1px;
+      margin: 0 auto;
+  width: 85%;
+  text-align: center;
 }
