@@ -2,6 +2,18 @@ angular.module('starter.controllers', ["ngStorage"])
 
 .controller('AppCtrl', function($ionicHistory,$document,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
 
+
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+if(isAndroid) {
+
+$(".head-img-txtflog").css({"margin-top":"46px"});
+  }
+  else
+  {
+   
+    $(".head-img-txtflog").css("margin-top","42px");
+  }
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -726,6 +738,7 @@ if(isAndroid) {
   }
 else
 {
+
 $(".filter-page").css({"margin-top": "-4px"});
 }
 
