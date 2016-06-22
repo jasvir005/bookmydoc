@@ -1,7 +1,11 @@
 
 /*=== GENERAL-SETTINGS ===*/
 
-
+*
+{
+  padding: 0px;
+  margin: 0px;
+}
 
 
   @font-face {
