@@ -1,0 +1,4 @@
+function fblogin()
+{
+  alert('hi');
+}
