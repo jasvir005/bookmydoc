@@ -3863,23 +3863,36 @@ a.subdued {
  * --------------------------------------------------
  */
 .bar {
-    -moz-user-select: none;
-    background-color: white;
-    background-size: 0 auto;
-    border-bottom: 1px solid #ddd;
-    border-style: solid;
-    border-top: 1px solid transparent;
-    border-width: 1px 0;
-    box-sizing: border-box;
-    display: flex;
-    height: 44px;
-    left: 0;
-    padding: 5px;
-    position: absolute;
-    right: 0;
-    transform: translate3d(0px, 0px, 0px);
-    width: 100%;
-    z-index: 9; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  height: 44px;
+  border-width: 0;
+  border-style: solid;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  /* border-width: 1px will actually create 2 device pixels on retina */
+  /* this nifty trick sets an actual 1px border on hi-res displays */
+  background-size: 0; }
   @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .bar {
       border: none;
@@ -7746,7 +7759,7 @@ input[type="file"] {
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #fff; }
+  color: #aaaaaa; }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {

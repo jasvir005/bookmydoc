@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ["ngStorage"])
 
-.controller('AppCtrl', function($ionicHistory,$document,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
+.controller('AppCtrl', function($ionicHistory,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -8,27 +8,13 @@ angular.module('starter.controllers', ["ngStorage"])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
-//alert('hello');
 
-   $timeout(function() {
-          //alert('hello');
- $(".main-containerlog").css({"position":"relative","top":"1000px"})
-          }, -1);
-
-   $timeout(function() {
- $(".main-containerlog").css({"position":"relative","top":"0px"})
-
-          }, 3000);
-
-
-//$(".div-coloor").hide();
 
 
   // Form data for the login modal
   $scope.loginData = {};
   $scope.signUpData = {};
    $scope.signUpdData = {};
-   
   $scope.resetData = {};
   $scope.Doc={};
   $scope.AppointmentDetails={};
@@ -71,142 +57,34 @@ console.log($scope.baseurl);
     $scope.doc_modal = doc_modal;
   });
 
- 
-  $ionicModal.fromTemplateUrl('templates/login-Copy.html', {
-    scope: $scope,
-    caching: false
-  }).then(function(login_twoe) {
-    $scope.login_twoe = login_twoe;
-  }); 
-
-
-
-  $ionicModal.fromTemplateUrl('templates/hidemenu.html', {
-    scope: $scope,
-    caching: false
-  }).then(function(loginmenuhideshow) {
-    $scope.loginmenuhideshow = loginmenuhideshow;
-  }); 
-
-    $ionicModal.fromTemplateUrl('templates/filter.html', {
-    scope: $scope,
-    caching: false
-  }).then(function(filterpage) {
-    $scope.filterpage = filterpage;
-  }); 
-
-
-
-
   
 
-    $ionicModal.fromTemplateUrl('templates/hidemmainmenu.html', {
-    scope: $scope,
-    caching: false
-  }).then(function(hidemmainmenu) {
-    $scope.hidemmainmenu = hidemmainmenu;
-  }); 
-
- 
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
     $scope.modal.hide();
   };
-
-   $scope.closemenulogo = function() {
-  $scope.loginmenuhideshow.hide();
-    $scope.menuhide();
- // alert('dfdf');
-  };
-
-
-
   $scope.closeSignup = function() {
     $scope.signup_modal.hide();
   };
-
- $scope.closefilterpage = function() {
-   $scope.filterpage.hide();
-  };
-
   $scope.closeForgot = function() {
     $scope.reset_modal.hide();
   };
   $scope.closeDoc_modal = function() {
     $scope.doc_modal.hide();
   };
-
-    $scope.closelogin_two = function() {
-
-//alert('DD');
-
-  //$scope.modalax.hide();
-  $scope.login_twoe.hide();
-  };
  
+
   // Open the login modal
   $scope.login = function() {
-    //alert('hi');
     $scope.modal.show();
-  };
-
-
-
-
- $scope.menuhide = function() {
-   //alert('hi');
-  $scope.hidemmainmenu.show();
-  };
-
- $scope.loginw = function() {
-    //alert('hi');
-    $scope.modal.show();
-  };
-  
-
-
-  $scope.login_two = function() {
-    //alert('hi')
-  $scope.login_twoe.show();
   };
 
   $scope.signup = function() {
-    
     $scope.signup_modal.show();
   };
 
-
-   $scope.login_two = function() {
-
-    //alert('hi');
-     $scope.login_twoe.show();
-  };
-
-
-
- $scope.commingsoon = function() {
-
-  alert('comming soon');
-
- };
-
-  $scope.filterpa = function() {
-
- $scope.filterpage.show();
-
- };
-
-
-
-
-
    $scope.fblogin = function() {
-   
-   
-   //alert('hi');
-
-
-
+ //alert('hi');
    facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
         function (error) { alert("bookmydoc" + JSON.stringify(error)) }
@@ -252,7 +130,7 @@ fbData = function () {
             var cache=localStorage.getItem('token');
 
    $ionicLoading.show({
-/*        template: '<img  src="img/await.gif" />'*/
+        template: '<img  src="img/loading.gif" />'
       });
  var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","phone":"9898989897","usertype":"2"}';
 
@@ -266,7 +144,7 @@ fbData = function () {
       }).then(function mySucces(response) {
 
  $ionicLoading.hide({
-        template: '<img  src="img/await.gif" />'
+        template: '<img  src="img/loading.gif" />'
       });
 
 
@@ -283,7 +161,7 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
  
      
    $ionicLoading.show({
-/*      template: '<img  src="img/await.gif" />'*/
+      template: '<img  src="img/loading.gif" />'
     });
     $scope.loginData.usertype='2';
     var url='/get_login_detailss';
@@ -297,22 +175,15 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
         // $sessionStorage.userSession = response.data;
         // console.log($sessionStorage.SessionMessage);
         if($scope.loginDetails.error.status===false){
+          $sessionStorage.userSession = response.data;
           $scope.userSession = response.data;
           $scope.userSessionStatus = true;
           $scope.AppointmentDetails.details = true;
           $scope.noSessionStatus = false;
           $timeout(function() {
-
-            //alert('hello');
-
             $ionicLoading.hide();
             $scope.closeLogin();
           }, 1000);
-
-
-             $timeout(function() {
-            $scope.closelogin_two();
-          }, 1001);
           
         }else{
           $scope.loginError = $scope.loginDetails.error.status;
@@ -323,12 +194,24 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
         }
     });
 
- 
+     
+     
+
+         
+
  $ionicLoading.hide({
-        template: '<img  src="img/await.gif" />'
+        template: '<img  src="img/loading.gif" />'
       });
        
-//alert(response);
+
+        
+
+
+
+
+
+
+        //alert(response);
       
       }); 
  
@@ -356,19 +239,6 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
   $scope.doc_modal = function() {
     $scope.doc_modal.show();
   };
-
-
-   $scope.loginmenuhide = function() {
-    $scope.loginmenuhideshow.show();
-
-  };
-
-
-    $scope.loginmenuhidehide = function() {
-    $scope.loginmenuhideshow.hide();
-
-  };
-
   $scope.join = function() {
     $scope.modal.hide();
     $scope.signup_modal.show();
@@ -376,11 +246,11 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
   
 
 
-$scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = false;$scope.noSessionStatus = true;
+$scope.submitted= false;$scope.loginError =false;$sessionStorage.userSessionStatus = false;$scope.noSessionStatus = true;
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     $ionicLoading.show({
-/*      template: '<img  src="img/await.gif" />'*/
+      template: '<img  src="img/loading.gif" />'
     });
     $scope.loginData.usertype='2';
     var url='/get_login_details';
@@ -401,637 +271,8 @@ $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = f
           $timeout(function() {
             $ionicLoading.hide();
             $scope.closeLogin();
-            $scope.closelogin_two();
-
-
-$document.ready(function(){
-
-
-
-
-$(".right-side-categories").click(function(){
-$("#appendinto").html("");
-var a=$('.checkboxd-div1 input:checked').val();
-var b=$('.checkboxd-div2 input:checked').val();
-var c=$('.checkboxd-div3 input:checked').val();
-var d=$('.checkboxd-div4 input:checked').val();
-var e=$('.checkboxd-div5 input:checked').val();
-var f=$('.checkboxd-div6 input:checked').val();
-var g=$('.checkboxd-div7 input:checked').val();
-var h=$('.checkboxd-div8 input:checked').val();
-
-if(a==undefined)
-{
- a='';
-}
-else{
-var a = a+','; 
-}
-if(b==undefined)
-{
- b='';
-} 
-else{
- var b = b+','; 
-}
-if(c==undefined)
-{
- c='';
-}
-else{
- var c = c+','; 
-} 
-if(d==undefined)
-{
- d='';
-} 
-else{
-var d =  d+','; 
-}
-if(e==undefined)
-{
- e='';
-}
-else{
-var e =  e+','; 
-} 
-if(f==undefined)
-{
- f='';
-} 
-else{
- var f = f+','; 
-}
-if(g==undefined)
-{
- g='';
-} 
-else{
-var g =  g+','; 
-}
-if(h==undefined)
-{
- h='';
-} 
-else{
-var h =  h+','; 
-}
- var com = a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g+''+h ;
- com = com.replace(/,\s*$/, "");
-$("#appendinto").append(':'+com);
-
- 
-
-  //alert('dd');
-   
-
-
-
-
-});
-
-
-
-
-//alert('dfd');
- $(".categories-div-left").css({"display":"none"});
-  $(".padding").css({"padding":"0px"});
-  
-
-        $(".signup_back_btn").css({"display": "inline"});
-  
-
- 
- 
-$(".theme-bg").css('background-color','#fff');
-
-   var widthvar = $( window ).width();
- 
-  $(window).resize(function(){
-
-
- 
-       var widthvar = $( window ).width();
-     //alert(widthvar); 
-
- if(widthvar==320)
- {
-
-$(".slider-wrapper").css('width','255px');
-$(".slider-wrapper2").css({'border':'0px solid red','width':'257px','margin':'0 0 26px 31px'})
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
- }
-
-
-
- if(widthvar==360)
- {
-  //alert('dd');
-  //$(".categories-div-left").css("cssText", "display: none !important;");
-
-  $(".categories-div-left").hide();
-
-$(".cate-slide").css('display','none');
-$(".slider-wrapper").css('width','263px');
-$(".slider-wrapper2").css({'width':'266px','margin':'0 0 27px 44px'});
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
- }
-
-  if(widthvar==480)
- {
-$(".slider-wrapper").css('width','378px');
-$(".slider-wrapper2").css('width','382px');
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
-} 
-
-  if(widthvar==640)
- {
-$(".slider-wrapper").css('width','560px');
-$(".slider-wrapper2").css('width','549px');
-$(".filter-page-contant .example").css('margin-top','34px');
-
-
-
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
-} 
- 
-});
-
-
- if(widthvar==320)
- {
-$(".slider-wrapper").css('width','255px');
-$(".slider-wrapper2").css({'border':'0px solid red','width':'257px','margin':'0 0 26px 31px'})
-
-//css('border','1px solid red','width','257px','margin','0 0 26px 31px;');
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
- }
-
-   if(widthvar==360)
- {
-
-  $(".filter-page-contant").css('height','100vh');
-$(".slider-wrapper").css('width','263px');
-$(".slider-wrapper2").css({'width':'266px','margin':'0 0 27px 44px'});
-
-//$(".filter-page-contant .range-bar").css('margin-bottom','35px');
- 
- }
-
-  if(widthvar==480)
- {
-$(".slider-wrapper").css('width','378px');
-$(".slider-wrapper8").css('width','382px');
-}
-  if(widthvar==640)
- {
-$(".slider-wrapper").css('width','560px');
-$(".slider-wrapper2").css('width','549px');
-$(".filter-page-contant .example").css('margin-top','34px');
-$(".range-handle").css('left','0px');
-
-
-$(".range-quantity").css('width','0px');
-} 
-  //alert('hi');
-
-
- var dec = document.querySelector('.js-decimal');
-    var initDec = new Powerange(dec, { decimal: false, callback: displayDecimalValue, max: 250, start: 0 });
-
- function displayDecimalValue() {
-    document.getElementById('js-display-decimald').innerHTML = dec.value;
-    }
-
-    var changeInput = document.querySelector('.js-check-change')
-    , initChangeInput = new Powerange(changeInput, { start: 0 });
-
-
-    changeInput.onchange = function() {
-
-      var crntval=changeInput.value;
-      
-      var totalmimles = crntval/2;
-      
-      totalmimles = Math.round(totalmimles);
-
-
-       document.getElementById('js-display-changes').innerHTML = totalmimles;
-
-    };
-
-
-        $(document).ready(function(){
-
-
-
-
-
-          $(".slider-wrapper .range-bar .range-min").html("");
-$(".first-star1").click(function(){
-    $(".norating").html("");
-
-$(".norating").append('<p class="countrating">1</p>');
-
- 
-
-$(".first-star1 img").attr('src',"img/1star copy.png").css({"width":"100%","margin-left":"0px"});
- 
-$(".first-star2 img").attr('src',"img/second_img.png");
-$(".first-star3 img").attr('src',"img/third_img1.png");
-$(".first-star4 img").attr('src',"img/fourth_img.png");
-$(".first-star5 img").attr('src',"img/fifth_img.png");
-
-$(".Click img").attr('src',"img/fifth_img.png");
-
-});
-
-$(".first-star2").click(function(){
-    $(".norating").html("");
-
-
-$(".norating").append('<p class="countrating">2</p>');
-
-$(".first-star2 img").attr('src',"img/2star copy.png").css({"width":"100%","margin-left":"0px"});
-
-
-
-$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star3 img").attr('src',"img/third_img1.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star4 img").attr('src',"img/fourth_img.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star5 img").attr('src',"img/fifth_img.png").css({"width":"100%","margin-left":"0px"}).css("width","100%");
-
-
-});
-
-$(".first-star3").click(function(){
-        $(".norating").html("");
-
-
-$(".norating").append('<p class="countrating">3</p>');
-
- 
-
-$(".first-star3 img").attr('src',"img/3star copy.png").css({"width":"100%","margin-left":"0px"});
-
-$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star2 img").attr('src',"img/second_img.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star4 img").attr('src',"img/fourth_img.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star5 img").attr('src',"img/fifth_img.png").css({"width":"100%","margin-left":"0px"});
-
-
-});
-
-$(".first-star4").click(function(){
-        $(".norating").html("");
-
-
-$(".norating").append('<p class="countrating">4</p>');
-
-
-
-$(".first-star4 img").attr('src',"img/4star copy.png").css({"width":"100%","margin-left":"0px"});
-
-$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star2 img").attr('src',"img/second_img.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star3 img").attr('src',"img/third_img1.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star5 img").attr('src',"img/fifth_img.png").css({"width":"100%","margin-left":"0px"});
-
-});
-
-
-$(".first-star5").click(function(){
- 
-    $(".norating").html("");
-$(".norating").append('<p class="countrating">5</p>');
-
- $(".first-star5 img").attr('src',"img/5star.png").css({"width":"100%","margin-left":"0px"});
-
-$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star2 img").attr('src',"img/second_img.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star3 img").attr('src',"img/third_img1.png").css({"width":"100%","margin-left":"0px"});
-$(".first-star4 img").attr('src',"img/fourth_img.png").css({"width":"100%","margin-left":"0px"});
- 
-});
- 
- 
-});
-
-  
-
-    $( ".slider-wrapper .range-max" ).html( "" );
-    $( ".slider-wrapper .range-max" ).prepend( "$250" );
-    $( ".slider-wrapper2 .range-min" ).html( "" );
-    $( ".slider-wrapper2 .range-min" ).append( "0m" );
-    $( ".slider-wrapper2 .range-max" ).html( "" );
-    $( ".slider-wrapper2 .range-max" ).append( "50m" );
- 
-$('.js-display-changes').html("0");
-$('.Reset-arrow').click(function(){alert('On processing')});
-var ua = navigator.userAgent.toLowerCase();
-var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-if(isAndroid) {
-
-  }
-else
-{
-$(".filter-page").css({"margin-top": "-4px"});
-}
-
-$('.right-side-categories').click(function(){
-
-
-
-
-var clicks = $(".right-side-categories").data('clicks');
-if (clicks) {
-//alert('truedd');
- $(".filter-page-contant .right-side-categories img").removeClass("rtansformimga");
-
-
-var ua = navigator.userAgent.toLowerCase();
-var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
-if(isAndroid) {
-  //alert('true');
-   $(".div-coloor").css({"height": "100vh"});
-$(".filter-page").css({"right": "0px"});
-$(".categories-div-left").css({"display":"none !important;"});
-$(".categories-div-left").hide();  
-$(".categories-div-left").css("z-index","-9999"); 
-document.getElementById('cate-slide').style.display='none';
-}
-else
-{
-  //alert('iphomne');
-
-$(".div-coloor").css({"height": "100vh","float":"left"});
-$(".filter-page").css({"right": "0px"});
-$(".categories-div-left").css({"display":"none !important;"});
-$(".categories-div-left").hide();  
-$(".categories-div-left").css("z-index","-9999"); 
-document.getElementById('cate-slide').style.display='none';
-}
-
-} 
-else 
-{
-
-
-   var widthvar = $( window ).width();
- 
-  $(window).resize(function(){
-
-       var widthvar = $( window ).width();
-       //alert('hi');
-       //alert(widthvar);
- 
-       if(widthvar==360)
-       {
-
-  //alert('alex');
-$(".categories-div-left").hide(); 
-
-$(".filter-page-contant").css('height','100vh');
-$(".categories-div-left").css("cssText", "display: none ");
-$(".div-coloor").off('scroll');
-//.animate({"right": '206px',"posit","absolute"},"show")
-$(".filter-page").css({"right": "0px"});
-///$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-655px","float": "right","position": "relative","text-align": "right"});
-$(".padding").css({"padding": "0px"});
-}
-
-       if(widthvar==640)
-       {
-        $(".categories-div-left").hide(); 
-        //alert('ddd');
-$(".filter-page-contant").css('height','100vh');
-$(".categories-div-left").css("cssText", "display: inline !important;");
-$(".div-coloor").off('scroll');
-//.animate({"right": '206px',"posit","absolute"},"show")
-$(".filter-page").css({"right": "0px"});
-//$(".categories-div-left").css({"left":"50px","position":"relative","width":"201px","top":"-460px","left": "right","text-align":"right"});
-$(".padding").css({"padding": "0px"});
-
-
-}
-     });
-
-
-
-       if(widthvar==320)
-       {
-        $(".categories-div-left").hide(); 
-$(".filter-page-contant").css('height','100vh');
-       $(".categories-div-left").css("cssText", "display: inline !important;");
-$(".div-coloor").off('scroll');
-//.animate({"right": '206px',"posit","absolute"},"show")
-$(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-478px","float": "right","position": "relative","text-align": "right"});
-$(".padding").css({"padding": "0px"});
-}
-
-       if(widthvar==480)
-       {
-        $(".categories-div-left").hide(); 
-$(".filter-page-contant").css('height','100vh');
-       $(".categories-div-left").css("cssText", "display: inline !important;");
-$(".div-coloor").off('scroll');
-//.animate({"right": '206px',"posit","absolute"},"show")
-$(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"border":"0px solid red","padding":"10px","left":"42px","width":"204px","top":"-395px","float": "right","position": "relative","text-align": "right"});
-$(".padding").css({"padding": "0px"});
-}
-
-       if(widthvar==360)
-       {
-$(".categories-div-left").hide(); 
-$(".filter-page-contant").css('height','100vh');
-$(".categories-div-left").css("cssText", "display: inline !important;");
-$(".div-coloor").off('scroll');
-//.animate({"right": '206px',"posit","absolute"},"show")
-$(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-611px","float": "right","position": "relative","text-align": "right"});
-$(".padding").css({"padding": "0px"});
-}
-
-       if(widthvar==640)
-       {
-
-$(".categories-div-left").css("cssText", "display: inline !important;");
-$(".div-coloor").off('scroll');
-//.animate({"right": '206px',"posit","absolute"},"show")
-$(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"left":"0px","padding":"1px","width":"201px","top":"-507px","float": "right","position": "relative","text-align": "right"});
-$(".padding").css({"padding": "0px"});
-
-}
- 
-//alert('false hi ');
- 
-
-  $(".filter-page-contant .right-side-categories img").addClass("rtansformimga");
-
- 
-}
-
- 
-  $(".right-side-categories").data("clicks", !clicks);
- 
-//alert('dd');
- 
-});
-
-
-$('.language-icon').click(function(){alert('On processing')});
-
-/* check box change color script*/
-$(".checkboxd-div7").click(function(){
-var has = $(".input07").is( ":checked" );
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div7 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-
-
-$(".checkboxd-div1").click(function(){
-var has = $(".input01").is( ":checked" );
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div1 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div1 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-
-
-$(".checkboxd-div2").click(function(){
-var has = $(".input02").is( ":checked" );
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div2 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div2 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-
-
-
-
-$(".checkboxd-div3").click(function(){
-var has = $(".input03").is( ":checked" );
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div3 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div3 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-
-$(".checkboxd-div4").click(function(){
-var has = $(".input04").is( ":checked" );
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div4 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div4 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-
-
-
-$(".checkboxd-div5").click(function(){
-var has = $(".input05").is( ":checked" );
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div5 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div5 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-
-
-
-$(".checkboxd-div6").click(function(){
-var has = $(".input06").is( ":checked" );
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div6 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div6 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-
-
-$(".checkboxd-div7").click(function(){
-var has = $(".input07").is( ":checked" );
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div7 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-
-});
-   
-
-          // $scope.filterpa();
-
-            //alert('dfdf');
           }, 1000);
           
-         
-         /*  $timeout(function() {
-
-             //$scope.closelogin_two();
-
-
-          }, 1000); */
-
-                 $timeout(function() {
-
-             $scope.loginmenuhide();
-             $scope.loginmenuhidehide();
-             
-
-          }, 1000);  
-
-
-
-           
-
         }else{
           $scope.loginError = $scope.loginDetails.error.status;
           $scope.loginErrorMsg = $scope.loginDetails.error.msg;
@@ -1043,7 +284,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
   }
     $scope.doSignup = function() {
       $ionicLoading.show({
-      /*  template: '<img  src="img/await.gif" />'*/
+        template: '<img  src="img/loading.gif" />'
       });
       $scope.signUpData.usertype='2';
       var url='/get_signup_details';
@@ -1052,7 +293,6 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
         method: "GET",
         params: {'signUpData': $scope.signUpData},
       }).then(function mySucces(response) {
-        
           $scope.signupDetails = response.data; 
           $scope.signupError = $scope.signupDetails.status;
           $scope.signupMessage = $scope.signupDetails.msg;
@@ -1073,13 +313,10 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
     }
 
     $scope.Logout = function() {
-
       $sessionStorage.userSession = '';
       $scope.userSessionStatus = false;
       $scope.noSessionStatus = true;
-      $window.location.href = 'index.html';
-          //$scope.closemenulogo();
-
+      $window.location.href = '#/app/bmd-home';
     }
 
 
@@ -1088,10 +325,9 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
 
  $scope.Signud = function() {
   
-  //alert('hi');
-
+  alert('hi');
     $ionicLoading.show({
-/*        template: '<img  src="img/await.gif" />'*/
+        template: '<img  src="img/loading.gif" />'
       });
 
  
@@ -1113,7 +349,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
          console.log(statusvar);
      
    $ionicLoading.show({
-/*      template: '<img  src="img/await.gif" />'*/
+      template: '<img  src="img/loading.gif" />'
     });
     $scope.loginData.usertype='2';
     var url='/get_login_detailss';
@@ -1152,7 +388,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
          
 
  $ionicLoading.hide({
-        template: '<img  src="img/await.gif" />'
+        template: '<img  src="img/loading.gif" />'
       });
        
       }); 
@@ -1190,7 +426,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
  
   $scope.doSignud = function() {
 
-    //alert('hello');
+    alert('hello');
   /*    $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
       });
@@ -1381,7 +617,7 @@ $scope.slide= function(myTransition) {
 
     $scope.bookAppointment = function(){
       $ionicLoading.show({
-      /*  template: '<img  src="img/await.gif" />'*/
+        template: '<img  src="img/loading.gif" />'
       });
       $scope.Appointment ={};
       $scope.Appointment.doctor_id = $scope.Doc.id;
@@ -1630,6 +866,3 @@ $scope.slide= function(myTransition) {
 
 })
 ;
-
-
-

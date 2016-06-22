@@ -3,147 +3,53 @@
     <ion-nav-bar class="bar-stable">
       <ion-nav-back-button>
       </ion-nav-back-button>
-    
- 
-      <ion-nav-buttons side="left">
 
+      <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
-  <!--   <div class="top-croselog">
-                  <a href="#"> <i class="fa fa-times" aria-hidden="true"></i> </a>
-              </div> -->
       </ion-nav-buttons>
-   
     </ion-nav-bar>
-
     <ion-nav-view name="menuContent"></ion-nav-view>
-    
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-   
-  
-
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">MENU</h1>
+    </ion-header-bar>
     <ion-content class="bmd-spcl-theme">
       <ion-list class="list">
-        <div class="head-img-txtflogd">
-  <div class="head_img_pro">
-      <img src="img/icon-transparent.png">
-      </div>
-      <p class="word-outflog">MY TRAINER</p>
-
-  </div>
-<ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
-         SEARCH TRAINERS
-        </ion-item>
-
-        <ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
-          MY PROFILE
-        </ion-item>
-        <ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
-          MY FAVORITES
-        </ion-item>
-        <ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
-          MY BOOKINGS
-        </ion-item>
-
-
-          <ion-item menu-close ng-click="commingsoon()" ng-show="noSessionStatus" class="bmd-spcl-listing">
-          SETTINGS
-        </ion-item>
-
-        <!-- social icon start-->
-   <!--   <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
-          
-        </ion-item>
-             <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
-          
-        </ion-item>
-             <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
-        
-        </ion-item>
-          </ion-item>
-             <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
-        
-        </ion-item> -->
-         <!-- social icon start-->
-
-
-
-       <!--  <ion-item menu-close href="#/app/bmd-home" class="bmd-spcl-listing">
+        <ion-item menu-close href="#/app/bmd-home" class="bmd-spcl-listing">
           Home
-        </ion-item> -->
-        <!-- <ion-item menu-close ng-click="loginw()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+        </ion-item>
+        <ion-item menu-close ng-click="login()" ng-show="noSessionStatus" class="bmd-spcl-listing">
           Login
-        </ion-item> -->
+        </ion-item>
 
 
- <!-- <ion-item menu-close ng-click="fblogin()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+ <ion-item menu-close ng-click="fblogin()" ng-show="noSessionStatus" class="bmd-spcl-listing">
           Facebook login
-        </ion-item> -->
+        </ion-item>
 
 
-
-       <!--  <ion-item menu-close ng-click="signup()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+        <ion-item menu-close ng-click="signup()" ng-show="noSessionStatus" class="bmd-spcl-listing">
           Sign Up
-        </ion-item> -->
-
-<!-- <a href="signup2.html">
-          Sign Up
-      </a> -->
+        </ion-item>
         <!-- <ion-item menu-close ng-click="reset()" ng-show="noSessionStatus" class="bmd-spcl-listing">
           Reset Password
         </ion-item> -->
-   <!--      <ion-item menu-close href="#/app/my_booking" ng-show="userSessionStatus" class="bmd-spcl-listing">
+        <!-- <ion-item menu-close href="#/app/my_booking" ng-show="userSessionStatus" class="bmd-spcl-listing">
           My Booking
         </ion-item> -->
-     <!--    <ion-item menu-close ng-click="my_booking()" ng-show="userSessionStatus" class="bmd-spcl-listing" >
-          MY BOOKINGS
-        </ion-item> -->
+        <ion-item menu-close ng-click="my_booking()" ng-show="userSessionStatus" class="bmd-spcl-listing" >
+          My Booking
+        </ion-item>
         <ion-item menu-close ng-click="Logout()" ng-show="userSessionStatus" class="bmd-spcl-listing">
-           LOGOUT
+          Logout
         </ion-item>
-         <ion-item menu-close ng-click="Logout()" ng-show="userSessionStatus" class="bmd-spcl-listing" id="endhover">
-           
-        </ion-item>
-
-           <ion-item menu-close  ng-show="userSessionStatus" class="bmd-spcl-listing" id="endhover">
-           </ion-item>
-
-           <ion-item menu-close  ng-show="userSessionStatus" class="bmd-spcl-listing" id="endhover">
-         </ion-item>
-
-           <ion-item menu-close ng-show="userSessionStatus" class="bmd-spcl-listing" id="endhover">
-        </ion-item>
-
-           <ion-item menu-close  ng-show="userSessionStatus" class="bmd-spcl-listing" id="endhover">
-          </ion-item>
-
-           <ion-item menu-close  ng-show="userSessionStatus" class="bmd-spcl-listing" id="endhover">
-        
-         </ion-item>
-
-
-         <ion-item menu-close  ng-show="userSessionStatus" class="bmd-spcl-listing" id="endhover">
-          
-         </ion-item>
-
-         <ion-item menu-close  ng-show="userSessionStatus" class="bmd-spcl-listing" id="endhover">
-           
-         </ion-item>
-
-
-         <ion-item menu-close  ng-show="userSessionStatus" class="bmd-spcl-listing" id="endhover">
-            
-         </ion-item>
-    
         <!-- <ion-item menu-close href="#/app/test"  class="bmd-spcl-listing">
           My Booking
         </ion-item> -->
       </ion-list>
-      <div class="social_icons"><a href="https://www.facebook.com/"><img src="img/facebookcircle.png"></a><a href="https://twitter.com/"><img src="img/twittercircle.png"></a><a href="https://www.instagram.com/"><img src="img/instagramcircle.png"></a></div>
     </ion-content>
-     
   </ion-side-menu>
-
 </ion-side-menus>
