@@ -1745,17 +1745,15 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   body{
     border:2px solid yellow !important;
   }
-
-
-.bmd-bg-sec2 img 
-{
-  width:100% !important;
-}
-
+  .bmd-bg-sec2 img {
+    width:100% !important;
+  }
   .word-out {
-
     border:5px solid red;
-}
+  }
+  
+
+  
 }
 
 
