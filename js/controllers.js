@@ -8,7 +8,20 @@ angular.module('starter.controllers', ["ngStorage"])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+//alert('hello');
 
+ /*  $timeout(function() {
+          //alert('hello');
+ $(".main-containerlog").css({"position":"relative","top":"1000px"})
+          }, -1);
+
+   $timeout(function() {
+ $(".main-containerlog").css({"position":"relative","top":"0px"})
+
+          }, 3000);*/
+
+
+//$(".div-coloor").hide();
 
 
   // Form data for the login modal
@@ -627,7 +640,7 @@ $(".norating").append('<p class="countrating">1</p>');
 
  
 
-$(".first-star1 img").attr('src',"img/1star copy.png").css("width","90%");
+$(".first-star1 img").attr('src',"img/1star copy.png").css({"width":"100%","margin-left":"0px"});
  
 $(".first-star2 img").attr('src',"img/second_img.png");
 $(".first-star3 img").attr('src',"img/third_img1.png");
@@ -644,14 +657,14 @@ $(".first-star2").click(function(){
 
 $(".norating").append('<p class="countrating">2</p>');
 
-$(".first-star2 img").attr('src',"img/2star copy.png").css("width","90%");
+$(".first-star2 img").attr('src',"img/2star copy.png").css({"width":"100%","margin-left":"0px"});
 
 
 
-$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
-$(".first-star3 img").attr('src',"img/third_img1.png").css("width","100%");
-$(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
-$(".first-star5 img").attr('src',"img/fifth_img.png").css("width","100%").css("width","100%");
+$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star3 img").attr('src',"img/third_img1.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star4 img").attr('src',"img/fourth_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star5 img").attr('src',"img/fifth_img.png").css({"width":"100%","margin-left":"0px"}).css("width","100%");
 
 
 });
@@ -664,12 +677,12 @@ $(".norating").append('<p class="countrating">3</p>');
 
  
 
-$(".first-star3 img").attr('src',"img/3star copy.png").css("width","90%");
+$(".first-star3 img").attr('src',"img/3star copy.png").css({"width":"100%","margin-left":"0px"});
 
-$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
-$(".first-star2 img").attr('src',"img/second_img.png").css("width","100%");
-$(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
-$(".first-star5 img").attr('src',"img/fifth_img.png").css("width","100%");
+$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star2 img").attr('src',"img/second_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star4 img").attr('src',"img/fourth_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star5 img").attr('src',"img/fifth_img.png").css({"width":"100%","margin-left":"0px"});
 
 
 });
@@ -681,12 +694,13 @@ $(".first-star4").click(function(){
 $(".norating").append('<p class="countrating">4</p>');
 
 
-$(".first-star4 img").attr('src',"img/4star copy.png").css("width","90%");
 
-$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
-$(".first-star2 img").attr('src',"img/second_img.png").css("width","100%");
-$(".first-star3 img").attr('src',"img/third_img1.png").css("width","100%");
-$(".first-star5 img").attr('src',"img/fifth_img.png").css("width","100%");
+$(".first-star4 img").attr('src',"img/4star copy.png").css({"width":"100%","margin-left":"0px"});
+
+$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star2 img").attr('src',"img/second_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star3 img").attr('src',"img/third_img1.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star5 img").attr('src',"img/fifth_img.png").css({"width":"100%","margin-left":"0px"});
 
 });
 
@@ -696,12 +710,12 @@ $(".first-star5").click(function(){
     $(".norating").html("");
 $(".norating").append('<p class="countrating">5</p>');
 
- $(".first-star5 img").attr('src',"img/5star.png").css("width","90%");
+ $(".first-star5 img").attr('src',"img/5star.png").css({"width":"100%","margin-left":"0px"});
 
-$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
-$(".first-star2 img").attr('src',"img/second_img.png").css("width","100%");
-$(".first-star3 img").attr('src',"img/third_img1.png").css("width","100%");
-$(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
+$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star2 img").attr('src',"img/second_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star3 img").attr('src',"img/third_img1.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star4 img").attr('src',"img/fourth_img.png").css({"width":"100%","margin-left":"0px"});
  
 });
  
@@ -736,7 +750,9 @@ $('.right-side-categories').click(function(){
 
 var clicks = $(".right-side-categories").data('clicks');
 if (clicks) {
-//alert('true');
+//alert('truedd');
+ $(".filter-page-contant .right-side-categories img").removeClass("rtansformimga");
+
 
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
@@ -773,10 +789,7 @@ else
        var widthvar = $( window ).width();
        //alert('hi');
        //alert(widthvar);
-
  
- 
-
        if(widthvar==360)
        {
 
@@ -857,9 +870,13 @@ $(".categories-div-left").css({"left":"0px","padding":"1px","width":"201px","top
 $(".padding").css({"padding": "0px"});
 
 }
-///alert('false ');
+ 
+//alert('false hi ');
  
 
+  $(".filter-page-contant .right-side-categories img").addClass("rtansformimga");
+
+ 
 }
 
  
@@ -1173,7 +1190,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
  
   $scope.doSignud = function() {
 
-    alert('hello');
+    //alert('hello');
   /*    $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
       });
