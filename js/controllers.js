@@ -8,11 +8,15 @@ var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
 
 $(".head-img-txtflog").css({"margin-top":"46px"});
+$("#signup-pge-cs").css({"margin-top":"46px"});
+
+
   }
   else
   {
-   
+
     $(".head-img-txtflog").css("margin-top","42px");
+    $("#signup-pge-cs").css({"margin-top":"0px"});
   }
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
