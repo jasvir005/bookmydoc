@@ -1,180 +1,14 @@
-
-
 <ion-view class="bar-stableb bg-color-white">
- 
-  <ion-header-bar class="bar-stableb bg-color-white" ng-hide="noSessionStatus">
-
+  <ion-header-bar class="bar-stableb bg-color-white">
     <button menu-toggle="left" class="common-button button button-positive button-clear button_text icon ion-navicon txt-color-black"></button>
-  <!--  <div class="bmd-head"><img src="img/bmd-logo.png"></div> -->
-     <div class="signup_back_btn">
-
-<div class="filter-div">Search</div> <div class="Reset-arrow">Reset</div>
-</div>
-  </ion-header-bar>
- 
-  <ion-content class="padding theme-bg" >
-  <div class="bmd-search-bar-outer">
      
-      <!-- <button class="button button-positive button-clear button_text icon ion-ios-mic txt-color-gray"></button> -->
-    </div>
-
-      <div class="main-containerlog" ng-show="noSessionStatus">
-      <div class="containerlog">
-          <div class="content-toplog">
- <div class="head-img-txtflog">
    
-    <div class="head_img_pro" id="home_img"> 
-      <img src="img/circle(3).png">
-      </div>
-      <p class="word-out">MY TRAINER</p>
-
- 
-    </div>
-      <div class="login-introflog"><p>Find the best local trainers</p></div>
-          </div>
-
-
-      </div>
-      <div class="login-btnflog">
-<button   class="bmd-main-btn2flog" ng-click="login()" >  LOGIN </button>
-</div>
-
-<div class="login-btn-facebookflog">
-<button  ng-click="fblogin();"  class="bmd-main-btn2flog"><b class="log-with-txt">LOGIN WITH </b><b class="facebk-txtflog" >facebook</b></button>
-</div>
-
-<div class="dont-have-accountflog"><b style="padding-top:5px;">Don't have an account? <b id="signdiv" ng-click="signup()" ng-show="noSessionStatus">
-          SIGN UP
-        </b></b></div>
-            
-      
-    
-    </div>
-<div class="div-coloor">
-    <div class="filter-page" ng-hide="noSessionStatus">
-
- 
-    <div class="bmd-results-wrapper" ng-init="get_appointments()">
-      <div class="filter-page-contant">
- 
-<div class="bmd-title-logo2">
- 
-    </div>
-<div class="success_block ng-binding" ng-show="signupError" id="appendmsg"></div>
-
-      <form  name="signupform" ng-submit="signupform.$valid && doSignup()">
-
-
-<div class="containerration">
-
-<div class="yoga-wordout"><p><span class="wordout-yoga">Trainers</span><span id="appendinto"></p>
-
-<div class="right-side-categories"><img class="transfromimg" src="img/disclose-arrow.png"></div></div>
-<div class="likefilter"></div>
-
-
-
-<div class="price-range"><p>Price Range: <span class="dollercls">$</span><span class="dollercls" id="js-display-decimald"></span> to <span class="dollercls">$250</span></p></div>
-
-<div class="slider-wrapper">
- 
-    <b class="dollersign">$0</b>
-    <input type="text" class="js-decimal"  value="$" style="display:none !important;"/>
-
-
-</div>
-
-<div class="example">
-
-    <div class="price-range2"><p>Distance Range:  <span class="dollercls">0 miles</span> to <span class="dollercls" id="js-display-changes"></span> <span class="dollercls">miles</span></p></div>
-    <div class="slider-wrapper2">
-    <input type="text" class="js-check-change" />
-    </div>
-
- </div>
-
-<div class="rating-div"> 
-
- <div class="rating-txt"><b>Ratings</b></div>
-<div class="main-images-star">
-<div class="norating">
-
- 
-<img src="img/no_rating_txt.png">
-</div>
-
-<div class="first-star1"><img src="img/first_img.png">
-</div>
-
-<div class="first-star2"><img src="img/second_img.png">
-</div>
-
-<div class="first-star3"><img src="img/third_img1.png">
-</div>
-
-
-<div class="first-star4"><img src="img/fourth_img.png">
-</div>
-
-<div class="first-star5"><img src="img/fifth_img.png">
-</div>
-</div>
-
-   </div>
-</div>
-
-
-<div class="gender-div">
-<div class="gendr-div-main">
-<b class="gender-txt">Gender</b>
-</div>
-<div class="male">
-  <input type="radio"  name="gender" value="male"><label>Male</label>
-  </div>
-  <div class="female">
-    <input type="radio"  name="gender" value="female"><label>Female</label>
-    </div>
-</div>
-<div class="language-div"><b id="languages-id">Languages</b>
-<div class="language-icon"><img src="img/disclose-arrow.png"></div> </div>
-  <div class="likefilter"></div>
-  </form>
- 
- 
-  
-</div>
-  <script src="powerange.min.js"></script>
+  </ion-header-bar>
+  <ion-content class="padding theme-bg" >
  
  
 
-
-<style type="text/css">
-  
-  body {
-    background: #ffffff none repeat scroll 0 0;
-    margin: 0;
-}
-
- 
-
-.bmd-results-wrapper {
- 
-    padding: 0px;
-  
-}
-</style>   
-      
-           
-    </div>
-   
-
- 
-
-
-
-    </div>
-    
-    <div class="categories-div-left"  id="cate-slide" ng-hide="noSessionStatus">
+       <div class="categories-div-left"  id="cate-slide" ng-hide="noSessionStatus">
 
 <div class="image-workout-div" id="image-workout">
     <label>Workout</label>
@@ -247,31 +81,9 @@
 
 
     </div>
-
-     </div>
-
-
-
-
- 
   </ion-content>
 
 </ion-view>
+    
 
-
-  <gap:config-file platform="ios" parent="UIStatusBarHidden">
-    <true/>
-</gap:config-file>
- <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
-    <false/>
-</gap:config-file>
-
-<style type="text/css">
-  
-  .bg-color-white {
-    background-color: #003f6f;
-}
-</style>
-
- 
 
