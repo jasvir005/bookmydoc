@@ -15,7 +15,7 @@ $("#signup-pge-cs").css({"margin-top":"46px"});
   else
   {
 
-    $(".head-img-txtflog").css("margin-top","42px");
+    $(".head-img-txtflog").css("margin-top","0px");
     $("#signup-pge-cs").css({"margin-top":"0px"});
   }
   // With the new view caching in Ionic, Controllers are only called
