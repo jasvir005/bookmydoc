@@ -1077,7 +1077,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
    $sessionStorage.userSession = '';
       $scope.userSessionStatus = false;
       $scope.noSessionStatus = true;
-      $window.location.href = 'index.html#/app/bmd-home';
+       $window.location.href = '#/app/bmd-home';
           //$scope.closemenulogo();
 
     }
