@@ -4,5 +4,12 @@
 }
 .bmd-bg-sec2 img 
 {
-width:100% !important;
+  width:60% !important;
+}
+
+
+.word-out {
+    margin-bottom: 15px;
+    margin-top: 32px;
+    border:1px solid red;
 }

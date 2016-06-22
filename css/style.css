@@ -1729,16 +1729,39 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 
 /********iphone**************/
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) { 
-  body{
-    border:2px solid yellow;
-  }
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){ 
+ 
+  .word-out {
+
+    border:10px solid red;
+}
 }
 
 
-@media only screen 
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px){ 
+  body{
+    border:2px solid yellow !important;
+  }
+
+
+.bmd-bg-sec2 img 
+{
+  width:100% !important;
+}
+
+  .word-out {
+
+    border:5px solid red;
+}
+}
+
+
+/*@media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) 
 and (orientation : portrait) { body{
   border: 2px solid #000;
-  } }
+  } }*/
