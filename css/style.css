@@ -1017,10 +1017,7 @@ width: 100%;
 #user_login {
  background: #fe9901 none repeat scroll 0 0;
     border: 1px solid #fe9901;
-    color: #fff;
-    font-family: helvetica;
-    font-size: 16px;
-    font-weight: 600;
+    
     letter-spacing: 1px;
     padding: 8px;
     width: 90%;
@@ -1029,7 +1026,11 @@ width: 100%;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
      font-weight: normal;
+     color: #fff;
+    font-family: helvetica;
+    font-size: 16px;
     font-style: normal;
+    font-weight: 600;
 }
 .user_login-div {
     margin: 0 auto;
