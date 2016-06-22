@@ -1710,3 +1710,12 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     font-weight: bold;
     letter-spacing: 1px;
 }
+.signup-btn {
+  margin: 0 auto;
+  width: 85%;
+}
+.signup-btn button
+{
+  background-color: #FE9901;
+  color: #fff;
+}
