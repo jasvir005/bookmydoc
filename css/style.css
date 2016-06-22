@@ -14,7 +14,7 @@
     font-style: normal;*/
   }
 
-  
+
 
 .mR25{margin-right:25px;}
 .border-none{border:none !important;}
@@ -515,7 +515,7 @@ width: 100%;}
     font-family: helvetica !important;
     font-size: 28px;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 0px;
  font-family: 'fontawesome';
     src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1692,4 +1692,13 @@ input[type='radio']:checked:before {
     padding: 8px;
     text-align: center;
     width: 100%;
+}
+/********************************/
+li.bmd-listing:nth-child(2) .head-img-txtflog > p {
+    letter-spacing: 1px;
+}
+.head-img-txtflog > b {
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    letter-spacing: 1px;
 }
