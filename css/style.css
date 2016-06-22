@@ -212,7 +212,7 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 }
 .bmd-field.error {
   color: #fff;
-  padding: 0 0 5px 35px;
+  padding: 0 0 4px 22px;
 }
 
 .bmd-frgtpass > i {
@@ -1019,10 +1019,10 @@ width: 100%;
     border: 1px solid #fe9901;
     color: #fff;
     font-family: helvetica;
-    font-size: 18px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    padding: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px;
     width: 90%;
        font-family: 'helvetica';
     src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1078,7 +1078,7 @@ clear: left;
      
 }
 .login-user-div {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .social_icons > img {
     width: 18%;
@@ -1688,18 +1688,17 @@ input[type='radio']:checked:before {
 #image-workout img {
     width: 8%;
 }
-#first-btn
-{
- background: #fe9901 none repeat scroll 0 0;
-    border: 0 solid;
+#first-btn {
+    background: #fe9901 none repeat scroll 0 0;
+    border: 1px solid #fe9901;
     color: #fff;
     font-family: helvetica;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 600;
+    letter-spacing: 1px;
     padding: 8px;
     text-align: center;
     width: 100%;
-    letter-spacing: 1px;
 }
 /********************************/
 li.bmd-listing:nth-child(2) .head-img-txtflog > p {
