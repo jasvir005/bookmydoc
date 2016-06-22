@@ -563,7 +563,7 @@ width: 100%;}
   background: #003F6F;
     border-bottom: 0 solid #003f6f !important;
     border-top: 1px solid #003f6f !important;
-    border: 1px solid red !important;
+    border: 0px solid red !important;
 
 }
 .head-img-txt > img {margin-bottom: 20px;}
