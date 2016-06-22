@@ -406,9 +406,6 @@ $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = f
             $scope.closeLogin();
             $scope.closelogin_two();
 
-var ida=$scope.userSession.userID;
-
-localStorage.setItem('sessionid', ida);
 
 $document.ready(function(){
 
@@ -1076,7 +1073,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
     }
 
     $scope.Logout = function() {
-     localStorage.removeItem("sessionid");
+
       $sessionStorage.userSession = '';
       $scope.userSessionStatus = false;
       $scope.noSessionStatus = true;
@@ -1087,28 +1084,45 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
 
 
 
-var jas=localStorage.getItem('sessionid');
-//alert(jas);
-if(jas)
- {
 
-  $ionicLoading.show({
 
-      //template: '<img  src="img/loading.gif" />'
+ $scope.Signud = function() {
+  
+  //alert('hi');
+
+    $ionicLoading.show({
+/*        template: '<img  src="img/await.gif" />'*/
+      });
+
+ 
+ var text = '{ "firstname":"John" , "lastName":"Doe" ,"email":"jasvir.softweaver@gmail.com","password":"","phone":"9898989897","usertype":"2"}';
+
+      var url='/get_signup_details';
+      $http({
+        url: $scope.baseurl+url, 
+        method: "GET",
+        params: {'signUpData': text},
+      }).then(function mySucces(responsed) {
+alert('login');
+
+var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password":""}';
+
+   $scope.signupDetails = responsed.data; 
+        var statusvar=$scope.signupDetails.status;
+         alert(statusvar);
+         console.log(statusvar);
+     
+   $ionicLoading.show({
+/*      template: '<img  src="img/await.gif" />'*/
     });
-// $scope.closeLogin();
-
- var text = '{ "userid":"2" "usertype":"2"}';
-
     $scope.loginData.usertype='2';
-    var url='/get_login_details2';
+    var url='/get_login_detailss';
     $http({
       url: $scope.baseurl+url, 
       method: "GET",
       params: {'loginData': text},
     }).then(function mySucces(response) {
-         // $scope.closeLogin();
-      //alert("success")
+      alert('login sucess function');
         $scope.loginDetails = response.data; 
         // $sessionStorage.userSession = response.data;
         // console.log($sessionStorage.SessionMessage);
@@ -1118,27 +1132,34 @@ if(jas)
           $scope.userSessionStatus = true;
           $scope.AppointmentDetails.details = true;
           $scope.noSessionStatus = false;
-        
+          $timeout(function() {
+            $ionicLoading.hide();
+            $scope.closeLogin();
+          }, 1000);
           
-        //  alert('true')
         }else{
-          // alert('hi');
-               $sessionStorage.userSession = response.data;
-          $scope.userSession = response.data;
-          $scope.userSessionStatus = true;
-          $scope.AppointmentDetails.details = true;
-          $scope.noSessionStatus = false;
-          $ionicLoading.hide({
-
-      //template: '<img  src="img/loading.gif" />'
-    });
-  
+          $scope.loginError = $scope.loginDetails.error.status;
+          $scope.loginErrorMsg = $scope.loginDetails.error.msg;
+          $timeout(function() {
+            $ionicLoading.hide();
+          }, 1000);
         }
     });
+
+     
+     
+
+         
+
+ $ionicLoading.hide({
+        template: '<img  src="img/await.gif" />'
+      });
+       
+      }); 
+
  
 
-}
- 
+  };
 
 
 
