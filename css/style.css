@@ -59,7 +59,7 @@
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
-     font-weight: normal;
+     font-weight: bold;
     font-style: normal;
   border:1px solid #002C5B; text-align: center;color:#f3f3f3;font-size: 18px;padding: 15px;background: transparent;font-family: helvetica;}
 .bmd-spcl-listing:hover{background:#e48c08 !important;color:#fff !important;}
@@ -834,7 +834,7 @@ width: 100%;
 .word-outflog {
       color: #fff;
     
-    font-size: 37px;
+    font-size: 27px;
     font-weight: 600;
 
     font-family: 'helvetica';
@@ -843,7 +843,7 @@ width: 100%;
      src:url('fonts/Nexa Light.otf');
       
        
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
       
