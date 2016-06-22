@@ -376,7 +376,7 @@ width: 100%;}
   margin-top: 150px;
 }
 .backdrop {
-    background-color: rgba(255, 255, 255, 0.8) !important;
+    background-color: #fff !important;
     }
 .loading-container .loading{background-color: rgba(255, 255, 255, 0) !important;}
 
@@ -1074,8 +1074,8 @@ clear: left;
 }
 
 .head_img_pro {
-    /* margin: 27px auto -1px;*/
-    margin: 43px auto -1px;
+    margin: 27px auto -1px;
+    /*margin: 43px auto -1px;*/
     width: 24%;
      
 }
