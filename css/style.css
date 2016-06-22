@@ -1727,7 +1727,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   width: 85%;
   text-align: center;
 }
-
+#login-user .bmd-usr {
+    margin-bottom: 12px;
+}
+/**********************************************/
 
 /********iphone**************/
 
