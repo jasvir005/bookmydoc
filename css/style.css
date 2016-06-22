@@ -1567,6 +1567,7 @@ input[type='radio']:checked:before {
   margin-bottom: 14px;
     margin-top: 14px;
       width: 90%;
+      overflow: hidden;
 }
 
 .checkboxd-div1{
@@ -1761,7 +1762,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .bmd-usr {
 
-    margin-top: 10px;
+    margin-top: 6px;
+}
+.user_login-div .bmd-main-btn {
+    margin-top: 15px;
 }
 /*  .word-out {
     border:5px solid red;
