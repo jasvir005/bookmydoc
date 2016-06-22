@@ -8,7 +8,20 @@ angular.module('starter.controllers', ["ngStorage"])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+//alert('hello');
 
+ /*  $timeout(function() {
+          //alert('hello');
+ $(".main-containerlog").css({"position":"relative","top":"1000px"})
+          }, -1);
+
+   $timeout(function() {
+ $(".main-containerlog").css({"position":"relative","top":"0px"})
+
+          }, 3000);*/
+
+
+//$(".div-coloor").hide();
 
 
   // Form data for the login modal
@@ -239,7 +252,7 @@ fbData = function () {
             var cache=localStorage.getItem('token');
 
    $ionicLoading.show({
-        template: '<img  src="img/loading.gif" />'
+/*        template: '<img  src="img/await.gif" />'*/
       });
  var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","phone":"9898989897","usertype":"2"}';
 
@@ -253,7 +266,7 @@ fbData = function () {
       }).then(function mySucces(response) {
 
  $ionicLoading.hide({
-        template: '<img  src="img/loading.gif" />'
+        template: '<img  src="img/await.gif" />'
       });
 
 
@@ -270,7 +283,7 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
  
      
    $ionicLoading.show({
-      template: '<img  src="img/loading.gif" />'
+/*      template: '<img  src="img/await.gif" />'*/
     });
     $scope.loginData.usertype='2';
     var url='/get_login_detailss';
@@ -312,7 +325,7 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 
  
  $ionicLoading.hide({
-        template: '<img  src="img/loading.gif" />'
+        template: '<img  src="img/await.gif" />'
       });
        
 //alert(response);
@@ -367,7 +380,7 @@ $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = f
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
     $ionicLoading.show({
-      template: '<img  src="img/loading.gif" />'
+/*      template: '<img  src="img/await.gif" />'*/
     });
     $scope.loginData.usertype='2';
     var url='/get_login_details';
@@ -397,7 +410,7 @@ $document.ready(function(){
 
 
 $(".right-side-categories").click(function(){
-
+$("#appendinto").html("");
 var a=$('.checkboxd-div1 input:checked').val();
 var b=$('.checkboxd-div2 input:checked').val();
 var c=$('.checkboxd-div3 input:checked').val();
@@ -405,38 +418,66 @@ var d=$('.checkboxd-div4 input:checked').val();
 var e=$('.checkboxd-div5 input:checked').val();
 var f=$('.checkboxd-div6 input:checked').val();
 var g=$('.checkboxd-div7 input:checked').val();
+var h=$('.checkboxd-div8 input:checked').val();
+
 if(a==undefined)
 {
  a='';
+}
+else{
+var a = a+','; 
 }
 if(b==undefined)
 {
  b='';
 } 
+else{
+ var b = b+','; 
+}
 if(c==undefined)
 {
  c='';
+}
+else{
+ var c = c+','; 
 } 
 if(d==undefined)
 {
  d='';
 } 
+else{
+var d =  d+','; 
+}
 if(e==undefined)
 {
  e='';
+}
+else{
+var e =  e+','; 
 } 
 if(f==undefined)
 {
  f='';
 } 
+else{
+ var f = f+','; 
+}
 if(g==undefined)
 {
  g='';
 } 
- 
-$("#appendinto").html("");
-var com=a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g;
-
+else{
+var g =  g+','; 
+}
+if(h==undefined)
+{
+ h='';
+} 
+else{
+var h =  h+','; 
+}
+ var com = a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g+''+h ;
+ com = com.replace(/,\s*$/, "");
 $("#appendinto").append(':'+com);
 
  
@@ -599,7 +640,7 @@ $(".norating").append('<p class="countrating">1</p>');
 
  
 
-$(".first-star1 img").attr('src',"img/1star copy.png").css("width","90%");
+$(".first-star1 img").attr('src',"img/1star copy.png").css({"width":"100%","margin-left":"0px"});
  
 $(".first-star2 img").attr('src',"img/second_img.png");
 $(".first-star3 img").attr('src',"img/third_img1.png");
@@ -616,14 +657,14 @@ $(".first-star2").click(function(){
 
 $(".norating").append('<p class="countrating">2</p>');
 
-$(".first-star2 img").attr('src',"img/2star copy.png").css("width","90%");
+$(".first-star2 img").attr('src',"img/2star copy.png").css({"width":"100%","margin-left":"0px"});
 
 
 
-$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
-$(".first-star3 img").attr('src',"img/third_img1.png").css("width","100%");
-$(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
-$(".first-star5 img").attr('src',"img/fifth_img.png").css("width","100%").css("width","100%");
+$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star3 img").attr('src',"img/third_img1.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star4 img").attr('src',"img/fourth_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star5 img").attr('src',"img/fifth_img.png").css({"width":"100%","margin-left":"0px"}).css("width","100%");
 
 
 });
@@ -636,12 +677,12 @@ $(".norating").append('<p class="countrating">3</p>');
 
  
 
-$(".first-star3 img").attr('src',"img/3star copy.png").css("width","90%");
+$(".first-star3 img").attr('src',"img/3star copy.png").css({"width":"100%","margin-left":"0px"});
 
-$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
-$(".first-star2 img").attr('src',"img/second_img.png").css("width","100%");
-$(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
-$(".first-star5 img").attr('src',"img/fifth_img.png").css("width","100%");
+$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star2 img").attr('src',"img/second_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star4 img").attr('src',"img/fourth_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star5 img").attr('src',"img/fifth_img.png").css({"width":"100%","margin-left":"0px"});
 
 
 });
@@ -653,12 +694,13 @@ $(".first-star4").click(function(){
 $(".norating").append('<p class="countrating">4</p>');
 
 
-$(".first-star4 img").attr('src',"img/4star copy.png").css("width","90%");
 
-$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
-$(".first-star2 img").attr('src',"img/second_img.png").css("width","100%");
-$(".first-star3 img").attr('src',"img/third_img1.png").css("width","100%");
-$(".first-star5 img").attr('src',"img/fifth_img.png").css("width","100%");
+$(".first-star4 img").attr('src',"img/4star copy.png").css({"width":"100%","margin-left":"0px"});
+
+$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star2 img").attr('src',"img/second_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star3 img").attr('src',"img/third_img1.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star5 img").attr('src',"img/fifth_img.png").css({"width":"100%","margin-left":"0px"});
 
 });
 
@@ -668,12 +710,12 @@ $(".first-star5").click(function(){
     $(".norating").html("");
 $(".norating").append('<p class="countrating">5</p>');
 
- $(".first-star5 img").attr('src',"img/5star.png").css("width","90%");
+ $(".first-star5 img").attr('src',"img/5star.png").css({"width":"100%","margin-left":"0px"});
 
-$(".first-star1 img").attr('src',"img/first_img.png").css("width","100%");
-$(".first-star2 img").attr('src',"img/second_img.png").css("width","100%");
-$(".first-star3 img").attr('src',"img/third_img1.png").css("width","100%");
-$(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
+$(".first-star1 img").attr('src',"img/first_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star2 img").attr('src',"img/second_img.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star3 img").attr('src',"img/third_img1.png").css({"width":"100%","margin-left":"0px"});
+$(".first-star4 img").attr('src',"img/fourth_img.png").css({"width":"100%","margin-left":"0px"});
  
 });
  
@@ -691,6 +733,16 @@ $(".first-star4 img").attr('src',"img/fourth_img.png").css("width","100%");
  
 $('.js-display-changes').html("0");
 $('.Reset-arrow').click(function(){alert('On processing')});
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+if(isAndroid) {
+
+  }
+else
+{
+$(".filter-page").css({"margin-top": "-4px"});
+}
+
 $('.right-side-categories').click(function(){
 
 
@@ -698,7 +750,9 @@ $('.right-side-categories').click(function(){
 
 var clicks = $(".right-side-categories").data('clicks');
 if (clicks) {
-//alert('true');
+//alert('truedd');
+ $(".filter-page-contant .right-side-categories img").removeClass("rtansformimga");
+
 
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
@@ -713,10 +767,9 @@ document.getElementById('cate-slide').style.display='none';
 }
 else
 {
+  //alert('iphomne');
 
-
- 
-   $(".div-coloor").css({"height": "100vh","float":"left"});
+$(".div-coloor").css({"height": "100vh","float":"left"});
 $(".filter-page").css({"right": "0px"});
 $(".categories-div-left").css({"display":"none !important;"});
 $(".categories-div-left").hide();  
@@ -736,10 +789,7 @@ else
        var widthvar = $( window ).width();
        //alert('hi');
        //alert(widthvar);
-
  
- 
-
        if(widthvar==360)
        {
 
@@ -781,7 +831,7 @@ $(".filter-page-contant").css('height','100vh');
 $(".div-coloor").off('scroll');
 //.animate({"right": '206px',"posit","absolute"},"show")
 $(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-475px","float": "right","position": "relative","text-align": "right"});
+$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-478px","float": "right","position": "relative","text-align": "right"});
 $(".padding").css({"padding": "0px"});
 }
 
@@ -799,13 +849,13 @@ $(".padding").css({"padding": "0px"});
 
        if(widthvar==360)
        {
-        $(".categories-div-left").hide(); 
+$(".categories-div-left").hide(); 
 $(".filter-page-contant").css('height','100vh');
-       $(".categories-div-left").css("cssText", "display: inline !important;");
+$(".categories-div-left").css("cssText", "display: inline !important;");
 $(".div-coloor").off('scroll');
 //.animate({"right": '206px',"posit","absolute"},"show")
 $(".filter-page").css({"position": "relative","right": "206px"});
-$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-655px","float": "right","position": "relative","text-align": "right"});
+$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-611px","float": "right","position": "relative","text-align": "right"});
 $(".padding").css({"padding": "0px"});
 }
 
@@ -820,9 +870,13 @@ $(".categories-div-left").css({"left":"0px","padding":"1px","width":"201px","top
 $(".padding").css({"padding": "0px"});
 
 }
-///alert('false ');
+ 
+//alert('false hi ');
  
 
+  $(".filter-page-contant .right-side-categories img").addClass("rtansformimga");
+
+ 
 }
 
  
@@ -989,7 +1043,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
   }
     $scope.doSignup = function() {
       $ionicLoading.show({
-        template: '<img  src="img/loading.gif" />'
+      /*  template: '<img  src="img/await.gif" />'*/
       });
       $scope.signUpData.usertype='2';
       var url='/get_signup_details';
@@ -1037,7 +1091,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
   //alert('hi');
 
     $ionicLoading.show({
-        template: '<img  src="img/loading.gif" />'
+/*        template: '<img  src="img/await.gif" />'*/
       });
 
  
@@ -1059,7 +1113,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
          console.log(statusvar);
      
    $ionicLoading.show({
-      template: '<img  src="img/loading.gif" />'
+/*      template: '<img  src="img/await.gif" />'*/
     });
     $scope.loginData.usertype='2';
     var url='/get_login_detailss';
@@ -1098,7 +1152,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
          
 
  $ionicLoading.hide({
-        template: '<img  src="img/loading.gif" />'
+        template: '<img  src="img/await.gif" />'
       });
        
       }); 
@@ -1136,7 +1190,7 @@ var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password"
  
   $scope.doSignud = function() {
 
-    alert('hello');
+    //alert('hello');
   /*    $ionicLoading.show({
         template: '<img  src="img/loading.gif" />'
       });
@@ -1327,7 +1381,7 @@ $scope.slide= function(myTransition) {
 
     $scope.bookAppointment = function(){
       $ionicLoading.show({
-        template: '<img  src="img/loading.gif" />'
+      /*  template: '<img  src="img/await.gif" />'*/
       });
       $scope.Appointment ={};
       $scope.Appointment.doctor_id = $scope.Doc.id;

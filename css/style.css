@@ -5,13 +5,13 @@
 
 
   @font-face {
-/*
+ 
      font-family: 'helvetica';
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
      font-weight: normal;
-    font-style: normal;*/
+    font-style: normal; 
   }
 
 .mR25{margin-right:25px;}
@@ -53,13 +53,13 @@
 .bmd-spcl-listing{
 
 
-     font-family: 'helvetica';
+ 
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
      font-weight: normal;
     font-style: normal;
-  border:1px solid #002C5B; text-align: center;color:#f3f3f3;font-size: 18px;padding: 15px;background: transparent;font-family: helvetica;}
+  border:1px solid #002C5B; text-align: center;color:#f3f3f3;font-size: 18px;padding: 15px;background: transparent;}
 .bmd-spcl-listing:hover{background:#e48c08 !important;color:#fff !important;}
 .bmd-title-logo{text-align:center;padding-top: 0px;padding-bottom: 25px;}
 .bmd-title-logo2{text-align:center;padding-top: 0px;padding-bottom: 0px;padding-top: 0px;}
@@ -155,6 +155,7 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
     font-weight: normal;
     font-style: normal;
   content: '⚫';font-family: 'helvetica';background: #fff;color: #F5A623;border:1px solid #F5A623;}
+
 .radio-custom + .radio-custom-label:before {border-radius: 50%;}
 .radio-custom:checked + .radio-custom-label:before {
   src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -510,11 +511,11 @@ width: 100%;}
     font-weight: 700;
 */
 color: #fff;
-font-family: helvetica !important;
+
 font-size: 35px;
 font-weight: 700;
 margin-bottom: 35px;
- font-family: 'fontawesome';
+ 
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
@@ -593,21 +594,34 @@ margin-bottom: 0px;
 .main-containerlog .word-out {
    color: #fff;
     font-size: 34px;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 3px;
     margin-top: 6px;
 
-     font-family: 'fontawesome';
+
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
       src:url('fonts/fontawesome-webfont.otf');
        
-    font-weight: normal;
+   
     font-style: normal;
 }
  
 
+.dont-have-accountflog > b {
+    font-weight: 400;
+}
+
+#signdiv {
+
+    font-weight: normal;
+        src:url('fonts/avenir-lt-45-book.ttf') ;
+    src:url('fonts/Nexa Bold.eot') ;
+     src:url('fonts/Nexa Light.otf');
+      src:url('fonts/fontawesome-webfont.otf');
+ 
+}
 
 .containerlog{
 width: 80%;
@@ -665,11 +679,10 @@ width: 100%;
 .content-pehralog p {
    color: #c7d5df;
     float: left;
-      font-family: helvetica;
+
     font-size: 17px;
     width: 100%;
 
-        font-family: 'helvetica';
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
@@ -724,7 +737,7 @@ width: 100%;
 .word-outflog {
     
     color: #fff;
-    font-family: Arial;
+   
         font-size: 32px;
     font-weight: 700;
 }
@@ -739,12 +752,12 @@ width: 100%;
 
 .login-introflog > p {
    color: #c7d5df;
-    font-family: helvetica;
+   
     font-size: 17px;
    margin-bottom: 14px;
     margin-top: 29px; 
     text-align: center;
-       font-family: 'helvetica';
+ 
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
@@ -774,13 +787,13 @@ width: 100%;
     color: #fff;
     font-size: 16px;
     font-weight: 900;
-      font-family: helvetica;
+ 
 }
 
 .login-btn-facebookflog button {
     background: #567CC6 none repeat scroll 0 0;
     color: #fff;
-     font-family: helvetica;
+ 
 }
 
 
@@ -818,10 +831,10 @@ width: 100%;
 .word-outflog {
       color: #fff;
     
-    font-size: 37px;
+    font-size: 25px;
     font-weight: 600;
 
-    font-family: 'helvetica';
+ 
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
@@ -996,18 +1009,17 @@ width: 100%;
  background: #fe9901 none repeat scroll 0 0;
     border: 1px solid #fe9901;
     color: #fff;
-    font-family: helvetica;
+ 
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 900;
     letter-spacing: 3px;
     padding: 7px;
     width: 90%;
-       font-family: 'helvetica';
+ 
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
-     font-weight: normal;
-    font-style: normal;
+  
 }
 .user_login-div {
     margin: 0 auto;
@@ -1030,10 +1042,10 @@ width: 100%;
 clear: left;
     color: #777777;
     float: left;
-    font-family: Helvetica;
+ 
     font-size: 16.5px;
     font-weight: lighter;
-    margin-left: 20px;
+    margin-left: 15px;
     overflow: hidden;
     text-align: left !important;
     width: 100%;
@@ -1051,7 +1063,7 @@ clear: left;
 }
 
 .head_img_pro {
-      margin: 27px auto 13px;
+       margin: 0 auto -3px;
     width: 24%;
      
 }
@@ -1093,7 +1105,7 @@ clear: left;
 }
 .signup-pge-dsgn .head_img_pro
 {
-     margin: 26px auto 32px;
+      margin: 27px auto 6px;
     width: 24%;
 }
 .signup-pge-dsgn .bmd-title-logo
@@ -1120,10 +1132,10 @@ clear: left;
 
 .filter-page-contant .wordout-yoga {
    color: #515151;
-  font-family: helvetica;
+ 
     font-size: 16px;
     font-weight: bolder;
-       font-family: 'helvetica';
+ 
       src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
@@ -1139,31 +1151,33 @@ clear: left;
     width: 92%;
 }
 .filter-page-contant .language-div > b {
-color: #7d7b7a;
-font-family: helvetica;
+color: #515151;
+ 
 font-size: 16.5px;
 font-weight: lighter;
-font-family: 'helvetica';
+ 
 src:url('fonts/avenir-lt-45-book.ttf') ;
 src:url('fonts/Nexa Bold.eot') ;
 src:url('fonts/Nexa Light.otf');
 }
 
 .filter-page-contant .right-side-categories {
-    
+     cursor: pointer;
     clear: inherit;
     float: right;
     margin: 2%;
     width: 10%;
 }
 .filter-page-contant .right-side-categories img {
-    float: right;
-    width: 43%;
+float: right;
+width: 43%;
+padding-top: 6px;
+padding-bottom: 10px;
 }
 .filter-page-contant .yoga-wordout > p {
 color: #7f7f7f;
 float: left;
-font-family: "helvetica";
+ 
 font-size: 16.5px;
 font-weight: lighter;
 text-align: left !important;
@@ -1186,7 +1200,7 @@ width: 55%;
 .filter-page-contant .filter-div {
     color: #fff;
     float: left;
-    font-family: "helvetica";
+ 
     font-size: 18px;
     font-style: normal;
     font-weight: normal;
@@ -1197,7 +1211,7 @@ width: 55%;
 .filter-page-contant .Reset-arrow {
     color: #ffc000;
     float: right;
-    font-family: "helvetica";
+ 
     font-style: normal;
     font-weight: normal;
     margin-top: 10px;
@@ -1210,10 +1224,10 @@ width: 55%;
 }
 .filter-page-contant .price-range > p {
   color: #777777;
-    font-family: Helvetica;
+ 
     font-size: 16.5px;
     font-weight: lighter;
-    margin-left: 24px;
+    margin-left: 15px;
     text-align: left !important;
     width: 100%;
     src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1223,7 +1237,7 @@ width: 55%;
 
 .filter-page-contant .dollercls {
     color: #525252;
-  font-family: Helvetica;
+ 
     font-size: 16.9px;
     font-weight: lighter;
 
@@ -1239,7 +1253,7 @@ width: 55%;
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     color: #fff;
     float: left;
-    font-family: helvetica;
+ 
     font-size: 13px;
     font-weight: normal;
     position: relative;
@@ -1273,7 +1287,7 @@ z-index: 999 !important;
 
 .filter-page-contant .dollersign {
  
-    color: #a6a6a6 !important;
+    color: #747474 !important;
      
 } 
 
@@ -1317,7 +1331,7 @@ width: 100%;
 
 .filter-page-contant .rating-txt {
     margin: 10px auto 11px;
-    width: 93%;
+    width: 92%;
 }
 
 .rating-div {
@@ -1333,8 +1347,8 @@ width: 100%;
 
 
 .filter-page-contant .rating-div b {
-  color: #7d7b7a;
-    font-family: helvetica;
+  color: #515151;
+ 
     font-size: 16.5px;
     font-weight: lighter;
       src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1368,7 +1382,7 @@ width: 100%;
 
 .language-div {
   margin: 15px auto 14px;
-    width: 95%;
+    width: 92%;
 }
 
 .filter-page-contant .language-icon {
@@ -1401,33 +1415,27 @@ float: right;
  
 overflow: auto;
  margin-top: 5px;
-width: 100%;
- 
-     height: 28px;
+width: 85%;
+height: 28px;
 
  
 }
 
 .filter-div {
-
- 
+   color: #fff;
+    float: left;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
     width: 84%;
- 
-color: #fff;
-float: left;
-font-family: "helvetica";
-
-font-style: normal;
-font-weight: normal;
-
-text-align: center;
 
 }
 
 .Reset-arrow {
 color: #ffc000;
 float: right;
-font-family: "helvetica";
+ 
 font-style: normal;
 font-weight: normal;
 margin-top: 3px;
@@ -1438,7 +1446,7 @@ margin-top: 3px;
 
 
 .filter-page {
- margin-top: 0px;
+ margin-top: 30px;
     
 }
 
@@ -1471,7 +1479,7 @@ margin-top: 3px;
 .male label {
     margin-left: 9px;
         color: #7d7b7a;
-    font-family: helvetica;
+ 
     font-size: 16.5px;
     font-weight: lighter;
 }
@@ -1480,7 +1488,7 @@ margin-top: 3px;
 .female label {
     margin-left: 9px;
         color: #7d7b7a;
-    font-family: helvetica;
+ 
     font-size: 16.5px;
     font-weight: lighter;
 }
@@ -1491,7 +1499,7 @@ margin-top: 3px;
     text-align: center;
     width: 22%;
       color: #7d7b7a;
-    font-family: helvetica;
+ 
     font-size: 16.5px;
     font-weight: lighter;
 }
@@ -1528,7 +1536,7 @@ input[type='radio']:before {
   border-radius:50%;    
 }
 input[type='radio']:checked:before {
-  background:green;
+  background:#FFCC80;
 }
 
 
@@ -1584,6 +1592,11 @@ input[type='radio']:checked:before {
     margin-top: 14px;
       width: 90%;
 }
+.checkboxd-div8{
+  margin-bottom: 14px;
+    margin-top: 14px;
+      width: 90%;
+}
 .checkboxd-div1 > label {
 
     color: #fff;
@@ -1632,6 +1645,12 @@ input[type='radio']:checked:before {
     float: left;
     margin-left: 10px;
 }
+
+.checkboxd-div8 > label {
+    color: #fff;
+    float: left;
+    margin-left: 10px;
+}
 .div-coloor {
     background: #003F6F none repeat scroll 0 0;
     position: relative;
@@ -1642,7 +1661,7 @@ input[type='radio']:checked:before {
     background: #fff none repeat scroll 0 0;
     
 }
-.gender-div{display: none;}
+/*.gender-div{display: none;}*/
 
 .filter-page-contant {
  
@@ -1652,4 +1671,8 @@ input[type='radio']:checked:before {
 
 #image-workout img {
     width: 8%;
+}
+.rtansformimga
+{
+ transform: rotate(180deg);
 }
