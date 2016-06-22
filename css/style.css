@@ -1741,13 +1741,28 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }*/
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px)and (orientation : landscape){ 
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px)and (orientation : portrait){ 
 /*  body{
     border:2px solid red !important;
   }*/
   .bmd-bg-sec2 img {
     width:100% !important;
   }
+  .head_img_pro {
+    margin: 50px auto -1px;
+    width: 24%;
+  }
+  .word-out {
+      margin-bottom: 22px;
+      margin-top: 20px;
+  }
+  form.ng-pristine {
+    margin-top: 40px !important;
+}
+.bmd-usr {
+
+    margin-top: 10px;
+}
 /*  .word-out {
     border:5px solid red;
   }*/
