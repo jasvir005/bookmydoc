@@ -64,8 +64,8 @@
 .bmd-title-logo{text-align:center;padding-top: 0px;padding-bottom: 25px;}
 .bmd-title-logo2{text-align:center;padding-top: 0px;padding-bottom: 0px;padding-top: 0px;}
 /*.bmd-title-logo img{    width: 200px;height: 65px;}*/
-.bmd-usr-wrapper{/*padding: 35px;padding-top: 10px;*/   padding-top: 11px;color: #fff; background:#002B4D}
-.bmd-usr{width:95%;margin-left: 11px; margin-bottom: 20px;text-align:center;display:inline-flex;border: 0px solid #fff;border-radius: 6px;margin-bottom: 10px;}
+.bmd-usr-wrapper{/*padding: 35px;padding-top: 10px;*/   padding-top: 0px;color: #fff; background:#002B4D}
+.bmd-usr{width:95%;margin-left: 11px; margin-bottom: 20px;text-align:center;display:inline-flex;border: 0px solid #fff;border-radius: 6px;margin-bottom: 0px;}
 .bmd-usr-input{text-align:left !important;height: 40px !important; border-radius:0 5px 5px 0 ; width:100% !important;;background:transparent;color:#fff !important;padding-left:10px !important;}
 .bmd-frgtpass{width: 100%;text-align: center;font-style: italic;color:#fff;}
 .bmd-usr1{border-right: 0px solid #FFF;padding:8px;}
@@ -509,19 +509,19 @@ width: 100%;}
     font-size: 37px;
     font-weight: 700;
 */
-color: #fff;
-font-family: helvetica !important;
-font-size: 35px;
-font-weight: 700;
-margin-bottom: 35px;
+  color: #fff;
+    font-family: helvetica !important;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 18px;
  font-family: 'fontawesome';
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
       src:url('fonts/fontawesome-webfont.otf');
        
-    font-weight: normal;
-    font-style: normal;
+    
 
 }
 
@@ -529,9 +529,7 @@ margin-bottom: 35px;
 .chkoutbtn_ap {
   background: #003f6f none repeat scroll 0 0;
  
-     padding-top: 20px;
-    padding-bottom: 10px;
-        padding: 40px;
+     padding: 0 36px 36px;
 }
 .chkoutbtn_ap b {
     font-size: 11px;
@@ -552,6 +550,7 @@ margin-bottom: 35px;
 }
 .line-brk {
     border-bottom: 1px solid #224765;
+      margin: 0 !important;
 }
 
 .left-arow > img {
@@ -751,11 +750,13 @@ width: 100%;
 }
 
 .login-introflog > p {
-   color: #c7d5df;
-    font-family: helvetica;
+   clear: unset;
+    color: #c7d5df;
+ 
     font-size: 17px;
-   margin-bottom: 14px;
-    margin-top: 29px; 
+    margin-bottom: 14px;
+    margin-top: 21px;
+    overflow: scroll;
     text-align: center;
        font-family: 'helvetica';
     src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1024,7 +1025,7 @@ width: 100%;
 }
 .user_login-div {
     margin: 0 auto;
-     padding-top: 64px;
+  padding-top: 77px;
     background: #003F6F none repeat scroll 0 0;
      text-align: center;
 }
@@ -1064,7 +1065,7 @@ clear: left;
 }
 
 .head_img_pro {
-      margin: 27px auto 13px;
+     margin: 27px auto -1px;
     width: 24%;
      
 }
@@ -1106,7 +1107,7 @@ clear: left;
 }
 .signup-pge-dsgn .head_img_pro
 {
-     margin: 26px auto 32px;
+     margin: 26px auto 11px;
     width: 24%;
 }
 .signup-pge-dsgn .bmd-title-logo
