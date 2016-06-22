@@ -503,7 +503,7 @@ $("#appendinto").append(':'+com);
 
  
  
-$(".theme-bg").css('background-color','#fff');
+//$(".theme-bg").css('background-color','#fff');
 
    var widthvar = $( window ).width();
  
@@ -1074,10 +1074,10 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
 
     $scope.Logout = function() {
 
-      $sessionStorage.userSession = '';
+   $sessionStorage.userSession = '';
       $scope.userSessionStatus = false;
       $scope.noSessionStatus = true;
-      $window.location.href = 'index.html';
+      $window.location.href = 'index.html#/app/bmd-home';
           //$scope.closemenulogo();
 
     }

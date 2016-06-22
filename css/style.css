@@ -1,8 +1,8 @@
 
 /*=== GENERAL-SETTINGS ===*/
-
-
-
+ .theme-bg.scroll-content.ionic-scroll.has-header {
+    background-color: #003f6f !important;
+}
 
   @font-face {
  
@@ -64,7 +64,7 @@
 .bmd-title-logo{text-align:center;padding-top: 0px;padding-bottom: 25px;}
 .bmd-title-logo2{text-align:center;padding-top: 0px;padding-bottom: 0px;padding-top: 0px;}
 /*.bmd-title-logo img{    width: 200px;height: 65px;}*/
-.bmd-usr-wrapper{/*padding: 35px;padding-top: 10px;*/   padding-top: 11px;color: #fff; background:#002B4D}
+.bmd-usr-wrapper{/*padding: 35px;padding-top: 10px;*/   padding-top: 0px;color: #fff; background:#002B4D}
 .bmd-usr{width:95%;margin-left: 11px; margin-bottom: 20px;text-align:center;display:inline-flex;border: 0px solid #fff;border-radius: 6px;margin-bottom: 10px;}
 .bmd-usr-input{text-align:left !important;height: 40px !important; border-radius:0 5px 5px 0 ; width:100% !important;;background:transparent;color:#fff !important;padding-left:10px !important;}
 .bmd-frgtpass{width: 100%;text-align: center;font-style: italic;color:#fff;}
