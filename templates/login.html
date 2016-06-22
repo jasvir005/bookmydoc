@@ -27,12 +27,14 @@
             <li  ng-repeat="msg in loginErrorMsg">{{msg.message}}</li>
           </ul>
         </div>
+        <div id="login-user">
     <div class="bmd-usr" style="padding-top: 11px;">
       <div  style="padding:5px" class="bmd-usr1" id="user_icon-img"><img src="img/user_new.png"></div>
       <div class="bmd-usr2">
         <input class="bmd-usr-input" name="email" type="email" placeholder="Enter your Email" ng-model="loginData.email" required>
       </div>
     </div>
+    
     <div class="line-brk" style="margin-bottom:18px;"></div>
     <div class="bmd-field error" ng-show="submitted  && loginform.email.$error.required">Email is required.</div>
     <div class="bmd-field error" ng-show="loginform.email.$touched && loginform.email.$error.email">Invalid Email-Id</div>
@@ -40,6 +42,7 @@
     <div class="bmd-usr1" id="user_icon-img"><img src="img/lock_new.png"></div>
     <div class="bmd-usr2">
     <input class="bmd-usr-input" name="password" type="password" placeholder="Password" ng-model="loginData.password" required>
+    </div>
     </div>
     </div>
     
