@@ -1,8 +1,13 @@
 .bmd-bg-sec2
 {
-  border:1px solid green;
+  border:1px solid #000;
 }
 .bmd-bg-sec2 img 
 {
-width:100% !important;
+  width:61% !important;
+}
+.word-out {
+    margin-bottom: 15px;
+    margin-top: 32px;
+    border:1px solid red;
 }
