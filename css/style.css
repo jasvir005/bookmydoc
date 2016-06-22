@@ -1074,7 +1074,8 @@ clear: left;
 }
 
 .head_img_pro {
-     margin: 27px auto -1px;
+    /* margin: 27px auto -1px;*/
+    margin: 43px auto -1px;
     width: 24%;
      
 }
