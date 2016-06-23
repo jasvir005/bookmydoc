@@ -67,10 +67,7 @@
 			<div class="bmd-usr2">
 			<input class="bmd-usr-input" name="password" type="password"  placeholder="Password" ng-model="signUpData.password">
 			</div>
-			<div class="btn-signup-right">
-<button class="bmd-main-btn-signup"  ng-click="submitted=true"><img src="img/right_arrow_sugnup.png"></button>
 
-</div>
 		</div>
 		<div class="line-brk"></div>
 		<div class="bmd-field error" ng-show="submitted  && signupform.password.$error.required">Password is required.</div>
@@ -92,8 +89,9 @@
 		</div>
 		<div class="bmd-field error" ng-show="submitted  && signupform.terms.$error.required">Must agree the Terms and Conditions.</div>
 		<!-- <div class="bmd-field error" ng-show="signupform.terms.$dirty && signupform.terms.$error.required">Must agree the Terms and Conditions.</div> -->
-<!-- 		<button class="bmd-main-btn"  ng-click="submitted=true">Join now</button> -->
-
+ <div class="signup-btn">
+ 	<button class="bmd-main-btn"  ng-click="submitted=true">Sign up</button>
+</div>
  <!-- 	<button class="bmd-main-btn"  ng-click="Signud()">facebook login</button>
 
 
