@@ -30,7 +30,7 @@
 	          {{signupMessage}}
 	        </div>
 		<div class="bmd-usr">
-			<div class="bmd-usr1"><img src="img/user_new.png"></div>
+			<div class="bmd-usr1"><img src="img/bmd-usr.png"></div>
 			<div class="bmd-usr2">
 			<input class="bmd-usr-input" name="firstname" type="text" placeholder="First Name" ng-model="signUpData.firstname">
 			</div>
@@ -38,7 +38,7 @@
 		<div class="line-brk"></div>
 		<div class="bmd-field error" ng-show="submitted  && signupform.firstname.$error.required">First Name is required.</div>
 		<div class="bmd-usr">
-			<div class="bmd-usr1"><img src="img/user_new.png"></div>
+			<div class="bmd-usr1"><img src="img/bmd-usr.png"></div>
 			<div class="bmd-usr2">
 			<input class="bmd-usr-input" name="lastname" type="text" placeholder="Last Name" ng-model="signUpData.lastname">
 			</div>
@@ -46,29 +46,24 @@
 		<div class="line-brk"></div>
 		<div class="bmd-field error" ng-show="submitted  && signupform.lastname.$error.required">Last Name is required.</div>
 		<div class="bmd-usr">
-			<div class="bmd-usr1"><img src="img/email.png"></div>
+			<div class="bmd-usr1"><img src="img/bmd-mail.png"></div>
 			<div class="bmd-usr2">
 			<input class="bmd-usr-input" name="email" type="email" placeholder="Email-Mail Address" ng-model="signUpData.email" required>
 			</div>
 		</div>
 		<div class="line-brk"></div>
-		
-<!-- 		<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is required.</div>
-		<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$invalid">Invalid E-Mail.</div> -->
-
-
-		    <div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is required.</div>
-    <div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$error.email">Invalid E-Mail</div>
+		<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">Email is required.</div>
+		<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$invalid">Invalid Email-ID.</div>
 
 		<div class="bmd-usr">
-			<div class="bmd-usr1"><img src="img/email.png"></div>
+			<div class="bmd-usr1"><img src="img/bmd-mail.png"></div>
 			<div class="bmd-usr2">
 			<input class="bmd-usr-input" name="Address" type="text" placeholder="Address">
 			</div>
 		</div>
 		<div class="line-brk"></div>
 		<div class="bmd-usr">
-			<div class="bmd-usr1"><img src="img/lock_new.png"></div>
+			<div class="bmd-usr1"><img src="img/bmd-pass.png"></div>
 			<div class="bmd-usr2">
 			<input class="bmd-usr-input" name="password" type="password"  placeholder="Password" ng-model="signUpData.password">
 			</div>

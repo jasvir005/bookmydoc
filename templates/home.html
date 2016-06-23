@@ -1,56 +1,80 @@
-
-
 <ion-view class="bar-stableb bg-color-white">
+	<ion-header-bar class="bar-stableb bg-color-white" ng-hide="noSessionStatus">
+		<button menu-toggle="left" class="common-button button button-positive button-clear button_text icon ion-navicon txt-color-black"></button>
+		 
+	 
+	</ion-header-bar>
+	<ion-content class="padding theme-bg" >
+	 
+		<div class="bmd-bg-sec2" ng-show="noSessionStatus" >
+    <img style="margin-top: 15px;width: 68%;" src="img/circle_img.png">
+
+		</div>
+		<div class="bmd-list" ng-show="noSessionStatus">
+			<ul>
+			 
+				 
+			 
+		  
+              <li class="bmd-listing">
+               <div class="head-img-txtflog">
  
-  <ion-header-bar class="bar-stableb bg-color-white" ng-hide="noSessionStatus">
-
-    <button menu-toggle="left" class="common-button button button-positive button-clear button_text icon ion-navicon txt-color-black"></button>
-  <!--  <div class="bmd-head"><img src="img/bmd-logo.png"></div> -->
-     <div class="signup_back_btn">
-
-<div class="filter-div">Search</div> <div class="Reset-arrow">Reset</div>
-</div>
-  </ion-header-bar>
- 
-  <ion-content class="padding theme-bg" >
-  <div class="bmd-search-bar-outer">
-     
-      <!-- <button class="button button-positive button-clear button_text icon ion-ios-mic txt-color-gray"></button> -->
-    </div>
-
-      <div class="main-containerlog" ng-show="noSessionStatus">
-      <div class="containerlog">
-          <div class="content-toplog">
- <div class="head-img-txtflog">
-   
-    <div class="head_img_pro" id="home_img"> 
-      <img src="img/circle(3).png">
-      </div>
-      <p class="word-out">MY TRAINER</p>
+           <p class="word-out">MY TRAINER</p>
 
  
     </div>
-      <div class="login-introflog"><p>Find the best local trainers</p></div>
-          </div>
+        </li>
 
 
-      </div>
-      <div class="login-btnflog">
-<button   class="bmd-main-btn2flog" ng-click="login()" >  LOGIN </button>
-</div>
 
-<div class="login-btn-facebookflog">
-<button  ng-click="fblogin();"  class="bmd-main-btn2flog"><b class="log-with-txt">LOGIN WITH </b><b class="facebk-txtflog" >facebook</b></button>
-</div>
+              <li class="bmd-listing">
+               <div class="head-img-txtflog">
+ 
+            <p style="color:#fff;margin:0px">Find the best local trainers</p>
 
-<div class="dont-have-accountflog"><b style="padding-top:5px;">Don't have an account? <b id="signdiv" ng-click="signup()" ng-show="noSessionStatus">
+ 
+    </div>
+        </li>
+
+                  <li class="bmd-listing">
+               <div class="head-img-txtflog">
+ 
+           <button id="first-btn" ng-click="login()" class="bmd-main-btn2flog">  LOGIN </button>
+
+ 
+    </div>
+        </li>
+
+                     <li class="bmd-listing">
+               <div class="head-img-txtflog">
+ 
+            <button  class="bmd-main-btn2flog" ng-click="fblogin();"><b class="log-with-txt">LOGIN WITH </b><b class="facebk-txtflog">facebook</b></button>
+
+ 
+    </div>
+        </li>
+
+                          <li class="bmd-listing" style=" margin-top: 17px;">
+               <div class="head-img-txtflog">
+  <b style="padding-top:5px;color:#fff;">Don't have an account? <b ng-show="noSessionStatus" ng-click="signup()" id="signdiv">
           SIGN UP
-        </b></b></div>
-            
-      
-    
+        </b></b>
+ 
     </div>
-<div class="div-coloor">
+        </li>
+
+
+
+
+
+
+      
+
+			</ul>
+			 
+		</div>
+
+	<div class="div-coloor" style="top:47px">
     <div class="filter-page" ng-hide="noSessionStatus">
 
  
@@ -67,9 +91,9 @@
 
 <div class="containerration">
 
-<div class="yoga-wordout"><p><span class="wordout-yoga">Trainers</span><span id="appendinto"></p>
+<div class="yoga-wordout"><p><span class="wordout-yoga">Trainer</span><span id="appendinto"></p>
 
-<div class="right-side-categories"><img class="transfromimg" src="img/disclose-arrow.png"></div></div>
+<div class="right-side-categories"><img class="transfromimg" src="img/go.png"></div></div>
 <div class="likefilter"></div>
 
 
@@ -86,7 +110,7 @@
 
 <div class="example">
 
-    <div class="price-range2"><p>Distance Range:  <span class="dollercls">0 miles</span> to <span class="dollercls" id="js-display-changes"></span> <span class="dollercls">miles</span></p></div>
+    <div class="price-range2"><p>Distance Range:  <span class="dollercls">0 miles</span> to <span class="dollercls" id="js-display-changes">50</span> <span class="dollercls">miles</span></p></div>
     <div class="slider-wrapper2">
     <input type="text" class="js-check-change" />
     </div>
@@ -136,7 +160,7 @@
     </div>
 </div>
 <div class="language-div"><b id="languages-id">Languages</b>
-<div class="language-icon"><img src="img/disclose-arrow.png"></div> </div>
+<div class="language-icon"><img src="img/go.png"></div> </div>
   <div class="likefilter"></div>
   </form>
  
@@ -177,14 +201,15 @@
     <div class="categories-div-left"  id="cate-slide" ng-hide="noSessionStatus">
 
 <div class="image-workout-div" id="image-workout">
-    <label>Workout</label>
-    <span>
+
+    <label>Trainer</label>
+<!--     <span>
    <img src="img/dropdown.png">
-    </span>
+    </span> -->
     </div>
 
     <div class="checkboxd-div1">
-    <label>Yoga</label>
+    <label>Personal Trainer</label>
     <span>
     <input class="input01" type="checkbox" name="first categiesw" value="Yoga">
     </span>
@@ -198,7 +223,7 @@
       </div>
 
   <div class="checkboxd-div3">
-      <label>Kickboxing</label>
+      <label>Cross Fit</label>
       <span>
       <input class="input03" type="checkbox" name="second categiesw" value="Kickboxing">
       </span>
@@ -206,7 +231,7 @@
 
 
         <div class="checkboxd-div4">
-      <label>Weightlifting</label>
+      <label>Weight loss</label>
       <span>
       <input  class="input04" type="checkbox" name="second categiesw" value="Weightlifting">
       </span>
@@ -214,29 +239,34 @@
 
 
         <div class="checkboxd-div5">
-      <label>Personal Traning</label>
+      <label>Yoga</label>
       <span>
       <input class="input05" type="checkbox" name="second categiesw" value="Personal Traning">
       </span>
       </div>
 
-
         <div class="checkboxd-div6">
-      <label>Rehabilitation</label>
+      <label>Aerobics</label>
       <span>
       <input class="input06" type="checkbox" name="second categiesw" value="Rehabilitation">
       </span>
       </div>
 
         <div class="checkboxd-div7">
-      <label>Weight Loss</label>
+      <label>Pilates</label>
       <span>
       <input class="input07" type="checkbox" name="second categiesw" value="Weight Loss">
       </span>
       </div>
 
           <div class="checkboxd-div8">
-      <label>crossfit</label>
+      <label>Boxing</label>
+      <span>
+      <input class="input08" type="checkbox" name="crossfit" value="crossfit">
+      </span>
+      </div>
+          <div class="checkboxd-div8">
+      <label>Marathon</label>
       <span>
       <input class="input08" type="checkbox" name="crossfit" value="crossfit">
       </span>
@@ -250,28 +280,9 @@
 
      </div>
 
-
-
-
- 
-  </ion-content>
+	</ion-content>
 
 </ion-view>
-
-
-  <gap:config-file platform="ios" parent="UIStatusBarHidden">
-    <true/>
-</gap:config-file>
- <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
-    <false/>
-</gap:config-file>
-
-<style type="text/css">
-  
-  .bg-color-white {
-    background-color: #003f6f;
-}
-</style>
-
  
+
 
