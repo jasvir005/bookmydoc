@@ -1236,13 +1236,14 @@ $("#appendinto").append(':'+com);
 $(".theme-bg").css('background-color','#fff');
 
    var widthvar = $( window ).width();
+   var height = $( window ).height();
  
   $(window).resize(function(){
 
 
  
        var widthvar = $( window ).width();
-     //alert(widthvar); 
+       
 
  if(widthvar==320)
  {
@@ -1555,7 +1556,25 @@ $(".padding").css({"padding": "0px"});
 
 
 
-       if(widthvar==320)
+ if((widthvar==320) && (height==578))
+ {
+
+        $(".categories-div-left").hide(); 
+$(".filter-page-contant").css('height','100vh');
+       $(".categories-div-left").css("cssText", "display: inline !important;");
+$(".div-coloor").off('scroll');
+//.animate({"right": '206px',"posit","absolute"},"show")
+$(".filter-page").css({"position": "relative","right": "206px"});
+$(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-582px","float": "right","position": "relative","text-align": "right"});
+$(".padding").css({"padding": "0px"});
+ 
+
+
+ 
+ }
+
+
+     if((widthvar==320) && (height==480))
        {
         $(".categories-div-left").hide(); 
 $(".filter-page-contant").css('height','100vh');

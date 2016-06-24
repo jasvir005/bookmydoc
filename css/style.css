@@ -4,6 +4,7 @@
 
 
 
+
   @font-face {
 /*
      font-family: 'helvetica';
@@ -14,6 +15,22 @@
     font-style: normal;*/
   }
 
+/*    @font-face {
+ 
+font-family: 'Nexabold';
+src:url('fonts/Nexa Bold.eot') ;
+font-weight: normal;
+ font-style: normal; 
+  }
+
+      @font-face {
+ 
+font-family: 'Nexalight';
+src:url('fonts/Nexa Light.eot') ;
+font-weight: normal;
+ font-style: normal; 
+  }
+*/
 
 
 .mR25{margin-right:25px;}
@@ -506,23 +523,15 @@ width: 100%;}
 }
 
 .word-out {
-/* color: #fff;
-    font-family: Arial;
-    font-size: 37px;
-    font-weight: 700;
-*/
-  color: #fff;
-    font-family: helvetica !important;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: bold;
-    margin-bottom: 1px;
-    margin-top: 14px;
- font-family: 'fontawesome';
-    src:url('fonts/avenir-lt-45-book.ttf') ;
-    src:url('fonts/Nexa Bold.eot') ;
-     src:url('fonts/Nexa Light.otf');
-      src:url('fonts/fontawesome-webfont.otf');
+ 
+color: #fff;
+font-size: 28px;
+margin-bottom: 1px;
+margin-top: 14px;
+font-family: 'Nexabold';
+src:url('fonts/Nexa Bold.eot') ;
+font-weight: normal;
+font-style: normal; 
        
     
 
@@ -1684,7 +1693,7 @@ input[type='radio']:checked:before {
 
 .filter-page-contant {
  
-       border: 1px solid red;
+       border: 1px solid #fff;
        
 }
 
@@ -1778,6 +1787,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   
 }
 
+
+.bmd-usr1 > img {
+    width: 55%;
+}
 
 /*@media only screen 
 and (min-device-width : 320px) 
