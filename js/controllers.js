@@ -525,8 +525,8 @@ $(".theme-bg").css('background-color','#fff');
 
 $(".slider-wrapper").css('width','255px');
 $(".slider-wrapper2").css({'border':'0px solid red','width':'257px','margin':'0 0 26px 31px'})
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+/*$(".range-handle").css('left','0px');*/
+//$(".range-quantity").css('width','0px');
  }
 
 
@@ -541,16 +541,16 @@ $(".range-quantity").css('width','0px');
 $(".cate-slide").css('display','none');
 $(".slider-wrapper").css('width','263px');
 $(".slider-wrapper2").css({'width':'266px','margin':'0 0 27px 44px'});
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+/*$(".range-handle").css('left','0px');*/
+//$(".range-quantity").css('width','0px');
  }
 
   if(widthvar==480)
  {
 $(".slider-wrapper").css('width','378px');
 $(".slider-wrapper2").css('width','382px');
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+// $(".range-handle").css('left','0px');
+//$(".range-quantity").css('width','0px');
 } 
 
   if(widthvar==640)
@@ -560,9 +560,9 @@ $(".slider-wrapper2").css('width','549px');
 $(".filter-page-contant .example").css('margin-top','34px');
 
 
-
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+/*
+$(".range-handle").css('left','0px');*/
+//$(".range-quantity").css('width','0px');
 } 
  
 });
@@ -574,8 +574,8 @@ $(".slider-wrapper").css('width','255px');
 $(".slider-wrapper2").css({'border':'0px solid red','width':'257px','margin':'0 0 26px 31px'})
 
 //css('border','1px solid red','width','257px','margin','0 0 26px 31px;');
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+//$(".range-handle").css('left','0px');
+//$(".range-quantity").css('width','0px');
  }
 
    if(widthvar==360)
@@ -599,10 +599,10 @@ $(".slider-wrapper8").css('width','382px');
 $(".slider-wrapper").css('width','560px');
 $(".slider-wrapper2").css('width','549px');
 $(".filter-page-contant .example").css('margin-top','34px');
-$(".range-handle").css('left','0px');
+//$(".range-handle").css('left','0px');
 
 
-$(".range-quantity").css('width','0px');
+//$(".range-quantity").css('width','0px');
 } 
   //alert('hi');
 
@@ -1250,8 +1250,8 @@ $(".theme-bg").css('background-color','#fff');
 
 $(".slider-wrapper").css('width','255px');
 $(".slider-wrapper2").css({'border':'0px solid red','width':'257px','margin':'0 0 26px 31px'})
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+/*$(".range-handle").css('left','0px');
+$(".range-quantity").css('width','0px');*/
  }
 
 
@@ -1266,16 +1266,16 @@ $(".range-quantity").css('width','0px');
 $(".cate-slide").css('display','none');
 $(".slider-wrapper").css('width','263px');
 $(".slider-wrapper2").css({'width':'266px','margin':'0 0 27px 44px'});
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+/*$(".range-handle").css('left','0px');
+$(".range-quantity").css('width','0px');*/
  }
 
   if(widthvar==480)
  {
 $(".slider-wrapper").css('width','378px');
 $(".slider-wrapper2").css('width','382px');
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+/*$(".range-handle").css('left','0px');
+$(".range-quantity").css('width','0px');*/
 } 
 
   if(widthvar==640)
@@ -1284,10 +1284,10 @@ $(".slider-wrapper").css('width','560px');
 $(".slider-wrapper2").css('width','549px');
 $(".filter-page-contant .example").css('margin-top','34px');
 
-
+/*
 
 $(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+$(".range-quantity").css('width','0px');*/
 } 
  
 });
@@ -1299,8 +1299,8 @@ $(".slider-wrapper").css('width','255px');
 $(".slider-wrapper2").css({'border':'0px solid red','width':'257px','margin':'0 0 26px 31px'})
 
 //css('border','1px solid red','width','257px','margin','0 0 26px 31px;');
-$(".range-handle").css('left','0px');
-$(".range-quantity").css('width','0px');
+/*$(".range-handle").css('left','0px');
+$(".range-quantity").css('width','0px');*/
  }
 
    if(widthvar==360)
@@ -1324,10 +1324,10 @@ $(".slider-wrapper8").css('width','382px');
 $(".slider-wrapper").css('width','560px');
 $(".slider-wrapper2").css('width','549px');
 $(".filter-page-contant .example").css('margin-top','34px');
-$(".range-handle").css('left','0px');
+/*$(".range-handle").css('left','0px');
 
 
-$(".range-quantity").css('width','0px');
+$(".range-quantity").css('width','0px');*/
 } 
   //alert('hi');
 
@@ -1567,7 +1567,7 @@ $(".div-coloor").off('scroll');
 $(".filter-page").css({"position": "relative","right": "206px"});
 $(".categories-div-left").css({"border":"0px solid red","padding":"10px","width":"204px","top":"-582px","float": "right","position": "relative","text-align": "right"});
 $(".padding").css({"padding": "0px"});
- 
+
 
 
  

@@ -52,8 +52,13 @@
 			</div>
 		</div>
 		<div class="line-brk"></div>
-		<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">Email is required.</div>
-		<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$invalid">Invalid Email-ID.</div>
+		
+<!-- 		<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is required.</div>
+		<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$invalid">Invalid E-Mail.</div> -->
+
+
+		    <div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is required.</div>
+    <div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$error.email">Invalid E-Mail</div>
 
 		<div class="bmd-usr">
 			<div class="bmd-usr1"><img src="img/email.png"></div>
