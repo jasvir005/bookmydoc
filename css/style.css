@@ -1743,12 +1743,15 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     border:10px solid red;
 }
 }*/
-
+.bmd-usr1 img {
+    width: 62%;
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px)and (orientation : portrait){ 
 
   .bmd-bg-sec2 img {
     width:100% !important;
+       height: 292px;
   }
   .head_img_pro {
     margin: 50px auto -1px;
