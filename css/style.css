@@ -16,6 +16,7 @@
 
 
 
+
 .mR25{margin-right:25px;}
 .border-none{border:none !important;}
 
@@ -146,7 +147,7 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 .checkbox-custom, .radio-custom {opacity: 0;position: absolute;}
 .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {display: inline-block;margin: 4px;cursor: pointer;}
 .checkbox-custom-label, .radio-custom-label {position: relative;}
-.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:5px;text-align: left;border: 1px solid #dcdcdc;display: inline-block;vertical-align: middle;width: 20px;height: 20px;margin-right: 10px;text-align: center;}
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:5px;text-align: left;border: 1px solid #dcdcdc;display: inline-block;vertical-align: middle;width: 20px;height: 20px;margin-right: 17px;text-align: center;}
 .checkbox-custom:checked + .checkbox-custom-label:before {
  font-family: 'helvetica';
     src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -532,7 +533,7 @@ width: 100%;}
 .chkoutbtn_ap {
   background: #003f6f none repeat scroll 0 0;
  
-     padding: 0 36px 5px;
+        padding: 0 20px 5px;
 }
 .chkoutbtn_ap b {
     font-size: 11px;
@@ -1708,8 +1709,12 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     letter-spacing: 1px;
 }
 .head-img-txtflog > b {
-    font-family: "Trebuchet MS";
-    font-weight: bold;
+  
+    font-family: 'Nexa Light';
+ 
+    src:url('fonts/Nexa Light.otf') ;
+       font-weight: normal;
+    font-style: normal;
     letter-spacing: 1px;
 }
 .signup-btn {
@@ -1744,7 +1749,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 }*/
 .bmd-usr1 img {
-    width: 62%;
+    width: 57%;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px)and (orientation : portrait){ 
