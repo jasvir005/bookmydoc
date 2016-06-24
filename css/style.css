@@ -826,7 +826,7 @@ width: 100%;
     font-size: 15px;
     padding: 8px;
     text-align: center;
-    width: 100%;
+    width: 99%;
 }
 
 
@@ -1019,7 +1019,7 @@ width: 100%;
     
     letter-spacing: 1px;
     padding: 8px;
-    width: 90%;
+    width: 100%;
        font-family: 'helvetica';
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
@@ -1033,7 +1033,7 @@ width: 100%;
 }
 .user_login-div {
     margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 0px;
     background: #003F6F none repeat scroll 0 0;
      text-align: center;
 }
@@ -1579,66 +1579,66 @@ input[type='radio']:checked:before {
 .image-workout-div{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
       overflow: hidden;
 }
 
 .checkboxd-div1{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
 }
 
 .checkboxd-div2{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
 }
 
 .checkboxd-div3{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
 }
 
 .checkboxd-div4{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
 }
 
 .checkboxd-div5{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
 }
 
 .checkboxd-div6{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
 }
 
 .checkboxd-div7{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
 }
 .checkboxd-div8{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
 }
 .checkboxd-div9{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 90%;
+      width: 100%;
 }
 .checkboxd-div1 > label {
 
     color: #fff;
     float: left;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
 }
 
 
@@ -1646,52 +1646,52 @@ input[type='radio']:checked:before {
 
     color: #fff;
     float: left;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
 }
 .checkboxd-div2 > label {
     color: #fff;
     float: left;
-    margin-left: 10px;
+   /* margin-left: 10px;*/
 }
 .checkboxd-div3 > label {
     color: #fff;
     float: left;
-    margin-left: 10px;
+   /* margin-left: 10px;*/
 }
 
 
 .checkboxd-div4 > label {
     color: #fff;
     float: left;
-    margin-left: 10px;
+   /* margin-left: 10px;*/
 }
 
 .checkboxd-div5 > label {
     color: #fff;
     float: left;
-    margin-left: 10px;
+  /*  margin-left: 10px;*/
 }
 .checkboxd-div6 > label {
     color: #fff;
     float: left;
-    margin-left: 10px;
+   /* margin-left: 10px;*/
 }
 
 .checkboxd-div7 > label {
     color: #fff;
     float: left;
-    margin-left: 10px;
+   /* margin-left: 10px;*/
 }
 
 .checkboxd-div8 > label {
     color: #fff;
     float: left;
-    margin-left: 10px;
+   /* margin-left: 10px;*/
 }
 .checkboxd-div9 > label {
     color: #fff;
     float: left;
-    margin-left: 10px;
+   /* margin-left: 10px;*/
 }
 .div-coloor {
     background: #003F6F none repeat scroll 0 0;
@@ -1724,7 +1724,7 @@ input[type='radio']:checked:before {
     letter-spacing: 1px;
     padding: 8px;
     text-align: center;
-    width: 100%;
+    width: 99%;
 }
 /********************************/
 li.bmd-listing:nth-child(2) .head-img-txtflog > p {
@@ -1795,20 +1795,39 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   }
   form.ng-pristine {
     margin-top: 40px !important;
+  }
+  .bmd-usr {
+	    margin-top: 6px;
+   }
+  .user_login-div .bmd-main-btn {
+	   margin-top: 15px;
+   }
 }
-.bmd-usr {
 
-    margin-top: 6px;
-}
-.user_login-div .bmd-main-btn {
-    margin-top: 15px;
-}
-
-  
-
-  
-}
+/***************************/
 .rotate2
 {
    transform: rotate(180deg);
+}
+.bmd-usr-wrapper {
+    margin: auto;
+    width: 90%;
+}
+#top_go_back{
+	transform: rotate(180deg);
+}
+#login_user_id{
+	height:26px !important;
+}
+#user_paswd{
+	height: 40px !important
+}
+#top_circle{
+	padding:3px 7px;
+}
+#cate-slide .likefilter {
+    border-bottom: 1px solid #e3e3ea;
+}
+#chkbox_img{
+
 }
