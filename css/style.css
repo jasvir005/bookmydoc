@@ -1,10 +1,25 @@
 
 /*=== GENERAL-SETTINGS ===*/
 
+@font-face {
+    font-family: 'nexa_lightregular';
+    src: url('../fonts/nexa_light.woff2') format('woff2'),
+         url('../fonts/nexa_light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nexa_boldregular';
+    src: url('../fonts/nexa_bold.woff2') format('woff2'),
+         url('../fonts/nexa_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
-
-@font-face {font-family: "Nexa Bold";
+/*@font-face {font-family: "Nexa Bold";
     src: url("http://db.onlinewebfonts.com/t/c9f309b3d47969ecac64a77a6c672594.eot");
     src: url("http://db.onlinewebfonts.com/t/c9f309b3d47969ecac64a77a6c672594.eot?#iefix") format("embedded-opentype"),
     url("http://db.onlinewebfonts.com/t/c9f309b3d47969ecac64a77a6c672594.woff2") format("woff2"),
@@ -21,7 +36,7 @@
     url("http://db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.woff") format("woff"),
     url("http://db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.ttf") format("truetype"),
     url("http://db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.svg#Nexa Light") format("svg");
-}
+}*/
 
 
 

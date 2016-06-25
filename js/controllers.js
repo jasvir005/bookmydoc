@@ -3,6 +3,14 @@ angular.module('starter.controllers', ["ngStorage"])
 .controller('AppCtrl', function($ionicHistory,$document,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
 
 
+
+$(document).ready(function(){
+$(".signup-btn").click(function(){
+
+  alert('hello');
+});
+})
+
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
@@ -403,10 +411,8 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 
 
 $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = false;$scope.noSessionStatus = true;
-  
-  //alert('dfdf');// Perform the login action when the user submits the login form
+  // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
-    alert('ji');
     $ionicLoading.show({
 /*      template: '<img  src="img/await.gif" />'*/
     });
