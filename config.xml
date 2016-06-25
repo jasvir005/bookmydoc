@@ -19,7 +19,9 @@
     </gap:plugin> 
 
 
-
+<activity android:name=".SomeActivity"
+    android:label="@string/My Trainer"
+    android:screenOrientation="portrait" />
 
 <platform name="android">
     <!-- you can use any density that exists in the Android project -->
