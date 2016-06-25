@@ -1075,7 +1075,7 @@ clear: left;
     margin: 27px auto -1px;     
 }
 .login-user-div {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .social_icons > img {
     width: 18%;
@@ -1792,7 +1792,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     width: 24%;
   }
   .word-out {
-      margin-bottom: 10px !important;
+      margin-bottom: 5px !important;
       margin-top: 20px;
   }
   form.ng-pristine {
