@@ -1891,4 +1891,11 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
    text-align: right;
 }
 
+
+#hello .checkbox-custom, .radio-custom {
+    left: 23px;
+    opacity: 0;
+    position: relative;
+    z-index: 9999 !important;
+}
  
