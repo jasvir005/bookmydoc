@@ -239,6 +239,29 @@ fbLoginSuccess = function (userData) {
     }); 
 }
 
+
+
+//$scope.loginData.usertype='2';
+    var url='/get_categories';
+    $http({
+      url: $scope.baseurl+url, 
+      method: "GET",
+   
+    }).then(function mySucces(responsed) {
+
+/*var responsere =JSON.stringify(responsed);*/
+var num=1;
+$.each( responsed.data, function( key, val ) {
+
+data="<div id='hello' class='checkboxd-div"+num+"'><label>"+val.name+"</label><span><input type='checkbox'value='"+val.name+"'name="+val.name+" class='input0"+num+"'></span></div>";
+
+$("#cate-slide").append(data);
+num++;
+});
+
+});
+
+
 fbData = function () {
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
