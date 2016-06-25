@@ -253,7 +253,10 @@ fbLoginSuccess = function (userData) {
 var num=1;
 $.each( responsed.data, function( key, val ) {
 
-data="<div id='hello' class='checkboxd-div"+num+"'><label>"+val.name+"</label><span><input type='checkbox'value='"+val.name+"'name="+val.name+" class='input0"+num+"'></span></div>";
+
+
+
+data="<div id='hello' class='checkboxd-div"+num+"'><label>"+val.name+"</label><span><input id='checkbox-terms"+num+"' class='checkbox-custom 'type='checkbox' name='"+val.name+"' value='"+val.name+"'><label class='checkbox-custom-label' for='checkbox-terms'></label></span></div>";
 
 $("#cate-slide").append(data);
 num++;

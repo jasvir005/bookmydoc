@@ -150,14 +150,14 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 .checkbox-custom, .radio-custom {opacity: 0;position: absolute;}
 .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {display: inline-block;margin: 4px;cursor: pointer;}
 .checkbox-custom-label, .radio-custom-label {position: relative;}
-.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:5px;text-align: left;border: 1px solid #dcdcdc;display: inline-block;vertical-align: middle;width: 20px;height: 20px;margin-right: 22px;text-align: center;}
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:0px;text-align: left;border: 1px solid #dcdcdc;display: inline-block;vertical-align: middle;width: 22px;height: 22px;margin-right: 22px;text-align: center;}
 .checkbox-custom:checked + .checkbox-custom-label:before {
  
  font-family: "FontAwesome";
         color: #FE9A00 !important;
     font-weight: normal;
     font-style: normal;
-  content: '\f00c'; background: #fff;color: #F5A623;border:1px solid #F5A623;}
+  content: '\f00c'; background: #fff;color: #F5A623;border:2px solid #B3B3B3;}
 .radio-custom + .radio-custom-label:before {border-radius: 50%;}
 .radio-custom:checked + .radio-custom-label:before {
   src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -227,10 +227,11 @@ button[disabled]{
 .error_block {
   background: #fe9a00 none repeat scroll 0 0;
   border: 0px solid #ffbaba;
-  border-radius: 6px;
+  border-radius: 0px;
   color: #d8000c;
-  padding: 10px;
-  margin-bottom: 5px;
+  padding: 6px;
+  margin-bottom: 0px;
+    overflow: hidden;
 }
 .success_block {
   background: #fe9a00 none repeat scroll 0 0;
@@ -1880,3 +1881,14 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 #login-user .bmd-usr:nth-child(5) {
     margin-top: 5px;
 }
+
+.ng-binding {
+    float: left;
+    width: 50%;
+}
+
+.error_block li:nth-child(2) {
+   text-align: right;
+}
+
+ 
