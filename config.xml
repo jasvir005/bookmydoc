@@ -19,7 +19,15 @@
     </gap:plugin> 
 
 
-
+<application
+    android:allowBackup="true"
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/app_name" 
+    android:theme="@style/AppTheme">
+    <activity
+        android:name="com.neundorfer.microraphandheld.v1.ParentActivity"
+        android:label="@string/app_name" 
+        android:screenOrientation="portrait">
 
 <platform name="android">
     <!-- you can use any density that exists in the Android project -->
