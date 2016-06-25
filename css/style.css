@@ -1792,7 +1792,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     width: 24%;
   }
   .word-out {
-      margin-bottom: 18px;
+      margin-bottom: 10px !important;
       margin-top: 20px;
   }
   form.ng-pristine {
