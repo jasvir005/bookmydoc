@@ -22,22 +22,18 @@
 <div class="bmd-usr-wrapper">
     <form  name="loginform" ng-submit="loginform.$valid && doLogin()">
       
-        <div class="error_block" ng-show="loginError">
-          <ul>
-            <li  ng-repeat="msg in loginErrorMsg">{{msg.message}}</li>
-          </ul>
-        </div>
+        
         <div id="login-user">
     <div class="bmd-usr" style="padding-top: 11px;">
       <div  style="padding:5px" class="bmd-usr1" id="user_icon-img"><img src="img/user_new.png"></div>
       <div class="bmd-usr2">
-        <input id="login_user_id" class="bmd-usr-input" name="email" type="email" placeholder="Enter your E-Mail" ng-model="loginData.email" required>
+        <input  id="login_user_id" class="bmd-usr-input" name="email" type="email" placeholder="Enter your E-Mail" ng-model="loginData.email" required>
       </div>
     </div>
     
     <div class="line-brk" style="margin-bottom:18px;"></div>
-    <div class="bmd-field error" ng-show="submitted  && loginform.email.$error.required">E-Mail is required.</div>
-    <div class="bmd-field error" ng-show="loginform.email.$touched && loginform.email.$error.email">Invalid E-Mail</div>
+<!--     <div class="bmd-fieldd errord" ng-show="submitted  && loginform.email.$error.required">E-Mail is required.</div> -->
+  <!--   <div class="bmd-field error" ng-show="loginform.email.$touched && loginform.email.$error.email">Invalid E-Mail</div> -->
     <div class="bmd-usr">
     <div class="bmd-usr1" id="user_icon-img"><img src="img/lock_new.png"></div>
     <div class="bmd-usr2">
@@ -47,10 +43,11 @@
     </div>
     
     <div class="bmd-field error" ng-show="submitted  && loginform.password.$error.required">Password is required.</div>
-    <!-- <div class="bmd-field error" ng-show="loginform.password.$touched && loginform.password.$invalid">Password is required.</div> -->
-   <!--  <div class="bmd-frgtpass">
-    <i><u>Forget your Password</u></i>
-    </div> -->
+   <div class="error_block" ng-show="loginError">
+          <ul>
+            <li  ng-repeat="msg in loginErrorMsg">{{msg.message}}</li>
+          </ul>
+        </div>
     <div class="user_login-div">
     <button id="user_login" class="bmd-main-btn"   ng-click="submitted=true">LOGIN</button>
     </div>
@@ -66,3 +63,11 @@ padding-right: 20px;">Sign in with Google</button>
   </div>
   </ion-content>
 </ion-modal-view>
+
+<script>
+
+$document.ready(function(){
+
+  alert('has');
+  });
+</script>
