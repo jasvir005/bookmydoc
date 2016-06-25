@@ -828,7 +828,7 @@ width: 100%;
     font-size: 15px;
     padding: 5px;
     text-align: center;
-    width: 96%;
+    width: 94%;
 }
 
 
@@ -1721,7 +1721,7 @@ input[type='radio']:checked:before {
     letter-spacing: 1px;
     padding: 8px;
     text-align: center;
-    width: 96%;
+    width: 94%;
 }
 /********************************/
 li.bmd-listing:nth-child(2) .head-img-txtflog > p {
@@ -1792,11 +1792,11 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     width: 24%;
   }
   .word-out {
-      margin-bottom: 22px;
+      margin-bottom: 18px;
       margin-top: 20px;
   }
   form.ng-pristine {
-    margin-top: 40px !important;
+    margin-top: 0px !important;
   }
   .bmd-usr {
       margin-top: 6px;
@@ -1813,7 +1813,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .bmd-usr-wrapper {
     margin: auto;
-    width: 88%;
+    width: 87%;
 }
 #top_go_back{
   transform: rotate(180deg);
@@ -1822,11 +1822,11 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   height:26px !important;
 }
 #user_paswd {
-    height: 30px !important;
+    height: 44px !important;
     padding-left: 11px !important;
 }
 #top_circle{
-  padding:7px 10px;
+  padding:11px 14px;
 }
 #cate-slide .likefilter {
     border-bottom: 1px solid #e3e3ea;
@@ -1872,8 +1872,8 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     margin-top: 0;
 }
 .bmd-usr:nth-child(15) .bmd-usr-input.ng-pristine.ng-untouched.ng-valid {
-    padding-top: 9px;
-    padding-left: 17px !important; 
+    padding-top: 17px;
+    padding-left: 15px !important; 
 }
 .bmd-usr:nth-child(13) {
     margin-top: 9px;
