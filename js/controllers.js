@@ -403,8 +403,10 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 
 
 $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = false;$scope.noSessionStatus = true;
-  // Perform the login action when the user submits the login form
+  
+  //alert('dfdf');// Perform the login action when the user submits the login form
   $scope.doLogin = function() {
+    alert('ji');
     $ionicLoading.show({
 /*      template: '<img  src="img/await.gif" />'*/
     });
