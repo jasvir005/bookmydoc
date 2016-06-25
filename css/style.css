@@ -2,42 +2,23 @@
 /*=== GENERAL-SETTINGS ===*/
 
 @font-face {
-    font-family: 'nexa_lightregular';
+    font-family: 'nexa_light';
     src: url('../fonts/nexa_light.woff2') format('woff2'),
-         url('../fonts/nexa_light.woff') format('woff');
+    url('../fonts/nexa_light.woff') format('woff'),
+    url('../fonts/Nexa Light.otf'),
+    url('../fonts/Nexa Bold.otf');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
-    font-family: 'nexa_boldregular';
+    font-family: 'nexa_bold';
     src: url('../fonts/nexa_bold.woff2') format('woff2'),
          url('../fonts/nexa_bold.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; 
 
 }
-
-
-/*@font-face {font-family: "Nexa Bold";
-    src: url("http://db.onlinewebfonts.com/t/c9f309b3d47969ecac64a77a6c672594.eot");
-    src: url("http://db.onlinewebfonts.com/t/c9f309b3d47969ecac64a77a6c672594.eot?#iefix") format("embedded-opentype"),
-    url("http://db.onlinewebfonts.com/t/c9f309b3d47969ecac64a77a6c672594.woff2") format("woff2"),
-    url("http://db.onlinewebfonts.com/t/c9f309b3d47969ecac64a77a6c672594.woff") format("woff"),
-    url("http://db.onlinewebfonts.com/t/c9f309b3d47969ecac64a77a6c672594.ttf") format("truetype"),
-    url("http://db.onlinewebfonts.com/t/c9f309b3d47969ecac64a77a6c672594.svg#Nexa Bold") format("svg");
-}
-
-
-@font-face {font-family: "Nexa Light";
-    src: url("http://db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.eot");
-    src: url("http://db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.eot?#iefix") format("embedded-opentype"),
-    url("http://db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.woff2") format("woff2"),
-    url("http://db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.woff") format("woff"),
-    url("http://db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.ttf") format("truetype"),
-    url("http://db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.svg#Nexa Light") format("svg");
-}*/
-
 
 
 .mR25{margin-right:25px;}
@@ -246,11 +227,10 @@ button[disabled]{
 .error_block {
   background: #fe9a00 none repeat scroll 0 0;
   border: 0px solid #ffbaba;
-  border-radius: 0px;
+  border-radius: 6px;
   color: #d8000c;
-  padding: 6px;
-  overflow: hidden;
-  margin-bottom: 0px;
+  padding: 10px;
+  margin-bottom: 5px;
 }
 .success_block {
   background: #fe9a00 none repeat scroll 0 0;
@@ -539,11 +519,8 @@ width: 100%;}
     font-weight: bold;
     margin-bottom: 1px;
     margin-top: 14px;
- font-family: 'Nexa Bold';
-/*    src:url('fonts/avenir-lt-45-book.ttf') ;*/
-    src:url('fonts/Nexa Bold.eot') ;
- /*    src:url('fonts/Nexa Light.otf');*/
-   /*   src:url('fonts/fontawesome-webfont.otf');*/
+ font-family: nexa_bold;
+
        
     
 
@@ -558,6 +535,7 @@ width: 100%;}
 .chkoutbtn_ap b {
     font-size: 11px;
     background: #003F6F;
+    font-weight: normal;
 }
 
 .bmd-forward2 > img {
@@ -828,7 +806,7 @@ width: 100%;
 
 .facebk-txtflog {
     font-size: 20px;
-    font-family: nexa bold;
+    font-family: nexa_bold;
 }
 .dont-have-accountflog {
     color: #fff;
@@ -883,7 +861,7 @@ width: 100%;
     margin-right: 4px;
 }*/
 .log-with-txt {
-    font-family: "Trebuchet MS";
+    font-family: nexa_bold;
     font-size: 13px;
     font-weight: bolder;
     letter-spacing: 1.3px;
@@ -1037,19 +1015,14 @@ width: 100%;
 }
 #appendmsg{display:none;}
 #user_login {
- background: #fe9a00 none repeat scroll 0 0;
-    border: 1px solid #fe9a00;
-    
+    background: #fe9a00 none repeat scroll 0 0;
+    border: 1px solid #fe9a00;    
     letter-spacing: 1px;
     padding: 8px;
     width: 100%;
-       font-family: 'helvetica';
-    src:url('fonts/avenir-lt-45-book.ttf') ;
-    src:url('fonts/Nexa Bold.eot') ;
-     src:url('fonts/Nexa Light.otf');
-     font-weight: normal;
-     color: #fff;
-    font-family: helvetica;
+    font-family: nexa_bold;
+    font-weight: normal;
+    color: #fff;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1741,7 +1714,7 @@ input[type='radio']:checked:before {
     background: #fe9a00 none repeat scroll 0 0;
     border: 1px solid #fe9a00;
     color: #fff;
-    font-family: helvetica;
+    font-family: nexa_bold;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -1755,7 +1728,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .head-img-txtflog > b {
   
-    font-family: 'Nexa Light';
+    font-family: nexa_bold;
  
     src:url('fonts/Nexa Light.otf') ;
        font-weight: normal;
@@ -1848,8 +1821,8 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   height:26px !important;
 }
 #user_paswd {
-    height: 35px !important;
-    padding-left: 13px !important;
+    height: 30px !important;
+    padding-left: 11px !important;
 }
 #top_circle{
   padding:3px 7px;
@@ -1906,10 +1879,4 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 #login-user .bmd-usr:nth-child(5) {
     margin-top: 5px;
-}
-
-.ng-binding {
-    float: left;
-    overflow: initial;
-    width: 50%;
 }
