@@ -60,9 +60,8 @@
     src:url('fonts/avenir-lt-45-book.ttf') ;
     src:url('fonts/Nexa Bold.eot') ;
      src:url('fonts/Nexa Light.otf');
-     font-weight: bold;
-    font-style: normal;
-  border:1px solid #002C5B; text-align: center;color:#f3f3f3;font-size: 18px;padding: 15px;background: transparent;font-family: helvetica;}
+     font-weight: 600;
+  border:1px solid #002C5B; text-align: center;color:#f3f3f3;font-size: 16px;padding: 15px;background: transparent;font-family: helvetica;}
 .bmd-spcl-listing:hover{background:#e48c08 !important;color:#fff !important;}
 .bmd-title-logo{text-align:center;padding-top: 0px;padding-bottom: 25px;}
 .bmd-title-logo2{text-align:center;padding-top: 0px;padding-bottom: 0px;padding-top: 0px;}
@@ -147,7 +146,7 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 .checkbox-custom, .radio-custom {opacity: 0;position: absolute;}
 .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {display: inline-block;margin: 4px;cursor: pointer;}
 .checkbox-custom-label, .radio-custom-label {position: relative;}
-.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:5px;text-align: left;border: 1px solid #dcdcdc;display: inline-block;vertical-align: middle;width: 20px;height: 20px;margin-right: 17px;text-align: center;}
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:5px;text-align: left;border: 1px solid #dcdcdc;display: inline-block;vertical-align: middle;width: 20px;height: 20px;margin-right: 22px;text-align: center;}
 .checkbox-custom:checked + .checkbox-custom-label:before {
  
  font-family: "FontAwesome";
@@ -824,7 +823,7 @@ width: 100%;
     border: 1px solid transparent;
     color: #fff;
     font-size: 15px;
-    padding: 8px;
+    padding: 5px;
     text-align: center;
     width: 99%;
 }
@@ -1747,13 +1746,15 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     background-color: #fe9a00;
     color: #fff;
     font-family: "helvetica";
-    font-style: normal;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
-      margin: 0 auto;
-  width: 85%;
-  text-align: center;
+    margin: 0 auto;
+    padding: 7px;
+    text-align: center;
+    width: 100%;
 }
+
 #login-user .bmd-usr {
     margin-bottom: 12px;
 }
@@ -1771,7 +1772,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 }*/
 .bmd-usr1 img {
-    width: 57%;
+    width: 75%;
 }
 
 .clr
@@ -1797,10 +1798,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     margin-top: 40px !important;
   }
   .bmd-usr {
-	    margin-top: 6px;
+      margin-top: 6px;
    }
   .user_login-div .bmd-main-btn {
-	   margin-top: 15px;
+     margin-top: 15px;
    }
 }
 
@@ -1814,20 +1815,38 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     width: 90%;
 }
 #top_go_back{
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 #login_user_id{
-	height:26px !important;
+  height:26px !important;
 }
-#user_paswd{
-	height: 40px !important
+#user_paswd {
+    height: 35px !important;
+    padding-left: 11px !important;
 }
 #top_circle{
-	padding:3px 7px;
+  padding:3px 7px;
 }
 #cate-slide .likefilter {
     border-bottom: 1px solid #e3e3ea;
 }
 #chkbox_img{
+  
+}
 
+
+.bmd-usr2 .bmd-usr-input.ng-pristine.ng-untouched.ng-valid {
+    padding-top: 7px;
+}
+.bmd-usr2 .bmd-usr-input.ng-pristine.ng-untouched.ng-valid-email.ng-invalid.ng-invalid-required {
+    padding-left: 13px !important;
+    padding-top: 2px;
+}
+.bmd-usr.bmd-usr:nth-child(13) .bmd-usr-input {
+    height: 30px !important;
+    padding-left: 13px !important;
+}
+.bmd-usr-input.ng-untouched.ng-valid.ng-dirty.ng-valid-parse {
+    padding-left: 16px !important;
+    padding-top: 12px;
 }
