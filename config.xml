@@ -20,7 +20,7 @@
 
 
 <activity android:name=".SomeActivity"
-    android:label="@string/My Trainer"
+    android:label="@string/app_name"
     android:screenOrientation="portrait" />
 
 <platform name="android">
