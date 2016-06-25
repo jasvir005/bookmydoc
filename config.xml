@@ -85,8 +85,9 @@
 </gap:config-file>
 
 
-<activity android:name=".SomeActivity"
-    android:label="@string/app_name"
-    android:screenOrientation="portrait" />
+<activity android:name="YourActivityName" 
+    android:icon="@drawable/ic_launcher" 
+    android:label="MY TRAINER" 
+    android:screenOrientation="portrait">
 </widget>
 
