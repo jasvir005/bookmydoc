@@ -1794,7 +1794,6 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   .word-out {
       margin-bottom: 5px !important;
       margin-top: 20px;
-       border: 1px solid red;
   }
   form.ng-pristine {
     margin-top: 0px !important;
