@@ -17,15 +17,12 @@
      <param name="APP_ID" value="584050255089224" />
      <param name="APP_NAME" value="bookmydoc" />
     </gap:plugin> 
+<preference name="orientation" value="portrait" />
 
 
-     <preference name="Orientation" value="landscape" />
-
- 
 
 <platform name="android">
-    
-
+    <preference name="orientation" value="portrait" />
     <!-- you can use any density that exists in the Android project -->
     
     <icon src="res/icon/android/icon-72-hdpi.png"/>
