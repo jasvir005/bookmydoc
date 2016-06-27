@@ -1965,5 +1965,5 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .chkoutbtn_ap .checkbox-custom-label, .radio-custom-label {
     left: 0;
-    top: 0;
+    top: 0 !important;
 }
