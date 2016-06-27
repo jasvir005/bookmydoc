@@ -1947,3 +1947,19 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .bmd-usr:nth-child(15) .bmd-usr1 {
     padding: 6px 8px 3px;
 }
+/***********************/
+#hello > label {
+    text-align: left;
+    width: 82%;
+}
+#hello > span {
+    float: left;
+    width: 17% !important;
+}
+#hello .checkbox-custom, .radio-custom {
+    left: -9px !important;
+}
+.checkbox-custom-label, .radio-custom-label {
+    top: -24px !important;
+    left: 7px;
+}
