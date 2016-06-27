@@ -807,7 +807,8 @@ width: 100%;
 .login-btn-facebookflog .bmd-main-btnflog{ font-size: 15px;}
 
 .facebk-txtflog {
-    font-size: 20px;
+   /* font-size: 20px;*/
+   font-size: 29px;
     font-family: nexa_bold;
 }
 .dont-have-accountflog {
@@ -827,7 +828,7 @@ width: 100%;
     border: 1px solid transparent;
     color: #fff;
     font-size: 15px;
-    padding: 5px;
+    padding: 1px;
     text-align: center;
     width: 94%;
 }
@@ -864,7 +865,7 @@ width: 100%;
 }*/
 .log-with-txt {
     font-family: nexa_bold;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bolder;
     letter-spacing: 1.3px;
     margin-right: 10px;
@@ -1053,7 +1054,8 @@ clear: left;
     font-family: Helvetica;
     font-size: 16.5px;
     font-weight: lighter;
-    margin-left: 15px;
+    /*margin-left: 15px;*/
+    margin-left: 10px;
     overflow: hidden;
     text-align: left !important;
     width: 100%;
@@ -1235,7 +1237,8 @@ width: 55%;
     font-family: Helvetica;
     font-size: 16.5px;
     font-weight: lighter;
-    margin-left: 15px;
+   /* margin-left: 15px;*/
+   margin-left: 10px;
     text-align: left !important;
     width: 100%;
     src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1344,6 +1347,7 @@ width: 100%;
 
 .rating-div {
     border-bottom: 1px solid #e3e3ea;
+    display: none;
     padding-bottom: 12px;
 }
 .filter-page-contant .main-images-star {
@@ -1390,7 +1394,7 @@ width: 100%;
 
 .language-div {
   margin: 15px auto 14px;
-    width: 92%;
+    width: 94%;
 }
 
 .filter-page-contant .language-icon {
@@ -1717,7 +1721,7 @@ input[type='radio']:checked:before {
     border: 1px solid #fe9a00;
     color: #fff;
     font-family: nexa_bold;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     letter-spacing: 1px;
     padding: 8px;
@@ -1827,7 +1831,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     padding-left: 11px !important;
 }
 #top_circle{
-  padding:11px 14px;
+  padding:15px 15px 0;
 }
 #cate-slide .likefilter {
     border-bottom: 1px solid #e3e3ea;
@@ -1966,4 +1970,16 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .chkoutbtn_ap .checkbox-custom-label, .radio-custom-label {
     left: 0;
     top: 0 !important;
+}
+.bmd-list .bmd-listing:nth-child(3) .head-img-txtflog {
+    margin-top: 20px;
+}
+.bmd-list .bmd-listing:nth-child(2) {
+    padding-top: 0;
+}
+.bmd-listing:nth-child(1) {
+    padding-bottom: 0;
+}
+.bmd-list:nth-child(1) .head-img-txtflog .word-out {
+    margin-bottom: 5px !important;
 }
