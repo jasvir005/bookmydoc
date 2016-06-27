@@ -1880,7 +1880,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     margin-top: 9px;
 }
 #login-user .bmd-usr:nth-child(5) {
-    margin-top: 5px;
+    margin-top: 0px;
 }
 .ng-binding {
     float: left;
