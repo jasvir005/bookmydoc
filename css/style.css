@@ -1436,7 +1436,7 @@ overflow: auto;
     
    color: #fff;
     float: left;
-    font-family: "Nexa Bold";
+    font-family: nexa_bold;
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
@@ -1450,7 +1450,7 @@ overflow: auto;
      src:url('fonts/Nexa Light.otf');
 color: #ffc000;
 float: right;
-font-family: "Nexa Light";
+font-family: nexa_bold;
 font-style: normal;
 font-weight: normal;
 margin-top: 3px;
