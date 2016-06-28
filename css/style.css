@@ -1894,10 +1894,13 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
    text-align: right;
 }
 #hello .checkbox-custom, .radio-custom {
-  left: 23px;
-  opacity: 0;
-  position: relative;
-  z-index: 9999 !important;
+   height: 11px;
+    left: 15px;
+    opacity: 0;
+    position: relative;
+    top: 1px;
+    width: 37%;
+    z-index: 9999 !important;
 }
 .bmd-list .bmd-listing:nth-child(5) {
   margin-top: 7px !important;
@@ -1960,9 +1963,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     float: left;
     width: 17% !important;
 }
-#hello .checkbox-custom, .radio-custom {
-    left: -9px !important;
-}
+ 
 .checkbox-custom-label, .radio-custom-label {
     top: -24px !important;
     left: 7px;
@@ -1983,3 +1984,14 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .bmd-list:nth-child(1) .head-img-txtflog .word-out {
     margin-bottom: 5px !important;
 }
+
+ .sidebar {
+  width: 210px;
+  height: 100%;
+  position: fixed;
+  background: #2a3542;
+   height: 100%;
+    right: 0;    
+    top: 0;   
+     padding: 20px; 
+ }
