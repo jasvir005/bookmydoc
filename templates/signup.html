@@ -1,3 +1,5 @@
+
+  <script src="lib/ionic/js/functionfile.js"></script>
 <ion-modal-view class="sign_form">  
   <ion-header-bar>
 
@@ -92,8 +94,8 @@
 		</div>
 		<div class="bmd-field error" ng-show="submitted  && signupform.terms.$error.required">Must agree the Terms and Conditions.</div>
 		<!-- <div class="bmd-field error" ng-show="signupform.terms.$dirty && signupform.terms.$error.required">Must agree the Terms and Conditions.</div> -->
- <div class="signup-btn">
- 	<button class="bmd-main-btn"  ng-click="submitted=true">SIGN UP</button>
+ <div class="signup-btn" >
+ 	<button id="alert" class="bmd-main-btn"   ng-click="submitted=true">SIGN UP</button>
 </div>
  <!-- 	<button class="bmd-main-btn"  ng-click="Signud()">facebook login</button>
 
@@ -105,6 +107,24 @@
 
 	</ion-content>
 
+
 </ion-modal-view>
+
+<script type="text/javascript">
+	
+	 
+$(document).ready(function(){
+alert('hidfdfd');
+
+
+
+ $(".bmd-main-btn").click(function(){alert('hello')});
+ 
+//$(".bmd-main-btn").click(function(){alert('hello')});
+
+ });
+ 
+ 
+</script>
 
  

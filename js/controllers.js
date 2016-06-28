@@ -1068,6 +1068,7 @@ $(".checkboxd-div8 > label").css({"color": "#FFC000"});
 });
 
 
+
 $(".checkboxd-div9").click(function(){
 var has = $(".checkboxd-div9 input").prop('checked')==true;
 if(has==true)
