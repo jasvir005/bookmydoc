@@ -1433,7 +1433,8 @@ alert('1384dd');
         $('#slow-slide').animate({ 'margin-right': '250px' }, 'slow');
         $('#slow-slide').css({ 'float': 'right','position':'static' },'slow');
         $('.pane').css({ 'position': 'static' });
-      $('.menu').css('display', 'none !important;' });
+     $('.menu').css('display', 'none important');
+      $(".menu").hide();
         $('.student-test').hide();
     }
 
