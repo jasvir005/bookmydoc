@@ -949,29 +949,34 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
 });
 
 
-$(".checkboxd-div1").click(function(){
-var has = $(".input01").is( ":checked" );
+ $(".checkboxd-div1").click(function(){
+ // alert('hello');
+
+var has = $(".checkboxd-div1 input").prop('checked')==true;
 if(has==true)
 {
-  //alert('tes true');
+//alert('true');
 $(".checkboxd-div1 > label").css({"color": "#FFC000"});
 }else
 {
- $(".checkboxd-div1 > label").css({"color": "#FFFFFF"}); 
+  //alert('false');
+ $(".checkboxd-div1 > label").css({"color":"#FFFFFF"}); 
 }
  
-});
+}); 
 
  
 
 $(".checkboxd-div2").click(function(){
-var has = $(".input02").is( ":checked" );
+  //alert('hello');
+var has = $(".checkboxd-div2 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
 $(".checkboxd-div2 > label").css({"color": "#FFC000"});
 }else
 {
+  //alert('fasler');
  $(".checkboxd-div2 > label").css({"color": "#FFFFFF"}); 
 }
  
@@ -981,7 +986,7 @@ $(".checkboxd-div2 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div3").click(function(){
-var has = $(".input03").is( ":checked" );
+var has = $(".checkboxd-div3 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -994,7 +999,7 @@ $(".checkboxd-div3 > label").css({"color": "#FFC000"});
 });
 
 $(".checkboxd-div4").click(function(){
-var has = $(".input04").is( ":checked" );
+var has = $(".checkboxd-div4 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1009,7 +1014,7 @@ $(".checkboxd-div4 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div5").click(function(){
-var has = $(".input05").is( ":checked" );
+var has = $(".checkboxd-div5 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1024,7 +1029,7 @@ $(".checkboxd-div5 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div6").click(function(){
-var has = $(".input06").is( ":checked" );
+var has = $(".checkboxd-div6 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1038,7 +1043,7 @@ $(".checkboxd-div6 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div7").click(function(){
-var has = $(".input07").is( ":checked" );
+var has = $(".checkboxd-div7 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1050,7 +1055,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
  
 });
 $(".checkboxd-div8").click(function(){
-var has = $(".input08").is( ":checked" );
+var has = $(".checkboxd-div8 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1064,7 +1069,7 @@ $(".checkboxd-div8 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div9").click(function(){
-var has = $(".input09").is( ":checked" );
+var has = $(".checkboxd-div9 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1714,13 +1719,16 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div1").click(function(){
-var has = $(".input01").is( ":checked" );
+ // alert('jas');
+var has = $(".checkboxd-div1 input").prop('checked')==true;
+//alert(has);
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div1 > label").css({"color": "#FFC000"});
+  // alert('tes true');
+ $(".checkboxd-div1 > label").css({"color": "#FFC000"});
 }else
 {
+ //alert("dfdf");
  $(".checkboxd-div1 > label").css({"color": "#FFFFFF"}); 
 }
  
@@ -1729,7 +1737,8 @@ $(".checkboxd-div1 > label").css({"color": "#FFC000"});
  
 
 $(".checkboxd-div2").click(function(){
-var has = $(".input02").is( ":checked" );
+var has = $(".checkboxd-div2 input").prop('checked')==true;
+//alert(has);
 if(has==true)
 {
   //alert('tes true');
@@ -1745,7 +1754,7 @@ $(".checkboxd-div2 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div3").click(function(){
-var has = $(".input03").is( ":checked" );
+var has = $(".checkboxd-div3 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1758,7 +1767,7 @@ $(".checkboxd-div3 > label").css({"color": "#FFC000"});
 });
 
 $(".checkboxd-div4").click(function(){
-var has = $(".input04").is( ":checked" );
+var has = $(".checkboxd-div4 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1773,7 +1782,7 @@ $(".checkboxd-div4 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div5").click(function(){
-var has = $(".input05").is( ":checked" );
+var has = $(".checkboxd-div5 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1788,7 +1797,7 @@ $(".checkboxd-div5 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div6").click(function(){
-var has = $(".input06").is( ":checked" );
+var has = $(".checkboxd-div6 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1802,7 +1811,7 @@ $(".checkboxd-div6 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div7").click(function(){
-var has = $(".input07").is( ":checked" );
+var has = $(".checkboxd-div7 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1814,7 +1823,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
  
 });
 $(".checkboxd-div8").click(function(){
-var has = $(".input08").is( ":checked" );
+var has = $(".checkboxd-div8 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
@@ -1828,7 +1837,7 @@ $(".checkboxd-div8 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div9").click(function(){
-var has = $(".input09").is( ":checked" );
+var has = $(".checkboxd-div9 input").prop('checked')==true;
 if(has==true)
 {
   //alert('tes true');
