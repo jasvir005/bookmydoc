@@ -807,8 +807,8 @@ width: 100%;
 .login-btn-facebookflog .bmd-main-btnflog{ font-size: 15px;}
 
 .facebk-txtflog {
-   /* font-size: 20px;*/
-   font-size: 29px;
+    font-size: 20px;
+   /*font-size: 29px;*/
     font-family: nexa_bold;
 }
 .dont-have-accountflog {
@@ -828,7 +828,7 @@ width: 100%;
     border: 1px solid transparent;
     color: #fff;
     font-size: 15px;
-    padding: 1px;
+    padding: 5px;
     text-align: center;
     width: 94%;
 }
@@ -865,7 +865,7 @@ width: 100%;
 }*/
 .log-with-txt {
     font-family: nexa_bold;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bolder;
     letter-spacing: 1.3px;
     margin-right: 10px;
@@ -1393,9 +1393,14 @@ width: 100%;
 }
 
 .language-div {
-  margin: 15px auto 14px;
-    width: 94%;
+    border-bottom: 1px solid #e3e3ea;
+    margin: 15px auto 14px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
 }
+
 
 .filter-page-contant .language-icon {
  
@@ -1578,11 +1583,13 @@ input[type='radio']:checked:before {
 }
 
 
-.image-workout-div{
-  margin-bottom: 14px;
+.image-workout-div {
+    margin-bottom: 14px;
     margin-top: 14px;
-      width: 100%;
-      overflow: hidden;
+    overflow: hidden;
+    padding-left: 25px;
+   /* padding-right: 20px;*/
+    width: 100%;
 }
 
 .checkboxd-div1{
@@ -1721,7 +1728,7 @@ input[type='radio']:checked:before {
     border: 1px solid #fe9a00;
     color: #fff;
     font-family: nexa_bold;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     padding: 8px;
@@ -1993,5 +2000,20 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
    height: 100%;
     right: 0;    
     top: 0;   
-     padding: 20px; 
+     padding: 20px 0; 
  }
+ #hello {
+    padding-left: 25px;
+    padding-right: 4px;
+}
+#image-workout > label {
+    float: left;
+    width: 82%;
+}
+#image-workout > span {
+    float: left;
+    width: 17%;
+}
+#image-workout img {
+    width: 90%;
+}
