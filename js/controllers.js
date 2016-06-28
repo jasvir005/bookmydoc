@@ -771,7 +771,7 @@ $(".common-button.button.button-positive.button-clear.button_text.icon.ion-navic
   $('.pane').css({ 'position': 'absolute' })
       $('.filter-page-contant').css({ 'margin-right': '0px' });
      // alert('hi');
-
+     $('.menu').css({ 'display': 'inline' });
 });
 
 $('.yoga-wordout').click(function(){
@@ -1414,6 +1414,7 @@ $(".common-button.button.button-positive.button-clear.button_text.icon.ion-navic
   $('.pane').css({ 'position': 'absolute' })
       $('.filter-page-contant').css({ 'margin-right': '0px' });
      // alert('hi');
+          $('.menu').css({ 'display': 'inline' });
 
 });
 
