@@ -805,7 +805,7 @@ $('.yoga-wordout').click(function(){
 });
 
 
-$('.language-icon').click(function(){alert('On processing')});
+$('.language-icon').click(function(){alert('On hi')});
 
 /* check box change color script*/
 $(".checkboxd-div7").click(function(){
@@ -1423,6 +1423,8 @@ $(".common-button.button.button-positive.button-clear.button_text.icon.ion-navic
 $('.yoga-wordout').click(function(){
 
 alert('1384dd');
+  $('.sidebara').hide();
+          $(".language-icon img").removeClass('rotate2');
    
      if( $('.sidebar').is(':visible') ) {
         $('.sidebar').animate({ 'width': '0px' }, 'slow', function(){
@@ -1450,7 +1452,38 @@ alert('1384dd');
 });
 
 
-$('.language-icon').click(function(){alert('On processing')});
+$('.language-icon').click(function(){
+           $('.sidebar').hide();
+ $(".transfromimg").removeClass('rotate2');
+
+     if( $('.sidebara').is(':visible') ) {
+      //alert('dfd');
+        $('.sidebara').animate({ 'width': '0px' }, 'slow', function(){
+          //alert('hi');
+            $('.sidebara').hide();              
+        });
+        $('#slow-slide').animate({ 'margin-right': '0px' }, 'slow');
+        $('.pane').css({ 'position': 'absolute' });
+        $('.student-test').show();
+        $(".language-icon img").removeClass('rotate2');
+    }
+    else {
+
+        $('.sidebara').show();
+        $('.sidebara').animate({ 'width': '250px' }, 'slow');
+        $('#slow-slide').animate({ 'margin-right': '250px' }, 'slow');
+        $('#slow-slide').css({ 'float': 'right','position':'static' },'slow');
+        $('.pane').css({ 'position': 'static' });
+        $('.menu').css({'display' :'none important','z-index':'-999'});
+        $(".menu").hide();
+        $('.student-test').hide();
+        $(".language-icon img").addClass('rotate2');
+    }
+
+
+
+
+});
 
 /* check box change color script*/
 $(".checkboxd-div7").click(function(){
