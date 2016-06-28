@@ -551,7 +551,7 @@ $(".theme-bg").css('background-color','#fff');
  if(widthvar==320)
  {
 
-$(".slider-wrapper").css('width','255px');
+$(".slider-wrapper").css('width','267px');
 $(".slider-wrapper2").css({'border':'0px solid red','width':'257px','margin':'0 0 26px 31px'})
 
  }
