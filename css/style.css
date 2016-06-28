@@ -1161,7 +1161,7 @@ clear: left;
     width: 92%;
 }
 .filter-page-contant .language-div > b {
-color: #515151;
+color: #7d7b7a;
 font-family: helvetica;
 font-size: 16.5px;
 font-weight: lighter;
@@ -2004,6 +2004,17 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     top: 10px;   
      padding: 20px 0; 
  }
+ .sidebar2 {
+  width: 210px;
+  height: 100%;
+  position: fixed;
+  background: #003F6F;
+   height: 100%;
+    right: 0;    
+    top: 10px;   
+     padding: 20px 0; 
+ }
+
  #hello {
     padding-left: 25px;
     padding-right: 4px;

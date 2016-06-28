@@ -775,7 +775,7 @@ $(".common-button.button.button-positive.button-clear.button_text.icon.ion-navic
 });
 
 $('.yoga-wordout').click(function(){
-
+$('.sidebar2').css({'display':'none'}); 
 //alert('1384');
    
      if( $('.sidebar').is(':visible') ) {
@@ -803,7 +803,32 @@ $('.yoga-wordout').click(function(){
 });
 
 
-$('.language-icon').click(function(){alert('On processing')});
+
+
+
+
+
+
+$('.language-div').click(function(){
+   $('.sidebar').css({'display':'none'}); 
+       if( $('.sidebar2').is(':visible') ) {
+        $('.sidebar2').animate({ 'width': '0px' }, 'slow', function(){
+            $('.sidebar2').hide();              
+        });
+        $('.filter-page-contant').animate({ 'margin-right': '0px' }, 'slow');
+        $('.pane').css({ 'position': 'absolute' });
+        $('.student-test').show();
+    }
+    else {
+        $('.sidebar2').show();
+        $('.sidebar2').animate({ 'width': '250px' }, 'slow');
+        $('.filter-page-contant').animate({ 'margin-right': '250px' }, 'slow');
+        $('.filter-page-contant').css({ 'float': 'right' }, '');
+        $('.pane').css({ 'position': 'static' });
+        $('.student-test').hide();
+    }
+
+});
 
 /* check box change color script*/
 $(".checkboxd-div7").click(function(){
@@ -1419,7 +1444,7 @@ $(".common-button.button.button-positive.button-clear.button_text.icon.ion-navic
 });
 
 $('.yoga-wordout').click(function(){
-
+$('.sidebar2').css({'display':'none'}); 
 //alert('1384');
    
      if( $('.sidebar').is(':visible') ) {
@@ -1443,7 +1468,24 @@ $('.yoga-wordout').click(function(){
 });
 
 
-$('.language-icon').click(function(){alert('On processing')});
+$('.language-div').click(function(){ 
+   $('.sidebar').css({'display':'none'}); 
+  if( $('.sidebar2').is(':visible') ) {
+        $('.sidebar2').animate({ 'width': '0px' }, 'slow', function(){
+            $('.sidebar2').hide();              
+        });
+        $('.filter-page-contant').animate({ 'margin-right': '0px' }, 'slow');
+        $('.pane').css({ 'position': 'absolute' });
+        $('.student-test').show();
+    }
+    else {
+        $('.sidebar2').show();
+        $('.sidebar2').animate({ 'width': '250px' }, 'slow');
+        $('.filter-page-contant').animate({ 'margin-right': '250px' }, 'slow');
+        $('.filter-page-contant').css({ 'float': 'right' }, '');
+        $('.pane').css({ 'position': 'static' });
+        $('.student-test').hide();
+    }});
 
 /* check box change color script*/
 $(".checkboxd-div7").click(function(){
