@@ -1422,7 +1422,7 @@ $(".common-button.button.button-positive.button-clear.button_text.icon.ion-navic
 
 $('.yoga-wordout').click(function(){
 
-alert('1384dd');
+//alert('1384dd');
   $('.sidebara').hide();
           $(".language-icon img").removeClass('rotate2');
    
