@@ -1930,7 +1930,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 #login-user .bmd-usr-input.ng-untouched.ng-valid.ng-dirty.ng-valid-parse {
     padding-top: 0;
 }
-
-.bmd-usr-input.ng-pristine.ng-valid-email.ng-invalid.ng-invalid-required.ng-touched {
+.bmd-usr-input.ng-pristine.ng-invalid.ng-invalid-required.ng-touched {
     border: 2px solid #fe9a00;
 }
+ 
