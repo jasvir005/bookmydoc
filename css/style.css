@@ -1943,3 +1943,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
  #login-user .bmd-usr2:nth-child(2) #login_user_id {
     padding-top: 10px;
 }
+
+.bmd-usr:nth-child(15) .bmd-usr1 {
+    padding: 6px 8px 3px;
+}
