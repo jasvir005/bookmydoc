@@ -1831,7 +1831,8 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   transform: rotate(180deg);
 }
 #login_user_id{
-  height:26px !important;
+  /*height:26px !important;*/
+  height:34px !important;
 }
 #user_paswd {
     height: 42px !important;
@@ -1955,7 +1956,8 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
  }
 
  #login-user .bmd-usr2:nth-child(2) #login_user_id {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
+    padding-top: 2px;
 }
 
 .bmd-usr:nth-child(15) .bmd-usr1 {
