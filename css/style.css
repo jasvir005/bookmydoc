@@ -1155,7 +1155,7 @@ clear: left;
     margin: 17px auto 0;
     overflow: hidden;
     padding-bottom: 0;
-    padding-top: 55px;
+    padding-top: 14px;
     text-align: left;
     width: 92%;
 }
@@ -1178,7 +1178,7 @@ src:url('fonts/Nexa Light.otf');
 }
 .filter-page-contant .right-side-categories img {
     float: right;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     padding-top: 1px;
     width: 62%;
 }
@@ -1409,6 +1409,7 @@ width: 100%;
 }
 .filter-page-contant .language-icon > img {
     width: 100%;
+    padding-top: 4px;
 }
 
 .common-button.button.button-positive.button-clear.button_text.icon.ion-navicon.txt-color-black {
@@ -1583,13 +1584,13 @@ input[type='radio']:checked:before {
 
 .image-workout-div {
     margin-bottom: 14px;
-    margin-top: 12px;
+    margin-top: 10px;
     overflow: hidden;
     padding-left: 25px;
    /* padding-right: 20px;*/
     width: 100%;
 }
-
+  
 .checkboxd-div1{
   margin-bottom: 14px;
     margin-top: 14px;

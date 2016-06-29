@@ -275,7 +275,7 @@ num++;
 
 
 //console.log(obj.name);
-  var numd=1;
+ // var numd=1;
 $.each( languages.data, function( key, val ) {
 //alert(val.name);
 
@@ -283,8 +283,8 @@ $.each( languages.data, function( key, val ) {
 
 data="<div id='hello' class='checkboxd-div"+num+"'><label>"+val.name+"</label></div>";
 
-$("#cate-slidea").append(data);
-numd++;
+$(".cate-slidea").html("data");
+//numd++;
 }); 
 
 });
