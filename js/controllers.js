@@ -837,7 +837,10 @@ $('.yoga-wordout').click(function(){
 
 
 
-$('.language-icon').click(function(){
+$('.language-div').click(function(){
+
+
+
            $('.sidebar').hide();
  $(".transfromimg").removeClass('rotate2');
 
@@ -1516,9 +1519,9 @@ $('.yoga-wordout').click(function(){
 });
 
 
-$('.language-icon').click(function(){
+$('.language-div').click(function(){
 
-
+//alert('dfd');
 /*
 var widthlan=$(window).width();
 var heightlan=$(window).height();
@@ -1566,6 +1569,11 @@ $(".languages").css({ 'height': '100vh' });
         $(".menu").hide();
         $('.student-test').hide();
         $(".language-icon img").addClass('rotate2');
+
+
+/*        alert('dfd');
+  var hi=$( "input[type=checkbox]" ).on( "click", Checked );
+  alert(hi);*/
     }
 
 

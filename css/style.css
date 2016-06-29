@@ -2014,7 +2014,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     position: fixed;
     right: 0;
     top: 0;
-    width: 89%;
+    width: auto;
 }
  #hello {
     padding-left: 25px;
@@ -2042,6 +2042,13 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   
  
 }
+.checkboxd-diva > input {
+  float: initial;
+    left: 28px;
+    position: relative;
+    top: 2px;
+}
+
 .languages .checkbox-custom {
     height: 25px;
     left: 30px;
@@ -2065,7 +2072,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     width:60%;
 }
 .languages {
-    border: 1px solid red;
+    border: 0px solid red;
    height: 100vh !important;
     overflow: auto;
     padding-left: 25px;
