@@ -1478,7 +1478,7 @@ margin-top: 3px;
 
 
 .filter-page {
- margin-top: 70px !important;
+ margin-top: 30px;
     
 }
 
@@ -2002,10 +2002,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 .sidebara {
    background: #003f6f none repeat scroll 0 0;
-    border: 1px solid red;
+    
     float: right;
     height: 100%;
-    overflow: auto;
+ 
    
     padding: 20px 0;
     position: fixed;
@@ -2060,10 +2060,12 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     width: 74%;
 }
 .languages {
-  overflow: unset;
+    border: 1px solid red;
+    height: 420px;
+    overflow: auto;
     padding-left: 25px;
     padding-right: 0;
-    width: 121%;
+    width: 100%;
 }
 .languages .checkbox-custom-label, .radio-custom-label
 {
