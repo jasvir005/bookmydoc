@@ -148,6 +148,9 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 .bmd-appmnt-content-check{width:100%;text-align:center;padding: 60px 40px 30px;}
 .bmd-appmnt-content-check-inner{width:100%;color:#fff;font-size: 13px;}
 .checkbox-custom, .radio-custom {opacity: 0;position: absolute;}
+
+#cate-slidea .checkbox-custom, .radio-custom{position:relative;top: 24px; z-index: 9999;}
+
 .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {display: inline-block;margin: 4px;cursor: pointer;}
 .checkbox-custom-label, .radio-custom-label {position: relative;}
 .checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:0px;text-align: left;border: 2px solid #b3b3b3;display: inline-block;vertical-align: middle;width: 22px;height: 22px;margin-right: 22px;text-align: center;}
@@ -2036,11 +2039,11 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .checkboxd-diva > span {
     float: right;
-    text-align: right;
+  
     width: 21%;
 }
 .languages .checkbox-custom {
-    height: 29px;
+     
     z-index: 999 !important;
     width: 36px;
 }
