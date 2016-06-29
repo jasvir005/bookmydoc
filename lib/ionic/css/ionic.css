@@ -3874,7 +3874,7 @@ a.subdued {
     display: flex;
     height: 44px;
     left: 0;
-    padding: 5px;
+    padding: 0 5px 5px;
     position: absolute;
     right: 0;
     transform: translate3d(0px, 0px, 0px);
