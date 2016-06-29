@@ -2084,3 +2084,8 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 {
   top:0px !important;
 }
+#hello > span {
+    float: left;
+    height: 37px;
+    width: 17% !important;
+}
