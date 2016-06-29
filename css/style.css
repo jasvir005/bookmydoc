@@ -1445,21 +1445,19 @@ width: 100%;
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
-    width: 84%;
+    width: 80%;
 
 }
 
 .Reset-arrow {
-     src:url('fonts/Nexa Light.otf');
-color: #ffc000;
-float: right;
-font-family: nexa_bold;
-font-style: normal;
-font-weight: normal;
-margin-top: 10px;
-
-
-
+    src:url('fonts/Nexa Light.otf');
+    color: #ffc000;
+    float: right;
+    font-family: nexa_bold;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 10px;
+    font-size: 18px;
 /*
      font-family: 'helvetica';
     src:url('fonts/avenir-lt-45-book.ttf') ;
