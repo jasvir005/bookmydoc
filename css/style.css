@@ -1395,7 +1395,7 @@ width: 100%;
 
 .language-div {
     border-bottom: 1px solid #e3e3ea;
-    margin: 15px 0 5px;
+    margin: 10px auto 14px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1481,7 +1481,7 @@ margin-top: 3px;
 
 
 .filter-page {
- margin-top: 30px;
+ margin-top: 70px !important;
     
 }
 
@@ -1541,8 +1541,9 @@ margin-top: 3px;
 
 .gendr-div-main {
     float: left;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    padding-left: 5px;
     width: 100%;
 }
 
@@ -1595,48 +1596,48 @@ input[type='radio']:checked:before {
 }
 
 .checkboxd-div2{
-  margin-bottom: 14px;
-    margin-top: 14px;
+  margin-bottom: 0px;
+    margin-top: 0px;
       width: 100%;
 }
 
 .checkboxd-div3{
-  margin-bottom: 14px;
-    margin-top: 14px;
+  margin-bottom: 0px;
+    margin-top: 0px;
       width: 100%;
 }
 
 .checkboxd-div4{
-  margin-bottom: 14px;
-    margin-top: 14px;
+  margin-bottom: 0px;
+    margin-top: 0px;
       width: 100%;
 }
 
 .checkboxd-div5{
-  margin-bottom: 14px;
-    margin-top: 14px;
+  margin-bottom: 0px;
+    margin-top: 0px;
       width: 100%;
 }
 
 .checkboxd-div6{
-  margin-bottom: 14px;
-    margin-top: 14px;
+  margin-bottom: 0px;
+    margin-top: 0px;
       width: 100%;
 }
 
 .checkboxd-div7{
-  margin-bottom: 14px;
-    margin-top: 14px;
+  margin-bottom: 0px;
+    margin-top: 0px;
       width: 100%;
 }
 .checkboxd-div8{
-  margin-bottom: 14px;
-    margin-top: 14px;
+  margin-bottom: 0px;
+    margin-top: 0px;
       width: 100%;
 }
 .checkboxd-div9{
-  margin-bottom: 14px;
-    margin-top: 14px;
+  margin-bottom: 0px;
+    margin-top: 0px;
       width: 100%;
 }
 .checkboxd-div1 > label {
@@ -2019,6 +2020,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
  #hello {
     padding-left: 25px;
     padding-right: 4px;
+      overflow: hidden;
 }
 #image-workout > label {
     float: left;

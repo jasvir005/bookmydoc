@@ -1169,6 +1169,7 @@ if(a==undefined)
 else{
 var a = a+','; 
 }
+
 if(b==undefined)
 {
  b='';
@@ -1597,7 +1598,7 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div1").click(function(){
- // alert('jas');
+ alert('jas');
 var has = $(".checkboxd-div1 input").prop('checked')==true;
 //alert(has);
 if(has==true)
