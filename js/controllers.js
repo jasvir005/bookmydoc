@@ -271,21 +271,21 @@ num++;
       url: $scope.baseurl+url, 
       method: "GET",
    
-    }).then(function mySucces(responsed) {
-
-alert('success');
-/*var responsere =JSON.stringify(responsed);*/
-/*var num=1;
-$.each( responsed.data, function( key, val ) {
+    }).then(function mySucces(languages) {
 
 
+//console.log(obj.name);
+  var numd=1;
+$.each( languages.data, function( key, val ) {
+//alert(val.name);
 
 
-data="<div id='hello' class='checkboxd-div"+num+"'><label>"+val.name+"</label><span><input id='checkbox-terms"+num+"' class='checkbox-custom 'type='checkbox' name='"+val.name+"' value='"+val.name+"'><label class='checkbox-custom-label' for='checkbox-terms'></label></span></div>";
 
-$("#cate-slide").append(data);
-num++;
-});*/
+data="<div id='hello' class='checkboxd-div"+num+"'><label>"+val.name+"</label></div>";
+
+$("#cate-slidea").append(data);
+numd++;
+}); 
 
 });
 
