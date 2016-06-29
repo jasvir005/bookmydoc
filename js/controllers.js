@@ -1519,7 +1519,7 @@ $('.yoga-wordout').click(function(){
 $('.language-icon').click(function(){
 
 
-
+/*
 var widthlan=$(window).width();
 var heightlan=$(window).height();
 
@@ -1538,7 +1538,7 @@ else
 
 
 $(".languages").css({ 'height': '100vh' });
-}
+}*/
 
 
            $('.sidebar').hide();
