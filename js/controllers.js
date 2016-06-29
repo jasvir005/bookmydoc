@@ -1528,16 +1528,20 @@ if(widthlan==320 && heightlan==480 )
 
 $(".languages").css({ 'height': '418px' });
 }
-
-if(widthlan==320 && heightlan==568 )
+else if(widthlan==320 && heightlan==568 )
+{
+$(".languages").css({ 'height': '503px' });
+}
+else if(widthlan==360 && heightlan==640 )
 {
 
 $(".languages").css({ 'height': '503px' });
 }
-if(widthlan==360 && heightlan==640 )
+else
 {
 
-$(".languages").css({ 'height': '503px' });
+
+$(".languages").css({ 'height': '100vh' });
 }
 
 
