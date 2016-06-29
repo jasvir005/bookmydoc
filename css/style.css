@@ -1,7 +1,6 @@
 
 /*=== GENERAL-SETTINGS ===*/
 
-
 @font-face {
     font-family: 'nexa_light';
     src: url('../fonts/nexa_light.woff2') format('woff2'),
@@ -1482,7 +1481,7 @@ margin-top: 3px;
 
 
 .filter-page {
- margin-top: 70px !important;
+ margin-top: 30px;
     
 }
 
