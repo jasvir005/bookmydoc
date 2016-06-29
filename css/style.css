@@ -1058,7 +1058,7 @@ clear: left;
     font-size: 16.5px;
     font-weight: lighter;
     /*margin-left: 15px;*/
-    margin-left: 10px;
+    margin-left: 12px;
     overflow: hidden;
     text-align: left !important;
     width: 100%;
@@ -1239,7 +1239,7 @@ width: 55%;
     font-size: 16.5px;
     font-weight: lighter;
    /* margin-left: 15px;*/
-   margin-left: 10px;
+   margin-left: 12px;
     text-align: left !important;
     width: 100%;
     src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1397,7 +1397,7 @@ width: 100%;
     border-bottom: 1px solid #e3e3ea;
     margin: 10px 0 5px;
     padding-bottom: 10px;
-    padding-left: 10px;
+    padding-left: 12px;
     padding-right: 10px;
     width: 100%;
 }
