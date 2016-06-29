@@ -1532,11 +1532,7 @@ else if(widthlan==320 && heightlan==568 )
 {
 $(".languages").css({ 'height': '503px' });
 }
-else if(widthlan==360 && heightlan==640 )
-{
-
-$(".languages").css({ 'height': '503px' });
-}
+ 
 else
 {
 
