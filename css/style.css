@@ -2061,7 +2061,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .languages {
     border: 1px solid red;
-    height: 420px;
+   height: 100vh !important;
     overflow: auto;
     padding-left: 25px;
     padding-right: 0;
