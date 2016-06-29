@@ -1478,7 +1478,7 @@ margin-top: 3px;
 
 
 .filter-page {
- margin-top: 30px;
+ margin-top: 70px !important;
     
 }
 
@@ -2001,15 +2001,17 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
  }
 
 .sidebara {
-  background: #003f6f none repeat scroll 0 0;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 20px 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 210px;
+   background: #003f6f none repeat scroll 0 0;
+    border: 1px solid red;
+    float: right;
+    height: 100%;
+    overflow: auto;
+   
+    padding: 20px 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 89%;
 }
  #hello {
     padding-left: 25px;
@@ -2058,9 +2060,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     width: 74%;
 }
 .languages {
-    float: left;
+  overflow: unset;
     padding-left: 25px;
     padding-right: 0;
+    width: 121%;
 }
 .languages .checkbox-custom-label, .radio-custom-label
 {
