@@ -147,7 +147,7 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 .bmd-appmnt-content-details{text-align: center;color:#fff;padding-top:15px;}
 .bmd-appmnt-content-check{width:100%;text-align:center;padding: 60px 40px 30px;}
 .bmd-appmnt-content-check-inner{width:100%;color:#fff;font-size: 13px;}
-.checkbox-custom, .radio-custom {/*opacity: 0;*/position: absolute;}
+.checkbox-custom, .radio-custom {opacity: 0;position: absolute;}
 
  
 
