@@ -2012,6 +2012,7 @@ width: 210px;
     right: 0;    
     top: 0px;   
      padding: 20px 0; 
+      overflow: scroll;
  }
 
  #hello {
@@ -2029,4 +2030,46 @@ width: 210px;
 #image-workout img {
     padding-left: 7px;
     width: 65%;
+}
+
+
+.checkboxd-diva {
+ clear: initial;
+    color: #fff;
+}
+
+.checkboxd-diva > span {
+    
+    text-align: left;
+    width: 62%;
+}
+.languages .checkbox-custom {
+    height: 29px;
+    z-index: 999 !important;
+    width: 36px;
+}
+#cate-slidea .likefilter {
+    border: 1px solid #e3e3ea;
+}
+.checkboxd-diva > input {
+  float: initial;
+    left: 28px;
+    position: relative;
+    top: 2px;
+}
+
+
+.checkboxd-diva > label {
+    float: left;
+    text-align: left;
+    width: 74%;
+}
+
+.languages {
+    padding: 16px;
+}
+
+.languages .checkbox-custom-label, .radio-custom-label
+{
+  top:0px !important;
 }

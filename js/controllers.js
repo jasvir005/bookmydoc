@@ -250,6 +250,7 @@ fbLoginSuccess = function (userData) {
     }).then(function mySucces(responsed) {
 
 /*var responsere =JSON.stringify(responsed);*/
+ 
 var num=1;
 $.each( responsed.data, function( key, val ) {
 
@@ -272,20 +273,20 @@ num++;
       method: "GET",
    
     }).then(function mySucces(languages) {
-
+//$("#cate-slidea").html('ffffffffffff');
 
 //console.log(obj.name);
- // var numd=1;
-$.each( languages.data, function( key, val ) {
-//alert(val.name);
+  var numd=1;
+$.each( languages.data, function( keyd, vadl ) {
+ //alert(vadl.name);
+datad="<div class='checkboxd-diva'><label>"+vadl.name+"</label><span><input id='checkbox-terms"+numd+"' class='checkbox-custom' type='checkbox' value="+vadl.name+" name="+vadl.name+"> <label class='checkbox-custom-label' for='checkbox-terms'></label></span>";
 
 
+$(".languages").append(datad);
 
-data="<div id='hello' class='checkboxd-div"+num+"'><label>"+val.name+"</label></div>";
-
-$(".cate-slidea").html("data");
-//numd++;
+numd++;
 }); 
+
 
 });
 
