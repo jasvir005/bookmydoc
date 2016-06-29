@@ -1542,9 +1542,9 @@ margin-top: 3px;
 .gendr-div-main {
     float: left;
     margin-bottom: 10px;
-    margin-top: 12px;
+    margin-top: 0;
     padding-left: 5px;
-    width: 100%;
+    width: 100%
 }
 
 
