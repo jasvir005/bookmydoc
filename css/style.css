@@ -149,7 +149,7 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 .bmd-appmnt-content-check-inner{width:100%;color:#fff;font-size: 13px;}
 .checkbox-custom, .radio-custom {opacity: 0;position: absolute;}
 
-#cate-slidea .checkbox-custom, .radio-custom{position:relative;top: 24px; z-index: 9999;}
+ 
 
 .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {display: inline-block;margin: 4px;cursor: pointer;}
 .checkbox-custom-label, .radio-custom-label {position: relative;}
@@ -2040,12 +2040,13 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .checkboxd-diva > span {
     float: right;
   
-    width: 21%;
+ 
 }
 .languages .checkbox-custom {
      
     z-index: 999 !important;
     width: 36px;
+    height:25px;
 }
 #cate-slidea .likefilter {
     border: 1px solid #e3e3ea;
@@ -2060,12 +2061,12 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     float: left;
     padding-top: 5px;
     text-align: left;
-    width: 74%;
+    width:60%;
 }
 .languages {
     border: 1px solid red;
-   height: 100vh !important;
-    overflow: auto;
+  
+    overflow-x: hidden;
     padding-left: 25px;
     padding-right: 0;
     width: 100%;

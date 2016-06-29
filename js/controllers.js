@@ -3,6 +3,9 @@ angular.module('starter.controllers', ["ngStorage"])
 .controller('AppCtrl', function($ionicHistory,$document,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
 
 
+
+
+
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
@@ -1482,6 +1485,7 @@ $(".common-button.button.button-positive.button-clear.button_text.icon.ion-navic
 
 $('.yoga-wordout').click(function(){
 
+
 //alert('1384dd');
   $('.sidebara').hide();
           $(".language-icon img").removeClass('rotate2');
@@ -1513,6 +1517,19 @@ $('.yoga-wordout').click(function(){
 
 
 $('.language-icon').click(function(){
+
+
+
+var widthlan=$(window).width();
+var heightlan=$(window).height();
+
+if(widthlan==320 && heightlan==480 )
+{
+
+$(".languages").css({ 'height': '418px' });
+}
+
+
            $('.sidebar').hide();
  $(".transfromimg").removeClass('rotate2');
 
