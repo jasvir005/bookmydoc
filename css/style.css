@@ -2012,7 +2012,7 @@ width: 210px;
     right: 0;    
     top: 0px;   
      padding: 20px 0; 
-      overflow: scroll;
+     overflow-x: auto;
  }
 
  #hello {
