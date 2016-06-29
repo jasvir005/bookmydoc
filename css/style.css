@@ -1395,7 +1395,7 @@ width: 100%;
 
 .language-div {
     border-bottom: 1px solid #e3e3ea;
-    margin: 15px 0 5px;
+    margin: 10px 0 5px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1529,19 +1529,19 @@ margin-top: 3px;
 }
  
 .gender-txt {
-    
     float: left;
     text-align: center;
     width: 22%;
-      color: #7d7b7a;
+    color: #7d7b7a;
     font-family: helvetica;
     font-size: 16.5px;
     font-weight: lighter;
+    padding-left: 5px;
 }
 
 .gendr-div-main {
     float: left;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     margin-top: 0px;
     width: 100%;
 }
