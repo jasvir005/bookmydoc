@@ -1144,7 +1144,7 @@ clear: left;
 
 
 .filter-page-contant .wordout-yoga {
-   color: #515151;
+   color: #777777;
   font-family: helvetica;
     font-size: 16px;
     font-weight: bolder;
@@ -1930,7 +1930,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
  .likefilterd
  {
-  border-bottom: 1px solid #998799;
+  border-bottom: 1px solid #e3e3ea;
  }
 
  #login-user .bmd-usr2:nth-child(2) #login_user_id {
