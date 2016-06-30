@@ -1840,7 +1840,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     padding-top: 2px;
 }
 .bmd-usr.bmd-usr:nth-child(13) .bmd-usr-input {
-    height: 30px !important;
+    height: 34px !important;
     padding-left: 13px !important;
 }
 .bmd-usr-input.ng-untouched.ng-valid.ng-dirty.ng-valid-parse {
@@ -1848,25 +1848,25 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     padding-top: 0px;
 }
 .bmd-usr:nth-child(3) .bmd-usr-input.ng-pristine.ng-untouched.ng-valid {
-    padding-top: 11px !important;
+    padding-top: 12px !important;
 }
 .bmd-usr:nth-child(6) .bmd-usr-input.ng-pristine.ng-untouched.ng-valid {
-    padding-top: 8px !important;
+    padding-top: 10px !important;
 }
 .bmd-usr:nth-child(9) {
     margin-top: 6px;
 }
 .bmd-usr:nth-child(9) .bmd-usr-input.ng-pristine.ng-untouched.ng-valid-email.ng-invalid.ng-invalid-required {
-    padding-top: 1px;
+    padding-top: 4px;
 }
 .bmd-usr:nth-child(12) .bmd-usr-input.ng-pristine.ng-untouched.ng-valid-email.ng-invalid.ng-invalid-required {
     padding-top: 1px;
 }
-.bmd-usr:nth-child(15) {
+.bmd-usr:nth-child(15) {.bmd-usr:nth-child(15) .bmd-usr-input.ng-pristine.ng-untouched.ng-valid
     margin-top: 0;
 }
 .bmd-usr:nth-child(15) .bmd-usr-input.ng-pristine.ng-untouched.ng-valid {
-    padding-top: 17px;
+    padding-top: 12px;
     padding-left: 15px !important; 
 }
 .bmd-usr:nth-child(13) {
