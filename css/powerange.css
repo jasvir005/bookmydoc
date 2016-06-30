@@ -172,14 +172,18 @@ background-color: #fff;
     width: 4%;
     z-index: 9999 !important;
 }
-
-
+/** new******/
+.example .slider-wrapper2 {
+    margin: 0 0 26px 40px !important;
+    width: 240px !important;
+}
+/*************/
 @media only screen and (min-width: 320px) {
 
  .slider-wrapper {
   clear: both;
     margin: 0 auto 24px;
-    width: 226px;
+    width: 240px !important;
     
 }
 
