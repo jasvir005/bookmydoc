@@ -282,7 +282,7 @@ num++;
   var numd=1;
 $.each( languages.data, function( keyd, vadl ) {
  //alert(vadl.name);
-datad="<div class='checkboxd-diva'><label>"+vadl.name+"</label><span><input id='checkbox-terms"+numd+"' class='checkbox-custom' type='checkbox' value="+vadl.name+" name="+vadl.name+"> <label class='checkbox-custom-label' for='checkbox-terms'></label></span>";
+datad="<div id='chekcbox"+numd+"' class='checkboxd-diva'><label>"+vadl.name+"</label><span><input id='checkbox-terms"+numd+"' class='checkbox-custom' type='checkbox' value="+vadl.name+" name="+vadl.name+"> <label class='checkbox-custom-label' for='checkbox-terms'></label></span>";
 
 
 $(".languages").append(datad);
@@ -836,6 +836,185 @@ $('.yoga-wordout').click(function(){
 });
 
 
+$(".checkboxd-div1").click(function(){
+/* alert('jas');*/
+
+var has = $(".checkboxd-div1 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( ".checkboxd-div1 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div1 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div1 input" ).prop( "checked", true );
+ $(".checkboxd-div1 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+ 
+
+$(".checkboxd-div2").click(function(){
+var has = $(".checkboxd-div2 input").prop('checked')==true;
+//alert(has);
+if(has==true)
+{
+  $( ".checkboxd-div2 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div2 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div2 input" ).prop( "checked", true );
+ $(".checkboxd-div2 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+
+$(".checkboxd-div3").click(function(){
+var has = $(".checkboxd-div3 input").prop('checked')==true;
+if(has==true)
+{
+  $( ".checkboxd-div3 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div3 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div3 input" ).prop( "checked", true );
+ $(".checkboxd-div3 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$(".checkboxd-div4").click(function(){
+var has = $(".checkboxd-div4 input").prop('checked')==true;
+if(has==true)
+{
+  $( ".checkboxd-div4 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div4 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div4 input" ).prop( "checked", true );
+ $(".checkboxd-div4 > label").css({"color": "#FFC000"});
+
+}
+});
+
+
+
+$(".checkboxd-div5").click(function(){
+var has = $(".checkboxd-div5 input").prop('checked')==true;
+if(has==true)
+{
+  $( ".checkboxd-div5 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div5 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div5 input" ).prop( "checked", true );
+ $(".checkboxd-div5 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+$(".checkboxd-div6").click(function(){
+var has = $(".checkboxd-div6 input").prop('checked')==true;
+if(has==true)
+{
+  $( ".checkboxd-div6 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div6 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div6 input" ).prop( "checked", true );
+ $(".checkboxd-div6 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+$(".checkboxd-div7").click(function(){
+var has = $(".checkboxd-div7 input").prop('checked')==true;
+if(has==true)
+{
+  $( ".checkboxd-div7 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div7 input" ).prop( "checked", true );
+ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+$(".checkboxd-div8").click(function(){
+  //alert('hi');
+var has = $(".checkboxd-div8 input").prop('checked')==true;
+if(has==true)
+{
+
+ // alert('dd');
+  $( ".checkboxd-div8 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div8 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div8 input" ).prop( "checked", true );
+ $(".checkboxd-div8 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+$(".checkboxd-div9").click(function(){
+var has = $(".checkboxd-div9 input").prop('checked')==true;
+if(has==true)
+{
+  $( ".checkboxd-div9 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div9 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div9 input" ).prop( "checked", true );
+ $(".checkboxd-div9 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
 
 $('.language-div').click(function(){
 
@@ -874,152 +1053,518 @@ $('.language-div').click(function(){
 });
 
 /* check box change color script*/
-$(".checkboxd-div7").click(function(){
-var has = $(".input07").is( ":checked" );
+ 
+
+
+
+$("#chekcbox1").click(function(){
+ // alert('jas'); 
+ 
+var has = $("#chekcbox1 input").prop('checked')==true;
+/*alert(has);*/
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div7 > label").css({"color": "#FFC000"});
+  $( "#chekcbox1 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox1 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( "#chekcbox1 input" ).prop( "checked", true );
+ $("#chekcbox1 > label").css({"color": "#FFC000"});
+
 }
  
 });
-
-
- $(".checkboxd-div1").click(function(){
- // alert('hello');
-
-var has = $(".checkboxd-div1 input").prop('checked')==true;
-if(has==true)
-{
-//alert('true');
-$(".checkboxd-div1 > label").css({"color": "#FFC000"});
-}else
-{
-  //alert('false');
- $(".checkboxd-div1 > label").css({"color":"#FFFFFF"}); 
-}
- 
-}); 
-
  
 
-$(".checkboxd-div2").click(function(){
-  //alert('hello');
-var has = $(".checkboxd-div2 input").prop('checked')==true;
+$("#chekcbox2").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox2 input").prop('checked')==true;
+/*alert(has);*/
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div2 > label").css({"color": "#FFC000"});
+  $( "#chekcbox2 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox2 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
-  //alert('fasler');
- $(".checkboxd-div2 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
+/*alert("falsedd");*/
+$( "#chekcbox2 input" ).prop( "checked", true );
+ $("#chekcbox2 > label").css({"color": "#FFC000"});
 
-
-
-
-$(".checkboxd-div3").click(function(){
-var has = $(".checkboxd-div3 input").prop('checked')==true;
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div3 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div3 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-
-$(".checkboxd-div4").click(function(){
-var has = $(".checkboxd-div4 input").prop('checked')==true;
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div4 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div4 > label").css({"color": "#FFFFFF"}); 
 }
  
 });
 
 
 
-$(".checkboxd-div5").click(function(){
-var has = $(".checkboxd-div5 input").prop('checked')==true;
+
+
+$("#chekcbox3").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox3 input").prop('checked')==true;
+/*alert(has);*/
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div5 > label").css({"color": "#FFC000"});
+  $( "#chekcbox3 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox3 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div5 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( "#chekcbox3 input" ).prop( "checked", true );
+ $("#chekcbox3 > label").css({"color": "#FFC000"});
+
 }
  
 });
 
 
 
-$(".checkboxd-div6").click(function(){
-var has = $(".checkboxd-div6 input").prop('checked')==true;
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div6 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div6 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
+$("#chekcbox4").click(function(){
+/* alert('jas');*/
 
+var has = $("#chekcbox4 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox4 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox4 > label").css({"color": "#FFFFFF"}); 
 
-$(".checkboxd-div7").click(function(){
-var has = $(".checkboxd-div7 input").prop('checked')==true;
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div7 > label").css({"color": "#FFC000"});
 }else
 {
- $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
-}
- 
-});
-$(".checkboxd-div8").click(function(){
-var has = $(".checkboxd-div8 input").prop('checked')==true;
-if(has==true)
-{
-  //alert('tes true');
-$(".checkboxd-div8 > label").css({"color": "#FFC000"});
-}else
-{
- $(".checkboxd-div8 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( "#chekcbox4 input" ).prop( "checked", true );
+ $("#chekcbox4 > label").css({"color": "#FFC000"});
+
 }
  
 });
 
 
 
-$(".checkboxd-div9").click(function(){
-var has = $(".checkboxd-div9 input").prop('checked')==true;
+
+$("#chekcbox5").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox5 input").prop('checked')==true;
+/*alert(has);*/
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div9 > label").css({"color": "#FFC000"});
+  $( "#chekcbox5 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox5 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div9 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( "#chekcbox5 input" ).prop( "checked", true );
+ $("#chekcbox5 > label").css({"color": "#FFC000"});
+
 }
  
 });
+
+
+
+
+$("#chekcbox6").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox6 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox6 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox6 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox6 input" ).prop( "checked", true );
+ $("#chekcbox6 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+$("#chekcbox7").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox7 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox7 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox7 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox7 input" ).prop( "checked", true );
+ $("#chekcbox7 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox8").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox8 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox8 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox8 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox8 input" ).prop( "checked", true );
+ $("#chekcbox8 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+$("#chekcbox9").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox9 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox9 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox9 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox9 input" ).prop( "checked", true );
+ $("#chekcbox9 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox10").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox10 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox10 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox10 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox10 input" ).prop( "checked", true );
+ $("#chekcbox10 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox11").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox11 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox11 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox11 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox11 input" ).prop( "checked", true );
+ $("#chekcbox11 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox12").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox12 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox12 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox12 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox12 input" ).prop( "checked", true );
+ $("#chekcbox12 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+$("#chekcbox13").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox13 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox13 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox13 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox13 input" ).prop( "checked", true );
+ $("#chekcbox13 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+$("#chekcbox14").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox14 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox14 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox14 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox14 input" ).prop( "checked", true );
+ $("#chekcbox14 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox15").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox15 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox15 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox15 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox15 input" ).prop( "checked", true );
+ $("#chekcbox15 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+$("#chekcbox16").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox16 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox16 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox16 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox16 input" ).prop( "checked", true );
+ $("#chekcbox16 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox17").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox17 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox17 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox17 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox17 input" ).prop( "checked", true );
+ $("#chekcbox17 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+ 
+
+$("#chekcbox18").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox18 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox18 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox18 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox18 input" ).prop( "checked", true );
+ $("#chekcbox18 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox19").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox19 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox19 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox19 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox19 input" ).prop( "checked", true );
+ $("#chekcbox19 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+$("#chekcbox20").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox20 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox20 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox20 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox20 input" ).prop( "checked", true );
+ $("#chekcbox20 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox21").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox21 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox21 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox21 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox21 input" ).prop( "checked", true );
+ $("#chekcbox21 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox22").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox22 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox22 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox22 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox22 input" ).prop( "checked", true );
+ $("#chekcbox22 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox23").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox23 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox23 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox23 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox23 input" ).prop( "checked", true );
+ $("#chekcbox23 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
 
 });
    
@@ -1545,6 +2090,8 @@ $(".languages").css({ 'height': '100vh' });
 }*/
 
 
+
+
            $('.sidebar').hide();
  $(".transfromimg").removeClass('rotate2');
 
@@ -1582,6 +2129,515 @@ $(".languages").css({ 'height': '100vh' });
 
 });
 
+
+
+$("#chekcbox1").click(function(){
+ // alert('jas'); 
+ 
+var has = $("#chekcbox1 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox1 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox1 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox1 input" ).prop( "checked", true );
+ $("#chekcbox1 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+ 
+
+$("#chekcbox2").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox2 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox2 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox2 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox2 input" ).prop( "checked", true );
+ $("#chekcbox2 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+
+
+$("#chekcbox3").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox3 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox3 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox3 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox3 input" ).prop( "checked", true );
+ $("#chekcbox3 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+$("#chekcbox4").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox4 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox4 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox4 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox4 input" ).prop( "checked", true );
+ $("#chekcbox4 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+
+$("#chekcbox5").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox5 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox5 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox5 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox5 input" ).prop( "checked", true );
+ $("#chekcbox5 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+
+$("#chekcbox6").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox6 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox6 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox6 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox6 input" ).prop( "checked", true );
+ $("#chekcbox6 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+$("#chekcbox7").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox7 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox7 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox7 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox7 input" ).prop( "checked", true );
+ $("#chekcbox7 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox8").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox8 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox8 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox8 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox8 input" ).prop( "checked", true );
+ $("#chekcbox8 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+$("#chekcbox9").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox9 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox9 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox9 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox9 input" ).prop( "checked", true );
+ $("#chekcbox9 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox10").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox10 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox10 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox10 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox10 input" ).prop( "checked", true );
+ $("#chekcbox10 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox11").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox11 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox11 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox11 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox11 input" ).prop( "checked", true );
+ $("#chekcbox11 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox12").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox12 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox12 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox12 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox12 input" ).prop( "checked", true );
+ $("#chekcbox12 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+$("#chekcbox13").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox13 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox13 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox13 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox13 input" ).prop( "checked", true );
+ $("#chekcbox13 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+$("#chekcbox14").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox14 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox14 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox14 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox14 input" ).prop( "checked", true );
+ $("#chekcbox14 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox15").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox15 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox15 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox15 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox15 input" ).prop( "checked", true );
+ $("#chekcbox15 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+$("#chekcbox16").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox16 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox16 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox16 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox16 input" ).prop( "checked", true );
+ $("#chekcbox16 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox17").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox17 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox17 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox17 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox17 input" ).prop( "checked", true );
+ $("#chekcbox17 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+ 
+
+$("#chekcbox18").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox18 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox18 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox18 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox18 input" ).prop( "checked", true );
+ $("#chekcbox18 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox19").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox19 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox19 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox19 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox19 input" ).prop( "checked", true );
+ $("#chekcbox19 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+
+
+$("#chekcbox20").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox20 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox20 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox20 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox20 input" ).prop( "checked", true );
+ $("#chekcbox20 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox21").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox21 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox21 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox21 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox21 input" ).prop( "checked", true );
+ $("#chekcbox21 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox22").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox22 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox22 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox22 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox22 input" ).prop( "checked", true );
+ $("#chekcbox22 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
+
+$("#chekcbox23").click(function(){
+/* alert('jas');*/
+
+var has = $("#chekcbox23 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( "#chekcbox23 input" ).prop( "checked", false );
+  // alert('tes true');
+   $("#chekcbox23 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( "#chekcbox23 input" ).prop( "checked", true );
+ $("#chekcbox23 > label").css({"color": "#FFC000"});
+
+}
+ 
+});
 /* check box change color script*/
 $(".checkboxd-div7").click(function(){
 var has = $(".input07").is( ":checked" );
@@ -1598,17 +2654,22 @@ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
 
 
 $(".checkboxd-div1").click(function(){
- alert('jas');
+/* alert('jas');*/
+
 var has = $(".checkboxd-div1 input").prop('checked')==true;
-//alert(has);
+/*alert(has);*/
 if(has==true)
 {
+  $( ".checkboxd-div1 input" ).prop( "checked", false );
   // alert('tes true');
- $(".checkboxd-div1 > label").css({"color": "#FFC000"});
+   $(".checkboxd-div1 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- //alert("dfdf");
- $(".checkboxd-div1 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( ".checkboxd-div1 input" ).prop( "checked", true );
+ $(".checkboxd-div1 > label").css({"color": "#FFC000"});
+
 }
  
 });
@@ -1620,11 +2681,16 @@ var has = $(".checkboxd-div2 input").prop('checked')==true;
 //alert(has);
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div2 > label").css({"color": "#FFC000"});
+  $( ".checkboxd-div2 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div2 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div2 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( ".checkboxd-div2 input" ).prop( "checked", true );
+ $(".checkboxd-div2 > label").css({"color": "#FFC000"});
+
 }
  
 });
@@ -1636,11 +2702,16 @@ $(".checkboxd-div3").click(function(){
 var has = $(".checkboxd-div3 input").prop('checked')==true;
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div3 > label").css({"color": "#FFC000"});
+  $( ".checkboxd-div3 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div3 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div3 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( ".checkboxd-div3 input" ).prop( "checked", true );
+ $(".checkboxd-div3 > label").css({"color": "#FFC000"});
+
 }
  
 });
@@ -1649,13 +2720,17 @@ $(".checkboxd-div4").click(function(){
 var has = $(".checkboxd-div4 input").prop('checked')==true;
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div4 > label").css({"color": "#FFC000"});
+  $( ".checkboxd-div4 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div4 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div4 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( ".checkboxd-div4 input" ).prop( "checked", true );
+ $(".checkboxd-div4 > label").css({"color": "#FFC000"});
+
 }
- 
 });
 
 
@@ -1664,11 +2739,16 @@ $(".checkboxd-div5").click(function(){
 var has = $(".checkboxd-div5 input").prop('checked')==true;
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div5 > label").css({"color": "#FFC000"});
+  $( ".checkboxd-div5 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div5 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div5 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( ".checkboxd-div5 input" ).prop( "checked", true );
+ $(".checkboxd-div5 > label").css({"color": "#FFC000"});
+
 }
  
 });
@@ -1679,11 +2759,16 @@ $(".checkboxd-div6").click(function(){
 var has = $(".checkboxd-div6 input").prop('checked')==true;
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div6 > label").css({"color": "#FFC000"});
+  $( ".checkboxd-div6 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div6 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div6 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( ".checkboxd-div6 input" ).prop( "checked", true );
+ $(".checkboxd-div6 > label").css({"color": "#FFC000"});
+
 }
  
 });
@@ -1693,11 +2778,16 @@ $(".checkboxd-div7").click(function(){
 var has = $(".checkboxd-div7 input").prop('checked')==true;
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div7 > label").css({"color": "#FFC000"});
+  $( ".checkboxd-div7 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( ".checkboxd-div7 input" ).prop( "checked", true );
+ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
+
 }
  
 });
@@ -1705,11 +2795,16 @@ $(".checkboxd-div8").click(function(){
 var has = $(".checkboxd-div8 input").prop('checked')==true;
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div8 > label").css({"color": "#FFC000"});
+  $( ".checkboxd-div8 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div8 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div8 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( ".checkboxd-div8 input" ).prop( "checked", true );
+ $(".checkboxd-div8 > label").css({"color": "#FFC000"});
+
 }
  
 });
@@ -1719,11 +2814,16 @@ $(".checkboxd-div9").click(function(){
 var has = $(".checkboxd-div9 input").prop('checked')==true;
 if(has==true)
 {
-  //alert('tes true');
-$(".checkboxd-div9 > label").css({"color": "#FFC000"});
+  $( ".checkboxd-div9 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div9 > label").css({"color": "#FFFFFF"}); 
+
 }else
 {
- $(".checkboxd-div9 > label").css({"color": "#FFFFFF"}); 
+/*alert("falsedd");*/
+$( ".checkboxd-div9 input" ).prop( "checked", true );
+ $(".checkboxd-div9 > label").css({"color": "#FFC000"});
+
 }
  
 });
