@@ -1821,7 +1821,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 #user_paswd {
     height: 42px !important;
-    padding-left: 11px !important;
+    padding-left: 9px !important;
 }
 #top_circle{
   padding:15px 15px 0;
@@ -1840,7 +1840,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     padding-top: 2px;
 }
 #login-user .bmd-usr2 .bmd-usr-input.ng-pristine.ng-untouched.ng-valid-email.ng-invalid.ng-invalid-required {
-    padding-left: 10px !important;
+    padding-left: 8px !important;
     padding-top: 2px;
 }
 .bmd-usr.bmd-usr:nth-child(13) .bmd-usr-input {
