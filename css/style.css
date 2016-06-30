@@ -2135,7 +2135,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     width: 100%;
 }
 .text-part-left h1 {
-    font-family: fantasy;
+    font-family: helvetica;
     font-size: 23px;
     font-weight: normal;
     margin-bottom: 5px;
@@ -2143,7 +2143,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 } 
 
 .text-part-left p {
-    font-family: fantasy;
+    font-family: helvetica;
     font-size: 15px;
     font-weight: normal;
     margin: 0 0 5px;
@@ -2159,7 +2159,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 
 .text-right-part h1 {
-    font-family: fantasy;
+    font-family: helvetica;
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 0;
