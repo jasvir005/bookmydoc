@@ -2136,11 +2136,11 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .text-part-left h1 {
     font-family: fantasy;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: normal;
     margin-bottom: 5px;
     margin-top: 0;
-}
+} 
 
 .text-part-left p {
     font-family: fantasy;
@@ -2194,10 +2194,78 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     height: 44px;
     left: 0;
     overflow: -moz-hidden-unscrollable;
-    padding: 0 5px 5px;
+    padding: 0 5px;
      
     right: 0;
     transform: translate3d(0px, 0px, 0px);
     width: 100%;
     z-index: 9;
 }
+.togo_backpage{
+  width:25%;
+  float: left;
+}
+.togo_backpage_img {
+    float: left;
+    margin-top: 10px;
+    padding-left: 6px;
+    width: 100%;
+}
+.togo_backpage_img > img {
+    width: 25%;
+}
+.back_page {
+    transform: rotate(180deg);
+}
+.search_page_head {
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+.head_search {
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+.head_search > h1 {
+    color: #fff;
+    font-family: nexa_bold;
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.page_notice{
+  width: 10%;
+  float: left;
+}
+.notification {
+    float: left;
+    margin-top: 13px;
+    width: 100%;
+}
+.notification > img {
+    width: 55%;
+}
+.page_filter {
+    float: left;
+    margin-left: 11px;
+    width: 10%;
+}
+.filter_img {
+    float: left;
+    margin-top: 12px;
+    padding-top: 1px;
+    width: 100%;
+}
+.filter_img > img {
+    width: 55%;
+}
+
+
+
+
+
+
+
+
+
