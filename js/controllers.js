@@ -1066,8 +1066,18 @@ $('.language-div').click(function(){
 
 $(".filter-div").click(function(){
 
-  alert("dfd");
+  alert("first");
+  $("#slow-slide").hide();
+  $(".sidebar").hide();
+   $(".sidebara").hide();
+
+ $(".sidebara").hide();
+  $("#discover").show();
+
+
+
 });
+
 
 
 $("#chekcbox1").click(function(){
