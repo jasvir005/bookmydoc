@@ -2209,7 +2209,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     float: left;
     margin-top: 10px;
     padding-left: 6px;
-    width: 100%;
+    width: 71px;
 }
 .togo_backpage_img > img {
     width: 25%;
@@ -2235,7 +2235,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     margin: 0;
 }
 .page_notice{
-  width: 10%;
+  width: 31px;
   float: left;
 }
 .notification {
@@ -2249,7 +2249,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .page_filter {
     float: left;
     margin-left: 11px;
-    width: 10%;
+    width: 31px;
 }
 .filter_img {
     float: left;
