@@ -1176,7 +1176,7 @@ src:url('fonts/Nexa Light.otf');
     clear: inherit;
     cursor: pointer;
     float: right;
-    margin: 0 1% 2%;
+    margin: 0 2% 2%;
     width: 7%;
 }
 .filter-page-contant .right-side-categories img {
@@ -1407,7 +1407,7 @@ width: 100%;
     float: right;
     overflow: inherit;
     width: 4%;
-        margin-right: 5px;
+        margin-right: 9px;
 }
 .filter-page-contant .language-icon > img {
     width: 100%;
@@ -2084,4 +2084,120 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     float: left;
     height: 37px;
     width: 17% !important;
+}
+
+
+
+/**************discover*******************************/
+.discover-content{
+  width: 100%;
+  float: left;
+}
+.content-part {
+    background: rgba(0, 0, 0, 0) url("../img/Therapist.png") no-repeat scroll 0 0 / 100% 100%;
+    float: left;
+    margin-top: 4px;
+    width: 100%;
+}
+
+.content-part:nth-child(1) {
+    margin-top: 0;
+}
+.top-of-content{
+  width: 100%;
+  float: left;
+  text-align: right;
+}
+.middel-part{
+  width: 100%;
+  float: left;
+}
+.left-part-middel{
+  width: 50%;
+  float: left;
+}
+.text-part-left{
+  width: 100%;
+  float: left;
+  padding-left: 10px;
+}
+.text-part_img > img {
+    float: left;
+}
+.text-part_img > p {
+    float: left;
+    margin-left: 3px !important;
+    margin-top: -4px !important;
+}
+.text-part_img {
+    float: left;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.text-part-left h1 {
+    font-family: fantasy;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.text-part-left p {
+    font-family: fantasy;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 0 5px;
+}
+.text-part-left > img {
+  margin-bottom: 8px;
+}
+
+.text-right-part {
+  float: left;
+  text-align: right;
+  width: 46%;
+}
+
+.text-right-part h1 {
+    font-family: fantasy;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 66px;
+    padding-right: 0;
+}
+
+.text-part-left span {
+  font-size: 23px;
+  position: relative;
+  top: -4px;
+}
+
+#discover
+{
+  display: none;
+   overflow: auto;
+}
+/***********************************/
+
+.bar2
+{   -moz-user-select: none;
+    background-color: #003F6F;
+    background-size: 0 auto;
+    border-bottom: 1px solid #ddd;
+    border-style: solid;
+    border-top: 1px solid transparent;
+    border-width: 1px 0;
+    box-sizing: border-box;
+    clear: unset;
+    display: flex;
+    height: 44px;
+    left: 0;
+    overflow: -moz-hidden-unscrollable;
+    padding: 0 5px 5px;
+     
+    right: 0;
+    transform: translate3d(0px, 0px, 0px);
+    width: 100%;
+    z-index: 9;
 }
