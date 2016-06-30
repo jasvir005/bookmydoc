@@ -1893,7 +1893,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     position: relative;
     top: 4px;
     width: 48%;
-    z-index: 9999 !important;
+   /* z-index: 9999 !important;*/
 }
 .bmd-list .bmd-listing:nth-child(5) {
   margin-top: 7px !important;
@@ -2051,7 +2051,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     left: 30px;
     position: relative;
     top: 9px;
-    z-index: 999 !important;
+   /* z-index: 999 !important;*/
 }
 #cate-slidea .likefilter {
     border: 1px solid #e3e3ea;
