@@ -1064,6 +1064,10 @@ $('.language-div').click(function(){
 /* check box change color script*/
  
 
+$(".filter-div").click(function(){
+
+  alert("dfd");
+});
 
 
 $("#chekcbox1").click(function(){
@@ -2149,6 +2153,19 @@ $(".languages").css({ 'height': '100vh' });
 
 });
 
+$(".filter-div").click(function(){
+
+  alert("seocnd");
+  $("#slow-slide").hide();
+  $(".sidebar").hide();
+   $(".sidebara").hide();
+
+ $(".sidebara").hide();
+  $("#discover").show();
+
+
+
+});
 
 
 $("#chekcbox1").click(function(){
