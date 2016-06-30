@@ -1937,9 +1937,11 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
  #login-user .bmd-usr2:nth-child(2) #login_user_id {
     /*padding-top: 10px;*/
-    padding-top: 2px;
+    padding-top: 5px;
 }
-
+#login-user .bmd-usr-input.ng-pristine.ng-untouched.ng-invalid.ng-invalid-required {
+    padding-top: 5px;
+}
 .bmd-usr:nth-child(15) .bmd-usr1 {
     padding: 6px 8px 3px;
 }
