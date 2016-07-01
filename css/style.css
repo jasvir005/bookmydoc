@@ -2240,10 +2240,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .head_search > h1 {
     color: #fff;
     font-family: nexa_bold;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
     margin: 0;
-    padding-top: 3px;
+    padding-top: 2px;
 }
 .page_notice{
   width: 31px;
