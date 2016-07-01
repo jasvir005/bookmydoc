@@ -2052,7 +2052,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
    /* z-index: 999 !important;*/
 }
 #cate-slidea .likefilter {
-    border: 1px solid #e3e3ea;
+    border-bottom: 1px solid #e3e3ea;
 }
 .checkboxd-diva > input {
   float: initial;
