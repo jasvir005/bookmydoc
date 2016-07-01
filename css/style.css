@@ -531,11 +531,9 @@ width: 100%;}
 
 }
 
-
 .chkoutbtn_ap {
   background: #003f6f none repeat scroll 0 0;
- 
-        padding: 0 20px 5px;
+  padding:0 0 5px 20px;
 }
 .chkoutbtn_ap b {
     font-size: 11px;
