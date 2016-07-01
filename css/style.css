@@ -2270,6 +2270,26 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 
 
+.spelizationsids
+{
+
+  display: none;
+}
+
+
+#searchlop {
+    border: 1px solid #000;
+    overflow: auto;
+ background: rgba(0, 0, 0, 0) url("../img/Therapist.png") no-repeat scroll 0 0 / 100% 100%;
+ height:127px;
+}
+
+#not_found {
+    border: 1px solid #000;
+    overflow: auto;
+ background: rgba(0, 0, 0, 0) url("../img/not_found.png") no-repeat scroll 0 0 / 100% 100%;
+ height:127px;
+}
 
 
 
