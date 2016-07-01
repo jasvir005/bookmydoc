@@ -260,7 +260,7 @@ $.each( responsed.data, function( key, val ) {
 
 
 
-data="<div id='hello' class='checkboxd-div"+num+"'><label>"+val.name+"</label><span><input id='checkbox-terms"+num+"' class='checkbox-custom 'type='checkbox' name='"+val.name+"' value='"+val.name+"'><label class='checkbox-custom-label' for='checkbox-terms'></label></span></div>";
+data="<div id='hello' class='checkboxd-div"+num+"'><label>"+val.name+"</label><span><input speciality='"+val.id+"' id='checkbox-terms"+num+"' class='checkbox-custom 'type='checkbox' name='"+val.name+"' value='"+val.name+"'><label class='checkbox-custom-label' for='checkbox-terms'></label></span></div>";
 
 $("#cate-slide").append(data);
 num++;
@@ -471,76 +471,107 @@ $document.ready(function(){
 
 
 $(".yoga-wordout").click(function(){
-
 $("#appendinto").html("");
-var a=$('.checkboxd-div1 input:checked').val();
-var b=$('.checkboxd-div2 input:checked').val();
-var c=$('.checkboxd-div3 input:checked').val();
-var d=$('.checkboxd-div4 input:checked').val();
-var e=$('.checkboxd-div5 input:checked').val();
-var f=$('.checkboxd-div6 input:checked').val();
-var g=$('.checkboxd-div7 input:checked').val();
-var h=$('.checkboxd-div8 input:checked').val();
+$(".spelizationsids").html("");
 
-if(a==undefined)
+var a=$('.checkboxd-div1 input:checked').val();
+var a1=$('.checkboxd-div1 input:checked').attr("speciality");
+var b=$('.checkboxd-div2 input:checked').val();
+var b1=$('.checkboxd-div2 input:checked').attr("speciality");
+var c=$('.checkboxd-div3 input:checked').val();
+var c1=$('.checkboxd-div3 input:checked').attr("speciality");
+var d=$('.checkboxd-div4 input:checked').val();
+var d1=$('.checkboxd-div4 input:checked').attr("speciality");
+var e=$('.checkboxd-div5 input:checked').val();
+var e1=$('.checkboxd-div5 input:checked').attr("speciality");
+var f=$('.checkboxd-div6 input:checked').val();
+var f1=$('.checkboxd-div6 input:checked').attr("speciality");
+var g=$('.checkboxd-div7 input:checked').val();
+var g1=$('.checkboxd-div7 input:checked').attr("speciality");
+var h=$('.checkboxd-div8 input:checked').val();
+var h1=$('.checkboxd-div8 input:checked').attr("speciality");
+//alert(speciality);
+if(a==undefined && a1==undefined)
 {
  a='';
+ a1='';
 }
 else{
 var a = a+','; 
+var  a1= a1+','; 
 }
-if(b==undefined)
+
+if(b==undefined && b1==undefined)
 {
  b='';
+  b1='';
 } 
 else{
  var b = b+','; 
+  var b1 = b1+','; 
 }
-if(c==undefined)
+if(c==undefined && c1==undefined)
 {
  c='';
+  c1='';
 }
 else{
  var c = c+','; 
+  var c1 = c1+','; 
 } 
-if(d==undefined)
+if(d==undefined && d1==undefined)
 {
  d='';
+ d1='';
 } 
 else{
 var d =  d+','; 
+var d1 =  d1+','; 
 }
-if(e==undefined)
+if(e==undefined && e1==undefined)
 {
  e='';
+  e1='';
 }
 else{
-var e =  e+','; 
+var e =  e+',';
+var e1 =  e1+','; 
 } 
-if(f==undefined)
+if(f==undefined && f1==undefined)
 {
  f='';
+  f1='';
 } 
 else{
  var f = f+','; 
+  var f1 = f1+','; 
 }
-if(g==undefined)
+if(g==undefined && g1==undefined)
 {
  g='';
+  g1='';
 } 
 else{
 var g =  g+','; 
+var g1 =  g1+','; 
 }
-if(h==undefined)
+if(h==undefined && h1==undefined)
 {
  h='';
+  h1='';
 } 
 else{
 var h =  h+','; 
+var h1 =  h1+','; 
 }
  var com = a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g+''+h ;
  com = com.replace(/,\s*$/, "");
 $("#appendinto").append(':'+com);
+
+
+var com1 = a1+''+b1+''+c1+''+d1+''+e1+''+f1+''+g1+''+h1 ;
+ com1 = com1.replace(/,\s*$/, "");
+$(".spelizationsids").append(':'+com1);
 
  
 
@@ -1063,16 +1094,98 @@ $('.language-div').click(function(){
 
 /* check box change color script*/
  
-
 $(".filter-div").click(function(){
 
-  alert("first");
-  $("#slow-slide").hide();
+//alert("first");
+
+
+  var selectedcate=$(".spelizationsids").text();
+//  alert(selectedcate);
+ selectedcate= selectedcate.substring(1);
+ //alert(selectedcate);
+
+    var url='/get_serachresult';
+    $http({
+      url: $scope.baseurl+url, 
+      method: "GET",
+params: {'selectedcate': selectedcate},
+   
+    }).then(function mySucces(searchresult) {
+// alert(searchresult);
+ var searchresultd =JSON.stringify(searchresult);
+ //alert(searchresult); 
+//$(".discover-content").html("");
+
+
+$("#slow-slide").hide();
   $(".sidebar").hide();
    $(".sidebara").hide();
 
  $(".sidebara").hide();
-  $("#discover").show();
+  $("#discover").show(); 
+var data="";
+//var items="";
+$.each(searchresult.data, function(i, obj) { 
+
+alert(obj);
+
+if(obj==0)
+{
+  data +="<div id='not_found'></div>"; 
+}
+var searchresultd =JSON.stringify(obj); 
+console.log(obj[0].speciality);
+console.log(obj[0].firstname);
+console.log('dfd'); 
+//alert(obj[0].speciality);
+if(obj[0].speciality==undefined)
+{
+ data +="<div id='not_found"+obj[0].id+"'></div>";
+}
+else
+{
+
+
+ data +="<div id='searchlop' class='discover-content"+obj[0].id+"'><div class='content-part'><div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+obj[0].firstname+" </h1><p></p></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
+}
+  
+   var url='/get_cateid';
+    $http({
+      url: $scope.baseurl+url, 
+      method: "GET",
+params: {'selectedcated': obj[0].speciality},
+   
+    }).then(function mySucces(searchresult2) {
+
+console.log(searchresult2.data.name);
+var id=searchresult2.data.id;
+var  items = searchresult2.data.name;
+//alert(items);
+ 
+//alert(obj[0].speciality);
+//alert(id);
+$(".discover-content"+obj[0].id+" .text-part-left p").html("");
+ if(obj[0].speciality==id)
+ {
+$(".discover-content"+obj[0].id+" .text-part-left p").append(items);
+ }
+ else
+ {
+$(".discover-content"+obj[0].id+" .text-part-left"+obj[0].id+" p").append("");
+ }
+
+
+    });
+ 
+
+});
+
+ $(".discover-content").html(data);
+//alert(items);
+ 
+
+}); 
+
 
 
 
@@ -1721,75 +1834,106 @@ $document.ready(function(){
 
 $(".yoga-wordout").click(function(){
 $("#appendinto").html("");
-var a=$('.checkboxd-div1 input:checked').val();
-var b=$('.checkboxd-div2 input:checked').val();
-var c=$('.checkboxd-div3 input:checked').val();
-var d=$('.checkboxd-div4 input:checked').val();
-var e=$('.checkboxd-div5 input:checked').val();
-var f=$('.checkboxd-div6 input:checked').val();
-var g=$('.checkboxd-div7 input:checked').val();
-var h=$('.checkboxd-div8 input:checked').val();
+$(".spelizationsids").html("");
 
-if(a==undefined)
+var a=$('.checkboxd-div1 input:checked').val();
+var a1=$('.checkboxd-div1 input:checked').attr("speciality");
+var b=$('.checkboxd-div2 input:checked').val();
+var b1=$('.checkboxd-div2 input:checked').attr("speciality");
+var c=$('.checkboxd-div3 input:checked').val();
+var c1=$('.checkboxd-div3 input:checked').attr("speciality");
+var d=$('.checkboxd-div4 input:checked').val();
+var d1=$('.checkboxd-div4 input:checked').attr("speciality");
+var e=$('.checkboxd-div5 input:checked').val();
+var e1=$('.checkboxd-div5 input:checked').attr("speciality");
+var f=$('.checkboxd-div6 input:checked').val();
+var f1=$('.checkboxd-div6 input:checked').attr("speciality");
+var g=$('.checkboxd-div7 input:checked').val();
+var g1=$('.checkboxd-div7 input:checked').attr("speciality");
+var h=$('.checkboxd-div8 input:checked').val();
+var h1=$('.checkboxd-div8 input:checked').attr("speciality");
+//alert(speciality);
+if(a==undefined && a1==undefined)
 {
  a='';
+ a1='';
 }
 else{
 var a = a+','; 
+var  a1= a1+','; 
 }
 
-if(b==undefined)
+if(b==undefined && b1==undefined)
 {
  b='';
+  b1='';
 } 
 else{
  var b = b+','; 
+  var b1 = b1+','; 
 }
-if(c==undefined)
+if(c==undefined && c1==undefined)
 {
  c='';
+  c1='';
 }
 else{
  var c = c+','; 
+  var c1 = c1+','; 
 } 
-if(d==undefined)
+if(d==undefined && d1==undefined)
 {
  d='';
+ d1='';
 } 
 else{
 var d =  d+','; 
+var d1 =  d1+','; 
 }
-if(e==undefined)
+if(e==undefined && e1==undefined)
 {
  e='';
+  e1='';
 }
 else{
-var e =  e+','; 
+var e =  e+',';
+var e1 =  e1+','; 
 } 
-if(f==undefined)
+if(f==undefined && f1==undefined)
 {
  f='';
+  f1='';
 } 
 else{
  var f = f+','; 
+  var f1 = f1+','; 
 }
-if(g==undefined)
+if(g==undefined && g1==undefined)
 {
  g='';
+  g1='';
 } 
 else{
 var g =  g+','; 
+var g1 =  g1+','; 
 }
-if(h==undefined)
+if(h==undefined && h1==undefined)
 {
  h='';
+  h1='';
 } 
 else{
 var h =  h+','; 
+var h1 =  h1+','; 
 }
  var com = a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g+''+h ;
  com = com.replace(/,\s*$/, "");
 $("#appendinto").append(':'+com);
+
+
+var com1 = a1+''+b1+''+c1+''+d1+''+e1+''+f1+''+g1+''+h1 ;
+ com1 = com1.replace(/,\s*$/, "");
+$(".spelizationsids").append(':'+com1);
 
  
 
@@ -2165,13 +2309,97 @@ $(".languages").css({ 'height': '100vh' });
 
 $(".filter-div").click(function(){
 
-  alert("seocnd");
-  $("#slow-slide").hide();
+ // alert("seocnd");
+
+
+  var selectedcate=$(".spelizationsids").text();
+//  alert(selectedcate);
+ selectedcate= selectedcate.substring(1);
+ //alert(selectedcate);
+
+    var url='/get_serachresult';
+    $http({
+      url: $scope.baseurl+url, 
+      method: "GET",
+params: {'selectedcate': selectedcate},
+   
+    }).then(function mySucces(searchresult) {
+// alert(searchresult);
+ var searchresultd =JSON.stringify(searchresult);
+ //alert(searchresult); 
+//$(".discover-content").html("");
+
+
+$("#slow-slide").hide();
   $(".sidebar").hide();
    $(".sidebara").hide();
 
  $(".sidebara").hide();
-  $("#discover").show();
+  $("#discover").show(); 
+var data="";
+//var items="";
+$.each(searchresult.data, function(i, obj) { 
+
+//alert(obj);
+
+if(obj==0)
+{
+  //alert('hi');
+data +="<div id='not_found'></div>"; 
+}
+var searchresultd =JSON.stringify(obj); 
+console.log(obj[0].speciality);
+console.log(obj[0].firstname);
+console.log('dfd'); 
+//alert(obj[0].speciality);
+if(obj[0].speciality==undefined)
+{
+ data +="<div id='not_found"+obj[0].id+"'></div>";
+}
+else
+{
+
+
+ data +="<div id='searchlop' class='discover-content"+obj[0].id+"'><div class='content-part'><div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+obj[0].firstname+" </h1><p></p></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
+}
+  
+   var url='/get_cateid';
+    $http({
+      url: $scope.baseurl+url, 
+      method: "GET",
+params: {'selectedcated': obj[0].speciality},
+   
+    }).then(function mySucces(searchresult2) {
+
+console.log(searchresult2.data.name);
+var id=searchresult2.data.id;
+var  items = searchresult2.data.name;
+//alert(items);
+ 
+//alert(obj[0].speciality);
+//alert(id);
+$(".discover-content"+obj[0].id+" .text-part-left p").html("");
+ if(obj[0].speciality==id)
+ {
+$(".discover-content"+obj[0].id+" .text-part-left p").append(items);
+ }
+ else
+ {
+$(".discover-content"+obj[0].id+" .text-part-left"+obj[0].id+" p").append("");
+ }
+
+
+    });
+ 
+
+});
+
+ $(".discover-content").html(data);
+//alert(items);
+ 
+
+}); 
+
 
 
 
