@@ -2066,10 +2066,19 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     text-align: left;
     width:60%;
 }
-.languages {
+/*.languages {
     border: 0px solid red;
    height: 100vh !important;
     overflow: auto;
+    padding-left: 25px;
+    padding-right: 0;
+    width: 100%;
+}*/
+.languages {
+    border: 0 solid red;
+    height: 87vh !important;
+    overflow-x: hidden;
+    overflow-y: auto;
     padding-left: 25px;
     padding-right: 0;
     width: 100%;
