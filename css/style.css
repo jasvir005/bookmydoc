@@ -2243,7 +2243,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     font-size: 20px;
     letter-spacing: 1px;
     margin: 0;
-    padding-top: 2px;
+   /* padding-top: 2px;*/
 }
 .page_notice{
   width: 31px;
