@@ -10,6 +10,7 @@ $(".head-img-txtflog").css({"margin-top":"46px"});
 $("#signup-pge-cs").css({"margin-top":"46px"});
 
   }
+  
   else
   {
 
