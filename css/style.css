@@ -1469,7 +1469,7 @@ width: 100%;
 
 
 .filter-page {
- margin-top: 30px;
+ margin-top: 70px;
     
 }
 
@@ -2096,12 +2096,14 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 
 /**************discover*******************************/
-.discover-content{
-  width: 100%;
-  float: left;
+.discover-content {
+    float: left;
+    height: 90vh;
+    overflow: scroll;
+    width: 100%;
 }
 .content-part {
-    background: rgba(0, 0, 0, 0) url("../img/Therapist.png") no-repeat scroll 0 0 / 100% 100%;
+   /* background: rgba(0, 0, 0, 0) url("../img/Therapist.png") no-repeat scroll 0 0 / 100% 100%;*/
     float: left;
     margin-top: 4px;
     width: 100%;
@@ -2115,9 +2117,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   float: left;
   text-align: right;
 }
-.middel-part{
-  width: 100%;
-  float: left;
+.middel-part {
+    float: left;
+    margin-top: 55px;
+    width: 100%;
 }
 .left-part-middel{
   width: 50%;
