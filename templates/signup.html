@@ -52,11 +52,12 @@
 			<div class="bmd-usr2">
 				<input class="bmd-usr-input" name="email" type="email" placeholder="E-Mail" ng-model="signUpData.email" required>
 			</div>
+		
+		</div>
 			<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is 		required.
 			</div>
 			<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$error.email">		Invalid E-Mail
 			</div>
-		</div>
 		<div class="line-brk"></div>
 	<!-- 	<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is required.</div>
 		<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$invalid">Invalid E-Mail.</div> -->
