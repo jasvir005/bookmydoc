@@ -2353,7 +2353,7 @@ $(".filter-div").click(function(){
    var selecedgender=$(".selecedgender").text();
 //  alert(selectedcate);
  selectedcate= selectedcate.substring(1);
-srch=selectedcate+'&gender='+selecedgender;
+//srch=selectedcate+'&gender='+selecedgender;
 
  //alert(selectedcate);
 
@@ -2361,7 +2361,7 @@ srch=selectedcate+'&gender='+selecedgender;
     $http({
       url: $scope.baseurl+url, 
       method: "GET",
-params: {'selectedcate': srch},
+params: {'selectedcate': selectedcate},
    
     }).then(function mySucces(searchresult) {
 // alert(searchresult);
