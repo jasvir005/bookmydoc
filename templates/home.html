@@ -7,140 +7,83 @@
 </div>
    
   </ion-header-bar>
-  <ion-content class="padding theme-bg" >
-   
+  <ion-content class="padding theme-bg" > 
     <div class="bmd-list" ng-show="noSessionStatus">
-
-    <div class="bmd-bg-sec2" ng-show="noSessionStatus" >
-    <img id="top_circle" style="margin-top: 15px;width: 68%;" src="img/circle_img.png">
-
-    </div>
+       <div class="bmd-bg-sec2" ng-show="noSessionStatus" >
+        <img id="top_circle" style="margin-top: 15px;width: 68%;" src="img/circle_img.png">
+       </div>
       <ul>
-       
-         
-       
-      
-              <li class="bmd-listing">
-               <div class="head-img-txtflog">
- 
-           <p class="word-out">MY TRAINER</p>
-
- 
-    </div>
+        <li class="bmd-listing">
+          <div class="head-img-txtflog">
+            <p class="word-out">MY TRAINER</p> 
+          </div>
         </li>
-
-
-
-              <li class="bmd-listing">
-               <div class="head-img-txtflog">
- 
+        <li class="bmd-listing">
+          <div class="head-img-txtflog">
             <p style="color:#fff;margin:0px">Find the best local trainers</p>
-
- 
-    </div>
+          </div>
         </li>
-
-                  <li class="bmd-listing">
-               <div class="head-img-txtflog">
- 
-           <button id="first-btn" ng-click="login()" class="bmd-main-btn2flog">  LOGIN </button>
-
- 
-    </div>
+        <li class="bmd-listing">
+          <div class="head-img-txtflog">
+            <button id="first-btn" ng-click="login()" class="bmd-main-btn2flog">  LOGIN </button>
+          </div>
         </li>
-
-                     <li class="bmd-listing">
-               <div class="head-img-txtflog">
- 
+        <li class="bmd-listing">
+          <div class="head-img-txtflog">
             <button  class="bmd-main-btn2flog" ng-click="fblogin();"><b class="log-with-txt">LOGIN WITH </b><b class="facebk-txtflog">facebook</b></button>
-
- 
-    </div>
+          </div>
         </li>
-
-                          <li class="bmd-listing" style=" margin-top: 17px;">
-               <div class="head-img-txtflog">
-  <b style="padding-top:5px;color:#fff;">Don't have an account? <b ng-show="noSessionStatus" ng-click="signup()" id="signdiv">
-          SIGN UP
-        </b></b>
- 
-    </div>
+        <li class="bmd-listing" style=" margin-top: 17px;">
+          <div class="head-img-txtflog">
+            <b style="padding-top:5px;color:#fff;">Don't have an account? <b ng-show="noSessionStatus" ng-click="signup()" id="signdiv">
+             SIGN UP
+            </b>
+            </b>
+          </div>
         </li>
-
-
-
-
-
-
-      
-
       </ul>
-       
     </div>
-
   <div class="div-coloor">
-    <div class="filter-page" ng-hide="noSessionStatus">
-
- 
-    <div class="bmd-results-wrapper" ng-init="get_appointments()">
-      <div class="filter-page-contant">
- 
-<div class="bmd-title-logo2">
- 
-    </div>
-<div class="success_block ng-binding" ng-show="signupError" id="appendmsg"></div>
-
-      <form  name="signupform" ng-submit="signupform.$valid && doSignup()">
-
-
-<div class="containerration">
-
-<div class="yoga-wordout"><p><span class="wordout-yoga">Trainer</span>
-
-<span class="spelizationsids"></span>
-<span class="selecedgender"></span>
-
-<span id="appendinto"></p>
-
-<div class="right-side-categories"><img class="transfromimg" src="img/go.png"></div></div>
-<div class="likefilterd"></div>
-
-
-
-<div class="price-range"><p>Price Range: <span class="dollercls">$0</span>
-
- to <span class="dollercls" id="js-display-decimald"></span><span class="dollercls">$</span></p></div>
-
-<div class="slider-wrapper">
- 
-    <b class="dollersign">$0</b>
-    <input type="text" class="js-decimal"  value="$" style="display:none !important;"/>
-
-
-</div>
-
-<div class="example">
-
-    <div class="price-range2"><p>Distance Range:  <span class="dollercls">0 miles</span> to <span class="dollercls" id="js-display-changes">25</span> <span class="dollercls">miles</span></p></div>
-    <div class="slider-wrapper2">
-    <input type="text" class="js-check-change" />
-    </div>
-
- </div>
-
-<div class="rating-div"> 
-
- <div class="rating-txt"><b>Ratings</b></div>
-<div class="main-images-star">
-<div class="norating">
-
- 
-<img src="img/no_rating_txt.png">
-</div>
-
-<div class="first-star1"><img src="img/first_img.png">
-</div>
-
+    <div class="filter-page" ng-hide="noSessionStatus"> 
+      <div class="bmd-results-wrapper" ng-init="get_appointments()">
+        <div class="filter-page-contant">
+          <div class="bmd-title-logo2">
+        </div>
+        <div class="success_block ng-binding" ng-show="signupError" id="appendmsg"></div>
+        <form  name="signupform" ng-submit="signupform.$valid && doSignup()">
+        <div class="containerration">
+          <div class="yoga-wordout"><p><span class="wordout-yoga">Trainer</span>
+            <span class="spelizationsids"></span>
+            <span class="selecedgender"></span>
+            <span id="appendinto"></p>
+            <div class="right-side-categories"><img class="transfromimg" src="img/go.png"></div>
+          </div>
+          <div class="likefilterd"></div>
+          <div class="price-range"><p>Price Range: <span class="dollercls">$0</span>
+            to <span class="dollercls" id="js-display-decimald"></span><span class="dollercls">$</span></p>
+          </div>
+          <div class="slider-wrapper">
+            <b class="dollersign">$0</b>
+            <input type="text" class="js-decimal"  value="$" style="display:none !important;"/>
+          </div>
+          <div class="example">
+            <div class="price-range2"><p>Distance Range:  <span class="dollercls">0 miles</span> to <span class="   dollercls" id="js-display-changes">25</span> <span class="dollercls">miles</span></p>
+            </div>
+            <div class="slider-wrapper2">
+             <input type="text" class="js-check-change" />
+            </div>
+          </div>
+          <div class="rating-div"> 
+            <div class="rating-txt">
+              <b>Ratings</b>
+            </div>
+            <div class="main-images-star">
+              <div class="norating">
+                <img src="img/no_rating_txt.png">
+              </div>
+              <div class="first-star1">
+                <img src="img/first_img.png">
+              </div>
 <div class="first-star2"><img src="img/second_img.png">
 </div>
 
@@ -158,8 +101,20 @@
    </div>
 </div>
 
-<div class="language-div"><b id="languages-id">Languages</b>
-<div class="language-icon"><img src="img/go.png"></div> </div>
+<div class="language-div">
+  <div class="language-div-main">
+    <b id="languages-id">Languages</b>
+   <!-- <div class="language-icon">
+    <img src="img/go.png">
+  </div> -->
+  </div>
+  <div class="lang_type_eng">
+      <input type="radio"  name="english" value="0"><label>English</label>
+  </div>
+    <div class="lang_type_sap">
+      <input type="radio"  name="gender" value="1"><label>Spanish</label>
+    </div>
+ </div>
 
 <div class="gender-div">
 <div class="gendr-div-main">
@@ -172,44 +127,21 @@
     <input type="radio"  name="gender" value="1"><label>Female</label>
     </div>
 </div>
-
-
   <div class="likefilter"></div>
-  </form>
- 
- 
-  
+  </form> 
 </div>
   <script src="powerange.min.js"></script>
- 
- 
-
-
-<style type="text/css">
-  
-  body {
-    background: #ffffff none repeat scroll 0 0;
-    margin: 0;
-}
-
- 
-
-.bmd-results-wrapper {
- 
-    padding: 0px;
-  
-}
-</style>   
-      
-           
-    </div>
-   
-
- 
-
-
-
-    </div>
+  <style type="text/css"> 
+    body {
+      background: #ffffff none repeat scroll 0 0;
+      margin: 0;
+    }
+    .bmd-results-wrapper { 
+        padding: 0px; 
+    }
+  </style>             
+</div>
+</div>
     
 <!--     <div class="categories-div-left"  id="cate-slide" ng-hide="noSessionStatus">
 
@@ -221,18 +153,11 @@
     </span> 
     </div>
 <div class="likefilter"></div>
- 
-  
-
-      
-
-
-    </div> -->
+ </div> -->
 
      </div>
 
   </ion-content>
-
 </ion-view>
 
  <div  id="discover">
@@ -276,19 +201,10 @@
             </div>
         </div>
     </div>
-
- 
-
-  
-
   </div>
    </div>
-
-
-
  <div class="sidebar" id="cate-slide">
 <div class="image-workout-div" id="image-workout">
-
     <label>Trainer</label>
  <span>
    <img src="img/dropdown.png">
@@ -298,18 +214,12 @@
    </div>
  <div class="sidebara" id="cate-slidea">
  <div class="image-workout-div" id="image-workout">
-
     <label>Language</label>
  <span>
    <img src="img/dropdown.png">
     </span> 
-
     </div>
 <div class="likefilter"></div>
     <div class="languages"></div>
 
-
    </div> 
- 
-
-
