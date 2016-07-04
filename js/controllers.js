@@ -839,6 +839,24 @@ $(".common-button.button.button-positive.button-clear.button_text.icon.ion-navic
      $('.menu').css({ 'display': 'inline' });
 });
 
+
+
+$('.togo_backpage_img').click(function(){
+
+$("#discover").css('display','none');
+
+$("#slow-slide").show();
+
+
+});
+
+
+
+$(".gender-div").click(function() {
+
+  alert('hi');
+});
+
 $('.yoga-wordout').click(function(){
 
 //alert('777');
@@ -2206,6 +2224,28 @@ $(".common-button.button.button-positive.button-clear.button_text.icon.ion-navic
 
 });
 
+
+
+$('.togo_backpage_img').click(function(){
+
+$("#discover").css('display','none');
+
+$("#slow-slide").show();
+
+
+});
+
+
+$(".gender-div").click(function() {
+$(".selecedgender").html("");
+ // alert('hi');
+var ac= $( ".gender-div input:checked" ).val();
+//alert(ac);
+$(".selecedgender").append(ac);
+
+
+});
+
 $('.yoga-wordout').click(function(){
 
 
@@ -2309,15 +2349,19 @@ $(".filter-div").click(function(){
 
 
   var selectedcate=$(".spelizationsids").text();
+
+   var selecedgender=$(".selecedgender").text();
 //  alert(selectedcate);
  selectedcate= selectedcate.substring(1);
+srch=selectedcate+'&gender='+selecedgender;
+
  //alert(selectedcate);
 
     var url='/get_serachresult';
     $http({
       url: $scope.baseurl+url, 
       method: "GET",
-params: {'selectedcate': selectedcate},
+params: {'selectedcate': srch},
    
     }).then(function mySucces(searchresult) {
 // alert(searchresult);
