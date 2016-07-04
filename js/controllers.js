@@ -852,10 +852,17 @@ $("#slow-slide").show();
 
 
 
-$(".gender-div").click(function() {
 
-  alert('hi');
+$(".gender-div").click(function() {
+$(".selecedgender").html("");
+ // alert('hi');
+var ac= $( ".gender-div input:checked" ).val();
+//alert(ac);
+$(".selecedgender").append(ac);
+
+
 });
+
 
 $('.yoga-wordout').click(function(){
 
@@ -1074,26 +1081,40 @@ $( ".checkboxd-div9 input" ).prop( "checked", true );
 
 /* check box change color script*/
  
+//first login searchresult
 $(".filter-div").click(function(){
 
-//alert("first");
 
 
   var selectedcate=$(".spelizationsids").text();
+  var selecedgender=$(".selecedgender").text();
 //  alert(selectedcate);
- selectedcate= selectedcate.substring(1);
+ var selectedcate= selectedcate.substring(1);
+ if(selectedcate=="" && selecedgender=="" )
+{
+ var selectedcate="40";
+  var selecedgender="";
+}
+
+ if(selectedcate=="")
+{
+ var  selectedcate='1,2,3,4,5,6,7,8';
+}
+
+//var srch=selectedcate+'gender'+selecedgender;
+
  //alert(selectedcate);
 
     var url='/get_serachresult';
     $http({
       url: $scope.baseurl+url, 
       method: "GET",
-params: {'selectedcate': selectedcate},
+params: {'selectedcate': selectedcate,'gender': selecedgender,},
    
     }).then(function mySucces(searchresult) {
-// alert(searchresult);
+//alert(searchresult);
  var searchresultd =JSON.stringify(searchresult);
- //alert(searchresult); 
+//alert(searchresultd); 
 //$(".discover-content").html("");
 
 
@@ -1105,58 +1126,59 @@ $("#slow-slide").hide();
   $("#discover").show(); 
 var data="";
 //var items="";
+
 $.each(searchresult.data, function(i, obj) { 
-
-alert(obj);
-
-if(obj==0)
+var searcad =JSON.stringify(obj);  
+//console.log(searcad);
+var obj = jQuery.parseJSON( searcad );
+if(obj.id=="false")
 {
-  data +="<div id='not_found'></div>"; 
-}
-var searchresultd =JSON.stringify(obj); 
-console.log(obj[0].speciality);
-console.log(obj[0].firstname);
-console.log('dfd'); 
-//alert(obj[0].speciality);
-if(obj[0].speciality==undefined)
-{
- data +="<div id='not_found"+obj[0].id+"'></div>";
+data +="<div id='not_found'></div>";
+
 }
 else
 {
+if(obj.id==0)
+{
+data +="";
 
-
- data +="<div id='searchlop' class='discover-content"+obj[0].id+"'><div class='content-part'><div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+obj[0].firstname+" </h1><p></p></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
 }
-  
+else
+{
+data +="<div id='searchlop' class='discover-content"+obj.id+"'><div class='content-part'><div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+obj.firstname+" </h1><p></p></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
+}
+}
+
    var url='/get_cateid';
     $http({
       url: $scope.baseurl+url, 
       method: "GET",
-params: {'selectedcated': obj[0].speciality},
+params: {'selectedcated': obj.speciality},
    
     }).then(function mySucces(searchresult2) {
-
-console.log(searchresult2.data.name);
+var items=searchresult2.data.name;
 var id=searchresult2.data.id;
-var  items = searchresult2.data.name;
-//alert(items);
- 
-//alert(obj[0].speciality);
-//alert(id);
-$(".discover-content"+obj[0].id+" .text-part-left p").html("");
- if(obj[0].speciality==id)
+
+     $(".discover-content"+obj.id+" .text-part-left p").html("");
+ if(obj.speciality==id)
  {
-$(".discover-content"+obj[0].id+" .text-part-left p").append(items);
+  //alert("items");
+$(".discover-content"+obj.id+" .text-part-left p").append(items);
  }
  else
  {
-$(".discover-content"+obj[0].id+" .text-part-left"+obj[0].id+" p").append("");
+  //alert('false');
+$(".discover-content"+obj.id+" .text-part-left"+obj.id+" p").append("");
  }
+
+/*
+var objspec = jQuery.parseJSON( specialitynm.data );
+alert(objspec.name);*/
+
 
 
     });
- 
+//********
 
 });
 
@@ -2212,14 +2234,11 @@ $(".selecedgender").append(ac);
 
 });
 
-$('.yoga-wordout').click(function(){
 
 
-//alert('1384dd');
-  $('.sidebara').hide();
-          $(".language-icon img").removeClass('rotate2');
-   
-     if( $('.sidebar').is(':visible') ) {
+
+/*$('.theme-bg').click(function(){
+  if( $('.sidebar').is(':visible') ) {
         $('.sidebar').animate({ 'width': '0px' }, 'slow', function(){
             $('.sidebar').hide();              
         });
@@ -2228,18 +2247,48 @@ $('.yoga-wordout').click(function(){
         $('.student-test').show();
         $(".transfromimg").removeClass('rotate2');
     }
-    else {
 
-        $('.sidebar').show();
-        $('.sidebar').animate({ 'width': '250px' }, 'slow');
-        $('#slow-slide').animate({ 'margin-right': '250px' }, 'slow');
-        $('#slow-slide').css({ 'float': 'right','position':'static' },'slow');
-        $('.pane').css({ 'position': 'static' });
-        $('.menu').css({'display' :'none important','z-index':'-999'});
-        $(".menu").hide();
-        $('.student-test').hide();
-        $(".transfromimg").addClass('rotate2');
-    }
+
+
+
+});*/
+
+
+$('.yoga-wordout').click(function(){
+//alert('1384dd');
+  $('.sidebara').hide();
+
+$(".language-icon img").removeClass('rotate2');
+   
+if( $('.sidebar').is(':visible') ) 
+{
+
+$('.sidebar').animate({ 'width': '0px' }, 'slow', function(){
+  $('.sidebar').hide();              
+});
+$('#slow-slide').animate({ 'margin-right': '0px' }, 'slow');
+$('.pane').css({ 'position': 'absolute' });
+$('.student-test').show();
+$(".transfromimg").removeClass('rotate2');
+$(".theme-bg").removeClass("yoga-wordout");
+
+}
+ else
+{
+
+$('.sidebar').show();
+$('.sidebar').animate({ 'width': '250px' }, 'slow');
+$('#slow-slide').animate({ 'margin-right': '250px' }, 'slow');
+$('#slow-slide').css({ 'float': 'right','position':'static' },'slow');
+$('.pane').css({ 'position': 'static' });
+$('.menu').css({'display' :'none important','z-index':'-999'});
+$(".menu").hide();
+$('.student-test').hide();
+$(".transfromimg").addClass('rotate2');
+
+$(".theme-bg").addClass("yoga-wordout");
+
+}
 
  
 });
@@ -2249,7 +2298,7 @@ $('.yoga-wordout').click(function(){
 
 $(".filter-div").click(function(){
 
- // alert("seocnd");
+//alert("seocnd");
 
 
   var selectedcate=$(".spelizationsids").text();
@@ -2259,18 +2308,33 @@ $(".filter-div").click(function(){
  var selectedcate= selectedcate.substring(1);
 //var srch=selectedcate+'gender'+selecedgender;
 
+
+ 
+
+
+if(selectedcate=="" && selecedgender=="" )
+{
+ var selectedcate="40";
+  var selecedgender="";
+}
+
+if(selectedcate=="")
+{
+ var  selectedcate='1,2,3,4,5,6,7,8';
+}
  //alert(selectedcate);
 
     var url='/get_serachresult';
     $http({
       url: $scope.baseurl+url, 
       method: "GET",
+ 
 params: {'selectedcate': selectedcate,'gender': selecedgender,},
    
     }).then(function mySucces(searchresult) {
-// alert(searchresult);
+//alert(searchresult);
  var searchresultd =JSON.stringify(searchresult);
- //alert(searchresult); 
+//alert(searchresultd); 
 //$(".discover-content").html("");
 
 
@@ -2282,59 +2346,64 @@ $("#slow-slide").hide();
   $("#discover").show(); 
 var data="";
 //var items="";
+
 $.each(searchresult.data, function(i, obj) { 
-
-//alert(obj);
-
-if(obj==0)
+var searcad =JSON.stringify(obj);  
+//console.log(searcad);
+var obj = jQuery.parseJSON( searcad );
+//alert(obj.id);
+ 
+//obj.id
+if(obj.id=="false")
 {
-  //alert('hi');
-data +="<div id='not_found'></div>"; 
-}
-var searchresultd =JSON.stringify(obj); 
-console.log(obj[0].speciality);
-console.log(obj[0].firstname);
-console.log('dfd'); 
-//alert(obj[0].speciality);
-if(obj[0].speciality==undefined)
-{
- data +="<div id='not_found"+obj[0].id+"'></div>";
+data +="<div id='not_found'></div>";
+
 }
 else
 {
 
+if(obj.id==0)
+{
+data +="";
 
- data +="<div id='searchlop' class='discover-content"+obj[0].id+"'><div class='content-part'><div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+obj[0].firstname+" </h1><p></p></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
 }
-  
+else
+{
+data +="<div id='searchlop' class='discover-content"+obj.id+"'><div class='content-part'><div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+obj.firstname+" </h1><p></p></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
+}
+
+}
+
    var url='/get_cateid';
     $http({
       url: $scope.baseurl+url, 
       method: "GET",
-params: {'selectedcated': obj[0].speciality},
+params: {'selectedcated': obj.speciality},
    
     }).then(function mySucces(searchresult2) {
-
-console.log(searchresult2.data.name);
+var items=searchresult2.data.name;
 var id=searchresult2.data.id;
-var  items = searchresult2.data.name;
-//alert(items);
- 
-//alert(obj[0].speciality);
-//alert(id);
-$(".discover-content"+obj[0].id+" .text-part-left p").html("");
- if(obj[0].speciality==id)
+
+     $(".discover-content"+obj.id+" .text-part-left p").html("");
+ if(obj.speciality==id)
  {
-$(".discover-content"+obj[0].id+" .text-part-left p").append(items);
+  //alert("items");
+$(".discover-content"+obj.id+" .text-part-left p").append(items);
  }
  else
  {
-$(".discover-content"+obj[0].id+" .text-part-left"+obj[0].id+" p").append("");
+  //alert('false');
+$(".discover-content"+obj.id+" .text-part-left"+obj.id+" p").append("");
  }
+
+/*
+var objspec = jQuery.parseJSON( specialitynm.data );
+alert(objspec.name);*/
+
 
 
     });
- 
+//********
 
 });
 
