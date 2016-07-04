@@ -2342,6 +2342,9 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .selecedgender
 {
-
   display: none;
+}
+.bmd-usr:nth-child(9) .bmd-usr-input.ng-pristine.ng-valid-email.ng-invalid.ng-invalid-required.ng-touched {
+    padding-left: 13px !important;
+    padding-top: 4px !important;
 }
