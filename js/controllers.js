@@ -493,7 +493,7 @@ if(a==undefined && a1==undefined)
  a1='';
 }
 else{
-var a = a+','; 
+var a = "PT"+','; 
 var  a1= a1+','; 
 }
 
@@ -503,7 +503,7 @@ if(b==undefined && b1==undefined)
   b1='';
 } 
 else{
- var b = b+','; 
+ var b = "CT"+','; 
   var b1 = b1+','; 
 }
 if(c==undefined && c1==undefined)
@@ -512,7 +512,7 @@ if(c==undefined && c1==undefined)
   c1='';
 }
 else{
- var c = c+','; 
+ var c = "Y"+','; 
   var c1 = c1+','; 
 } 
 if(d==undefined && d1==undefined)
@@ -521,7 +521,7 @@ if(d==undefined && d1==undefined)
  d1='';
 } 
 else{
-var d =  d+','; 
+var d =  "A"+','; 
 var d1 =  d1+','; 
 }
 if(e==undefined && e1==undefined)
@@ -530,7 +530,7 @@ if(e==undefined && e1==undefined)
   e1='';
 }
 else{
-var e =  e+',';
+var e =  "B"+',';
 var e1 =  e1+','; 
 } 
 if(f==undefined && f1==undefined)
@@ -539,7 +539,7 @@ if(f==undefined && f1==undefined)
   f1='';
 } 
 else{
- var f = f+','; 
+ var f = "W"+','; 
   var f1 = f1+','; 
 }
 if(g==undefined && g1==undefined)
@@ -548,7 +548,7 @@ if(g==undefined && g1==undefined)
   g1='';
 } 
 else{
-var g =  g+','; 
+var g =  "M"+','; 
 var g1 =  g1+','; 
 }
 if(h==undefined && h1==undefined)
@@ -557,10 +557,12 @@ if(h==undefined && h1==undefined)
   h1='';
 } 
 else{
-var h =  h+','; 
+var h =  "S"+','; 
 var h1 =  h1+','; 
 }
- var com = a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g+''+h ;
+
+
+ var com = a+''+b+''+c+''+d+''+e+''+f+''+g+''+h ;
  com = com.replace(/,\s*$/, "");
 $("#appendinto").append(':'+com);
 
@@ -1861,7 +1863,7 @@ if(a==undefined && a1==undefined)
  a1='';
 }
 else{
-var a = a+','; 
+var a = "PT"+','; 
 var  a1= a1+','; 
 }
 
@@ -1871,7 +1873,7 @@ if(b==undefined && b1==undefined)
   b1='';
 } 
 else{
- var b = b+','; 
+ var b = "CT"+','; 
   var b1 = b1+','; 
 }
 if(c==undefined && c1==undefined)
@@ -1880,7 +1882,7 @@ if(c==undefined && c1==undefined)
   c1='';
 }
 else{
- var c = c+','; 
+ var c = "Y"+','; 
   var c1 = c1+','; 
 } 
 if(d==undefined && d1==undefined)
@@ -1889,7 +1891,7 @@ if(d==undefined && d1==undefined)
  d1='';
 } 
 else{
-var d =  d+','; 
+var d =  "A"+','; 
 var d1 =  d1+','; 
 }
 if(e==undefined && e1==undefined)
@@ -1898,7 +1900,7 @@ if(e==undefined && e1==undefined)
   e1='';
 }
 else{
-var e =  e+',';
+var e =  "B"+',';
 var e1 =  e1+','; 
 } 
 if(f==undefined && f1==undefined)
@@ -1907,7 +1909,7 @@ if(f==undefined && f1==undefined)
   f1='';
 } 
 else{
- var f = f+','; 
+ var f = "W"+','; 
   var f1 = f1+','; 
 }
 if(g==undefined && g1==undefined)
@@ -1916,7 +1918,7 @@ if(g==undefined && g1==undefined)
   g1='';
 } 
 else{
-var g =  g+','; 
+var g =  "M"+','; 
 var g1 =  g1+','; 
 }
 if(h==undefined && h1==undefined)
@@ -1925,10 +1927,13 @@ if(h==undefined && h1==undefined)
   h1='';
 } 
 else{
-var h =  h+','; 
+var h =  "S"+','; 
 var h1 =  h1+','; 
 }
- var com = a+' '+b+' '+c+' '+d+' '+e+' '+f+' '+g+''+h ;
+
+
+ 
+ var com = a+''+b+''+c+''+d+''+e+''+f+''+g+''+h ;
  com = com.replace(/,\s*$/, "");
 $("#appendinto").append(':'+com);
 
