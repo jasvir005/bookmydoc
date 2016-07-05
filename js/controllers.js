@@ -1834,7 +1834,14 @@ if(jas)
 $document.ready(function(){
 
 
+//alert('hi');
 
+
+
+/*if(nan=="NaN")
+{
+  alert('hi');
+}*/
 
 $(".yoga-wordout").click(function(){
 $("#appendinto").html("");
@@ -2085,7 +2092,15 @@ $(".filter-page-contant .example").css('margin-top','34px');
 
 
 
+var nan=$("#js-display-decimald").text();
 
+
+if(nan=="NaN")
+{
+//alert('hi');
+window.location.reload(true);
+
+}
 
           $(".slider-wrapper .range-bar .range-min").html("");
 $(".first-star1").click(function(){

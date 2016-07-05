@@ -1398,6 +1398,12 @@ width: 100%;
     padding-right: 10px;
     width: 100%;
 }
+.price-range .dollercls
+{
+
+    font-size: 15px;
+}
+
 
 .filter-page-contant .language-icon {
  
