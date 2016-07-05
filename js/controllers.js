@@ -466,6 +466,17 @@ $document.ready(function(){
 
 
 
+$(".clear-lan-sex").click(function(){
+
+  //alert('hi');
+
+$('.language-div input:radio').removeAttr('checked');
+$('.gender-div input:radio').removeAttr('checked');
+
+
+
+})
+
 $(".yoga-wordout").click(function(){
 $("#appendinto").html("");
 $(".spelizationsids").html("");
@@ -1848,6 +1859,20 @@ $document.ready(function(){
 {
   alert('hi');
 }*/
+
+
+
+$(".clear-lan-sex").click(function(){
+
+  //alert('hi');
+
+$('.language-div input:radio').removeAttr('checked');
+$('.gender-div input:radio').removeAttr('checked');
+
+
+
+})
+
 
 $(".yoga-wordout").click(function(){
 $("#appendinto").html("");

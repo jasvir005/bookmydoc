@@ -1206,7 +1206,7 @@ width: 70%;
 }
 .filter-page-contant .filter-div {
     color: #fff;
-    float: left;
+ 
     font-family: "helvetica";
     font-size: 18px;
     font-style: normal;
@@ -1439,10 +1439,24 @@ width: 100%;
     margin-top: 3px;
 }
 
-.filter-div {
+.filter-div1 {
     src:url('fonts/Nexa Bold.eot') ;
    color: #fff;
     float: left;
+    font-family: nexa_bold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    width: 86%;
+
+}
+
+.filter-div {
+    src:url('fonts/Nexa Bold.eot') ;
+   color: #fff;
+ 
     font-family: nexa_bold;
     font-size: 18px;
     font-style: normal;
@@ -1475,7 +1489,7 @@ width: 100%;
 
 
 .filter-page {
- margin-top: 70px ;
+ margin-top: 70px !important;
     
 }
 
@@ -1772,6 +1786,20 @@ input[type='radio']:checked:before {
     padding: 8px;
     text-align: center;
     width: 94%;
+}
+
+#first-btn01 {
+ background: #fe9a00 none repeat scroll 0 0;
+    border: 1px solid #fe9a00;
+    color: #fff;
+    font-family: nexa_bold;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 auto 11px;
+    padding: 8px;
+    text-align: center;
+    width: 85%;
 }
 /********************************/
 li.bmd-listing:nth-child(2) .head-img-txtflog > p {
@@ -2359,4 +2387,23 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .bmd-usr:nth-child(9) .bmd-usr-input.ng-pristine.ng-valid-email.ng-invalid.ng-invalid-required.ng-touched {
     padding-left: 13px !important;
     padding-top: 4px !important;
+}
+
+#searcg-buttonfun
+{
+
+
+    background: #567cc6 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 94%;
+ 
+}
+
+.filter-search-page {
+    border: 1px solid;
+    overflow: auto;
 }
