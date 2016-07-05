@@ -1593,10 +1593,10 @@ input[type='radio'] {
   -webkit-appearance:none;
   width:20px;
   height:20px;
-  border:1px solid darkgray;
+  border:1px solid #DB8404;
   border-radius:50%;
   outline:none;
-  box-shadow:0 0 5px 0px gray inset;
+  box-shadow:0 0 5px 0px #DB8404 inset;
 }
 
 input[type='radio']:hover {
