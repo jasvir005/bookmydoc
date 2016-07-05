@@ -1086,7 +1086,9 @@ $( ".checkboxd-div9 input" ).prop( "checked", true );
 //first login searchresult
 $(".filter-div").click(function(){
 
-
+$ionicLoading.show({
+       // template: '<img  src="img/loading.gif" />'
+      });
 
   var selectedcate=$(".spelizationsids").text();
   var selecedgender=$(".selecedgender").text();
@@ -1114,6 +1116,10 @@ $(".filter-div").click(function(){
 params: {'selectedcate': selectedcate,'gender': selecedgender,},
    
     }).then(function mySucces(searchresult) {
+
+      $ionicLoading.hide({
+       // template: '<img  src="img/loading.gif" />'
+      });
 //alert(searchresult);
  var searchresultd =JSON.stringify(searchresult);
 //alert(searchresultd); 
@@ -2319,6 +2325,9 @@ $(".theme-bg").addClass("yoga-wordout");
 $(".filter-div").click(function(){
 
 //alert("seocnd");
+    $ionicLoading.show({
+       // template: '<img  src="img/loading.gif" />'
+      });
 
 
   var selectedcate=$(".spelizationsids").text();
@@ -2353,6 +2362,10 @@ params: {'selectedcate': selectedcate,'gender': selecedgender,},
    
     }).then(function mySucces(searchresult) {
 //alert(searchresult);
+
+    $ionicLoading.hide({
+       
+      });
  var searchresultd =JSON.stringify(searchresult);
 //alert(searchresultd); 
 //$(".discover-content").html("");
