@@ -1935,6 +1935,11 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     float: left;
     width: 50%;
 }
+
+.error_block.ng-binding{
+ width: 100%;
+
+}
 .error_block li:nth-child(2) {
    text-align: right;
 }
