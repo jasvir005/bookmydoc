@@ -1117,7 +1117,7 @@ params: {'selectedcate': selectedcate,'gender': selecedgender,},
    
     }).then(function mySucces(searchresult) {
 
-      $ionicLoading.hide({
+      $ionicLoading.show({
        // template: '<img  src="img/loading.gif" />'
       });
 //alert(searchresult);
@@ -2367,7 +2367,9 @@ params: {'selectedcate': selectedcate,'gender': selecedgender,},
        
       });
  var searchresultd =JSON.stringify(searchresult);
-//alert(searchresultd); 
+//alert(searchresultd);   
+
+//$(".discover-content").html('<div id="not_found"></div>');
 //$(".discover-content").html("");
 
 
@@ -2440,7 +2442,13 @@ alert(objspec.name);*/
 
 });
 
+//alert(data);
+if(data=="")
+{
+data ="<div id='not_found'></div>";
+}
  $(".discover-content").html(data);
+ 
 //alert(items);
  
 
