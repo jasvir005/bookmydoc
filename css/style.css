@@ -1144,7 +1144,7 @@ clear: left;
 .filter-page-contant .wordout-yoga {
    color: #777777;
   font-family: helvetica;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: lighter;
        font-family: 'helvetica';
       src:url('fonts/avenir-lt-45-book.ttf') ;
@@ -1475,7 +1475,7 @@ width: 100%;
 
 
 .filter-page {
- margin-top: 70pxs;
+ margin-top: 70px !important;
     
 }
 
@@ -1933,7 +1933,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .ng-binding {
     float: left;
-    width: 100%;
+    width: 50%;
 }
 .error_block li:nth-child(2) {
    text-align: right;
