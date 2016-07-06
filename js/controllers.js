@@ -432,6 +432,40 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 
 $scope. ed= false;$scope.loginError =false;$sessionStorage.userSessionStatus = false;$scope.noSessionStatus = true;
   // Perform the login action when the user submits the login form
+$scope.removeTask2 = function() {
+var emailAddressfd=$("#login_user_id").val();
+var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+if(emailAddressfd=="")
+{
+
+$("#login_user_id").attr("placeholder", "E-Mail is required");
+
+} 
+else if(!emailAddressfd.match(re))
+{
+
+ //alert('dfd');
+ $("#login_user_id").val("");
+     $("#login_user_id").attr("placeholder", "Invalid E-Mail");
+     return false;
+ 
+ }
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   $scope.doLogin = function() {
     $ionicLoading.show({
 /*      template: '<img  src="img/await.gif" />'*/
@@ -720,7 +754,6 @@ $(".filter-page-contant .example").css('margin-top','34px');
 
 
         $(document).ready(function(){
-
 
 
 
@@ -1133,7 +1166,7 @@ params: {'selectedcate': selectedcate,'gender': selecedgender,},
    
     }).then(function mySucces(searchresult) {
 
-      $ionicLoading.show({
+      $ionicLoading.hide({
        // template: '<img  src="img/loading.gif" />'
       });
 //alert(searchresult);
@@ -1765,6 +1798,36 @@ $( "#chekcbox23 input" ).prop( "checked", true );
         }
     });
   }
+
+   $scope.removeTask = function() {
+//alert('hi');
+var emailAddressf=$("#seremail-validate").val();
+
+
+var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  
+if(emailAddressf=="")
+{
+
+    $("#seremail-validate").attr("placeholder", "E-Mail is required");
+
+} 
+else
+{
+
+$("#seremail-validate").val("");
+ $("#seremail-validate").attr("placeholder", "Invalid E-Mail");
+
+  if(!emailAddressf.match(re)) {
+     $("#seremail-validate").attr("placeholder", "Invalid E-Mail");
+     return false;
+   }
+ }
+ 
+ 
+
+
+
     $scope.doSignup = function() {
       $ionicLoading.show({
       /*  template: '<img  src="img/await.gif" />'*/
@@ -1777,6 +1840,7 @@ $( "#chekcbox23 input" ).prop( "checked", true );
         params: {'signUpData': $scope.signUpData},
       }).then(function mySucces(response) {
         
+         $("#seremail-validate").attr("placeholder", "E-Mail");
           $scope.signupDetails = response.data; 
           $scope.signupError = $scope.signupDetails.status;
           $scope.signupMessage = $scope.signupDetails.msg;
@@ -1785,6 +1849,11 @@ $( "#chekcbox23 input" ).prop( "checked", true );
           }, 1000);
       });
     }
+     }
+
+
+
+
     
     $ionicHistory.clearCache();
     $scope.my_booking =function(){
@@ -2138,6 +2207,7 @@ window.location.reload(true);
 
 }
 
+
           $(".slider-wrapper .range-bar .range-min").html("");
 $(".first-star1").click(function(){
     $(".norating").html("");
@@ -2311,7 +2381,7 @@ $(".selecedgender").append(ac);
 
 
 $('.yoga-wordout').click(function(){
-alert('1384');
+//alert('1384');
   $('.sidebara').hide();
 
 $(".language-icon img").removeClass('rotate2');

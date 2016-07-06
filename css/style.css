@@ -1489,7 +1489,7 @@ width: 100%;
 
 
 .filter-page {
- margin-top: 70px !important;
+ margin-top: 70px;
     
 }
 
@@ -2410,4 +2410,8 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 .scroll.scroll02 {
     transform: translate3d(0px, 0px, 0px) scale(1) !important;
+}
+.success_block.ng-binding
+{
+     width: 100%;
 }

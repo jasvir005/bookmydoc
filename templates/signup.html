@@ -50,14 +50,14 @@
 		<div class="bmd-usr">
 			<div class="bmd-usr1"><img src="img/email.png"></div>
 			<div class="bmd-usr2">
-				<input class="bmd-usr-input" name="email" type="email" placeholder="E-Mail" ng-model="signUpData.email" required>
+				<input  id="seremail-validate" class="bmd-usr-input" name="email" type="email" placeholder="E-Mail" ng-model="signUpData.email" >
 			</div>
 		
 		</div>
-			<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is 		required.
+		<!-- 	<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is 		required.
 			</div>
 			<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$error.email">		Invalid E-Mail
-			</div>
+			</div> -->
 		<div class="line-brk"></div>
 	<!-- 	<div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is required.</div>
 		<div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$invalid">Invalid E-Mail.</div> -->
@@ -100,8 +100,10 @@
 		<div class="bmd-field error" ng-show="submitted  && signupform.terms.$error.required">Must agree the Terms and Conditions.</div>
 		<!-- <div class="bmd-field error" ng-show="signupform.terms.$dirty && signupform.terms.$error.required">Must agree the Terms and Conditions.</div> -->
  <div class="signup-btn" >
- 	<button id="alert" class="bmd-main-btn"   ng-click="submitted=true">SIGN UP</button>
+ 	<button id="alert" class="bmd-main-btn"   ng-click="removeTask()">SIGN UP</button>
 </div>
+
+
  <!-- 	<button class="bmd-main-btn"  ng-click="Signud()">facebook login</button>
 
 
