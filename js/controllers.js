@@ -891,6 +891,8 @@ $('.yoga-wordout').click(function(){
         $('.pane').css({ 'position': 'absolute' });
         $('.student-test').show();
         $(".transfromimg").removeClass('rotate2');
+        $(".scroll").removeClass('scroll02');
+            $(".yoga-wordout").css("height",'auto');
     }
     else {
 
@@ -903,6 +905,9 @@ $('.yoga-wordout').click(function(){
         $(".menu").hide();
         $('.student-test').hide();
         $(".transfromimg").addClass('rotate2');
+        $(".yoga-wordout").css("height",'500px');
+        $(".scroll").addClass('scroll02');
+
     }
 
 
@@ -2306,7 +2311,7 @@ $(".selecedgender").append(ac);
 
 
 $('.yoga-wordout').click(function(){
-//alert('1384dd');
+alert('1384');
   $('.sidebara').hide();
 
 $(".language-icon img").removeClass('rotate2');
@@ -2322,6 +2327,9 @@ $('.pane').css({ 'position': 'absolute' });
 $('.student-test').show();
 $(".transfromimg").removeClass('rotate2');
 $(".theme-bg").removeClass("yoga-wordout");
+$(".yoga-wordout").css("height",'auto');
+$(".scroll").removeClass('scroll02');
+ 
 
 }
  else
@@ -2338,6 +2346,10 @@ $('.student-test').hide();
 $(".transfromimg").addClass('rotate2');
 
 $(".theme-bg").addClass("yoga-wordout");
+
+$(".yoga-wordout").css("height",'500px');
+$(".scroll").addClass('scroll02');
+
 
 }
 

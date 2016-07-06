@@ -1489,7 +1489,7 @@ width: 100%;
 
 
 .filter-page {
- margin-top: 70px;
+ margin-top: 70px !important;
     
 }
 
@@ -2406,4 +2406,8 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .filter-search-page {
     border: 1px solid;
     overflow: auto;
+}
+
+.scroll.scroll02 {
+    transform: translate3d(0px, 0px, 0px) scale(1) !important;
 }
