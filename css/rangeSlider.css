@@ -13,6 +13,7 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border-radius: 10px;
+        float: left;
 }
 
 .rangeSlider {
@@ -33,12 +34,11 @@
 
 .rangeSlider__handle {
  
-  background-image: url("../img/sliderring.png");
+    background-image: url("../img/sliderring.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     border: 0 solid #ccc;
     border-radius: 50%;
- 
     height: 22px;
     position: absolute;
     top: -6px;
