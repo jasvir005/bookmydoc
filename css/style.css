@@ -1489,7 +1489,7 @@ width: 100%;
 
 
 .filter-page {
- margin-top: 70px;
+ margin-top: 70px !important;
     
 }
 

@@ -502,7 +502,15 @@ $document.ready(function(){
 
 $(".clear-lan-sex").click(function(){
 
-  //alert('hi');
+ //alert('hi');
+
+ $(".range-handle").css("left","0px");
+$(".range-quantity").css("width","0px");
+$('#cate-slide input:checkbox').removeAttr('checked');
+$('#cate-slide label').css('color',"#fff");
+$("#appendinto").html("");
+$(".spelizationsids").html("");
+
 
 $('.language-div input:radio').removeAttr('checked');
 $('.gender-div input:radio').removeAttr('checked');
@@ -1938,7 +1946,19 @@ $document.ready(function(){
 
 $(".clear-lan-sex").click(function(){
 
-  //alert('hi');
+//alert('hi');
+
+$(".range-handle").css("left","0px");
+$(".range-quantity").css("width","0px");
+$('#cate-slide input:checkbox').removeAttr('checked');
+$('#cate-slide label').css('color',"#fff");
+$("#appendinto").html("");
+$(".spelizationsids").html("");
+
+
+
+
+
 
 $('.language-div input:radio').removeAttr('checked');
 $('.gender-div input:radio').removeAttr('checked');
@@ -2167,30 +2187,54 @@ $(".filter-page-contant .example").css('margin-top','34px');
 } 
   //alert('hi');
 
+ (function () {
 
- var dec = document.querySelector('.js-decimal');
-    var initDec = new Powerange(dec, { decimal: false, callback: displayDecimalValue, max: 250, start: 125 });
+        var selector = '[data-rangeSlider]',
+                elements = document.querySelectorAll(selector);
 
- function displayDecimalValue() {
-    document.getElementById('js-display-decimald').innerHTML = dec.value;
-    }
+        // Example functionality to demonstrate a value feedback
+        function valueOutput(element) {
+            var value = element.value,
+                    output = element.parentNode.getElementsByTagName('output')[0];
+            output.innerHTML = value;
+        }
 
-    var changeInput = document.querySelector('.js-check-change')
-    , initChangeInput = new Powerange(changeInput, { start: 50 });
+        for (var i = elements.length - 1; i >= 0; i--) {
+            valueOutput(elements[i]);
+        }
 
+        Array.prototype.slice.call(document.querySelectorAll('input[type="range"]')).forEach(function (el) {
+            el.addEventListener('input', function (e) {
+                valueOutput(e.target);
+            }, false);
+        });
 
-    changeInput.onchange = function() {
+ 
 
-      var crntval=changeInput.value;
-      
-      var totalmimles = crntval/2;
-      
-      totalmimles = Math.round(totalmimles);
+        // Basic rangeSlider initialization
+        rangeSlider.create(elements, {
 
+            // Callback function
+            onInit: function () {
+            },
 
-       document.getElementById('js-display-changes').innerHTML = totalmimles;
+            // Callback function
+            onSlideStart: function (value, percent, position) {
+                console.info('onSlideStart', 'value: ' + value, 'percent: ' + percent, 'position: ' + position);
+            },
 
-    };
+            // Callback function
+            onSlide: function (value, percent, position) {
+                console.log('onSlide', 'value: ' + value, 'percent: ' + percent, 'position: ' + position);
+            },
+
+            // Callback function
+            onSlideEnd: function (value, percent, position) {
+                console.warn('onSlideEnd', 'value: ' + value, 'percent: ' + percent, 'position: ' + position);
+            }
+        });
+
+    })();
 
 
         $(document).ready(function(){
