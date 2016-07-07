@@ -736,30 +736,54 @@ $(".filter-page-contant .example").css('margin-top','34px');
   //alert('hi');
 
 
- var dec = document.querySelector('.js-decimal');
-    var initDec = new Powerange(dec, { decimal: false, callback: displayDecimalValue, max: 250, start: 125 });
+ (function () {
 
- function displayDecimalValue() {
-    document.getElementById('js-display-decimald').innerHTML = dec.value;
-    }
+        var selector = '[data-rangeSlider]',
+                elements = document.querySelectorAll(selector);
 
-    var changeInput = document.querySelector('.js-check-change')
-    , initChangeInput = new Powerange(changeInput, { start: 50 });
+        // Example functionality to demonstrate a value feedback
+        function valueOutput(element) {
+            var value = element.value,
+                    output = element.parentNode.getElementsByTagName('output')[0];
+            output.innerHTML = value;
+        }
 
+        for (var i = elements.length - 1; i >= 0; i--) {
+            valueOutput(elements[i]);
+        }
 
-    changeInput.onchange = function() {
+        Array.prototype.slice.call(document.querySelectorAll('input[type="range"]')).forEach(function (el) {
+            el.addEventListener('input', function (e) {
+                valueOutput(e.target);
+            }, false);
+        });
 
-      var crntval=changeInput.value;
-      
-      var totalmimles = crntval/2;
-      
-      totalmimles = Math.round(totalmimles);
+ 
 
+        // Basic rangeSlider initialization
+        rangeSlider.create(elements, {
 
-       document.getElementById('js-display-changes').innerHTML = totalmimles;
+            // Callback function
+            onInit: function () {
+            },
 
-    };
+            // Callback function
+            onSlideStart: function (value, percent, position) {
+                console.info('onSlideStart', 'value: ' + value, 'percent: ' + percent, 'position: ' + position);
+            },
 
+            // Callback function
+            onSlide: function (value, percent, position) {
+                console.log('onSlide', 'value: ' + value, 'percent: ' + percent, 'position: ' + position);
+            },
+
+            // Callback function
+            onSlideEnd: function (value, percent, position) {
+                console.warn('onSlideEnd', 'value: ' + value, 'percent: ' + percent, 'position: ' + position);
+            }
+        });
+
+    })();
 
         $(document).ready(function(){
 
