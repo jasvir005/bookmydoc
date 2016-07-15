@@ -299,6 +299,14 @@ var noimage="http://gotaworkout.com/service/public/z_uploads/doctor/no_imageabc.
 var speciality=val.speciality;
 
 
+var str = val.firstname;
+str = str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+    return letter.toUpperCase();
+});
+
+//alert(str); //Displays "Hello World"
+
+
 if(val.userimage==null)
 {
 var image="<img src="+noimage+">";
@@ -309,7 +317,7 @@ else
 var image="<img src="+src+val.userimage+">";
 }
 
-data="<div id='searchlop'  onClick='abd("+val.usrid+")' class='discover-content"+speciality+"'><div class='content-part'>"+image+"<div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+val.firstname+"</h1><p class='categories-append'></p><div class='rating' id='rating"+val.usrid+"'></div></div></div><div class='text-right-part'><h1>$"+val.payrate+" / Hour</h1></div></div></div></div>";
+data="<div id='searchlop'  onClick='abd("+val.usrid+")' class='discover-content"+speciality+"'><div class='content-part'>"+image+"<div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+str+"</h1><p class='categories-append'></p><div class='countratinga'><div class='rating' id='rating"+val.usrid+"'></div><div class='round"+val.usrid+"'></div></div></div></div><div class='text-right-part'><h1>$"+val.payrate+" / Hour</h1></div></div></div></div>";
 
 $(".discover-content").append(data);
 
@@ -361,6 +369,7 @@ $(".discover-content"+speciality+" .text-part-left p").append(items);
  {
 
 $(".discover-content"+speciality+" .text-part-left"+val.id+" p").append("");
+
  } 
 
 
@@ -369,6 +378,7 @@ if(ratinga == 0)
 //alert('sssssssss');
  var imageempty ='<img src='+emptystar+'>';
 $(".text-part-left #rating"+useridfor+"").append(imageempty); 
+$(".round"+useridfor+"").html("0");
 
 
 }else
@@ -379,12 +389,14 @@ $(".text-part-left #rating"+useridfor+"").append(imageempty);
 
 var imageempty ='<img src='+fillstar1+'>';
 $(".text-part-left #rating"+useridfor+"").append(imageempty);
+$(".round"+useridfor+"").append(ratinga);
 }
 if(ratinga==2)
 {
  //alert('*******');
 var imageempty ='<img src='+fillstar2+'>';
 $(".text-part-left #rating"+useridfor+"").append(imageempty);
+$(".round"+useridfor+"").append(ratinga);
 }
 
 if(ratinga==3)
@@ -394,6 +406,7 @@ if(ratinga==3)
 var imageempty ='<img src='+fillstar3+'>';
 
 $(".text-part-left #rating"+useridfor+"").append(imageempty);
+$(".round"+useridfor+"").append(ratinga);
 }
 
 if(ratinga==4)
@@ -401,12 +414,14 @@ if(ratinga==4)
  //alert('*******');
 var imageempty ='<img src='+fillstar4+'>';
 $(".text-part-left #rating"+useridfor+"").append("imageempty");
+$(".round"+useridfor+"").append(ratinga);
 } 
 if(ratinga==5)
 {
  //alert('*******');
 var imageempty ='<img src='+fillstar5+'>';
 $(".text-part-left #rating"+useridfor+"").append(imageempty);
+$(".round"+useridfor+"").append(ratinga);
 }
 }
 

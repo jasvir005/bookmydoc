@@ -2399,8 +2399,9 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 
 #searchlop {
-    border-bottom: 1px solid #F5A623;
+ 
     overflow: auto;
+      margin-bottom: 3px;
 
 }
 #searchlop1 {
@@ -2646,10 +2647,10 @@ margin: 11px auto 2px 11px;
 }
 
 #rating1 > img {
-    width: 67%;
+    width: 100%;
 }
 .left-part-middel img {
-    width: 65%;
+    width: 100%;
 }
 #searchlop .content-part
 {
@@ -2666,7 +2667,7 @@ margin: 11px auto 2px 11px;
 #searchlop .middel-part{
 
    position: absolute;
-    top: 78px;
+    top: 88px;
      background: #747474 none repeat scroll 0 0;
     opacity: 0.51;
 }
@@ -2682,7 +2683,7 @@ margin: 11px auto 2px 11px;
 
 #searchlop .text-right-part h1 {
     font-family: helvetica;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: normal;
     margin-bottom: 0;
        margin-top: 53px;
@@ -2736,5 +2737,14 @@ margin: 11px auto 2px 11px;
   
    margin-left: 10px;
     width: 84%;
+}
+
+.countratinga {
+    display: inline-flex;
+    color:#fff;
+}
+.rating {
+    margin-right: 17px;
+    width: 43%;
 }
  
