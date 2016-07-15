@@ -54,12 +54,18 @@ console.log($scope.baseurl);
   }).then(function(modal) {
     $scope.modal = modal;
   });
+
+
+
     $ionicModal.fromTemplateUrl('templates/signup.html', {
     scope: $scope,
     caching: false
   }).then(function(signup_modal) {
     $scope.signup_modal = signup_modal;
   });
+
+
+
   $ionicModal.fromTemplateUrl('templates/forgot_password.html', {
     scope: $scope,
     caching: false
@@ -96,6 +102,11 @@ console.log($scope.baseurl);
   }).then(function(filterpage) {
     $scope.filterpage = filterpage;
   }); 
+
+
+
+
+
 
 
 
@@ -237,6 +248,181 @@ fbLoginSuccess = function (userData) {
         alert("Could not get access token: " + err);
     }); 
 }
+
+
+
+//$(".ion-side-menu-content").html("");
+//$(".menu-left").html("");
+//$(".menu-content").html("");
+
+//$scope.loginData.usertype='2';
+
+
+$(".view-container").hide();
+
+$(".filter_img").click(function(){
+$(".view-container").show();
+$(".bar22").hide();
+
+
+})
+
+
+
+
+
+
+
+    var url='/get_allusers';
+    $http({
+      url: $scope.baseurl+url, 
+      method: "GET",
+   
+    }).then(function mySucces(allusers) {
+
+
+   $ionicLoading.show({
+/*        template: '<img  src="img/await.gif" />'*/
+      });
+
+     // $(".discover-content").html("");
+//$("#searchlop").html("");
+/*var responsere =JSON.stringify(responsed);*/
+ 
+//alert(allusers);
+
+var numa=1;
+$.each( allusers.data, function( key, val ) {
+var src="http://gotaworkout.com/service/public/z_uploads/doctor/";
+var noimage="http://gotaworkout.com/service/public/z_uploads/doctor/no_imageabc.jpg";
+//alert(val.usertype);
+var speciality=val.speciality;
+
+
+if(val.userimage==null)
+{
+var image="<img src="+noimage+">";
+}
+else
+{
+
+var image="<img src="+src+val.userimage+">";
+}
+
+data="<div id='searchlop'  onClick='abd("+val.usrid+")' class='discover-content"+speciality+"'><div class='content-part'>"+image+"<div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+val.firstname+"</h1><p class='categories-append'></p><div class='rating' id='rating"+val.usrid+"'></div></div></div><div class='text-right-part'><h1>$"+val.payrate+" / Hour</h1></div></div></div></div>";
+
+$(".discover-content").append(data);
+
+
+numa++;
+
+var text = speciality;
+
+    var url='/speciality01';
+    $http({
+      url: $scope.baseurl+url, 
+      method: "GET",
+      params: {'speciality01': speciality,'userid': val.usrid,},
+  }).then(function mySucces(alluserss) {
+
+  var starimage="http://gotaworkout.com/service/public/z_uploads/doctor/sameimg.png";
+  var fillstar1="http://gotaworkout.com/service/public/z_uploads/doctor/onestar.png";
+  var fillstar2="http://gotaworkout.com/service/public/z_uploads/doctor/secondstart.png";
+  var fillstar3="http://gotaworkout.com/service/public/z_uploads/doctor/third_start.png";
+  var fillstar4="http://gotaworkout.com/service/public/z_uploads/doctor/fourth_star.png";
+  var fillstar5="http://gotaworkout.com/service/public/z_uploads/doctor/fifth_star.png";
+
+  var emptystar="http://gotaworkout.com/service/public/z_uploads/doctor/empty_star.png";
+
+  
+//var ratinga = alluserss.rating;
+  
+ //alert(ratinga);
+var ass=JSON.stringify(alluserss.data);
+var assa=JSON.parse(ass);  
+//alert(assa.name);
+
+
+  
+    $(".discover-content"+speciality+" .text-part-left p").html("");
+var items=assa.name;
+
+
+var useridfor=assa.useridfor;
+//alert(useridfor);
+var ratinga = assa.rating;
+//alert(ratinga);
+var id=assa.id;
+if(speciality==id)
+ {
+$(".discover-content"+speciality+" .text-part-left p").append(items);
+ }
+  else
+ {
+
+$(".discover-content"+speciality+" .text-part-left"+val.id+" p").append("");
+ } 
+
+
+if(ratinga == 0)
+{
+//alert('sssssssss');
+ var imageempty ='<img src='+emptystar+'>';
+$(".text-part-left #rating"+useridfor+"").append(imageempty); 
+
+
+}else
+{
+  // alert('*******');
+  if(ratinga==1)
+{
+
+var imageempty ='<img src='+fillstar1+'>';
+$(".text-part-left #rating"+useridfor+"").append(imageempty);
+}
+if(ratinga==2)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar2+'>';
+$(".text-part-left #rating"+useridfor+"").append(imageempty);
+}
+
+if(ratinga==3)
+{
+ // alert(useridfor);
+ //alert('yes');
+var imageempty ='<img src='+fillstar3+'>';
+
+$(".text-part-left #rating"+useridfor+"").append(imageempty);
+}
+
+if(ratinga==4)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar4+'>';
+$(".text-part-left #rating"+useridfor+"").append("imageempty");
+} 
+if(ratinga==5)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar5+'>';
+$(".text-part-left #rating"+useridfor+"").append(imageempty);
+}
+}
+
+
+
+
+  
+
+});
+
+/*  ******** end *******/
+
+
+});
+ 
+});
 
 
 
@@ -399,6 +585,16 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
     }
 }
 
+
+    $scope.abd = function() {
+
+alert("hello");
+console.log("hi jas");
+  };
+
+
+
+ 
  
 
     $scope.reset = function() {
@@ -493,7 +689,7 @@ else if(!emailAddressfd.match(re))
 
 var ida=$scope.userSession.userID;
 
-localStorage.setItem('sessionid', ida);
+localStorage.setItem('sessioniddd', ida);
 
 $document.ready(function(){
 
@@ -1215,7 +1411,7 @@ data +="";
 }
 else
 {
-data +="<div id='searchlop' class='discover-content"+obj.id+"'><div class='content-part'><div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+obj.firstname+" </h1><p></p></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
+data +="<div id='searchlop1' class='discover-content"+obj.id+"'><div class='content-part'><div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+obj.firstname+" </h1><p></p></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
 }
 }
 
@@ -1812,6 +2008,20 @@ $( "#chekcbox23 input" ).prop( "checked", true );
     });
   }
 
+
+
+
+
+
+
+  $scope.initlocad = function() {
+    alert("jas");
+
+
+  }
+
+
+
    $scope.removeTask = function() {
 //alert('hi');
 var emailAddressf=$("#seremail-validate").val();
@@ -1890,7 +2100,7 @@ $("#seremail-validate").val("");
 
 /*  session time script start */
 
-var jas=localStorage.getItem('sessionid');
+var jas=localStorage.getItem('sessionidd');
 //alert(jas);
 if(jas)
  {
