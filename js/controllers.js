@@ -603,8 +603,8 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 
     $scope.abd = function() {
 
-alert("hello");
-console.log("hi jas");
+//alert("hello");
+//console.log("hi jas");
   };
 
 
@@ -1136,7 +1136,7 @@ $(".selecedgender").append(ac);
 
 $('.yoga-wordout').click(function(){
 
- alert('777');
+ //alert('777');
   $('.sidebara').hide();
           $(".language-icon img").removeClass('rotate2');
    
