@@ -1121,7 +1121,7 @@ $(".selecedgender").append(ac);
 
 $('.yoga-wordout').click(function(){
 
-//alert('777');
+ alert('777');
   $('.sidebara').hide();
           $(".language-icon img").removeClass('rotate2');
    
@@ -1130,7 +1130,7 @@ $('.yoga-wordout').click(function(){
             $('.sidebar').hide();              
         });
 
-            $('#jas').hide(); 
+         $('#jas').css("display","none"); 
         $('#slow-slide').animate({ 'margin-right': '0px' }, 'slow');
         $('.pane').css({ 'position': 'absolute' });
         $('.student-test').show();
@@ -1139,7 +1139,7 @@ $('.yoga-wordout').click(function(){
             $(".yoga-wordout").css("height",'auto');
     }
     else {
-      $('#jas').show(); 
+       $('#jas').css("display","inline"); 
 
         $('.sidebar').show();
         $('.sidebar').animate({ 'width': '250px' }, 'slow');
