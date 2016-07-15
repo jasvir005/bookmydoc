@@ -1129,6 +1129,8 @@ $('.yoga-wordout').click(function(){
         $('.sidebar').animate({ 'width': '0px' }, 'slow', function(){
             $('.sidebar').hide();              
         });
+
+            $('#jas').hide(); 
         $('#slow-slide').animate({ 'margin-right': '0px' }, 'slow');
         $('.pane').css({ 'position': 'absolute' });
         $('.student-test').show();
@@ -1137,6 +1139,7 @@ $('.yoga-wordout').click(function(){
             $(".yoga-wordout").css("height",'auto');
     }
     else {
+      $('#jas').show(); 
 
         $('.sidebar').show();
         $('.sidebar').animate({ 'width': '250px' }, 'slow');
