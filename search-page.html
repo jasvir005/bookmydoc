@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<html style="height:100%">
+<head>
+<title>Bookmydoc</title>
+
+<!--
+Customize this policy to fit your own app's needs. For more guidance, see:
+https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+Some notes:
+* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+* Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+    * Enable inline JS: add 'unsafe-inline' to default-src
+-->
+<!-- 
+<link rel="stylesheet" type="text/css" href="css/index.css"> -->
+ <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <link rel="stylesheet" type="text/css" href="css/powerange.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/powerange.min.js"></script>
+
+
+<script type="text/javascript" src="js/controllers.js"></script>
+
+
+
+
+ 
+
+
+
+<title>Hello World</title>
+</head>
+     <body>
+
+<div class="search-page">
+
+
+<div class="div-coloor">
+    <div ng-hide="noSessionStatus" class="filter-page" style="margin-top: -4px;"> 
+      <div ng-init="get_appointments()" class="bmd-results-wrapper">
+        <div class="filter-page-contant" style="margin-right: 0px;">
+          <div class="bmd-title-logo2">
+        </div>
+        <div id="appendmsg" ng-show="signupError" class="success_block ng-binding ng-hide" style=""></div>
+        <form ng-submit="signupform.$valid &amp;&amp; doSignup()" name="signupform" class="ng-pristine ng-valid">
+        <div class="containerration">
+          <div class="yoga-wordout"><p><span class="wordout-yoga">Trainer</span>
+            <span class="spelizationsids"></span>
+            <span class="selecedgender"></span>
+            <span id="appendinto"></span></p>
+            <div class="right-side-categories"><img src="img/go.png" class="transfromimg"></div>
+          </div>
+          <div class="hide-open-time">
+          <div class="likefilterd"></div>
+          <div class="price-range"><p>Price Range: <span class="dollercls">$0</span>
+            to <span class="dollercls">$</span><span id="js-display-decimald" class="dollercls">125</span></p>
+          </div>
+<!-- 
+            <div class="slider-custom1">
+            <div class="admin1">0</div>
+            <input type="range" min="0" max="250" data-rangeSlider>
+              <div class="admin2"><output></output></div>
+            
+            </div> -->
+          <div class="slider-wrapper" style="width: 267px;">
+            <b class="dollersign">$0</b>
+            <input type="text" style="display: none;" value="$" class="js-decimal"><span class="range-max">$250</span><span class="range-quantity" style="width: 107.5px;"></span></span>
+          </div>
+          <div class="example">
+            <div class="price-range2"><p>Distance Range:  <span class="dollercls">0 miles</span> to <span id="js-display-changes" class="   dollercls">25</span> <span class="dollercls">miles</span></p>
+            </div>
+
+            <!--   <div class="slider-custom">
+                <div class="admin1">0</div>
+              <input type="range" min="0" max="50" data-rangeSlider>
+             <div class="admin2"><output></output></div>
+              </div> -->
+
+            <div class="slider-wrapper2" style="border: 0px solid red; width: 257px; margin: 0px 0px 26px 31px;">
+             <input type="text" class="js-check-change" style="display: none;"></span><span class="range-max">50m</span><span class="range-quantity" style="width: 107.5px;"></span></span>
+            </div>
+          </div>
+          <div class="rating-div"> 
+            <div class="rating-txt">
+              <b>Ratings</b>
+            </div>
+            <div class="main-images-star">
+              <div class="norating">
+                <img src="img/no_rating_txt.png">
+              </div>
+              <div class="first-star1">
+                <img src="img/first_img.png">
+              </div>
+<div class="first-star2"><img src="img/second_img.png">
+</div>
+
+<div class="first-star3"><img src="img/third_img1.png">
+</div>
+
+
+<div class="first-star4"><img src="img/fourth_img.png">
+</div>
+
+<div class="first-star5"><img src="img/fifth_img.png">
+</div>
+</div>
+
+   </div>
+</div>
+
+<div class="language-div">
+  <div class="language-div-main">
+    <b id="languages-id">Languages</b>
+   <!-- <div class="language-icon">
+    <img src="img/go.png">
+  </div> -->
+  </div>
+  <div class="lang_type_eng">
+      <input type="radio" value="0" name="language"><label>English</label>
+  </div>
+    <div class="lang_type_sap">
+      <input type="radio" value="1" name="language"><label>Spanish</label>
+    </div>
+ </div>
+
+<div class="gender-div">
+<div class="gendr-div-main">
+<b class="gender-txt">Gender</b>
+</div>
+<div class="male">
+  <input type="radio" value="0" name="gender"><label>Male</label>
+  </div>
+  <div class="female">
+    <input type="radio" value="1" name="gender"><label>Female</label>
+    </div>
+</div>
+  <div class="likefilter"></div>
+
+
+
+<div style="margin-bottom:0px;margin-top:10px;" class="head-img-txtflog">
+  <div id="first-btn01" class="filter-div">  My Trainer </div>
+  </div>
+
+
+
+  <div class="head-img-txtflog">
+  <div class="clearonmsg"></div>
+  <div id="first-btn01" class="clear-lan-sex">  Reset </div>
+  </div>
+
+
+</div>
+  </form> 
+</div>
+  <script src="powerange.min.js"></script>
+  <style type="text/css"> 
+    body {
+      background: #ffffff none repeat scroll 0 0;
+      margin: 0;
+    }
+    .bmd-results-wrapper { 
+        padding: 0px; 
+    }
+  </style>             
+</div>
+</div>
+    
+<!--     <div class="categories-div-left"  id="cate-slide" ng-hide="noSessionStatus">
+
+<div class="image-workout-div" id="image-workout">
+
+    <label>Trainer</label>
+ <span>
+   <img src="img/dropdown.png">
+    </span> 
+    </div>
+<div class="likefilter"></div>
+ </div> -->
+
+     </div>
+
+  </div> <!-- dome div -->
+ 
+  
+    </body>
+
+
+
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  //alert('df');
+    $("#divLoading").addClass('show');
+});
+</script>
+
+

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<html style="height:100%">
+<head>
+<title>Bookmydoc</title>
+
+<!--
+Customize this policy to fit your own app's needs. For more guidance, see:
+https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+Some notes:
+* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+* Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+    * Enable inline JS: add 'unsafe-inline' to default-src
+-->
+<!-- 
+<link rel="stylesheet" type="text/css" href="css/index.css"> -->
+ <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <link rel="stylesheet" type="text/css" href="css/powerange.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/powerange.min.js"></script>
+
+
+<script type="text/javascript" src="js/controllers.js"></script>
+
+
+
+
+ 
+
+
+
+<title>Hello World</title>
+</head>
+     <body>
+
+<div class="loginhome-page">
+
+<ion-content class="padding theme-bg scroll-content ionic-scroll"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);"> 
+    <div ng-show="noSessionStatus" class="bmd-list">
+       <div ng-show="noSessionStatus" class="bmd-bg-sec2">
+        <img src="img/circle_img.png" style="width: 68%;" id="top_circle">
+       </div>
+      <ul>
+        <li class="bmd-listing">
+          <div class="head-img-txtflog">
+            <p class="word-out">MY TRAINER</p> 
+          </div>
+        </li>
+        <li class="bmd-listing">
+          <div class="head-img-txtflog">
+            <p style="color:#fff;margin:0px">Find the best local trainers</p>
+          </div>
+        </li>
+        <li class="bmd-listing">
+          <div class="head-img-txtflog">
+            <div class="bmd-main-btn2flog" id="first-btn">  LOGIN </div>
+          </div>
+        </li>
+        <li class="bmd-listing">
+          <div class="head-img-txtflog">
+            <button  class="bmd-main-btn2flog"><b class="log-with-txt">LOGIN WITH </b><b class="facebk-txtflog">facebook</b></button>
+          </div>
+        </li>
+        <li style=" margin-top: 17px;" class="bmd-listing">
+          <div class="head-img-txtflog">
+            <b style="padding-top:5px;color:#fff;">Don't have an account? <b id="signdiv"  ng-show="noSessionStatus">
+             SIGN UP
+            </b>
+            </b>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+  </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+
+
+  </div> <!-- dome div -->
+
+
+
+
+
+  <div class="login-page">
+<ion-modal-view  class="sign_form">
+  <ion-header-bar>
+<div class="login-backbtn"><img src="img/go.png"></div>
+  </ion-header-bar>
+  <ion-content  class="theme-bg">
+<!--     <div class="bmd-title-logo">
+      <img src="img/bmd-signinlogo.png">
+    </div> -->
+
+  <div class="head-img-txtflog">
+       <div class="head_img_pro">
+      <img src="img/icon-transparent.png">
+      </div>
+      <p class="word-out">MY TRAINER</p>
+
+  </div>
+
+
+
+<div class="login-user-div"></div>
+<div class="bmd-usr-wrapper">
+    <form  name="loginform" ng-submit="loginform.$valid && doLogin()">
+      
+        
+        <div id="login-user">
+    <div class="bmd-usr" style="padding-top: 11px;">
+      <div  style="padding:5px" class="bmd-usr1" id="user_icon-img"><img src="img/user_new.png"></div>
+      <div class="bmd-usr2">
+        <input id="login_user_id" class="bmd-usr-input" name="email" type="email" placeholder="Enter your E-Mail" ng-model="loginData.email" required>
+      </div>
+    </div>
+    
+    <div class="line-brk" style="margin-bottom:18px;"></div>
+<!--   <div class="bmd-field error" ng-show="submitted  && loginform.email.$error.required">E-Mail is required.</div>
+    <div class="bmd-field error" ng-show="loginform.email.$touched && loginform.email.$error.email">Invalid E-Mail</div> -->
+    <div class="bmd-usr">
+    <div class="bmd-usr1" id="user_icon-img"><img src="img/lock_new.png"></div>
+    <div class="bmd-usr2">
+    <input id="user_paswd" class="bmd-usr-input" name="password" type="password" placeholder="Password" ng-model="loginData.password" required>
+    </div>
+    </div>
+    </div>
+    
+ 
+ 
+    <div class="user_login-div">
+
+    <button id="user_login" class="bmd-main-btn"    ng-click="removeTask2()">LOGIN</button>
+    </div>
+    
+    <!-- <div class="bmd-social">
+    <button class="bmd-fb-btn fbbg txt-color-white"><img src="img/bmd-fb.png" style="vertical-align: -7px;
+padding-right: 20px;">Sign in with Facebook</button>
+    <button class="bmd-ggle-btn gglebg txt-color-white"><img src="img/bmd-google.png" style="vertical-align: -7px;
+padding-right: 20px;">Sign in with Google</button>
+    </div> -->
+    </form>
+<!--     <button class="bmd-main-btn" ng-click="submitted=false; join()">Sign UP</button> -->
+  </div>
+  </ion-content>
+</ion-modal-view>
+
+
+  </div> <!-- dome div -->
+
+
+  <!-- **********signup page******** -->
+
+  <div class="signup-page-div">
+     
+<ion-modal-view class="sign_form">  
+  <ion-header-bar>
+
+  <div class="login-backbtn"><img src="img/go.png"></div>
+<!--     <div class="bmd-spclity-head">SignUp</div> -->
+  </ion-header-bar>
+  <ion-content class="theme-bg" ng-init="submitted=false">
+  <!--  <div class="bmd-title-logo">
+    <img src="img/bmd-signinlogo.png">
+    </div> -->
+<div class="signup-pge-dsgn">
+<div class="bmd-title-logo"  id="signup-pge-cs">
+    <div class="head-img-txt">
+      <div class="head_img_pro">
+      <img src="img/icon-transparent.png">
+      </div>
+      <p class="word-out" style="margin-bottom:22px;">MY TRAINER</p>
+
+  </div>
+    </div>
+    </div>
+
+    <form  name="signupform" ng-submit="signupform.$valid && doSignup()">
+    <div class="bmd-usr-wrapper">
+      
+    <div class="bmd-usr">
+      <div class="bmd-usr1"><img src="img/user_new.png"></div>
+      <div class="bmd-usr2">
+      <input class="bmd-usr-input" name="firstname" type="text" placeholder="First Name" ng-model="signUpData.firstname">
+      </div>
+    </div>
+    <div class="line-brk"></div>
+    
+    <div class="bmd-usr">
+      <div class="bmd-usr1"><img src="img/user_new.png"></div>
+      <div class="bmd-usr2">
+      <input class="bmd-usr-input" name="lastname" type="text" placeholder="Last Name" ng-model="signUpData.lastname">
+      </div>
+    </div>
+    <div class="line-brk"></div>
+    
+    <div class="bmd-usr">
+      <div class="bmd-usr1"><img src="img/email.png"></div>
+      <div class="bmd-usr2">
+        <input  id="seremail-validate" class="bmd-usr-input" name="email" type="email" placeholder="E-Mail" ng-model="signUpData.email" >
+      </div>
+    
+    </div>
+    <!--  <div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is     required.
+      </div>
+      <div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$error.email">    Invalid E-Mail
+      </div> -->
+    <div class="line-brk"></div>
+  <!--  <div class="bmd-field error" ng-show="submitted  && signupform.email.$error.required">E-Mail is required.</div>
+    <div class="bmd-field error" ng-show="signupform.email.$touched && signupform.email.$invalid">Invalid E-Mail.</div> -->
+
+    
+    
+
+    <div class="bmd-usr">
+      <div class="bmd-usr1"><img src="img/email.png"></div>
+      <div class="bmd-usr2">
+      <input class="bmd-usr-input" name="Address" type="text" placeholder="Address">
+      </div>
+    </div>
+    <div class="line-brk"></div>
+    <div class="bmd-usr">
+      <div class="bmd-usr1"><img src="img/lock_new.png"></div>
+      <div class="bmd-usr2">
+      <input class="bmd-usr-input" name="password" type="password"  placeholder="Password" ng-model="signUpData.password">
+      </div>
+
+    </div>
+    <div class="line-brk"></div>
+  
+   
+
+    <!-- <div class="bmd-usr">
+      <div class="bmd-usr1"><img src="img/bmd-phne.png"></div>
+      <div class="bmd-usr2">
+      <input class="bmd-usr-input" type="text" name="phone" placeholder="Mobile" ng-model="signUpData.phone" ng-minlength="10"  ng-maxlength="10" required>
+      </div>
+    </div>
+    <div class="bmd-field error" ng-show="submitted  && signupform.phone.$error.required">Mobile Number is required.</div>
+    <div class="bmd-field error" ng-show="signupform.phone.$touched && signupform.phone.$error.minlength">Mobile Number should be 10 digits.</div>
+    <div class="bmd-field error" ng-show="signupform.phone.$touched && signupform.phone.$error.maxlength">Mobile Number should be 10 digits.</div> -->
+    
+    <div class="chkoutbtn_ap" style="display:inline-flex;width:100%;">
+      <input id="checkbox-terms" name="terms" class="checkbox-custom" name="checkbox-1" type="checkbox" required>
+      <label for="checkbox-terms" class="checkbox-custom-label"></label><b>By using this app, you agree to path Team of Use and Privacy Policy.</b>
+    </div>
+    <div class="bmd-field error" ng-show="submitted  && signupform.terms.$error.required">Must agree the Terms and Conditions.</div>
+    <!-- <div class="bmd-field error" ng-show="signupform.terms.$dirty && signupform.terms.$error.required">Must agree the Terms and Conditions.</div> -->
+ <div class="signup-btn" >
+  <button id="alert" class="bmd-main-btn"   ng-click="removeTask()">SIGN UP</button>
+</div>
+
+
+ <!--   <button class="bmd-main-btn"  ng-click="Signud()">facebook login</button>
+
+
+ -->
+
+    </div>
+  </form>
+
+  </ion-content>
+
+
+</ion-modal-view>
+
+  </div>
+ 
+ 
+  
+    </body>
+
+
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#first-btn").click(function(){
+  //alert('dfd');
+ 
+  $( ".login-page" ).slideUp();
+   $( ".login-page" ).show();
+  //$( ".login-page" ).slideUp();
+    $( ".loginhome-page" ).hide();
+});
+
+
+  $(".login-backbtn").click(function(){
+   // alert('dfd');
+ 
+  $( ".loginhome-page" ).slideUp();
+   $( ".loginhome-page" ).show();
+  //$( ".login-page" ).slideUp();
+    $( ".login-page" ).hide();
+});
+
+
+
+    $("#signdiv").click(function(){
+   // alert('dfd');
+ 
+ 
+ alert('hello');
+});
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+</script>
+
+ 

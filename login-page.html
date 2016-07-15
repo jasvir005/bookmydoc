@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<html style="height:100%">
+<head>
+<title>Bookmydoc</title>
+
+<!--
+Customize this policy to fit your own app's needs. For more guidance, see:
+https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+Some notes:
+* gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+* https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+* Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+    * Enable inline JS: add 'unsafe-inline' to default-src
+-->
+<!-- 
+<link rel="stylesheet" type="text/css" href="css/index.css"> -->
+ <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <link rel="stylesheet" type="text/css" href="css/powerange.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+ <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/powerange.min.js"></script>
+
+
+<script type="text/javascript" src="js/controllers.js"></script>
+
+
+
+
+ 
+
+
+
+<title>Hello World</title>
+</head>
+     <body>
+
+<div class="login-page">
+<ion-modal-view  class="sign_form">
+  <ion-header-bar>
+<div class="login-backbtn"><a href="index.html"><img src="img/go.png"></a></div>
+  </ion-header-bar>
+  <ion-content  class="theme-bg">
+<!--     <div class="bmd-title-logo">
+      <img src="img/bmd-signinlogo.png">
+    </div> -->
+
+  <div class="head-img-txtflog">
+       <div class="head_img_pro">
+      <img src="img/icon-transparent.png">
+      </div>
+      <p class="word-out">MY TRAINER</p>
+
+  </div>
+
+
+
+<div class="login-user-div"></div>
+<div class="bmd-usr-wrapper">
+    <form  name="loginform" ng-submit="loginform.$valid && doLogin()">
+      
+        
+        <div id="login-user">
+    <div class="bmd-usr" style="padding-top: 11px;">
+      <div  style="padding:5px" class="bmd-usr1" id="user_icon-img"><img src="img/user_new.png"></div>
+      <div class="bmd-usr2">
+        <input id="login_user_id" class="bmd-usr-input" name="email" type="email" placeholder="Enter your E-Mail" ng-model="loginData.email" required>
+      </div>
+    </div>
+    
+    <div class="line-brk" style="margin-bottom:18px;"></div>
+<!--   <div class="bmd-field error" ng-show="submitted  && loginform.email.$error.required">E-Mail is required.</div>
+    <div class="bmd-field error" ng-show="loginform.email.$touched && loginform.email.$error.email">Invalid E-Mail</div> -->
+    <div class="bmd-usr">
+    <div class="bmd-usr1" id="user_icon-img"><img src="img/lock_new.png"></div>
+    <div class="bmd-usr2">
+    <input id="user_paswd" class="bmd-usr-input" name="password" type="password" placeholder="Password" ng-model="loginData.password" required>
+    </div>
+    </div>
+    </div>
+    
+ 
+ 
+    <div class="user_login-div">
+
+    <button id="user_login" class="bmd-main-btn"    ng-click="removeTask2()">LOGIN</button>
+    </div>
+    
+    <!-- <div class="bmd-social">
+    <button class="bmd-fb-btn fbbg txt-color-white"><img src="img/bmd-fb.png" style="vertical-align: -7px;
+padding-right: 20px;">Sign in with Facebook</button>
+    <button class="bmd-ggle-btn gglebg txt-color-white"><img src="img/bmd-google.png" style="vertical-align: -7px;
+padding-right: 20px;">Sign in with Google</button>
+    </div> -->
+    </form>
+<!--     <button class="bmd-main-btn" ng-click="submitted=false; join()">Sign UP</button> -->
+  </div>
+  </ion-content>
+</ion-modal-view>
+
+
+  </div> <!-- dome div -->
+ 
+  
+    </body>
+
+
+
+
+
