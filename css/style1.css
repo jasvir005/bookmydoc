@@ -40,19 +40,19 @@ body {
 .head-text > h1 {
     color: #fff;
     font-family: nexa_bold;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
     margin: 0;
       text-align: center;
 }
 .page_notice {
     float: left;
-    width: 15px;
+    width: 25px;
 }
 .page_filter {
     float: left;
-    margin-left: 11px;
-    width: 18px;
+       
+    width: 19px;
 }
 
 .notification {
@@ -73,11 +73,14 @@ body {
     width: 100%;
 }
 
+.spacediv {
+    border: 2px solid #fff;
+}
 
 
 #searchlop {
-    border-bottom: 1px solid #f5a623;
-    margin-bottom: 3px;
+    
+    
     overflow: auto;
 }
 }
@@ -113,7 +116,9 @@ body {
     font-weight: normal;
     margin-bottom: 0;
     margin-top: 0;
+     color: #fff;
 }
+
 
 .content-part {
      
@@ -142,6 +147,7 @@ body {
 .categories-append {
     font-family: helvetica;
     font-size: 16px;
+     color: #fff;
     font-weight: initial;
     margin: 0;
 }
@@ -171,7 +177,7 @@ body {
 
 .text-right-part {
     float: right;
-     margin-top: 39px;
+     margin-top: 58px;
   
 }
 
@@ -180,6 +186,7 @@ body {
     font-family: helvetica;
     font-size: 14px;
     margin: 0 26px 0 0;
+       color: #fff;
 }
 
 
@@ -203,7 +210,7 @@ body {
 
 
 .filter_img img {
-    width: 100%;
+     width: 85%;
 }
 
 
@@ -212,3 +219,14 @@ body {
     display: none;
 }
 /*  search page */
+
+
+
+body {
+    background: #003f6f none repeat scroll 0 0;
+    margin: 0;
+}
+
+#must-agree
+{display: none;
+}

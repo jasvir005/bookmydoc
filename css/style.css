@@ -194,7 +194,7 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 
 /*RATTING*/
 
-.rating {margin-top: 25px;overflow: hidden;display: inline-block;}
+ 
 .rating-input {position: absolute;left: 0;top: -50px;}
 .rating-star {display: block;float: right;width: 16px;height: 16px;background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;}
 .rate{margin-top: 6px;}
@@ -231,7 +231,7 @@ button[disabled]{
   background: #fe9a00 none repeat scroll 0 0;
   border: 0px solid #ffbaba;
   border-radius: 0px;
-  color: #d8000c;
+  color: #fff;
   padding: 6px;
   margin-bottom: 0px;
     overflow: hidden;
@@ -577,10 +577,7 @@ width: 100%;}
     width: 34px;
 }
 
-body{
-background: #003F6F;
-  margin: 0;
-}
+ 
 .main-containerlog{
 /*  border:1px solid #000;*/
   overflow: hidden;
@@ -1786,7 +1783,7 @@ input[type='radio']:checked:before {
     margin: 0 auto;
     padding: 8px;
     text-align: center;
-    width: 88%;
+    width: 94%;
 }
 
 #first-btn01 {
@@ -2179,12 +2176,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 
 /**************discover*******************************/
-.discover-content {
-    float: left;
-    height: 90vh;
-    overflow: scroll;
-    width: 100%;
-}
+
 .content-part {
    /* background: rgba(0, 0, 0, 0) url("../img/Therapist.png") no-repeat scroll 0 0 / 100% 100%;*/
     float: left;
@@ -2201,8 +2193,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   text-align: right;
 }
 .middel-part {
+    background: #000 none repeat scroll 0 0;
     float: left;
-    margin-top: 55px;
+    margin-top: 80px;
+    opacity: 0.5;
     width: 100%;
 }
 .left-part-middel{
@@ -2251,14 +2245,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   width: 46%;
 }
 
-.text-right-part h1 {
-    font-family: helvetica;
-    font-size: 20px;
-    font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 66px;
-    padding-right: 0;
-}
+ 
 
 .text-part-left span {
   font-size: 23px;
@@ -2328,33 +2315,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     margin: 0;
    /* padding-top: 2px;*/
 }
-.page_notice{
-  width: 31px;
-  float: left;
-}
-.notification {
-    float: left;
-    margin-top: 13px;
-    width: 100%;
-}
+ 
 .notification > img {
-    width: 48%;
-}
-.page_filter {
-    float: left;
-    margin-left: 11px;
-    width: 31px;
-}
-.filter_img {
-    float: left;
-    margin-top: 12px;
-    padding-top: 1px;
-    width: 100%;
-}
-.filter_img > img {
-     width: 53%;
-}
-
+        width: 54%;
+      }
 
 .spelizationsids
 {
@@ -2362,13 +2326,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   display: none;
 }
 
-
-#searchlop {
-    border-bottom: 1px solid #F5A623;
-    overflow: auto;
- background: rgba(0, 0, 0, 0) url("../img/Therapist.png") no-repeat scroll 0 0 / 100% 100%;
- height:127px;
-}
+ 
 
 #not_found {
     border: 1px solid #000;
@@ -2451,4 +2409,14 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     height:20px;
     border: 1px solid red;
     display:none;
+}
+
+
+#resultappen {
+    display: none;
+}
+
+#login_error
+{
+  display: none;
 }
