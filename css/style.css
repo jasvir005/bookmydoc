@@ -153,7 +153,7 @@ ul.bmd-sch-row{width:20%;display:block;list-style:none;float:left;}
 
 .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {display: inline-block;margin: 4px;cursor: pointer;}
 .checkbox-custom-label, .radio-custom-label {position: relative;}
-.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:0px;text-align: left;border: 2px solid #b3b3b3;display: inline-block;vertical-align: middle;width: 22px;height: 22px;margin-right: 22px;text-align: center;}
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {content: '';background: #fff;border-radius:0px;text-align: left;border: 2px solid #b3b3b3;display: inline-block;vertical-align: middle;width: 22px;height:  22px; margin-right: 22px;text-align: center;font-family:"FontAwesome";}
 .checkbox-custom:checked + .checkbox-custom-label:before {
  
  font-family: "FontAwesome";
@@ -1153,7 +1153,7 @@ clear: left;
     margin: 17px auto 0;
     overflow: hidden;
     padding-bottom: 0;
-    padding-top: 14px;
+ 
     text-align: left;
     width: 92%;
 }
@@ -1169,7 +1169,7 @@ clear: left;
     clear: inherit;
     cursor: pointer;
     float: right;
-    margin: 0 2px 0 0;
+    margin:14px 2px 0 0;
     width: 7%;
 }
 .filter-page-contant .right-side-categories img {
@@ -1638,59 +1638,59 @@ input[type='radio']:checked:before {
     overflow: hidden;
     padding-left: 25px;
    /* padding-right: 20px;*/
-    width: 100%;
+    width: 80%;
 }
   
 .checkboxd-div1{
   margin-bottom: 14px;
       margin-bottom: 5px;
     margin-top: 6px;
-      width: 100%;
+      width: 80%;
 }
 
 .checkboxd-div2{
    margin-bottom: 5px;
     margin-top: 6px;
-      width: 100%;
+      width: 80%;
 }
 
 .checkboxd-div3{
   margin-bottom: 5px;
     margin-top: 6px;
-      width: 100%;
+      width: 80%;
 }
 
 .checkboxd-div4{
   margin-bottom: 5px;
     margin-top: 6px;
-      width: 100%;
+      width: 80%;
 }
 
 .checkboxd-div5{
   margin-bottom: 5px;
     margin-top: 6px;
-      width: 100%;
+      width: 80%;
 }
 
 .checkboxd-div6{
     margin-bottom: 5px;
     margin-top: 6px;
-      width: 100%;
+      width: 80%;
 }
 
 .checkboxd-div7{
   margin-bottom: 5px;
     margin-top: 6px;
-      width: 100%;
+      width: 80%;
 }
 .checkboxd-div8{
  
-      width: 100%;
+      width: 80%;
 }
 .checkboxd-div9{
   margin-bottom: 14px;
     margin-top: 14px;
-      width: 100%;
+      width: 80%;
 }
 .checkboxd-div1 > label {
 
@@ -1971,7 +1971,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     position: relative;
     top: 4px;
     width: 48%;
-   /* z-index: 9999 !important;*/
+    z-index: 9999; 
 }
 .bmd-list .bmd-listing:nth-child(5) {
   margin-top: 7px !important;
@@ -2419,4 +2419,20 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 #login_error
 {
   display: none;
+}
+
+.search-result-page
+{
+  display: none;
+}
+
+#searchlop1 {
+    background: rgba(0, 0, 0, 0) url("../img/Therapist.png") no-repeat scroll 0 0 / 100% 100%;
+    border-bottom: 1px solid #f5a623;
+    height: 141px;
+    overflow: auto;
+}
+
+.text-part-left > p {
+    color: #fff;
 }

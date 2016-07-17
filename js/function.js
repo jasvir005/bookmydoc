@@ -179,9 +179,159 @@ $(".discover-content"+speciality+" .text-part-left"+val.id+" p").append("");
 
   }  // first success ajax
 
+
 });
 
 } // function close
+
+
+
+/*facebooklogin function *****************************  */
+function fblogin()
+   	{
+
+
+   facebookConnectPlugin.login(["public_profile"],
+        fbLoginSuccess,
+        function (error) { alert("bookmydoc" + JSON.stringify(error)) }
+    ); 
+
+
+  };
+
+
+fbLoginSuccess = function (userData) {
+   // alert("userData: " + JSON.stringify(userData));
+     var userData  = JSON.stringify(userData);
+    var packet = jQuery.parseJSON(JSON.stringify(userData));
+
+
+    var status = JSON.stringify(packet["status"]);
+   //alert(status);
+    facebookConnectPlugin.getAccessToken(function(token) {
+        localStorage.setItem('token', token);
+     
+         //alert(cache);
+        fbData();
+    }, 
+    function(err) {
+        alert("Could not get access token: " + err);
+    }); 
+}
+
+
+fbData = function () {
+  //alert('hello');
+    facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
+        function (response) { 
+           //alert("Result: " + JSON.stringify(response));
+            //alert("status: " + localStorage.status + "token: " + localStorage.token);
+            var response = jQuery.parseJSON(JSON.stringify(response));
+            
+      /*      var fbname = JSON.stringify(response["name"]);
+            var fbid = JSON.stringify(response["id"]);*/
+            var fbEmail2 = JSON.stringify(response["email"]);
+            var name = JSON.stringify(response["name"]);
+     
+            var cache=localStorage.getItem('token');
+
+   $ionicLoading.show({
+/*        template: '<img  src="img/await.gif" />'*/
+      });
+ var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","phone":"9898989897","usertype":"2"}';
+
+//var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","usertype":"2"}';
+ 
+      var url='/get_signup_details';
+      $http({
+        url: $scope.baseurl+url, 
+        method: "GET",
+        params: {'signUpData': text},
+      }).then(function mySucces(response) {
+
+ $ionicLoading.hide({
+        template: '<img  src="img/await.gif" />'
+      });
+
+
+
+//var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
+//var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password":""}';
+//alert(text);
+   $scope.signupDetails = response.data; 
+        var statusvar = $scope.signupDetails.status;
+         //alert(statusvar);
+         console.log(statusvar);
+var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
+
+ 
+     
+   $ionicLoading.show({
+/*      template: '<img  src="img/await.gif" />'*/
+    });
+    $scope.loginData.usertype='2';
+    var url='/get_login_detailss';
+    $http({
+      url: $scope.baseurl+url, 
+      method: "GET",
+      params: {'loginData': text},
+    }).then(function mySucces(response) {
+      //alert('login sucess function');
+        $scope.loginDetails = response.data; 
+        // $sessionStorage.userSession = response.data;
+        // console.log($sessionStorage.SessionMessage);
+        if($scope.loginDetails.error.status===false){
+          $scope.userSession = response.data;
+          $scope.userSessionStatus = true;
+          $scope.AppointmentDetails.details = true;
+          $scope.noSessionStatus = false;
+          $timeout(function() {
+
+            //alert('hello');
+
+            $ionicLoading.hide();
+            $scope.closeLogin();
+          }, 1000);
+
+
+             $timeout(function() {
+            $scope.closelogin_two();
+          }, 1001);
+          
+        }else{
+          $scope.loginError = $scope.loginDetails.error.status;
+          $scope.loginErrorMsg = $scope.loginDetails.error.msg;
+          $timeout(function() {
+            $ionicLoading.hide();
+          }, 1000);
+        }
+    });
+
+ 
+ $ionicLoading.hide({
+        template: '<img  src="img/await.gif" />'
+      });
+       
+//alert(response);
+      
+      }); 
+ 
+           
+        },
+        function (error) { alert("arv" + JSON.stringify(error)) }
+    );
+
+    if(localStorage.user_id == userID) {
+        alert("localStorage.user_id == userID");
+    }
+    else {
+        alert("localStorage.user_id != userID");
+    }
+}
+
+
+
+/********fb login close********/
 
 
 
@@ -269,10 +419,16 @@ var name= $("#fname").val();
 var lname= $("#lname").val();
 var email= $("#seremail-validate").val();
 
+var addressfld= $("#addressfld").val();
 
-var text = '{ "firstname":"'+name+'" , "lastName":"'+lname+'" ,"email":"'+email+'","usertype":"2" }';
+var passfld= $("#passfld").val();
+
+
+// var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","phone":"9898989897","usertype":"2"}';
+
+var text = '{ "firstname":"'+name+'" , "lastName":"'+lname+'" , "email":"'+email+'", "password":"'+passfld+'", "address":"'+addressfld+'" , "usertype":"2" }';
  
- 
+ //alert(text);
 jQuery.ajax({
 url: "http://gotaworkout.com/index.php/get_signup_details2",
 method: "GET",
@@ -338,6 +494,8 @@ method: "GET",
 data: {'loginData': text2},
 
 success: function(loginuser) {
+
+
 var obj = jQuery.parseJSON( loginuser );
 var userID= obj.userID;
 if(userID==null)
@@ -357,10 +515,17 @@ $("#login_error").show();
 
 
 
+/**************search result page  *************/
+ 
+
+ 
+/***********************side bar close*********************/
 
 
 
-})
+
+
+})  /*docuent function*/
 
 
 
