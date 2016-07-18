@@ -218,7 +218,7 @@ function Logout()
 /*facebooklogin function *****************************  */
 function fblogin()
    	{
-
+alert("first function");
 
    facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
@@ -230,6 +230,8 @@ function fblogin()
 
 
 fbLoginSuccess = function (userData) {
+
+alert("second function");
    // alert("userData: " + JSON.stringify(userData));
      var userData  = JSON.stringify(userData);
     var packet = jQuery.parseJSON(JSON.stringify(userData));
@@ -250,6 +252,8 @@ fbLoginSuccess = function (userData) {
 
 
 fbData = function () {
+
+  alert("fbdata function");
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
@@ -264,10 +268,8 @@ fbData = function () {
      
             var cache=localStorage.getItem('token');
 
-   $ionicLoading.show({
-/*        template: '<img  src="img/await.gif" />'*/
-      });
- var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","phone":"9898989897","usertype":"2"}';
+
+ var text = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2+'","password":"","phone":"9898989897","usertype":"2"}';
 
 //var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","usertype":"2"}';
  
@@ -278,10 +280,7 @@ fbData = function () {
         params: {'signUpData': text},
       }).then(function mySucces(response) {
 
- $ionicLoading.hide({
-        template: '<img  src="img/await.gif" />'
-      });
-
+alert("register function");
 
 
 //var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
@@ -291,13 +290,11 @@ fbData = function () {
         var statusvar = $scope.signupDetails.status;
          //alert(statusvar);
          console.log(statusvar);
-var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
+var text = '{ "usertype":"2" , "email":"'+fbEmail2+'" ,"password":""}';
 
  
      
-   $ionicLoading.show({
-/*      template: '<img  src="img/await.gif" />'*/
-    });
+ 
     $scope.loginData.usertype='2';
     var url='/get_login_detailss';
     $http({
