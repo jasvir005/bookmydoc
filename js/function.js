@@ -218,7 +218,7 @@ function Logout()
 /*facebooklogin function *****************************  */
 function fblogin()
    	{
-alert("first function");
+//alert("first function");
 
    facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
@@ -231,7 +231,7 @@ alert("first function");
 
 fbLoginSuccess = function (userData) {
 
-alert("second function");
+//alert("second function");
    // alert("userData: " + JSON.stringify(userData));
      var userData  = JSON.stringify(userData);
     var packet = jQuery.parseJSON(JSON.stringify(userData));
@@ -253,7 +253,7 @@ alert("second function");
 
 fbData = function () {
 
-  alert("fbdata function");
+  //alert("fbdata function");
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
@@ -272,13 +272,14 @@ fbData = function () {
  var text = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2+'","password":"","phone":"9898989897","usertype":"2"}';
 
 //var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","usertype":"2"}';
- 
-      var url='/get_signup_details';
-      $http({
-        url: $scope.baseurl+url, 
-        method: "GET",
-        params: {'signUpData': text},
-      }).then(function mySucces(response) {
+
+jQuery.ajax({
+url: "http://gotaworkout.com/index.php/get_signup_details",
+method: "GET",
+data: {'signUpData': text},
+success: function(alluserss) {
+
+
 
 alert("register function");
 
@@ -286,7 +287,7 @@ alert("register function");
 //var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
 //var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password":""}';
 //alert(text);
-   $scope.signupDetails = response.data; 
+/*   $scope.signupDetails = response.data; 
         var statusvar = $scope.signupDetails.status;
          //alert(statusvar);
          console.log(statusvar);
@@ -332,16 +333,16 @@ var text = '{ "usertype":"2" , "email":"'+fbEmail2+'" ,"password":""}';
             $ionicLoading.hide();
           }, 1000);
         }
-    });
+ }
 
  
  $ionicLoading.hide({
         template: '<img  src="img/await.gif" />'
       });
-       
+       */
 //alert(response);
       
-      }); 
+ }
  
            
         },
