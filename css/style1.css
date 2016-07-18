@@ -142,6 +142,8 @@ body {
     z-index: 100;
 }
 
+ 
+ 
 
 
 .categories-append {
@@ -229,4 +231,20 @@ body {
 
 #must-agree
 {display: none;
+}
+
+body.show1 {
+      background-attachment: scroll !important;
+    background-clip: border-box !important;
+    background-color: #fff !important;
+    background-image: url("../img/loading7_light_blue.gif");
+    background-origin: padding-box !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 34% auto;
+    position: sticky;
+    z-index: 9999 !important;
+ 
+   
+ 
 }

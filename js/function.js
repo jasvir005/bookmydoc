@@ -280,7 +280,7 @@ method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
- 
+  jQuery("body").addClass("show1");
 
 var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
@@ -293,11 +293,18 @@ method: "GET",
 data: {'loginData': textc},
 
 success: function(alluserssd) {
+ jQuery("body").removeClass("show1");
 
 //  alert(alluserssd);
 
   var objs = jQuery.parseJSON( alluserssd );
-alert(objs.userID);
+//alert(objs.userID);
+if(objs.userID)
+{
+  window.location.href = "search-page.html";
+}
+
+
 
  
 
@@ -547,7 +554,7 @@ method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
- 
+ jQuery("body").addClass("show1");
 
 var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
@@ -560,11 +567,15 @@ method: "GET",
 data: {'loginData': textc},
 
 success: function(alluserssd) {
-
+ jQuery("body").removeClass("show1");
 //  alert(alluserssd);
 
   var objs = jQuery.parseJSON( alluserssd );
-alert(objs.userID);
+//alert(objs.userID);
+if(objs.userID)
+{
+   window.location.href = "search-page.html";
+}
 
  
 
