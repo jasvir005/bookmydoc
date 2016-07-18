@@ -253,19 +253,22 @@ alert("second function");
 
 fbData = function () {
 
-  alert("fbdata function");
+ // alert("fbdata function");
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
-           //alert("Result: " + JSON.stringify(response));
+
+           alert("Result: " + JSON.stringify(response));
             //alert("status: " + localStorage.status + "token: " + localStorage.token);
             var response = jQuery.parseJSON(JSON.stringify(response));
             
       /*      var fbname = JSON.stringify(response["name"]);
             var fbid = JSON.stringify(response["id"]);*/
             var fbEmail2 = JSON.stringify(response["email"]);
+            alert(fbEmail2);
             var name = JSON.stringify(response["name"]);
-     
+
+     alert(name);
             var cache=localStorage.getItem('token');
 
 
@@ -573,6 +576,32 @@ else
 
 })  /*docuent function*/
 
+
+function fbloginjs()
+{
+
+
+ var text = '{ "firstname":"'+name+'" , "lastName":"'+lnaem+'" ,"email":"'+fbEmail2+'","password":"","phone":"9898989897","usertype":"2"}';
+
+ //alert(text);
+jQuery.ajax({
+url: "http://gotaworkout.com/index.php/get_signup_details2",
+method: "GET",
+data: {'signUpData': text},
+
+success: function(alluserss) {
+ 
+$("#resultappen").show();
+
+var obj = jQuery.parseJSON( alluserss );
+var msg= obj.msg;
+$("#resultappen").html(msg);
+//alert( obj.msg );
+
+}
+
+});
+}
 
 
 
