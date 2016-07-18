@@ -8,7 +8,7 @@ angular.module('starter.controllers', ["ngStorage"])
       });
 
 
-$("body").addClass("helloadminb");
+
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
@@ -287,6 +287,9 @@ $(".bar22").hide();
    
     }).then(function mySucces(allusers) {
 
+   $ionicLoading.hide({
+/*        template: '<img  src="img/await.gif" />'*/
+      });
 
    $ionicLoading.show({
 /*        template: '<img  src="img/await.gif" />'*/
