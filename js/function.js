@@ -2,6 +2,8 @@ function firstpage()
 {
 
 
+jQuery("#divLoading").addClass('show');
+jQuery("body").addClass('showhome');
 
 		jQuery.ajax({
 		type: "GET",
@@ -10,7 +12,9 @@ function firstpage()
 		//data: formData,
 		success: function(allusers) {
 
+
   jQuery(".discover-content").html('');
+  jQuery("body").removeClass('showhome');
 
 		var numa=1;
 		jQuery.each( allusers, function( key, val ) {
@@ -549,11 +553,11 @@ else
 
 
 
-/**************search result page  *************/
- 
+/**************slider changes  *************/
 
  
-/***********************side bar close*********************/
+/***********************slider changes ********************/
+
 
 
 

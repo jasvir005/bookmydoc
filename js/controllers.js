@@ -25,6 +25,23 @@ $(document).ready(function(){
     };
 
 
+/*******Remove slider 0 value*********/
+
+ $(".slider-wrapper .range-bar .range-min").text("");
+
+  $(".slider-wrapper2 .range-bar .range-min").text("");
+    $(".slider-wrapper2 .range-bar .range-min").text("0m");
+
+
+
+/*******add  slider 250 value*********/
+ $(".slider-wrapper .range-bar .range-max").text("");
+    $(".slider-wrapper2 .range-bar .range-max").text("");
+ $(".slider-wrapper .range-bar .range-max").text("$250");
+    $(".slider-wrapper2 .range-bar .range-max").text("50m");
+
+ 
+
 jQuery('.yoga-wordout').click(function(){
 
   jQuery('.sidebara').hide();

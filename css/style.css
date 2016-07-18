@@ -2329,7 +2329,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
  
 
 #not_found {
-    border: 1px solid #000;
+    border:1px solid #cccccc;
     overflow: auto;
  background: rgba(0, 0, 0, 0) url("../img/not_found.png") no-repeat scroll 0 0 / 100% 100%;
  height:127px;
@@ -2466,4 +2466,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     padding: 16px;
     position: relative;
     z-index: 2;
+}
+.showhome {
+    background: #fff none repeat scroll 0 0;
 }
