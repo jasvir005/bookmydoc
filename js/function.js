@@ -1,6 +1,26 @@
+function searchpagefun()
+{
+var jas=localStorage.getItem('session');
+//alert(jas);
+if(jas==null)
+{
+  window.location.href = "index.html"; 
+}
+
+}
+
 function firstpage()
 {
 
+var jas=localStorage.getItem('session');
+
+ //alert(jas);
+ if(jas !=null)
+ {
+
+   window.location.href = "search-page.html";
+ }
+ 
 
 jQuery("#divLoading").addClass('show');
 jQuery("body").addClass('showhome');
@@ -207,6 +227,7 @@ $(".discover-content"+speciality+" .text-part-left"+val.id+" p").append("");
 
 function Logout()
 {
+  localStorage.removeItem("session");
   window.location.href = "index.html";
 
 }
@@ -507,6 +528,7 @@ $("#login_error").show();
 else
 {
 
+localStorage.setItem('session', userID);
 
   //alert("congrat");
   window.location.href = "search-page.html";
@@ -530,8 +552,6 @@ else
 
  
 /***********************slider changes ********************/
-
-
 
 
 
