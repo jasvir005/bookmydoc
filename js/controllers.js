@@ -3,10 +3,7 @@ angular.module('starter.controllers', ["ngStorage"])
 .controller('AppCtrl', function($ionicHistory,$document,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
 
 
-   $ionicLoading.show({
-/*        template: '<img  src="img/await.gif" />'*/
-      });
-
+ alert('hi');
 
 
 var ua = navigator.userAgent.toLowerCase();
@@ -287,10 +284,7 @@ $(".bar22").hide();
    
     }).then(function mySucces(allusers) {
 
-   $ionicLoading.hide({
-/*        template: '<img  src="img/await.gif" />'*/
-      });
-
+ 
    $ionicLoading.show({
 /*        template: '<img  src="img/await.gif" />'*/
       });
