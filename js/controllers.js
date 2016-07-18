@@ -65,6 +65,74 @@ jQuery('.yoga-wordout').click(function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*****************menu slide******************/
+
+jQuery('#menuslide').click(function(){
+
+ //alert("dfd");
+         
+     if( jQuery('.menu-slide').is(':visible') ) {
+      //alert('close');
+       jQuery('.search-page').css({ 'float': 'none'});
+      
+            jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+            jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
+
+    jQuery('.menu-slide').hide();
+/*          jQuery('.menu-slide').hide();    
+          jQuery('.menu-slide').animate({ 'width': '0px' }, 'slow', function(){
+          jQuery('.menu-slide').show();              
+          });
+          jQuery('.menu-slide').animate({ 'margin-right': '0px' }, 'slow');
+          jQuery('.menu-slide').css({ 'position': 'absolute' });*/
+ 
+  
+ 
+    }
+    else {
+
+     // alert("open");
+         jQuery('.menu-slide').show();
+
+
+
+           jQuery('.menu-slide').animate({ 'width': '250px' }, 'falst');
+            jQuery('.search-page').animate({ 'margin-left': '250px'}, 'falst');
+             jQuery('.search-page').css({ 'float': 'left'});
+         
+/*
+
+        jQuery('.menu-slide').animate({ 'width': '250px' }, 'slow');
+        jQuery('.menu-slide').animate({ 'margin-right': '250px' }, 'slow');
+        jQuery('.menu-slide').css({ 'float': 'right','position':'static' },'slow');*/
+   
+   
+    }
+
+
+ 
+});
+
+
+
+/************menu slide left****************/
+
+
+
+
+
+
+
 $(".clear-lan-sex").click(function(){
 
 //alert('hi');

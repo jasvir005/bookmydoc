@@ -59,11 +59,111 @@ Some notes:
 <title>Hello World</title>
 </head>
      <body>
+  <div class="menu-slide"><ion-content class="bmd-spcl-theme scroll-content2 ionic-scroll"><div class="scroll">
+      <ion-list class="list disable-user-behavior"><div class="list">
+        <div class="head-img-txtflogd">
+  <div class="head_img_pro">
+      <img src="img/icon-transparent.png">
+      </div>
+      <p class="word-outflog">MY TRAINER</p>
 
+  </div>
+<ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+         SEARCH TRAINERS
+        </ion-item>
+
+        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+          MY PROFILE
+        </ion-item>
+        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+          MY FAVORITES
+        </ion-item>
+        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+          MY BOOKINGS
+        </ion-item>
+
+
+          <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+          SETTINGS
+        </ion-item>
+
+        <!-- social icon start-->
+   <!--   <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
+          
+        </ion-item>
+             <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
+          
+        </ion-item>
+             <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
+        
+        </ion-item>
+          </ion-item>
+             <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
+        
+        </ion-item> -->
+         <!-- social icon start-->
+
+
+
+       <!--  <ion-item menu-close href="#/app/bmd-home" class="bmd-spcl-listing">
+          Home
+        </ion-item> -->
+        <!-- <ion-item menu-close ng-click="loginw()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          Login
+        </ion-item> -->
+
+
+ <!-- <ion-item menu-close ng-click="fblogin()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          Facebook login
+        </ion-item> -->
+
+
+
+       <!--  <ion-item menu-close ng-click="signup()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          Sign Up
+        </ion-item> -->
+
+<!-- <a href="signup2.html">
+          Sign Up
+      </a> -->
+        <!-- <ion-item menu-close ng-click="reset()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          Reset Password
+        </ion-item> -->
+   <!--      <ion-item menu-close href="#/app/my_booking" ng-show="userSessionStatus" class="bmd-spcl-listing">
+          My Booking
+        </ion-item> -->
+     <!--    <ion-item menu-close ng-click="my_booking()" ng-show="userSessionStatus" class="bmd-spcl-listing" >
+          MY BOOKINGS
+        </ion-item> -->
+        <ion-item class="bmd-spcl-listing item2" ng-show="userSessionStatus" onclick="Logout()" menu-close="" style="">
+           LOGOUT
+        </ion-item>
+     
+
+        
+  
+        <!-- <ion-item menu-close href="#/app/test"  class="bmd-spcl-listing">
+          My Booking
+        </ion-item> -->
+      </div></ion-list>
+      <div class="social_icons"><a href="https://www.facebook.com/"><img src="img/facebookcircle.png"></a><a href="https://twitter.com/"><img src="img/twittercircle.png"></a><a href="https://www.instagram.com/"><img src="img/instagramcircle.png"></a></div>
+    </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="height: 0px;"></div></div></ion-content></div>
 <div class="search-page">
 
 
 <div class="div-coloor"  id="slow-slide">
+
+<ion-header-bar  id="login-menu" class="bar-stableb bg-color-white bar bar-header" style="">
+    <button id="menuslide"   class="common-button button button-positive button-clear button_text icon ion-navicon txt-color-black" menu-toggle="left"></button>
+         <div class="signup_back_btn" style="display: inline;">
+
+<div class="filter-div1">Search</div> 
+</div>
+   
+  </ion-header-bar>
+
+
+
     <div ng-hide="noSessionStatus"    class="filter-page" style="margin-top: -4px;"> 
       <div ng-init="get_appointments()" class="bmd-results-wrapper">
         <div class="filter-page-contant" style="margin-right: 0px;">
@@ -237,7 +337,7 @@ Some notes:
       </div>
     </div> 
   </div>
-  <div class="discover-content"><div id="not_found"></div></div>
+  <div class="discover-content"> <div id="divLoading"></div> </div>
    </div>
 
 </div>

@@ -186,6 +186,31 @@ $(".discover-content"+speciality+" .text-part-left"+val.id+" p").append("");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/**************logout function*****************/
+
+
+function Logout()
+{
+  window.location.href = "index.html";
+
+}
+
+/******************logout function****************************/
+
+
+
 /*facebooklogin function *****************************  */
 function fblogin()
    	{
@@ -287,7 +312,7 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
           $scope.noSessionStatus = false;
           $timeout(function() {
 
-            //alert('hello');
+            alert('hello');
 
             $ionicLoading.hide();
             $scope.closeLogin();
@@ -501,6 +526,15 @@ var userID= obj.userID;
 if(userID==null)
 {
 $("#login_error").show();
+}
+else
+{
+
+
+  //alert("congrat");
+  window.location.href = "search-page.html";
+
+
 }
 
 }
