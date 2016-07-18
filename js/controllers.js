@@ -2,6 +2,13 @@ angular.module('starter.controllers', ["ngStorage"])
 
 .controller('AppCtrl', function($ionicHistory,$document,$state,$scope, $ionicModal, $timeout,$http, $sessionStorage,$window,searchdate,$rootScope,$ionicLoading) {
 
+
+   $ionicLoading.show({
+/*        template: '<img  src="img/await.gif" />'*/
+      });
+
+
+$("body").addClass("helloadminb");
 var ua = navigator.userAgent.toLowerCase();
 var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
