@@ -265,10 +265,10 @@ fbData = function () {
       /*      var fbname = JSON.stringify(response["name"]);
             var fbid = JSON.stringify(response["id"]);*/
             var fbEmail2 = JSON.stringify(response["email"]);
-            alert(fbEmail2);
+            //alert(fbEmail2);
             var name = JSON.stringify(response["name"]);
 
-     alert(name);
+   
             var cache=localStorage.getItem('token');
 
 
@@ -284,44 +284,18 @@ method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
-
- /*     var url='/get_signup_details';
-      $http({
-        url: $scope.baseurl+url, 
-        method: "GET",
-        params: {'signUpData': text},
-      }).then(function mySucces(response) {*/
-
-alert("register function");
-
-
-//var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
-//var text = '{ "usertype":"2" , "email":"jasvir.softweaver@gmail.com" ,"password":""}';
-//alert(text);
-/*   $scope.signupDetails = response.data; 
-        var statusvar = $scope.signupDetails.status;
-         //alert(statusvar);
-         console.log(statusvar);
-var text = '{ "usertype":"2" , "email":"'+fbEmail2+'" ,"password":""}';*/
-
  
 
+alert(alluserss);
+var obj = jQuery.parseJSON( alluserss );
+alert(obj.status);
+
+
+ /*
 
      
-/* 
-    $scope.loginData.usertype='2';
-    var url='/get_login_detailss';
-    $http({
-      url: $scope.baseurl+url, 
-      method: "GET",
-      params: {'loginData': text},
-    }).then(function mySucces(response) {
-
-      alert('login sucess function');
-        $scope.loginDetails = response.data; 
-        // $sessionStorage.userSession = response.data;
-        // console.log($sessionStorage.SessionMessage);
-        if($scope.loginDetails.error.status===false){
+ 
+        if(obj.status===false){
           $scope.userSession = response.data;
           $scope.userSessionStatus = true;
           $scope.AppointmentDetails.details = true;
@@ -580,8 +554,10 @@ else
 function fbloginjs()
 {
 
+name="sdfsdd";
+fbEmail2="jasvirdd.sof@gmail.com";
 
- var text = '{ "firstname":"'+name+'" , "lastName":"'+lnaem+'" ,"email":"'+fbEmail2+'","password":"","phone":"9898989897","usertype":"2"}';
+ var text = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2+'","password":"","phone":"9898989897","usertype":"2"}';
 
  //alert(text);
 jQuery.ajax({
@@ -591,12 +567,39 @@ data: {'signUpData': text},
 
 success: function(alluserss) {
  
-$("#resultappen").show();
 
 var obj = jQuery.parseJSON( alluserss );
-var msg= obj.msg;
-$("#resultappen").html(msg);
-//alert( obj.msg );
+//alert(obj.status);
+
+
+var textc = '{ "usertype":"2" , "email":"'+fbEmail2+'" ,"password":""}';
+jQuery.ajax({
+url: "http://gotaworkout.com/index.php/get_login_detailsfblogin",
+method: "GET",
+data: {'loginData': textc},
+
+success: function(alluserssd) {
+
+//  alert(alluserssd);
+
+  var objs = jQuery.parseJSON( alluserssd );
+alert(objs.userID);
+
+ 
+
+}
+
+});
+
+
+
+
+
+
+
+
+
+
 
 }
 
