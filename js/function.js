@@ -305,7 +305,8 @@ var text = '{ "usertype":"2" , "email":'+fbEmail2+' ,"password":""}';
       method: "GET",
       params: {'loginData': text},
     }).then(function mySucces(response) {
-      //alert('login sucess function');
+
+      alert('login sucess function');
         $scope.loginDetails = response.data; 
         // $sessionStorage.userSession = response.data;
         // console.log($sessionStorage.SessionMessage);
