@@ -98,43 +98,38 @@ jQuery('#menuslide').click(function(){
 
  //alert("dfd");
          
-     if( jQuery('.menu-slide').is(':visible') ) {
-      //alert('close');
-       jQuery('.search-page').css({ 'float': 'none'});
-      
-            jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
-            jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
+     if( jQuery('.menu-slide').is(':visible') ) 
 
-    jQuery('.menu-slide').hide();
-/*          jQuery('.menu-slide').hide();    
-          jQuery('.menu-slide').animate({ 'width': '0px' }, 'slow', function(){
-          jQuery('.menu-slide').show();              
-          });
-          jQuery('.menu-slide').animate({ 'margin-right': '0px' }, 'slow');
-          jQuery('.menu-slide').css({ 'position': 'absolute' });*/
+{
+//alert('close');
+jQuery('.search-page').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.menu-slide').hide();
+jQuery('.search-page').css({ 'position': 'relative'});
+jQuery('.hide-open-time').css({ 'width': 'auto'});
+}
+else {
+
+// alert("open");
+jQuery('.menu-slide').show();
+
+
+
+jQuery('.menu-slide').animate({ 'width': '250px' }, 'falst');
+jQuery('.search-page').animate({ 'margin-left': '250px'}, 'falst');
+jQuery('.search-page').css({ 'float': 'left'});
+jQuery('.search-page').css({ 'position': 'fixed'});
+
+jQuery('.hide-open-time').css({ 'width': '113%'});
  
-  
+
+
+
  
-    }
-    else {
-
-     // alert("open");
-         jQuery('.menu-slide').show();
 
 
-
-           jQuery('.menu-slide').animate({ 'width': '250px' }, 'falst');
-            jQuery('.search-page').animate({ 'margin-left': '250px'}, 'falst');
-             jQuery('.search-page').css({ 'float': 'left'});
-         
-/*
-
-        jQuery('.menu-slide').animate({ 'width': '250px' }, 'slow');
-        jQuery('.menu-slide').animate({ 'margin-right': '250px' }, 'slow');
-        jQuery('.menu-slide').css({ 'float': 'right','position':'static' },'slow');*/
-   
-   
-    }
+}
 
 
  
