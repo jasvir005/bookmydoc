@@ -231,7 +231,7 @@ function fblogin()
 
 fbLoginSuccess = function (userData) {
 
-alert("second function");
+//alert("second function");
    // alert("userData: " + JSON.stringify(userData));
      var userData  = JSON.stringify(userData);
     var packet = jQuery.parseJSON(JSON.stringify(userData));
@@ -258,7 +258,7 @@ fbData = function () {
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
 
-           alert("Result: " + JSON.stringify(response));
+          // alert("Result: " + JSON.stringify(response));
             //alert("status: " + localStorage.status + "token: " + localStorage.token);
             var response = jQuery.parseJSON(JSON.stringify(response));
             
@@ -271,64 +271,45 @@ fbData = function () {
    
             var cache=localStorage.getItem('token');
 
-
  var text = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2+'","password":"","phone":"9898989897","usertype":"2"}';
 
-//var text = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2+',"password":"","usertype":"2"}';
- 
-
-
+ //alert(text);
 jQuery.ajax({
-url: "http://gotaworkout.com/index.php/get_signup_details",
+url: "http://gotaworkout.com/index.php/get_signup_details2",
 method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
  
 
-alert(alluserss);
 var obj = jQuery.parseJSON( alluserss );
-alert(obj.status);
+//alert(obj.status);
 
 
- /*
+var textc = '{ "usertype":"2" , "email":"'+fbEmail2+'" ,"password":""}';
+jQuery.ajax({
+url: "http://gotaworkout.com/index.php/get_login_detailsfblogin",
+method: "GET",
+data: {'loginData': textc},
 
-     
+success: function(alluserssd) {
+
+//  alert(alluserssd);
+
+  var objs = jQuery.parseJSON( alluserssd );
+alert(objs.userID);
+
  
-        if(obj.status===false){
-          $scope.userSession = response.data;
-          $scope.userSessionStatus = true;
-          $scope.AppointmentDetails.details = true;
-          $scope.noSessionStatus = false;
-          $timeout(function() {
 
-            alert('hello');
+}
 
-            $ionicLoading.hide();
-            $scope.closeLogin();
-          }, 1000);
+});
 
 
-             $timeout(function() {
-            $scope.closelogin_two();
-          }, 1001);
-          
-        }else{
-          $scope.loginError = $scope.loginDetails.error.status;
-          $scope.loginErrorMsg = $scope.loginDetails.error.msg;
-          $timeout(function() {
-            $ionicLoading.hide();
-          }, 1000);
-        }
-    });
-*/
  
- 
-       
-//alert(response);
-      
-   }
- });
+}
+
+});
  
            
         },
