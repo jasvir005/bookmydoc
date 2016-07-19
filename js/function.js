@@ -22,7 +22,7 @@ if(jas==null)
 
 /**************Detail page function****************/
 
-function abd(id)
+/*function abd(id)
 {
 
 //alert(id);
@@ -57,7 +57,7 @@ jQuery("body").addClass('showhome');
 }); // ajax hit  
 
 
-} //function detail page
+} *///function detail page
 
 /************************ Detail pager function ****************************/
 
