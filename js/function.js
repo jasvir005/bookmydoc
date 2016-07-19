@@ -1,3 +1,7 @@
+
+document.ontouchmove = function(event){
+    event.preventDefault();
+}
 function searchpagefun()
 {
 var jas=localStorage.getItem('session');
