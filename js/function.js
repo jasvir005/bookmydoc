@@ -1,4 +1,4 @@
-
+var baseurl="http://gotaworkout.com/index.php/";
 
 function searchpagefun()
 {
@@ -26,7 +26,7 @@ function abd(id)
  
 jQuery.ajax({
 type: "GET",
-url: "http://gotaworkout.com/index.php/get_trainder_where?userid="+id,
+url: ""+baseurl+"get_trainder_where?userid="+id,
 dataType:'json',
  
 success: function(simgpleusrdetail) {
@@ -73,7 +73,7 @@ jQuery("body").addClass('showhome');
 
 		jQuery.ajax({
 		type: "GET",
-		url: "http://gotaworkout.com/index.php/get_allusers",
+		url: ""+baseurl+"get_allusers",
 		dataType:'json',
 		//data: formData,
 		success: function(allusers) {
@@ -142,7 +142,7 @@ var image="<img src="+src+val.userimage+">";
 
 jQuery.ajax({
 type: "GET",
-url: "http://gotaworkout.com/index.php/speciality1",
+url: ""+baseurl+"speciality1",
 dataType:'json',
 data: formData,
 success: function(alluserss) {
@@ -342,7 +342,7 @@ fbData = function () {
 
  //alert(text);
 jQuery.ajax({
-url: "http://gotaworkout.com/index.php/get_signup_details2",
+url: ""+baseurl+"get_signup_details2",
 method: "GET",
 data: {'signUpData': text},
 
@@ -355,7 +355,7 @@ var obj = jQuery.parseJSON( alluserss );
 
 var textc = '{ "usertype":"2" , "email":"'+fbEmail2+'" ,"password":""}';
 jQuery.ajax({
-url: "http://gotaworkout.com/index.php/get_login_detailsfblogin",
+url: ""+baseurl+"get_login_detailsfblogin",
 method: "GET",
 data: {'loginData': textc},
 
@@ -499,7 +499,7 @@ var text = '{ "firstname":"'+name+'" , "lastName":"'+lname+'" , "email":"'+email
  
  //alert(text);
 jQuery.ajax({
-url: "http://gotaworkout.com/index.php/get_signup_details2",
+url: ""+baseurl+"get_signup_details2",
 method: "GET",
 data: {'signUpData': text},
 
@@ -558,7 +558,7 @@ var text2 = '{ "email":"'+emailId+'" , "password":"'+passNme+'" ,"usertype":"2"}
  
  
 jQuery.ajax({
-url: "http://gotaworkout.com/index.php/get_login_details",
+url: ""+baseurl+"get_login_details",
 method: "GET",
 data: {'loginData': text2},
 
@@ -600,6 +600,7 @@ localStorage.setItem('session', userID);
 /***********************slider changes ********************/
 
 
+ // alert(baseurl);
 
 
 })  /*docuent function*/
@@ -615,7 +616,7 @@ fbEmail2="jasvirdd.sof@gmail.com";
 
  //alert(text);
 jQuery.ajax({
-url: "http://gotaworkout.com/index.php/get_signup_details2",
+url: ""+baseurl+"get_signup_details2",
 method: "GET",
 data: {'signUpData': text},
 
@@ -628,7 +629,7 @@ var obj = jQuery.parseJSON( alluserss );
 
 var textc = '{ "usertype":"2" , "email":"'+fbEmail2+'" ,"password":""}';
 jQuery.ajax({
-url: "http://gotaworkout.com/index.php/get_login_detailsfblogin",
+url: ""+baseurl+"get_login_detailsfblogin",
 method: "GET",
 data: {'loginData': textc},
 
