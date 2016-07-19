@@ -20,6 +20,10 @@
 
 }
 
+html {
+    background: #003f6f none repeat scroll 0 0;
+}
+
 
 .mR25{margin-right:25px;}
 .border-none{border:none !important;}
@@ -2193,7 +2197,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   text-align: right;
 }
 .middel-part {
-    background: #000 none repeat scroll 0 0;
+    background: #797979 none repeat scroll 0 0;
     float: left;
     margin-top: 80px;
     opacity: 0.5;
@@ -2466,6 +2470,14 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     padding: 16px;
     position: relative;
  
+}
+
+
+
+/******************detail page css*********************/
+
+.search-detail-page {
+    display: none;
 }
 
 

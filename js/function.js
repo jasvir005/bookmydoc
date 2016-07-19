@@ -9,6 +9,50 @@ if(jas==null)
 
 }
 
+
+
+/**************Detail page function****************/
+
+function abd(id)
+{
+
+//alert(id);
+
+ 
+
+
+ 
+jQuery.ajax({
+type: "GET",
+url: "http://gotaworkout.com/index.php/get_trainder_where?userid="+id,
+dataType:'json',
+ 
+success: function(simgpleusrdetail) {
+ 
+ $(".first-page-all-trainer").hide();
+ jQuery("#divLoading").addClass('show');
+
+ jQuery(".search-detail-page").show();
+
+jQuery("body").addClass('showhome');
+
+
+  var jsonvar=JSON.stringify(simgpleusrdetail); 
+  alert(jsonvar);
+
+
+
+  }
+
+
+}); // ajax hit  
+
+
+} //function detail page
+
+/************************ Detail pager function ****************************/
+
+
 function firstpage()
 {
 
