@@ -250,14 +250,4 @@ body.show1 {
  
 }
 
-
-html{
-margin:0;
-padding:0;
-overflow: hidden;
-}
-body{
-    overflow: auto !important;
-        -webkit-overflow-scrolling: touch !important;
-
-}
+ 
