@@ -3,6 +3,9 @@
 
 var baseurl="http://gotaworkout.com/index.php/";
 
+ 
+
+
 
 
 
@@ -22,7 +25,7 @@ if(jas==null)
 
 /**************Detail page function****************/
 
-/*function abd(id)
+ function abd(id)
 {
 
 //alert(id);
@@ -37,17 +40,149 @@ url: ""+baseurl+"get_trainder_where?userid="+id,
 dataType:'json',
  
 success: function(simgpleusrdetail) {
- 
+
+$(".detail-result-page").html("");
+
  $(".first-page-all-trainer").hide();
- jQuery("#divLoading").addClass('show');
+ /*jQuery("#divLoading").addClass('show');*/
 
  jQuery(".search-detail-page").show();
 
 jQuery("body").addClass('showhome');
 
 
-  var jsonvar=JSON.stringify(simgpleusrdetail); 
-  alert(jsonvar);
+
+  jQuery.each( simgpleusrdetail, function( key, val ) {
+ var jsonvar=JSON.stringify(val); 
+var obj = jQuery.parseJSON(jsonvar);
+
+
+
+
+var str = obj.firstname;
+str = str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+    return letter.toUpperCase();
+});
+
+ var image="";
+if(obj.userimage==null)
+{
+  image="no_imageabc.jpg"; 
+}
+else
+  {
+image=obj.userimage;
+  }
+
+data="<div class='detailphe-img'><img src='http://gotaworkout.com/service/public/z_uploads/doctor/"+image+"'></div><div class='detail-pge'><h1>"+str+"</h1><div class='cateratingab' id='cateratingab"+obj.speciality+"'></div></div><div class='detail-pge-bottom'><div class='bottom-header-part'><div id='commonid' class='left-prt addlassbar'><p onclick='functiona(0)'>About</p></div><div id='commonid'  class='right-prt'><p onclick='functiona(1)'>Reviews</p></div></div><div class='slide-div'><div class='page-decription'><p>"+obj.ProfessionalMemberships+"</p></div><div class='page-detail-rate'><div class='right-rate'><p>Rate</p></div><div class='right-rate-price'><p>$"+obj.payrate+" / Hours </p></div></div><div class='page-detail-categries'><div class='left-cate'><p>Workouts</p></div><div class='right-cate'><p></p></div></div><div class='page-certification'><div class='pagecerleft'><p>Certification</p></div><div class='pagecerright'><p>CTRP</p></div></div></div><div class='slide2'><p>This is review page </p></div><div class='head-img-txtflog' id='booknow-btn'><div class='bmd-main-btn3flog' id='booknow'> BOOK NOW</div></div></div>";
+
+ 
+
+/***********second ajax hit********/
+
+
+jQuery.ajax({
+type: "GET",
+url: ""+baseurl+"singleuserdetail?speciality1="+obj.speciality+"&userid="+obj.id+"",
+dataType:'json',
+ 
+success: function(simgpleusrdetail) {
+var starimage="http://gotaworkout.com/service/public/z_uploads/doctor/sameimg.png";
+var fillstar1="http://gotaworkout.com/service/public/z_uploads/doctor/onestar.png";
+var fillstar2="http://gotaworkout.com/service/public/z_uploads/doctor/secondstart.png";
+var fillstar3="http://gotaworkout.com/service/public/z_uploads/doctor/third_start.png";
+var fillstar4="http://gotaworkout.com/service/public/z_uploads/doctor/fourth_star.png";
+var fillstar5="http://gotaworkout.com/service/public/z_uploads/doctor/fifth_star.png";
+var emptystar="http://gotaworkout.com/service/public/z_uploads/doctor/empty_star.png";
+
+var id=simgpleusrdetail.id
+var rating=simgpleusrdetail.rating
+var namecat=simgpleusrdetail.name
+
+
+
+
+$(".page-detail-categries .right-cate p").append(namecat);
+
+
+if(rating ==0)
+{
+//alert('sssssssss');
+var imageempty ='<img src='+emptystar+'>';id
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">0</div>');
+ 
+
+
+}else
+{
+  if(rating==1)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar1+'>';
+ 
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+
+ 
+}
+if(rating==2)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar2+'>';
+ 
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+}
+
+if(rating==3)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar3+'>';
+ 
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+}
+
+if(rating==4)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar4+'>';
+ 
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+} 
+if(rating==5)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar5+'>';
+ 
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+}
+}
+//var datasa="";
+  //var objs = jQuery.parseJSON(simgpleusrdetail);
+
+//alert(simgpleusrdetail.id);
+
+ //datasa ="<div class='ratingdic'>"+simgpleusrdetail.rating+"<div>";
+
+
+
+ }
+  });
+
+
+//alert(simgpleusrdetail.rating);
+
+
+
+
+    });
+ 
+$(".detail-result-page").append(data);
+
+
+
+
+
+
+/**********second ajax hit**********/
 
 
 
@@ -57,10 +192,33 @@ jQuery("body").addClass('showhome');
 }); // ajax hit  
 
 
-} *///function detail page
+} //function detail page
 
 /************************ Detail pager function ****************************/
 
+
+function functiona(id)
+{
+
+ 
+ if(id==0)
+ {
+$(".slide-div").show();
+ $(".slide2").hide();
+  $(".right-prt").removeClass('addlassbar');
+$(".left-prt").addClass('addlassbar');
+
+ }
+  if(id==1)
+ {
+  $(".slide-div").hide();
+  $(".slide2").show();
+  $(".left-prt").removeClass('addlassbar');
+$(".right-prt").addClass('addlassbar');
+ }
+
+
+}
 
 function firstpage()
 {
@@ -422,6 +580,8 @@ if(objs.userID)
 $(document).ready(function()
 {
 
+
+
 $(".page_filter").click(function()
 {
 $(".first-page-all-trainer").hide();
@@ -601,10 +761,20 @@ localStorage.setItem('session', userID);
 
 
 
-/**************slider changes  *************/
+/************* detail page change on click  *************/
+
+
+ $(".login-backbtn2").click(function(){
+
+ // alert('d');
+  $(".search-detail-page").hide();
+    $(".first-page-all-trainer").show();
+
+
+}); 
 
  
-/***********************slider changes ********************/
+/*********************** change on click ********************/
 
 
  // alert(baseurl);

@@ -32,12 +32,29 @@ body {
 .head-text
 {
    float: left;
-    margin-left: 56px;
+    margin-left: 67px;
     margin-top: 10px;
     width: 60%;
 }
 
+.head-text2
+{
+float: left;
+margin-top: 15px;
+width: 77%;
+}
+
 .head-text > h1 {
+    color: #fff;
+    font-family: nexa_bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0;
+      text-align: center;
+}
+
+
+.head-text2 > h1 {
     color: #fff;
     font-family: nexa_bold;
     font-size: 18px;
@@ -166,6 +183,17 @@ body {
 .login-backbtn {
    
     margin-top: 10px;
+}  
+
+.login-backbtn2 img {
+    margin-left: 10px;
+    transform: rotate(180deg);
+   width: 22px;
+}
+
+.login-backbtn2 {
+   float: left;
+    margin-top: 10px;
 }   
 
 
@@ -248,4 +276,252 @@ body.show1 {
  
    
  
+}
+
+.detailphe-img > img {
+    width: 100%;
+    float: left;
+}
+
+ 
+ .left-prt {
+    float: left;
+    text-align: center;
+    width: 50%;
+    color:#fff;
+    padding-bottom: 5px;
+       font-size: 20px;
+        border-bottom: 1px solid #224765;
+}
+.right-prt {
+    float: right;
+    text-align: center;
+    width: 50%;
+    color:#fff;
+    padding-bottom: 5px;
+       font-size: 20px;
+        border-bottom: 1px solid #224765;
+}
+
+.bottom-header-part {
+     padding-top: 8px;
+    overflow: auto;
+}
+
+.detail-pge-bottom {
+    clear: both;
+}
+.page-decription {
+    border-bottom: 1px solid #224765;
+    color: #fff;
+    margin-top: 5px;
+    padding: 8px;
+}
+
+.right-rate {
+    float: left;
+    width: 50%;
+}
+
+
+.right-rate-price {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.left-cate {
+  float: left;
+    width: 50%;
+}
+
+
+.right-cate
+{
+     float: right;
+    width: 50%;
+    text-align: right;   
+}
+
+
+.pagecerleft
+{
+
+    float: left;
+    width: 50%;  
+}
+
+.pagecerright
+{
+       float: right;
+    width: 50%;
+    text-align: right;   
+
+}
+
+
+
+.pagecerleft > p {
+    color: #fff;
+    font-size: 20px;
+}
+.pagecerright > p {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-detail-rate {
+   border-bottom: 1px solid #224765;
+    margin-top: 5px;
+    overflow: auto;
+  padding: 5px 13px;
+}
+
+.page-detail-categries
+{
+    border-bottom: 1px solid #224765;
+    margin-top: 5px;
+    overflow: auto;
+    padding: 5px 13px;
+}
+
+.page-certification
+{
+     border-bottom: 1px solid #224765;
+    margin-top: 5px;
+    overflow: auto;
+    padding: 5px 13px;
+
+}
+
+
+
+.right-rate > p {
+    color: #fff;
+    font-size: 20px;
+}
+.right-rate-price> p {
+    color: #fff;
+    font-size: 17px;
+}
+
+
+.right-cate > p 
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+.left-cate > p
+{
+  color: #fff;
+    font-size: 20px;
+
+}
+
+.detail-pge > h1 {
+color: #fff;
+font-family: helvetica;
+font-size: 23px;
+font-weight: normal;
+margin: 0;
+float: left;
+}
+
+
+.detail-pge {
+    background: #000 none repeat scroll 0 0;
+    margin-top: 134px;
+    opacity: 0.36;
+    position: absolute;
+    width: 100%;
+    padding:0px 15px;
+}
+
+
+#booknow {
+    background: #fe9a00 none repeat scroll 0 0;
+    border: 1px solid #fe9a00;
+    color: #fff;
+    font-family: nexa_bold;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.head-img-txtflog {
+    margin-top: 20px;
+  
+}
+
+
+ 
+
+
+.right-prt.addlassbar {
+    border-bottom: 1px solid #FE9A00;
+}
+
+
+.left-prt.addlassbar {
+    border-bottom: 1px solid #FE9A00;
+}
+.slide2{
+    display: none;
+}
+
+
+.cateratingab {
+ float: right;
+    margin-right: 0px;
+    overflow: auto;
+    width: 32%;
+}
+
+.cateratingab img {
+     float: left;
+    margin-right: 9px;
+    margin-top: 4px;
+    width: 81%;
+}
+
+.page-decription > p {
+    color: #efefef;
+    font-family: helvetica;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+.titalrating {
+    color: #fff;
+  
+}
+
+.categoriesdetl-page p {
+    margin: 0;
+}
+.categoriesdetl-page {
+ 
+    color: #fff;
 }
