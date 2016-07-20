@@ -444,10 +444,11 @@ float: left;
 }
 
 
+   /* background-image:url("../img/transparency.png");*/
 .detail-pge {
-    background: #000 none repeat scroll 0 0;
+ background-image:url("../img/transparency.png");
     margin-top: 134px;
-    opacity: 0.36;
+ 
     position: absolute;
     width: 100%;
     padding:0px 15px;
@@ -455,8 +456,9 @@ float: left;
 
 
 #booknow {
-    background: #fe9a00 none repeat scroll 0 0;
+   background: #fe9a00 none repeat scroll 0 0;
     border: 1px solid #fe9a00;
+    bottom: 0;
     color: #fff;
     font-family: nexa_bold;
     font-size: 16px;
@@ -464,6 +466,7 @@ float: left;
     letter-spacing: 1px;
     margin: 0 auto;
     padding: 15px;
+    position: absolute;
     text-align: center;
     width: 100%;
 }

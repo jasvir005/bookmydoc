@@ -28,6 +28,10 @@ if(jas==null)
  function abd(id)
 {
 
+jQuery("#divLoading").addClass('show');
+jQuery("body").addClass('showhome');
+
+
 //alert(id);
 
  
@@ -41,6 +45,8 @@ dataType:'json',
  
 success: function(simgpleusrdetail) {
 
+jQuery("body").removeClass('showhome');
+jQuery("#divLoading").removeClass('show');
 $(".detail-result-page").html("");
 
  $(".first-page-all-trainer").hide();

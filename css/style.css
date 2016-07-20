@@ -2197,10 +2197,12 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   text-align: right;
 }
 .middel-part {
-    background: #797979 none repeat scroll 0 0;
+ 
+
+    background-image:url("../img/transparency.png");
     float: left;
    margin-top: 91px;
-    opacity: 0.5;
+     
     width: 100%;
 }
 .left-part-middel{
