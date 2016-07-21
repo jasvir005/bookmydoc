@@ -80,7 +80,7 @@ else
 image=obj.userimage;
   }
 
-data="<div class='detailphe-img'><img src='http://gotaworkout.com/service/public/z_uploads/doctor/"+image+"'></div><div class='detail-pge'><h1>"+str+"</h1><div class='cateratingab' id='cateratingab"+obj.speciality+"'></div></div><div class='detail-pge-bottom'><div class='bottom-header-part'><div id='commonid' class='left-prt addlassbar'><p onclick='functiona(0)'>About</p></div><div id='commonid'  class='right-prt'><p onclick='functiona(1)'>Reviews</p></div></div><div class='slide-div'><div class='page-decription'><p>"+obj.ProfessionalMemberships+"</p></div><div class='page-detail-rate'><div class='right-rate'><p>Rate</p></div><div class='right-rate-price'><p>$"+obj.payrate+" / Hours </p></div></div><div class='page-detail-categries'><div class='left-cate'><p>Workouts</p></div><div class='right-cate'><p></p></div></div><div class='page-certification'><div class='pagecerleft'><p>Certification</p></div><div class='pagecerright'><p>CTRP</p></div></div></div><div class='slide2'><p>This is review page </p></div><div class='bmd-main-btn3flog2' id='booknow-btn'><div class='bmd-main-btn3flog' id='booknow'> BOOK NOW</div></div></div>";
+data="<div class='detailphe-img'><img src='http://gotaworkout.com/service/public/z_uploads/doctor/"+image+"'></div><div class='detail-pge'><h1>"+str+"</h1><div class='cateratingab' id='cateratingab"+obj.speciality+"'></div></div><div class='detail-pge-bottom'><div class='bottom-header-part'><div id='commonid' class='left-prt addlassbar'><p onclick='functiona(0)'>About</p></div><div id='commonid'  class='right-prt'><p onclick='functiona(1)'>Reviews</p></div></div><div class='slide-div'><div class='page-decription'><p>"+obj.ProfessionalMemberships+"</p></div><div class='page-detail-rate'><div class='right-rate'><p>Rate</p></div><div class='right-rate-price'><p>$"+obj.payrate+" / Hours </p></div></div><div class='page-detail-categries'><div class='left-cate'><p>Workouts</p></div><div class='right-cate'><p></p></div></div><div class='page-certification'><div class='pagecerleft'><p>Certification</p></div><div class='pagecerright'><p>"+obj.BoardCertifications+"</p></div></div></div><div class='slide2'><p></p></div><div class='bmd-main-btn3flog2' id='booknow-btn'><div class='bmd-main-btn3flog' id='booknow'> BOOK NOW</div></div></div>";
 
  
 
@@ -105,6 +105,8 @@ var id=simgpleusrdetail.id
 var rating=simgpleusrdetail.rating
 var namecat=simgpleusrdetail.name
 
+var totalrating=simgpleusrdetail.totalrating
+
 
 
 
@@ -126,7 +128,7 @@ $("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">
  //alert('*******');
 var imageempty ='<img src='+fillstar1+'>';
  
-$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+totalrating+'</div>');
 
  
 }
@@ -135,7 +137,7 @@ if(rating==2)
  //alert('*******');
 var imageempty ='<img src='+fillstar2+'>';
  
-$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+totalrating+'</div>');
 }
 
 if(rating==3)
@@ -143,7 +145,7 @@ if(rating==3)
  //alert('*******');
 var imageempty ='<img src='+fillstar3+'>';
  
-$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+totalrating+'</div>');
 }
 
 if(rating==4)
@@ -151,14 +153,14 @@ if(rating==4)
  //alert('*******');
 var imageempty ='<img src='+fillstar4+'>';
  
-$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+totalrating+'</div>');
 } 
 if(rating==5)
 {
  //alert('*******');
 var imageempty ='<img src='+fillstar5+'>';
  
-$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+rating+'</div>');
+$("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">'+totalrating+'</div>');
 }
 }
 //var datasa="";
@@ -176,6 +178,92 @@ $("#cateratingab"+id+"").append(imageempty+'<div class="titalrating" id="round">
 
 //alert(simgpleusrdetail.rating);
 
+
+
+jQuery.ajax({
+type: "GET",
+url: ""+baseurl+"reviewrating?userid="+obj.id+"",
+dataType:'json',
+ 
+success: function(simgpleusrdetailreview) {
+
+var starimage="http://gotaworkout.com/service/public/z_uploads/doctor/sameimg.png";
+var fillstar1="http://gotaworkout.com/service/public/z_uploads/doctor/onestar.png";
+var fillstar2="http://gotaworkout.com/service/public/z_uploads/doctor/secondstart.png";
+var fillstar3="http://gotaworkout.com/service/public/z_uploads/doctor/third_start.png";
+var fillstar4="http://gotaworkout.com/service/public/z_uploads/doctor/fourth_star.png";
+var fillstar5="http://gotaworkout.com/service/public/z_uploads/doctor/fifth_star.png";
+var emptystar="http://gotaworkout.com/service/public/z_uploads/doctor/empty_star.png";
+ 
+    jQuery.each( simgpleusrdetailreview, function( key, val ) {
+
+     var ratingre= val.count;
+var imageempty=0;
+      if(ratingre ==0)
+{
+//alert('sssssssss');
+  imageempty ='<img src='+emptystar+'>';id
+
+
+}else
+{
+  if(ratingre==1)
+{
+ //alert('*******');
+ imageempty ='<img src='+fillstar1+'>';
+
+
+}
+if(ratingre==2)
+{
+ //alert('*******');
+ imageempty ='<img src='+fillstar2+'>';
+
+}
+
+if(ratingre==3)
+{
+ //alert('*******');
+ imageempty ='<img src='+fillstar3+'>';
+
+}
+
+if(ratingre==4)
+{
+ //alert('*******');
+  imageempty ='<img src='+fillstar4+'>';
+
+} 
+if(ratingre==5)
+{
+ //alert('*******');
+ imageempty ='<img src='+fillstar5+'>';
+ 
+
+}
+}
+
+var str = val.firstname;
+str = str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
+    return letter.toUpperCase();
+});
+
+
+//alert(val.firstname);
+
+data ="<div class='reviewpagediv'><div class='rating-review'>"+imageempty+"</div><div class='rated-namediv'><p>"+str+"</p></div><div class='decriptiondiv'><p>"+val.message+"</p></div></div>";
+
+
+    $(".slide2").append(data);
+
+ 
+    }); // foreach bracket
+
+
+
+
+}  //success  bracket
+});   // ajax hit 
 
 
 
@@ -197,6 +285,10 @@ $(".detail-result-page").append(data);
 
 }); // ajax hit  
 
+
+
+
+ 
 
 } //function detail page
 
@@ -335,9 +427,12 @@ var useridfor=alluserss.useridfor;
 var s=1;
 //var ratinga=0;
 var ratinga = alluserss.rating;
+
+var totalrating = alluserss.totalrating;
 ///console.log("************");
  //console.log(alluserss);
 //alert(ratinga);
+
 
 if(ratinga ==0)
 {
@@ -354,14 +449,14 @@ $("#round"+useridfor+"").append("0");
  //alert('*******');
 var imageempty ='<img src='+fillstar1+'>';
 $("#rating"+useridfor+"").append(imageempty);
-$("#round"+useridfor+"").append(ratinga);
+$("#round"+useridfor+"").append(totalrating);
 }
 if(ratinga==2)
 {
  //alert('*******');
 var imageempty ='<img src='+fillstar2+'>';
 $("#rating"+useridfor+"").append(imageempty);
-$("#round"+useridfor+"").append(ratinga);
+$("#round"+useridfor+"").append(totalrating);
 }
 
 if(ratinga==3)
@@ -369,7 +464,7 @@ if(ratinga==3)
  //alert('*******');
 var imageempty ='<img src='+fillstar3+'>';
 $("#rating"+useridfor+"").append(imageempty);
-$("#round"+useridfor+"").append(ratinga);
+$("#round"+useridfor+"").append(totalrating);
 }ratinga
 
 if(ratinga==4)
@@ -377,14 +472,14 @@ if(ratinga==4)
  //alert('*******');
 var imageempty ='<img src='+fillstar4+'>';
 $("#rating"+useridfor+"").append(imageempty);
-$("#round"+useridfor+"").append(ratinga);
+$("#round"+useridfor+"").append(totalrating);
 }	
 if(ratinga==5)
 {
  //alert('*******');
 var imageempty ='<img src='+fillstar5+'>';
 $("#rating"+useridfor+"").append(imageempty);
-$("#round"+useridfor+"").append(ratinga);
+$("#round"+useridfor+"").append(totalrating);
 }
 }
 

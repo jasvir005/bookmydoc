@@ -97,7 +97,7 @@ width: 77%;
 
 #searchlop {
     
-    
+     height: 168px;
     overflow: auto;
 }
 }
@@ -200,6 +200,7 @@ width: 77%;
 .content-part > img {
     float: left;
     width: 100%;
+     height: 168px;
 }
 
 
@@ -281,6 +282,7 @@ body.show1 {
 .detailphe-img > img {
     width: 100%;
     float: left;
+     height: 168px;
 }
 
  
@@ -446,12 +448,13 @@ float: left;
 
    /* background-image:url("../img/transparency.png");*/
 .detail-pge {
- background-image:url("../img/transparency.png");
-    margin-top: 134px;
- 
+    background:rgba(0, 0, 0, 0) linear-gradient(#d5d5d5, #2e2e2e) repeat scroll 0 0;
+    margin-top: 171px;
+    padding: 8px 15px;
     position: absolute;
+    top: 0;
     width: 100%;
-    padding:0px 15px;
+      opacity: 0.62;
 }
 
 
@@ -489,14 +492,19 @@ float: left;
 .left-prt.addlassbar {
     border-bottom: 1px solid #FE9A00;
 }
-.slide2{
+.slide2 {
+  
     display: none;
+    margin-top: 0px;
+    padding: 0 14px;
+    height: 238px;
+    overflow: scroll;
 }
 
-
 .cateratingab {
- float: right;
-    margin-right: 0px;
+    float: right;
+    margin-right: 0;
+    margin-top: 9px;
     overflow: auto;
     width: 32%;
 }
@@ -505,7 +513,7 @@ float: left;
      float: left;
     margin-right: 9px;
     margin-top: 4px;
-    width: 81%;
+    width:70%;
 }
 
 .page-decription > p {
@@ -527,4 +535,29 @@ float: left;
 .categoriesdetl-page {
  
     color: #fff;
+}
+.rating-review img {
+    width: 67px;
+}
+
+.reviewpagediv {
+    margin-bottom: 11px;
+}
+
+.rated-namediv > p {
+    color: #999999;
+    font-family: helvetica;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.decriptiondiv > p {
+    color: #ececec;
+}
+
+
+.detailphe-img {
+    
+    overflow: auto;
 }
