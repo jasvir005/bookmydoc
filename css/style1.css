@@ -589,29 +589,22 @@ float: left;
 .first-calender-div > label {
     color: #fff;
     float: left;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 
-#right-div-span {
-    float: right;
-    width: 50%;
-}
-
+ 
 .order-inner-part {
  
     margin-top: 15px;
 }
 
 
-.first-calender-div > label {
-    float: left;
-}
-
+ 
 .hasDatepicker {
     background: #003f6f none repeat scroll 0 0;
     border: 1px solid #000065 !important;
-    color: #fff !important;
+    color: #9c9c9c !important;
     padding: 4px !important;
     width: 100%;
 }
@@ -621,3 +614,164 @@ float: left;
     float: right;
     width: 50%;
 }
+
+
+
+
+
+
+.second-calender-div {
+    margin: auto;
+    overflow: auto;
+        margin: 40px auto auto;
+    width: 70%;
+}   
+
+
+.second-span-date > label {
+    color: #fff;
+    float: left;
+    font-size: 21px;
+}
+
+
+
+
+#second-div-span {
+    float: right;
+    width: 50%;
+}
+#basicExample{
+
+background: #003f6f none repeat scroll 0 0;
+    border: 1px solid #000065 !important;
+    color: #9c9c9c !important;
+    padding: 4px !important;
+    width: 100%;
+
+     background-image: url("../img/down-chevron.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20% auto; 
+}
+
+ 
+
+ .second-calender-div > label{
+  color: #fff;
+    float: left;
+    font-size: 21px;
+
+ }
+
+
+ .localtion-field-div {
+    margin: 40px auto auto;
+    overflow: auto;
+    width: 70%;
+}
+
+
+.lcoaltion-text > p {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.lcaltionbtn1 {
+    float: left;
+    margin-right: 15px;
+}
+
+.lcaltionbtn2 {
+    float: left;
+    margin-right: 15px;
+}
+
+.inputtype-text > p {
+    color: #9c9c9c;
+    font-size: 19px;
+}
+
+
+.class-type-div {
+    margin: 40px auto auto;
+    overflow: auto;
+    width: 70%;
+}
+
+
+.class-tyle-text > p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.leftclass-div-txt {
+    float: left;
+    width: 50%;
+}
+
+
+.rightclass-div-txt {
+    float: right;
+    width: 50%;
+}
+.leftclass-div-txt > span {
+    color: #9c9c9c;
+    position: relative;
+    top: -4px;
+}
+.leftclass-div-txt > label {
+    margin-right: 10px;
+}
+
+
+.rightclass-div-txt > span
+{
+   color: #9c9c9c;
+    position: relative;
+    top: -4px;  
+}
+
+.rightclass-div-txt > label
+{
+     margin-right: 10px;
+
+}
+
+
+
+#checkout {
+    background: #fe9a00 none repeat scroll 0 0;
+    border: 1px solid #fe9a00;
+    bottom: 0;
+    color: #fff;
+    font-family: nexa_bold;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.lcoaltion-text {
+    margin-bottom: 18px;
+}
+
+.class-tyle-text {
+ 
+    margin-bottom: 16px;
+}
+
+.hasDatepicker {
+    background-image: url("../img/down-chevron.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 20% auto;
+}
+
+
+ 

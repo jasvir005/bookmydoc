@@ -38,6 +38,8 @@ Some notes:
 
           <link href="lib/ionic/css/ionic.css" rel="stylesheet">
 
+           <link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css" />
+
  <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
@@ -55,7 +57,17 @@ Some notes:
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 
   <!-- **********calender css and js******************* -->
+<script type="text/javascript" src="js/jquery.timepicker.min.js"></script>
 
+
+<!-- ***********time picker****** -->
+
+ 
+
+ 
+
+
+<!-- **************timepicker**************** -->
  
 
 
@@ -136,16 +148,47 @@ Some notes:
 <div class="order-inner-part">
 
 <div class="first-calender-div">
-  <label id="flet-span-date">Date :</label>
+  <label id="flet-span-date">Date: </label>
   <spen id="right-div-span"><input type="text" id="datepicker"></spen>
 
 
 </div>
- 
+
+
+<div class="second-calender-div">
+  <label id="second-span-date">Time: </label>
+  <spen id="second-div-span"><input type="text" id="basicExample" class="time"></spen>
+
 
 </div>
 
- 
+
+<div class="localtion-field-div">
+<div class="lcoaltion-text"><p>Location: </p></div>  
+
+<div class="lcoaltio-btn1"><div class="lcaltionbtn1"><input type="radio"  name="radio"></div>    <div class="inputtype-text"><p>My Location</p></div></div>
+
+<div class="lcoaltio-btn2"><div class="lcaltionbtn2"><input type="radio"  name="radio"></div>    <div class="inputtype-text"><p>Trainers Location</p></div></div>
+
+</div>
+
+
+
+
+<div class="class-type-div">
+ <div class="class-tyle-text"><p>Class Type :</p></div>  
+ <div class="class-radio-btn">
+ <div class="leftclass-div-txt"><label><input type="radio" name="radio"></label><span>1.1</span></div>
+
+  <div class="rightclass-div-txt"><label><input type="radio" name="radio"></label><span>Group</span></div>
+
+ </div>
+
+</div>
+
+</div>
+
+ <div cid="checkoit-btn"  class="bmd-main-btn3flog8"><div id="checkout" class="bmd-main-btn3flog8"> CHECKOUT</div></div>
 
 
     </div>
@@ -418,10 +461,19 @@ padding-right: 20px;">Sign in with Google</button>
 
 </html>
 
-  <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
+<script>
+$( function() {
+$( "#datepicker" ).datepicker();
+} );
 
+
+</script>
+
+
+
+<script>
+$(function() {
+$('#basicExample').timepicker();
+});
+</script>
 
