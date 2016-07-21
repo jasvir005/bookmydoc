@@ -643,16 +643,11 @@ float: left;
 }
 #basicExample{
 
-background: #003f6f none repeat scroll 0 0;
+ background: #003f6f url("../img/down-chevron.png") no-repeat scroll 89px center / 14px auto;
     border: 1px solid #000065 !important;
     color: #9c9c9c !important;
     padding: 4px !important;
     width: 100%;
-
-     background-image: url("../img/down-chevron.png");
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: 20% auto; 
 }
 
  
@@ -768,9 +763,9 @@ background: #003f6f none repeat scroll 0 0;
 
 .hasDatepicker {
     background-image: url("../img/down-chevron.png");
-    background-position: right center;
+    background-position: 89px center;
     background-repeat: no-repeat;
-    background-size: 20% auto;
+    background-size: 14% auto;
 }
 
 
