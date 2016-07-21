@@ -48,6 +48,14 @@ Some notes:
 
 <script type="text/javascript" src="js/controllers.js"></script>
 
+<!-- **********calender css and js******************* -->
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+  <!-- **********calender css and js******************* -->
+
  
 
 
@@ -109,6 +117,47 @@ Some notes:
 
 
     </div>
+
+
+    <!-- ********booknew date ********** -->
+    
+<div class="package-order-div">
+
+<div class="header-div">
+<div class="login-backbtn4"><img src="img/go.png"></div>
+<div class="head-text2">
+<h1> Request Workout </h1></div> 
+<!-- <div class="page_notice">
+<div class="notification">
+<img src="./img/notification.png">
+</div></div> --></div>
+
+
+<div class="order-inner-part">
+
+<div class="first-calender-div">
+  <label id="flet-span-date">Date :</label>
+  <spen id="right-div-span"><input type="text" id="datepicker"></spen>
+
+
+</div>
+ 
+
+</div>
+
+ 
+
+
+    </div>
+
+
+    <!-- *********************** -->
+
+
+
+
+
+
 
 
 
@@ -369,11 +418,10 @@ padding-right: 20px;">Sign in with Google</button>
 
 </html>
 
-<script type="text/javascript">
-$(document).ready(function(){
-  alert('df');
-    $("#divLoading").addClass('show');
-});
-</script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 
 

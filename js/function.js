@@ -80,7 +80,7 @@ else
 image=obj.userimage;
   }
 
-data="<div class='detailphe-img'><img src='http://gotaworkout.com/service/public/z_uploads/doctor/"+image+"'></div><div class='detail-pge'><h1>"+str+"</h1><div class='cateratingab' id='cateratingab"+obj.speciality+"'></div></div><div class='detail-pge-bottom'><div class='bottom-header-part'><div id='commonid' class='left-prt addlassbar'><p onclick='functiona(0)'>About</p></div><div id='commonid'  class='right-prt'><p onclick='functiona(1)'>Reviews</p></div></div><div class='slide-div'><div class='page-decription'><p>"+obj.ProfessionalMemberships+"</p></div><div class='page-detail-rate'><div class='right-rate'><p>Rate</p></div><div class='right-rate-price'><p>$"+obj.payrate+" / Hours </p></div></div><div class='page-detail-categries'><div class='left-cate'><p>Workouts</p></div><div class='right-cate'><p></p></div></div><div class='page-certification'><div class='pagecerleft'><p>Certification</p></div><div class='pagecerright'><p>"+obj.BoardCertifications+"</p></div></div></div><div class='slide2'><p></p></div><div class='bmd-main-btn3flog2' id='booknow-btn'><div class='bmd-main-btn3flog' id='booknow'> BOOK NOW</div></div></div>";
+data="<div class='detailphe-img'><img src='http://gotaworkout.com/service/public/z_uploads/doctor/"+image+"'></div><div class='detail-pge'><h1>"+str+"</h1><div class='cateratingab' id='cateratingab"+obj.speciality+"'></div></div><div class='detail-pge-bottom'><div class='bottom-header-part'><div id='commonid' class='left-prt addlassbar'><p onclick='functiona(0)'>About</p></div><div id='commonid'  class='right-prt'><p onclick='functiona(1)'>Reviews</p></div></div><div class='slide-div'><div class='page-decription'><p>"+obj.ProfessionalMemberships+"</p></div><div class='page-detail-rate'><div class='right-rate'><p>Rate</p></div><div class='right-rate-price'><p>$"+obj.payrate+" / Hours </p></div></div><div class='page-detail-categries'><div class='left-cate'><p>Workouts</p></div><div class='right-cate'><p></p></div></div><div class='page-certification'><div class='pagecerleft'><p>Certification</p></div><div class='pagecerright'><p>"+obj.BoardCertifications+"</p></div></div></div><div class='slide2'><p></p></div><div class='bmd-main-btn3flog2'  onclick='openbooking()'cid='booknow-btn'><div class='bmd-main-btn3flog' id='booknow'> BOOK NOW</div></div></div>";
 
  
 
@@ -682,6 +682,22 @@ $(document).ready(function()
 {
 
 
+ 
+ 
+
+$(".login-backbtn4").click(function()
+{
+  $(".package-order-div").hide();
+$(".search-detail-page").show();
+
+
+
+});
+
+
+
+
+
 
 $(".page_filter").click(function()
 {
@@ -941,6 +957,28 @@ if(objs.userID)
 }
 
 });
+}
+
+
+
+
+
+
+
+
+function openbooking()
+{
+
+$(".search-detail-page").hide();
+
+$(".package-order-div").show();
+
+
+  
+
+
+
+  //alert("booking");
 }
 
 
