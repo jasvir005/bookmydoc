@@ -566,7 +566,7 @@ function fblogin()
 
 
 fbLoginSuccess = function (userData) {
-
+ jQuery("body").addClass("show1");
 //alert("second function");
    // alert("userData: " + JSON.stringify(userData));
      var userData  = JSON.stringify(userData);
@@ -588,7 +588,7 @@ fbLoginSuccess = function (userData) {
 
 
 fbData = function () {
- jQuery("body").addClass("show1");
+
  // alert("fbdata function");
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
@@ -616,7 +616,7 @@ method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
-  jQuery("body").addClass("show1");
+
 
 var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
@@ -638,7 +638,7 @@ success: function(alluserssd) {
 var userID= objs.userID;
 var review=localStorage.getItem('review');
 
-alert(review);
+//alert(review);
 if(review=="reviewlogin")
 {
 
