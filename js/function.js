@@ -554,13 +554,13 @@ function Logout()
 /*facebooklogin function *****************************  */
 function fblogin()
    	{
-alert("first function");
+//alert("first function");
 
    facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
         function (error) { alert("bookmydoc" + JSON.stringify(error)) }
     ); 
-
+ jQuery("body").addClass("show1");
 
   };
 
@@ -568,7 +568,7 @@ alert("first function");
 fbLoginSuccess = function (userData) {
 
 //alert("second function");
-   alert("userData: " + JSON.stringify(userData));
+   //alert("userData: " + JSON.stringify(userData));
      var userData  = JSON.stringify(userData);
     var packet = jQuery.parseJSON(JSON.stringify(userData));
 
@@ -588,7 +588,7 @@ fbLoginSuccess = function (userData) {
 
 
 fbData = function () {
- jQuery("body").addClass("show1");
+
  // alert("fbdata function");
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
