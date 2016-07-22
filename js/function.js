@@ -593,7 +593,7 @@ fbData = function () {
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
- jQuery("body").addClass("show1");
+
           // alert("Result: " + JSON.stringify(response));
             //alert("status: " + localStorage.status + "token: " + localStorage.token);
             var response = jQuery.parseJSON(JSON.stringify(response));
@@ -616,7 +616,7 @@ method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
-
+ jQuery("body").addClass("show1");
 
 var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
