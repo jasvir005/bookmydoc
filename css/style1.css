@@ -661,6 +661,14 @@ float: left;
 
 }
 
+.lcoaltio-btn1 {
+   
+    overflow: auto;
+}
+
+.inputtype-text {
+    float: left;
+}
  
 
  .second-calender-div > label{
