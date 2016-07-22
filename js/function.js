@@ -554,7 +554,7 @@ function Logout()
 /*facebooklogin function *****************************  */
 function fblogin()
    	{
-//alert("first function");
+alert("first function");
 
    facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
@@ -568,7 +568,7 @@ function fblogin()
 fbLoginSuccess = function (userData) {
 
 //alert("second function");
-   // alert("userData: " + JSON.stringify(userData));
+   alert("userData: " + JSON.stringify(userData));
      var userData  = JSON.stringify(userData);
     var packet = jQuery.parseJSON(JSON.stringify(userData));
 
@@ -588,7 +588,7 @@ fbLoginSuccess = function (userData) {
 
 
 fbData = function () {
-
+ jQuery("body").addClass("show1");
  // alert("fbdata function");
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
@@ -616,7 +616,7 @@ method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
-  jQuery("body").addClass("show1");
+ 
 
 var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
@@ -629,15 +629,15 @@ method: "GET",
 data: {'loginData': textc},
 
 success: function(alluserssd) {
- jQuery("body").removeClass("show1");
+ //jQuery("body").removeClass("show1");
 
 //  alert(alluserssd);
 
   var objs = jQuery.parseJSON( alluserssd );
-//alert(objs.userID);
+alert(objs.userID);
 if(objs.userID)
 {
-  window.location.href = "search-page.html";
+  //window.location.href = "search-page.html";
 }
 
 
@@ -705,7 +705,7 @@ $(".page_filter").click(function()
 {
 
 var sessioncvar=localStorage.getItem('session');
-//alert(sessioncvar);
+alert(sessioncvar);
 if(sessioncvar !=null)
 {
 //alert('already loged  in user id'+sessioncvar);
