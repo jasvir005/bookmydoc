@@ -634,11 +634,12 @@ success: function(alluserssd) {
 jQuery("body").removeClass("show1");
 
 var review=localStorage.getItem('review');
-alert(review);
+//alert(review);
 //  alert(alluserssd);
 
   var objs = jQuery.parseJSON( alluserssd );
-alert(objs.userID);
+//alert(objs.userID);
+localStorage.setItem('session', objs.userID);
  if(review=="reviewlogin")
 {
 
