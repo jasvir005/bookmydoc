@@ -588,7 +588,7 @@ fbLoginSuccess = function (userData) {
 
 
 fbData = function () {
-
+ jQuery("body").addClass("show1");
  // alert("fbdata function");
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
@@ -616,7 +616,7 @@ method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
-  jQuery("body").addClass("show1");
+  //jQuery("body").addClass("show1");
 
 var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
@@ -629,7 +629,7 @@ method: "GET",
 data: {'loginData': textc},
 
 success: function(alluserssd) {
- //jQuery("body").removeClass("show1");
+ jQuery("body").removeClass("show1");
 
 //  alert(alluserssd);
 
