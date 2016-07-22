@@ -561,6 +561,8 @@ function fblogin()
         function (error) { alert("bookmydoc" + JSON.stringify(error)) }
     ); 
  jQuery("body").addClass("show1");
+  jQuery(".loginhome-page").hide();
+
 
   };
 
@@ -629,8 +631,10 @@ method: "GET",
 data: {'loginData': textc},
 
 success: function(alluserssd) {
- //jQuery("body").removeClass("show1");
+jQuery("body").removeClass("show1");
 
+var review=localStorage.getItem('review');
+alert(review);
 //  alert(alluserssd);
 
   var objs = jQuery.parseJSON( alluserssd );
