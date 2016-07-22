@@ -629,7 +629,7 @@ method: "GET",
 data: {'loginData': textc},
 
 success: function(alluserssd) {
- jQuery("body").removeClass("show1");
+ //jQuery("body").removeClass("show1");
 
 //  alert(alluserssd);
 
