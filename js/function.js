@@ -616,7 +616,7 @@ method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
-  //jQuery("body").addClass("show1");
+  jQuery("body").addClass("show1");
 
 var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
@@ -638,6 +638,7 @@ success: function(alluserssd) {
 var userID= objs.userID;
 var review=localStorage.getItem('review');
 
+alert(review);
 if(review=="reviewlogin")
 {
 
