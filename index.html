@@ -442,6 +442,291 @@ padding-right: 20px;">Sign in with Google</button>
   </div>
 
 
+  
+  <div class="menu-slide"><ion-content class="bmd-spcl-theme scroll-content2 ionic-scroll"><div class="scroll">
+      <ion-list class="list disable-user-behavior"><div class="list">
+        <div class="head-img-txtflogd">
+  <div class="head_img_pro">
+      <img src="img/icon-transparent.png">
+      </div>
+      <p class="word-outflog">MY TRAINER</p>
+
+  </div>
+<ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+         SEARCH TRAINERS
+        </ion-item>
+
+        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+          MY PROFILE
+        </ion-item>
+        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+          MY FAVORITES
+        </ion-item>
+        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+          MY BOOKINGS
+        </ion-item>
+
+
+          <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+          SETTINGS
+        </ion-item>
+
+        <!-- social icon start-->
+   <!--   <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
+          
+        </ion-item>
+             <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
+          
+        </ion-item>
+             <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
+        
+        </ion-item>
+          </ion-item>
+             <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
+        
+        </ion-item> -->
+         <!-- social icon start-->
+
+
+
+       <!--  <ion-item menu-close href="#/app/bmd-home" class="bmd-spcl-listing">
+          Home
+        </ion-item> -->
+        <!-- <ion-item menu-close ng-click="loginw()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          Login
+        </ion-item> -->
+
+
+ <!-- <ion-item menu-close ng-click="fblogin()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          Facebook login
+        </ion-item> -->
+
+
+
+       <!--  <ion-item menu-close ng-click="signup()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          Sign Up
+        </ion-item> -->
+
+<!-- <a href="signup2.html">
+          Sign Up
+      </a> -->
+        <!-- <ion-item menu-close ng-click="reset()" ng-show="noSessionStatus" class="bmd-spcl-listing">
+          Reset Password
+        </ion-item> -->
+   <!--      <ion-item menu-close href="#/app/my_booking" ng-show="userSessionStatus" class="bmd-spcl-listing">
+          My Booking
+        </ion-item> -->
+     <!--    <ion-item menu-close ng-click="my_booking()" ng-show="userSessionStatus" class="bmd-spcl-listing" >
+          MY BOOKINGS
+        </ion-item> -->
+        <ion-item class="bmd-spcl-listing item2" ng-show="userSessionStatus" onclick="Logout()" menu-close="" style="">
+           LOGOUT
+        </ion-item>
+     
+
+        
+  
+        <!-- <ion-item menu-close href="#/app/test"  class="bmd-spcl-listing">
+          My Booking
+        </ion-item> -->
+      </div></ion-list>
+      <div class="social_icons"><a href="https://www.facebook.com/"><img src="img/facebookcircle.png"></a><a href="https://twitter.com/"><img src="img/twittercircle.png"></a><a href="https://www.instagram.com/"><img src="img/instagramcircle.png"></a></div>
+    </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="height: 0px;"></div></div></ion-content></div>
+<div class="search-page">
+
+
+<div class="div-coloor"  id="slow-slide">
+
+<ion-header-bar  id="login-menu" class="bar-stableb bg-color-white bar bar-header" style="">
+    <button id="menuslide"   class="common-button button button-positive button-clear button_text icon ion-navicon txt-color-black" menu-toggle="left"></button>
+         <div class="signup_back_btn" style="display: inline;">
+
+<div class="filter-div1">Search</div> 
+</div>
+   
+  </ion-header-bar>
+
+
+
+    <div ng-hide="noSessionStatus"    class="filter-page" style="margin-top: -4px;"> 
+      <div ng-init="get_appointments()" class="bmd-results-wrapper">
+        <div class="filter-page-contant" style="margin-right: 0px;">
+          <div class="bmd-title-logo2">
+        </div>
+        <div id="appendmsg" ng-show="signupError" class="success_block ng-binding ng-hide" style=""></div>
+        <form ng-submit="signupform.$valid &amp;&amp; doSignup()" name="signupform" class="ng-pristine ng-valid">
+        <div class="containerration">
+          <div class="yoga-wordout"><p><span class="wordout-yoga">Trainer</span>
+            <span class="spelizationsids"></span>
+            <span class="selecedgender"></span>
+            <span id="appendinto"></span></p>
+            <div class="right-side-categories"><img src="img/go.png" class="transfromimg"></div>
+          </div>
+          <div class="hide-open-time">
+          <div class="likefilterd"></div>
+          <div class="price-range"><p>Price Range: <span class="dollercls">$0</span>
+            to <span class="dollercls">$</span><span id="js-display-decimald" class="dollercls">125</span></p>
+          </div>
+<!-- 
+            <div class="slider-custom1">
+            <div class="admin1">0</div>
+            <input type="range" min="0" max="250" data-rangeSlider>
+              <div class="admin2"><output></output></div>
+            
+            </div> -->
+          <div class="slider-wrapper" style="width: 267px;">
+            <b class="dollersign">$0</b>
+
+            <input type="text" style="display: none;" value="$" class="js-decimal"><span class="range-quantity" style="width: 107.5px;"></span></span>
+
+          </div>
+          <div class="example">
+            <div class="price-range2"><p>Distance Range:  <span class="dollercls">0 miles</span> to <span id="js-display-changes" class="   dollercls">25</span> <span class="dollercls">miles</span></p>
+            </div>
+
+            <!--   <div class="slider-custom">
+                <div class="admin1">0</div>
+              <input type="range" min="0" max="50" data-rangeSlider>
+             <div class="admin2"><output></output></div>
+              </div> -->
+
+            <div class="slider-wrapper2" style="border: 0px solid red; width: 257px; margin: 0px 0px 26px 31px;">
+             <input type="text" class="js-check-change" style="display: none;"></span><span class="range-quantity" style="width: 107.5px;"></span></span>
+            </div>
+          </div>
+          <div class="rating-div"> 
+            <div class="rating-txt">
+              <b>Ratings</b>
+            </div>
+            <div class="main-images-star">
+              <div class="norating">
+                <img src="img/no_rating_txt.png">
+              </div>
+              <div class="first-star1">
+                <img src="img/first_img.png">
+              </div>
+                <div class="first-star2"><img src="img/second_img.png">
+                </div>
+
+                <div class="first-star3"><img src="img/third_img1.png">
+                </div>
+
+
+                <div class="first-star4"><img src="img/fourth_img.png">
+                </div>
+
+                <div class="first-star5"><img src="img/fifth_img.png">
+                </div>
+                </div>
+
+                </div>
+                </div>
+
+              <div class="language-div">
+              <div class="language-div-main">
+              <b id="languages-id">Languages</b>
+              <!-- <div class="language-icon">
+              <img src="img/go.png">
+              </div> -->
+              </div>
+              <div class="lang_type_eng">
+              <input type="radio" value="0" name="language"><label>English</label>
+              </div>
+              <div class="lang_type_sap">
+              <input type="radio" value="1" name="language"><label>Spanish</label>
+              </div>
+              </div>
+
+              <div class="gender-div">
+              <div class="gendr-div-main">
+              <b class="gender-txt">Gender</b>
+              </div>
+              <div class="male">
+              <input type="radio" value="0" name="gender"><label>Male</label>
+              </div>
+              <div class="female">
+              <input type="radio" value="1" name="gender"><label>Female</label>
+              </div>
+              </div>
+             <div class="likefilter"></div>
+
+
+
+        <div style="margin-bottom:0px;margin-top:10px;" class="head-img-txtflog">
+        <div id="first-btn01" class="filter-div">  My Trainer </div>
+        </div>
+
+
+
+        <div class="head-img-txtflog">
+        <div class="clearonmsg"></div>
+        <div id="first-btn01" class="clear-lan-sex">  Reset </div>
+        </div>
+
+
+        </div>
+        </form> 
+
+<div id="cate-slide" class="sidebar" style="width: 250px; display: none;">
+<div id="image-workout" class="image-workout-div">
+<label>Trainer</label>
+<span>
+<img src="img/dropdown.png">
+</span> 
+</div>
+        <div class="likefilter"></div>
+        <div class="checkboxd-div1" id="hello"><label>Personal Trainer</label><span><input type="checkbox" value="Personal Trainer" name="Personal Trainer" class="checkbox-custom " id="checkbox-terms1" speciality="1"><label for="checkbox-terms" class="checkbox-custom-label"></label></span></div><div class="checkboxd-div2" id="hello"><label>CrossFit</label><span><input type="checkbox" value="CrossFit" name="CrossFit" class="checkbox-custom " id="checkbox-terms2" speciality="2"><label for="checkbox-terms" class="checkbox-custom-label"></label></span></div><div class="checkboxd-div3" id="hello"><label>Yoga</label><span><input type="checkbox" value="Yoga" name="Yoga" class="checkbox-custom " id="checkbox-terms3" speciality="3"><label for="checkbox-terms" class="checkbox-custom-label"></label></span></div><div class="checkboxd-div4" id="hello"><label>Aerobics</label><span><input type="checkbox" value="Aerobics" name="Aerobics" class="checkbox-custom " id="checkbox-terms4" speciality="4"><label for="checkbox-terms" class="checkbox-custom-label"></label></span></div><div class="checkboxd-div5" id="hello"><label>Martial Arts</label><span><input type="checkbox" value="Martial Arts" name="Martial Arts" class="checkbox-custom " id="checkbox-terms5" speciality="5"><label for="checkbox-terms" class="checkbox-custom-label"></label></span></div><div class="checkboxd-div6" id="hello"><label>Weightloss</label><span><input type="checkbox" value="Weightloss" name="Weightloss" class="checkbox-custom " id="checkbox-terms6" speciality="6"><label for="checkbox-terms" class="checkbox-custom-label"></label></span></div><div class="checkboxd-div7" id="hello"><label>Marathon</label><span><input type="checkbox" value="Marathon" name="Marathon" class="checkbox-custom " id="checkbox-terms7" speciality="7"><label for="checkbox-terms" class="checkbox-custom-label"></label></span></div><div class="checkboxd-div8" id="hello"><label>Sports</label><span><input type="checkbox" value="Sports" name="Sports" class="checkbox-custom " id="checkbox-terms8" speciality="8"><label for="checkbox-terms" class="checkbox-custom-label"></label></span></div></div>
+
+</div>
+
+
+  <script src="powerange.min.js"></script>
+  <style type="text/css"> 
+/*    body {
+      background: #ffffff none repeat scroll 0 0;
+      margin: 0;
+    }*/
+  
+  </style>             
+</div>
+</div>
+    
+ 
+
+     </div>
+
+  </div> <!-- dome div -->
+
+
+  <div  id="search_rest_page" class="search-result-page">
+  
+<div data-ng-init="initlocad" id="discover" style="display: block;">
+  <div class="bar2">
+    <div class="togo_backpage">
+      <div class="togo_backpage_img">
+        <img src="./img/go.png" class="back_page">
+      </div>
+    </div> 
+    <div class="search_page_head">
+      <div class="head_search">
+        <h1> Trainers </h1>
+      </div>
+    </div>
+    <div class="page_notice">
+      <div class="notification">
+        <img src="./img/notification.png">
+      </div>
+    </div>     
+    <div class="page_filter">
+      <div class="filter_img">
+        <img src="./img/filter.png">
+      </div>
+    </div> 
+  </div>
+  <div class="discover-content"> <div id="divLoading"></div> </div>
+   </div>
+
+</div>
 
 
 

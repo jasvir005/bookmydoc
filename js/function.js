@@ -708,7 +708,14 @@ var sessioncvar=localStorage.getItem('session');
 alert(sessioncvar);
 if(sessioncvar !=null)
 {
-alert('already loged  in user id'+sessioncvar);
+//alert('already loged  in user id'+sessioncvar);
+
+
+$(".first-page-all-trainer").hide();
+$(".search-page").show();
+
+
+
 }
 else
 {
@@ -905,6 +912,14 @@ $(".package-order-div").show();
 else
 {
   alert('false conndition');
+
+$(".login-page").hide();
+$(".search-page").show();
+
+
+ 
+
+
 }
 
 

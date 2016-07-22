@@ -799,4 +799,7 @@ float: left;
     width: 100%;
 }
 
- 
+ .search-page
+ {
+    display: none;
+ }
