@@ -643,14 +643,20 @@ float: left;
 }
 #basicExample{
 
-background: #003f6f url("../img/down-chevron.png") no-repeat scroll 87px center / 13px auto;
-border: 1px solid #2169af !important;
-border-radius: 5px;
-color: #cecece !important;
-font-size: 16px !important;
-    padding-left: 10px !important;
-opacity: 0.72;
-width: 100%;
+
+  background-color: #003f6f;
+    background-image: url("../img/down-chevron.png");
+    background-position: 87px center;
+    background-repeat: no-repeat;
+    background-size: 13% auto;
+    border: 1px solid #2169af !important;
+    border-radius: 5px;
+    color: #cecece !important;
+    font-size: 16px !important;
+    opacity: 0.72;
+       padding-left: 10px !important;
+    width: 100%;
+
 
 
 }
