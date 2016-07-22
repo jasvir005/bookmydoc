@@ -327,7 +327,7 @@ var jas=localStorage.getItem('session');
  if(jas !=null)
  {
 
-   window.location.href = "search-page.html";
+  // window.location.href = "search-page.html";
  }
  
 
@@ -540,6 +540,9 @@ $(".discover-content"+speciality+" .text-part-left"+val.id+" p").append("");
 function Logout()
 {
   localStorage.removeItem("session");
+    localStorage.removeItem("review");
+
+
   window.location.href = "index.html";
 
 }
@@ -700,8 +703,21 @@ $(".search-detail-page").show();
 
 $(".page_filter").click(function()
 {
+
+var sessioncvar=localStorage.getItem('session');
+alert(sessioncvar);
+if(sessioncvar !=null)
+{
+alert('already loged  in user id'+sessioncvar);
+}
+else
+{
+
 $(".first-page-all-trainer").hide();
 $(".loginhome-page").show();
+
+}
+
 });
 
 /*login page open */
@@ -847,23 +863,51 @@ data: {'loginData': text2},
 
 success: function(loginuser) {
 
+//alert('jas');
+var review=localStorage.getItem('review');
+
+ //alert(review);
 
 var obj = jQuery.parseJSON( loginuser );
+//alert(obj);
 var userID= obj.userID;
+localStorage.setItem('session', userID);
+
+ //alert(userID);
+if(review=="reviewlogin")
+{
+
+
+ alert("jas"+userID);
+
+
+$(".package-order-div").show();
+$(".login-page").hide();
+
+
 if(userID==null)
 {
 $("#login_error").show();
 }
 else
 {
+alert(userID);
+$(".login-page").hide();
+$(".package-order-div").show();
 
-localStorage.setItem('session', userID);
+}
 
-  //alert("congrat");
-  window.location.href = "search-page.html";
+
+//sessionStorage.removeItem('reviewlogin');
 
 
 }
+else
+{
+  alert('false conndition');
+}
+
+
 
 }
 
@@ -927,7 +971,7 @@ method: "GET",
 data: {'loginData': textc},
 
 success: function(alluserssd) {
- jQuery("body").removeClass("show1");
+/* jQuery("body").removeClass("show1");
 //  alert(alluserssd);
 
   var objs = jQuery.parseJSON( alluserssd );
@@ -937,7 +981,7 @@ if(objs.userID)
    window.location.href = "search-page.html";
 }
 
- 
+*/ 
 
 }
 
@@ -968,9 +1012,37 @@ if(objs.userID)
 function openbooking()
 {
 
-$(".search-detail-page").hide();
+ 
+sesionvalue=localStorage.getItem('session');
+var reviewlogin="reviewlogin";
+localStorage.setItem('review', reviewlogin);
+var review=localStorage.getItem('review');
 
-$(".package-order-div").show();
+alert(sesionvalue+'*******'+review);
+//alert(sesionvalue);
+ if(sesionvalue==null)
+{
+
+    //var review=localStorage.setItem('review');
+           // localStorage.setItem('review', token);
+  $(".search-detail-page").hide();
+  $(".loginhome-page").show()
+
+ // localStorage.setItem('review', 'reviewlogin');
+  //$(".search-detail-page").hide();
+
+} 
+else
+{
+ $(".search-detail-page").hide();
+//
+ $(".package-order-div").show(); 
+
+}
+
+// $(".search-detail-page").hide();
+//
+//$(".package-order-div").show(); 
 
 
   
