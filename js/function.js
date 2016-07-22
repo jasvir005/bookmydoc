@@ -683,7 +683,6 @@ $(document).ready(function()
 
 
  
- 
 
 $(".login-backbtn4").click(function()
 {
