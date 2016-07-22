@@ -588,7 +588,7 @@ fbLoginSuccess = function (userData) {
 
 
 fbData = function () {
- jQuery("body").addClass("show1");
+
  // alert("fbdata function");
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
@@ -635,11 +635,13 @@ success: function(alluserssd) {
 
   var objs = jQuery.parseJSON( alluserssd );
 //alert(objs.userID);
-var userID= objs.userID;
-var review=localStorage.getItem('review');
+if(objs.userID)
+{
+ // window.location.href = "search-page.html";
+}
 
-alert(review);
-if(review=="reviewlogin")
+alert(objs.userID);
+if(objs.userID=="reviewlogin")
 {
 
 
