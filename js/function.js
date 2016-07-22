@@ -639,9 +639,45 @@ alert(review);
 
   var objs = jQuery.parseJSON( alluserssd );
 alert(objs.userID);
-if(objs.userID)
+ if(review=="reviewlogin")
 {
-  //window.location.href = "search-page.html";
+
+
+ //alert("jas"+userID);
+
+
+$(".package-order-div").show();
+$(".login-page").hide();
+
+
+if(objs.userID==null)
+{
+$("#login_error").show();
+}
+else
+{
+//alert(userID);
+$(".login-page").hide();
+$(".package-order-div").show();
+
+}
+
+
+//sessionStorage.removeItem('reviewlogin');
+
+
+}
+else
+{
+  //alert('false conndition');
+
+$(".login-page").hide();
+$(".search-page").show();
+
+
+ 
+
+
 }
 
 
