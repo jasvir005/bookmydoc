@@ -566,7 +566,7 @@ function fblogin()
 
 
 fbLoginSuccess = function (userData) {
- jQuery("body").addClass("show1");
+
 //alert("second function");
    // alert("userData: " + JSON.stringify(userData));
      var userData  = JSON.stringify(userData);
@@ -593,7 +593,7 @@ fbData = function () {
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
-
+ jQuery("body").addClass("show1");
           // alert("Result: " + JSON.stringify(response));
             //alert("status: " + localStorage.status + "token: " + localStorage.token);
             var response = jQuery.parseJSON(JSON.stringify(response));
