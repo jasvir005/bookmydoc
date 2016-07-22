@@ -637,7 +637,7 @@ success: function(alluserssd) {
 //alert(objs.userID);
 if(objs.userID)
 {
- // window.location.href = "search-page.html";
+  window.location.href = "search-page.html";
 }
 
 
@@ -885,7 +885,7 @@ if(review=="reviewlogin")
 {
 
 
- //alert("jas"+userID);
+ alert("jas"+userID);
 
 
 $(".package-order-div").show();
@@ -898,7 +898,7 @@ $("#login_error").show();
 }
 else
 {
-//alert(userID);
+alert(userID);
 $(".login-page").hide();
 $(".package-order-div").show();
 
@@ -911,7 +911,7 @@ $(".package-order-div").show();
 }
 else
 {
-  //alert('false conndition');
+  alert('false conndition');
 
 $(".login-page").hide();
 $(".search-page").show();
@@ -1033,7 +1033,7 @@ var reviewlogin="reviewlogin";
 localStorage.setItem('review', reviewlogin);
 var review=localStorage.getItem('review');
 
-//alert(sesionvalue+'*******'+review);
+alert(sesionvalue+'*******'+review);
 //alert(sesionvalue);
  if(sesionvalue==null)
 {
