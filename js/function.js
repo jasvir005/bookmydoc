@@ -675,8 +675,6 @@ else
 $(".login-page").hide();
 $(".search-page").show();
 
- 
-$("body").addClass("backgroundadd");
 
 
  
