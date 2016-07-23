@@ -803,3 +803,8 @@ float: left;
  {
     display: none;
  }
+ .backgroundadd
+ {
+
+        background: #fff none repeat scroll 0 0;
+ }

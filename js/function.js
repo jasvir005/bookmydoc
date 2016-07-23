@@ -675,6 +675,9 @@ else
 $(".login-page").hide();
 $(".search-page").show();
 
+ 
+$("body").addClass("backgroundadd");
+
 
  
 
@@ -754,6 +757,7 @@ if(sessioncvar !=null)
 
 $(".first-page-all-trainer").hide();
 $(".search-page").show();
+$("body").css("background","#fff");
 
 
 
