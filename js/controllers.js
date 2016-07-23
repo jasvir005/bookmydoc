@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  alert('dfd');
+
+
   
  var dec = document.querySelector('.js-decimal');
     var initDec = new Powerange(dec, { decimal: false, callback: displayDecimalValue, max: 250, start: 125 });
