@@ -275,7 +275,10 @@ else
 var imagesusr=""+bseimg+"service/public/z_uploads/doctor/"+objs.userimage+"";
 }
 
-data="<div class='discover-content"+objs.id+"'onclick='abd("+objs.id+")'id='searchlop2'><div class='content-part2'><img src='"+imagesusr+"'><div class='top-of-content2'></div><div class='middel-part2'><div class='left-part-middel2'><div class='text-part-left2'><h1>"+objs.firstname+"</h1><p class='categories-append2'></p><div class='countratinga'><div id='rating21"+objs.id+"' class='rating21'></div><div class='round-count21' id='round21"+objs.id+"'></div></div></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
+
+
+
+data="<div class='discover-content"+objs.id+"'onclick='abd("+objs.id+")'id='searchlop2'><div class='content-part2'><img src='"+imagesusr+"'><div class='top-of-content2'></div><div class='middel-part2'><div class='left-part-middel2'><div class='text-part-left2'><h1>"+objs.firstname+"</h1><p class='categories-append2'></p><div class='countratinga'><div id='rating21"+objs.id+"' class='rating21'></div><div class='round-count21' id='round21"+objs.id+"'></div></div></div></div><div class='text-right-part21'><h1>$"+objs.payrate+" / Hour</h1></div></div></div></div>";
 
 
  jQuery(".discover-content").append(data);

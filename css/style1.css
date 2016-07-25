@@ -637,8 +637,8 @@ float: left;
 
 
 .head-text2 > h1 {
-    font-family: helvetica;
-    font-size: 15px;
+      font-family: nexa_bold;
+    font-size: 18px;
 }
 
 #second-div-span {
@@ -670,6 +670,7 @@ float: left;
 .lcoaltio-btn1 {
    
     overflow: auto;
+      margin-bottom: 7px;
 }
 
 .inputtype-text {
@@ -782,12 +783,12 @@ float: left;
 }
 
 .lcoaltion-text {
-    margin-bottom: 18px;
+       margin-bottom: 21px;
 }
 
 .class-tyle-text {
  
-    margin-bottom: 16px;
+    margin-bottom: 21px;
 }
 
 .hasDatepicker {
@@ -880,3 +881,5 @@ float: left;
     color: #fff;
     margin-left: 9px;
 }
+
+ 

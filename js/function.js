@@ -985,6 +985,8 @@ var userID= obj.userID;
 localStorage.setItem('session', userID);
 
  //alert(userID);
+
+
 if(review=="reviewlogin")
 {
 
@@ -1017,6 +1019,7 @@ else
 {
   //alert('false conndition');
 
+$("body").css("background","#fff");
 $(".login-page").hide();
 $(".search-page").show();
 
@@ -1383,3 +1386,18 @@ $( ".checkboxd-div9 input" ).prop( "checked", true );
 }
 
 
+
+
+
+var scrollHandler = function(){
+    myScroll = jQuery(window).scrollTop();
+}
+
+jQuery(".filter-page-contant").click(function(){
+  alert('jas');
+   jQuery(window).scroll(scrollHandler);
+}).click(); // .click() will execute this handler immediately
+
+jQuery(".filter-page-contant").click(function(){
+    jQuery(window).off("scroll", scrollHandler);
+});
