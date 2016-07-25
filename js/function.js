@@ -518,6 +518,43 @@ $(".discover-content"+speciality+" .text-part-left"+val.id+" p").append("");
 
 });
 
+
+jQuery.ajax({
+url: ""+baseurl+"get_categories",
+method: "GET",
+dataType:'json',
+//data: {'signUpData': text},
+
+success: function(responsedab) {
+ 
+var num=1;
+//alert(responsedab);
+jQuery.each( responsedab, function( key, val ) {
+var userDataab  = JSON.stringify(val);
+var objjs = jQuery.parseJSON( userDataab );
+     //alert(objjs.name);
+data="<div id='hello' class='checkboxd-div"+num+"' onclick=chgclr("+num+")><label>"+objjs.name+"</label><span><input speciality='"+objjs.id+"' id='checkbox-terms"+num+"' class='checkbox-custom 'type='checkbox' name='"+objjs.name+"' value='"+objjs.name+"'><label class='checkbox-custom-label' for='checkbox-terms'></label></span></div>";
+
+$("#cate-slide").append(data);
+
+num++;
+});
+ }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 } // function close
 
 
@@ -745,6 +782,20 @@ $(".search-detail-page").show();
 
 $(".page_filter").click(function()
 {
+
+  //alert("hi");
+/*******************range slider script start *****************/
+
+$(".slider-wrapper .range-quantity").css("width","110px");
+
+$(".slider-wrapper .range-handle").css("left","110px");
+
+$(".slider-wrapper2 .range-handle").css("left","105px");
+$(".slider-wrapper2 .range-quantity").css("width","105px");
+$("#js-display-decimald").text("128");
+
+/*******************range slider script end *****************/
+ 
 
 var sessioncvar=localStorage.getItem('session');
 //alert(sessioncvar);
@@ -1113,5 +1164,211 @@ else
 
 
 
+
+
+function chgclr(id)
+{
+  //alert(id);
+  //alert(this.id)
+  if(id==1)
+  {
+var checked=$(".checkboxd-div1 input").prop('checked')==true;
+
+var has = $(".checkboxd-div1 input").prop('checked')==true;
+/*alert(has);*/
+if(has==true)
+{
+  $( ".checkboxd-div1 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div1 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div1 input" ).prop( "checked", true );
+ $(".checkboxd-div1 > label").css({"color": "#FFC000"});
+
+}
+}
+
+/*******************second categoreis **********************/
+
+if(id==2){
+
+var has = $(".checkboxd-div2 input").prop('checked')==true;
+//alert(has);
+if(has==true)
+{
+  $( ".checkboxd-div2 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div2 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div2 input" ).prop( "checked", true );
+ $(".checkboxd-div2 > label").css({"color": "#FFC000"});
+
+}
+ 
+}
+
+
+
+
+/*************************3th categories*************************************/
+if(id==3){
+  
+var has = $(".checkboxd-div3 input").prop('checked')==true;
+//alert(has);
+if(has==true)
+{
+  $( ".checkboxd-div3 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div3 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div3 input" ).prop( "checked", true );
+ $(".checkboxd-div3 > label").css({"color": "#FFC000"});
+
+}
+ 
+}
+
+/**********************************4th categoreis********************************************/
+
+if(id==4){
+  
+var has = $(".checkboxd-div4 input").prop('checked')==true;
+//alert(has);
+if(has==true)
+{
+  $( ".checkboxd-div4 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div4 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div4 input" ).prop( "checked", true );
+ $(".checkboxd-div4 > label").css({"color": "#FFC000"});
+
+}
+ 
+}
+
+/**********************************5th categories*****************************************/
+
+if(id==5){
+  
+var has = $(".checkboxd-div5 input").prop('checked')==true;
+//alert(has);
+if(has==true)
+{
+  $( ".checkboxd-div5 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div5 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div5 input" ).prop( "checked", true );
+ $(".checkboxd-div5 > label").css({"color": "#FFC000"});
+
+}
+ 
+}
+
+/*************************************6th categories**********************************/
+
+if(id==6){
+  
+var has = $(".checkboxd-div6 input").prop('checked')==true;
+//alert(has);
+if(has==true)
+{
+  $( ".checkboxd-div6 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div6 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div6 input" ).prop( "checked", true );
+ $(".checkboxd-div6 > label").css({"color": "#FFC000"});
+
+}
+ 
+}
+
+/*********************************7th categories*************************************/
+
+
+if(id==7){
+  
+var has = $(".checkboxd-div7 input").prop('checked')==true;
+//alert(has);
+if(has==true)
+{
+  $( ".checkboxd-div7 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div7 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div7 input" ).prop( "checked", true );
+ $(".checkboxd-div7 > label").css({"color": "#FFC000"});
+
+}
+ 
+}
+
+/**********************************8th categories**********************************/
+
+if(id==8){
+  
+var has = $(".checkboxd-div8 input").prop('checked')==true;
+//alert(has);
+if(has==true)
+{
+  $( ".checkboxd-div8 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div8 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div8 input" ).prop( "checked", true );
+ $(".checkboxd-div8 > label").css({"color": "#FFC000"});
+
+}
+ 
+}
+/*************************************9th categoreis*******************************************/
+
+if(id==9){
+  
+var has = $(".checkboxd-div9 input").prop('checked')==true;
+//alert(has);
+if(has==true)
+{
+  $( ".checkboxd-div9 input" ).prop( "checked", false );
+  // alert('tes true');
+   $(".checkboxd-div9 > label").css({"color": "#FFFFFF"}); 
+
+}else
+{
+/*alert("falsedd");*/
+$( ".checkboxd-div9 input" ).prop( "checked", true );
+ $(".checkboxd-div9 > label").css({"color": "#FFC000"});
+
+}
+ 
+}
+/*****************************************10th categoreis************************************************/
+}
 
 
