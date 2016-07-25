@@ -28,12 +28,18 @@ if(jas==null)
  function abd(id)
 {
 
+
+//alert('dd');
+
 jQuery("#divLoading").addClass('show');
 jQuery("body").addClass('showhome');
+//alert('****8');
+
+
 
 
 //alert(id);
-
+//alert("***");
  
 
 
@@ -47,6 +53,8 @@ success: function(simgpleusrdetail) {
 
 jQuery("body").removeClass('showhome');
 jQuery("#divLoading").removeClass('show');
+$("body").css("background","#003F6F");
+$("#search_rest_page").hide();
 $(".detail-result-page").html("");
 
  $(".first-page-all-trainer").hide();
@@ -465,7 +473,7 @@ if(ratinga==3)
 var imageempty ='<img src='+fillstar3+'>';
 $("#rating"+useridfor+"").append(imageempty);
 $("#round"+useridfor+"").append(totalrating);
-}ratinga
+}
 
 if(ratinga==4)
 {
@@ -783,7 +791,9 @@ $(".search-detail-page").show();
 $(".page_filter").click(function()
 {
 
-  //alert("hi");
+
+$("#search_rest_page").hide();
+//alert("hi");
 /*******************range slider script start *****************/
 
 $(".slider-wrapper .range-quantity").css("width","110px");
@@ -1034,6 +1044,7 @@ $(".search-page").show();
 
 
  $(".login-backbtn2").click(function(){
+  $("body").css("background","#fff");
 
  // alert('d');
   $(".search-detail-page").hide();

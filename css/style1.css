@@ -100,15 +100,19 @@ width: 77%;
      height: 168px;
     overflow: auto;
 }
+
+#searchlop2 {
+    
+     height: 168px;
+    overflow: auto;
+}
+
+
 }
 .content-part:nth-child(1) {
     margin-top: 0;
 }
-.top-of-content {
-    float: left;
-    text-align: right;
-    width: 100%;
-}
+
 
 .middel-part {
     float: left;
@@ -136,11 +140,7 @@ width: 77%;
      color: #fff;
 }
 
-
-.content-part {
-     
-    overflow: auto;
-}
+ 
 
 #divLoading.show
 {
@@ -203,6 +203,12 @@ width: 77%;
      height: 168px;
 }
 
+
+.content-part2 > img {
+    float: left;
+    height: 168px;
+    width: 100%;
+}
 
  
 
@@ -808,3 +814,69 @@ float: left;
 
         background: #fff none repeat scroll 0 0;
  }
+
+
+ .middel-part2 {
+    background: rgba(0, 0, 0, 0) linear-gradient(#d5d5d5, #2e2e2e) repeat scroll 0 0;
+    float: left;
+    margin-top: 99px;
+    opacity: 0.62;
+    width: 100%;
+     position: absolute;
+}
+
+
+.left-part-middel2 {
+    float: left;
+     margin-left: 12px;
+    width: 50%;
+}
+
+.text-part-left2 {
+    float: left;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.text-part-left2 h1 {
+    font-family: helvetica;
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #fff;
+}
+
+.text-part-left2 p {
+    font-family: helvetica;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0;
+    color:#fff;
+}
+
+.text-right-part2 {
+    float: left;
+    text-align: right;
+    width: 46%;
+}
+
+.text-right-part2 > h1 {
+    color: #fff;
+    font-family: helvetica;
+    font-size: 14px;
+    margin: 0 26px 0 0;
+}
+.selecedpayrate{display: none}
+
+
+.rating21 {
+    width: 53%;
+}
+.rating21 > img {
+    width: 100%;
+}
+.round-count21 {
+    color: #fff;
+    margin-left: 9px;
+}

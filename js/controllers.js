@@ -1,6 +1,10 @@
 $(document).ready(function(){
   //alert('dfd');
 
+var bseimg="http://gotaworkout.com/";
+
+
+
 
   
  var dec = document.querySelector('.js-decimal');
@@ -195,6 +199,11 @@ $(".selecedgender").append(ac);
 
 $(".filter-div").click(function(){
 
+jQuery(".discover-content").html("");
+jQuery(".discover-content").append("<div id='divLoading' class='show'></div>");
+
+
+
 //alert("hello");
 
 $(".search-page").hide();
@@ -203,6 +212,10 @@ $("#search_rest_page").show();
   var selectedcate=$(".spelizationsids").text();
 
    var selecedgender=$(".selecedgender").text();
+
+ var selecedpayrate=$("#js-display-decimald").text();
+
+  //alert(selecedpayrate); 
 //  alert(selectedcate);
  var selectedcate= selectedcate.substring(1);
 //var srch=selectedcate+'gender'+selecedgender;
@@ -227,90 +240,150 @@ if(selectedcate=="")
 
  jQuery.ajax({
 type: "GET",
-url: "http://gotaworkout.com/index.php/get_serachresult?gender="+selecedgender+"&selectedcate="+selectedcate,
-dataType:'json',
+url: "http://gotaworkout.com/index.php/get_serachresult?gender="+selecedgender+"&payrate="+selecedpayrate+"&selectedcate="+selectedcate,
+//dataType:'json',
  
-success: function(searchresult) { 
-var data="";
-jQuery.each( searchresult, function( key, val ) {
-var jas=JSON.stringify(val);  
-var obj = jQuery.parseJSON( jas);
- 
+success: function(searchresultds) { 
+  jQuery(".discover-content").html("");
 
-if(obj.id=="false")
+  var objds = jQuery.parseJSON( searchresultds );
+var arrs = [], objds;
+
+for(key in objds) {
+    arrs.push(key);
+} 
+len = arrs.length;
+ console.log(len) //2*/
+
+
+ //var p=1;
+  for(i=1; i<=len;i++)
+  {
+
+//alert(objds);
+  var getstringifysd = JSON.stringify(objds[i]);
+  console.log(getstringifysd);
+  var objs = jQuery.parseJSON( getstringifysd );
+ //alert(objs.firstname);
+//alert(p);
+if(objs.userimage==null)
 {
-data +="<div id='not_found'></div>";
+var imagesusr=""+bseimg+"service/public/z_uploads/doctor/no_imageabc.jpg";
 }
 else
 {
-if(obj.id==0)
-{
-data +="";
-}
-else
-{
-data +="<div id='searchlop1' class='discover-content"+obj.id+"'><div class='content-part'><div class='top-of-content'></div><div class='middel-part'><div class='left-part-middel'><div class='text-part-left'><h1>"+obj.firstname+" </h1><p></p></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
-}
+var imagesusr=""+bseimg+"service/public/z_uploads/doctor/"+objs.userimage+"";
 }
 
+data="<div class='discover-content"+objs.id+"'onclick='abd("+objs.id+")'id='searchlop2'><div class='content-part2'><img src='"+imagesusr+"'><div class='top-of-content2'></div><div class='middel-part2'><div class='left-part-middel2'><div class='text-part-left2'><h1>"+objs.firstname+"</h1><p class='categories-append2'></p><div class='countratinga'><div id='rating21"+objs.id+"' class='rating21'></div><div class='round-count21' id='round21"+objs.id+"'></div></div></div></div><div class='text-right-part'><h1></h1></div></div></div></div>";
 
 
-/**********second ajax********/
+ jQuery(".discover-content").append(data);
 
 
-if(obj.speciality !=undefined)
-{
 
-  jQuery.ajax({
+//alert(objs.speciality);
 
+
+/**************second request******************/
+ jQuery.ajax({
 type: "GET",
-url: "http://gotaworkout.com/index.php/get_cateid?selectedcated="+obj.speciality+"",
+url: "http://gotaworkout.com/index.php/speciality1?speciality1="+objs.speciality+"&userid="+objs.id+"",
 dataType:'json',
- 
-success: function(get_cateid) { 
+success: function(searchresultd)
+ { 
 
-
-var get_cpar= JSON.stringify(get_cateid);  
-var get_cpars = jQuery.parseJSON( get_cpar);
-
-var items=get_cpars.name;
-var id=get_cpars.id;
-
-
-     $(".discover-content"+obj.id+" .text-part-left p").html("");
- if(obj.speciality==id)
- {
-  //alert("items");
-$(".discover-content"+obj.id+" .text-part-left p").append(items);
- }
- else
- {
-  //alert('false');
-$(".discover-content"+obj.id+" .text-part-left"+obj.id+" p").append("");
- }
+  var starimage=""+bseimg+"service/public/z_uploads/doctor/sameimg.png";
+  var fillstar1=""+bseimg+"service/public/z_uploads/doctor/onestar.png";
+  var fillstar2=""+bseimg+"service/public/z_uploads/doctor/secondstart.png";
+  var fillstar3=""+bseimg+"service/public/z_uploads/doctor/third_start.png";
+  var fillstar4=""+bseimg+"service/public/z_uploads/doctor/fourth_star.png";
+  var fillstar5=""+bseimg+"service/public/z_uploads/doctor/fifth_star.png";
 
 
 
+var emptystar=""+bseimg+"service/public/z_uploads/doctor/empty_star.png";
+var items=searchresultd.name;
+var ratingsh=searchresultd.rating;
+var usrid=searchresultd.useridfor;
 
+ jQuery(".discover-content"+usrid+" .text-part-left2 p").append(items);
 
- 
-}
-}); 
+ /*************rating start*************/
 
-}
-
-
-/***********second ajax**********/
-
-});
-if(data=="")
+if(ratingsh ==0)
 {
-data ="<div id='not_found'></div>";
+//alert('sssssssss');
+var imageempty ='<img src='+emptystar+'>';
+jQuery("#rating21"+usrid+"").append(imageempty);
+jQuery("#round21"+usrid+"").append("0");
+
+
+}else
+{
+  if(ratingsh==1)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar1+'>';
+jQuery("discover-content#rating21"+usrid+"").append(imageempty);
+jQuery(".discover-content"+usrid+" #round21"+usrid+"").append(ratingsh);
+}
+if(ratingsh==2)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar2+'>';
+jQuery(".discover-content"+usrid+" #rating21"+usrid+"").append(imageempty);
+jQuery(".discover-content"+usrid+" #round21"+usrid+"").append(ratingsh);
 }
 
- $(".discover-content").html(data);
+if(ratingsh==3)
+{
+//alert('***3****');
+ //alert("usrid");
+var imageempty ='<img src='+fillstar3+'>';
+jQuery(".discover-content"+usrid+" #rating21"+usrid+"").append(imageempty);
+jQuery(".discover-content"+usrid+" #round21"+usrid+"").append(ratingsh);
+}
+
+if(ratingsh==4)
+{
+// alert('****ll***');
+var imageempty ='<img src='+fillstar4+'>';
+jQuery(".discover-content"+usrid+" #rating21"+usrid+"").append(imageempty);
+jQuery(".discover-content"+usrid+" #round21"+usrid+"").append(ratingsh);
+} 
+if(ratingsh==5)
+{
+ //alert('*******');
+var imageempty ='<img src='+fillstar5+'>';
+jQuery(".discover-content"+usrid+" #rating21"+usrid+"").append(imageempty);
+jQuery(".discover-content"+usrid+" #round21"+usrid+"").append(ratingsh);
+}
+}
+
+
+/*************rating start*************/
 
 }  ///ajax request
+
+
+});
+
+
+/****************second request**************/
+
+
+
+//p++;
+ }
+
+
+
+ 
+
+}  ///ajax request
+
+
 });
 
 /*******************search******************/
