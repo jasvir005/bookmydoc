@@ -67,6 +67,7 @@ jQuery('.yoga-wordout').click(function(){
         jQuery(".scroll").removeClass('scroll02');
             jQuery(".yoga-wordout").css("height",'auto');
                    jQuery(".container-hide-div").css("display",'inline');
+                          jQuery(".filter-div1").css("color",'.#fff');
                       jQuery(".filter-page-contant .yoga-wordout > p").css("visibility",'visible');
     }
     else {
