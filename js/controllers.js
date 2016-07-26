@@ -66,6 +66,8 @@ jQuery('.yoga-wordout').click(function(){
         jQuery(".transfromimg").removeClass('rotate2');
         jQuery(".scroll").removeClass('scroll02');
             jQuery(".yoga-wordout").css("height",'auto');
+                   jQuery(".container-hide-div").css("display",'inline');
+                      jQuery(".filter-page-contant .yoga-wordout > p").css("visibility",'visible');
     }
     else {
 
@@ -80,6 +82,14 @@ jQuery('.yoga-wordout').click(function(){
         jQuery(".transfromimg").addClass('rotate2');
         jQuery(".yoga-wordout").css("height",'500px');
         jQuery(".scroll").addClass('scroll02');
+
+       jQuery(".container-hide-div").css("display",'none');
+         jQuery(".filter-div1").css("color",'.#003F6F');
+                 jQuery(".filter-page-contant .yoga-wordout > p").css("visibility",'hidden');
+
+         
+
+       
 
     }
 
