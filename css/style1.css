@@ -655,7 +655,7 @@ float: left;
     background-position: 87px center;
     background-repeat: no-repeat;
     background-size: 13% auto;
-    border: 1px solid #2169af !important;
+    border: 1px solid #2169af;
     border-radius: 5px;
     color: #cecece !important;
     font-size: 16px !important;
@@ -883,3 +883,80 @@ float: left;
 }
 
  
+
+ #newsearch {
+    background: #fe9a00 none repeat scroll 0 0;
+    border: 1px solid #fe9a00;
+    bottom: 0;
+    color: #fff;
+    font-family: nexa_bold;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.con-middel-part {
+     
+    margin-top: 33%;
+}
+.congratulation-div
+{
+    display: none;
+}
+
+.con-check-div {
+    text-align: center;
+ 
+}
+
+.con-text-div {
+ 
+ 
+   margin-bottom: 18px;
+   margin-top: -10px;
+    text-align: center;
+}
+.con-text-div > h3 {
+      color: #fff;
+       font-family: helvetica;
+        font-size: 20px;
+    }
+
+.con-pata-div > h3 {
+    color: #fff;
+    text-align: center;
+   font-size: 18px;
+     font-family: helvetica;
+}
+
+.con-text-last {
+    text-align: center;
+
+     margin-top: 19px;
+}
+
+.con-text-last > h3 {
+        color: #fff;
+        font-size: 20px;
+         font-family: helvetica;
+}
+.con-text-mid {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.con-text-mid {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.erroeclass
+{
+
+     border: 1px solid red !important;
+     overflow: auto;
+}
