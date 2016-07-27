@@ -10,7 +10,16 @@ function checkout()
 {
 
 dataval=jQuery("#datepicker").val();
+
 timevalue=jQuery("#basicExample").val();
+
+
+
+
+localStorage.setItem('bookdate', dataval);
+
+localStorage.setItem('booktime', timevalue);
+
 locchecked=jQuery('input[name=localtion]:checked', '.localtion-field-div').val();
 
 classchecked=jQuery('input[name=radio]:checked', '.class-type-div').val();
@@ -97,6 +106,45 @@ success: function(alluserss) {
 //alert(alluserss);
 
 
+
+
+bookdte=localStorage.getItem('bookdate');
+
+
+//alert(bookdte);
+
+
+var res = bookdte.split("/");
+//alert(res[0]);
+var databc='';
+if(res[0]==01){databc="Jan"}
+if(res[0]==02){databc="Feb"}
+if(res[0]==03){databc="Mar"}
+if(res[0]==04){databc="Apr"}
+if(res[0]==05){databc="May"}
+if(res[0]==06){databc="Jun"}
+if(res[0]==07){databc="Jul"}
+if(res[0]==08){databc="Aug"}
+if(res[0]==09){databc="Sep"}
+if(res[0]==10){databc="Oct"}
+if(res[0]==11){databc="Nov"}
+if(res[0]==12){databc="Dec"}
+
+ 
+var lets =databc+' '+res[1]+'th';
+bookname=localStorage.getItem('bookname');
+
+booktime=localStorage.getItem('booktime');
+
+jQuery(".dateformetting").append(lets);
+
+
+jQuery(".bookername").append(bookname);
+
+jQuery(".booktime").append(booktime);
+
+
+jQuery("body").css('background','#15314C');
 
 jQuery(".package-order-div").hide();
 jQuery(".congratulation-div").show();
@@ -218,6 +266,9 @@ var obj = jQuery.parseJSON(jsonvar);
 
 
 var str = obj.firstname;
+
+
+localStorage.setItem('bookname', obj.firstname);
 str = str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
     return letter.toUpperCase();
 });
@@ -1547,3 +1598,26 @@ jQuery(".filter-page-contant").click(function(){
 jQuery(".filter-page-contant").click(function(){
     jQuery(window).off("scroll", scrollHandler);
 });
+
+function myprofile ()
+{
+jQuery('.search-page').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.menu-slide').hide();
+jQuery('.search-page').css({ 'position': 'relative'});
+jQuery('.hide-open-time').css({ 'width': 'auto'});
+
+jQuery('.search-page').css({ 'display': 'none'});
+
+jQuery('.user-profilepage').css({ 'display': 'inline'});
+
+
+
+
+
+
+
+
+
+}

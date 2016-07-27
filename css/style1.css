@@ -918,20 +918,26 @@ float: left;
  
  
    margin-bottom: 18px;
-   margin-top: -10px;
+ margin-top: 22px;
     text-align: center;
 }
+
+.con-check-div > img {
+    width: 28%;
+}
 .con-text-div > h3 {
-      color: #fff;
+      color: #C0C7CF;
        font-family: helvetica;
         font-size: 20px;
+         
     }
 
 .con-pata-div > h3 {
-    color: #fff;
+    color: #C0C7CF;
     text-align: center;
    font-size: 18px;
      font-family: helvetica;
+    
 }
 
 .con-text-last {
@@ -940,8 +946,16 @@ float: left;
      margin-top: 19px;
 }
 
+
+
+ .dateformetting {
+    color: #fff;
+}
+.booktime {
+    color: #fff;
+}
 .con-text-last > h3 {
-        color: #fff;
+        color: #C0C7CF;
         font-size: 20px;
          font-family: helvetica;
 }
@@ -959,4 +973,107 @@ float: left;
 
      border: 1px solid red !important;
      overflow: auto;
+}
+
+.con-email-fld span {
+    
+    margin-left: 11px;
+    
+}
+
+.con-email-fld img {
+     
+    position: relative;
+    top: 11px;
+    width: 12%;
+}
+
+.con-email-fld {
+    text-align: center;
+      border: 1px solid #fe9a00;
+    margin-top: 98px;
+}
+
+.con-email-fld > h3 {
+   
+    color: #fff;
+    font-family: helvetica;
+    font-size: 17px;
+}
+
+.userimagte > img {
+    border-radius: 68px;
+    clear: left;
+    height: 93px;
+    overflow: initial;
+    width: 100%;
+}
+
+.userimagte {
+ 
+    margin: 0 auto;
+     margin: 47px auto 0;
+    text-align: center;
+    width: 30%;
+}
+
+
+.userheadser {
+    float: left;
+ 
+    margin-top: 10px;
+    width: 100%;
+}
+
+.userheadser > h1 {
+    color: #fff;
+    font-family: nexa_bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+}
+
+.userimagte-name > h3 {
+    color: #fff;
+}
+
+.user-age > h3
+{
+    color: #fff;
+
+}
+
+.user-location > h3 {
+     color: #fff;
+}
+.user-EMAIL > h3
+{
+     color: #fff;
+
+}
+.user-phone > h3
+{
+      color: #fff;  
+}
+
+.user-preferance > h3
+{
+     color: #fff;
+}
+.innercontainer-userpro {
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.inner-container
+{
+
+    background-color: #15314C;
+     overflow: auto;
+}
+
+.user-profilepage
+{
+    display: none;
 }
