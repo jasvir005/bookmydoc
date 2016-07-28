@@ -80,7 +80,7 @@ var timevalue2=timevalue.slice(0, -2);
 
   //alert("ajax request");
   var sessionidval=localStorage.getItem('session');
-alert(sessionidval);
+//alert(sessionidval);
 var patientid= localStorage.getItem('bookid');
 
 
@@ -156,9 +156,10 @@ jQuery(".congratulation-div").show();
 else
 {
 
-  
+
 
   alert(sessionidval);
+
   shownotification("Already book","Login");
 
 }
@@ -200,6 +201,16 @@ jQuery(".congratulation-div").show();
 
 
 
+
+function shownotification(msg,title)
+{
+  navigator.notification.alert(
+                        msg,  // message
+                        alertDismissed,         // callback
+                        title,            // title
+                        'Ok'                  // buttonName
+              );
+}
 
 function retrunsearch()
 
