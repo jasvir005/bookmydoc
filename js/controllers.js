@@ -2,6 +2,13 @@ $(document).ready(function(){
   //alert('dfd');
 
 
+ 
+
+
+
+
+
+
   var imagueurl="http://gotaworkout.com/";
  
  jas=localStorage.getItem('session');
