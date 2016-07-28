@@ -155,13 +155,9 @@ jQuery(".congratulation-div").show();
 }
 else
 {
- 
-  //alert("error mwaage ");
-  //navigator.notification.alert('alert mesage', alertCallback, ['hello'], ['ok'])
 
+  alert("Already book");
 
-navigator.notification.prompt();
- 
 }
 
 //alert("booking save");
@@ -200,19 +196,6 @@ jQuery(".congratulation-div").show();
 }
 
 
-
-
-function onPrompt(results) {
-    alert("You selected button number " + results.buttonIndex + " and entered " + results.input1);
-}
-
-navigator.notification.prompt(
-    'Please enter your name',  // message
-    onPrompt,                  // callback to invoke
-    'Registration',            // title
-    ['Ok','Exit'],             // buttonLabels
-    'Jane Doe'                 // defaultText
-);
 
 
 function retrunsearch()
