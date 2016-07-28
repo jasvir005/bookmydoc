@@ -5,6 +5,16 @@ var baseurl="http://gotaworkout.com/index.php/";
 
  
 
+function shownotification(msg,title)
+{
+  navigator.notification.alert(
+                        msg,  // message
+                        alertDismissed,         // callback
+                        title,            // title
+                        'Ok'                  // buttonName
+              );
+}
+
 
 function checkout()
 {
@@ -158,9 +168,9 @@ else
 
 
 
-  alert(sessionidval);
+  alert("sessionidval");
 
-  shownotification("Already book","Login");
+  shownotification("Already book",'hello alert',"ok");
 
 }
 
@@ -202,15 +212,6 @@ jQuery(".congratulation-div").show();
 
 
 
-function shownotification(msg,title)
-{
-  navigator.notification.alert(
-                        msg,  // message
-                        alertDismissed,         // callback
-                        title,            // title
-                        'Ok'                  // buttonName
-              );
-}
 
 function retrunsearch()
 
