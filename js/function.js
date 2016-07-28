@@ -90,7 +90,7 @@ var timevalue2=timevalue.slice(0, -2);
 
   //alert("ajax request");
   var sessionidval=localStorage.getItem('session');
-alert(sessionidval);
+//alert(sessionidval);
 var patientid= localStorage.getItem('bookid');
 
 
@@ -119,7 +119,7 @@ if(alluserss=='successfully')
 {
 
 
-alert(sessionidval);
+///alert(sessionidval);
 
 bookdte=localStorage.getItem('bookdate');
 
@@ -168,10 +168,10 @@ else
 
 
 
-  alert("sessionidval");
+  alert("Already book");
 
 
-  shownotification("Already book",'hello alert',"ok");
+ // shownotification("Already book",'hello alert',"ok");
 
 }
 
