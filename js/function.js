@@ -171,7 +171,7 @@ else
   alert("alert");
 
 
-  shownotification("Already book",'hello alert',"ok");
+  shownotification("Already book","ok");
 
 }
 
