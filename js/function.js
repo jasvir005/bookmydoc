@@ -168,7 +168,8 @@ else
 
 
 
-  alert("sessionidval");
+  alert("alert");
+
 
   shownotification("Already book",'hello alert',"ok");
 
