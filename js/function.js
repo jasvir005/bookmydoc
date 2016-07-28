@@ -1188,7 +1188,7 @@ var text2 = '{ "email":"'+emailId+'" , "password":"'+passNme+'" ,"usertype":"2"}
  
  
 jQuery.ajax({
-url: ""+baseurl+"get_login_details",
+url: ""+baseurl+"get_login_details01",
 method: "GET",
 data: {'loginData': text2},
 
@@ -1201,7 +1201,19 @@ var review=localStorage.getItem('review');
 
 var obj = jQuery.parseJSON( loginuser );
 //alert(obj);
-var userID= obj.userID;
+var userID= obj.id;
+//alert(userID);
+
+if(userID=="false")
+{
+
+  //alert('jas');
+  $("#login_error").show();
+    return false;
+}
+else
+{
+
 localStorage.setItem('session', userID);
 
  //alert(userID);
@@ -1251,6 +1263,7 @@ $(".search-page").show();
 
 
 
+}
 }
 
 });
