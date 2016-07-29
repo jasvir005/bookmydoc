@@ -792,7 +792,76 @@ num++;
 
 
 
+function profilepage()
+{
 
+
+jQuery(".search-page").hide();
+jQuery(".user-profilepage").show();
+
+
+jQuery('.menu-slide').hide();
+jQuery('.user-profilepage').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.user-profilepage').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.search-page').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.menu-slide').hide();
+jQuery('.search-page').css({ 'position': 'relative'});
+jQuery('.hide-open-time').css({ 'width': 'auto'});
+jQuery('.user-profilepage').css({ 'position': 'relative'});
+
+
+
+
+
+
+}
+
+function searchtrainer()
+{
+  jQuery(".search-page").show();
+  jQuery(".user-profilepage").hide();
+
+jQuery('.menu-slide').hide();
+jQuery('.user-profilepage').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.user-profilepage').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.search-page').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.menu-slide').hide();
+jQuery('.search-page').css({ 'position': 'relative'});
+jQuery('.hide-open-time').css({ 'width': 'auto'});
+jQuery('.user-profilepage').css({ 'position': 'relative'});
+
+}
+
+function bookingmentfun()
+{
+
+
+  jQuery(".search-page").hide();
+  jQuery(".user-profilepage").hide();
+
+
+
+  jQuery(".booking-calender").show();
+
+jQuery('.menu-slide').hide();
+jQuery('.user-profilepage').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.user-profilepage').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.search-page').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.menu-slide').hide();
+jQuery('.search-page').css({ 'position': 'relative'});
+jQuery('.hide-open-time').css({ 'width': 'auto'});
+jQuery('.user-profilepage').css({ 'position': 'relative'});
+
+}
 
 
 
@@ -905,6 +974,60 @@ var review=localStorage.getItem('review');
   var objs = jQuery.parseJSON( alluserssd );
 //alert(objs.userID);
 localStorage.setItem('session', objs.userID);
+
+
+/**************get user profile***************/
+var jas = objs.userID;
+ var imagueurl="http://gotaworkout.com/";
+ $.ajax({
+type: "GET",
+url: ""+baseurl+"userprifilepage?useridprofile="+jas+"",
+dataType:'json',
+ 
+success: function(simgpleusrdetails) {
+var jsonvars=JSON.stringify(simgpleusrdetails); 
+var obj = jQuery.parseJSON(jsonvars);
+jQuery.ajax({
+type: "GET",
+url: ""+baseurl+"userimagepik?useridimg="+obj.id+"",
+dataType:'json',
+success: function(simgpleusrdetaild) {
+var jsonvarsd=JSON.stringify(simgpleusrdetaild); 
+var objd = jQuery.parseJSON(jsonvarsd);
+//alert(objd.name);
+if(objd.name==null)
+{
+var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
+}
+else
+{
+var image=""+imagueurl+"service/public/z_uploads/doctor/"+objd.name+"";
+ $(".userimagte img").attr('src',image);
+}
+}
+});
+$(".userimagte-name  h3").append(obj.firstname);
+$(".user-location  h3").append(obj.address);
+$(".user-EMAIL  h3").append(obj.email);
+$(".user-phone  h3").append(obj.phone);
+$(".user-zip  h3").append(obj.zipcode);
+}
+});
+
+
+
+/**************get user profile***************/
+
+
+
+
+
+
+
+
+
+
+
  if(review=="reviewlogin")
 {
 
@@ -1202,6 +1325,67 @@ var review=localStorage.getItem('review');
 var obj = jQuery.parseJSON( loginuser );
 //alert(obj);
 var userID= obj.id;
+var jas=obj.id;
+/***********get userprofile **********/
+
+ var imagueurl="http://gotaworkout.com/";
+ $.ajax({
+type: "GET",
+url: ""+baseurl+"userprifilepage?useridprofile="+jas+"",
+dataType:'json',
+ 
+success: function(simgpleusrdetails) {
+var jsonvars=JSON.stringify(simgpleusrdetails); 
+var obj = jQuery.parseJSON(jsonvars);
+jQuery.ajax({
+type: "GET",
+url: ""+baseurl+"userimagepik?useridimg="+obj.id+"",
+dataType:'json',
+success: function(simgpleusrdetaild) {
+var jsonvarsd=JSON.stringify(simgpleusrdetaild); 
+var objd = jQuery.parseJSON(jsonvarsd);
+//alert(objd.name);
+if(objd.name==null)
+{
+var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
+}
+else
+{
+var image=""+imagueurl+"service/public/z_uploads/doctor/"+objd.name+"";
+ $(".userimagte img").attr('src',image);
+}
+}
+});
+$(".userimagte-name  h3").append(obj.firstname);
+$(".user-location  h3").append(obj.address);
+$(".user-EMAIL  h3").append(obj.email);
+$(".user-phone  h3").append(obj.phone);
+$(".user-zip  h3").append(obj.zipcode);
+}
+});
+
+
+
+
+/***********get userprofile **********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //alert(userID);
 
 if(userID=="false")

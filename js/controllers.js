@@ -73,6 +73,8 @@ $(".user-EMAIL  h3").append(obj.email);
 
 $(".user-phone  h3").append(obj.phone);
 
+$(".user-zip  h3").append(obj.zipcode);
+
 
 
 
@@ -203,6 +205,8 @@ jQuery('.yoga-wordout').click(function(){
 jQuery('#menuslide').click(function(){
 
  //alert("dfd");
+
+
          
      if( jQuery('.menu-slide').is(':visible') ) 
 
@@ -245,6 +249,80 @@ jQuery('.hide-open-time').css({ 'width': '113%'});
 
 /************menu slide left****************/
 
+
+
+
+
+
+
+/*****************menu slide profilepage******************/
+
+jQuery("#menuslide2ds").click(function(){
+
+ //alert("seocn menu");
+
+ 
+         
+     if( jQuery('.menu-slide').is(':visible') ) 
+
+{
+//alert('close');
+
+jQuery('.search-page').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.menu-slide').hide();
+jQuery('.search-page').css({ 'position': 'relative'});
+jQuery('.hide-open-time').css({ 'width': 'auto'});
+
+jQuery('.search-page').css({ 'display': 'none'});
+jQuery('.user-profilepage').css({ 'display': 'inline'});
+
+
+
+jQuery('.menu-slide').hide();
+jQuery('.user-profilepage').css({ 'float': 'none'});
+jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.user-profilepage').animate({ 'margin-left': '0px' }, 'fast');
+jQuery('.user-profilepage').css({ 'position': 'relative'}); 
+
+
+
+ 
+}
+else {
+
+//alert("open");
+jQuery('.menu-slide').show();
+
+
+
+jQuery('.menu-slide').animate({ 'width': '250px' }, 'fast');
+jQuery('.user-profilepage').animate({ 'margin-left': '250px'}, 'fast');
+jQuery('.user-profilepage').css({ 'float': 'left'});
+jQuery('.user-profilepage').css({ 'position': 'fixed'});
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+}
+
+
+ 
+});
+
+
+
+/************menu slide left profilepage****************/
 
 
 

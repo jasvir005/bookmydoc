@@ -191,6 +191,35 @@ width: 77%;
    width: 22px;
 }
 
+/*.login-backbtn2user img {
+    margin-left: 10px;
+    transform: rotate(180deg);
+   width: 22px;
+}
+*/
+.userheadser {
+    border: 1px solid;
+    overflow: auto;
+     padding-top: 4px;
+}
+
+.login-backbtn2user {
+     
+    float: left;
+    width: 10%;
+}
+
+
+.login-backbtn2user img {
+ 
+    width: 100%;
+     transform: rotate(180deg);
+    width: 29px;
+     margin-left: 5px;
+}
+
+
+
 .login-backbtn2 {
    float: left;
     margin-top: 10px;
@@ -1018,52 +1047,135 @@ float: left;
 }
 
 
-.userheadser {
+/*.userheadser {
     float: left;
  
     margin-top: 10px;
     width: 100%;
-}
+}*/
 
 .userheadser > h1 {
     color: #fff;
     font-family: nexa_bold;
     font-size: 18px;
     letter-spacing: 1px;
-    margin: 0;
+ margin: 9px 0 0;
     text-align: center;
 }
 
 .userimagte-name > h3 {
-    color: #fff;
+ color: #fff;
+    float: right;
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    width: 61%;
 }
 
 .user-age > h3
 {
-    color: #fff;
+ color: #fff;
+    float: right;
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    width: 61%;
 
 }
 
 .user-location > h3 {
-     color: #fff;
+  color: #fff;
+    float: right;
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    width: 61%;
 }
 .user-EMAIL > h3
 {
-     color: #fff;
+ color: #fff;
+    float: right;
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    width: 61%;
 
 }
 .user-phone > h3
 {
-      color: #fff;  
+   color: #fff;
+    float: right;
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    width: 61%;
+}
+
+.user-zip > h3
+{
+  color: #fff;
+    float: right;
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    width: 61%;
 }
 
 .user-preferance > h3
 {
-     color: #fff;
+   color: #fff;
+    float: right;
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+    width: 61%;
+}
+.userimagte-name > span {
+    float: left;
+      color: #fff;
+     font-size: 20px;
+        width: 35%;
+}
+
+.user-phone > span {
+    float: left;
+      color: #fff;
+     font-size: 20px;
+        width: 35%;
+}
+
+.user-preferance > span {
+    float: left;
+      color: #fff;
+     font-size: 20px;
+        width: 35%;
+}
+
+.user-zip > span {
+    float: left;
+      color: #fff;
+     font-size: 20px;
+        width: 35%;
+}
+
+.user-EMAIL > span {
+    float: left;
+          color: #fff;
+     font-size: 20px;
+        width: 35%;
+    
+
+}
+
+.user-location > span {
+    float: left;
+          color: #fff;
+     font-size: 20px;
+        width: 35%;
 }
 .innercontainer-userpro {
-    padding-left: 27px;
-    padding-right: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .inner-container
@@ -1074,6 +1186,73 @@ float: left;
 }
 
 .user-profilepage
+{
+    display: none;
+}
+.first-page-all-trainer
+{
+ 
+}
+
+.user-location {
+ 
+     border-bottom: 1px solid #616161;
+    overflow: hidden;
+    padding-bottom: 7px;
+    width: 100%;
+     padding-top: 4px;
+}
+
+
+
+.user-EMAIL {
+   
+     border-bottom: 1px solid #616161;
+    overflow: hidden;
+    padding-bottom: 7px;
+     padding-top: 4px;
+    width: 100%;
+}
+
+
+.user-zip {
+   
+/*    border-bottom: 1px solid #616161;*/
+    overflow: hidden;
+    padding-bottom: 7px;
+     padding-top: 4px;
+    width: 100%;
+}
+
+.user-phone {
+    border-bottom: 1px solid #616161;
+    overflow: hidden;
+    padding-bottom: 7px;
+     padding-top: 4px;
+    width: 100%;
+}
+
+
+.userimagte-name {
+  border-bottom: 1px solid #616161;
+    overflow: hidden;
+     padding-top: 4px;
+    padding-bottom: 7px;
+    width: 100%;
+}
+
+
+/*
+.user-preferance {
+ 
+    border-bottom: 1px solid #616161;
+    overflow: hidden;
+    padding-bottom: 7px;
+     padding-top: 4px;
+    width: 100%;
+}*/
+
+.booking-calender
 {
     display: none;
 }

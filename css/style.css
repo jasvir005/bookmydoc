@@ -2512,3 +2512,13 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     margin: 0 26px 0 0;
 }
  
+ .image-nofound {
+    margin: 0 auto;
+    text-align: center;
+      border-bottom: 1px solid #d3d3d3;
+}
+
+.image-nofound img {
+ 
+    width: 74%;
+}

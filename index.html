@@ -231,52 +231,6 @@ Some notes:
 
 
 
-<!-- **************profile page ************** -->
-
-
-
-
-<div class="user-profilepage">
-  
-<div class="header-div">
-   <div class="userheadser"><h1> User Profile  </h1></div> 
-</div>
-
- <div class="inner-container">
-<div class="userimagte"><img src=""></div>
-
-<div class="innercontainer-userpro">
-<div class="userimagte-name"><h3></h3></div>
-
-<div class="user-age"><h3></h3></div>
-
-<div class="user-location"><h3> </h3></div>
-
-
-
-<div class="user-EMAIL"><h3> </h3></div>
-
-
-<div class="user-preferance"><h3> </h3></div>
-
-
-<div class="user-phone"><h3></h3></div>
-
-
-</div>
-</div>
-</div>
-
-
-
-
-
-
-<!-- ************profile page*********** -->
-
-
-
-
 
 
     <div class="loginhome-page">
@@ -533,17 +487,17 @@ padding-right: 20px;">Sign in with Google</button>
       <p class="word-outflog">MY TRAINER</p>
 
   </div>
-<ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+<ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" onclick="searchtrainer()" menu-close="" style="">
          SEARCH TRAINERS
         </ion-item>
 
-        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" onclick="profilepage()" menu-close="" style="">
           MY PROFILE
         </ion-item>
         <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
           MY FAVORITES
         </ion-item>
-        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" onclick="bookingmentfun()" menu-close="" style="">
           MY BOOKINGS
         </ion-item>
 
@@ -782,6 +736,82 @@ padding-right: 20px;">Sign in with Google</button>
      </div>
 
   </div> <!-- dome div -->
+
+
+
+
+ 
+
+
+
+<!-- **************profile page ************** -->
+
+
+
+
+<div class="user-profilepage">
+  
+<div class="header-div">
+
+   <div class="userheadser"> <div class="login-backbtn2user"><button menu-toggle="left" class="common-button button button-positive button-clear button_text icon ion-navicon txt-color-black" id="menuslide2ds"></button></div><h1> User Profile  </h1></div> 
+</div>
+
+ <div class="inner-container">
+<div class="userimagte"><img src=""></div>
+
+<div class="innercontainer-userpro">
+<div class="userimagte-name"><span>Name :</span><h3></h3></div>
+
+<!-- <div class="user-age"><span>Age</span><h3></h3></div> -->
+
+<div class="user-location"><span>Location :</span><h3> </h3></div>
+
+
+
+<div class="user-EMAIL"><span>E-mail :</span><h3> </h3></div>
+
+
+<div class="user-preferance"><h3> </h3></div>
+
+
+<div class="user-phone"><span>Phone :</span><h3></h3></div>
+<div class="user-zip"><span>Zipcode :</span><h3></h3></div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- ************profile page*********** -->
+
+
+
+
+<!-- ****************booking page calender**************** -->
+
+
+<div class="booking-calender">
+  
+  HELLO I AM CALENDER DIV
+</div>
+
+
+<!-- ****************booking page calender**************** -->
+
+
+
+
+
+
+
+
+
+
 
 
   <div  id="search_rest_page" class="search-result-page">
