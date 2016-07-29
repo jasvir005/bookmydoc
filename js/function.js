@@ -969,7 +969,7 @@ data: {'loginData': textc},
 success: function(alluserssd) {
 
 
-  alert(alluserssd);
+  //alert(alluserssd);
 jQuery("body").removeClass("show1");
 
 var review=localStorage.getItem('review');
@@ -984,7 +984,7 @@ localStorage.setItem('session', objs.userID);
 /**************get user profile***************/
 var jass = objs.userID;
 
-//alert(jass);
+alert(jass);
 
  var imagueurl="http://gotaworkout.com/";
  $.ajax({
@@ -998,7 +998,7 @@ var jsonvars=JSON.stringify(simgpleusrdetailsss);
  //alert(jsonvars);
 var obj = jQuery.parseJSON(jsonvars);
 
- //alert(obj.id);
+ alert(obj.id);
 
 
 jQuery.ajax({
@@ -1008,16 +1008,17 @@ dataType:'json',
 success: function(simgpleusrdetaild) {
 
 
-//alert(simgpleusrdetaild);
+alert(simgpleusrdetaild);
 var jsonvarsd=JSON.stringify(simgpleusrdetaild); 
 //alert(jsonvarsd);
 //alert('***');
 //alert(jsonvarsd.name);
 var objd = jQuery.parseJSON(jsonvarsd);
-//alert("********");
-//alert(objd.name);
+alert("********");
+alert(objd.name);
 if(objd.name==null)
 {
+  alert('empty');
 var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
 }
 else
