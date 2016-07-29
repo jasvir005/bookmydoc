@@ -946,7 +946,7 @@ fbData = function () {
  var textj = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":'+fbEmail2s+',"password":"","phone":"9898989897","usertype":"2"}';
 
 
- alert(textj);
+ //alert(textj);
 jQuery.ajax({
 url: "http://gotaworkout.com/index.php/get_signup_details2",
 method: "GET",
@@ -954,7 +954,7 @@ data: {'signUpData': textj},
 
 success: function(alluserss) {
  
- alert(alluserss);
+ //alert(alluserss);
 
 //var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
@@ -986,12 +986,14 @@ type: "GET",
 url: ""+baseurl+"userprifilepage?useridprofile="+jas+"",
 dataType:'json',
  
-success: function(simgpleusrdetails) {
-  alert("loginuser");
-var jsonvars=JSON.stringify(simgpleusrdetails); 
+success: function(simgpleusrdetailsss) {
+
+var jsonvars=JSON.stringify(simgpleusrdetailsss); 
+  alert(jsonvars);
 var obj = jQuery.parseJSON(jsonvars);
 
 alert(obj.id);
+
 
 jQuery.ajax({
 type: "GET",
