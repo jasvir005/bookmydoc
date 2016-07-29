@@ -930,7 +930,7 @@ fbData = function () {
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
 
-         alert("Result: " + JSON.stringify(response));
+         //alert("Result: " + JSON.stringify(response));
             //alert("status: " + localStorage.status + "token: " + localStorage.token);
             var response = jQuery.parseJSON(JSON.stringify(response));
             
@@ -1374,6 +1374,7 @@ var objd = jQuery.parseJSON(jsonvarsd);
 if(objd.name==null)
 {
 var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
+ $(".userimagte img").attr('src',image);
 }
 else
 {
