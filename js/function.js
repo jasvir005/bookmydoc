@@ -979,20 +979,23 @@ localStorage.setItem('session', objs.userID);
 
 
 /**************get user profile***************/
-var jas = objs.userID;
+var jass = objs.userID;
+
+alert(jass);
+
  var imagueurl="http://gotaworkout.com/";
  $.ajax({
 type: "GET",
-url: ""+baseurl+"userprifilepage?useridprofile="+jas+"",
+url: "http://gotaworkout.com/index.php/userprifilepage?useridprofile="+jass+"",
 dataType:'json',
  
 success: function(simgpleusrdetailsss) {
 
 var jsonvars=JSON.stringify(simgpleusrdetailsss); 
-  alert(jsonvars);
+ alert(jsonvars);
 var obj = jQuery.parseJSON(jsonvars);
 
-alert(obj.id);
+ alert(obj.id);
 
 
 jQuery.ajax({
@@ -1002,14 +1005,14 @@ dataType:'json',
 success: function(simgpleusrdetaild) {
 
 
-alert(simgpleusrdetaild);
+//alert(simgpleusrdetaild);
 var jsonvarsd=JSON.stringify(simgpleusrdetaild); 
-alert(jsonvarsd);
-alert('***');
-alert(jsonvarsd.name);
+//alert(jsonvarsd);
+//alert('***');
+//alert(jsonvarsd.name);
 var objd = jQuery.parseJSON(jsonvarsd);
-alert("********");
-alert(objd.name);
+//alert("********");
+//alert(objd.name);
 if(objd.name==null)
 {
 var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
