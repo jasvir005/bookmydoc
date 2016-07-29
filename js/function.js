@@ -967,6 +967,9 @@ method: "GET",
 data: {'loginData': textc},
 
 success: function(alluserssd) {
+
+
+  alert(alluserssd);
 jQuery("body").removeClass("show1");
 
 var review=localStorage.getItem('review');
@@ -981,7 +984,7 @@ localStorage.setItem('session', objs.userID);
 /**************get user profile***************/
 var jass = objs.userID;
 
-alert(jass);
+//alert(jass);
 
  var imagueurl="http://gotaworkout.com/";
  $.ajax({
@@ -995,7 +998,7 @@ var jsonvars=JSON.stringify(simgpleusrdetailsss);
  alert(jsonvars);
 var obj = jQuery.parseJSON(jsonvars);
 
- alert(obj.id);
+ //alert(obj.id);
 
 
 jQuery.ajax({
