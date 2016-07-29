@@ -943,16 +943,17 @@ fbData = function () {
    
             var cache=localStorage.getItem('token');
 
- var text = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2s+'","password":"","phone":"9898989897","usertype":"2"}';
+ var textj = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2s+'","password":"","phone":"9898989897","usertype":"2"}';
 
 
- //alert(text);
+ alert(textj);
 jQuery.ajax({
-url: ""+baseurl+"get_signup_details2",
+url: "http://gotaworkout.com/index.php/get_signup_details2",
 method: "GET",
-data: {'signUpData': text},
+data: {'signUpData': textj},
 
 success: function(alluserss) {
+ 
  alert(alluserss);
 
 //var obj = jQuery.parseJSON( alluserss );
@@ -1505,7 +1506,7 @@ fbEmail2="jasvirs.210@gmail.com";
 
  //alert(text);
 jQuery.ajax({
-url: ""+baseurl+"get_signup_details2",
+url: "http://gotaworkout.com/index.php/get_signup_details2",
 method: "GET",
 data: {'signUpData': text},
 
