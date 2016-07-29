@@ -936,14 +936,15 @@ fbData = function () {
             
       /*      var fbname = JSON.stringify(response["name"]);
             var fbid = JSON.stringify(response["id"]);*/
-            var fbEmail2 = JSON.stringify(response["email"]);
-            alert(fbEmail2);
+            var fbEmail2s = JSON.stringify(response["email"]);
+            alert(fbEmail2s);
             var name = JSON.stringify(response["name"]);
 
    
             var cache=localStorage.getItem('token');
 
- var text = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2+'","password":"","phone":"9898989897","usertype":"2"}';
+ var text = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2s+'","password":"","phone":"9898989897","usertype":"2"}';
+
 
  //alert(text);
 jQuery.ajax({
@@ -954,11 +955,11 @@ data: {'signUpData': text},
 success: function(alluserss) {
  alert(alluserss);
 
-var obj = jQuery.parseJSON( alluserss );
+//var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
 
 
-var textc = '{ "usertype":"2" , "email":"'+fbEmail2+'" ,"password":""}';
+var textc = '{ "usertype":"2" , "email":"'+fbEmail2s+'" ,"password":""}';
 jQuery.ajax({
 url: ""+baseurl+"get_login_detailsfblogin",
 method: "GET",
@@ -1498,7 +1499,7 @@ function fbloginjs()
 {
 
 name="sdfsdd";
-fbEmail2="jasvirdd.sof@gmail.com";
+fbEmail2="jasvirs.210@gmail.com";
 
  var text = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2+'","password":"","phone":"9898989897","usertype":"2"}';
 
