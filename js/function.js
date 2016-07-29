@@ -997,7 +997,12 @@ url: ""+baseurl+"userimagepik?useridimg="+obj.id+"",
 dataType:'json',
 success: function(simgpleusrdetaild) {
 
+
+alert(simgpleusrdetaild);
 var jsonvarsd=JSON.stringify(simgpleusrdetaild); 
+alert(jsonvarsd);
+alert('***');
+alert(jsonvarsd.name);
 var objd = jQuery.parseJSON(jsonvarsd);
 alert("********");
 alert(objd.name);
