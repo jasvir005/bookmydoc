@@ -1183,6 +1183,7 @@ float: left;
 
     background-color: #15314C;
      overflow: auto;
+     height:100vh;
 }
 
 .user-profilepage
