@@ -985,16 +985,22 @@ url: ""+baseurl+"userprifilepage?useridprofile="+jas+"",
 dataType:'json',
  
 success: function(simgpleusrdetails) {
+  alert("loginuser");
 var jsonvars=JSON.stringify(simgpleusrdetails); 
 var obj = jQuery.parseJSON(jsonvars);
+
+alert(obj.id);
+
 jQuery.ajax({
 type: "GET",
 url: ""+baseurl+"userimagepik?useridimg="+obj.id+"",
 dataType:'json',
 success: function(simgpleusrdetaild) {
+
 var jsonvarsd=JSON.stringify(simgpleusrdetaild); 
 var objd = jQuery.parseJSON(jsonvarsd);
-//alert(objd.name);
+alert("********");
+alert(objd.name);
 if(objd.name==null)
 {
 var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
