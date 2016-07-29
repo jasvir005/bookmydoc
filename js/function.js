@@ -930,14 +930,14 @@ fbData = function () {
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
 
-          // alert("Result: " + JSON.stringify(response));
+         alert("Result: " + JSON.stringify(response));
             //alert("status: " + localStorage.status + "token: " + localStorage.token);
             var response = jQuery.parseJSON(JSON.stringify(response));
             
       /*      var fbname = JSON.stringify(response["name"]);
             var fbid = JSON.stringify(response["id"]);*/
             var fbEmail2 = JSON.stringify(response["email"]);
-            //alert(fbEmail2);
+            alert(fbEmail2);
             var name = JSON.stringify(response["name"]);
 
    
@@ -952,7 +952,7 @@ method: "GET",
 data: {'signUpData': text},
 
 success: function(alluserss) {
- 
+ alert(alluserss);
 
 var obj = jQuery.parseJSON( alluserss );
 //alert(obj.status);
