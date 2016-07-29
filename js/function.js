@@ -930,14 +930,14 @@ fbData = function () {
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
 
-         alert("Result: " + JSON.stringify(response));
+         //alert("Result: " + JSON.stringify(response));
             //alert("status: " + localStorage.status + "token: " + localStorage.token);
             var response = jQuery.parseJSON(JSON.stringify(response));
             
       /*      var fbname = JSON.stringify(response["name"]);
             var fbid = JSON.stringify(response["id"]);*/
             var fbEmail2s = JSON.stringify(response["email"]);
-            alert(fbEmail2s);
+            //alert(fbEmail2s);
             var name = JSON.stringify(response["name"]);
 
    
@@ -984,7 +984,7 @@ localStorage.setItem('session', objs.userID);
 /**************get user profile***************/
 var jass = objs.userID;
 
-alert(jass);
+//alert(jass);
 
  var imagueurl="http://gotaworkout.com/";
  $.ajax({
@@ -998,7 +998,7 @@ var jsonvars=JSON.stringify(simgpleusrdetailsss);
  //alert(jsonvars);
 var obj = jQuery.parseJSON(jsonvars);
 
- alert(obj.id);
+ //alert(obj.id);
 
 
 jQuery.ajax({
@@ -1008,17 +1008,20 @@ dataType:'json',
 success: function(simgpleusrdetaild) {
 
 
-alert(simgpleusrdetaild);
+//alert(simgpleusrdetaild);
 var jsonvarsd=JSON.stringify(simgpleusrdetaild); 
+
 //alert(jsonvarsd);
 //alert('***');
 //alert(jsonvarsd.name);
 var objd = jQuery.parseJSON(jsonvarsd);
-alert("********");
-alert(objd.name);
+///alert("********");
+//alert(objd.name);
 if(objd.name==null)
 {
+
   alert('empty');
+
 var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
 }
 else
