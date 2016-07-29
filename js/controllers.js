@@ -46,7 +46,7 @@ var objd = jQuery.parseJSON(jsonvarsd);
 if(objd.name==null)
 {
 var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
-
+ $(".userimagte img").attr('src',image);
 }
 else
 {

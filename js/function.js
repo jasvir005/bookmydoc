@@ -1008,7 +1008,7 @@ dataType:'json',
 success: function(simgpleusrdetaild) {
 
 
-//alert(simgpleusrdetaild);
+ //alert(simgpleusrdetaild);
 var jsonvarsd=JSON.stringify(simgpleusrdetaild); 
 
 //alert(jsonvarsd);
@@ -1020,7 +1020,7 @@ var objd = jQuery.parseJSON(jsonvarsd);
 if(objd.name==null)
 {
 
-  //alert('empty');
+  //alert('empty1');
 
 var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
  $(".userimagte img").attr('src',image);
@@ -1370,10 +1370,10 @@ dataType:'json',
 success: function(simgpleusrdetaild) {
 var jsonvarsd=JSON.stringify(simgpleusrdetaild); 
 var objd = jQuery.parseJSON(jsonvarsd);
-//alert(objd.name);
+alert(objd.name);
 if(objd.name==null)
 {
-  alert("empty");
+  alert("empty2");
 var image=""+imagueurl+"service/public/z_uploads/doctor/no_imageabc.jpg";
  $(".userimagte img").attr('src',image);
 }
