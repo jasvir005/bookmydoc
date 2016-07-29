@@ -960,7 +960,7 @@ success: function(alluserss) {
 //alert(obj.status);
 
 
-var textc = '{ "usertype":"2" , "email":"'+fbEmail2s+'" ,"password":""}';
+var textc = '{ "usertype":"2" , "email":'+fbEmail2s+' ,"password":""}';
 jQuery.ajax({
 url: ""+baseurl+"get_login_detailsfblogin",
 method: "GET",
@@ -995,7 +995,7 @@ dataType:'json',
 success: function(simgpleusrdetailsss) {
 
 var jsonvars=JSON.stringify(simgpleusrdetailsss); 
- alert(jsonvars);
+ //alert(jsonvars);
 var obj = jQuery.parseJSON(jsonvars);
 
  //alert(obj.id);
