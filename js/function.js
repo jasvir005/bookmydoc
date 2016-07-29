@@ -943,7 +943,7 @@ fbData = function () {
    
             var cache=localStorage.getItem('token');
 
- var textj = '{ "firstname":"'+name+'" , "lastName":"'+name+'" ,"email":"'+fbEmail2s+'","password":"","phone":"9898989897","usertype":"2"}';
+ var textj = '{ "firstname":'+name+' , "lastName":'+name+' ,"email":"'+fbEmail2s+'","password":'','phone':'9898989897','usertype':'2'}';
 
 
  alert(textj);
