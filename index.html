@@ -48,13 +48,70 @@ Some notes:
 <script type="text/javascript" src="js/controllers.js"></script>
 <!-- **********calender css and js******************* -->
 <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="cssadv/mdp.css">
+        <link rel="stylesheet" type="text/css" href="cssadv/pepper-ginder-custom.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="cssadv/prettify.css">
+
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 <!-- **********calender css and js******************* -->
 <script type="text/javascript" src="js/jquery.timepicker.min.js"></script>
 <!-- ***********time picker****** -->
+    <script type="text/javascript" src="jsad/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="jsad/jquery-ui-1.11.1.js"></script>
 
- 
+
+        <script type="text/javascript" src="jsadv/prettify.js"></script>
+    <script type="text/javascript" src="jsadv/lang-css.js"></script>
+
+    <script type="text/javascript" src="jsadv/jquery-ui.multidatespicker.js"></script>
+
+    <script type="text/javascript">
+    <!--
+      var latestMDPver = $.ui.multiDatesPicker.version;
+      var lastMDPupdate = '2014-09-19';
+      
+      $(function() {
+        // Version //
+        //$('title').append(' v' + latestMDPver);
+        $('.mdp-version').text('v' + latestMDPver);
+        $('#mdp-title').attr('title', 'last update: ' + lastMDPupdate);
+        
+        // Documentation //
+        $('i:contains(type)').attr('title', '[Optional] accepted values are: "allowed" [default]; "disabled".');
+        $('i:contains(format)').attr('title', '[Optional] accepted values are: "string" [default]; "object".');
+
+
+        $('#how-to h4').each(function () {
+          var a = $(this).closest('li').attr('id');
+          $(this).wrap('<'+'a href="#'+a+'"></'+'a>');
+        });
+
+        $('#demos .demo').each(function () {
+          var id = $(this).find('.box').attr('id') + '-demo';
+          $(this).attr('id', id)
+            .find('h3').wrapInner('<'+'a href="#'+id+'"></'+'a>');
+        });
+        
+        // Run Demos
+        $('.demo .code').each(function() {
+          eval($(this).attr('title','NEW: edit this code and test it!').text());
+          this.contentEditable = true;
+        }).focus(function() {
+          if(!$(this).next().hasClass('test'))
+            $(this)
+              .after('<button class="test">test</button>')
+              .next('.test').click(function() {
+                $(this).closest('.demo').find('.hasDatepicker').multiDatesPicker('destroy');
+                eval($(this).prev().text());
+                $(this).remove();
+              });
+        });
+      });
+    // -->
+    </script>
 
  
 
@@ -797,7 +854,49 @@ padding-right: 20px;">Sign in with Google</button>
 
 <div class="booking-calender">
   
-  HELLO I AM CALENDER DIV
+ <div id="page">
+
+<div id="demos">
+
+<ul id="demos-list">
+
+
+
+<li class="demo">
+
+<div id="pickableRange" class="box"></div>
+
+<div class="code-box">
+ 
+<pre class="code prettyprint" style="display:none">
+
+ 
+
+var today = new Date();
+var date1='14';
+var y = today.getFullYear();
+
+//alert(y);
+$('#pickableRange').multiDatesPicker({
+  //addDates: ['01/02/'+y,'01/03/'+y, '02/19/'+y, '01/'+date1+'/'+y, '01/16/'+y],
+
+defaultDate: '1/1/'+y
+});
+
+</pre>
+</div>
+</li>
+
+</ul>
+<div class="clear"></div>
+</div>
+
+
+
+
+
+
+</div>
 </div>
 
 
