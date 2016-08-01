@@ -969,6 +969,64 @@ data: {'loginData': textc},
 success: function(alluserssd) {
 
 
+
+  /********************fetch booking data*********************/
+$.ajax({
+type: "GET",
+url: ""+baseurl+"checkbookingapi?checkloginuserid="+jas+"",
+dataType:'json',
+ 
+success: function(bookingpi) {
+
+var jsonvchk=JSON.stringify(bookingpi); 
+var objchk = jQuery.parseJSON(jsonvchk);
+
+var arrs = [], objchk;
+
+for(key in objchk) {
+    arrs.push(key);
+} 
+len = arrs.length;
+ console.log(len) //2*/
+
+ $("#totalbooking").append(len);
+
+//alert(len);
+
+
+ for(a=1;a<=len;a++)
+ {
+   var getstringifysd = JSON.stringify(bookingpi[a]);
+  //console.log(getstringifysd);
+  //alert(getstringifysd);
+  //console.log(dateformet);
+var result = getstringifysd.slice(1, -1);
+
+//alert(result);
+
+var today = new Date();
+ 
+var y = today.getFullYear();
+$('#pickableRange').multiDatesPicker({
+addDates: [result],
+
+defaultDate: '1/1/'+y
+});
+  //localStorage.setItem('dateformet', getstringifysd);
+
+ }
+
+
+
+}
+
+});
+
+
+
+/*************************fetch booking data *****************************/
+
+
   //alert(alluserssd);
 jQuery("body").removeClass("show1");
 
