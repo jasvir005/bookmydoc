@@ -16,7 +16,7 @@
 
 
 
-    <gap:plugin name="com.phonegap.plugins.facebookconnect"   version="0.9.0">
+    <gap:plugin name="cordova-plugin-facebook4"   version="0.9.0">
  
 
 
