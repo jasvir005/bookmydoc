@@ -18,6 +18,7 @@
  
 
 
+
      <param name="APP_ID" value="584050255089224" />
      <param name="APP_NAME" value="bookmydoc" />
     </gap:plugin> 
