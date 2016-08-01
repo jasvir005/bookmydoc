@@ -16,11 +16,11 @@
 
 
 
-  <!--   <gap:plugin name="com.phonegap.plugins.facebookconnect"  version="0.9.0">
+<gap:plugin name="com.phonegap.plugins.facebookconnect4"  version="0.9.0">
  
      <param name="APP_ID" value="584050255089224" />
      <param name="APP_NAME" value="myTrainer" />
-    </gap:plugin> --> 
+    </gap:plugin>
 
 
 <preference name="orientation" value="portrait" />
