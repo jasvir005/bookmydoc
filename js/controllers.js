@@ -85,6 +85,76 @@ $(".user-zip  h3").append(obj.zipcode);
 });
 
 
+
+/********************fetch booking data*********************/
+$.ajax({
+type: "GET",
+url: ""+baseurl+"checkbookingapi?checkloginuserid="+jas+"",
+dataType:'json',
+ 
+success: function(bookingpi) {
+
+var jsonvchk=JSON.stringify(bookingpi); 
+var objchk = jQuery.parseJSON(jsonvchk);
+
+var arrs = [], objchk;
+
+for(key in objchk) {
+    arrs.push(key);
+} 
+len = arrs.length;
+ console.log(len) //2*/
+
+ //alert(len);
+  $("#totalbooking").append(len);
+
+
+
+
+ for(a=1;a<=len;a++)
+ {
+   var getstringifysd = JSON.stringify(bookingpi[a]);
+  //console.log(getstringifysd);
+  //alert(getstringifysd);
+  //console.log(dateformet);
+var result = getstringifysd.slice(1, -1);
+
+//alert(result);
+
+var today = new Date();
+var date1='14';
+var y = today.getFullYear();
+$('#pickableRange').multiDatesPicker({
+addDates: [result],
+
+defaultDate: '1/1/'+y
+});
+  //localStorage.setItem('dateformet', getstringifysd);
+
+ }
+
+
+
+}
+
+});
+
+
+
+/*************************fetch booking data *****************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 

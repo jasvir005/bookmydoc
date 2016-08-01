@@ -551,17 +551,13 @@ padding-right: 20px;">Sign in with Google</button>
         <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" onclick="profilepage()" menu-close="" style="">
           MY PROFILE
         </ion-item>
-        <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
-          MY FAVORITES
-        </ion-item>
+     
         <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" onclick="bookingmentfun()" menu-close="" style="">
-          MY BOOKINGS
+          MY BOOKINGS<span id="totalbooking"></span>
         </ion-item>
 
 
-          <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
-          SETTINGS
-        </ion-item>
+
 
         <!-- social icon start-->
    <!--   <ion-item menu-close ng-show="noSessionStatus" class="bmd-spcl-listing">
@@ -613,6 +609,12 @@ padding-right: 20px;">Sign in with Google</button>
         </ion-item> -->
         <ion-item class="bmd-spcl-listing item2" ng-show="userSessionStatus" onclick="Logout()" menu-close="" style="">
            LOGOUT
+        </ion-item>
+            <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+           
+        </ion-item>
+           <ion-item class="bmd-spcl-listing item2" ng-show="noSessionStatus" ng-click="commingsoon()" menu-close="" style="">
+          
         </ion-item>
      
 
@@ -853,7 +855,12 @@ padding-right: 20px;">Sign in with Google</button>
 
 
 <div class="booking-calender">
-  
+  <div class="header-div">
+
+   <div class="userheadser"> <div class="login-backbtncal"><img src="img/go.png"></div> <div class="login-backbtn2user">
+
+   </div></div> 
+</div>
  <div id="page">
 
 <div id="demos">
@@ -880,7 +887,7 @@ var y = today.getFullYear();
 $('#pickableRange').multiDatesPicker({
   //addDates: ['01/02/'+y,'01/03/'+y, '02/19/'+y, '01/'+date1+'/'+y, '01/16/'+y],
 
-defaultDate: '1/1/'+y
+//defaultDate: '1/1/'+y
 });
 
 </pre>
@@ -897,6 +904,8 @@ defaultDate: '1/1/'+y
 
 
 </div>
+
+<div cid="booknow-btn" onclick="donefun()" class="bmd-main-btn3flog2"><div id="donebtn" class="bmd-main-btn3flog"> Done</div></div>
 </div>
 
 

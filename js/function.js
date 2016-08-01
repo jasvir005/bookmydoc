@@ -1376,7 +1376,7 @@ for(key in objchk) {
 len = arrs.length;
  console.log(len) //2*/
 
-
+alert(len);
 
 
  for(a=1;a<=len;a++)
@@ -1390,7 +1390,7 @@ var result = getstringifysd.slice(1, -1);
 //alert(result);
 
 var today = new Date();
-var date1='14';
+ 
 var y = today.getFullYear();
 $('#pickableRange').multiDatesPicker({
 addDates: [result],
@@ -1930,4 +1930,11 @@ jQuery('.user-profilepage').css({ 'display': 'inline'});
 
 
 
+}
+
+
+function donefun()
+{
+
+  alert('done');
 }
