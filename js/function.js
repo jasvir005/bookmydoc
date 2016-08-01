@@ -1376,7 +1376,9 @@ for(key in objchk) {
 len = arrs.length;
  console.log(len) //2*/
 
-alert(len);
+ $("#totalbooking").append(len);
+
+//alert(len);
 
 
  for(a=1;a<=len;a++)
