@@ -23,8 +23,6 @@
     </gap:plugin> 
 
 
-
-
 <preference name="orientation" value="portrait" />
 
 <platform name="android">
