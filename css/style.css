@@ -1958,7 +1958,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .ng-binding {
     float: left;
-    width: 50%;
+    width: 50% !important;
 }
 
 .error_block.ng-binding{
