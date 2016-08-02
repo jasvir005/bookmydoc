@@ -2522,3 +2522,19 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
  
     width: 74%;
 }
+.signup-page-div .error_block.ng-binding {
+    text-align: center;
+    width: 100% !important;
+}
+
+.login-page #login_error li:nth-child(1) {
+ 
+    float: left;
+      font-size: 13px;
+}
+
+.login-page #login_error li:nth-child(2) {
+ 
+    float: right;
+      font-size: 13px;
+}
