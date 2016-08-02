@@ -794,6 +794,7 @@ num++;
 
 function profilepage()
 {
+localStorage.setItem("checkcalender","profilepage");
 
 
 jQuery(".search-page").hide();
@@ -821,6 +822,8 @@ jQuery('.user-profilepage').css({ 'position': 'relative'});
 
 function searchtrainer()
 {
+//alert('searchtrainer')
+    localStorage.setItem("checkcalender","searchtrainer");
   jQuery(".search-page").show();
   jQuery(".user-profilepage").hide();
 
@@ -841,7 +844,11 @@ jQuery('.user-profilepage').css({ 'position': 'relative'});
 function bookingmentfun()
 {
 
+var checkcalender=localStorage.getItem("checkcalender");
+//alert(checkcalender);
 
+
+  
   jQuery(".search-page").hide();
   jQuery(".user-profilepage").hide();
 
@@ -1411,6 +1418,8 @@ data: {'loginData': text2},
 success: function(loginuser) {
 
 //alert('jas');
+localStorage.setItem("checkcalender", "searchtrainer");
+
 var review=localStorage.getItem('review');
 
  //alert(review);
@@ -1636,6 +1645,29 @@ $(".search-page").show();
 
  // alert(baseurl);
 
+
+jQuery(".login-backbtncal").click(function(){
+var checkcalender=localStorage.getItem("checkcalender");
+jQuery(".booking-calender").hide();
+if(checkcalender=="profilepage")
+{
+  jQuery(".user-profilepage").show();
+  
+
+}
+if(checkcalender=="searchtrainer")
+{
+  jQuery(".search-page").show();
+  
+
+}
+
+
+
+
+   //alert(checkcalender);
+
+})
 
 })  /*docuent function*/
 
@@ -1970,7 +2002,7 @@ var scrollHandler = function(){
 }
 
 jQuery(".filter-page-contant").click(function(){
-  alert('jas');
+  //alert('jas');
    jQuery(window).scroll(scrollHandler);
 }).click(); // .click() will execute this handler immediately
 
@@ -2007,3 +2039,4 @@ function donefun()
 
   alert('done');
 }
+

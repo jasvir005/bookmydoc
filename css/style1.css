@@ -1272,9 +1272,40 @@ float: left;
  
      border-bottom: 1px solid #616161;
     overflow: hidden;
-    padding-bottom: 7px;
+padding-top: 11px;
+    padding-bottom: 18px;
     width: 100%;
-     padding-top: 4px;
+     
+}
+
+.addyear {
+    margin-bottom: 11px;
+    text-align: center;
+        font-size: 30px;
+}
+.addleftclass {
+    float: left;
+    font-size: 25px;
+    text-align: right;
+}
+.rightclass
+{
+ float: right;
+    font-size: 25px;
+    text-align: right;
+}
+
+.year {
+   float: left;
+    font-size: 40px;
+    text-align: center;
+    width: 37%;
+}
+.addyeartop {
+    border: 0px solid red;
+    overflow: auto;
+      padding-top: 30px;
+        padding-bottom: 30px;
 }
 
 
@@ -1283,8 +1314,8 @@ float: left;
    
      border-bottom: 1px solid #616161;
     overflow: hidden;
-    padding-bottom: 7px;
-     padding-top: 4px;
+   padding-top: 11px;
+    padding-bottom: 18px;
     width: 100%;
 }
 
@@ -1293,16 +1324,16 @@ float: left;
    
 /*    border-bottom: 1px solid #616161;*/
     overflow: hidden;
-    padding-bottom: 7px;
-     padding-top: 4px;
+  padding-top: 11px;
+    padding-bottom: 18px;
     width: 100%;
 }
 
 .user-phone {
     border-bottom: 1px solid #616161;
     overflow: hidden;
-    padding-bottom: 7px;
-     padding-top: 4px;
+    padding-top: 11px;
+    padding-bottom: 18px;
     width: 100%;
 }
 
@@ -1310,8 +1341,8 @@ float: left;
 .userimagte-name {
   border-bottom: 1px solid #616161;
     overflow: hidden;
-     padding-top: 4px;
-    padding-bottom: 7px;
+     padding-top: 11px;
+    padding-bottom: 18px;
     width: 100%;
 }
 
