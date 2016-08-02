@@ -2049,3 +2049,22 @@ function donefun()
 }
 
 
+function nxt(ids)
+{
+$(".addyear").html("");
+
+ 
+$(".addyear").append(ids);
+}
+
+
+function pre(idss)
+{
+  //alert(idss)
+$(".addyear").html("");
+
+ 
+$(".addyear").append(idss);
+
+}
+
