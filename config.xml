@@ -14,12 +14,17 @@
  
 <gap:plugin name="cordova-plugin-dialogs" source="pgb"  />
 
-
-
+<!-- 
+  <gap:plugin name="com.phonegap.plugins.facebookconnect"  version="0.9.0">
+ 
+ <param name="APP_ID" value="584050255089224" />
+     <param name="APP_NAME" value="myTrainer" />
+    </gap:plugin>  -->
   
 
 
 <preference name="orientation" value="portrait" />
+
 
 <platform name="android">
     <!-- you can use any density that exists in the Android project -->
@@ -89,10 +94,6 @@
     <false/>
 </gap:config-file>
 
-  <gap:plugin name="com.phonegap.plugins.facebookconnect"  version="0.9.0">
- 
- <param name="APP_ID" value="584050255089224" />
-     <param name="APP_NAME" value="myTrainer" />
-    </gap:plugin> 
+
 </widget>
 
