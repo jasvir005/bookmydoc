@@ -943,12 +943,12 @@ float: left;
 }
 
 .text-part-left2 h1 {
+  color: #fff;
     font-family: helvetica;
     font-size: 23px;
     font-weight: normal;
-    margin-bottom: 0;
-    margin-top: 0;
-    color: #fff;
+    margin: 0;
+    text-align: left;
 }
 
 .text-part-left2 p {
