@@ -187,13 +187,12 @@ width: 77%;
 
 #totalbooking
 {
-  background: #fe9a00 none repeat scroll 0 0;
+  
   
     border-radius: 10px;
     font-size: 10px;
     font-weight: normal;
-    margin-left: 10px;
-    padding: 3px;
+    
 }
 
 
@@ -756,11 +755,13 @@ float: left;
 .lcaltionbtn1 {
     float: left;
     margin-right: 15px;
+      margin-top: 7px;
 }
 
 .lcaltionbtn2 {
     float: left;
     margin-right: 15px;
+      margin-top: 7px;
 }
 
 .inputtype-text > p {
@@ -1279,36 +1280,60 @@ padding-top: 11px;
 }
 
 .addyear {
-    margin-bottom: 11px;
+    color: #8a8a8a;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 14px;
     text-align: center;
-        font-size: 30px;
 }
 .addleftclass {
     float: left;
-    font-size: 25px;
+    font-size: 22px;
     text-align: right;
+     color: #fff;
 }
 .rightclass
 {
  float: right;
-    font-size: 25px;
+    font-size: 20px;
     text-align: right;
+     color: #c4c4c4;
 }
 
 .year {
    float: left;
     font-size: 40px;
     text-align: center;
-    width: 37%;
+        margin-left: 11px;
+     color: #fff;
 }
 .addyeartop {
-    border: 0px solid red;
+  border: 0 solid red;
+    margin: 0 auto;
     overflow: auto;
-      padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 8px;
+    padding-top: 20px;
+    text-align: center;
+    width: 63%;
 }
 
 
+.ui-datepicker-calendar th:nth-child(1) span {
+     
+    color: #FE9A00 !important;
+}
+
+
+.imgplus {
+    background: #fe9a00 none repeat scroll 0 0;
+ 
+    border-radius: 26px;
+    float: right;
+ 
+    position: relative;
+    right: 30px;
+    width: 27px;
+}
 
 .user-EMAIL {
    
@@ -1360,4 +1385,59 @@ padding-top: 11px;
 .booking-calender
 {
     display: none;
+}
+
+
+.header-div21 {
+    background: #003f6f none repeat scroll 0 0;
+ 
+}
+
+
+#page .ui-datepicker-year
+{
+    display: none;
+}
+.ui-datepicker-next.ui-corner-all > img {
+   margin-left: -11px;
+}
+.ui-datepicker-prev.ui-corner-all > img {
+  
+  
+}
+
+
+.ui-datepicker-month {
+    font-family: helvetica;
+    font-size: 17px;
+    font-weight: 200;
+}
+.ui-datepicker-calendar span {
+    color: #5a5a5a;
+    font-size: 12px;
+}
+
+#demos tr:nth-child(1) {
+   
+    line-height: 30px;
+   
+}
+
+#demos tr:nth-child(2) {
+   
+    line-height: 30px;
+   
+   
+}
+#demos tr:nth-child(3) {
+   
+    line-height: 30px;
+   
+}
+
+#demos tr:nth-child(4) {
+   
+    line-height: 30px;
+   
+   
 }

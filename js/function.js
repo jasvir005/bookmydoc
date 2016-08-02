@@ -843,6 +843,13 @@ jQuery('.user-profilepage').css({ 'position': 'relative'});
 
 function bookingmentfun()
 {
+$(".addyear").html("");
+
+var pikdate=$(".ui-datepicker-year").text();
+
+$(".addyear").append(pikdate);
+//alert(pikdate);
+
 
 var checkcalender=localStorage.getItem("checkcalender");
 //alert(checkcalender);
@@ -1214,6 +1221,7 @@ $(".search-page").show();
 $(document).ready(function()
 {
 
+ 
 
  
 
@@ -2036,7 +2044,8 @@ jQuery('.user-profilepage').css({ 'display': 'inline'});
 
 function donefun()
 {
-
-  alert('done');
+  window.location.href = "index.html";
+  
 }
+
 

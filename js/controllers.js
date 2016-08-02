@@ -776,13 +776,7 @@ $(".spelizationsids").append(':'+com1);
 
 });
 
-
-
-
-
-
-
-
+ 
 
 });  //dosument function 
 
