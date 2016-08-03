@@ -834,6 +834,12 @@ $(".addleftclass").text(months[date.getMonth()]);
 
 
 
+$(".head-img-txtflogd").click(function(){
+
+ window.location.href = "index.html";
+
+})
+
 //alert(dayName);
     //document.getElementById('date').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
  

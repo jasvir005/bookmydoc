@@ -1279,10 +1279,20 @@ padding-top: 11px;
      
 }
 
+#demos .ui-datepicker td
+{
+      padding: 4px;
+}
+
+
+#demos tbody {
+    position: relative;
+    top: 11px;
+}
 .addyear {
     color: #8a8a8a;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
     margin-top: 14px;
     text-align: center;
 }
@@ -1318,10 +1328,35 @@ padding-top: 11px;
 }
 
 
+#demos .ui-datepicker th {
+    border: 0 none;
+    font-weight: bold;
+    padding: 4px;
+    text-align: center;
+}
+
+#demos .ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+   
+    margin: 0 auto;
+    text-align: center;
+    width: 63%;
+}
 .ui-datepicker-calendar th:nth-child(1) span {
      
     color: #FE9A00 !important;
 }
+
+
+#demos thead {
+    border-bottom: 1px solid #eaeaea;
+     border-top: 1px solid #eaeaea;
+}
+
+
+#demos .ui-datepicker-next.ui-corner-all > img
+{ 
+   margin-left: -33px !important; 
+ }
 
 
 .imgplus {
