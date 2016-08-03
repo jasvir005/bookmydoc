@@ -1441,3 +1441,12 @@ padding-top: 11px;
    
    
 }
+
+.discover-contentggggg {
+    border-bottom: 1px solid #dadada;
+    margin-top: 10px;
+    text-align: center;
+}
+.discover-contentundefined {
+    display: none;
+}

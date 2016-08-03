@@ -498,6 +498,8 @@ for(key in objds) {
     arrs.push(key);
 } 
 len = arrs.length;
+
+console.log("***");
  console.log(len) //2*/
 
 
@@ -507,9 +509,25 @@ len = arrs.length;
 
 //alert(objds);
   var getstringifysd = JSON.stringify(objds[i]);
+    //var getstringifysdd = JSON.stringify(objds['data01']);
+
+   // alert(getstringifysdd.status);
+
+  
   console.log(getstringifysd);
+
+  //alert(getstringifysd.status);
   var objs = jQuery.parseJSON( getstringifysd );
- //alert(objs.firstname);
+ //alert(objs.status);
+
+ if(objs.status=='false' && len==1)
+ {
+
+data="<div class='discover-contentggggg'id='searchlop2'><img src='http://gotaworkout.com/service/public/z_uploads/doctor/not_found.png'></div>";
+  jQuery(".discover-content").append(data);
+ }
+ else
+ {
 //alert(p);
 if(objs.userimage==null)
 {
@@ -524,9 +542,10 @@ var imagesusr=""+bseimg+"service/public/z_uploads/doctor/"+objs.userimage+"";
 
 
 data="<div class='discover-content"+objs.id+"'onclick='abd("+objs.id+")'id='searchlop2'><div class='content-part2'><img src='"+imagesusr+"'><div class='top-of-content2'></div><div class='middel-part2'><div class='left-part-middel2'><div class='text-part-left2'><h1>"+objs.firstname+"</h1><p class='categories-append2'></p><div class='countratinga'><div id='rating21"+objs.id+"' class='rating21'></div><div class='round-count21' id='round21"+objs.id+"'></div></div></div></div><div class='text-right-part21'><h1>$"+objs.payrate+" / Hour</h1></div></div></div></div>";
-
-
  jQuery(".discover-content").append(data);
+ }
+
+
 
 
 
