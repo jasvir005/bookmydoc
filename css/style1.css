@@ -1290,11 +1290,13 @@ padding-top: 11px;
     top: 11px;
 }
 .addyear {
+      border-bottom: 1px solid #eaeaea;
     color: #8a8a8a;
     font-size: 20px;
-    margin-bottom: 9px;
-    margin-top: 14px;
+    margin: 12px auto 0;
+    padding-bottom: 9px;
     text-align: center;
+    width: 90%;
 }
 .addleftclass {
     float: left;
@@ -1305,7 +1307,7 @@ padding-top: 11px;
 .rightclass
 {
  float: right;
-    font-size: 17px;
+    font-size: 15px;
     text-align: right;
      color: #c4c4c4;
 }
@@ -1324,7 +1326,7 @@ padding-top: 11px;
         padding-bottom: 8px;
     padding-top: 20px;
     text-align: center;
-    width: 70%;
+    width: 72%;
 }
 
 
@@ -1339,7 +1341,7 @@ padding-top: 11px;
    
     margin: 0 auto;
     text-align: center;
-    width: 63%;
+    width: 75%;
 }
 .ui-datepicker-calendar th:nth-child(1) span {
      

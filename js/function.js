@@ -843,11 +843,12 @@ jQuery('.user-profilepage').css({ 'position': 'relative'});
 
 function bookingmentfun()
 {
-$(".addyear").html("");
+  //alert('dd');
+$(".addyear").html(" ");
 
 var pikdate=$(".ui-datepicker-year").text();
 
-$(".addyear").append(pikdate);
+$(".addyear").text(pikdate);
 //alert(pikdate);
 
 
@@ -2117,7 +2118,7 @@ function donefun()
 
 function nxt(ids)
 {
-$(".addyear").html("");
+$(".addyear").html(" ");
 
  
 $(".addyear").append(ids);
@@ -2127,7 +2128,7 @@ $(".addyear").append(ids);
 function pre(idss)
 {
   //alert(idss)
-$(".addyear").html("");
+$(".addyear").html(" ");
 
  
 $(".addyear").append(idss);

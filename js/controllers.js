@@ -840,6 +840,12 @@ $(".head-img-txtflogd").click(function(){
 
 })
 
+
+ 
+
+
+
+
 //alert(dayName);
     //document.getElementById('date').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
  
