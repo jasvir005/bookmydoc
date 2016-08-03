@@ -168,9 +168,9 @@ else
 
 
 
-  alert("Already book");
+  alert("This trainer is already booked on selected date and time, please choose another trainer or change date and time.");
 
-
+return false;
  // shownotification("Already book",'hello alert',"ok");
 
 }
@@ -1050,6 +1050,39 @@ defaultDate: '1/1/'+y
 /*************************fetch booking data *****************************/
 
 
+$.ajax({
+type: "GET",
+url: ""+baseurl+"checkbookingapi21?checkloginuserid="+jas+"",
+dataType:'json',
+ 
+success: function(bookingpi2) {
+ 
+var gsDayNames = new Array(
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday'
+);
+
+var d = new Date(bookingpi2.crntdare);
+var dayName = gsDayNames[d.getDay()];
+
+ $(".year").text(bookingpi2.day);
+
+  $(".rightclass").text(dayName);
+
+ 
+
+ 
+}
+
+});
+
+
+
   //alert(alluserssd);
 jQuery("body").removeClass("show1");
 
@@ -1496,6 +1529,39 @@ defaultDate: '1/1/'+y
 
 
 /*************************fetch booking data *****************************/
+
+
+$.ajax({
+type: "GET",
+url: ""+baseurl+"checkbookingapi21?checkloginuserid="+jas+"",
+dataType:'json',
+ 
+success: function(bookingpi2) {
+ 
+var gsDayNames = new Array(
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday'
+);
+
+var d = new Date(bookingpi2.crntdare);
+var dayName = gsDayNames[d.getDay()];
+
+ $(".year").text(bookingpi2.day);
+
+  $(".rightclass").text(dayName);
+
+ 
+
+ 
+}
+
+});
+
 
 
 /***********get userprofile **********/

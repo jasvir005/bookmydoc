@@ -7222,7 +7222,7 @@ function Datepicker() {
 	this._dialogClass = "ui-datepicker-dialog"; // The name of the dialog marker class
 	this._disableClass = "ui-datepicker-disabled"; // The name of the disabled covering marker class
 	this._unselectableClass = "ui-datepicker-unselectable"; // The name of the unselectable cell marker class
-	this._currentClass = "ui-datepicker-current-day"; // The name of the current day marker class
+	this._currentClass = "ui-datepicker-current-dayd"; // The name of the current day marker class
 	this._dayOverClass = "ui-datepicker-days-cell-over"; // The name of the day hover marker class
 	this.regional = []; // Available regional settings, indexed by language code
 	this.regional[ "" ] = { // Default regional settings
@@ -8845,12 +8845,12 @@ $.extend( Datepicker.prototype, {
 		prevText = ( !navigationAsDateFormat ? prevText : this.formatDate( prevText,
 			this._daylightSavingAdjust( new Date( drawYear, drawMonth - stepMonths, 1 ) ),
 			this._getFormatConfig( inst ) ) );
-
+ 
 		prev = ( this._canAdjustMonth( inst, -1, drawYear, drawMonth ) ?
 			"<a  class='ui-datepicker-prev ui-corner-all' data-handler='prev' data-event='click'" +
 			" title='" + prevText + "'><img  src='img/cal_left4535.png'><span onclick='pre("+drawYear+")' class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "e" : "w" ) + "'>" + prevText + "</span></a>" :
 			( hideIfNoPrevNext ? "" : "<a class='ui-datepicker-prev ui-corner-all ui-state-disabled' title='" + prevText + "'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "e" : "w" ) + "'>" + prevText + "</span></a>" ) );
-
+ 
 		nextText = this._get( inst, "nextText" );
 		nextText = ( !navigationAsDateFormat ? nextText : this.formatDate( nextText,
 			this._daylightSavingAdjust( new Date( drawYear, drawMonth + stepMonths, 1 ) ),
@@ -8958,7 +8958,7 @@ $.extend( Datepicker.prototype, {
 							( otherMonth && !showOtherMonths ? "&#xa0;" : // display for other months
 							( unselectable ? "<span class='ui-state-default'>" + printDate.getDate() + "</span>" : "<a class='ui-state-default" +
 							( printDate.getTime() === today.getTime() ? " ui-state-highlight" : "" ) +
-							( printDate.getTime() === currentDate.getTime() ? " ui-state-active" : "" ) + // highlight selected day
+							( printDate.getTime() === currentDate.getTime() ? " ui-state-activex" : "" ) + // highlight selected day
 							( otherMonth ? " ui-priority-secondary" : "" ) + // distinguish dates from other months
 							"' href='#'>" + printDate.getDate() + "</a>" ) ) + "</td>"; // display selectable date
 						printDate.setDate( printDate.getDate() + 1 );

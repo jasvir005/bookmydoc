@@ -145,11 +145,40 @@ defaultDate: '1/1/'+y
 
 
 
+$.ajax({
+type: "GET",
+url: ""+baseurl+"checkbookingapi21?checkloginuserid="+jas+"",
+dataType:'json',
+ 
+success: function(bookingpi2) {
+ 
+var gsDayNames = new Array(
+  'Sunday',
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday'
+);
+
+var d = new Date(bookingpi2.crntdare);
+var dayName = gsDayNames[d.getDay()];
+
+ $(".year").text(bookingpi2.day);
+
+  $(".rightclass").text(dayName);
+
+ 
+
+ 
+}
+
+});
 
 
 
-
-
+ 
 
 
 
@@ -795,8 +824,19 @@ $(".spelizationsids").append(':'+com1);
 
 });
 
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+var date = new Date();
+
  
 
+$(".addleftclass").text(months[date.getMonth()]);
+
+
+
+
+//alert(dayName);
+    //document.getElementById('date').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
+ 
 
 });  //dosument function 
 
