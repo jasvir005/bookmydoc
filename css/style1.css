@@ -1387,6 +1387,14 @@ padding-top: 11px;
     
 }
 
+.hide-partitiondiv {
+     
+    height: 319px;
+    position: fixed;
+    top: 193px;
+    width: 100%;
+}
+
 .user-EMAIL {
    
      border-bottom: 1px solid #616161;

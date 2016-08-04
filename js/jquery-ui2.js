@@ -8170,7 +8170,6 @@ $.extend( Datepicker.prototype, {
 	},
 
 	/* Action for selecting a day. */
-
 	_selectDay: function( id, month, year, td ) {
 		var inst,
 			target = $( id );
@@ -8192,7 +8191,6 @@ $.extend( Datepicker.prototype, {
 		var target = $( id );
 		this._selectDate( target, "" );
 	},
-	
 
 	/* Update the input field with the selected date. */
 	_selectDate: function( id, dateStr ) {
@@ -8915,7 +8913,7 @@ $.extend( Datepicker.prototype, {
 					( /all|left/.test( cornerClass ) && row === 0 ? ( isRTL ? next : prev ) : "" ) +
 					( /all|right/.test( cornerClass ) && row === 0 ? ( isRTL ? prev : next ) : "" ) +
 					 // draw month headers
-					"</div><table class='ui-datepicker-calendar'><thead>" +
+					"</div><div class='partition-div' onclick='partition();'><table class='ui-datepicker-calendar'><thead>" +
 					"<tr>";
 				thead = ( showWeek ? "<th class='ui-datepicker-week-col'>" + this._get( inst, "weekHeader" ) + "</th>" : "" );
 				for ( dow = 0; dow < 7; dow++ ) { // days of the week
@@ -8958,7 +8956,7 @@ $.extend( Datepicker.prototype, {
 							( ( !otherMonth || showOtherMonths ) && daySettings[ 2 ] ? " title='" + daySettings[ 2 ].replace( /'/g, "&#39;" ) + "'" : "" ) + // cell title
 							( unselectable ? "" : " data-handler='selectDay' data-event='click' data-month='" + printDate.getMonth() + "' data-year='" + printDate.getFullYear() + "'" ) + ">" + // actions
 							( otherMonth && !showOtherMonths ? "&#xa0;" : // display for other months
-							( unselectable ? "<span class='ui-state-default'>" + printDate.getDate() + "</span>" : "<a class='ui-state-default" +
+							( unselectable ? "<span class='ui-state-default'>" + printDate.getDate() + "</span>" : "<a  onclick='anchorclick();' class='ui-state-default" +
 							( printDate.getTime() === today.getTime() ? " duid-state-highlight" : "" ) +
 							( printDate.getTime() === currentDate.getTime() ? " ui-state-activex" : "" ) + // highlight selected day
 							( otherMonth ? " ui-priority-secondary" : "" ) + // distinguish dates from other months
@@ -8973,7 +8971,7 @@ $.extend( Datepicker.prototype, {
 					drawMonth = 0;
 					drawYear++;
 				}
-				calender += "</tbody></table>" + ( isMultiMonth ? "</div>" +
+				calender += "</tbody></table></div>" + ( isMultiMonth ? "</div>" +
 							( ( numMonths[ 0 ] > 0 && col === numMonths[ 1 ] - 1 ) ? "<div class='ui-datepicker-row-break'></div>" : "" ) : "" );
 				group += calender;
 			}

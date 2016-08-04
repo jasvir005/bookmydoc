@@ -109,14 +109,14 @@ len = arrs.length;
 
 $("#totalbooking").append(len).length;
 
-var sda=$("#totalbooking").text().length;
+/*var sda=$("#totalbooking").text().length;
  
 
 if(sda==1){ $('.imgplus').css({ 'width': '23px'});}
 if(sda==2){ $('.imgplus').css({ 'width': '23px'});}
 if(sda==3){ $('.imgplus').css({ 'width': '29px' ,'height': '27px'});}
  
-
+*/
 
  for(a=1;a<=len;a++)
  {
@@ -851,7 +851,6 @@ $(".head-img-txtflogd").click(function(){
  window.location.href = "index.html";
 
 })
-
 
  
 
