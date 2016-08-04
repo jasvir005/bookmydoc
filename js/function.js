@@ -170,12 +170,12 @@ jQuery(".congratulation-div").show();
 else
 {
 
-
+ shownotification("Already book",'hello alert',"ok");
 
   alert("This trainer is already booked on selected date and time, please choose another trainer or change date and time.");
 
 return false;
- 
+
 
 }
 
@@ -1261,7 +1261,7 @@ $(document).ready(function()
 
  
 
- shownotification("Already book",'hello alert',"ok");
+ 
 
 $(".login-backbtn4").click(function()
 {
