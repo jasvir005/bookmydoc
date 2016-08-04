@@ -1611,11 +1611,11 @@ input[type='radio'] {
   border:1px solid #fff;
   border-radius:50%;
   outline:none;
- 
+  box-shadow:0 0 5px 0px #DB8404 inset;
 }
 
 input[type='radio']:hover {
- 
+  box-shadow:0 0 5px 0px orange inset;
 }
 
 input[type='radio']:before {
@@ -1628,9 +1628,35 @@ input[type='radio']:before {
 }
 input[type='radio']:checked:before {
   background:#DB8404;
-
-   box-shadow: none;
 }
+
+
+.package-order-div input[type='radio'] {
+  -webkit-appearance:none;
+  width:20px;
+  height:20px;
+  border:1px solid #fff;
+  border-radius:50%;
+  outline:none;
+  
+}
+
+.package-order-div input[type='radio']:hover {
+  
+}
+
+.package-order-div input[type='radio']:before {
+  content:'';
+  display:block;
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%;    
+}
+.package-order-div input[type='radio']:checked:before {
+  background:#DB8404;
+}
+
 
 
 #custom-fieldset div .ui-radio label span .ui-icon-radio-on {
