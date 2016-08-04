@@ -1621,9 +1621,9 @@ input[type='radio']:hover {
 input[type='radio']:before {
   content:'';
   display:block;
-  width:80%;
-  height:80%;
-  margin: 80% auto;    
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
   border-radius:50%;    
 }
 input[type='radio']:checked:before {
