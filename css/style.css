@@ -1627,9 +1627,10 @@ input[type='radio']:before {
   border-radius:50%;    
 }
 input[type='radio']:checked:before {
-  background:red;
-
-   box-shadow: none;
+  background:red none repeat scroll 0 0 / 100% auto;
+ padding-left: 0px !important;
+ border-radius: 0px !important;
+   box-shadow: none !important;
 }
 
 
