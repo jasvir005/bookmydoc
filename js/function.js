@@ -893,7 +893,7 @@ jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
 jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
 jQuery('.menu-slide').hide();
 jQuery('.search-page').css({ 'position': 'relative'});
-jQuery('.hide-open-time').css({ 'width': 'auto'});
+jQuery('.hide-open-time').css({ 'width': 'auto'}); 
 jQuery('.user-profilepage').css({ 'position': 'relative'});
   jQuery('.head-img-txtflog').show();
 }
@@ -1034,6 +1034,15 @@ len = arrs.length;
  }
 
  $("#totalbooking").append(len);
+ $("#totalbooking").append(len).length;
+
+var sda=$("#totalbooking").text().length;
+ 
+
+if(sda==1){ $('.imgplus').css({ 'width': '23px'});}
+if(sda==2){ $('.imgplus').css({ 'width': '23px'});}
+if(sda==3){ $('.imgplus').css({ 'width': '29px' ,'height': '27px'});}
+ 
 
 //alert(len);
 
@@ -1515,6 +1524,15 @@ len = arrs.length;
  console.log(len) //2*/
 
  $("#totalbooking").append(len);
+ //$("#totalbooking").append(len).length;
+
+var sda=$("#totalbooking").text().length;
+ 
+
+if(sda==1){ $('.imgplus').css({ 'width': '23px'});}
+if(sda==2){ $('.imgplus').css({ 'width': '23px'});}
+if(sda==3){ $('.imgplus').css({ 'width': '29px' ,'height': '27px'});}
+ 
 
 //alert(len);
 

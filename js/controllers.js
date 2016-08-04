@@ -103,12 +103,19 @@ for(key in objchk) {
     arrs.push(key);
 } 
 len = arrs.length;
+
+//console.log('&&&&&&');
  console.log(len) //2*/
 
- //alert(len);
-  $("#totalbooking").append(len);
+$("#totalbooking").append(len).length;
 
+var sda=$("#totalbooking").text().length;
+ 
 
+if(sda==1){ $('.imgplus').css({ 'width': '23px'});}
+if(sda==2){ $('.imgplus').css({ 'width': '23px'});}
+if(sda==3){ $('.imgplus').css({ 'width': '29px' ,'height': '27px'});}
+ 
 
 
  for(a=1;a<=len;a++)
@@ -441,6 +448,8 @@ $('#cate-slide input:checkbox').removeAttr('checked');
 $('#cate-slide label').css('color',"#fff");
 $("#appendinto").html("");
 $(".spelizationsids").html("");
+
+$("#js-display-decimald").html("0");
 
 
 
