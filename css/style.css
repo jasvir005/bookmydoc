@@ -1642,16 +1642,17 @@ input[type='radio']:checked:before {
 }
 
 .package-order-div input[type='radio']:hover {
-  
+   box-shadow:0 0 5px 0px red inset;
 }
 
 .package-order-div input[type='radio']:before {
   content:'';
   display:block;
-  width:85%;
-  height:82%;
-  margin: 25% auto;    
-  border-radius:50%;    
+  width:60%;
+  height:60%;
+  margin: 20% auto;    
+  border-radius:50%; 
+
 }
 .package-order-div input[type='radio']:checked:before {
   background:#DB8404;
