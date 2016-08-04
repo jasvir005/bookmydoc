@@ -863,6 +863,9 @@ jQuery('.user-profilepage').css({ 'position': 'relative'});
 
 function bookingmentfun()
 {
+
+
+
   //alert('dd');
 $(".addyear").html(" ");
 
@@ -1034,7 +1037,7 @@ len = arrs.length;
  }
 
  $("#totalbooking").append(len);
- $("#totalbooking").append(len).length;
+/* $("#totalbooking").append(len).length;
 
 var sda=$("#totalbooking").text().length;
  
@@ -1042,7 +1045,7 @@ var sda=$("#totalbooking").text().length;
 if(sda==1){ $('.imgplus').css({ 'width': '23px'});}
 if(sda==2){ $('.imgplus').css({ 'width': '23px'});}
 if(sda==3){ $('.imgplus').css({ 'width': '29px' ,'height': '27px'});}
- 
+ */
 
 //alert(len);
 
@@ -1526,13 +1529,13 @@ len = arrs.length;
  $("#totalbooking").append(len);
  //$("#totalbooking").append(len).length;
 
-var sda=$("#totalbooking").text().length;
+/*var sda=$("#totalbooking").text().length;
  
 
 if(sda==1){ $('.imgplus').css({ 'width': '23px'});}
 if(sda==2){ $('.imgplus').css({ 'width': '23px'});}
 if(sda==3){ $('.imgplus').css({ 'width': '29px' ,'height': '27px'});}
- 
+ */
 
 //alert(len);
 

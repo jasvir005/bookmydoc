@@ -8170,6 +8170,7 @@ $.extend( Datepicker.prototype, {
 	},
 
 	/* Action for selecting a day. */
+
 	_selectDay: function( id, month, year, td ) {
 		var inst,
 			target = $( id );
@@ -8191,6 +8192,7 @@ $.extend( Datepicker.prototype, {
 		var target = $( id );
 		this._selectDate( target, "" );
 	},
+	
 
 	/* Update the input field with the selected date. */
 	_selectDate: function( id, dateStr ) {
