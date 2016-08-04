@@ -176,17 +176,17 @@ function onConfirm(buttonIndex) {
 }
 
 navigator.notification.confirm(
-    'You are the winner!', // message
+    'This trainer is already booked on selected date and time, please choose another trainer or change date and time.', // message
      onConfirm,            // callback to invoke with index of button pressed
-    'Game Over',           // title
-    ['Restart','Exit']     // buttonLabels
+    'Warning !',           // title
+    ['OK']     // buttonLabels
 );
 
 
   window.confirm = navigator.notification.confirm;
  //shownotification("Already book",'hello alert',"ok");
 
-  alert("This trainer is already booked on selected date and time, please choose another trainer or change date and time.");
+ // alert("This trainer is already booked on selected date and time, please choose another trainer or change date and time.");
 
 return false;
 
