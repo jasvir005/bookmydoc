@@ -15,17 +15,6 @@ function shownotification(msg,title)
               );
 }
 
-function alertDismissed() {
-   alert('ddd');
-}
-
-navigator.notification.alert(
-    'You are the winner!',  // message
-    alertDismissed,         // callback
-    'Game Over',            // title
-    'Done'                  // buttonName
-);
-
 
 
 function checkout()
@@ -181,8 +170,20 @@ jQuery(".congratulation-div").show();
 }
 else
 {
-  window.alert = navigator.notification.alert;
 
+function onConfirm(buttonIndex) {
+    alert('You selected button ' + buttonIndex);
+}
+
+navigator.notification.confirm(
+    'You are the winner!', // message
+     onConfirm,            // callback to invoke with index of button pressed
+    'Game Over',           // title
+    ['Restart','Exit']     // buttonLabels
+);
+
+
+  window.confirm = navigator.notification.confirm;
  //shownotification("Already book",'hello alert',"ok");
 
   alert("This trainer is already booked on selected date and time, please choose another trainer or change date and time.");
