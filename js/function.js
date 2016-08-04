@@ -172,7 +172,7 @@ else
 {
 
 function onConfirm(buttonIndex) {
-    alert('You selected button ' + buttonIndex);
+   // alert('You selected button ' + buttonIndex);
 }
 
 navigator.notification.confirm(
