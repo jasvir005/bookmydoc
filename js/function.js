@@ -28,7 +28,9 @@ timevalue=jQuery("#basicExample").val();
 
 localStorage.setItem('bookdate', dataval);
 
+
 localStorage.setItem('booktime', timevalue);
+
 
 locchecked=jQuery('input[name=localtion]:checked', '.localtion-field-div').val();
 
@@ -124,6 +126,7 @@ if(alluserss=='successfully')
 bookdte=localStorage.getItem('bookdate');
 
 
+
 //alert(bookdte);
 
 
@@ -145,6 +148,7 @@ if(res[0]==12){databc="Dec"}
 
  
 var lets =databc+' '+res[1]+'th';
+
 bookname=localStorage.getItem('bookname');
 
 booktime=localStorage.getItem('booktime');
@@ -171,7 +175,7 @@ else
   alert("This trainer is already booked on selected date and time, please choose another trainer or change date and time.");
 
 return false;
- // shownotification("Already book",'hello alert',"ok");
+ 
 
 }
 
@@ -1257,7 +1261,7 @@ $(document).ready(function()
 
  
 
- 
+ shownotification("Already book",'hello alert',"ok");
 
 $(".login-backbtn4").click(function()
 {
