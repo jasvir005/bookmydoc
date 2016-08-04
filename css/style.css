@@ -1627,7 +1627,9 @@ input[type='radio']:before {
   border-radius:50%;    
 }
 input[type='radio']:checked:before {
-  background:#DB8404;
+  background:red;
+
+   box-shadow: none;
 }
 
 
