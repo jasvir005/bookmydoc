@@ -776,6 +776,20 @@ float: left;
     overflow: auto;
     width: 80%;
 }
+.user-profilepage .userheadser h1
+{
+     float: left;
+    width: 80%;
+}
+
+.package-order-div input[type="radio"] {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 20px;
+    box-shadow: none;
+    outline: medium none;
+    width: 20px;
+}
 
 
 .class-tyle-text > p {
