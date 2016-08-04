@@ -832,6 +832,8 @@ jQuery('.hide-open-time').css({ 'width': 'auto'});
 jQuery('.user-profilepage').css({ 'position': 'relative'});
 
 
+  jQuery('.head-img-txtflog').show();
+
 
 
 
@@ -856,7 +858,7 @@ jQuery('.menu-slide').hide();
 jQuery('.search-page').css({ 'position': 'relative'});
 jQuery('.hide-open-time').css({ 'width': 'auto'});
 jQuery('.user-profilepage').css({ 'position': 'relative'});
-
+  jQuery('.head-img-txtflog').show();
 }
 
 function bookingmentfun()
@@ -893,7 +895,7 @@ jQuery('.menu-slide').hide();
 jQuery('.search-page').css({ 'position': 'relative'});
 jQuery('.hide-open-time').css({ 'width': 'auto'});
 jQuery('.user-profilepage').css({ 'position': 'relative'});
-
+  jQuery('.head-img-txtflog').show();
 }
 
 

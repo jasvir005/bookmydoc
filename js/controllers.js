@@ -311,6 +311,7 @@ jQuery('#menuslide').click(function(){
 
 {
 //alert('close');
+  jQuery('.head-img-txtflog').show();
 jQuery('.search-page').css({ 'float': 'none'});
 jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
 jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
@@ -319,7 +320,9 @@ jQuery('.search-page').css({ 'position': 'relative'});
 jQuery('.hide-open-time').css({ 'width': 'auto'});
 }
 else {
+ 
 
+  jQuery('.head-img-txtflog').hide();
 // alert("open");
 jQuery('.menu-slide').show();
 
