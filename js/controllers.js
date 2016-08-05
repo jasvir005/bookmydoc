@@ -854,7 +854,10 @@ $(".head-img-txtflogd").click(function(){
 
  
 
+$(".ui-timepicker-am .ui-timepicker-selected").click(function(){
 
+  alert('hi');
+})
 
 
 //alert(dayName);
