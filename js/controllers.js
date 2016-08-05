@@ -376,7 +376,9 @@ jQuery("#menuslide2ds").click(function(){
 
 {
  //alert('close');
+
 jQuery('.menu-slide').hide();
+
 //jQuery('.search-page').css({ 'float': 'none'});
 //jQuery('.menu-slide').animate({ 'width': '0px' }, 'slow');
 //jQuery('.search-page').animate({ 'margin-left': '0px' }, 'slow');
