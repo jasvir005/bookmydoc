@@ -32,7 +32,7 @@ body {
 .head-text
 {
    float: left;
-    margin-left: 67px;
+    margin-left: 64px;
     margin-top: 10px;
     width: 60%;
 }
@@ -40,7 +40,7 @@ body {
 .head-text2
 {
 float: left;
-margin-top: 15px;
+margin-top: 13px;
 width: 77%;
 }
 
@@ -177,7 +177,7 @@ width: 77%;
 .login-backbtn img {
     margin-left: 10px;
     transform: rotate(180deg);
-    width: 29px;
+    width: 24px;
 }
 
 .login-backbtn {
@@ -200,7 +200,7 @@ width: 77%;
 .login-backbtncal img {
     margin-left: 10px;
     transform: rotate(180deg);
-    width: 29px;
+    width: 23px;
 }
 
 .login-backbtncal {
@@ -1334,11 +1334,11 @@ padding-top: 11px;
      color: #fff;
 }
 .addyeartop {
-  border: 0 solid red;
+    border: 0 solid red;
     margin: 0 auto;
     overflow: auto;
-        padding-bottom: 8px;
-    padding-top: 20px;
+    padding-bottom: 8px;
+    padding-top: 14px;
     text-align: center;
     width: 72%;
 }
@@ -1511,4 +1511,13 @@ padding-top: 11px;
     display: none;
 }
 
- 
+#search_rest_page .search_page_head
+{
+     margin-right: 21px;
+ }
+
+
+.login-backbtncal {
+    margin: 3px 0 0;
+    padding: 0;
+}

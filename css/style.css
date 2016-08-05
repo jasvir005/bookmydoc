@@ -1448,7 +1448,7 @@ width: 100%;
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
-    margin-top: 10px;
+  margin-top: 8px;
     text-align: center;
     width: 86%;
 
@@ -2323,7 +2323,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     box-sizing: border-box;
     clear: unset;
     display: flex;
-    height: 44px;
+    height: 48px;
     left: 0;
     overflow: -moz-hidden-unscrollable;
     padding: 0 5px;
@@ -2339,12 +2339,12 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .togo_backpage_img {
     float: left;
-    margin-top: 10px;
+    margin-top: 8px;
     padding-left: 6px;
     width: 71px;
 }
 .togo_backpage_img > img {
-    width: 25%;
+    width: 32%;
 }
 .back_page {
     transform: rotate(180deg);
@@ -2362,7 +2362,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .head_search > h1 {
     color: #fff;
     font-family: nexa_bold;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
     margin: 0;
    /* padding-top: 2px;*/
