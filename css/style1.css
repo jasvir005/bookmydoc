@@ -1521,3 +1521,9 @@ padding-top: 11px;
     margin: 3px 0 0;
     padding: 0;
 }
+
+.booking-not-upcomming {
+    float: left;
+    font-size: 20px;
+    margin: 0;
+}

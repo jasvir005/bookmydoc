@@ -2572,7 +2572,74 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 
 .booking-not-seledted {
-    font-family: helvetica;
-    margin-left: 15px;
+   font-family: helvetica;
+    font-size: 17px;
+    margin: 0 0 0 35px;
     text-align: center;
+}
+
+/*.ui-datepicker-days-cell-over.ui-state-highlight.ui-datepicker-current-dayd.ui-datepicker-today a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #000;
+}*/
+.ui-datepicker-days-cell-over.ui-state-highlight.ui-datepicker-current-dayd.ui-datepicker-today a
+{
+   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #000 ;
+}
+
+ .ui-datepicker-days-cell-over.ui-state-highlight.ui-datepicker-current-dayd.ui-datepicker-today a {
+    background: #feb647 none repeat scroll 0 0;
+     color: #fff ;
+}
+
+ 
+ .ui-datepicker-current-dayd {
+  animation: ui-datepicker-current-dayd-animation 1s steps(5, start) infinite;
+  -webkit-animation: ui-datepicker-current-dayd-animation 1s steps(5, start) infinite;
+}
+@keyframes ui-datepicker-current-dayd-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes ui-datepicker-current-dayd-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+.upcomming-booking {
+    font-size: 16px;
+    margin-left: 28px;
+    padding: 0;
+    text-align: center;
+} 
+
+
+
+.first-page-all-trainer .text-right-part h1
+{
+  margin-right: 0 !important;
+    padding-right: 21px;
+    text-align: right;
+}
+
+#search_rest_page .text-right-part h1
+{
+  margin-right: 0 !important;
+    padding-right: 21px;
+    text-align: right;
+}
+
+.first-page-all-trainer .round-count
+{
+    position: relative;
+    top: -2px;
+}
+.search_rest_page .round-count21
+{
+    position: relative;
+    top: -2px; 
 }

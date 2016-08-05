@@ -1015,7 +1015,7 @@ url: ""+baseurl+"checkbookingapi?checkloginuserid="+jas+"",
 dataType:'json',
  
 success: function(bookingpi) {
-
+$(".year").append('<p class="upcomming-booking">No Upcoming bookings</p>');
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
 if(objchk.d=='false')
@@ -1023,7 +1023,9 @@ if(objchk.d=='false')
  len='';
  //$(".rightclass").text("");
 $(".addleftclass").html("");
-  $(".addleftclass").append('<p class="booking-not-seledted">Booking not Selected</p>')
+
+$(".year").html('');
+  $(".addleftclass").append('<p class="booking-not-seledted">No Bookings Registered Yet</p>')
 
 
 
@@ -1095,9 +1097,9 @@ var gsDayNames = new Array(
 
 var d = new Date(bookingpi2.crntdare);
 var dayName = gsDayNames[d.getDay()];
-
- $(".year").text(bookingpi2.day);
-
+ $(".year").html("");
+  $(".year").text(bookingpi2.day);
+$(".addleftclass").text(bookingpi2.crntmnth);
   $(".rightclass").text(dayName);
 
  
@@ -1484,7 +1486,7 @@ data: {'loginData': text2},
 
 success: function(loginuser) {
 
-//alert('jas');
+ //alert('jas');
 localStorage.setItem("checkcalender", "searchtrainer");
 
 var review=localStorage.getItem('review');
@@ -1507,16 +1509,21 @@ url: ""+baseurl+"checkbookingapi?checkloginuserid="+jas+"",
 dataType:'json',
  
 success: function(bookingpi) {
+//alert('ddd');
 
+$(".year").append('<p class="upcomming-booking">No Upcoming bookings</p>');
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
 
+
+//alert(objchk.d);
 if(objchk.d=='false')
 {
  len='';
  //$(".rightclass").text("");
 $(".addleftclass").html("");
-  $(".addleftclass").append('<p class="booking-not-seledted">Booking not Selected</p>')
+$(".year").html('');
+  $(".addleftclass").append('<p class="booking-not-seledted">No Bookings Registered Yet</p>')
 
 
 
@@ -1587,6 +1594,7 @@ dataType:'json',
  
 success: function(bookingpi2) {
  
+ //alert(bookingpi2);
 var gsDayNames = new Array(
   'Sunday',
   'Monday',
@@ -1599,9 +1607,9 @@ var gsDayNames = new Array(
 
 var d = new Date(bookingpi2.crntdare);
 var dayName = gsDayNames[d.getDay()];
-
- $(".year").text(bookingpi2.day);
-
+$(".year").html("");
+  $(".year").text(bookingpi2.day);
+$(".addleftclass").text(bookingpi2.crntmnth);
   $(".rightclass").text(dayName);
 
  
@@ -2186,3 +2194,5 @@ $(".addyear").append(idss);
 
 }
 
+
+ 

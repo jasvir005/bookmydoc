@@ -94,23 +94,26 @@ dataType:'json',
  
 success: function(bookingpi) {
 //alert(bookingpi);
+$(".year").append('<p class="upcomming-booking">No Upcoming bookings</p>');
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
 //alert(objchk.d);
 var len='';
+
 if(objchk.d=='false')
 {
  len='';
  //$(".rightclass").text("");
 $(".addleftclass").html("");
-  $(".addleftclass").append('<p class="booking-not-seledted">Booking not Selected</p>')
+$(".year").html('');
+  $(".addleftclass").append('<p class="booking-not-seledted">No Bookings Registered Yet</p>')
 
 
 
 }
 else
 {
-
+//alert('dd');
 var arrs = [], objchk;
 for(key in objchk) {
     arrs.push(key);
@@ -184,10 +187,10 @@ var gsDayNames = new Array(
 
 var d = new Date(bookingpi2.crntdare);
 var dayName = gsDayNames[d.getDay()];
-
+ $(".year").html("");
  
  $(".year").text(bookingpi2.day);
-
+$(".addleftclass").text(bookingpi2.crntmnth);
   $(".rightclass").text(dayName);
 
  
@@ -851,12 +854,12 @@ $(".spelizationsids").append(':'+com1);
 
 });
 
-var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+/*var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
 var date = new Date();
 
 // alert(months[date.getMonth()])
 
-$(".addleftclass").text(months[date.getMonth()]);
+$(".addleftclass").text(months[date.getMonth()]);*/
 
 
 
