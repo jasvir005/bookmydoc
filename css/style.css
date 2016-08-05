@@ -2569,3 +2569,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     float: right;
       font-size: 13px;
 }
+
+
+.booking-not-seledted {
+    font-family: helvetica;
+    margin-left: 15px;
+    text-align: center;
+}

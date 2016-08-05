@@ -93,20 +93,33 @@ url: ""+baseurl+"checkbookingapi?checkloginuserid="+jas+"",
 dataType:'json',
  
 success: function(bookingpi) {
-
+//alert(bookingpi);
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
+//alert(objchk.d);
+var len='';
+if(objchk.d=='false')
+{
+ len='';
+ //$(".rightclass").text("");
+$(".addleftclass").html("");
+  $(".addleftclass").append('<p class="booking-not-seledted">Booking not Selected</p>')
+
+
+
+}
+else
+{
 
 var arrs = [], objchk;
-
 for(key in objchk) {
     arrs.push(key);
 } 
 len = arrs.length;
+console.log(len) //2*/
+}
 
-//console.log('&&&&&&');
- console.log(len) //2*/
-
+//alert(len);
 $("#totalbooking").append(len).length;
 
 /*var sda=$("#totalbooking").text().length;
@@ -158,7 +171,7 @@ url: ""+baseurl+"checkbookingapi21?checkloginuserid="+jas+"",
 dataType:'json',
  
 success: function(bookingpi2) {
- 
+ //alert(bookingpi2);
 var gsDayNames = new Array(
   'Sunday',
   'Monday',
@@ -172,6 +185,7 @@ var gsDayNames = new Array(
 var d = new Date(bookingpi2.crntdare);
 var dayName = gsDayNames[d.getDay()];
 
+ 
  $(".year").text(bookingpi2.day);
 
   $(".rightclass").text(dayName);
@@ -378,7 +392,6 @@ jQuery("#menuslide2ds").click(function(){
  //alert('close');
 
 jQuery('.menu-slide').hide();
-
 //jQuery('.search-page').css({ 'float': 'none'});
 //jQuery('.menu-slide').animate({ 'width': '0px' }, 'slow');
 //jQuery('.search-page').animate({ 'margin-left': '0px' }, 'slow');
@@ -841,7 +854,7 @@ $(".spelizationsids").append(':'+com1);
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
 var date = new Date();
 
- 
+// alert(months[date.getMonth()])
 
 $(".addleftclass").text(months[date.getMonth()]);
 

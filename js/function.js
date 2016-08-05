@@ -1018,6 +1018,17 @@ success: function(bookingpi) {
 
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
+if(objchk.d=='false')
+{
+ len='';
+ //$(".rightclass").text("");
+$(".addleftclass").html("");
+  $(".addleftclass").append('<p class="booking-not-seledted">Booking not Selected</p>')
+
+
+
+}else
+{
 
 var arrs = [], objchk;
 
@@ -1027,29 +1038,11 @@ for(key in objchk) {
 len = arrs.length;
  console.log(len) //2*/
 
- if(len==null)
- {
-  lan=0;
- }
- else
- {
-  lan=lan;
- }
-
- $("#totalbooking").append(len);
-/* $("#totalbooking").append(len).length;
-
-var sda=$("#totalbooking").text().length;
  
 
-if(sda==1){ $('.imgplus').css({ 'width': '23px'});}
-if(sda==2){ $('.imgplus').css({ 'width': '23px'});}
-if(sda==3){ $('.imgplus').css({ 'width': '29px' ,'height': '27px'});}
- */
-
-//alert(len);
-
-
+ $("#totalbooking").append(len);
+}
+ 
  for(a=1;a<=len;a++)
  {
    var getstringifysd = JSON.stringify(bookingpi[a]);
@@ -1518,6 +1511,19 @@ success: function(bookingpi) {
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
 
+if(objchk.d=='false')
+{
+ len='';
+ //$(".rightclass").text("");
+$(".addleftclass").html("");
+  $(".addleftclass").append('<p class="booking-not-seledted">Booking not Selected</p>')
+
+
+
+}
+else
+{
+
 var arrs = [], objchk;
 
 for(key in objchk) {
@@ -1525,9 +1531,9 @@ for(key in objchk) {
 } 
 len = arrs.length;
  console.log(len) //2*/
-//alert(len);
 
  $("#totalbooking").append(len);
+}
  //$("#totalbooking").append(len).length;
 
 /*var sda=$("#totalbooking").text().length;
