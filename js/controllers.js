@@ -317,7 +317,7 @@ jQuery('#menuslide').click(function(){
      if( jQuery('.menu-slide').is(':visible') ) 
 
 {
-//alert('close');
+ //alert('close');
   jQuery('.head-img-txtflog').show();
 jQuery('.search-page').css({ 'float': 'none'});
 jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
@@ -328,15 +328,15 @@ jQuery('.hide-open-time').css({ 'width': 'auto'});
 }
 else {
  
-
+//alert('false');
   jQuery('.head-img-txtflog').hide();
 // alert("open");
 jQuery('.menu-slide').show();
 
 
 
-jQuery('.menu-slide').animate({ 'width': '250px' }, 'falst');
-jQuery('.search-page').animate({ 'margin-left': '250px'}, 'falst');
+jQuery('.menu-slide').animate({ 'width': '250px' }, 'fast');
+jQuery('.search-page').animate({ 'margin-left': '250px'}, 'fast');
 jQuery('.search-page').css({ 'float': 'left'});
 jQuery('.search-page').css({ 'position': 'fixed'});
 
@@ -375,25 +375,25 @@ jQuery("#menuslide2ds").click(function(){
      if( jQuery('.menu-slide').is(':visible') ) 
 
 {
-//alert('close');
-
-jQuery('.search-page').css({ 'float': 'none'});
-jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
-jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');
+ //alert('close');
 jQuery('.menu-slide').hide();
-jQuery('.search-page').css({ 'position': 'relative'});
-jQuery('.hide-open-time').css({ 'width': 'auto'});
+//jQuery('.search-page').css({ 'float': 'none'});
+//jQuery('.menu-slide').animate({ 'width': '0px' }, 'slow');
+//jQuery('.search-page').animate({ 'margin-left': '0px' }, 'slow');
 
-jQuery('.search-page').css({ 'display': 'none'});
-jQuery('.user-profilepage').css({ 'display': 'inline'});
+//jQuery('.search-page').css({ 'position': 'relative'});
+//jQuery('.hide-open-time').css({ 'width': 'auto'});
+
+//jQuery('.search-page').css({ 'display': 'none'});
+//jQuery('.user-profilepage').css({ 'display': 'inline'});
 
 
 
-jQuery('.menu-slide').hide();
-jQuery('.user-profilepage').css({ 'float': 'none'});
-jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
-jQuery('.user-profilepage').animate({ 'margin-left': '0px' }, 'fast');
-jQuery('.user-profilepage').css({ 'position': 'relative'}); 
+//jQuery('.menu-slide').hide();
+ //jQuery('.user-profilepage').css({ 'float': 'none'});
+//jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
+jQuery('.user-profilepage').animate({ 'margin-left': '0px' },'fast');
+//jQuery('.user-profilepage').css({ 'position': 'relative'}); 
 
 
 
@@ -854,10 +854,7 @@ $(".head-img-txtflogd").click(function(){
 
  
 
-$(".ui-timepicker-am .ui-timepicker-selected").click(function(){
 
-  alert('hi');
-})
 
 
 //alert(dayName);
