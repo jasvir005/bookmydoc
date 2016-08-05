@@ -1493,7 +1493,12 @@ data: {'loginData': text2},
 
 success: function(loginuser) {
 
- //alert('jas');
+
+var loginchk = jQuery.parseJSON(loginuser);
+  //alert(loginchk.id);
+  if(loginchk.id !="false")
+  {
+
 localStorage.setItem("checkcalender", "searchtrainer");
 
 var review=localStorage.getItem('review');
@@ -1548,18 +1553,7 @@ len = arrs.length;
 
  $("#totalbooking").append(len);
 }
- //$("#totalbooking").append(len).length;
-
-/*var sda=$("#totalbooking").text().length;
  
-
-if(sda==1){ $('.imgplus').css({ 'width': '23px'});}
-if(sda==2){ $('.imgplus').css({ 'width': '23px'});}
-if(sda==3){ $('.imgplus').css({ 'width': '29px' ,'height': '27px'});}
- */
-
-//alert(len);
-
 
  for(a=1;a<=len;a++)
  {
@@ -1673,23 +1667,7 @@ $(".user-zip  h3").append(obj.zipcode);
 
 /***********get userprofile **********/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 //alert(userID);
 
 if(userID=="false")
@@ -1744,10 +1722,20 @@ $(".search-page").show();
 
 
 }
+else
+{
+
+  jQuery("body").removeClass('showlogin');
+    $("#login_error").show();
+    return false;
+}
+}
 
 });
 
-}
+}    
+
+
 
 }); //login request end
 
