@@ -1448,6 +1448,8 @@ $("#resultappen").html(msg);
 //login_id
 
 $("#login_id").click(function(){
+
+
 var useremail= $("#login_user_id").val();
 var userid= $("#user_paswd").val();
 
@@ -1471,6 +1473,11 @@ return false;
  }
  else
  {
+
+   
+ 
+jQuery("body").addClass('showlogin');
+
 
 var emailId= $("#login_user_id").val();
 var passNme= $("#user_paswd").val();
@@ -1687,7 +1694,7 @@ $(".user-zip  h3").append(obj.zipcode);
 
 if(userID=="false")
 {
-
+jQuery("body").removeClass('showlogin');
   //alert('jas');
   $("#login_error").show();
     return false;
@@ -1695,17 +1702,15 @@ if(userID=="false")
 else
 {
 
+setTimeout(function(){
+jQuery("body").removeClass('showlogin');
+/*$("#divLoading").addClass('show');
+jQuery("body").addClass('showhome');*/
+
 localStorage.setItem('session', userID);
-
- //alert(userID);
-
 
 if(review=="reviewlogin")
 {
-
-
- //alert("jas"+userID);
-
 
 $(".package-order-div").show();
 $(".login-page").hide();
@@ -1722,11 +1727,7 @@ $(".login-page").hide();
 $(".package-order-div").show();
 
 }
-
-
 //sessionStorage.removeItem('reviewlogin');
-
-
 }
 else
 {
@@ -1735,16 +1736,13 @@ else
 $("body").css("background","#fff");
 $(".login-page").hide();
 $(".search-page").show();
-
-
- 
-
-
 }
 
 
-
+ }, 1000);
 }
+
+
 }
 
 });
