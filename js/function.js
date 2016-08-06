@@ -1016,7 +1016,8 @@ url: ""+baseurl+"checkbookingapi?checkloginuserid="+jas+"",
 dataType:'json',
  
 success: function(bookingpi) {
-$(".year").append('<p class="upcomming-booking">No Upcoming bookings</p>');
+
+$(".year").html('<p class="upcomming-booking">No Upcoming bookings</p>');
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
 if(objchk.d=='false')
