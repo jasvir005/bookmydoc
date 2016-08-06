@@ -2188,14 +2188,16 @@ function hidekeyboard()
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
+field.focus();
+field.setAttribute('style', 'display:none;');
+}
 
- 
-    field.focus();
-    
-        field.setAttribute('style', 'display:none;');
-   
-   
- 
+function datehidekeyboard()
+{
 
-
+var field = document.createElement('input');
+field.setAttribute('type', 'text');
+document.body.appendChild(field);
+field.focus();
+field.setAttribute('style', 'display:none;');
 }
