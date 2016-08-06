@@ -1017,7 +1017,7 @@ dataType:'json',
  
 success: function(bookingpi) {
 
-$(".year").html('<p class="upcomming-booking">No Upcoming bookings</p>');
+//$(".year").html('<p class="upcomming-booking">No Upcoming bookings</p>');
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
 if(objchk.d=='false')
@@ -1525,7 +1525,7 @@ dataType:'json',
 success: function(bookingpi) {
 //alert('ddd');
 
-$(".year").append('<p class="upcomming-booking">No Upcoming bookings</p>');
+//$(".year").append('<p class="upcomming-booking">No Upcoming bookings</p>');
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
 
