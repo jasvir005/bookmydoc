@@ -2643,3 +2643,18 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     position: relative;
     top: -2px; 
 }
+.yearddgg
+{
+  display: none;
+}
+
+#page.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+   
+    display: block;
+    left: 15%;
+    margin-left: -8px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}

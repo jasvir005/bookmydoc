@@ -93,8 +93,8 @@ url: ""+baseurl+"checkbookingapi?checkloginuserid="+jas+"",
 dataType:'json',
  
 success: function(bookingpi) {
-//alert(bookingpi);
-$(".year").append('<p class="upcomming-booking">No Upcoming bookings</p>');
+ //alert(bookingpi);
+$(".yearddgg").append('<p class="upcomming-booking">No Upcoming bookings</p>');
 var jsonvchk=JSON.stringify(bookingpi); 
 var objchk = jQuery.parseJSON(jsonvchk);
 //alert(objchk.d);
@@ -174,7 +174,11 @@ url: ""+baseurl+"checkbookingapi21?checkloginuserid="+jas+"",
 dataType:'json',
  
 success: function(bookingpi2) {
- //alert(bookingpi2);
+
+
+ 
+ 
+
 var gsDayNames = new Array(
   'Sunday',
   'Monday',
@@ -188,7 +192,11 @@ var gsDayNames = new Array(
 var d = new Date(bookingpi2.crntdare);
 var dayName = gsDayNames[d.getDay()];
  $(".year").html("");
+ jQuery("body").removeClass('showhome');
+
+
  
+ $(".yearddgg").hide(bookingpi2.day);
  $(".year").text(bookingpi2.day);
 $(".addleftclass").text(bookingpi2.crntmnth);
   $(".rightclass").text(dayName);

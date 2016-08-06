@@ -579,7 +579,7 @@ var jas=localStorage.getItem('session');
  
 
 jQuery("#divLoading").addClass('show');
-jQuery("body").addClass('showhome');
+//jQuery("body").addClass('showhome');
 
 		jQuery.ajax({
 		type: "GET",
@@ -591,6 +591,7 @@ jQuery("body").addClass('showhome');
 
   jQuery(".discover-content").html('');
   jQuery("body").removeClass('showhome');
+  jQuery("#divLoading").removeClass('show');
 
 		var numa=1;
 		jQuery.each( allusers, function( key, val ) {
@@ -869,8 +870,7 @@ function bookingmentfun()
 
   //alert('dd');
 $(".addyear").html(" ");
-
-var pikdate=$(".ui-datepicker-year").text();
+var pikdate=$("#page .ui-datepicker-year").text();
 
 $(".addyear").text(pikdate);
 //alert(pikdate);
