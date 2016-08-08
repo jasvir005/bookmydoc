@@ -203,7 +203,7 @@ Some notes:
 
 <div class="first-calender-div">
   <label id="flet-span-date">Date : </label>
-  <spen id="right-div-span"><input  onclick="hidekeyboard()" type="text" id="datepicker" readonly="true" /></spen>
+  <spen id="right-div-span"><input  onclick="hidekeyboard()" type="text" id="datepicker" /></spen>
 
 
 </div>
@@ -211,7 +211,7 @@ Some notes:
 
 <div class="second-calender-div">
   <label id="second-span-date">Time : </label>
-  <spen id="second-div-span"><input  readonly="true" onclick="datehidekeyboard()" type="text" id="basicExample" class="time" ></spen>
+  <spen id="second-div-span"><input  onclick="datehidekeyboard()" type="text" id="basicExample" class="time" ></spen>
 
 
 
@@ -998,11 +998,12 @@ $( "#datepicker" ).datepicker();
 $(document).ready(function(){
 
 $('body').on('click', '#datepicker', function() {
-  // alert('hi');
+  //alert('hi');
  
   //alert('burl');
     document.activeElement.blur();
-    $("input").blur();
+    $("#datepicker").blur();
+    alert('blur');
  
 
 var field = document.createElement('input');

@@ -2190,7 +2190,7 @@ $(".addyear").append(idss);
 
 function hidekeyboard()
 {
-  $('body').focus();
+ 
 
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
@@ -2202,7 +2202,7 @@ field.setAttribute('style', 'display:none;');
 
 function datehidekeyboard()
 {
- jQuery('body').focus();
+
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
