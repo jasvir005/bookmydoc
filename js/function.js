@@ -2190,35 +2190,26 @@ $(".addyear").append(idss);
 
 function hidekeyboard()
 {
- 
- 
- var hideKeyboard = function() {
-    document.activeElement.blur();
-    $("input").blur();
-};
-
-
-/*var field = document.createElement('input');
-field.setAttribute('type', 'text');
-document.body.appendChild(field);
-field.focus();
-field.setAttribute('style', 'display:none;');*/
- 
-}
-
-function datehidekeyboard()
-{
- 
-var hideKeyboard = function() {
-    document.activeElement.blur();
-    $("#datepicker").blur();
-};
+  $('body').focus();
 
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
+ 
+}
+
+function datehidekeyboard()
+{
+ jQuery('body').focus();
+var field = document.createElement('input');
+field.setAttribute('type', 'text');
+document.body.appendChild(field);
+field.focus();
+field.setAttribute('style', 'display:none;');
+
+
  
 }
 
