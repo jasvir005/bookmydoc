@@ -2190,30 +2190,28 @@ $(".addyear").append(idss);
 
 function hidekeyboard()
 {
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  
- alert('hi');
+ 
+ 
  var hideKeyboard = function() {
     document.activeElement.blur();
     $("input").blur();
 };
 
 
-var field = document.createElement('input');
+/*var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
-field.setAttribute('style', 'display:none;');
-}
+field.setAttribute('style', 'display:none;');*/
+ 
 }
 
 function datehidekeyboard()
 {
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  
+ 
 var hideKeyboard = function() {
     document.activeElement.blur();
-    $("input").blur();
+    $("#datepicker").blur();
 };
 
 var field = document.createElement('input');
@@ -2221,7 +2219,7 @@ field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
-}
+ 
 }
 
 
