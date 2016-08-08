@@ -2191,20 +2191,54 @@ $(".addyear").append(idss);
 function hidekeyboard()
 {
 
+function isiPhone(){
+    return (
+        (navigator.platform.indexOf("iPhone") != -1) ||
+        (navigator.platform.indexOf("iPod") != -1)
+    );
+}
+if(isiPhone()){
+   alert('iPhone detected');
+
+
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
+}
 }
 
 function datehidekeyboard()
 {
 
+function isiPhone(){
+    return (
+        (navigator.platform.indexOf("iPhone") != -1) ||
+        (navigator.platform.indexOf("iPod") != -1)
+    );
+}
+if(isiPhone()){
+   alert('iPhone detected');
+
+
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
 }
+}
 
+
+
+
+function isiPhone(){
+    return (
+        (navigator.platform.indexOf("iPhone") != -1) ||
+        (navigator.platform.indexOf("iPod") != -1)
+    );
+}
+if(isiPhone()){
+   alert('iPhone detected');
+}
