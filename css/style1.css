@@ -177,6 +177,24 @@ width: 77%;
     z-index: 100;
 }
 
+.endbooking
+{
+   
+    background-image: url("../img/loading7_light_blue.gif")  !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: 27% auto !important;
+    bottom: 0;
+    display: block;
+    left: 0;
+    opacity: 0.3;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+
  
  
 
@@ -1544,4 +1562,9 @@ padding-top: 11px;
     float: left;
     font-size: 20px;
     margin: 0;
+}
+
+
+.ui-timepicker-wrapper .ui-timepicker-pm {
+    display: none;
 }

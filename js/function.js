@@ -20,6 +20,7 @@ function shownotification(msg,title)
 
 function checkout()
 {
+  jQuery("body").removeClass('showhome');
 
 dataval=jQuery("#datepicker").val();
 
@@ -87,6 +88,8 @@ return false;
 else
 {
 
+jQuery("body").addClass('endbooking');
+//return false;
 dataval=jQuery("#datepicker").val();
 timevalue=jQuery("#basicExample").val();
 
@@ -121,7 +124,7 @@ success: function(alluserss) {
 
 if(alluserss=='successfully')
 {
-
+jQuery("body").removeClass('endbooking');
 
 ///alert(sessionidval);
 
