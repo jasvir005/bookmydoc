@@ -1684,7 +1684,8 @@ input[type='radio']:checked:before {
 .checkboxd-div1{
   margin-bottom: 14px;
       margin-bottom: 5px;
-    margin-top: 6px;
+     margin-top: 26px;
+
       width: 100%;
 }
 
@@ -2681,3 +2682,19 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
   width: 45%;
    transform: rotate(180deg);
 }
+
+
+.page-detail-language {
+    border-bottom: 1px solid #224765;
+    margin-top: 5px;
+    overflow: auto;
+    padding: 5px 13px;
+}
+
+.page-detail-netword {
+    border-bottom: 1px solid #224765;
+    margin-top: 5px;
+    overflow: auto;
+    padding: 5px 13px;
+}
+
