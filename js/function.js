@@ -2190,15 +2190,9 @@ $(".addyear").append(idss);
 
 function hidekeyboard()
 {
-
-function isiPhone(){
-    return (
-        (navigator.platform.indexOf("iPhone") != -1) ||
-        (navigator.platform.indexOf("iPod") != -1)
-    );
-}
-if(isiPhone()){
-   alert('iPhone detected');
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  
+ alert('hi');
 
 
 var field = document.createElement('input');
@@ -2211,15 +2205,8 @@ field.setAttribute('style', 'display:none;');
 
 function datehidekeyboard()
 {
-
-function isiPhone(){
-    return (
-        (navigator.platform.indexOf("iPhone") != -1) ||
-        (navigator.platform.indexOf("iPod") != -1)
-    );
-}
-if(isiPhone()){
-   alert('iPhone detected');
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  
 
 
 var field = document.createElement('input');
@@ -2233,12 +2220,3 @@ field.setAttribute('style', 'display:none;');
 
 
 
-function isiPhone(){
-    return (
-        (navigator.platform.indexOf("iPhone") != -1) ||
-        (navigator.platform.indexOf("iPod") != -1)
-    );
-}
-if(isiPhone()){
-   alert('iPhone detected');
-}
