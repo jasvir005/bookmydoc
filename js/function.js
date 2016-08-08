@@ -2193,6 +2193,10 @@ function hidekeyboard()
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   
  alert('hi');
+ var hideKeyboard = function() {
+    document.activeElement.blur();
+    $("input").blur();
+};
 
 
 var field = document.createElement('input');
@@ -2207,7 +2211,10 @@ function datehidekeyboard()
 {
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   
-
+var hideKeyboard = function() {
+    document.activeElement.blur();
+    $("input").blur();
+};
 
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
