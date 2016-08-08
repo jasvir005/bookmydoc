@@ -1001,12 +1001,7 @@ $('body').on('click', '#datepicker', function() {
   //alert('hi');
  
   //alert('burl');
-    document.activeElement.blur();
-    $("#datepicker").blur();
-    alert('blur');
- 
-
-var field = document.createElement('input');
+var field = document.createElement('#datepicker');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
