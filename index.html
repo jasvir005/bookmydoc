@@ -996,14 +996,38 @@ $( "#datepicker" ).datepicker();
 $('body').on('click', '.ui-timepicker-wrapper', function() {
     // do something
 
-   //alert('dd');
+ // alert('dd');
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
 
+
+var hideKeyboard = function() {
+  alert('burl');
+    document.activeElement.blur();
+    $("#basicExample").blur();
+};
+
+
+
+
 });
+
+
+
+ var hideKeyboard = function() {
+    alert('burl2');
+    document.activeElement.blur();
+    $("#datepicker").blur();
+};
+
+var hideKeyboard = function() {
+    alert('burl3');
+    document.activeElement.blur();
+    $("#basicExample").blur();
+}; 
 
 
 
