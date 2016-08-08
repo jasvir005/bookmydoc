@@ -28,6 +28,18 @@ $('body').css({ 'background': '#fff none repeat scroll 0 0'});
 
 }
  
+
+ /*******************range slider script start *****************/
+
+$(".slider-wrapper .range-quantity").css("width","110px");
+
+$(".slider-wrapper .range-handle").css("left","110px");
+
+$(".slider-wrapper2 .range-handle").css("left","105px");
+$(".slider-wrapper2 .range-quantity").css("width","105px");
+$("#js-display-decimald").text("128");
+
+/*******************range slider script end *****************/
  
 
 
@@ -787,6 +799,7 @@ $(".search-page").show();
 /***************back button****************/
 
 $(".yoga-wordout").click(function(){
+
 $("#appendinto").html("");
 $(".spelizationsids").html("");
 
@@ -947,4 +960,126 @@ jQuery(".yoga-wordout").css("height",'auto');
 jQuery(".container-hide-div").css("display",'inline');
 jQuery(".filter-div1").css("color",'.#fff');
 jQuery(".filter-page-contant .yoga-wordout > p").css("visibility",'visible');
+
+
+$("#appendinto").html("");
+$(".spelizationsids").html("");
+
+var a=$('.checkboxd-div1 input:checked').val();
+var a1=$('.checkboxd-div1 input:checked').attr("speciality");
+var b=$('.checkboxd-div2 input:checked').val();
+var b1=$('.checkboxd-div2 input:checked').attr("speciality");
+var c=$('.checkboxd-div3 input:checked').val();
+var c1=$('.checkboxd-div3 input:checked').attr("speciality");
+var d=$('.checkboxd-div4 input:checked').val();
+var d1=$('.checkboxd-div4 input:checked').attr("speciality");
+var e=$('.checkboxd-div5 input:checked').val();
+var e1=$('.checkboxd-div5 input:checked').attr("speciality");
+var f=$('.checkboxd-div6 input:checked').val();
+var f1=$('.checkboxd-div6 input:checked').attr("speciality");
+var g=$('.checkboxd-div7 input:checked').val();
+var g1=$('.checkboxd-div7 input:checked').attr("speciality");
+var h=$('.checkboxd-div8 input:checked').val();
+var h1=$('.checkboxd-div8 input:checked').attr("speciality");
+//alert(speciality);
+if(a==undefined && a1==undefined)
+{
+ a='';
+ a1='';
 }
+else{
+var a = "PT"+','; 
+var  a1= a1+','; 
+}
+
+if(b==undefined && b1==undefined)
+{
+ b='';
+  b1='';
+} 
+else{
+ var b = "CT"+','; 
+  var b1 = b1+','; 
+}
+if(c==undefined && c1==undefined)
+{
+ c='';
+  c1='';
+}
+else{
+ var c = "Y"+','; 
+  var c1 = c1+','; 
+} 
+if(d==undefined && d1==undefined)
+{
+ d='';
+ d1='';
+} 
+else{
+var d =  "A"+','; 
+var d1 =  d1+','; 
+}
+if(e==undefined && e1==undefined)
+{
+ e='';
+  e1='';
+}
+else{
+var e =  "B"+',';
+var e1 =  e1+','; 
+} 
+if(f==undefined && f1==undefined)
+{
+ f='';
+  f1='';
+} 
+else{
+ var f = "W"+','; 
+  var f1 = f1+','; 
+}
+if(g==undefined && g1==undefined)
+{
+ g='';
+  g1='';
+} 
+else{
+var g =  "M"+','; 
+var g1 =  g1+','; 
+}
+if(h==undefined && h1==undefined)
+{
+ h='';
+  h1='';
+} 
+else{
+var h =  "S"+','; 
+var h1 =  h1+','; 
+}
+
+
+ var com = a+''+b+''+c+''+d+''+e+''+f+''+g+''+h ;
+ com = com.replace(/,\s*$/, "");
+$("#appendinto").append(':'+com);
+
+
+var com1 = a1+''+b1+''+c1+''+d1+''+e1+''+f1+''+g1+''+h1 ;
+ com1 = com1.replace(/,\s*$/, "");
+$(".spelizationsids").append(':'+com1);
+
+
+
+
+}
+
+function clearcate()
+{
+
+
+
+$('#cate-slide input:checkbox').removeAttr('checked');
+$('#cate-slide label').css('color',"#fff");
+$("#appendinto").html("");
+
+ 
+}
+

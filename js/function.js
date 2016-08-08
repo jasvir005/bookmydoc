@@ -2234,15 +2234,3 @@ field.setAttribute('style', 'display:none;');
 
 
 
-function clearcate()
-{
-
-
-
-$('#cate-slide input:checkbox').removeAttr('checked');
-$('#cate-slide label').css('color',"#fff");
-$("#appendinto").html("");
-
- 
-}
-

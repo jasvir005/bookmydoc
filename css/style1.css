@@ -75,8 +75,8 @@ width: 77%;
 
 
 .togo_backpage_imghome {
-    float: left;
-    margin-top: 8px;
+float: left;
+    margin-top: 10px;
     padding-left: 10px;
     width: 71px;
 }
@@ -259,9 +259,9 @@ width: 77%;
 
 
 .login-backbtn2 img {
-    margin-left: 10px;
+  margin-left: 10px;
     transform: rotate(180deg);
-   width: 22px;
+    width: 20px
 }
 
 /*.login-backbtn2user img {
@@ -294,6 +294,7 @@ width: 77%;
 
 
 .login-backbtn2 {
+     margin-top: 8px;
    float: left;
     margin-top: 10px;
 }   
@@ -692,7 +693,7 @@ float: left;
 .login-backbtn4 img {
     margin-left: 10px;
     transform: rotate(180deg);
-    width: 22px;
+    width: 20px;
 }
 
 .first-calender-div {
@@ -1598,15 +1599,16 @@ padding-top: 11px;
 
 
 .filter-div51 {
+
     color: #fff;
-    float: left;
+    float: right;
     font-family: nexa_bold;
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
     margin-top: 8px;
     text-align: center;
-    width: 86%;
+    width: 38%;
   
 }
 
@@ -1623,7 +1625,7 @@ padding-top: 11px;
     float: right;
 }
 .rht-arw label{
- color:#f5a623;
+ color:#f5a623 !important;
 }
 .sendth-left-arw {
     float: left;

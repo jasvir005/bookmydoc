@@ -1178,6 +1178,7 @@ clear: left;
     clear: inherit;
     cursor: pointer;
     float: right;
+       margin-top: 3px;
     /*margin:14px 2px 0 0;*/
     width: 7%;
 }
@@ -1442,7 +1443,7 @@ width: 100%;
     /*margin-top: 18px*/
     width: 100%;
  
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 .filter-div1 {
@@ -2696,5 +2697,9 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     margin-top: 5px;
     overflow: auto;
     padding: 5px 13px;
+}
+
+#menuslide {
+    margin-top: 3px;
 }
 
