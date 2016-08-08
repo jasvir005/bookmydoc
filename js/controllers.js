@@ -6,6 +6,34 @@ $(document).ready(function(){
  
  jas=localStorage.getItem('session');
 
+
+
+
+
+
+$(".togo_backpage_imghome").click(function()
+{
+
+  //alert(jas);
+if(jas==null)
+{
+$(".first-page-all-trainer").hide();
+$(".loginhome-page").show();
+}
+else
+{
+$(".first-page-all-trainer").hide();
+$(".search-page").show();
+$('body').css({ 'background': '#fff none repeat scroll 0 0'});
+
+}
+ 
+ 
+
+
+});
+
+
 if(jas!=null)
 {
 
@@ -276,21 +304,32 @@ jQuery('.yoga-wordout').click(function(){
           jQuery(".language-icon img").removeClass('rotate2');
    
      if( jQuery('.sidebar').is(':visible') ) {
-        jQuery('.sidebar').animate({ 'width': '0px' }, 'slow', function(){
-            jQuery('.sidebar').hide();              
-        });
-        jQuery('#slow-slide').animate({ 'margin-right': '0px' }, 'slow');
-        jQuery('.pane').css({ 'position': 'absolute' });
-        jQuery('.student-test').show();
-        jQuery(".transfromimg").removeClass('rotate2');
-        jQuery(".scroll").removeClass('scroll02');
-            jQuery(".yoga-wordout").css("height",'auto');
-                   jQuery(".container-hide-div").css("display",'inline');
-                          jQuery(".filter-div1").css("color",'.#fff');
-                      jQuery(".filter-page-contant .yoga-wordout > p").css("visibility",'visible');
+      
+jQuery('#menuslide').show();
+jQuery('.filter-div1').show();
+jQuery('.filter-div51').hide();
+jQuery('.right-side-categories').show();
+jQuery('.sidebar').animate({ 'width': '0px' }, 'slow', function(){
+jQuery('.sidebar').hide();              
+});
+jQuery('#slow-slide').animate({ 'margin-right': '0px' }, 'slow');
+jQuery('.pane').css({ 'position': 'absolute' });
+jQuery('.student-test').show();
+jQuery(".transfromimg").removeClass('rotate2');
+jQuery(".scroll").removeClass('scroll02');
+jQuery(".yoga-wordout").css("height",'auto');
+jQuery(".container-hide-div").css("display",'inline');
+jQuery(".filter-div1").css("color",'.#fff');
+jQuery(".filter-page-contant .yoga-wordout > p").css("visibility",'visible');
     }
     else {
 
+jQuery('#menuslide').hide();
+
+jQuery('.filter-div51').show();
+  jQuery('.filter-div1').hide();
+
+   jQuery('.right-side-categories').hide();
         jQuery('.sidebar').show();
         jQuery('.sidebar').animate({ 'width': '250px' }, 'slow');
         jQuery('#slow-slide').animate({ 'margin-right': '250px' }, 'slow');
@@ -890,3 +929,22 @@ $(".head-img-txtflogd").click(function(){
 });  //dosument function 
 
 
+function backsearchpage()
+{
+ jQuery('#menuslide').show();
+jQuery('.filter-div1').show();
+jQuery('.filter-div51').hide();
+jQuery('.right-side-categories').show();
+jQuery('.sidebar').animate({ 'width': '0px' }, 'slow', function(){
+jQuery('.sidebar').hide();              
+});
+jQuery('#slow-slide').animate({ 'margin-right': '0px' }, 'slow');
+jQuery('.pane').css({ 'position': 'absolute' });
+jQuery('.student-test').show();
+jQuery(".transfromimg").removeClass('rotate2');
+jQuery(".scroll").removeClass('scroll02');
+jQuery(".yoga-wordout").css("height",'auto');
+jQuery(".container-hide-div").css("display",'inline');
+jQuery(".filter-div1").css("color",'.#fff');
+jQuery(".filter-page-contant .yoga-wordout > p").css("visibility",'visible');
+}

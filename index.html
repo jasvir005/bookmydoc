@@ -137,20 +137,26 @@ Some notes:
 
 
 <div class="header-div">
- <div class="head-text-backhone"><img src="img/go.png"></div> 
-   <div class="head-text"><h1> Trainers </h1></div> 
-<div class="page_notice">
-      <div class="notification">
-        <img src="./img/notification.png">
+ <div class="togo_backpage">
+      <div class="togo_backpage_imghome">
+        <img class="back_page" src="./img/go.png">
+      </div>
+    </div> 
+    <div class="search_page_head">
+      <div class="head_search">
+        <h1> Trainers </h1>
       </div>
     </div>
-
+    <div class="page_notice">
+      <!-- <div class="notification">
+        <img src="./img/notification.png">
+      </div> -->
+    </div>     
     <div class="page_filter">
       <div class="filter_img">
-         <img src="./img/filter.png">
+        <img src="./img/filter.png">
       </div>
-    </div>
-
+    </div> 
 
 </div> <!-- container header -->
    <div id="jas" class="discover-content">
@@ -173,9 +179,9 @@ Some notes:
 <div class="head-text2">
 <h1> Details </h1></div> 
 <div class="page_notice">
-<div class="notification">
+<!-- <div class="notification">
 <img src="./img/notification.png">
-</div></div></div>
+</div> --></div></div>
 
 <div id="divLoading"></div>
 <div class="detail-result-page" id="detailpge">
@@ -488,7 +494,7 @@ padding-right: 20px;">Sign in with Google</button>
     
 
     <div class="bmd-usr">
-      <div class="bmd-usr1"><img src="img/email.png"></div>
+      <div class="bmd-usr1"><img src="img/location.png"></div>
       <div class="bmd-usr2">
       <input type="text" id="addressfld" placeholder="Address" name="Address" class="bmd-usr-input">
       </div>
@@ -644,6 +650,7 @@ padding-right: 20px;">Sign in with Google</button>
          <div class="signup_back_btn" style="display: inline;">
 
 <div class="filter-div1">Search</div> 
+<div class="filter-div51" onclick="backsearchpage();"><img src="./img/go.png" class="back_paged"></div> 
 </div>
    
   </ion-header-bar>
@@ -659,7 +666,7 @@ padding-right: 20px;">Sign in with Google</button>
         <form ng-submit="signupform.$valid &amp;&amp; doSignup()" name="signupform" class="ng-pristine ng-valid">
         <div class="containerration">
 
-          <div class="yoga-wordout"><p><span class="wordout-yoga">Trainer</span>
+          <div class="yoga-wordout"><p class="yogaptag"><span class="wordout-yoga">Training</span>
             <span class="spelizationsids"></span>
             <span class="selecedgender"></span>
             <span class="selecedpayrate"></span>
@@ -758,14 +765,14 @@ padding-right: 20px;">Sign in with Google</button>
 
 
         <div style="margin-bottom:0px;margin-top:10px;" class="head-img-txtflog">
-        <div id="first-btn01" class="filter-div">  My Trainer </div>
+        <div id="first-btn01" class="filter-div"> Search</div>
         </div>
 
 
 
         <div class="head-img-txtflog">
         <div class="clearonmsg"></div>
-        <div id="first-btn01" class="clear-lan-sex">  Reset </div>
+        <div id="signdiv" class="clear-lan-sex">  Reset </div>
         </div>
 
 
@@ -775,12 +782,19 @@ padding-right: 20px;">Sign in with Google</button>
 
 <div id="cate-slide" class="sidebar" style="width: 250px; display: none;">
 <div id="image-workout" class="image-workout-div">
-<label>Trainer</label>
-<span>
-<img src="img/dropdown.png">
-</span> 
+<div class="lft-arw"><label>Training and</label></div>
+<div class="rht-arw" onclick="clearcate()"><label>Reset</label></div>
+
 </div>
-        <div class="likefilter"></div>
+<div class="second-srchary">
+<div class="sendth-left-arw"><label>Workout</label></div>
+<div class="sendth-right-arw"><span>
+<img src="img/dropdown.png">
+</span> </div>
+
+
+</div>
+        <div style="padding-bottom: 10px;" class="likefilter"></div>
  
         </div>
 
@@ -952,9 +966,9 @@ $('#pickableRange').multiDatesPicker({
       </div>
     </div>
     <div class="page_notice">
-      <div class="notification">
+      <!-- <div class="notification">
         <img src="./img/notification.png">
-      </div>
+      </div> -->
     </div>     
     <div class="page_filter">
       <div class="filter_img">

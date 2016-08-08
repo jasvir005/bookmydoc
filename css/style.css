@@ -537,7 +537,7 @@ width: 100%;}
 
 .chkoutbtn_ap {
   background: #003f6f none repeat scroll 0 0;
-  padding:0 0 5px 19px;
+   padding: 11px 0 15px 19px;
 }
 .chkoutbtn_ap b {
     font-size: 11px;
@@ -1080,7 +1080,7 @@ clear: left;
     margin: 27px auto -1px;     
 }
 .login-user-div {
-    margin-top: 10px;
+    margin-top: 18px;
 }
 .social_icons > img {
     width: 18%;
@@ -1155,12 +1155,16 @@ clear: left;
 }
 
 .filter-page-contant .yoga-wordout {
-    margin: 17px auto 0;
+    margin: 13px auto 0;
     overflow: hidden;
     padding-bottom: 0;
  
     text-align: left;
     width: 92%;
+}
+.yogaptag {
+    margin-bottom: 13px;
+    margin-top: 0;
 }
 .filter-page-contant .language-div > b {
     color: #7d7b7a;
@@ -1277,7 +1281,7 @@ width: 70%;
       background-color: #a8aeb5;
     border-radius: 15px;
     display: block;
-    height: 8px;
+    height: 7px;
     position: relative;
     width: 95%;
 }
@@ -1437,7 +1441,7 @@ width: 100%;
     overflow: auto;
     /*margin-top: 18px*/
     width: 100%;
-    height: 28px;
+ 
     margin-top: 3px;
 }
 
@@ -1672,6 +1676,7 @@ input[type='radio']:checked:before {
     margin-top: 10px;
     overflow: hidden;
     padding-left: 25px;
+     padding-right: 9px;
    /* padding-right: 20px;*/
     width: 100%;
 }
@@ -1910,7 +1915,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
       margin-top: 6px;
    }
   .user_login-div .bmd-main-btn {
-     margin-top: 10px;
+     margin-top: 18px;
    }
 }
 /***************************/
@@ -2253,7 +2258,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 }
 .left-part-middel{
-  width: 50%;
+  width: 48%;
   float: left;
 }
 .text-part-left{
@@ -2336,6 +2341,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .togo_backpage{
   width:23%;
+   margin-right: 3px;
   float: left;
 }
 .togo_backpage_img {
@@ -2357,7 +2363,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 .head_search {
     float: left;
-    margin-top: 10px;
+    margin-top: 14px;
     width: 100%;
 }
 .head_search > h1 {
@@ -2433,7 +2439,15 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 
 .bmd-list {
-    padding: 15px;
+    padding: 22px;
+}
+
+.signup-pge-dsgn {
+    margin-bottom: 18px;
+}
+
+.loginhome-page .bmd-list {
+    margin-top: 12px;
 }
 .bmd-main-btn2flog a
 {
@@ -2657,4 +2671,13 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     position: absolute;
     top: 50%;
     width: 100%;
+}
+.filter-div51
+{
+  display: none;
+}
+.filter-div51 img
+{
+  width: 45%;
+   transform: rotate(180deg);
 }
