@@ -799,7 +799,7 @@ float: left;
 
   background-color: #003f6f;
     background-image: url("../img/down-chevron.png");
-    background-position: 87px center;
+    background-position: 92px center;
     background-repeat: no-repeat;
     background-size: 13% auto;
     border: 1px solid #2169af;
@@ -957,7 +957,7 @@ float: left;
 .hasDatepicker {
   background-color: #003f6f;
     background-image: url("../img/down-chevron.png");
-    background-position: 120px center;
+    background-position: 125px center;
     background-repeat: no-repeat;
     background-size: 9% auto;
     border: 1px solid #2169af !important;
@@ -1213,19 +1213,18 @@ float: left;
 }
 
 .userimagte > img {
-    border-radius: 68px;
+    border-radius: 44px;
     clear: left;
-    height: 93px;
+    height: 82px;
     overflow: initial;
     width: 100%;
 }
-
 .userimagte {
- 
-    margin: 0 auto;
-     margin: 47px auto 0;
+    border-radius: 45px;
+    height: 58px;
+    margin: 47px auto 0;
     text-align: center;
-    width: 30%;
+    width: 27%;
 }
 
 

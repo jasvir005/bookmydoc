@@ -171,13 +171,20 @@ var lets =databc+' '+letss;
 //alert( letss);
 
 bookname=localStorage.getItem('bookname');
+gendersesname=localStorage.getItem('genderses');
+
+
 
 booktime=localStorage.getItem('booktime');
 
 jQuery(".dateformetting").append(lets);
-
+if(gendersesname==0){values="He";}
+  else{values="She";}
 
 jQuery(".bookername").append(bookname);
+jQuery(".gendersesname").append(values);
+
+
 
 jQuery(".booktime").append(booktime);
 
@@ -332,6 +339,10 @@ var str = obj.firstname;
 
 
 localStorage.setItem('bookname', obj.firstname);
+localStorage.setItem('genderses', obj.gender);
+
+
+
 str = str.toLowerCase().replace(/\b[a-z]/g, function(letter) {
     return letter.toUpperCase();
 });

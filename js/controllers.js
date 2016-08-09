@@ -655,11 +655,18 @@ else
 {
 var imagesusr=""+bseimg+"service/public/z_uploads/doctor/"+objs.userimage+"";
 }
+if(objs.payrate=="")
+{
+  paybalues="0";
+}
+else
+{
+  paybalues=objs.payrate;
+}
 
 
 
-
-data="<div class='discover-content"+objs.id+"'onclick='abd("+objs.id+")'id='searchlop2'><div class='content-part2'><img src='"+imagesusr+"'><div class='top-of-content2'></div><div class='middel-part2'><div class='left-part-middel2'><div class='text-part-left2'><h1>"+objs.firstname+"</h1><p class='categories-append2'></p><div class='countratinga'><div id='rating21"+objs.id+"' class='rating21'></div><div class='round-count21' id='round21"+objs.id+"'></div></div></div></div><div class='text-right-part21'><h1>$"+objs.payrate+" / Hour</h1></div></div></div></div>";
+data="<div class='discover-content"+objs.id+"'onclick='abd("+objs.id+")'id='searchlop2'><div class='content-part2'><img src='"+imagesusr+"'><div class='top-of-content2'></div><div class='middel-part2'><div class='left-part-middel2'><div class='text-part-left2'><h1>"+objs.firstname+"</h1><p class='categories-append2'></p><div class='countratinga'><div id='rating21"+objs.id+"' class='rating21'></div><div class='round-count21' id='round21"+objs.id+"'></div></div></div></div><div class='text-right-part21'><h1>$"+paybalues+" / Hour</h1></div></div></div></div>";
  jQuery(".discover-content").append(data);
  }
 
@@ -699,9 +706,13 @@ var usrid=searchresultd.useridfor;
 if(ratingsh ==0)
 {
 //alert('sssssssss');
+ 
+
 var imageempty ='<img src='+emptystar+'>';
-jQuery("#rating21"+usrid+"").append(imageempty);
-jQuery("#round21"+usrid+"").append("0");
+
+ 
+jQuery(".discover-content #rating21"+usrid+"").append(imageempty);
+jQuery(".discover-content"+usrid+" #round21"+usrid+"").append(ratingsh);
 
 
 }else
@@ -710,7 +721,7 @@ jQuery("#round21"+usrid+"").append("0");
 {
  //alert('*******');
 var imageempty ='<img src='+fillstar1+'>';
-jQuery("discover-content#rating21"+usrid+"").append(imageempty);
+jQuery(".discover-content #rating21"+usrid+"").append(imageempty);
 jQuery(".discover-content"+usrid+" #round21"+usrid+"").append(ratingsh);
 }
 if(ratingsh==2)
