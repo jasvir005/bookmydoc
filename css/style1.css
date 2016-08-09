@@ -1389,7 +1389,7 @@ padding-top: 11px;
 
 #demos .ui-datepicker td
 {
-      padding: 4px;
+  padding: 2px 0 15px 11px;
 }
 
 
@@ -1397,9 +1397,10 @@ padding-top: 11px;
     position: relative;
     top: 11px;
 }
+
 .addyear {
       border-bottom: 1px solid #eaeaea;
-    color: #8a8a8a;
+    color: #003F6F;
     font-size: 20px;
     margin: 12px auto 0;
     padding-bottom: 9px;
@@ -1563,9 +1564,10 @@ width: 23px;
     font-family: helvetica;
     font-size: 17px;
     font-weight: 200;
+    color:#003F6F;
 }
 .ui-datepicker-calendar span {
-    color: #5a5a5a;
+    color: #000;
     font-size: 12px;
 }
 
