@@ -172,6 +172,41 @@ float: left;
     z-index: 100;
 }
 
+#divLoading2.show
+{
+   background-color: #fff;
+    background-image: url("../img/loading7_light_blue.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 27% auto;
+    bottom: 0;
+    display: block;
+    left: 0;
+    opacity: 0.3;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+
+#divLoading3.show
+{
+   background-color: #fff;
+    background-image: url("../img/loading7_light_blue.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 27% auto;
+    bottom: 0;
+    display: block;
+    left: 0;
+    opacity: 0.3;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
 
 .showlogin
 {

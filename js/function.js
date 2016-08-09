@@ -88,7 +88,7 @@ return false;
 else
 {
 
-jQuery("body").addClass('endbooking');
+jQuery("#divLoading3").addClass('show');
 //return false;
 dataval=jQuery("#datepicker").val();
 timevalue=jQuery("#basicExample").val();
@@ -124,7 +124,7 @@ success: function(alluserss) {
 
 if(alluserss=='successfully')
 {
-jQuery("body").removeClass('endbooking');
+jQuery("#divLoading3").addClass('show');
 
 ///alert(sessionidval);
 
@@ -174,7 +174,7 @@ jQuery(".congratulation-div").show();
 }
 else
 {
-
+jQuery("#divLoading3").removeClass('show');
 function onConfirm(buttonIndex) {
    // alert('You selected button ' + buttonIndex);
 }
@@ -1497,9 +1497,9 @@ return false;
  else
  {
 
-   
  
-jQuery("body").addClass('showlogin');
+ 
+$("#divLoading2").addClass('show');
 
 
 var emailId= $("#login_user_id").val();
@@ -1704,7 +1704,7 @@ else
 {
 
 setTimeout(function(){
-jQuery("body").removeClass('showlogin');
+$("#divLoading2").removeClass('show');
 /*$("#divLoading").addClass('show');
 jQuery("body").addClass('showhome');*/
 
@@ -1748,7 +1748,7 @@ $(".search-page").show();
 else
 {
 
-  jQuery("body").removeClass('showlogin');
+  $("#divLoading2").removeClass('show');
     $("#login_error").show();
     return false;
 }
