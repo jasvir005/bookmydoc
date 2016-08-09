@@ -32,8 +32,8 @@ body {
 .head-text
 {
    float: left;
-    margin-left: 64px;
-    margin-top: 10px;
+    margin-left: 0  px;
+    margin-top: 13px;
     width: 60%;
 }
 
@@ -1567,4 +1567,16 @@ padding-top: 11px;
 
 .ui-timepicker-wrapper .ui-timepicker-pm {
     display: none;
+}
+
+.head-text-backhone img {
+    margin-left: 10px;
+    transform: rotate(180deg);
+    width: 24px;
+}
+
+.head-text-backhone {
+    float: left;
+    margin-top: 6px;
+    width: 65px;
 }
