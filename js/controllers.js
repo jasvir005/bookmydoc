@@ -109,11 +109,11 @@ $(".userimagte-name  h3").append(obj.firstname);
 
 $(".user-location  h3").append(obj.address);
 
-$(".user-EMAIL  h3").append(obj.email);
+/*$(".user-EMAIL  h3").append(obj.email);*/
 
-$(".user-phone  h3").append(obj.phone);
+$(".user-phone  h3").append(obj.email);
 
-$(".user-zip  h3").append(obj.zipcode);
+/*$(".user-zip  h3").append(obj.password);*/
 
 
 
