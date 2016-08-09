@@ -151,8 +151,24 @@ if(res[0]==10){databc="Oct"}
 if(res[0]==11){databc="Nov"}
 if(res[0]==12){databc="Dec"}
 
- 
-var lets =databc+' '+res[1]+'th';
+if(res[1]=="01"){ letss="1";}
+else if(res[1]=="02"){  letss="2";}
+else if(res[1]=="03"){  letss="3";}
+else if(res[1]=="04"){  letss="4";}
+else if(res[1]=="05"){  letss="5";}
+else if(res[1]=="06"){ letss="6";}
+else if(res[1]=="07"){ letss="7";}
+else if(res[1]=="08"){  letss="8";}
+else if(res[1]=="09"){  letss="9";}
+else{
+
+letss=res[1];
+}
+
+ //alert(letss);
+var lets =databc+' '+letss;
+
+//alert( letss);
 
 bookname=localStorage.getItem('bookname');
 
