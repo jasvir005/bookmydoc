@@ -2249,6 +2249,13 @@ field.setAttribute('style', 'display:none;');
 function datehidekeyboard()
 {
 
+window.addEventListener('native.keyboardshow', keyboardShowHandler);
+
+function keyboardShowHandler(e){
+  cordova.plugins.Keyboard.close();
+    //alert('Keyboard height is: ' + e.keyboardHeight);
+}
+
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
@@ -2262,6 +2269,7 @@ field.setAttribute('style', 'display:none;');
 window.addEventListener('native.keyboardshow', keyboardShowHandler);
 
 function keyboardShowHandler(e){
-    alert('Keyboard height is: ' + e.keyboardHeight);
+  cordova.plugins.Keyboard.close();
+    //alert('Keyboard height is: ' + e.keyboardHeight);
 }
 
