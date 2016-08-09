@@ -2235,7 +2235,13 @@ $(".addyear").append(idss);
 
 function hidekeyboard()
 {
- 
+  //alert('dd');
+ window.addEventListener('native.keyboardshow', keyboardShowHandler);
+
+function keyboardShowHandler(e){
+  cordova.plugins.Keyboard.close();
+    //alert('Keyboard height is: ' + e.keyboardHeight);
+}
 
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
@@ -2265,11 +2271,4 @@ field.setAttribute('style', 'display:none;');
 }
 
 
-
-window.addEventListener('native.keyboardshow', keyboardShowHandler);
-
-function keyboardShowHandler(e){
-  cordova.plugins.Keyboard.close();
-    //alert('Keyboard height is: ' + e.keyboardHeight);
-}
 
