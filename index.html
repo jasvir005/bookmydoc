@@ -1015,33 +1015,49 @@ $( "#datepicker" ).datepicker();
 $(document).ready(function(){
 
 
+
+$("#datepicker").blur(); //for ios
+var softkeyboard = window.cordova.plugins.SoftKeyBoard;
+softkeyboard.hide();
+
+$("#basicExample").blur(); //for ios
+var softkeyboard = window.cordova.plugins.SoftKeyBoard;
+softkeyboard.hide();
+
 $('body').on('click', '#datepicker', function() {
-  document.activeElement.blur();
     // do something
+setTimeout(function(){
  
+
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
- 
+ }, -42);
 
 });
  
 
  $('body').on('click', '#basicExample', function() {
-  document.activeElement.blur();
     // do something
+setTimeout(function(){
  
+
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
- 
+ }, -42);
 
 });
  
+
+
+
+
+
 
 });
 
