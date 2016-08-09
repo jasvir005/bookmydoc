@@ -2206,7 +2206,7 @@ $(".addyear").append(idss);
 
 
 
-function hidekeyboard()
+/*function hidekeyboard()
 {
  
 
@@ -2230,7 +2230,7 @@ field.setAttribute('style', 'display:none;');
 
  
 }
-
+*/
 
 
 
