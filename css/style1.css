@@ -1470,14 +1470,12 @@ padding-top: 11px;
 
 
 .imgplus {
-    background: #fe9a00 none repeat scroll 0 0;
- 
-    border-radius: 26px;
-    float: right;
- 
-    position: relative;
-    right: 30px;
-    width: 23px;
+background: #fe9a00 none repeat scroll 0 0;
+border-radius: 26px;
+float: right;
+position: relative;
+right: 16px;
+width: 23px;
     
 }
 
@@ -1653,7 +1651,10 @@ padding-top: 11px;
 
 
 .lft-arw  label{
- color:#fff;
+  color: #cfcfcf;
+    font-family: helvetica;
+    font-weight: bold;
+
 }
 
 .rht-arw {
@@ -1666,7 +1667,9 @@ padding-top: 11px;
     float: left;
 }
 .sendth-left-arw label{
-color:#fff;
+color:#cfcfcf;
+    font-weight: bold;
+    font-family: helvetica;
 }
 
 .sendth-right-arw

@@ -1676,7 +1676,7 @@ input[type='radio']:checked:before {
     margin-bottom: 14px;
     margin-top: 10px;
     overflow: hidden;
-    padding-left: 25px;
+    padding-left: 20px;
      padding-right: 9px;
    /* padding-right: 20px;*/
     width: 100%;
@@ -1735,9 +1735,10 @@ input[type='radio']:checked:before {
       width: 100%;
 }
 .checkboxd-div1 > label {
-
-    color: #fff;
+ font-family: helvetica;
+    color: #cfcfcf;
     float: left;
+      font-weight: bold;
     /*margin-left: 10px;*/
 }
 
@@ -1749,48 +1750,65 @@ input[type='radio']:checked:before {
     /*margin-left: 10px;*/
 }
 .checkboxd-div2 > label {
-    color: #fff;
+   font-family: helvetica;
+    color: #cfcfcf;
     float: left;
+      font-weight: bold;
+
    /* margin-left: 10px;*/
 }
 .checkboxd-div3 > label {
-    color: #fff;
+  font-family: helvetica;
+    color: #cfcfcf;
     float: left;
+      font-weight: bold;
    /* margin-left: 10px;*/
 }
 
 
 .checkboxd-div4 > label {
-    color: #fff;
+  font-family: helvetica;
+    color: #cfcfcf;
     float: left;
+      font-weight: bold;
    /* margin-left: 10px;*/
 }
 
 .checkboxd-div5 > label {
-    color: #fff;
+ font-family: helvetica;
+    color: #cfcfcf;
     float: left;
+      font-weight: bold;
   /*  margin-left: 10px;*/
 }
 .checkboxd-div6 > label {
-    color: #fff;
+ font-family: helvetica;
+    color: #cfcfcf;
     float: left;
+      font-weight: bold;
    /* margin-left: 10px;*/
 }
 
 .checkboxd-div7 > label {
-    color: #fff;
+ font-family: helvetica;
+    color: #cfcfcf;
     float: left;
+      font-weight: bold;
    /* margin-left: 10px;*/
 }
 
 .checkboxd-div8 > label {
-    color: #fff;
+    font-family: helvetica;
+    color: #cfcfcf;
     float: left;
+      font-weight: bold;
    /* margin-left: 10px;*/
 }
 .checkboxd-div9 > label {
-    color: #fff;
+ font-family: helvetica;
+    color: #cfcfcf;
     float: left;
+      font-weight: bold;
    /* margin-left: 10px;*/
 }
 .div-coloor {
