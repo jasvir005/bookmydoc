@@ -1015,33 +1015,8 @@ $( "#datepicker" ).datepicker();
 $(document).ready(function(){
 
 
-  
-function hidekeyboard()
-{
- 
-
-var field = document.createElement('input');
-field.setAttribute('type', 'text');
-document.body.appendChild(field);
-field.focus();
-field.setAttribute('style', 'display:none;');
- 
-}
-
-
-function datehidekeyboard()
-{
-
-var field = document.createElement('input');
-field.setAttribute('type', 'text');
-document.body.appendChild(field);
-field.focus();
-field.setAttribute('style', 'display:none;');
- 
-}
-
-
 $('body').on('click', '#datepicker', function() {
+  document.activeElement.blur();
     // do something
  
 var field = document.createElement('input');
@@ -1055,6 +1030,7 @@ field.setAttribute('style', 'display:none;');
  
 
  $('body').on('click', '#basicExample', function() {
+  document.activeElement.blur();
     // do something
  
 var field = document.createElement('input');
