@@ -8858,7 +8858,7 @@ $.extend( Datepicker.prototype, {
 
 		next = ( this._canAdjustMonth( inst, +1, drawYear, drawMonth ) ?
 			"<a class='ui-datepicker-next ui-corner-all' data-handler='next' data-event='click'" +
-			" title='" + nextText + "'><img  src='img/calright4535.png'><span onclick='nxt("+drawYear+")' class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "w" : "e" ) + "'>" + nextText + "</span></a>" :
+			" title='" + nextText + "'><img  src='img/cal_left4535.png'><span onclick='nxt("+drawYear+")' class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "w" : "e" ) + "'>" + nextText + "</span></a>" :
 			( hideIfNoPrevNext ? "" : "<a class='ui-datepicker-next ui-corner-all ui-state-disabled' title='" + nextText + "'><span class='ui-icon ui-icon-circle-triangle-" + ( isRTL ? "w" : "e" ) + "'>" + nextText + "</span></a>" ) );
 
 		currentText = this._get( inst, "currentText" );

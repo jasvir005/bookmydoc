@@ -870,10 +870,9 @@ float: left;
     overflow: auto;
     width: 80%;
 }
-.user-profilepage .userheadser h1
-{
-     float: left;
-    width: 80%;
+.user-profilepage .userheadser h1 {
+    float: left;
+    margin-left: 75px;
 }
 
 .package-order-div input[type="radio"] {
@@ -902,10 +901,11 @@ float: left;
     width: 50%;
 }
 .leftclass-div-txt > span {
-    color: #9c9c9c;
+    color: #fff;
+    font-size: 19px;
+    opacity: 0.72;
     position: relative;
     top: -4px;
-      font-size: 19px;
 }
 
 .leftclass-div-txt > label {
@@ -915,10 +915,11 @@ float: left;
 
 .rightclass-div-txt > span
 {
-   color: #9c9c9c;
+     color: #fff;
+    font-size: 19px;
+    opacity: 0.72;
     position: relative;
-    top: -4px;  
-      font-size: 19px;
+    top: -4px;
 }
 
 .rightclass-div-txt > label
@@ -1221,7 +1222,7 @@ float: left;
 }
 .userimagte {
     border-radius: 45px;
-    height: 58px;
+     height: 83px;
     margin: 47px auto 0;
     text-align: center;
     width: 27%;
@@ -1322,28 +1323,28 @@ float: left;
     float: left;
       color: #fff;
      font-size: 20px;
-        width: 35%;
+        /*width: 35%;*/
 }
 
 .user-preferance > span {
     float: left;
       color: #fff;
      font-size: 20px;
-        width: 35%;
+       /* width: 35%;*/
 }
 
 .user-zip > span {
     float: left;
       color: #fff;
      font-size: 20px;
-        width: 35%;
+     /*   width: 35%;*/
 }
 
 .user-EMAIL > span {
     float: left;
           color: #fff;
      font-size: 20px;
-        width: 35%;
+       /* width: 35%;*/
     
 
 }
@@ -1352,7 +1353,7 @@ float: left;
     float: left;
           color: #fff;
      font-size: 20px;
-        width: 35%;
+      /*  width: 35%;*/
 }
 .innercontainer-userpro {
     padding-left: 20px;
@@ -1463,11 +1464,10 @@ padding-top: 11px;
 }
 
 
-#demos .ui-datepicker-next.ui-corner-all > img
-{ 
-   margin-left: -33px !important; 
- }
-
+#demos .ui-datepicker-next.ui-corner-all > img {
+    margin-left: -33px !important;
+    transform: rotate(182deg);
+}
 
 .imgplus {
 background: #fe9a00 none repeat scroll 0 0;
@@ -1552,6 +1552,7 @@ width: 23px;
 }
 .ui-datepicker-next.ui-corner-all > img {
    margin-left: -11px;
+    transform: rotate(180deg);
 }
 .ui-datepicker-prev.ui-corner-all > img {
   
