@@ -2259,4 +2259,9 @@ field.setAttribute('style', 'display:none;');
 
 
 
+window.addEventListener('native.keyboardshow', keyboardShowHandler);
+
+function keyboardShowHandler(e){
+    alert('Keyboard height is: ' + e.keyboardHeight);
+}
 
