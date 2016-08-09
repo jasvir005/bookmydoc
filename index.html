@@ -1015,9 +1015,9 @@ $( "#datepicker" ).datepicker();
 $(document).ready(function(){
 
 
-$('body').on('click', '#datepicker', function() {
-    // do something
-setTimeout(function(){
+  
+function hidekeyboard()
+{
  
 
 var field = document.createElement('input');
@@ -1025,30 +1025,47 @@ field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
- }, -42);
+ 
+}
+
+
+function datehidekeyboard()
+{
+
+var field = document.createElement('input');
+field.setAttribute('type', 'text');
+document.body.appendChild(field);
+field.focus();
+field.setAttribute('style', 'display:none;');
+ 
+}
+
+
+$('body').on('click', '#datepicker', function() {
+    // do something
+ 
+var field = document.createElement('input');
+field.setAttribute('type', 'text');
+document.body.appendChild(field);
+field.focus();
+field.setAttribute('style', 'display:none;');
+ 
 
 });
  
 
  $('body').on('click', '#basicExample', function() {
     // do something
-setTimeout(function(){
  
-
 var field = document.createElement('input');
 field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
- }, -42);
+ 
 
 });
  
-
-
-
-
-
 
 });
 
