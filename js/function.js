@@ -2222,7 +2222,7 @@ $(".addyear").append(idss);
 
 
 
-/*function hidekeyboard()
+function hidekeyboard()
 {
  
 
@@ -2233,6 +2233,7 @@ field.focus();
 field.setAttribute('style', 'display:none;');
  
 }
+
 
 function datehidekeyboard()
 {
@@ -2242,11 +2243,9 @@ field.setAttribute('type', 'text');
 document.body.appendChild(field);
 field.focus();
 field.setAttribute('style', 'display:none;');
-
-
  
 }
-*/
+
 
 
 
