@@ -1316,7 +1316,7 @@ float: left;
     float: left;
       color: #fff;
      font-size: 20px;
-        width: 35%;
+      /*  width: 35%;*/
 }
 
 .user-phone > span {
@@ -1389,13 +1389,13 @@ padding-top: 11px;
 
 #demos .ui-datepicker td
 {
-  padding: 2px 0 15px 11px;
+  padding: 5px 0 15px 11px;
 }
 
 
 #demos tbody {
     position: relative;
-    top: 11px;
+   top: 24px
 }
 
 .addyear {
