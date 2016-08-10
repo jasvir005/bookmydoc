@@ -641,7 +641,7 @@ console.log("***");
  if(objs.status=='false' && len==1)
  {
 
-data="<div class='discover-contentggggg'id='searchlop2'><img src='http://gotaworkout.com/service/public/z_uploads/doctor/not_found.png'></div>";
+data="<div class='discover-contentggggg'id='searchlop2'><p class='emptytext'>Sorry, your search did not find any trainers around your area. Please change your parameters.</p></div>";
   jQuery(".discover-content").append(data);
  }
  else

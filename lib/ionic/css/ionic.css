@@ -7675,6 +7675,19 @@ input[type="color"] {
   font-size: 14px;
   line-height: 16px; }
 
+
+
+  .package-order-div textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    color: #111;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 16px;
+    padding-left: 10px;
+    padding-top: 2px;
+    vertical-align: middle;
+}
+
 .platform-ios input[type="datetime-local"],
 .platform-ios input[type="date"],
 .platform-ios input[type="month"],

@@ -790,9 +790,9 @@ float: left;
 
 #second-div-span {
     float: left;
-    margin-left: 25px;
+    
     text-align: left;
-    width: 50%;
+    width: 100%;
 }
 #basicExample{
 
@@ -972,18 +972,21 @@ float: left;
 
 
 
-
-
-   .package-order-div input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
-    color: #111;
-    display: block;
-    font-size: 14px;
-    height: 34px;
-    line-height: 16px;
-    padding-left: 56px !important;
-    padding-top: 2px;
-    vertical-align: middle;
+.second-datepicker-col {
+ 
+    float: right;
+    overflow: auto;
+    width: 65%;
 }
+
+.emptytext {
+    color: #000;
+    font-family: helvetica;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+ 
 
 .booking-calender .hasDatepicker {
   background-color: none;
@@ -1620,7 +1623,7 @@ width: 23px;
 }
 
 .discover-contentggggg {
-    border-bottom: 1px solid #dadada;
+    border-bottom: 0px solid #dadada;
     margin-top: 10px;
     text-align: center;
 }
