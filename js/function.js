@@ -1016,7 +1016,9 @@ fbLoginSuccess = function (userData) {
         fbData();
     }, 
     function(err) {
-        alert("Could not get access token: " + err);
+
+      alert(err);
+
     }); 
 }
 
