@@ -1067,9 +1067,9 @@ data: {'loginData': textc},
 success: function(alluserssd) {
 
 
-alert(alluserssd);
+//alert(alluserssd);
 
-alert('succeslogin');
+//alert('succeslogin');
   /********************fetch booking data*********************/
 $.ajax({
 type: "GET",
@@ -1178,6 +1178,7 @@ $(".addleftclass").text(bookingpi2.crntmnth);
 jQuery("body").removeClass("show1");
 
 var review=localStorage.getItem('review');
+
 //alert(review);
 //  alert(alluserssd);
 
@@ -1261,15 +1262,10 @@ $(".user-zip  h3").append(obj.zipcode);
 
  if(review=="reviewlogin")
 {
-
-
- //alert("jas"+userID);
-
-
+//alert("jas"+userID);
+$('body').css({ 'background': '#fff none repeat scroll 0 0'});
 $(".package-order-div").show();
 $(".login-page").hide();
-
-
 if(objs.userID==null)
 {
 $("#login_error").show();
