@@ -407,7 +407,7 @@ body {
 {display: none;
 }
 
-body.show1 {
+.show1 {
       background-attachment: scroll !important;
     background-clip: border-box !important;
     background-color: #fff !important;

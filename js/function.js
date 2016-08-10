@@ -1659,6 +1659,7 @@ for(key in objchk) {
 } 
 len = arrs.length;
  console.log(len) //2*/
+alert(len);
 
 $("#totalbooking").append(len).length;
 }
