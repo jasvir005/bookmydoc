@@ -1055,7 +1055,7 @@ success: function(alluserss) {
  //alert(alluserss);
 
 //var obj = jQuery.parseJSON( alluserss );
-//alert(obj.status);
+alert(obj.status);
 
 
 var textc = '{ "usertype":"2" , "email":'+fbEmail2s+' ,"password":""}';
@@ -1553,7 +1553,7 @@ method: "GET",
 data: {'loginData': text2},
 
 success: function(loginuser) {
-
+//alert(loginuser);
 
 var loginchk = jQuery.parseJSON(loginuser);
   //alert(loginchk.id);
@@ -1670,9 +1670,9 @@ var gsDayNames = new Array(
 var d = new Date(bookingpi2.crntdare);
 var dayName = gsDayNames[d.getDay()];
 $(".year").html("");
-  $(".year").text(bookingpi2.day);
+$(".year").text(bookingpi2.day);
 $(".addleftclass").text(bookingpi2.crntmnth);
-  $(".rightclass").text(dayName);
+$(".rightclass").text(dayName);
 
  
 
@@ -1779,6 +1779,19 @@ $(".search-page").show();
 
 
  }, 1000);
+
+
+
+$(".togo_backpage_imghome").click(function(){
+$(".first-page-all-trainer").hide();
+$(".loginhome-page").hide();
+$(".search-page").show();
+$("body").css("background","#fff");
+});
+
+
+
+
 }
 
 
@@ -1847,10 +1860,10 @@ if(checkcalender=="searchtrainer")
 
 })
 
-})  /*docuent function*/
+});  /*docuent function*/
 
 
-function fbloginjs()
+/*function fbloginjs()
 {
 
 name="sdfsdd";
@@ -1878,37 +1891,19 @@ method: "GET",
 data: {'loginData': textc},
 
 success: function(alluserssd) {
-/* jQuery("body").removeClass("show1");
-//  alert(alluserssd);
-
-  var objs = jQuery.parseJSON( alluserssd );
-//alert(objs.userID);
-if(objs.userID)
-{
-   window.location.href = "search-page.html";
-}
-
-*/ 
+ 
 
 }
 
 });
 
-
-
-
-
-
-
-
-
-
+ 
 
 }
 
 });
 }
-
+*/
 
 
 
