@@ -1055,6 +1055,8 @@ data: {'signUpData': textj},
 
 success: function(alluserss) {
   jQuery("body").removeClass("show1");
+
+ jQuery('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
  //alert("alluserss");
 
 //var obj = jQuery.parseJSON( alluserss );
