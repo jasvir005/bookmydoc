@@ -1076,6 +1076,7 @@ localStorage.setItem("checkcalender", "searchtrainer");
 
 //alert('succeslogin');
   /********************fetch booking data*********************/
+  alert(jas);
 $.ajax({
 type: "GET",
 url: ""+baseurl+"checkbookingapi?checkloginuserid="+jas+"",
@@ -1088,6 +1089,7 @@ var jsonvchk=JSON.stringify(bookingpi);
 var objchk = jQuery.parseJSON(jsonvchk);
 if(objchk.d=='false')
 {
+alert(objchk.d);
  len='';
  //$(".rightclass").text("");
 $(".addleftclass").html("");
@@ -1100,6 +1102,7 @@ $(".year").html('');
 }else
 {
 
+alert('true');
 var arrs = [], objchk;
 
 for(key in objchk) {
