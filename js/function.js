@@ -1276,7 +1276,7 @@ $(".user-preferance  h3").append(obj.zipcode);
 
 jQuery("body").removeClass("show1");
 //alert("jas"+userID);
-$('body').css({ 'background': '#fff none repeat scroll 0 0'});
+ 
 $(".package-order-div").show();
 $(".login-page").hide();
 if(objs.userID==null)
@@ -1288,7 +1288,7 @@ else
  
 $(".login-page").hide();
 $(".package-order-div").show();
-$('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
+$('body').css({ 'background': '#fff none repeat scroll 0 0'});
 
 $(".togo_backpage_imghome").click(function(){
 //alert('dd');
@@ -1312,8 +1312,7 @@ else
 
 $(".login-page").hide();
 $(".search-page").show();
-
-
+$('body').css({ 'background': '#fff none repeat scroll 0 0'});
 
  
 
