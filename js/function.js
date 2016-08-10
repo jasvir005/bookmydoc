@@ -1068,6 +1068,8 @@ success: function(alluserssd) {
 
 
 alert(alluserssd);
+
+alert('succeslogin');
   /********************fetch booking data*********************/
 $.ajax({
 type: "GET",
