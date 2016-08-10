@@ -68,7 +68,7 @@ width: 77%;
 }
 .page_filter {
     float: left;
-        margin-left: 37px;
+        margin-left: 46px;
        
     width: 19px;
 }
@@ -386,7 +386,7 @@ float: left;
 
 
 .filter_img img {
-     width: 85%;
+     width: 100%;
 }
 
 
@@ -799,7 +799,7 @@ float: left;
 
   background-color: #003f6f;
     background-image: url("../img/down-chevron.png");
-    background-position: 92px center;
+    background-position: 89% center;
     background-repeat: no-repeat;
     background-size: 13% auto;
     border: 1px solid #2169af;
@@ -866,9 +866,9 @@ float: left;
 
 
 .class-type-div {
-    margin: 19px auto auto 48px;
-    overflow: auto;
-    width: 80%;
+ margin: 34px auto auto;
+    
+    width: 70%;
 }
 .user-profilepage .userheadser h1 {
     float: left;
@@ -958,7 +958,7 @@ float: left;
 .hasDatepicker {
   background-color: #003f6f;
     background-image: url("../img/down-chevron.png");
-    background-position: 125px center;
+    background-position: 92% center;
     background-repeat: no-repeat;
     background-size: 9% auto;
     border: 1px solid #2169af !important;
@@ -966,10 +966,24 @@ float: left;
     color: #cecece !important;
     font-size: 16px !important;
     opacity: 0.72;
-       padding-left: 10px !important;
+       
     width: 100%;
 }
 
+
+
+
+
+   .package-order-div input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+    color: #111;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 16px;
+    padding-left: 56px !important;
+    padding-top: 2px;
+    vertical-align: middle;
+}
 
 .booking-calender .hasDatepicker {
   background-color: none;
@@ -982,7 +996,7 @@ float: left;
     color: none !important;
     font-size: 16px !important;
     opacity: 0.72;
-       padding-left: 10px !important;
+ 
     width: 100%;
  
      background-color: #fff;
@@ -1405,7 +1419,7 @@ padding-top: 11px;
     margin: 12px auto 0;
     padding-bottom: 9px;
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 .addleftclass {
     float: left;

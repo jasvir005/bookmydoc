@@ -1501,7 +1501,7 @@ width: 100%;
 }
 
 .gender-div {
-    border-bottom: 1px solid #e3e3ea;
+    border-bottom: 0px solid #e3e3ea;
     overflow: auto;
     padding-bottom: 0px;
     width: 100%;
@@ -2530,6 +2530,8 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
         display: none;
         float:left;
          background: #002c5b none repeat scroll 0 0;
+   overflow: hidden;
+          height: 100vh;
 }
 
 .scroll-content2 {
@@ -2552,6 +2554,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 
 
+.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+    margin: 0 auto;
+    width: 100%;
+}
 
 /******************detail page css*********************/
 
