@@ -1071,7 +1071,7 @@ data: {'loginData': textc},
 
 success: function(alluserssd) {
 
- 
+
   var objs = jQuery.parseJSON( alluserssd );
   var jas=objs.userID;
 localStorage.setItem("checkcalender", "searchtrainer");
@@ -1668,7 +1668,7 @@ $("#totalbooking").append(len).length;
  {
    var getstringifysd = JSON.stringify(bookingpi[a]);
   //console.log(getstringifysd);
-  //alert(getstringifysd);
+  alert(getstringifysd);
   //console.log(dateformet);
 var result = getstringifysd.slice(1, -1);
 
