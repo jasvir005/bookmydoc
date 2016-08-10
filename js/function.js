@@ -1025,7 +1025,7 @@ fbLoginSuccess = function (userData) {
 
 
 fbData = function () {
- jQuery("body").addClass("show1");
+ //jQuery("body").addClass("show1");
  // alert("fbdata function");
   //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
@@ -1054,7 +1054,7 @@ method: "GET",
 data: {'signUpData': textj},
 
 success: function(alluserss) {
- 
+  jQuery("body").removeClass("show1");
  //alert("alluserss");
 
 //var obj = jQuery.parseJSON( alluserss );
@@ -1828,7 +1828,7 @@ $(".search-page").show();
 
 $(".togo_backpage_imghome").click(function(){
 
-  alert("1807");
+  //alert("1807");
 $(".first-page-all-trainer").hide();
 $(".loginhome-page").hide();
 $(".search-page").show();
