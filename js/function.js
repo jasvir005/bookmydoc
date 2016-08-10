@@ -1886,7 +1886,7 @@ else
 jQuery(".login-backbtncal").click(function(){
   //alert('hi')
 var checkcalender=localStorage.getItem("checkcalender");
-alert(checkcalender);
+//alert(checkcalender);
 jQuery(".booking-calender").hide();
 if(checkcalender=="profilepage")
 {
