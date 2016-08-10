@@ -1271,6 +1271,8 @@ $(".user-phone  h3").append(obj.email);
 
  if(review=="reviewlogin")
 {
+  alert('dd');
+   jQuery("body").addClass("show1");
 //alert("jas"+userID);
 $('body').css({ 'background': '#fff none repeat scroll 0 0'});
 $(".package-order-div").show();
@@ -1281,7 +1283,7 @@ $("#login_error").show();
 }
 else
 {
-//alert(userID);
+ jQuery("body").removeClass("show1");
 $(".login-page").hide();
 $(".package-order-div").show();
 $('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
