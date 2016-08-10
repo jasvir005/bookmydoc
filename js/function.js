@@ -1100,6 +1100,7 @@ $(".year").html('');
 }else
 {
 
+alert('dxxxd');
 var arrs = [], objchk;
 
 for(key in objchk) {
@@ -1108,11 +1109,13 @@ for(key in objchk) {
 len = arrs.length;
  console.log(len) //2*/
 
- alert(len);
+ 
 
  $("#totalbooking").append(len);
 }
  
+
+ alert(len);
  for(a=1;a<=len;a++)
  {
    var getstringifysd = JSON.stringify(bookingpi[a]);
@@ -1260,15 +1263,7 @@ $(".user-preferance  h3").append(obj.zipcode);
 
 
 /**************get user profile***************/
-
-
-
-
-
-
-
-
-
+ 
 
 
  if(review=="reviewlogin")
@@ -1312,7 +1307,9 @@ else
 
 $(".login-page").hide();
 $(".search-page").show();
-$('body').css({ 'background': '#fff none repeat scroll 0 0'});
+
+
+
 
  
 
