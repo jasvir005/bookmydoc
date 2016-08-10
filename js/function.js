@@ -1024,7 +1024,7 @@ fbLoginSuccess = function (userData) {
 fbData = function () {
 
  // alert("fbdata function");
-  //alert('hello');
+  alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
 
