@@ -1019,7 +1019,7 @@ fbLoginSuccess = function (userData) {
         fbData();
     }, 
     function(err) {
-        alert("Could not get access token: " + err);
+          window.location.href = "index.html";
     }); 
 }
 
@@ -1071,7 +1071,7 @@ data: {'loginData': textc},
 
 success: function(alluserssd) {
 
-
+ 
   var objs = jQuery.parseJSON( alluserssd );
   var jas=objs.userID;
 localStorage.setItem("checkcalender", "searchtrainer");
@@ -1079,7 +1079,7 @@ localStorage.setItem("checkcalender", "searchtrainer");
 
 //alert('succeslogin');
   /********************fetch booking data*********************/
-  alert(jas);
+  //alert(jas);
 $.ajax({
 type: "GET",
 url: ""+baseurl+"checkbookingapi?checkloginuserid="+jas+"",
@@ -1363,7 +1363,7 @@ if(checkcalender=="searchtrainer")
  
            
         },
-        function (error) { alert("arv" + JSON.stringify(error)) }
+        function (error) {   window.location.href = "index.html"; }
     );
 
     if(localStorage.user_id == userID) {
