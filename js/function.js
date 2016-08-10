@@ -1071,6 +1071,9 @@ data: {'loginData': textc},
 
 success: function(alluserssd) {
 
+
+  var objs = jQuery.parseJSON( alluserssd );
+  var jas=objs;
 localStorage.setItem("checkcalender", "searchtrainer");
 //alert(alluserssd);
 
@@ -1089,7 +1092,7 @@ var jsonvchk=JSON.stringify(bookingpi);
 var objchk = jQuery.parseJSON(jsonvchk);
 if(objchk.d=='false')
 {
-alert(objchk.d);
+//alert(objchk.d);
  len='';
  //$(".rightclass").text("");
 $(".addleftclass").html("");
@@ -1102,7 +1105,7 @@ $(".year").html('');
 }else
 {
 
-alert('true');
+//alert('true');
 var arrs = [], objchk;
 
 for(key in objchk) {
@@ -1190,7 +1193,7 @@ var review=localStorage.getItem('review');
 //alert(review);
 //  alert(alluserssd);
 
-  var objs = jQuery.parseJSON( alluserssd );
+
 //alert(objs.userID);
 localStorage.setItem('session', objs.userID);
 
