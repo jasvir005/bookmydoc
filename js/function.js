@@ -990,7 +990,10 @@ function fblogin()
 
    facebookConnectPlugin.login(["public_profile"],
         fbLoginSuccess,
-        function (error) { alert("bookmydoc" + JSON.stringify(error)) }
+        function (error) {
+  window.location.href = "index.html";
+      //   alert("bookmydoc" + JSON.stringify(error)) 
+       }
     ); 
  jQuery("body").addClass("show1");
   jQuery(".loginhome-page").hide();
@@ -1016,9 +1019,7 @@ fbLoginSuccess = function (userData) {
         fbData();
     }, 
     function(err) {
-  window.location.href = "index.html";
-     // alert(err);
-
+        alert("Could not get access token: " + err);
     }); 
 }
 
