@@ -1278,6 +1278,14 @@ else
 //alert(userID);
 $(".login-page").hide();
 $(".package-order-div").show();
+$('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
+
+$(".togo_backpage_imghome").click(function(){
+$(".first-page-all-trainer").hide();
+$(".loginhome-page").hide();
+$(".search-page").show();
+$("body").css("background","#fff");
+});
 
 }
 
