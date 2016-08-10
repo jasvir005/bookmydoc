@@ -1491,26 +1491,35 @@ width: 23px;
    
      border-bottom: 1px solid #616161;
     overflow: hidden;
-   padding-top: 11px;
-    padding-bottom: 18px;
+  padding-bottom: 13px;
+    padding-top: 7px;
     width: 100%;
 }
 
 
 .user-zip {
    
-/*    border-bottom: 1px solid #616161;*/
+   border-bottom: 1px solid #616161; 
     overflow: hidden;
-  padding-top: 11px;
-    padding-bottom: 18px;
+  padding-bottom: 13px;
+    padding-top: 7px;
+    width: 100%;
+}
+
+
+.user-preferance {
+    border-bottom: 1px solid #616161;
+    overflow: hidden;
+  padding-bottom: 13px;
+    padding-top: 7px;
     width: 100%;
 }
 
 .user-phone {
     border-bottom: 1px solid #616161;
     overflow: hidden;
-    padding-top: 11px;
-    padding-bottom: 18px;
+   padding-bottom: 13px;
+    padding-top: 7px;
     width: 100%;
 }
 
@@ -1518,8 +1527,8 @@ width: 23px;
 .userimagte-name {
   border-bottom: 1px solid #616161;
     overflow: hidden;
-     padding-top: 11px;
-    padding-bottom: 18px;
+    padding-bottom: 13px;
+    padding-top: 7px;
     width: 100%;
 }
 
