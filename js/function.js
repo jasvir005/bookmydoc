@@ -1287,6 +1287,8 @@ $(".package-order-div").show();
 $('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
 
 $(".togo_backpage_imghome").click(function(){
+alert('dd');
+
 $(".first-page-all-trainer").hide();
 $(".loginhome-page").hide();
 $(".search-page").show();
@@ -1315,6 +1317,27 @@ $(".search-page").show();
 }
 
 
+
+$(".login-backbtncal").click(function(){
+  //alert('hi')
+var checkcalender=localStorage.getItem("checkcalender");
+alert(checkcalender);
+$(".booking-calender").hide();
+if(checkcalender=="profilepage")
+{
+  $(".user-profilepage").show();
+  
+
+}
+if(checkcalender=="searchtrainer")
+{
+  $(".search-page").show();
+  
+
+}
+  //alert(checkcalender);
+
+})
 
  
 
@@ -1802,6 +1825,8 @@ $(".search-page").show();
 
 
 $(".togo_backpage_imghome").click(function(){
+
+  alert("1807");
 $(".first-page-all-trainer").hide();
 $(".loginhome-page").hide();
 $(".search-page").show();
@@ -1857,7 +1882,9 @@ else
 
 
 jQuery(".login-backbtncal").click(function(){
+  //alert('hi')
 var checkcalender=localStorage.getItem("checkcalender");
+alert(checkcalender);
 jQuery(".booking-calender").hide();
 if(checkcalender=="profilepage")
 {
@@ -1871,11 +1898,7 @@ if(checkcalender=="searchtrainer")
   
 
 }
-
-
-
-
-   //alert(checkcalender);
+  //alert(checkcalender);
 
 })
 

@@ -1695,3 +1695,15 @@ color:#fff;
  .sendth-right-arw img {
     width: 21px;
 }
+
+
+.togo_backpage_imghome5 {
+    float: left;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 71px;
+}
+
+.togo_backpage_imghome5 > img {
+    width: 32%;
+}

@@ -14,7 +14,7 @@ $(document).ready(function(){
 $(".togo_backpage_imghome").click(function()
 {
 
- //alert(jas);
+  //alert(jas);
 if(jas==null)
 {
 $(".first-page-all-trainer").hide();
