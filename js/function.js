@@ -1178,7 +1178,7 @@ $(".addleftclass").text(bookingpi2.crntmnth);
 
 
   //alert(alluserssd);
-jQuery("body").removeClass("show1");
+
 
 var review=localStorage.getItem('review');
 
@@ -1271,8 +1271,8 @@ $(".user-phone  h3").append(obj.email);
 
  if(review=="reviewlogin")
 {
-  alert('dd');
-   jQuery("body").addClass("show1");
+
+jQuery("body").removeClass("show1");
 //alert("jas"+userID);
 $('body').css({ 'background': '#fff none repeat scroll 0 0'});
 $(".package-order-div").show();
@@ -1283,7 +1283,7 @@ $("#login_error").show();
 }
 else
 {
- jQuery("body").removeClass("show1");
+ 
 $(".login-page").hide();
 $(".package-order-div").show();
 $('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
@@ -1323,8 +1323,8 @@ $(".search-page").show();
 $(".login-backbtncal").click(function(){
   //alert('hi')
 var checkcalender=localStorage.getItem("checkcalender");
-alert(checkcalender);
-$(".booking-calender").hide();
+/*alert(checkcalender);
+*/$(".booking-calender").hide();
 if(checkcalender=="profilepage")
 {
   $(".user-profilepage").show();
