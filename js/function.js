@@ -1025,9 +1025,9 @@ fbLoginSuccess = function (userData) {
 
 
 fbData = function () {
-
+ jQuery("body").addClass("show1");
  // alert("fbdata function");
-  alert('hello');
+  //alert('hello');
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
 
@@ -1323,8 +1323,8 @@ $(".search-page").show();
 $(".login-backbtncal").click(function(){
   //alert('hi')
 var checkcalender=localStorage.getItem("checkcalender");
-/*alert(checkcalender);
-*/$(".booking-calender").hide();
+//alert(checkcalender);
+$(".booking-calender").hide();
 if(checkcalender=="profilepage")
 {
   $(".user-profilepage").show();
