@@ -1073,7 +1073,7 @@ success: function(alluserssd) {
 
 
   var objs = jQuery.parseJSON( alluserssd );
-  var jas=objs;
+  var jas=objs.userID;
 localStorage.setItem("checkcalender", "searchtrainer");
 //alert(alluserssd);
 
