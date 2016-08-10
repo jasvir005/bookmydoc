@@ -1028,14 +1028,14 @@ fbData = function () {
     facebookConnectPlugin.api( "me/?fields=id,name,email", ["email"],
         function (response) { 
 
-      alert("Result: " + JSON.stringify(response));
+      //alert("Result: " + JSON.stringify(response));
             //alert("status: " + localStorage.status + "token: " + localStorage.token);
             var response = jQuery.parseJSON(JSON.stringify(response));
             
       /*      var fbname = JSON.stringify(response["name"]);
             var fbid = JSON.stringify(response["id"]);*/
             var fbEmail2s = JSON.stringify(response["email"]);
-             alert(fbEmail2s);
+           //  alert(fbEmail2s);
             var name = JSON.stringify(response["name"]);
 
    
@@ -1052,10 +1052,10 @@ data: {'signUpData': textj},
 
 success: function(alluserss) {
  
- alert("alluserss");
+ //alert("alluserss");
 
 //var obj = jQuery.parseJSON( alluserss );
-alert(obj.status);
+//alert(obj.status);
 
 
 var textc = '{ "usertype":"2" , "email":'+fbEmail2s+' ,"password":""}';
@@ -1067,7 +1067,7 @@ data: {'loginData': textc},
 success: function(alluserssd) {
 
 
-
+alert(alluserssd);
   /********************fetch booking data*********************/
 $.ajax({
 type: "GET",
