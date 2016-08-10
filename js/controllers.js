@@ -162,7 +162,7 @@ len = arrs.length;
 console.log(len) //2*/
 }
 
- alert(len);
+ //alert(len);
 $("#totalbooking").append(len).length;
 
 /*var sda=$("#totalbooking").text().length;
