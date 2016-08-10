@@ -1116,10 +1116,12 @@ lensd = arrs.length;
 
  
 
+ 
+
 $("#totalbooking").append(lensd).length;
 }
  
- for(a=1;a<=len;a++)
+ for(a=1;a<=lensd;a++)
  {
    var getstringifysd = JSON.stringify(bookingpi[a]);
   //console.log(getstringifysd);
@@ -1659,7 +1661,6 @@ for(key in objchk) {
 } 
 len = arrs.length;
  console.log(len) //2*/
-alert(len);
 
 $("#totalbooking").append(len).length;
 }
@@ -1669,7 +1670,7 @@ $("#totalbooking").append(len).length;
  {
    var getstringifysd = JSON.stringify(bookingpi[a]);
   //console.log(getstringifysd);
-  alert(getstringifysd);
+  //alert(getstringifysd);
   //console.log(dateformet);
 var result = getstringifysd.slice(1, -1);
 
