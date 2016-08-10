@@ -1069,7 +1069,7 @@ data: {'loginData': textc},
 
 success: function(alluserssd) {
 
-
+localStorage.setItem("checkcalender", "searchtrainer");
 //alert(alluserssd);
 
 //alert('succeslogin');
@@ -1287,7 +1287,7 @@ $(".package-order-div").show();
 $('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
 
 $(".togo_backpage_imghome").click(function(){
-alert('dd');
+//alert('dd');
 
 $(".first-page-all-trainer").hide();
 $(".loginhome-page").hide();
