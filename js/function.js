@@ -1016,8 +1016,8 @@ fbLoginSuccess = function (userData) {
         fbData();
     }, 
     function(err) {
-
-      alert(err);
+  window.location.href = "index.html";
+     // alert(err);
 
     }); 
 }
