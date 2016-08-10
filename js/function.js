@@ -1100,22 +1100,19 @@ $(".year").html('');
 }else
 {
 
-alert('dxxxd');
 var arrs = [], objchk;
 
 for(key in objchk) {
     arrs.push(key);
 } 
-len = arrs.length;
- console.log(len) //2*/
+lensd = arrs.length;
+ console.log(lensd) //2*/
 
  
 
- $("#totalbooking").append(len);
+$("#totalbooking").append(lensd).length;
 }
  
-
- alert(len);
  for(a=1;a<=len;a++)
  {
    var getstringifysd = JSON.stringify(bookingpi[a]);
@@ -1263,7 +1260,15 @@ $(".user-preferance  h3").append(obj.zipcode);
 
 
 /**************get user profile***************/
- 
+
+
+
+
+
+
+
+
+
 
 
  if(review=="reviewlogin")
@@ -1271,7 +1276,7 @@ $(".user-preferance  h3").append(obj.zipcode);
 
 jQuery("body").removeClass("show1");
 //alert("jas"+userID);
- 
+$('body').css({ 'background': '#fff none repeat scroll 0 0'});
 $(".package-order-div").show();
 $(".login-page").hide();
 if(objs.userID==null)
@@ -1283,7 +1288,7 @@ else
  
 $(".login-page").hide();
 $(".package-order-div").show();
-$('body').css({ 'background': '#fff none repeat scroll 0 0'});
+$('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
 
 $(".togo_backpage_imghome").click(function(){
 //alert('dd');
@@ -1307,7 +1312,6 @@ else
 
 $(".login-page").hide();
 $(".search-page").show();
-
 
 
 
@@ -1650,7 +1654,7 @@ for(key in objchk) {
 len = arrs.length;
  console.log(len) //2*/
 
- $("#totalbooking").append(len);
+$("#totalbooking").append(len).length;
 }
  
 
