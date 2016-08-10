@@ -1070,7 +1070,7 @@ data: {'loginData': textc},
 success: function(alluserssd) {
 
 localStorage.setItem("checkcalender", "searchtrainer");
-//alert(alluserssd);
+alert(alluserssd);
 
 //alert('succeslogin');
   /********************fetch booking data*********************/
@@ -1272,7 +1272,7 @@ $(".user-phone  h3").append(obj.email);
  if(review=="reviewlogin")
 {
 
-jQuery("body").removeClass("show1");
+//jQuery("body").removeClass("show1");
 //alert("jas"+userID);
 $('body').css({ 'background': '#fff none repeat scroll 0 0'});
 $(".package-order-div").show();
