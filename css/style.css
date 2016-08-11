@@ -2619,9 +2619,10 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 
 .booking-not-seledted {
    font-family: helvetica;
-    font-size: 17px;
+    font-size: 14px;
     margin: 0 0 0 35px;
     text-align: center;
+     width: 100%;
 }
 
 /*.ui-datepicker-days-cell-over.ui-state-highlight.ui-datepicker-current-dayd.ui-datepicker-today a {
