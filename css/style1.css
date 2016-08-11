@@ -1469,12 +1469,12 @@ padding-top: 11px;
 .year {
       border: 1px solid red;
     color: #fff;
-    display: ruby-base;
+ 
  
     font-size: 40px;
     margin: 0 auto;
  
-    width: auto;
+   width: 26%;
 }
 .addyeartop {
     border: 0 solid red;
@@ -1485,6 +1485,7 @@ padding-top: 11px;
     padding-top: 14px;
     text-align: center;
     width: 72%;
+      display: flex;
 }
 
 
