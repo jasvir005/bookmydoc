@@ -629,7 +629,7 @@ var jas=localStorage.getItem('session');
  }
  
 
-jQuery("#divLoading").addClass('show');
+jQuery("#divLoadingfirst").addClass('show');
 //jQuery("body").addClass('showhome');
 
 		jQuery.ajax({
@@ -873,6 +873,7 @@ num++;
 
 function profilepage()
 {
+     jQuery(".ouerlapdiv").hide();
 localStorage.setItem("checkcalender","profilepage");
 
 
@@ -903,10 +904,15 @@ jQuery('.user-profilepage').css({ 'position': 'relative'});
 
 function searchtrainer()
 {
+
+
 //alert('searchtrainer')
     localStorage.setItem("checkcalender","searchtrainer");
   jQuery(".search-page").show();
   jQuery(".user-profilepage").hide();
+   jQuery(".ouerlapdiv").hide();
+
+
 
 jQuery('.menu-slide').hide();
 jQuery('.user-profilepage').css({ 'float': 'none'});
@@ -926,7 +932,7 @@ function bookingmentfun()
 {
 
 
-
+   jQuery(".ouerlapdiv").hide();
   //alert('dd');
 $(".addyear").html(" ");
 var pikdate=$("#page .ui-datepicker-year").text();
@@ -1421,7 +1427,7 @@ $("#search_rest_page").hide();
 
 $(".slider-wrapper .range-quantity").css("width","110px");
 
-$(".slider-wrapper .range-handle").css("left","110px");
+$(".slider-wrapper .range-handle").css("left","105px");
 
 $(".slider-wrapper2 .range-handle").css("left","105px");
 $(".slider-wrapper2 .range-quantity").css("width","105px");
@@ -2243,6 +2249,7 @@ jQuery(".filter-page-contant").click(function(){
 
 function myprofile ()
 {
+
 jQuery('.search-page').css({ 'float': 'none'});
 jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
 jQuery('.search-page').animate({ 'margin-left': '0px' }, 'fast');

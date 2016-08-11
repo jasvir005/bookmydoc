@@ -153,7 +153,25 @@ float: left;
      color: #fff;
 }
 
- 
+
+
+#divLoadingfirst.show
+{
+   background-color: #fff;
+    background-image: url("../img/animated-dog-robot-8.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    bottom: 0;
+    display: block;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
 
 #divLoading.show
 {
@@ -981,6 +999,7 @@ float: left;
 
 .emptytext {
     color: #000;
+     padding: 6px
     font-family: helvetica;
     font-size: 17px;
     font-weight: normal;
@@ -1265,7 +1284,7 @@ float: left;
 .userimagte-name > h3 {
  color: #fff;
     float: right;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     text-align: right;
     width: 61%;
@@ -1275,7 +1294,7 @@ float: left;
 {
  color: #fff;
     float: right;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     text-align: right;
     width: 61%;
@@ -1285,7 +1304,7 @@ float: left;
 .user-location > h3 {
   color: #fff;
     float: right;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     text-align: right;
     width: 61%;
@@ -1294,7 +1313,7 @@ float: left;
 {
  color: #fff;
     float: right;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     text-align: right;
     width: 61%;
@@ -1304,7 +1323,7 @@ float: left;
 {
    color: #fff;
     float: right;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     text-align: right;
     width: 61%;
@@ -1314,7 +1333,7 @@ float: left;
 {
   color: #fff;
     float: right;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     text-align: right;
     width: 61%;
@@ -1324,7 +1343,7 @@ float: left;
 {
    color: #fff;
     float: right;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     text-align: right;
     width: 61%;
@@ -1332,35 +1351,35 @@ float: left;
 .userimagte-name > span {
     float: left;
       color: #fff;
-     font-size: 20px;
+     font-size: 18px;
       /*  width: 35%;*/
 }
 
 .user-phone > span {
     float: left;
       color: #fff;
-     font-size: 20px;
+     font-size: 18px;
         /*width: 35%;*/
 }
 
 .user-preferance > span {
     float: left;
       color: #fff;
-     font-size: 20px;
+     font-size: 18px;
        /* width: 35%;*/
 }
 
 .user-zip > span {
     float: left;
       color: #fff;
-     font-size: 20px;
+     font-size: 18px;
      /*   width: 35%;*/
 }
 
 .user-EMAIL > span {
     float: left;
           color: #fff;
-     font-size: 20px;
+     font-size: 18px;
        /* width: 35%;*/
     
 
@@ -1369,12 +1388,14 @@ float: left;
 .user-location > span {
     float: left;
           color: #fff;
-     font-size: 20px;
+     font-size: 18px;
       /*  width: 35%;*/
 }
 .innercontainer-userpro {
     padding-left: 20px;
     padding-right: 20px;
+       padding-top: 15px;
+
 }
 
 .inner-container
@@ -1432,18 +1453,22 @@ padding-top: 11px;
 }
 .rightclass
 {
- float: right;
-    font-size: 15px;
+  color: #c4c4c4;
+    float: right;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    margin-top: 11px;
     text-align: right;
-     color: #c4c4c4;
 }
 
 .year {
-   float: left;
+    color: #fff;
+    display: ruby-base;
+ 
     font-size: 40px;
-    text-align: center;
-        margin-left: 11px;
-     color: #fff;
+    margin: 0 auto;
+ 
+    width: auto;
 }
 .addyeartop {
     border: 0 solid red;
@@ -1732,4 +1757,13 @@ color:#fff;
 
 .togo_backpage_imghome5 > img {
     width: 32%;
+}
+
+.ouerlapdiv {
+  
+    display: none;
+    height: 500px;
+    margin-left: 250px;
+    position: relative;
+    top: 39px;
 }

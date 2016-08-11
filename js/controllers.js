@@ -33,7 +33,7 @@ $('body').css({ 'background': '#fff none repeat scroll 0 0'});
 
 $(".slider-wrapper .range-quantity").css("width","110px");
 
-$(".slider-wrapper .range-handle").css("left","110px");
+$(".slider-wrapper .range-handle").css("left","105px");
 
 $(".slider-wrapper2 .range-handle").css("left","105px");
 $(".slider-wrapper2 .range-quantity").css("width","105px");
@@ -386,7 +386,7 @@ jQuery('.filter-div51').show();
 
 jQuery('#menuslide').click(function(){
 
- //alert("dfd");
+ 
 
 
          
@@ -394,6 +394,7 @@ jQuery('#menuslide').click(function(){
 
 {
  //alert('close');
+ jQuery('.ouerlapdiv').hide();
   jQuery('.head-img-txtflog').show();
 jQuery('.search-page').css({ 'float': 'none'});
 jQuery('.menu-slide').animate({ 'width': '0px' }, 'fast');
@@ -408,6 +409,8 @@ else {
   jQuery('.head-img-txtflog').hide();
 // alert("open");
 jQuery('.menu-slide').show();
+
+jQuery('.ouerlapdiv').show();
 
 
 
@@ -874,7 +877,7 @@ if(e==undefined && e1==undefined)
   e1='';
 }
 else{
-var e =  "B"+',';
+var e =  "MA"+',';
 var e1 =  e1+','; 
 } 
 if(f==undefined && f1==undefined)
@@ -1036,7 +1039,7 @@ if(e==undefined && e1==undefined)
   e1='';
 }
 else{
-var e =  "B"+',';
+var e =  "MA"+',';
 var e1 =  e1+','; 
 } 
 if(f==undefined && f1==undefined)

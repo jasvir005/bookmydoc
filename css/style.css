@@ -1510,7 +1510,7 @@ width: 100%;
         float: left;
     margin: 0 auto;
     text-align: center;
-    width: 46%;
+    width: 44%;
 }
 
 
@@ -2634,20 +2634,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 }
 
  
- .ui-datepicker-current-dayd {
-  animation: ui-datepicker-current-dayd-animation 1s steps(5, start) infinite;
-  -webkit-animation: ui-datepicker-current-dayd-animation 1s steps(5, start) infinite;
-}
-@keyframes ui-datepicker-current-dayd-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes ui-datepicker-current-dayd-animation {
-  to {
-    visibility: hidden;
-  }
-}
+
 
 
 .upcomming-booking {
