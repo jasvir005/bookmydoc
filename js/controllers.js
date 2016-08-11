@@ -19,6 +19,7 @@ if(jas==null)
 {
 $(".first-page-all-trainer").hide();
 $(".loginhome-page").show();
+$('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
 }
 else
 {

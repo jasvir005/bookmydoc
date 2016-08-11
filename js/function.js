@@ -1452,7 +1452,8 @@ $("body").css("background","#fff");
 }
 else
 {
-
+ 
+$("body").css("background","#003f6f none repeat scroll 0 0");
 $(".first-page-all-trainer").hide();
 $(".loginhome-page").show();
 

@@ -39,9 +39,12 @@ body {
 
 .head-text2
 {
-float: left;
-margin-top: 13px;
-width: 77%;
+   margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+ 
+    padding-top: 13px;
+    width: 77%; 
 }
 
 .head-text > h1 {
@@ -67,9 +70,8 @@ width: 77%;
     width: 25px;
 }
 .page_filter {
-    float: left;
-        margin-left: 46px;
-       
+    float: right;
+    margin-right: 15px;
     width: 19px;
 }
 
@@ -889,8 +891,8 @@ float: left;
     width: 70%;
 }
 .user-profilepage .userheadser h1 {
-    float: left;
-    margin-left: 75px;
+  margin: 9px auto 0;
+  width: 50%;
 }
 
 .package-order-div input[type="radio"] {
@@ -1250,11 +1252,11 @@ float: left;
 }
 
 .userimagte > img {
-    border-radius: 44px;
+      border-radius: 44px;
     clear: left;
     height: 82px;
     overflow: initial;
-    width: 100%;
+    width: 90px;
 }
 .userimagte {
     border-radius: 45px;
@@ -1409,6 +1411,7 @@ float: left;
 .user-profilepage
 {
     display: none;
+    width: 100%;
 }
 .first-page-all-trainer
 {
@@ -1767,3 +1770,5 @@ color:#fff;
     position: relative;
     top: 39px;
 }
+
+ 
