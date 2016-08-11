@@ -1453,9 +1453,11 @@ padding-top: 11px;
     font-size: 22px;
     text-align: right;
      color: #fff;
+       border: 1px solid red;
 }
 .rightclass
 {
+      border: 1px solid red;
   color: #c4c4c4;
     float: right;
     font-size: 16px;
@@ -1465,6 +1467,7 @@ padding-top: 11px;
 }
 
 .year {
+      border: 1px solid red;
     color: #fff;
     display: ruby-base;
  
@@ -1477,6 +1480,7 @@ padding-top: 11px;
     border: 0 solid red;
     margin: 0 auto;
     overflow: auto;
+     border: 1px solid red;
     padding-bottom: 8px;
     padding-top: 14px;
     text-align: center;
@@ -1659,10 +1663,7 @@ width: 23px;
     display: none;
 }
 
-#search_rest_page .search_page_head
-{
-       margin-right: -23px;
- }
+ 
 
 
 .login-backbtncal {

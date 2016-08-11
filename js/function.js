@@ -1289,7 +1289,7 @@ $(".user-preferance  h3").append(obj.zipcode);
 {
 
 jQuery("body").removeClass("show1");
- alert("jas"+userID);
+ //alert("jas"+userID);
  jQuery('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
 $(".package-order-div").show();
 $(".login-page").hide();
@@ -1322,7 +1322,7 @@ $("body").css("background","#fff");
 }
 else
 {
-   alert('false conndition');
+   //alert('false conndition');
  jQuery('body').css({ 'background': '#fff none repeat scroll 0 0'});
 $(".login-page").hide();
 $(".search-page").show();

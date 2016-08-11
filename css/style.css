@@ -2349,7 +2349,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     border-width: 1px 0;
     box-sizing: border-box;
     clear: unset;
-    display: flex;
+     
     height: 51px;
     left: 0;
     overflow: -moz-hidden-unscrollable;
