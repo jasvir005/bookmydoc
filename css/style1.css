@@ -1513,10 +1513,10 @@ padding-top: 11px;
      border-top: 1px solid #eaeaea;
 }
 
-
 #demos .ui-datepicker-next.ui-corner-all > img {
-    margin-left: -33px !important;
-    transform: rotate(182deg);
+    margin-left: -5px !important;
+    margin-top: 11px;
+    width: 70%;
 }
 
 .imgplus {
@@ -1609,10 +1609,7 @@ width: 23px;
 {
     display: none;
 }
-.ui-datepicker-next.ui-corner-all > img {
-   margin-left: -11px;
-    transform: rotate(180deg);
-}
+ 
 .ui-datepicker-prev.ui-corner-all > img {
   
   
@@ -1773,4 +1770,17 @@ color:#fff;
     top: 39px;
 }
 
+.ui-datepicker-prev.ui-corner-all > img {
+    width: 72%;
+        margin-top: 11px;
+}
  
+ .ui-datepicker-next.ui-corner-all > img {
+    float: left;
+    margin-top: 8px;
+    width: 73%;
+}
+.ui-datepicker-header.ui-widget-header.ui-helper-clearfix.ui-corner-all {
+    margin: auto;
+    width: 81%;
+}
