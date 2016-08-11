@@ -1062,7 +1062,7 @@ data: {'signUpData': textj},
 success: function(alluserss) {
   jQuery("body").removeClass("show1");
 
- jQuery('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
+
  //alert("alluserss");
 
 //var obj = jQuery.parseJSON( alluserss );
@@ -1289,8 +1289,8 @@ $(".user-preferance  h3").append(obj.zipcode);
 {
 
 jQuery("body").removeClass("show1");
-//alert("jas"+userID);
-$('body').css({ 'background': '#fff none repeat scroll 0 0'});
+ alert("jas"+userID);
+ jQuery('body').css({ 'background': '#003f6f none repeat scroll 0 0'});
 $(".package-order-div").show();
 $(".login-page").hide();
 if(objs.userID==null)
@@ -1322,8 +1322,8 @@ $("body").css("background","#fff");
 }
 else
 {
-  //alert('false conndition');
-
+   alert('false conndition');
+ jQuery('body').css({ 'background': '#fff none repeat scroll 0 0'});
 $(".login-page").hide();
 $(".search-page").show();
 
