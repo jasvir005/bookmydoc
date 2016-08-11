@@ -1887,7 +1887,7 @@ else
 
 
  $(".login-backbtn2").click(function(){
-  //$("body").css("background","#fff");
+ $("body").css("background","#fff");
 
  // alert('d');
   $(".search-detail-page").hide();

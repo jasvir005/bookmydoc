@@ -1451,7 +1451,7 @@ width: 100%;
    color: #fff;
     float: left;
     font-family: nexa_bold;
-    font-size: 18px;
+    font-size: 19px;
     font-style: normal;
     font-weight: bold;
   margin-top: 8px;
@@ -2349,7 +2349,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     box-sizing: border-box;
     clear: unset;
     display: flex;
-    height: 48px;
+    height: 51px;
     left: 0;
     overflow: -moz-hidden-unscrollable;
     padding: 0 5px;
@@ -2389,7 +2389,7 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
 .head_search > h1 {
     color: #fff;
     font-family: nexa_bold;
-    font-size: 18px;
+    font-size: 19px;
     letter-spacing: 1px;
     margin: 0;
    /* padding-top: 2px;*/
