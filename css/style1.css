@@ -1514,9 +1514,9 @@ padding-top: 11px;
 }
 
 #demos .ui-datepicker-next.ui-corner-all > img {
-    margin-left: -5px !important;
+ margin-left: 2px !important;
     margin-top: 11px;
-    width: 70%;
+    width: 57%;
 }
 
 .imgplus {
@@ -1771,7 +1771,7 @@ color:#fff;
 }
 
 .ui-datepicker-prev.ui-corner-all > img {
-    width: 72%;
+    width: 60%;
         margin-top: 11px;
 }
  
