@@ -160,10 +160,10 @@ float: left;
 #divLoadingfirst.show
 {
    background-color: #fff;
-    background-image: url("../img/animated-dog-robot-8.gif");
+    background-image: url("../img/loading7_light_blue.gif");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 50% auto;
+    background-size: 30% auto;
     bottom: 0;
     display: block;
     left: 0;
@@ -529,7 +529,7 @@ body {
 
 .pagecerleft > p {
     color: #fff;
-    font-size: 20px;
+    font-size: 19px;
 }
 .pagecerright > p {
     color: #fff;
@@ -605,7 +605,7 @@ body {
 .left-cate > p
 {
   color: #fff;
-    font-size: 20px;
+    font-size: 19px;
 
 }
 
