@@ -2532,11 +2532,16 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
          background: #002c5b none repeat scroll 0 0;
    overflow: hidden;
           height: 100vh;
+          top:0px;
 }
 
 .scroll-content2 {
  
-    background:#002C5B;
+    background: #002c5b none repeat scroll 0 0;
+    border: 0px solid red !important;
+    float: left;
+    height: 100vh;
+    overflow: auto;
 }
 
 .item2 {
