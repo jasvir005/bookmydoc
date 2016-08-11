@@ -2278,7 +2278,7 @@ jQuery('.user-profilepage').css({ 'display': 'inline'});
 
 function donefun()
 {
-  window.Language.href = "index.html";
+  window.location.href = "index.html";
   
 }
 
