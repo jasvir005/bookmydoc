@@ -357,30 +357,113 @@ else
 image=obj.userimage;
   }
 
+/**********Decription***********/
+ 
 
-if(obj.labguageval==null)
+if(obj.ProfessionalMemberships=="")
 {
-language="";
+ Prpdecriptionvar="";
 }
 else
 {
- language =obj.labguageval
+var Prpdecriptionvar="<div class='page-decription'><p>"+obj.ProfessionalMemberships+"</p></div>"
 }
-
+/************Payrate*****************/
+ 
 if(obj.payrate=="")
 {
-payrateval1="0";
+payrateval1val="";
 }
 else
 {
  payrateval1 =obj.payrate
+
+ var payrateval1val="<div class='page-detail-rate'><div class='right-rate'><p>Rate</p></div><div class='right-rate-price'><p>$"+payrateval1+" / Hours </p></div></div>";
+}
+/************Language*****************/
+
+
+if(obj.labguageval==null)
+{
+languageval="";
+}
+else
+{
+ language =obj.labguageval;
+ var languageval="<div class='page-detail-language'><div class='left-cate'><p>Language</p></div><div class='right-cate'><p>"+language+"</p></div></div>";
 }
 
+/************location*****************/
+
+if(obj.HospitalAffiliations=="")
+{
+HospitalAffiliationsvar="";
+}
+else
+{
+ HospitalAffiliations =obj.HospitalAffiliations
+
+ var HospitalAffiliationsvar ="<div class='page-detail-location'><div class='left-cate'><p>Location</p></div><div class='right-cate'><p>"+HospitalAffiliations+"</p></div></div>";
+}
+
+
+/**********BoardCertifications*******/
+
+if(obj.BoardCertifications=="")
+{
+BoardCertificval="";
+}
+else
+{
+
+BoardCertificval="<div class='page-certification'><div class='pagecerleft'><p>Certification</p></div><div class='pagecerright'><p>"+obj.BoardCertifications+"</p></div></div>";
+
+}
+
+
+jQuery.ajax({
+type: "GET",
+url: ""+baseurl+"patmentaccepted?payacptid="+obj.id+"",
+success: function(bookingpi2d) {
+var objdss = jQuery.parseJSON( bookingpi2d );
+var arrs = [], objds;
+
+for(key in objdss) {
+    arrs.push(key);
+} 
+lends= arrs.length;
+
+//alert(lends);
+for(af=1;af<=lends;af++)
+{
+ // alert(af);
+var getstringifysd = JSON.stringify(objdss[af]); 
+
+var objs = jQuery.parseJSON( getstringifysd );
+if(objs.status=="false")
+{
+jQuery(".page-detail-netword").hide();
+ 
+}
+else
+{
+var payment=objs.status+',';
+    
+
+jQuery(".page-detail-netword .right-cate p").append(payment);
+
+}
+
+}
+}
+}); 
+
+
  
 
-data="<div class='detailphe-img'><img src='http://gotaworkout.com/service/public/z_uploads/doctor/"+image+"'></div><div class='detail-pge'><h1>"+str+"</h1><div class='cateratingab' id='cateratingab"+obj.speciality+"'></div></div><div class='detail-pge-bottom'><div class='bottom-header-part'><div id='commonid' class='left-prt addlassbar'><p onclick='functiona(0)'>About</p></div><div id='commonid'  class='right-prt'><p onclick='functiona(1)'>Reviews</p></div></div><div class='slide-div'><div class='page-decription'><p>"+obj.ProfessionalMemberships+"</p></div><div class='page-detail-rate'><div class='right-rate'><p>Rate</p></div><div class='right-rate-price'><p>$"+payrateval1+" / Hours </p></div></div><div class='page-detail-categries'><div class='left-cate'><p>Routines</p></div><div class='right-cate'><p></p></div></div><div class='page-certification'><div class='pagecerleft'><p>Certification</p></div><div class='pagecerright'><p>"+obj.BoardCertifications+"</p></div></div><div class='page-detail-location'><div class='left-cate'><p>Localtion</p></div><div class='right-cate'><p>"+obj.HospitalAffiliations+"</p></div></div><div class='page-detail-language'><div class='left-cate'><p>Language</p></div><div class='right-cate'><p>"+language+"</p></div></div><div class='page-detail-netword'><div class='left-cate'><p>Payments accepted </p></div><div class='right-cate'><p></p></div></div></div><div class='slide2'><p></p></div><div class='bmd-main-btn3flog2'  onclick='openbooking("+obj.id+")'cid='booknow-btn'><div class='bmd-main-btn3flog' id='booknow'> BOOK NOW</div></div></div>";
 
- 
+data="<div class='detailphe-img'><img src='http://gotaworkout.com/service/public/z_uploads/doctor/"+image+"'></div><div class='detail-pge'><h1>"+str+"</h1><div class='cateratingab' id='cateratingab"+obj.speciality+"'></div></div><div class='detail-pge-bottom'><div class='bottom-header-part'><div id='commonid' class='left-prt addlassbar'><p onclick='functiona(0)'>About</p></div><div id='commonid'  class='right-prt'><p onclick='functiona(1)'>Reviews</p></div></div><div class='slide-div'>"+Prpdecriptionvar+payrateval1val+"<div class='page-detail-categries'><div class='left-cate'><p>Routines</p></div><div class='right-cate'><p></p></div></div>"+BoardCertificval+languageval+HospitalAffiliationsvar+"<div class='page-detail-netword'><div class='left-cate'><p>Payments accepted </p></div><div class='right-cate'><p></p></div></div></div><div class='slide2'><p></p></div><div class='bmd-main-btn3flog2'  onclick='openbooking("+obj.id+")'cid='booknow-btn'><div class='bmd-main-btn3flog' id='booknow'> BOOK NOW</div></div></div>";
+
 
 /***********second ajax hit********/
 
@@ -406,10 +489,9 @@ var namecat=simgpleusrdetail.name
 var totalrating=simgpleusrdetail.totalrating
 
 
-
-
+ 
 $(".page-detail-categries .right-cate p").append(namecat);
-
+ 
 
 if(rating ==0)
 {

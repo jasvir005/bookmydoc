@@ -529,11 +529,11 @@ body {
 
 .pagecerleft > p {
     color: #fff;
-    font-size: 19px;
+    font-size: 16px;
 }
 .pagecerright > p {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 
@@ -586,18 +586,18 @@ body {
 
 .right-rate > p {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
 }
 .right-rate-price> p {
     color: #fff;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 
 .right-cate > p 
 {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 
@@ -605,7 +605,7 @@ body {
 .left-cate > p
 {
   color: #fff;
-    font-size: 19px;
+    font-size: 16px;
 
 }
 
@@ -817,19 +817,18 @@ float: left;
 #basicExample{
 
 
-  background-color: #003f6f;
+ background-color: #003f6f;
     background-image: url("../img/down-chevron.png");
-    background-position: 89% center;
+    background-position: 92% center;
     background-repeat: no-repeat;
-    background-size: 13% auto;
+    background-size: 9% auto;
     border: 1px solid #2169af;
     border-radius: 5px;
     color: #cecece !important;
     font-size: 16px !important;
     opacity: 0.72;
-       padding-left: 10px !important;
+    padding-left: 10px !important;
     width: 100%;
-
 
 
 }
@@ -1254,7 +1253,7 @@ float: left;
 .userimagte > img {
       border-radius: 44px;
     clear: left;
-    height: 82px;
+   height: 90px;
     overflow: initial;
     width: 90px;
 }
@@ -1450,6 +1449,7 @@ padding-top: 11px;
 }
 .addleftclass {
     float: left;
+      margin-right: 10px;
     font-size: 22px;
     text-align: right;
      color: #fff;

@@ -42,15 +42,15 @@
     
     <icon src="res/icon/android/icon-72-hdpi.png"/>
 
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-hdpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-ldpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-mdpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-xhdpi"/>
+    <splash src="res/screen/android/320X480.png" density="land-hdpi"/>
+    <splash src="res/screen/android/640X960.png" density="land-ldpi"/>
+    <splash src="res/screen/android/640X1136.png" density="land-mdpi"/>
+    <splash src="res/screen/android/750X1334.png" density="land-xhdpi"/>
 
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-ldpi"/>
+    <splash src="res/screen/android/768X1024.png" density="port-hdpi"/>
+<!--     <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-ldpi"/>
     <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-mdpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-xhdpi"/>
+    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-xhdpi"/> -->
 </platform>
 
 <platform name="ios">
@@ -62,17 +62,17 @@
 <icon src="res/icon/ios/icon-76-2x.png" width="152" height="152"/>
 <!--icon src="res/icon/ios/iphone_180x180.png" width="180" height="180" /-->
     <!-- images are determined by width and height. The following are supported -->
-    <splash src="res/screen/ios/320_splash.png" width="320" height="480"/>
+<splash src="res/screen/ios/320X480.jpg.png" width="320" height="480"/>
+<splash src="res/screen/ios/640X960.png" width="640" height="960"/>
+<splash src="res/screen/ios/768_splash.png" width="768" height="1024"/>
+<splash src="res/screen/ios/640X1136.png" width="640" height="1136"/>
+<splash src="res/screen/ios/750X1334.png" width="750" height="1334"/>
 
-    <splash src="res/screen/ios/640_splash.png" width="640" height="960"/>
-
-    <splash src="res/screen/ios/768_splash.png" width="768" height="1024"/>
-
-    <splash src="res/screen/ios/1536_splash.png" width="1536" height="2048"/>
+<!--     <splash src="res/screen/ios/1536_splash.png" width="1536" height="2048"/> -->
 
     
-    <splash src="res/screen/ios/1136_splash.png" width="640" height="1136"/>
 
+ 
     <!--splash src="res/screen/ios/default-portrait-2x.png" width="1024" height="768"/>
     <splash src="res/screen/ios/default-portrait-2x.png" width="2048" height="1536"/>
     <splash src="res/screen/ios/default-portrait-2x.png" width="750" height="1334"/>
