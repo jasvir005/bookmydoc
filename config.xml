@@ -63,7 +63,7 @@
 
 <platform name="ios">
 
-    <splash src="res/screen/ios/splash_320_480" width="320" height="480"/>
+    <splash src="res/screen/ios/splash_320_480.png" width="320" height="480"/>
     <splash src="res/screen/ios/splash_640_960.png" width="640" height="960"/>
     <splash src="res/screen/ios/splash_640_1136.png" width="640" height="1136"/>
     <splash src="res/screen/ios/splash_750_1334.png" width="750" height="1334"/>
