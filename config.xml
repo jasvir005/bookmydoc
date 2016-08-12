@@ -97,6 +97,9 @@
     </platform>
     <preference name="DisallowOverscroll" value="true" />
 
+    <preference name="SplashScreen" value="screen" />
+ <preference name="SplashScreenDelay" value="5000" /
+
 
 
      <gap:config-file platform="ios" parent="UIStatusBarHidden">
