@@ -48,15 +48,15 @@
     
     <icon src="res/icon/android/icon-72-hdpi.png"/>
 
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-hdpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-ldpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-mdpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="land-xhdpi"/>
+    <splash src="res/screen/android/_aplash480_800.png" density="land-hdpi"/>
+    <splash src="res/screen/android/_aplash480_800.png" density="land-ldpi"/>
+    <splash src="res/screen/android/_aplash480_800.png" density="land-mdpi"/>
+    <splash src="res/screen/android/_aplash480_800.png" density="land-xhdpi"/>
 
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-hdpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-ldpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-mdpi"/>
-    <splash src="res/screen/android/screen-hdpi-portrait.png" density="port-xhdpi"/>
+    <splash src="res/screen/android/_aplash480_800.png" density="port-hdpi"/>
+    <splash src="res/screen/android/_aplash480_800.png" density="port-ldpi"/>
+    <splash src="res/screen/android/_aplash480_800.png" density="port-mdpi"/>
+    <splash src="res/screen/android/_aplash480_800.png" density="port-xhdpi"/>
 </platform>
 
 
