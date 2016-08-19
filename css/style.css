@@ -748,11 +748,16 @@ width: 100%;
     font-weight: 700;
 }
 
-.head-img-txtflog {
-  margin-left: 26px;
-    margin-top: 13px;
+
+.head-img-txtflogsrch {
     text-align: center;
-    width: 270px;
+ width: 296px;
+  margin-left: 11px;
+}
+
+.head-img-txtflog {
+    text-align: center;
+    width:100%;
 }
 .login-introflog {
 
@@ -1850,7 +1855,7 @@ input[type='radio']:checked:before {
 }
 
 #first-btn01 {
-    background: #fe9a00 none repeat scroll 0 0;
+ background: #fe9a00 none repeat scroll 0 0;
     border: 1px solid #fe9a00;
     color: #fff;
     font-family: nexa_bold;
@@ -1860,7 +1865,7 @@ input[type='radio']:checked:before {
     margin: 0 auto;
     padding: 8px;
     text-align: center;
-    width: 100%;
+    width: 85%;
 }
 /********************************/
 li.bmd-listing:nth-child(2) .head-img-txtflog > p {
