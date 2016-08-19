@@ -120,9 +120,37 @@ data: formData,
 success: function(alluserss) {
 
 
- //alert(alluserss);
+//alert(alluserss);
+if(alluserss=="pastbooking")
+{
 
-if(alluserss=='successfully')
+
+jQuery("#divLoading3").removeClass('show');
+function onConfirm(buttonIndex) {
+   // alert('You selected button ' + buttonIndex);
+}
+
+navigator.notification.confirm(
+    'You can not schedule training in the past, please change your date.', // message
+     onConfirm,            // callback to invoke with index of button pressed
+    'Warning !',           // title
+    ['OK']     // buttonLabels
+);
+
+
+  window.confirm = navigator.notification.confirm;
+ //shownotification("Already book",'hello alert',"ok");
+
+ // alert("This trainer is already booked on selected date and time, please choose another trainer or change date and time.");
+
+return false;
+
+
+
+
+}
+
+else if(alluserss=='successfully')
 {
 jQuery("#divLoading3").addClass('show');
 

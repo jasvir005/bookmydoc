@@ -1468,13 +1468,12 @@ padding-top: 11px;
 
 .year {
       
-    color: #fff;
- 
- 
-    font-size: 40px;
-    margin: 0 auto;
- 
-   width: 26%;
+color: #fff;
+left: -11px;
+position: relative;
+font-size: 40px;
+margin: 0 auto;
+width: 26%;
 }
 .addyeartop {
     
@@ -1645,7 +1644,14 @@ width: 23px;
    
 }
 
+
 #demos tr:nth-child(4) {
+   
+    line-height: 30px;
+   
+   
+}
+#demos tr:nth-child(5) {
    
     line-height: 30px;
    
