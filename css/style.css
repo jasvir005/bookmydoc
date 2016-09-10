@@ -2749,3 +2749,43 @@ li.bmd-listing:nth-child(2) .head-img-txtflog > p {
     top: -3px;
     color: #fff;
 }
+
+/*********************iphon6************************/
+@media  only screen and (min-width:375px) and (max-width:667px) and (orientation : portrait){
+	.filter-page-contant .yoga-wordout {
+	    width: 96%;
+	}
+	.price-range {
+	    width: 100%;
+	}
+	.filter-page-contant .price-range > p {
+	    margin-left: 5px;
+	}
+	.slider-wrapper {
+	    margin: 0 0 26px 32px !important;
+	    width: 305px !important;
+	}
+	.filter-page-contant .price-range2 > p {
+	    margin-left: 5px;
+	}
+	.example .slider-wrapper2 {
+	    margin: 0 0 26px 32px !important;
+	    width: 305px !important;
+	}
+	.language-div {
+	    padding-left: 5px;
+	}
+	.gender-txt {
+	    padding-left: 5px;
+	}
+	.male {
+	    width: 42%;
+	}
+	.female {
+		width: 50%;
+	}
+	.head-img-txtflogsrch {
+	    width: 344px;
+	}
+
+}	
